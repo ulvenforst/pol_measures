@@ -26,11 +26,11 @@ This package includes the following polarization measurements:
 
 *   $\mathrm{Comete}_{\alpha,\beta}(M)$ (Implemented by Carlos Pinzón)
 *   $\text{BiPol}(M)$ (Proposed and implemented by Carlos Pinzón, Sept 2023)
-*   $\mathrm{EMD}_\text{pol}(M)$[<sup>[1]</sup>](###references-to-literature)
-*   $\text{Experts}(M)$[<sup>[2]</sup>](###references-to-literature)
-*   $\mathrm{ER}_{\alpha}(M)$[<sup>[3]</sup>](###references-to-literature)
-*   $\text{Shannon}_{pol}(M)$[<sup>[4]</sup>](###references-to-literature)
-*   $\text{Eijk}_\text{pol}(M)$[<sup>[5]</sup>](###references-to-literature)
+*   $\mathrm{EMD}_\text{pol}(M)$[<sup>[1]</sup>](#references-to-literature)
+*   $\text{Experts}(M)$[<sup>[2]</sup>](#references-to-literature)
+*   $\mathrm{ER}_{\alpha}(M)$[<sup>[3]</sup>](#references-to-literature)
+*   $\text{Shannon}_{pol}(M)$[<sup>[4]</sup>](#references-to-literature)
+*   $\text{Eijk}_\text{pol}(M)$[<sup>[5]</sup>](#references-to-literature)
 
 Where $M=(\vec{x},\vec{\pi})\in\mathscr{D}$.
 
