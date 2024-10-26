@@ -57,12 +57,12 @@ The measures are divided into two subdirectories, those of literature and propos
 \mathrm{EMD}_\text{pol}(M)=0.5-\mathrm{EMD}(M,\pi_{\max})
 ```
 
-Where $Q=(\vec{y},\vec{\pi}_Q)\in\mathscr{D}$, then
+Where $`\pi_{\max}=((x_1,\dots,x_n),(0.5,\dots,0.5))\in\mathscr{D}`$, then
 ```math
 \mathrm{EMD}(M,Q)=\inf_{\gamma \in \Pi} \, \sum\limits_{x,y} \gamma (x,y)\Vert x - y \Vert
 ```
 
-and $`\pi_{\max}=((x_1,\dots,x_n),(0.5,\dots,0.5))\in\mathscr{D}`$
+Being $Q=(\vec{y},\vec{\pi}_Q)\in\mathscr{D}$.
 
 **EstebanRay:**
 
