@@ -5,7 +5,7 @@ A Python package for computing various polarization measures.
 ## Installation
 
 ```bash
-pip install git+https://github.com/tuusername/pol_measures.git
+pip install git+https://github.com/Ulvenforst/pol_measures.git
 ```
 
 ---
