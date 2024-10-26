@@ -12,6 +12,9 @@ If a new update is generated, you can uninstall the package and then reinstall i
 ```bash
 pip uninstall measures
 ```
+
+[Google Colab example](https://colab.research.google.com/drive/1g_UgozULgUGjM0gSyZ-Hg59kUtMxnJKi?usp=sharing)
+
 ---
 
 A distribution is denoted by a pair of $n$-dimensional vectors $`(\vec{x},\vec{\pi})=((x_1,\dots,x_n),(\pi_1,\dots,\pi_n))\in\mathbb{R}^n\times\mathbb{R}_{+}^n`$ for some $`n\in\mathbb{N}`$, where $`\pi_i`$ is the population of individuals with attribute $`x_i`$ and $`\sum_{i=1}^n\pi_i=1`$. $`x_i\neq x_j`$ for distict $`i,j\in\{1,\dots,n\}`$. For normalization purposes $`0\leqslant x_i\leqslant 1`$.
