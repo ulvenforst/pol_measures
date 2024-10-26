@@ -38,7 +38,7 @@ Where $M=(\vec{x},\vec{\pi}_m)\in\mathscr{D}$.
 The measures are divided into two subdirectories, those of literature and proposals:
 
 ### Literature `measures.metrics.literature`
-**EMD_pol:**
+**EMDPol:**
 ```python
    from measures.metrics.literature import EMDPol
 
