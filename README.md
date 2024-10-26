@@ -22,7 +22,7 @@ A distribution is denoted by a pair of $n$-dimensional vectors $`(\vec{x},\vec{\
 
 A polarization measure is a function $P:\mathscr{D}\to\mathbb{R}_+$.
 
-We are currently studying with polarization measures:
+This package includes the following polarization measurements:
 
 *   $\mathscr{Comete}_{\alpha,\beta}(M)$ (Implemented by Carlos Pinzón)
 *   $\text{BiPol}(M)$ (Proposed and implemented by Carlos Pinzón, Sept 2023)
