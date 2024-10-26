@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="measures",
-    version="0.1.0",
+    version="0.1.0a1",
     packages=find_packages(where="src"),
     package_dir={"": "src"},
     install_requires=[
@@ -22,7 +22,7 @@ setup(
     description="A package for computing various polarization measures in PROMUEVA",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/measures",
+    url="https://github.com/Ulvenforst/pol_measures",
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Science/Research",
