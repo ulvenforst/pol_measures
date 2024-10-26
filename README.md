@@ -82,6 +82,8 @@ and $`\pi_{\max}=((x_1,\dots,x_n),(0.5,\dots,0.5))\in\mathscr{D}`$
 ```math
 \text{ER}(M)=K \sum _{i=1}^n \sum _{j=1}^n \pi _{i}^{1+\alpha}\pi _{j} |x_i-x_j|
 ```
+Where by default $K = 1 / (2(0.5^{2 + \alpha}))$.
+
 
 **Experts:**
 ```python
