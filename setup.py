@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="measures",
+    name="pol_measures",
     version="0.1.0a1",
     packages=find_packages(where="src"),
     package_dir={"": "src"},
@@ -27,6 +27,8 @@ setup(
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Science/Research",
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
     ],
 )
