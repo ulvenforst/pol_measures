@@ -2,7 +2,7 @@ import numpy as np
 import time
 from typing import Callable, List, Tuple
 import matplotlib.pyplot as plt
-from src.metrics.literature.emd import EMDPolSciPy, EMDPol
+from src.measures.metrics.literature.emd import EMDPolSciPy, EMDPol
 
 def generate_test_case(size: int) -> Tuple[np.ndarray, np.ndarray]:
     """Generate test case of specified size."""

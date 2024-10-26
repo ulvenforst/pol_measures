@@ -1,6 +1,6 @@
 import numpy as np
 from typing import Tuple
-from src.metrics.literature.emd import EMDPolSciPy, EMDPol
+from src.measures.metrics.literature.emd import EMDPolSciPy, EMDPol
 
 def compare_implementations(x: np.ndarray, weights: np.ndarray) -> Tuple[float, float]:
     """Compare results from both implementations."""
