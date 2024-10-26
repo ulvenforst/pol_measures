@@ -138,7 +138,7 @@ where $\mu_\vec{x}=\sum_{i=1}^{n}{\pi_i x_i}$ is the mean of $\vec{x}$.
    print(f"ER: {eijkpol(x, w1):.6f}")
 ```
 ```math
-\mathrm{Eijk}_{\text{pol}}(M) = 1- \sum_{i} w_i \cdot A_i
+\mathrm{Eijk}_{\text{pol}}(M) = 1- \sum_{i=1}^n \pi_i \cdot A_i
 ```
 Where $w_i$ is the proportion of cases in the empirical distribution contained in layer $i$, and $A_i$ is the agreement for layer $i$, calculated using
 ```math
