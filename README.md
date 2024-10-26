@@ -26,11 +26,11 @@ This package includes the following polarization measurements:
 
 *   $\mathrm{Comete}_{\alpha,\beta}(M)$ (Implemented by Carlos Pinzón)
 *   $\text{BiPol}(M)$ (Proposed and implemented by Carlos Pinzón, Sept 2023)
-*   $\mathrm{EMD}_\text{pol}(M)$
-*   $\text{Experts}(M)$
-*   $\mathrm{ER}_{\alpha}(M)$
-*   $\text{Shannon}_{pol}(M)$
-*   $\text{Eijk}_\text{pol}(M)$
+*   $\mathrm{EMD}_\text{pol}(M)$[<sup>[1]</sup>](###references-to-literature)
+*   $\text{Experts}(M)$[<sup>[2]</sup>](###references-to-literature)
+*   $\mathrm{ER}_{\alpha}(M)$[<sup>[3]</sup>](###references-to-literature)
+*   $\text{Shannon}_{pol}(M)$[<sup>[4]</sup>](###references-to-literature)
+*   $\text{Eijk}_\text{pol}(M)$[<sup>[5]</sup>](###references-to-literature)
 
 Where $M=(\vec{x},\vec{\pi})\in\mathscr{D}$.
 
@@ -199,3 +199,14 @@ Comète is defined as the minimum effort of carrying out a distribution $M$ towa
 ```math
 \mathrm{BiPol}(M) := 4 \max_{A \cap B=\emptyset, A \cup B={x_1,...,x_n}} \dfrac{1}{n^2} \sum_{x \in A} \sum_{y \in B} |y-x|
 ```
+
+### References to literature
+[1] [A New Measure of Congruence: The Earth Mover’s Distance](https://www.cambridge.org/core/journals/political-analysis/article/abs/new-measure-of-congruence-the-earth-movers-distance/8699CA3E41430C3E3B9086D0709B388A)
+
+[2] [A New Opinion Polarization Index Developed by Integrating Expert Judgments](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2021.738258/full)
+
+[3] [A Characterization of the Esteban–Ray Polarization Measures](https://doi.org/10.1016/j.econlet.2018.05.011)
+
+[4] [Consensus and dissention: A measure of ordinal dispersion](https://doi.org/10.1016/j.ijar.2006.06.024)
+
+[5] [Measuring Agreement in Ordered Rating Scales](https://doi.org/10.1023/A:1010374114305)
