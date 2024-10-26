@@ -24,7 +24,7 @@ A polarization measure is a function $P:\mathscr{D}\to\mathbb{R}_+$.
 
 This package includes the following polarization measurements:
 
-*   $\mathscr{Comete}_{\alpha,\beta}(M)$ (Implemented by Carlos Pinzón)
+*   $\mathrm{Comete}_{\alpha,\beta}(M)$ (Implemented by Carlos Pinzón)
 *   $\text{BiPol}(M)$ (Proposed and implemented by Carlos Pinzón, Sept 2023)
 *   $\mathrm{EMD}_\text{pol}(M)$
 *   $\text{Experts}(M)$
@@ -52,8 +52,19 @@ The measures are divided into two subdirectories, those of literature and propos
    w1 = np.ones(5) / 5
    print(f"EMD: {emd(x, w1):.6f}")
 ```
+```math
+\mathrm{EMD}_\text{pol}(M)=0.5-\mathrm{EMD}(M,\pi_{\max})
+```
+
+Where
+```math
+\mathrm{EMD}(M,Q)=\inf_{\gamma \in \Pi} \, \sum\limits_{x,y} \gamma (x,y)\Vert x - y \Vert
+```
+
+and $`\pi_{\max}=((x_1,\dots,x_n),(0.5,\dots,0.5))\in\mathscr{D}`$
 
 **EstebanRay:**
+
 ```python
    from measures.metrics.literature import EstebanRay
 
@@ -66,6 +77,9 @@ The measures are divided into two subdirectories, those of literature and propos
    # Example: Uniform distribution
    w1 = np.ones(5) / 5
    print(f"ER: {er(x, w1):.6f}")
+```
+```math
+\text{ER}(M)=K \sum _{i=1}^n \sum _{j=1}^n \pi _{mi}^{1+\alpha}\pi _{mj} |x_i-x_j|
 ```
 
 **Experts:**
@@ -82,6 +96,9 @@ The measures are divided into two subdirectories, those of literature and propos
    w1 = np.ones(5) / 5
    print(f"ER: {expert(x, w1):.6f}")
 ```
+```math
+\mathrm{Experts}(M)=\frac{2.14\pi_2\pi_4 + 2.70(\pi_1\pi_4 + \pi_2\pi_5)+3.96\pi_1\pi_5}{0.0099\left(\sum_{i=1}^n\pi_i\right)^2}
+```
 
 **ShannonPol:**
 ```python
@@ -97,6 +114,11 @@ The measures are divided into two subdirectories, those of literature and propos
    w1 = np.ones(5) / 5
    print(f"ER: {shannon(x, w1):.6f}")
 ```
+```math
+\mathrm{Shannon}_{\text{pol}}(M) = -\sum_{i=1}^{n} \pi_i \log_2 \left( 1 - \frac{|x_i - \mu_\vec{x}|}{x_{\max} - x_{\min}} \right)
+```
+
+where $\mu_\vec{x}=\sum_{i=1}^{n}{\pi_i x_i}$ is the mean of $\vec{x}$.
 
 **VanDerEijkPol:**
 ```python
@@ -112,9 +134,31 @@ The measures are divided into two subdirectories, those of literature and propos
    w1 = np.ones(5) / 5
    print(f"ER: {eijkpol(x, w1):.6f}")
 ```
+```math
+\mathrm{Eijk}_{\text{pol}}(M) = 1- \sum_{i} w_i \cdot A_i
+```
+Where $w_i$ is the proportion of cases in the empirical distribution contained in layer $i$, and $A_i$ is the agreement for layer $i$, calculated using
+```math
+A = U \cdot \left(1 - \frac{S - 1}{|\vec{x}| - 1}\right)
+```
+Where $S$ is the number of non-empty categories. For any pattern containing both 0's and 1's:
+
+```math
+U = \frac{(|\vec{x}| - 2) \cdot TU - (|\vec{x}| - 1) \cdot TDU}{(|\vec{x}| - 2) \cdot (TU + TDU)}
+```
+
+Here, $TU$ is the number of triplets of categories conforming to unimodality, $TDU$ is the number of triplets deviating from unimodality.
+
+For patterns consisting only of 1's (where $TU = TDU = 0$):
+
+```math
+U = 1
+```
 
 ### Proposed `measures.metrics.proposed`
+
 **Comete:**
+
 ```python
    from measures.metrics.proposed import Comete
 
@@ -127,6 +171,12 @@ The measures are divided into two subdirectories, those of literature and propos
    # Example: Uniform distribution
    w1 = np.ones(5) / 5
    print(f"ER: {comete(x, w1):.6f}")
+```
+
+Comète is defined as the minimum effort of carrying out a distribution $M$ towards the distribution with a single point of consensus $p=((x_p),(\pi_p))$, where $p\in\mathscr{D}$.
+
+```math
+\mathrm{Comete}_{\alpha,\beta}(M) = \min_{x_p} \sum_{i=1}^n \pi_{i}^\alpha |x_i-x_p|^\beta
 ```
 
 **BiPol:**
@@ -142,4 +192,7 @@ The measures are divided into two subdirectories, those of literature and propos
    # Example: Uniform distribution
    w1 = np.ones(5) / 5
    print(f"ER: {bipol(x, w1):.6f}")
+```
+```math
+\mathrm{BiPol}(M) := 4 \max_{A \cap B=\emptyset, A \cup B={x_1,...,x_n}} \dfrac{1}{n^2} \sum_{x \in A} \sum_{y \in B} |y-x|
 ```
