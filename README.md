@@ -32,10 +32,10 @@ This package includes the following polarization measurements:
 *   $\text{Shannon}_{pol}(M)$
 *   $\text{Eijk}_\text{pol}(M)$
 
-Where $M=(\vec{x},\vec{\pi}_m)\in\mathscr{D}$.
+Where $M=(\vec{x},\vec{\pi})\in\mathscr{D}$.
 
 ## Examples of use measures
-Let $M=(\vec{x},\vec{\pi})\in\mathscr{D}$.
+
 The measures are divided into two subdirectories, those of literature and proposals:
 
 ### Literature `measures.metrics.literature`
