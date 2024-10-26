@@ -199,6 +199,7 @@ Comète is defined as the minimum effort of carrying out a distribution $M$ towa
 ```math
 \mathrm{BiPol}(M) := 4 \max_{A \cap B=\emptyset, A \cup B={x_1,...,x_n}} \dfrac{1}{n^2} \sum_{x \in A} \sum_{y \in B} |y-x|
 ```
+---
 
 ### References to literature
 [1] [A New Measure of Congruence: The Earth Mover’s Distance](https://www.cambridge.org/core/journals/political-analysis/article/abs/new-measure-of-congruence-the-earth-movers-distance/8699CA3E41430C3E3B9086D0709B388A)
