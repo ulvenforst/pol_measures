@@ -2,7 +2,7 @@ import numpy as np
 from ...base import ParametricPolarizationMeasure
 from ...validation import validate_parameters
 
-class CometeMeasure(ParametricPolarizationMeasure):
+class Comete(ParametricPolarizationMeasure):
     def __init__(self, alpha: float = 1.0, beta: float = 1.0) -> None:
         super().__init__(alpha=alpha, beta=beta)
         self.precision = 1e-4

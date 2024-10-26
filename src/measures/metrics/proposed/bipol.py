@@ -1,7 +1,7 @@
 import numpy as np
 from ...base import PolarizationMeasure
 
-class BiPolMeasure(PolarizationMeasure):
+class BiPol(PolarizationMeasure):
     def compute(self, x: np.ndarray, weights: np.ndarray) -> float:
         mu = np.average(x, weights=weights)
 

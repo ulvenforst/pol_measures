@@ -1,7 +1,7 @@
 from ...base import PolarizationMeasure
 import numpy as np
 
-class ExpertsMeasure(PolarizationMeasure):
+class Experts(PolarizationMeasure):
     """
     Expert-based polarization measure for 5-category Likert scales.
     
@@ -26,7 +26,7 @@ class ExpertsMeasure(PolarizationMeasure):
 
 if __name__ == "__main__":
     # Crear instancia de la medida
-    expert = ExpertsMeasure()
+    expert = Experts()
     
     # Definir algunos casos de prueba
     x = np.array([0.0, 0.25, 0.5, 0.75, 1.0])

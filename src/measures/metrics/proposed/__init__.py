@@ -1,4 +1,4 @@
-from .comete import CometeMeasure
-from .bipol import BiPolMeasure
+from .comete import Comete
+from .bipol import BiPol
 
-__all__ = ["CometeMeasure", "BiPolMeasure"]
+__all__ = ["Comete", "BiPol"]

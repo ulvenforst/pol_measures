@@ -1,7 +1,7 @@
 from ...base import PolarizationMeasure
 import numpy as np
 
-class VanDerEijkMeasure(PolarizationMeasure):
+class VanDerEijkPol(PolarizationMeasure):
     """
     Van Der Eijk's agreement measure adapted as a polarization measure.
     
@@ -82,7 +82,7 @@ class VanDerEijkMeasure(PolarizationMeasure):
 
 if __name__ == "__main__":
     # Crear instancia de la medida
-    veijk = VanDerEijkMeasure()
+    veijk = VanDerEijkPol()
     
     # Casos de prueba
     print("\nPruebas con escala de 5 puntos:")

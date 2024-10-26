@@ -1,13 +1,13 @@
-from .esteban_ray import EstebanRayMeasure
+from .esteban_ray import EstebanRay
 from .emd import EMDPol
-from .experts import ExpertsMeasure
+from .experts import Experts
 from .shannon import ShannonPol
-from .van_der_eijk import VanDerEijkMeasure
+from .van_der_eijk import VanDerEijkPol
 
 __all__ = [
-    "EstebanRayMeasure",
+    "EstebanRay",
     "EMDPol",
-    "ExpertsMeasure",
+    "Experts",
     "ShannonPol",
-    "VanDerEijkMeasure"
+    "VanDerEijkPol"
 ]

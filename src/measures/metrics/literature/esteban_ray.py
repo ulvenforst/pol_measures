@@ -2,7 +2,7 @@ from ...base import ParametricPolarizationMeasure
 from typing import Optional
 import numpy as np
 
-class EstebanRayMeasure(ParametricPolarizationMeasure):
+class EstebanRay(ParametricPolarizationMeasure):
     def __init__(self, alpha: float = 1.6, K: Optional[float] = None) -> None:
         if not 0 < alpha <= 1.6:
             raise ValueError("alpha must be in (0, 1.6]")
@@ -23,7 +23,7 @@ class EstebanRayMeasure(ParametricPolarizationMeasure):
 
 if __name__ == "__main__":
     # Crear instancia con valores por defecto
-    er = EstebanRayMeasure()
+    er = EstebanRay()
     
     # Algunos casos de prueba
     x = np.array([0.0, 0.25, 0.5, 0.75, 1.0])
@@ -46,10 +46,10 @@ if __name__ == "__main__":
     # Probar con diferentes valores de alpha
     print("\nProbando diferentes valores de alpha en distribución bimodal:")
     for alpha in [0.5, 1.0, 1.6]:
-        er_alpha = EstebanRayMeasure(alpha=alpha)
+        er_alpha = EstebanRay(alpha=alpha)
         print(f"alpha = {alpha:.1f}: {er_alpha(x, w2):.6f}")
     
     # Probar con un K específico
     print("\nProbando con K específico (K=1.0):")
-    er_custom = EstebanRayMeasure(K=1.0)
+    er_custom = EstebanRay(K=1.0)
     print(f"Polarización: {er_custom(x, w2):.6f}")
