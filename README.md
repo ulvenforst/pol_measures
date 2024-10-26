@@ -35,6 +35,7 @@ This package includes the following polarization measurements:
 Where $M=(\vec{x},\vec{\pi}_m)\in\mathscr{D}$.
 
 ## Examples of use measures
+Let $M=(\vec{x},\vec{\pi})\in\mathscr{D}$.
 The measures are divided into two subdirectories, those of literature and proposals:
 
 ### Literature `measures.metrics.literature`
@@ -56,7 +57,7 @@ The measures are divided into two subdirectories, those of literature and propos
 \mathrm{EMD}_\text{pol}(M)=0.5-\mathrm{EMD}(M,\pi_{\max})
 ```
 
-Where $M=(\vec{x},\vec{\pi}_M), Q=(\vec{y},\vec{\pi}_Q)\in\mathscr{D}$, then
+Where $Q=(\vec{y},\vec{\pi}_Q)\in\mathscr{D}$, then
 ```math
 \mathrm{EMD}(M,Q)=\inf_{\gamma \in \Pi} \, \sum\limits_{x,y} \gamma (x,y)\Vert x - y \Vert
 ```
