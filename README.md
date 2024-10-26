@@ -80,7 +80,7 @@ Being $Q=(\vec{y},\vec{\pi}_Q)\in\mathscr{D}$.
    print(f"ER: {er(x, w1):.6f}")
 ```
 ```math
-\text{ER}(M)=K \sum _{i=1}^n \sum _{j=1}^n \pi _{i}^{1+\alpha}\pi _{j} |x_i-x_j|
+\text{ER}_{\alpha}(M)=K \sum _{i=1}^n \sum _{j=1}^n \pi _{i}^{1+\alpha}\pi _{j} |x_i-x_j|
 ```
 Where by default $K = 1 / (2(0.5^{2 + \alpha}))$.
 
