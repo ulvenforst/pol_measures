@@ -1,35 +1,77 @@
 import numpy as np
+from scipy.optimize import minimize_scalar
+from typing import cast
+from scipy.optimize._optimize import OptimizeResult
+
 from ...base import ParametricPolarizationMeasure
 from ...validation import validate_parameters
 
+# class Comete(ParametricPolarizationMeasure):
+#     def __init__(self, alpha: float = 1.0, beta: float = 1.0) -> None:
+#         super().__init__(alpha=alpha, beta=beta)
+#         self.precision = 1e-4
+#         self.tests_per_iter = 10
+        
+#     def _pol_aux(self, x: np.ndarray, weights: np.ndarray, y: float) -> float:
+#         return np.sum((weights ** self.parameters['alpha']) * 
+#                      (np.abs(x - y) ** self.parameters['beta']))
+    
+#     def _find_minimum(self, x: np.ndarray, weights: np.ndarray) -> tuple[float, float]:
+#         low = np.min(x)
+#         high = np.max(x)
+        
+#         while high - low > self.precision:
+#             lin = np.linspace(low, high, self.tests_per_iter)
+#             f_lin = [self._pol_aux(x, weights, y) for y in lin]
+#             i = int(np.argmin(f_lin))
+#             low = lin[max(0, i - 2)]
+#             high = lin[min(len(lin) - 1, i + 2)]
+            
+#         y_star = (low + high) / 2
+#         return y_star, self._pol_aux(x, weights, y_star)
+    
+#     def compute(self, x: np.ndarray, weights: np.ndarray) -> float:
+#         validate_parameters(**self.parameters)
+#         _, polarization = self._find_minimum(x, weights)
+#         return polarization
+
 class Comete(ParametricPolarizationMeasure):
+    """
+    Optimized implementation of Comète measure using scipy.optimize.
+    Defined as the minimum effort of carrying out a distribution M towards 
+    a single point of consensus p.
+    """
+    
     def __init__(self, alpha: float = 1.0, beta: float = 1.0) -> None:
         super().__init__(alpha=alpha, beta=beta)
-        self.precision = 1e-4
-        self.tests_per_iter = 10
-        
-    def _pol_aux(self, x: np.ndarray, weights: np.ndarray, y: float) -> float:
-        return np.sum((weights ** self.parameters['alpha']) * 
-                     (np.abs(x - y) ** self.parameters['beta']))
-    
-    def _find_minimum(self, x: np.ndarray, weights: np.ndarray) -> tuple[float, float]:
-        low = np.min(x)
-        high = np.max(x)
-        
-        while high - low > self.precision:
-            lin = np.linspace(low, high, self.tests_per_iter)
-            f_lin = [self._pol_aux(x, weights, y) for y in lin]
-            i = int(np.argmin(f_lin))
-            low = lin[max(0, i - 2)]
-            high = lin[min(len(lin) - 1, i + 2)]
-            
-        y_star = (low + high) / 2
-        return y_star, self._pol_aux(x, weights, y_star)
+        self._alpha = alpha
+        self._beta = beta
     
     def compute(self, x: np.ndarray, weights: np.ndarray) -> float:
+        """
+        Compute polarization using scipy's optimization.
+        
+        Parameters:
+            x (np.ndarray): The positions of the distribution
+            weights (np.ndarray): The weights of the distribution
+            
+        Returns:
+            float: Polarization value
+        """
         validate_parameters(**self.parameters)
-        _, polarization = self._find_minimum(x, weights)
-        return polarization
+        
+        weights_alpha = weights ** self._alpha
+        
+        def obj_func(y: float) -> float:
+            return float(np.sum(weights_alpha * (np.abs(x - y) ** self._beta)))
+        
+        result = cast(OptimizeResult, minimize_scalar(
+            obj_func,
+            bounds=(0, 1),
+            method='bounded'
+        ))
+        
+        return float(result.fun)
 
 if __name__ == "__main__":
    # Crear instancias con diferentes parámetros
