@@ -42,7 +42,7 @@ Where $M=(\vec{x},\vec{\pi})\in\mathscr{D}$.
 The measures are divided into two subdirectories, those of literature and proposals:
 
 ### Literature `measures.metrics.literature`
-**EMDPol:**
+**EMDPol [<sup>[source]</sup>](https://github.com/Ulvenforst/pol_measures/blob/main/src/measures/metrics/literature/emd.py):**
 ```python
    from measures.metrics.literature import EMDPol
 
@@ -67,7 +67,7 @@ Where $`\pi_{\max}=((x_1,\dots,x_n),(0.5,\dots,0.5))\in\mathscr{D}`$, then
 
 Being $Q=(\vec{y},\vec{\pi}_Q)\in\mathscr{D}$.
 
-**EstebanRay:**
+**EstebanRay [<sup>[source]</sup>](https://github.com/Ulvenforst/pol_measures/blob/main/src/measures/metrics/literature/esteban_ray.py):**
 
 ```python
    from measures.metrics.literature import EstebanRay
@@ -88,7 +88,7 @@ Being $Q=(\vec{y},\vec{\pi}_Q)\in\mathscr{D}$.
 Where by default $K = 1 / (2(0.5^{2 + \alpha}))$.
 
 
-**Experts:**
+**Experts [<sup>[source]</sup>](https://github.com/Ulvenforst/pol_measures/blob/main/src/measures/metrics/literature/experts.py):**
 ```python
    from measures.metrics.literature import Experts
 
@@ -106,7 +106,7 @@ Where by default $K = 1 / (2(0.5^{2 + \alpha}))$.
 \mathrm{Experts}(M)=\frac{2.14\pi_2\pi_4 + 2.70(\pi_1\pi_4 + \pi_2\pi_5)+3.96\pi_1\pi_5}{0.0099\left(\sum_{i=1}^n\pi_i\right)^2}
 ```
 
-**ShannonPol:**
+**ShannonPol [<sup>[source]</sup>](https://github.com/Ulvenforst/pol_measures/blob/main/src/measures/metrics/literature/shannon.py):**
 ```python
    from measures.metrics.literature import ShannonPol
 
@@ -126,7 +126,7 @@ Where by default $K = 1 / (2(0.5^{2 + \alpha}))$.
 
 where $\mu_\vec{x}=\sum_{i=1}^{n}{\pi_i x_i}$ is the mean of $\vec{x}$.
 
-**VanDerEijkPol:**
+**VanDerEijkPol [<sup>[source]</sup>](https://github.com/Ulvenforst/pol_measures/blob/main/src/measures/metrics/literature/van_der_eijk.py):**
 ```python
    from measures.metrics.literature import VanDerEijkPol
 
@@ -163,7 +163,7 @@ U = 1
 
 ### Proposed `measures.metrics.proposed`
 
-**Comete:**
+**Comete [<sup>[source]</sup>](https://github.com/Ulvenforst/pol_measures/blob/main/src/measures/metrics/proposed/comete.py):**
 
 ```python
    from measures.metrics.proposed import Comete
@@ -185,7 +185,7 @@ Comète is defined as the minimum effort of carrying out a distribution $M$ towa
 \mathrm{Comete}_{\alpha,\beta}(M) = \min_{x_p} \sum_{i=1}^n \pi_{i}^\alpha |x_i-x_p|^\beta
 ```
 
-**BiPol:**
+**BiPol [<sup>[source]</sup>](https://github.com/Ulvenforst/pol_measures/blob/main/src/measures/metrics/proposed/bipol.py):**
 ```python
    from measures.metrics.proposed import BiPol
 
