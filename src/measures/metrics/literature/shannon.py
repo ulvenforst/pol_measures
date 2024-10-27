@@ -15,10 +15,10 @@ class ShannonPol(PolarizationMeasure):
        dx = np.max(x) - np.min(x)
        
        # Añadimos epsilon para evitar log(0)
-       consensus = 1 + np.sum(weights * 
+       pol = -np.sum(weights * 
                             np.log2(1 - np.abs(x - mu_x) / dx + 
                                    np.finfo(float).eps))
-       return 1 - consensus
+       return pol
 
 if __name__ == "__main__":
    # Crear instancias de ambas medidas
