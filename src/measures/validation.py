@@ -1,14 +1,15 @@
 from typing import Tuple
 import numpy as np
 
+def minmax_normalize_x(x: np.ndarray) -> np.ndarray:
+    """Normalize x values to [0,1] range."""
+    x_min, x_max = np.min(x), np.max(x)
+    if x_min == x_max:
+        return np.zeros_like(x)
+    return (x - x_min) / (x_max - x_min)
+
 def validate_histogram(x: np.ndarray, 
                       weights: np.ndarray) -> Tuple[np.ndarray, np.ndarray]:
-    """
-    Validate and normalize histogram data.
-    
-    Returns:
-        Tuple containing validated and normalized x and weights arrays.
-    """
     x = np.asarray(x, dtype=np.float64)
     weights = np.asarray(weights, dtype=np.float64)
     
@@ -28,6 +29,7 @@ def validate_histogram(x: np.ndarray,
         raise ValueError("At least one weight must be positive")
     
     weights = weights / np.sum(weights)
+    x = minmax_normalize_x(x)  # Nueva línea
     
     return x, weights
 
