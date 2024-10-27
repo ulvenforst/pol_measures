@@ -40,7 +40,7 @@ This package includes the following polarization measurements:
 *   $\text{Shannon}_{pol}(M)$[<sup>[4]</sup>](#references-to-literature)
 *   $\text{Eijk}_\text{pol}(M)$[<sup>[5]</sup>](#references-to-literature)
 
-Where $M=(\vec{x},\vec{\pi})\in\mathscr{D}$; in code all measures receive this as two parameters `measure(np.array([...]), np.array([...]))` respectively.
+Where $M=(\vec{x},\vec{\pi})\in\mathscr{D}$; in code all measures receive this as two parameters `P(np.array([...]), np.array([...]))` respectively.
 
 ## Examples of use measures
 
