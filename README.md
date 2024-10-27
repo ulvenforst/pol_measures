@@ -8,7 +8,12 @@ A Python package for computing various polarization measures in PROMUEVA.
 pip install git+https://github.com/Ulvenforst/pol_measures.git
 ```
 
-If a new update is generated, you can uninstall the package and then reinstall it:
+If a new update is generated, you can update it:
+```bash
+pip install -U git+https://github.com/Ulvenforst/pol_measures.git
+```
+
+If you want to uninstall it:
 ```bash
 pip uninstall measures
 ```
