@@ -29,7 +29,7 @@ def validate_histogram(x: np.ndarray,
         raise ValueError("At least one weight must be positive")
     
     weights = weights / np.sum(weights)
-    x = minmax_normalize_x(x)  # Nueva línea
+    x = minmax_normalize_x(x)
     
     return x, weights
 

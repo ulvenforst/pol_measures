@@ -37,8 +37,8 @@ if __name__ == "__main__":
    comete_custom = Comete(alpha=1.2, beta=1.2)
    
    print("\nPruebas con escala de 5 puntos:")
-   # x = np.linspace(0, 1, 5)
-   x = np.array([1, 2, 3, 4, 5])
+   x = np.linspace(0, 1, 5)
+   # x = np.array([1, 2, 3, 4, 5])
    
    # Caso 1: Distribución uniforme
    w1 = np.ones(5) / 5
