@@ -32,7 +32,7 @@ A polarization measure is a function $P:\mathscr{D}\to\mathbb{R}_+$.
 
 This package includes the following polarization measurements:
 
-*   $\mathrm{Comete}_{\alpha,\beta}(M)$<sup>[Implemented by Carlos Pinzón]</sup>
+*   $\mathrm{Comete}_{\alpha,\beta}(M)$
 *   $\text{BiPol}(M)$<sup>[Implemented by Carlos Pinzón]</sup>
 *   $\mathrm{EMD}_\text{pol}(M)$[<sup>[1]</sup>](#references-to-literature)
 *   $\text{Experts}(M)$[<sup>[2]</sup>](#references-to-literature)
