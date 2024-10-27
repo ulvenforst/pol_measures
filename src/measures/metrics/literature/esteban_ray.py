@@ -10,7 +10,6 @@ class EstebanRay(ParametricPolarizationMeasure):
         super().__init__(alpha=alpha, K=K)
     
     def compute(self, x: np.ndarray, weights: np.ndarray) -> float:
-        weights = weights / np.sum(weights)
         
         K = self.parameters['K']
         if K is None:

@@ -30,7 +30,6 @@ class EMDPol(PolarizationMeasure):
     
     def compute(self, x: np.ndarray, weights: np.ndarray) -> float:
         n = len(weights)
-        weights = weights / np.sum(weights)
         
         left_mass = right_mass = 0.5
         total_cost = 0

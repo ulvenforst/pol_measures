@@ -11,7 +11,6 @@ class ShannonPol(PolarizationMeasure):
    """
    
    def compute(self, x: np.ndarray, weights: np.ndarray) -> float:
-       weights = weights / np.sum(weights)
        mu_x = np.sum(weights * x)
        dx = np.max(x) - np.min(x)
        
