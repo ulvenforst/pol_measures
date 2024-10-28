@@ -18,7 +18,7 @@ If you want to uninstall it:
 pip uninstall measures
 ```
 
-[Google Colab example]([https://colab.research.google.com/drive/1g_UgozULgUGjM0gSyZ-Hg59kUtMxnJKi?usp=sharing](https://colab.research.google.com/drive/1Y-MXnGYElXNVl0fhdVodj3IEJEKdI-Rk?usp=sharing))
+[Google Colab example](https://colab.research.google.com/drive/1Y-MXnGYElXNVl0fhdVodj3IEJEKdI-Rk?usp=sharing)
 
 ---
 
