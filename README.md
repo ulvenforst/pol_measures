@@ -174,7 +174,7 @@ U = 1
    from measures.metrics.proposed import Comete
 
    # Create measure instance
-   comete = Comete(alpha=1.0, beta=1.0)
+   comete = Comete(alpha=1.0, beta=1.0) # CometeNormalized(alpha=1.0, beta=1.0) can also be used (It is still being developed)
 
    # Define test cases
    x = np.array([0.0, 0.25, 0.5, 0.75, 1.0])
