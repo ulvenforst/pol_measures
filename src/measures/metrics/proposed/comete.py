@@ -12,7 +12,7 @@ class Comete(ParametricPolarizationMeasure):
     a single point of consensus p.
     """
     
-    def __init__(self, alpha: float = 1.0, beta: float = 1.0) -> None:
+    def __init__(self, alpha: float = 1.2, beta: float = 1.2) -> None:
         super().__init__(alpha=alpha, beta=beta)
         self._alpha = alpha
         self._beta = beta
@@ -49,7 +49,7 @@ class CometeNormalized(ParametricPolarizationMeasure):
     possible value (which occurs when the population is divided between the extremes).
     """
     
-    def __init__(self, alpha: float = 1.0, beta: float = 1.0) -> None:
+    def __init__(self, alpha: float = 1.2, beta: float = 1.2) -> None:
         super().__init__(alpha=alpha, beta=beta)
         self._alpha = alpha
         self._beta = beta
