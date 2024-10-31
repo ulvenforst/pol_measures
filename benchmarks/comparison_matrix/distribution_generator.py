@@ -16,16 +16,13 @@ def generate_distributions(n: int, k: int = 5) -> Iterator[Tuple[np.ndarray, np.
         Tuple[np.ndarray, np.ndarray]: (x, weights) where x is bin positions and weights 
         are normalized frequencies
     """
-    x = np.linspace(0, 1, k)  # Bin positions
+    x = np.linspace(0, 1, k)
     
-    # Generate all possible distributions
     for combination in combinations_with_replacement(range(k), n):
-        # Count frequencies
         weights = np.zeros(k)
         for i in combination:
             weights[i] += 1
         
-        # Normalize weights
         weights = weights / n
         
         yield x, weights
