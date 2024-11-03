@@ -1,0 +1,384 @@
+RANKINGS Y VALORES DE POLARIZACIÓN
+==================================================
+
+Orden original según expertos:
+Orden: [3, 10, 1, 12, 13, 15, 5, 6, 9, 11, 2, 7, 8, 4, 14]
+Ranking: [np.float64(3.0), np.float64(11.0), np.float64(1.0), np.float64(14.0), np.float64(7.0), np.float64(8.0), np.float64(12.0), np.float64(13.0), np.float64(9.0), np.float64(2.0), np.float64(10.0), np.float64(4.0), np.float64(5.0), np.float64(15.0), np.float64(6.0)]
+
+
+Comete(1,1):
+------------------------------
+Valores de polarización (orden original):
+Distribución 1: 0.197500
+Distribución 2: 0.280000
+Distribución 3: 0.089844
+Distribución 4: 0.342500
+Distribución 5: 0.232323
+Distribución 6: 0.232323
+Distribución 7: 0.265000
+Distribución 8: 0.272500
+Distribución 9: 0.307500
+Distribución 10: 0.154041
+Distribución 11: 0.257500
+Distribución 12: 0.187501
+Distribución 13: 0.247500
+Distribución 14: 0.407500
+Distribución 15: 0.185000
+
+Orden producido:
+[np.int64(3), np.int64(10), np.int64(15), np.int64(12), np.int64(1), np.int64(6), np.int64(5), np.int64(13), np.int64(11), np.int64(7), np.int64(8), np.int64(2), np.int64(9), np.int64(4), np.int64(14)]
+
+Ranking resultante:
+[np.float64(5.0), np.float64(12.0), np.float64(1.0), np.float64(14.0), np.float64(7.0), np.float64(6.0), np.float64(10.0), np.float64(11.0), np.float64(13.0), np.float64(2.0), np.float64(9.0), np.float64(4.0), np.float64(8.0), np.float64(15.0), np.float64(3.0)]
+
+Correlación de Kendall con orden original: 0.752381
+
+==================================================
+
+Comete(1.2,1.2):
+------------------------------
+Valores de polarización (orden original):
+Distribución 1: 0.108666
+Distribución 2: 0.169820
+Distribución 3: 0.043384
+Distribución 4: 0.217876
+Distribución 5: 0.134722
+Distribución 6: 0.133942
+Distribución 7: 0.166971
+Distribución 8: 0.162153
+Distribución 9: 0.187089
+Distribución 10: 0.084037
+Distribución 11: 0.149964
+Distribución 12: 0.106321
+Distribución 13: 0.142386
+Distribución 14: 0.276591
+Distribución 15: 0.103460
+
+Orden producido:
+[np.int64(3), np.int64(10), np.int64(15), np.int64(12), np.int64(1), np.int64(6), np.int64(5), np.int64(13), np.int64(11), np.int64(8), np.int64(7), np.int64(2), np.int64(9), np.int64(4), np.int64(14)]
+
+Ranking resultante:
+[np.float64(5.0), np.float64(12.0), np.float64(1.0), np.float64(14.0), np.float64(7.0), np.float64(6.0), np.float64(11.0), np.float64(10.0), np.float64(13.0), np.float64(2.0), np.float64(9.0), np.float64(4.0), np.float64(8.0), np.float64(15.0), np.float64(3.0)]
+
+Correlación de Kendall con orden original: 0.733333
+
+==================================================
+
+Comete(2,1):
+------------------------------
+Valores de polarización (orden original):
+Distribución 1: 0.024335
+Distribución 2: 0.059235
+Distribución 3: 0.007239
+Distribución 4: 0.066990
+Distribución 5: 0.033420
+Distribución 6: 0.032106
+Distribución 7: 0.060374
+Distribución 8: 0.059782
+Distribución 9: 0.052810
+Distribución 10: 0.024016
+Distribución 11: 0.045733
+Distribución 12: 0.030717
+Distribución 13: 0.034259
+Distribución 14: 0.113892
+Distribución 15: 0.028816
+
+Orden producido:
+[np.int64(3), np.int64(10), np.int64(1), np.int64(15), np.int64(12), np.int64(6), np.int64(5), np.int64(13), np.int64(11), np.int64(9), np.int64(2), np.int64(8), np.int64(7), np.int64(4), np.int64(14)]
+
+Ranking resultante:
+[np.float64(3.0), np.float64(11.0), np.float64(1.0), np.float64(14.0), np.float64(7.0), np.float64(6.0), np.float64(13.0), np.float64(12.0), np.float64(10.0), np.float64(2.0), np.float64(9.0), np.float64(5.0), np.float64(8.0), np.float64(15.0), np.float64(4.0)]
+
+Correlación de Kendall con orden original: 0.866667
+
+==================================================
+
+Comete(1,2):
+------------------------------
+Valores de polarización (orden original):
+Distribución 1: 0.048216
+Distribución 2: 0.070837
+Distribución 3: 0.016696
+Distribución 4: 0.107880
+Distribución 5: 0.057149
+Distribución 6: 0.058115
+Distribución 7: 0.075293
+Distribución 8: 0.064487
+Distribución 9: 0.094420
+Distribución 10: 0.030920
+Distribución 11: 0.066155
+Distribución 12: 0.042809
+Distribución 13: 0.067892
+Distribución 14: 0.152649
+Distribución 15: 0.041715
+
+Orden producido:
+[np.int64(3), np.int64(10), np.int64(15), np.int64(12), np.int64(1), np.int64(5), np.int64(6), np.int64(8), np.int64(11), np.int64(13), np.int64(2), np.int64(7), np.int64(9), np.int64(4), np.int64(14)]
+
+Ranking resultante:
+[np.float64(5.0), np.float64(11.0), np.float64(1.0), np.float64(14.0), np.float64(6.0), np.float64(7.0), np.float64(12.0), np.float64(8.0), np.float64(13.0), np.float64(2.0), np.float64(9.0), np.float64(4.0), np.float64(10.0), np.float64(15.0), np.float64(3.0)]
+
+Correlación de Kendall con orden original: 0.714286
+
+==================================================
+
+Comete(2,2):
+------------------------------
+Valores de polarización (orden original):
+Distribución 1: 0.010029
+Distribución 2: 0.024135
+Distribución 3: 0.002517
+Distribución 4: 0.033480
+Distribución 5: 0.013660
+Distribución 6: 0.012989
+Distribución 7: 0.027555
+Distribución 8: 0.021305
+Distribución 9: 0.026802
+Distribución 10: 0.008113
+Distribución 11: 0.017592
+Distribución 12: 0.011325
+Distribución 13: 0.015753
+Distribución 14: 0.064374
+Distribución 15: 0.010517
+
+Orden producido:
+[np.int64(3), np.int64(10), np.int64(1), np.int64(15), np.int64(12), np.int64(6), np.int64(5), np.int64(13), np.int64(11), np.int64(8), np.int64(2), np.int64(9), np.int64(7), np.int64(4), np.int64(14)]
+
+Ranking resultante:
+[np.float64(3.0), np.float64(11.0), np.float64(1.0), np.float64(14.0), np.float64(7.0), np.float64(6.0), np.float64(13.0), np.float64(10.0), np.float64(12.0), np.float64(2.0), np.float64(9.0), np.float64(5.0), np.float64(8.0), np.float64(15.0), np.float64(4.0)]
+
+Correlación de Kendall con orden original: 0.809524
+
+==================================================
+
+EMD:
+------------------------------
+Valores de polarización (orden original):
+Distribución 1: 0.197500
+Distribución 2: 0.280000
+Distribución 3: 0.089844
+Distribución 4: 0.342500
+Distribución 5: 0.232323
+Distribución 6: 0.232323
+Distribución 7: 0.265000
+Distribución 8: 0.272500
+Distribución 9: 0.307500
+Distribución 10: 0.154040
+Distribución 11: 0.257500
+Distribución 12: 0.187500
+Distribución 13: 0.247500
+Distribución 14: 0.407500
+Distribución 15: 0.185000
+
+Orden producido:
+[np.int64(3), np.int64(10), np.int64(15), np.int64(12), np.int64(1), np.int64(6), np.int64(5), np.int64(13), np.int64(11), np.int64(7), np.int64(8), np.int64(2), np.int64(9), np.int64(4), np.int64(14)]
+
+Ranking resultante:
+[np.float64(5.0), np.float64(12.0), np.float64(1.0), np.float64(14.0), np.float64(7.0), np.float64(6.0), np.float64(10.0), np.float64(11.0), np.float64(13.0), np.float64(2.0), np.float64(9.0), np.float64(4.0), np.float64(8.0), np.float64(15.0), np.float64(3.0)]
+
+Correlación de Kendall con orden original: 0.752381
+
+==================================================
+
+ER(1.6):
+------------------------------
+Valores de polarización (orden original):
+Distribución 1: 0.184169
+Distribución 2: 0.288214
+Distribución 3: 0.222844
+Distribución 4: 0.265297
+Distribución 5: 0.257718
+Distribución 6: 0.257417
+Distribución 7: 0.277772
+Distribución 8: 0.289997
+Distribución 9: 0.191103
+Distribución 10: 0.199309
+Distribución 11: 0.232647
+Distribución 12: 0.198885
+Distribución 13: 0.169160
+Distribución 14: 0.428881
+Distribución 15: 0.195345
+
+Orden producido:
+[np.int64(13), np.int64(1), np.int64(9), np.int64(15), np.int64(12), np.int64(10), np.int64(3), np.int64(11), np.int64(6), np.int64(5), np.int64(4), np.int64(7), np.int64(2), np.int64(8), np.int64(14)]
+
+Ranking resultante:
+[np.float64(2.0), np.float64(13.0), np.float64(7.0), np.float64(11.0), np.float64(10.0), np.float64(9.0), np.float64(12.0), np.float64(14.0), np.float64(3.0), np.float64(6.0), np.float64(8.0), np.float64(5.0), np.float64(1.0), np.float64(15.0), np.float64(4.0)]
+
+Correlación de Kendall con orden original: 0.523810
+
+==================================================
+
+ER(0.8):
+------------------------------
+Valores de polarización (orden original):
+Distribución 1: 0.303704
+Distribución 2: 0.416939
+Distribución 3: 0.212003
+Distribución 4: 0.468137
+Distribución 5: 0.359567
+Distribución 6: 0.358324
+Distribución 7: 0.425396
+Distribución 8: 0.400592
+Distribución 9: 0.394093
+Distribución 10: 0.280571
+Distribución 11: 0.370067
+Distribución 12: 0.311332
+Distribución 13: 0.335958
+Distribución 14: 0.606501
+Distribución 15: 0.304743
+
+Orden producido:
+[np.int64(3), np.int64(10), np.int64(1), np.int64(15), np.int64(12), np.int64(13), np.int64(6), np.int64(5), np.int64(11), np.int64(9), np.int64(8), np.int64(2), np.int64(7), np.int64(4), np.int64(14)]
+
+Ranking resultante:
+[np.float64(3.0), np.float64(12.0), np.float64(1.0), np.float64(14.0), np.float64(8.0), np.float64(7.0), np.float64(13.0), np.float64(11.0), np.float64(10.0), np.float64(2.0), np.float64(9.0), np.float64(5.0), np.float64(6.0), np.float64(15.0), np.float64(4.0)]
+
+Correlación de Kendall con orden original: 0.885714
+
+==================================================
+
+Experts:
+------------------------------
+Valores de polarización (orden original):
+Distribución 1: 0.231297
+Distribución 2: 0.290451
+Distribución 3: 0.057262
+Distribución 4: 0.674495
+Distribución 5: 0.266813
+Distribución 6: 0.277230
+Distribución 7: 0.487784
+Distribución 8: 0.506196
+Distribución 9: 0.481905
+Distribución 10: 0.176908
+Distribución 11: 0.274683
+Distribución 12: 0.236309
+Distribución 13: 0.336788
+Distribución 14: 0.731232
+Distribución 15: 0.230188
+
+Orden producido:
+[np.int64(3), np.int64(10), np.int64(15), np.int64(1), np.int64(12), np.int64(5), np.int64(11), np.int64(6), np.int64(2), np.int64(13), np.int64(9), np.int64(7), np.int64(8), np.int64(4), np.int64(14)]
+
+Ranking resultante:
+[np.float64(4.0), np.float64(9.0), np.float64(1.0), np.float64(14.0), np.float64(6.0), np.float64(8.0), np.float64(12.0), np.float64(13.0), np.float64(11.0), np.float64(2.0), np.float64(7.0), np.float64(5.0), np.float64(10.0), np.float64(15.0), np.float64(3.0)]
+
+Correlación de Kendall con orden original: 0.809524
+
+==================================================
+
+Shannon:
+------------------------------
+Valores de polarización (orden original):
+Distribución 1: 0.371027
+Distribución 2: 0.500913
+Distribución 3: 0.160950
+Distribución 4: 0.666444
+Distribución 5: 0.431440
+Distribución 6: 0.437406
+Distribución 7: 0.510899
+Distribución 8: 0.482115
+Distribución 9: 0.582513
+Distribución 10: 0.267606
+Distribución 11: 0.486851
+Distribución 12: 0.344132
+Distribución 13: 0.463140
+Distribución 14: 0.797437
+Distribución 15: 0.337449
+
+Orden producido:
+[np.int64(3), np.int64(10), np.int64(15), np.int64(12), np.int64(1), np.int64(5), np.int64(6), np.int64(13), np.int64(8), np.int64(11), np.int64(2), np.int64(7), np.int64(9), np.int64(4), np.int64(14)]
+
+Ranking resultante:
+[np.float64(5.0), np.float64(11.0), np.float64(1.0), np.float64(14.0), np.float64(6.0), np.float64(7.0), np.float64(12.0), np.float64(9.0), np.float64(13.0), np.float64(2.0), np.float64(10.0), np.float64(4.0), np.float64(8.0), np.float64(15.0), np.float64(3.0)]
+
+Correlación de Kendall con orden original: 0.752381
+
+==================================================
+
+VanDerEijk:
+------------------------------
+Valores de polarización (orden original):
+Distribución 1: 0.312500
+Distribución 2: 0.366667
+Distribución 3: 0.136719
+Distribución 4: 0.526667
+Distribución 5: 0.260101
+Distribución 6: 0.260101
+Distribución 7: 0.434167
+Distribución 8: 0.441667
+Distribución 9: 0.514167
+Distribución 10: 0.237374
+Distribución 11: 0.350833
+Distribución 12: 0.272500
+Distribución 13: 0.405000
+Distribución 14: 0.744722
+Distribución 15: 0.272500
+
+Orden producido:
+[np.int64(3), np.int64(10), np.int64(5), np.int64(6), np.int64(12), np.int64(15), np.int64(1), np.int64(11), np.int64(2), np.int64(13), np.int64(7), np.int64(8), np.int64(9), np.int64(4), np.int64(14)]
+
+Ranking resultante:
+[np.float64(7.0), np.float64(9.0), np.float64(1.0), np.float64(14.0), np.float64(3.0), np.float64(4.0), np.float64(11.0), np.float64(12.0), np.float64(13.0), np.float64(2.0), np.float64(8.0), np.float64(5.0), np.float64(10.0), np.float64(15.0), np.float64(6.0)]
+
+Correlación de Kendall con orden original: 0.676190
+
+==================================================
+
+BiPol:
+------------------------------
+Valores de polarización (orden original):
+Distribución 1: 0.411200
+Distribución 2: 0.563200
+Distribución 3: 0.185059
+Distribución 4: 0.711100
+Distribución 5: 0.472197
+Distribución 6: 0.472605
+Distribución 7: 0.571400
+Distribución 8: 0.546500
+Distribución 9: 0.615900
+Distribución 10: 0.310274
+Distribución 11: 0.533600
+Distribución 12: 0.394800
+Distribución 13: 0.499200
+Distribución 14: 0.815400
+Distribución 15: 0.385200
+
+Orden producido:
+[np.int64(3), np.int64(10), np.int64(15), np.int64(12), np.int64(1), np.int64(5), np.int64(6), np.int64(13), np.int64(11), np.int64(8), np.int64(2), np.int64(7), np.int64(9), np.int64(4), np.int64(14)]
+
+Ranking resultante:
+[np.float64(5.0), np.float64(11.0), np.float64(1.0), np.float64(14.0), np.float64(6.0), np.float64(7.0), np.float64(12.0), np.float64(10.0), np.float64(13.0), np.float64(2.0), np.float64(9.0), np.float64(4.0), np.float64(8.0), np.float64(15.0), np.float64(3.0)]
+
+Correlación de Kendall con orden original: 0.771429
+
+==================================================
+
+RealMeanExp:
+------------------------------
+Valores de polarización (orden original):
+Distribución 1: 16.965500
+Distribución 2: 35.896600
+Distribución 3: 6.620700
+Distribución 4: 70.051700
+Distribución 5: 26.862100
+Distribución 6: 27.051700
+Distribución 7: 49.586200
+Distribución 8: 59.051700
+Distribución 9: 28.758600
+Distribución 10: 13.120700
+Distribución 11: 30.500000
+Distribución 12: 21.810300
+Distribución 13: 22.706900
+Distribución 14: 85.948300
+Distribución 15: 22.896600
+
+Orden producido:
+[np.int64(3), np.int64(10), np.int64(1), np.int64(12), np.int64(13), np.int64(15), np.int64(5), np.int64(6), np.int64(9), np.int64(11), np.int64(2), np.int64(7), np.int64(8), np.int64(4), np.int64(14)]
+
+Ranking resultante:
+[np.float64(3.0), np.float64(11.0), np.float64(1.0), np.float64(14.0), np.float64(7.0), np.float64(8.0), np.float64(12.0), np.float64(13.0), np.float64(9.0), np.float64(2.0), np.float64(10.0), np.float64(4.0), np.float64(5.0), np.float64(15.0), np.float64(6.0)]
+
+Correlación de Kendall con orden original: 1.000000
+
+==================================================
