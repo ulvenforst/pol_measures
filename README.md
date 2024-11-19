@@ -168,7 +168,7 @@ U = 1
 
 ### Proposed `measures.metrics.proposed`
 
-**MEC [<sup>[source]</sup>](https://github.com/Ulvenforst/pol_measures/blob/main/src/measures/metrics/proposed/MEC.py):**
+**MEC [<sup>[source]</sup>](https://github.com/Ulvenforst/pol_measures/blob/main/src/measures/metrics/proposed/mec.py):**
 
 ```python
    from measures.metrics.proposed import MEC
