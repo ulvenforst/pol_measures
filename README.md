@@ -22,7 +22,7 @@ pip uninstall measures
 
 ---
 
-A distribution is denoted by a pair of $n$-dimensional vectors $`(\vec{x},\vec{\pi})=((x_1,\dots,x_n),(\pi_1,\dots,\pi_n))\in\mathbb{R}^n\times\mathbb{R}_{+}^n`$ for some $`n\in\mathbb{N}`$, where $`\pi_i`$ is the population of individuals with attribute $`x_i`$ and $`\sum_{i=1}^n\pi_i=1`$. $`x_i\neq x_j`$ for distict $`i,j\in\{1,\dots,n\}`$. For normalization purposes $`0\leqslant x_i\leqslant 1`$.
+An opinion opinion distribution is denoted by a pair of $n$-dimensional vectors $`(\vec{x},\vec{\pi})=((x_1,\dots,x_n),(\pi_1,\dots,\pi_n))\in\mathbb{R}^n\times\mathbb{R}_{+}^n`$ for some $`n\in\mathbb{N}`$, where $`\pi_i`$ is the population of individuals with attribute $`x_i`$ and $`\sum_{i=1}^n\pi_i=1`$. $`x_i\neq x_j`$ for distict $`i,j\in\{1,\dots,n\}`$. For normalization purposes $`0\leqslant x_i\leqslant 1`$.
 
 ```math
 \mathscr{D}\equiv\bigcup_{n=1}^{\infty}{\mathbb{R}_{+}^n\times \{\vec{x}\in\mathbb{R}^n: x_i\neq x_j\ \text{for all distict}\ i,j\in\{1,\dots,n\} \}}
@@ -32,7 +32,7 @@ A polarization measure is a function $P:\mathscr{D}\to\mathbb{R}_+$.
 
 This package includes the following polarization measurements:
 
-*   $\mathrm{Comete}_{\alpha,\beta}(M)$
+*   $\mathrm{MEC}_{\alpha,\beta}(M)$
 *   $\text{BiPol}(M)$<sup>[Implemented by Carlos Pinzón]</sup>
 *   $\mathrm{EMD}_\text{pol}(M)$[<sup>[1]</sup>](#references-to-literature)
 *   $\text{Experts}(M)$[<sup>[2]</sup>](#references-to-literature)
@@ -57,7 +57,7 @@ The measures are divided into two subdirectories, those of literature and propos
    # Define test cases
    x = np.array([0.0, 0.25, 0.5, 0.75, 1.0])
    
-   # Example: Uniform distribution
+   # Example: Uniform opinion distribution
    w1 = np.ones(5) / 5
    print(f"EMD: {emd(x, w1):.6f}")
 ```
@@ -78,12 +78,12 @@ Being $Q=(\vec{y},\vec{\pi}_Q)\in\mathscr{D}$.
    from measures.metrics.literature import EstebanRay
 
    # Create measure instance
-   er = EstebanRay(alpha=1.0) # If alpha is not indicated, the default is 1.6
+   er = EstebanRay(alpha=1.0) # If alpha is not indicated, the default is 0.8
    
    # Define test cases
    x = np.array([0.0, 0.25, 0.5, 0.75, 1.0])
    
-   # Example: Uniform distribution
+   # Example: Uniform opinion distribution
    w1 = np.ones(5) / 5
    print(f"ER: {er(x, w1):.6f}")
 ```
@@ -103,7 +103,7 @@ Where by default $K = 1 / (2(0.5^{2 + \alpha}))$.
    # Define test cases
    x = np.array([0.0, 0.25, 0.5, 0.75, 1.0])
    
-   # Example: Uniform distribution
+   # Example: Uniform opinion distribution
    w1 = np.ones(5) / 5
    print(f"ER: {expert(x, w1):.6f}")
 ```
@@ -121,7 +121,7 @@ Where by default $K = 1 / (2(0.5^{2 + \alpha}))$.
    # Define test cases
    x = np.array([0.0, 0.25, 0.5, 0.75, 1.0])
    
-   # Example: Uniform distribution
+   # Example: Uniform opinion distribution
    w1 = np.ones(5) / 5
    print(f"ER: {shannon(x, w1):.6f}")
 ```
@@ -141,7 +141,7 @@ where $\mu_\vec{x}=\sum_{i=1}^{n}{\pi_i x_i}$ is the mean of $\vec{x}$.
    # Define test cases
    x = np.array([0.0, 0.25, 0.5, 0.75, 1.0])
    
-   # Example: Uniform distribution
+   # Example: Uniform opinion distribution
    w1 = np.ones(5) / 5
    print(f"ER: {eijkpol(x, w1):.6f}")
 ```
@@ -168,26 +168,26 @@ U = 1
 
 ### Proposed `measures.metrics.proposed`
 
-**Comete [<sup>[source]</sup>](https://github.com/Ulvenforst/pol_measures/blob/main/src/measures/metrics/proposed/comete.py):**
+**MEC [<sup>[source]</sup>](https://github.com/Ulvenforst/pol_measures/blob/main/src/measures/metrics/proposed/MEC.py):**
 
 ```python
-   from measures.metrics.proposed import Comete
+   from measures.metrics.proposed import MEC
 
    # Create measure instance
-   comete = Comete(alpha=1.0, beta=1.0) # CometeNormalized(alpha=1.0, beta=1.0) can also be used (It is still being developed)
+   MEC = MEC(alpha=1.0, beta=1.0) # MECNormalized(alpha=1.0, beta=1.0) can also be used (It is still being developed)
 
    # Define test cases
    x = np.array([0.0, 0.25, 0.5, 0.75, 1.0])
    
-   # Example: Uniform distribution
+   # Example: Uniform opinion distribution
    w1 = np.ones(5) / 5
-   print(f"ER: {comete(x, w1):.6f}")
+   print(f"ER: {MEC(x, w1):.6f}")
 ```
 
-Comète is defined as the minimum effort of carrying out a distribution $M$ towards the distribution with a single point of consensus $p=((x_p),(\pi_p))$, where $p\in\mathscr{D}$.
+MEC is defined as the minimum effort of carrying out a opinion distribution $M$ towards the opinion distribution with a single point of consensus $p=((x_p),(\pi_p))$, where $p\in\mathscr{D}$.
 
 ```math
-\mathrm{Comete}_{\alpha,\beta}(M) = \min_{x_p} \sum_{i=1}^n \pi_{i}^\alpha |x_i-x_p|^\beta
+\mathrm{MEC}_{\alpha,\beta}(M) = \min_{x_p} \sum_{i=1}^n \pi_{i}^\alpha |x_i-x_p|^\beta
 ```
 
 **BiPol [<sup>[source]</sup>](https://github.com/Ulvenforst/pol_measures/blob/main/src/measures/metrics/proposed/bipol.py):**
@@ -200,7 +200,7 @@ Comète is defined as the minimum effort of carrying out a distribution $M$ towa
    # Define test cases
    x = np.array([0.0, 0.25, 0.5, 0.75, 1.0])
    
-   # Example: Uniform distribution
+   # Example: Uniform opinion distribution
    w1 = np.ones(5) / 5
    print(f"ER: {bipol(x, w1):.6f}")
 ```
