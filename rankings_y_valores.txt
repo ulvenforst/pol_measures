@@ -6,7 +6,7 @@ Orden: [3, 10, 1, 12, 13, 15, 5, 6, 9, 11, 2, 7, 8, 4, 14]
 Ranking: [np.float64(3.0), np.float64(11.0), np.float64(1.0), np.float64(14.0), np.float64(7.0), np.float64(8.0), np.float64(12.0), np.float64(13.0), np.float64(9.0), np.float64(2.0), np.float64(10.0), np.float64(4.0), np.float64(5.0), np.float64(15.0), np.float64(6.0)]
 
 
-Comete(1,1):
+MEC(1,1):
 ------------------------------
 Valores de polarización (orden original):
 Distribución 1: 0.197500
@@ -35,7 +35,7 @@ Correlación de Kendall con orden original: 0.752381
 
 ==================================================
 
-Comete(1.2,1.2):
+MEC(1.2,1.2):
 ------------------------------
 Valores de polarización (orden original):
 Distribución 1: 0.108666
@@ -64,7 +64,7 @@ Correlación de Kendall con orden original: 0.733333
 
 ==================================================
 
-Comete(2,1):
+MEC(2,1.2):
 ------------------------------
 Valores de polarización (orden original):
 Distribución 1: 0.024335
@@ -93,7 +93,7 @@ Correlación de Kendall con orden original: 0.866667
 
 ==================================================
 
-Comete(1,2):
+MEC(1.2,2):
 ------------------------------
 Valores de polarización (orden original):
 Distribución 1: 0.048216
@@ -122,7 +122,7 @@ Correlación de Kendall con orden original: 0.714286
 
 ==================================================
 
-Comete(2,2):
+MEC(2,2):
 ------------------------------
 Valores de polarización (orden original):
 Distribución 1: 0.010029
@@ -183,29 +183,29 @@ Correlación de Kendall con orden original: 0.752381
 ER(1.6):
 ------------------------------
 Valores de polarización (orden original):
-Distribución 1: 0.184169
-Distribución 2: 0.288214
-Distribución 3: 0.222844
-Distribución 4: 0.265297
-Distribución 5: 0.257718
-Distribución 6: 0.257417
-Distribución 7: 0.277772
-Distribución 8: 0.289997
-Distribución 9: 0.191103
-Distribución 10: 0.199309
-Distribución 11: 0.232647
-Distribución 12: 0.198885
-Distribución 13: 0.169160
-Distribución 14: 0.428881
-Distribución 15: 0.195345
+Distribución 1: 0.303704
+Distribución 2: 0.416939
+Distribución 3: 0.212003
+Distribución 4: 0.468137
+Distribución 5: 0.359567
+Distribución 6: 0.358324
+Distribución 7: 0.425396
+Distribución 8: 0.400592
+Distribución 9: 0.394093
+Distribución 10: 0.280571
+Distribución 11: 0.370067
+Distribución 12: 0.311332
+Distribución 13: 0.335958
+Distribución 14: 0.606501
+Distribución 15: 0.304743
 
 Orden producido:
-[np.int64(13), np.int64(1), np.int64(9), np.int64(15), np.int64(12), np.int64(10), np.int64(3), np.int64(11), np.int64(6), np.int64(5), np.int64(4), np.int64(7), np.int64(2), np.int64(8), np.int64(14)]
+[np.int64(3), np.int64(10), np.int64(1), np.int64(15), np.int64(12), np.int64(13), np.int64(6), np.int64(5), np.int64(11), np.int64(9), np.int64(8), np.int64(2), np.int64(7), np.int64(4), np.int64(14)]
 
 Ranking resultante:
-[np.float64(2.0), np.float64(13.0), np.float64(7.0), np.float64(11.0), np.float64(10.0), np.float64(9.0), np.float64(12.0), np.float64(14.0), np.float64(3.0), np.float64(6.0), np.float64(8.0), np.float64(5.0), np.float64(1.0), np.float64(15.0), np.float64(4.0)]
+[np.float64(3.0), np.float64(12.0), np.float64(1.0), np.float64(14.0), np.float64(8.0), np.float64(7.0), np.float64(13.0), np.float64(11.0), np.float64(10.0), np.float64(2.0), np.float64(9.0), np.float64(5.0), np.float64(6.0), np.float64(15.0), np.float64(4.0)]
 
-Correlación de Kendall con orden original: 0.523810
+Correlación de Kendall con orden original: 0.885714
 
 ==================================================
 

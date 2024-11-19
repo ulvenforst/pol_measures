@@ -3,7 +3,7 @@ from typing import Optional
 import numpy as np
 
 class EstebanRay(ParametricPolarizationMeasure):
-    def __init__(self, alpha: float = 1.6, K: Optional[float] = None) -> None:
+    def __init__(self, alpha: float = 0.8, K: Optional[float] = None) -> None:
         if not 0 < alpha <= 1.6:
             raise ValueError("alpha must be in (0, 1.6]")
         
