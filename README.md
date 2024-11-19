@@ -78,7 +78,7 @@ Being $Q=(\vec{y},\vec{\pi}_Q)\in\mathscr{D}$.
    from measures.metrics.literature import EstebanRay
 
    # Create measure instance
-   er = EstebanRay(alpha=1.0) # If alpha is not indicated, the default is 1.6
+   er = EstebanRay(alpha=1.0) # If alpha is not indicated, the default is 0.8
    
    # Define test cases
    x = np.array([0.0, 0.25, 0.5, 0.75, 1.0])
