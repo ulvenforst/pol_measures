@@ -1,0 +1,316 @@
+VALORES DE POLARIZACIÓN
+==================================================
+
+Distribuciones originales:
+Distribución 1: [12. 20. 40. 21.  7.]
+Distribución 2: [40. 11. 28. 19.  2.]
+Distribución 3: [ 3.125  12.5    68.75   14.0625  1.5625]
+Distribución 4: [20. 25.  2. 28. 25.]
+Distribución 5: [ 3.03030303 11.11111111 17.17171717 24.24242424 44.44444444]
+Distribución 6: [44.44444444 25.25252525 16.16161616 10.1010101   4.04040404]
+Distribución 7: [ 2. 31.  8. 29. 30.]
+Distribución 8: [ 7. 38.  8. 37. 10.]
+Distribución 9: [21. 19. 19. 20. 21.]
+Distribución 10: [ 3.03030303 25.25252525 44.44444444 24.24242424  3.03030303]
+Distribución 11: [36. 20. 27. 11.  6.]
+Distribución 12: [ 1. 30. 37. 21. 11.]
+Distribución 13: [15. 21. 30. 20. 14.]
+Distribución 14: [36. 10.  8. 11. 35.]
+Distribución 15: [10. 21. 38. 29.  2.]
+
+==================================================
+
+Valores de expertos:
+Distribución 1: 16.9655
+Distribución 2: 35.8966
+Distribución 3: 6.6207
+Distribución 4: 70.0517
+Distribución 5: 26.8621
+Distribución 6: 27.0517
+Distribución 7: 49.5862
+Distribución 8: 59.0517
+Distribución 9: 28.7586
+Distribución 10: 13.1207
+Distribución 11: 30.5000
+Distribución 12: 21.8103
+Distribución 13: 22.7069
+Distribución 14: 85.9483
+Distribución 15: 22.8966
+
+==================================================
+
+MEC(1,1):
+------------------------------
+Valores de polarización:
+Distribución 1: 0.1975
+Distribución 2: 0.2800
+Distribución 3: 0.0898
+Distribución 4: 0.3425
+Distribución 5: 0.2323
+Distribución 6: 0.2323
+Distribución 7: 0.2650
+Distribución 8: 0.2725
+Distribución 9: 0.3075
+Distribución 10: 0.1540
+Distribución 11: 0.2575
+Distribución 12: 0.1875
+Distribución 13: 0.2475
+Distribución 14: 0.4074
+Distribución 15: 0.1850
+
+Correlación de Kendall con expert_scores: 0.7656
+
+==================================================
+
+MEC(2,1.15):
+------------------------------
+Valores de polarización:
+Distribución 1: 0.1517
+Distribución 2: 0.3273
+Distribución 3: 0.0533
+Distribución 4: 0.3597
+Distribución 5: 0.1978
+Distribución 6: 0.1912
+Distribución 7: 0.3309
+Distribución 8: 0.3339
+Distribución 9: 0.2943
+Distribución 10: 0.1514
+Distribución 11: 0.2642
+Distribución 12: 0.1868
+Distribución 13: 0.2031
+Distribución 14: 0.5701
+Distribución 15: 0.1768
+
+Correlación de Kendall con expert_scores: 0.8857
+
+==================================================
+
+MEC(2,1.2):
+------------------------------
+Valores de polarización:
+Distribución 1: 0.0243
+Distribución 2: 0.0592
+Distribución 3: 0.0072
+Distribución 4: 0.0669
+Distribución 5: 0.0334
+Distribución 6: 0.0321
+Distribución 7: 0.0603
+Distribución 8: 0.0597
+Distribución 9: 0.0528
+Distribución 10: 0.0240
+Distribución 11: 0.0457
+Distribución 12: 0.0307
+Distribución 13: 0.0342
+Distribución 14: 0.1138
+Distribución 15: 0.0288
+
+Correlación de Kendall con expert_scores: 0.8667
+
+==================================================
+
+MEC(2,2):
+------------------------------
+Valores de polarización:
+Distribución 1: 0.0100
+Distribución 2: 0.0241
+Distribución 3: 0.0025
+Distribución 4: 0.0334
+Distribución 5: 0.0136
+Distribución 6: 0.0129
+Distribución 7: 0.0275
+Distribución 8: 0.0213
+Distribución 9: 0.0268
+Distribución 10: 0.0081
+Distribución 11: 0.0175
+Distribución 12: 0.0113
+Distribución 13: 0.0157
+Distribución 14: 0.0643
+Distribución 15: 0.0105
+
+Correlación de Kendall con expert_scores: 0.8095
+
+==================================================
+
+EMD:
+------------------------------
+Valores de polarización:
+Distribución 1: 0.1975
+Distribución 2: 0.2800
+Distribución 3: 0.0898
+Distribución 4: 0.3425
+Distribución 5: 0.2323
+Distribución 6: 0.2323
+Distribución 7: 0.2650
+Distribución 8: 0.2724
+Distribución 9: 0.3075
+Distribución 10: 0.1540
+Distribución 11: 0.2575
+Distribución 12: 0.1875
+Distribución 13: 0.2475
+Distribución 14: 0.4074
+Distribución 15: 0.1849
+
+Correlación de Kendall con expert_scores: 0.7656
+
+==================================================
+
+ER(0.8):
+------------------------------
+Valores de polarización:
+Distribución 1: 0.3037
+Distribución 2: 0.4169
+Distribución 3: 0.2120
+Distribución 4: 0.4681
+Distribución 5: 0.3595
+Distribución 6: 0.3583
+Distribución 7: 0.4253
+Distribución 8: 0.4005
+Distribución 9: 0.3940
+Distribución 10: 0.2805
+Distribución 11: 0.3700
+Distribución 12: 0.3113
+Distribución 13: 0.3359
+Distribución 14: 0.6065
+Distribución 15: 0.3047
+
+Correlación de Kendall con expert_scores: 0.8857
+
+==================================================
+
+ER(1.6):
+------------------------------
+Valores de polarización:
+Distribución 1: 0.1841
+Distribución 2: 0.2882
+Distribución 3: 0.2228
+Distribución 4: 0.2652
+Distribución 5: 0.2577
+Distribución 6: 0.2574
+Distribución 7: 0.2777
+Distribución 8: 0.2899
+Distribución 9: 0.1911
+Distribución 10: 0.1993
+Distribución 11: 0.2326
+Distribución 12: 0.1988
+Distribución 13: 0.1691
+Distribución 14: 0.4288
+Distribución 15: 0.1953
+
+Correlación de Kendall con expert_scores: 0.5238
+
+==================================================
+
+Experts:
+------------------------------
+Valores de polarización:
+Distribución 1: 0.2312
+Distribución 2: 0.2904
+Distribución 3: 0.0572
+Distribución 4: 0.6744
+Distribución 5: 0.2668
+Distribución 6: 0.2772
+Distribución 7: 0.4877
+Distribución 8: 0.5061
+Distribución 9: 0.4819
+Distribución 10: 0.1769
+Distribución 11: 0.2746
+Distribución 12: 0.2363
+Distribución 13: 0.3367
+Distribución 14: 0.7312
+Distribución 15: 0.2301
+
+Correlación de Kendall con expert_scores: 0.8095
+
+==================================================
+
+Shannon:
+------------------------------
+Valores de polarización:
+Distribución 1: 0.3710
+Distribución 2: 0.5009
+Distribución 3: 0.1609
+Distribución 4: 0.6664
+Distribución 5: 0.4314
+Distribución 6: 0.4374
+Distribución 7: 0.5108
+Distribución 8: 0.4821
+Distribución 9: 0.5825
+Distribución 10: 0.2676
+Distribución 11: 0.4868
+Distribución 12: 0.3441
+Distribución 13: 0.4631
+Distribución 14: 0.7974
+Distribución 15: 0.3374
+
+Correlación de Kendall con expert_scores: 0.7524
+
+==================================================
+
+VanDerEijk:
+------------------------------
+Valores de polarización:
+Distribución 1: 0.3125
+Distribución 2: 0.3666
+Distribución 3: 0.1367
+Distribución 4: 0.5266
+Distribución 5: 0.2601
+Distribución 6: 0.2601
+Distribución 7: 0.4341
+Distribución 8: 0.4416
+Distribución 9: 0.5141
+Distribución 10: 0.2373
+Distribución 11: 0.3508
+Distribución 12: 0.2724
+Distribución 13: 0.4050
+Distribución 14: 0.7447
+Distribución 15: 0.2725
+
+Correlación de Kendall con expert_scores: 0.6699
+
+==================================================
+
+BiPol:
+------------------------------
+Valores de polarización:
+Distribución 1: 0.4112
+Distribución 2: 0.5632
+Distribución 3: 0.1850
+Distribución 4: 0.7111
+Distribución 5: 0.4721
+Distribución 6: 0.4726
+Distribución 7: 0.5714
+Distribución 8: 0.5464
+Distribución 9: 0.6159
+Distribución 10: 0.3102
+Distribución 11: 0.5336
+Distribución 12: 0.3947
+Distribución 13: 0.4992
+Distribución 14: 0.8153
+Distribución 15: 0.3852
+
+Correlación de Kendall con expert_scores: 0.7714
+
+==================================================
+
+RealMeanExp:
+------------------------------
+Valores de polarización:
+Distribución 1: 16.9655
+Distribución 2: 35.8966
+Distribución 3: 6.6207
+Distribución 4: 70.0517
+Distribución 5: 26.8621
+Distribución 6: 27.0517
+Distribución 7: 49.5862
+Distribución 8: 59.0517
+Distribución 9: 28.7586
+Distribución 10: 13.1207
+Distribución 11: 30.5000
+Distribución 12: 21.8103
+Distribución 13: 22.7069
+Distribución 14: 85.9483
+Distribución 15: 22.8966
+
+Correlación de Kendall con expert_scores: 1.0000
+
+==================================================

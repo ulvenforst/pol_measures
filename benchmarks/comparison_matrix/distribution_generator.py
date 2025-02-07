@@ -5,16 +5,20 @@ from itertools import combinations_with_replacement
 
 def generate_distributions(n: int, k: int = 5) -> Iterator[Tuple[np.ndarray, np.ndarray]]:
     """
-    Generate all possible distributions of n elements in k bins using Stars and Bars method.
-    Each distribution is normalized and paired with equidistant x values in [0,1].
+    Genera todas las distribuciones posibles de n elementos en k contenedores (bins)
+    usando el método Stars and Bars, pero omitiendo las distribuciones espejo.
+    
+    Cada distribución se normaliza y se empareja con posiciones equidistantes en [0,1].
+    Se genera únicamente la forma canónica, es decir, aquella para la cual
+    tuple(w) <= tuple(w[::-1]).
     
     Parameters:
-        n (int): Number of elements to distribute (population size)
-        k (int): Number of bins (default 5 for Likert scale)
+        n (int): Número de elementos a distribuir (tamaño de la masa)
+        k (int): Número de contenedores (por defecto 5 para una escala de Likert)
     
     Yields:
-        Tuple[np.ndarray, np.ndarray]: (x, weights) where x is bin positions and weights 
-        are normalized frequencies
+        Tuple[np.ndarray, np.ndarray]: (x, weights) donde x son las posiciones y 
+        weights la distribución normalizada de frecuencias.
     """
     x = np.linspace(0, 1, k)
     
@@ -22,20 +26,21 @@ def generate_distributions(n: int, k: int = 5) -> Iterator[Tuple[np.ndarray, np.
         weights = np.zeros(k)
         for i in combination:
             weights[i] += 1
-        
         weights = weights / n
         
-        yield x, weights
+        if tuple(weights) <= tuple(weights[::-1]):
+            yield x, weights
 
 def count_distributions(n: int, k: int = 5) -> int:
     """
-    Calculate number of possible distributions using Stars and Bars formula.
+    Calcula la cantidad de distribuciones posibles usando la fórmula Stars and Bars.
     
     Parameters:
-        n (int): Number of elements
-        k (int): Number of bins
+        n (int): Número de elementos
+        k (int): Número de contenedores
         
     Returns:
-        int: Number of possible distributions
+        int: Cantidad de distribuciones posibles
     """
     return int(math.comb(n + k - 1, k - 1))
+

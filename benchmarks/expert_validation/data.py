@@ -4,11 +4,12 @@ from dataclasses import dataclass
 @dataclass
 class ValidationData:
     """
-    Datos para validación con juicios de expertos del paper de Koudenburg et al. (2021)
-    Cada distribución representa frecuencias en una escala de 1-5
+    Data for validation with expert judgments from Koudenburg et al. (2021) paper.
+    Each distribution represents frequencies on a 1-5 scale.
     """
-    # Las 15 distribuciones como array numpy
-    distributions = np.array([
+    _original_order = [3,10,1,12,13,15,5,6,9,11,2,7,8,4,14]
+
+    _distributions = np.array([
         [12, 20, 40, 21, 7],   # Distribución 1
         [40, 11, 28, 19, 2],   # Distribución 2
         [2, 8, 44, 9, 1],      # Distribución 3
@@ -26,8 +27,8 @@ class ValidationData:
         [10, 21, 38, 29, 2],   # Distribución 15
     ])
 
-    # Puntuaciones promedio de los expertos (0-100) para cada distribución
-    expert_scores = np.array([
+    # Puntuaciones de 0 a 100 para cada distribución
+    _expert_scores = np.array([
         16.9655,  # Distribución 1
         35.8966,  # Distribución 2
         6.6207,   # Distribución 3
@@ -45,11 +46,26 @@ class ValidationData:
         22.8966   # Distribución 15
     ])
 
-    def get_normalized_distributions(self):
-        """Retorna las distribuciones normalizadas para sumar 100"""
-        return np.array([dist / np.sum(dist) * 100 for dist in self.distributions])
+    @property
+    def original_order(self):
+        """Original order of the distributions"""
+        return self._original_order
+
+    @property
+    def distributions(self):
+        """Distributions of the data"""
+        return self._distributions
+
+    @property
+    def expert_scores(self):
+        """Scores given by the experts"""
+        return self._expert_scores
 
     @property
     def x_values(self):
-        """Valores de la escala (1-5)"""
+        """Values of the scale (1-5)"""
         return np.array([1, 2, 3, 4, 5])
+
+    def get_normalized_distributions(self):
+        """Returns the normalized distributions to sum 100"""
+        return np.array([dist / np.sum(dist) * 100 for dist in self.distributions])
