@@ -1,11 +1,9 @@
 name: Python Tests
-
 on:
   push:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
-
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -16,12 +14,24 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.x'
+        python-version: '3.9'
         
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
+        pip install numpy scipy
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
         
+    - name: Install package in development mode
+      run: |
+        pip install -e .
+        
+    - name: List directory structure
+      run: |
+        ls -la
+        ls -la tests/ || echo "Tests directory not found"
+        
     - name: Run tests
-      run: python -m tests.run_tests
+      run: |
+        export PYTHONPATH=$PYTHONPATH:$(pwd)
+        python -m tests.run_tests
