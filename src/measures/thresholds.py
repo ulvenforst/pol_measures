@@ -1,23 +1,20 @@
 """
 Threshold data for polarization measure classification.
 These thresholds determine the boundaries for classifying polarization values.
+https://ulvenforst.vercel.app/articles/bridging-theory-and-expert-judgment-advances-in-polarization-metrics-and-their-empirical-correlations
 """
 
 THRESHOLDS = {
     "EstebanRay": {
-        # Parameter set definitions
         "_params": {
             "default": {"alpha": 0.8}
         },
-        # Default parameter set thresholds (alpha=0.8)
         "default": {
-            # K-means clustering thresholds
             "kmeans": {
                 3: [0.3791, 0.5141],  # Low, medium, high boundaries
                 4: [0.3501, 0.4467, 0.5660],  # Very low, low, high, very high
                 5: [0.3196, 0.3973, 0.4809, 0.5921]  # Very low to very high
             },
-            # Percentile-based thresholds
             "percentile": {
                 3: [0.3609, 0.4466],  # 33rd/66th percentiles
                 4: [0.3407, 0.4031, 0.4761],  # 25th/50th/75th percentiles
@@ -27,7 +24,6 @@ THRESHOLDS = {
     },
     
     "BiPol": {
-        # BiPol is non-parametric, so we don't include _params
         "kmeans": {
             3: [0.4525, 0.6267],
             4: [0.3940, 0.5317, 0.6702],
@@ -41,19 +37,15 @@ THRESHOLDS = {
     },
     
     "MECNormalized": {
-        # Parameter set definitions
         "_params": {
             "default": {"alpha": 2.0, "beta": 1.15}
         },
-        # Default parameter set thresholds (alpha=2.0, beta=1.15)
         "default": {
-            # K-means clustering thresholds
             "kmeans": {
                 3: [0.2233, 0.3801],
                 4: [0.1718, 0.2841, 0.4271],
                 5: [0.1513, 0.2421, 0.3369, 0.4689]
             },
-            # Percentile-based thresholds
             "percentile": {
                 3: [0.1971, 0.2922],  # 33rd/66th percentiles
                 4: [0.1747, 0.2408, 0.3274],  # 25th/50th/75th percentiles
@@ -63,7 +55,6 @@ THRESHOLDS = {
     }
 }
 
-# Category labels for different classification schemes
 CATEGORY_LABELS = {
     2: ["low", "high"],
     3: ["low", "medium", "high"],

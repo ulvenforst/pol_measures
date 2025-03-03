@@ -51,7 +51,6 @@ class PolarizationMeasure(ABC):
         if self.measure_id not in THRESHOLDS:
             return None
             
-        # Get current parameters (type-safe version)
         try:
             if hasattr(self, 'get_parameters') and callable(getattr(self, 'get_parameters')):
                 current_params = self.get_parameters()
@@ -64,20 +63,16 @@ class PolarizationMeasure(ABC):
             current_params = {}
 
         FLOAT_TOLERANCE = 1e-9
-        # Check if the measure uses parameter sets
         if self._has_parameter_sets():
-            # Multiple parameter sets are defined
             param_sets = THRESHOLDS[self.measure_id]["_params"]
             
             for param_set_key, default_params in param_sets.items():
-                # Check if critical parameters match (only check parameters in default_params)
                 all_match = True
                 for param, default_value in default_params.items():
                     if param not in current_params:
                         all_match = False
                         break
                     
-                    # Compare parameter values with tolerance for floating point
                     if isinstance(default_value, (int, float)) and isinstance(current_params[param], (int, float)):
                         if not math.isclose(default_value, current_params[param], rel_tol=FLOAT_TOLERANCE):
                             all_match = False
@@ -86,14 +81,11 @@ class PolarizationMeasure(ABC):
                         all_match = False
                         break
                 
-                # If all default parameters match, consider it a match (ignoring extra params)
                 if all_match:
                     return param_set_key
             
-            # No matching parameter set found
             return None
         else:
-            # No parameter sets defined, assume default behavior
             return "default" if not current_params else None
 
     def __call__(
@@ -127,10 +119,8 @@ class PolarizationMeasure(ABC):
         if labels is None:
             return self._cached_result
         
-        # Try to find matching parameter set
         param_set = self.find_matching_parameter_set()
         
-        # Handle classifications
         if labels == "all":
             if param_set is None:
                 return {
@@ -149,7 +139,6 @@ class PolarizationMeasure(ABC):
                                                method=method, param_set=param_set)
                 return self._cached_result, category
             except ValueError:
-                # No thresholds for this specific combination
                 return self._cached_result, "no_classification"
         
         raise ValueError(f"Invalid value for 'labels': {labels}. Must be None, a positive integer, or 'all'.")
@@ -172,18 +161,14 @@ class PolarizationMeasure(ABC):
         if self.measure_id not in THRESHOLDS:
             raise ValueError(f"No thresholds available for measure: {self.measure_id}")
         
-        # Check if we need to use a parameter set
         thresholds_data = THRESHOLDS[self.measure_id]
         
-        # For parametric measures with multiple parameter sets
         if self._has_parameter_sets():
             if param_set not in thresholds_data:
                 raise ValueError(f"Parameter set '{param_set}' not found for measure: {self.measure_id}")
             
-            # Use the specific parameter set
             thresholds_data = thresholds_data[param_set]
         
-        # Now access method and categories
         if method not in thresholds_data:
             raise ValueError(f"Method '{method}' not available for measure: {self.measure_id}")
         
@@ -209,12 +194,11 @@ class PolarizationMeasure(ABC):
         thresholds = self._get_thresholds(num_categories, method, param_set)
         labels = CATEGORY_LABELS.get(num_categories, [f"category_{i+1}" for i in range(num_categories)])
         
-        # Determine category based on thresholds
         for i, threshold in enumerate(thresholds):
             if value < threshold:
                 return labels[i]
         
-        return labels[-1]  # If value is higher than all thresholds
+        return labels[-1]
     
     def _get_all_classifications(self, value: float, param_set: str = "default") -> Dict[str, Any]:
         """
@@ -229,13 +213,11 @@ class PolarizationMeasure(ABC):
         """
         result = {"value": value, "classifications": {}}
         
-        # Get appropriate thresholds data
         if self.measure_id not in THRESHOLDS:
             return result
             
         thresholds_data = THRESHOLDS[self.measure_id]
         
-        # For parametric measures with multiple parameter sets
         if self._has_parameter_sets():
             if param_set not in thresholds_data:
                 return {
@@ -244,12 +226,9 @@ class PolarizationMeasure(ABC):
                     "error": f"Parameter set '{param_set}' not found"
                 }
             
-            # Use the specific parameter set
             thresholds_data = thresholds_data[param_set]
         
-        # Now collect all available classifications
         for method_name, method_data in thresholds_data.items():
-            # Skip parameter definitions
             if method_name == "_params":
                 continue
                 
@@ -260,7 +239,6 @@ class PolarizationMeasure(ABC):
                     category = self._classify_value(value, num_cats, method_name, param_set)
                     result["classifications"][method_name][num_cats] = category
                 except ValueError:
-                    # Skip if this combination is not available
                     pass
         
         return result

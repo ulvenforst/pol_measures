@@ -14,17 +14,14 @@ class ShannonPol(PolarizationMeasure):
        mu_x = np.sum(weights * x)
        dx = np.max(x) - np.min(x)
        
-       # Añadimos epsilon para evitar log(0)
        pol = -np.sum(weights * 
                             np.log2(1 - np.abs(x - mu_x) / dx + 
                                    np.finfo(float).eps))
        return pol
 
 if __name__ == "__main__":
-   # Crear instancias de ambas medidas
    shannon_pol = ShannonPol()
    
-   # Definir casos de prueba
    x = np.linspace(0, 1, 5)  # 5 puntos equidistantes
    
    # Caso 1: Distribución uniforme
