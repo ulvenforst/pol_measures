@@ -14,7 +14,7 @@ from src.measures.metrics.literature import (
     ShannonPol,
     VanDerEijkPol,
 )
-from src.measures.metrics.proposed import MEC, BiPol
+from src.measures.metrics.proposed import MEC, BiPol, GeneralizedMEC
 from src.measures.metrics.proposed.mec import MECNormalized
 
 ALPHAS = [0.8, 1.0, 1.6]
@@ -30,7 +30,7 @@ ALIENATION_FUNCTIONS = {
 
 
 def build_measures() -> dict:
-    """Build the full dict of measures: existing ones + generalized ER variants."""
+    """Build the full dict of measures: existing ones + generalized ER/MEC variants."""
     measures = {
         "MEC(1,1)": MEC(alpha=1, beta=1),
         "MEC(2,1.15)": MECNormalized(),
@@ -50,6 +50,8 @@ def build_measures() -> dict:
         for fname, fn in ALIENATION_FUNCTIONS.items():
             key = f"ER({alpha_str},{fname})"
             measures[key] = GeneralizedER(alpha=alpha, alienation=fn)
+            mec_key = f"MEC({alpha_str},{fname})"
+            measures[mec_key] = GeneralizedMEC(alpha=alpha, alienation=fn)
 
     return measures
 
@@ -87,7 +89,7 @@ def save_results(
 ) -> None:
     """Save polarization values and correlations to a text file."""
     with open(filename, "w") as f:
-        f.write("GENERALIZED ER VALIDATION - POLARIZATION VALUES\n")
+        f.write("GENERALIZED ER/MEC VALIDATION - POLARIZATION VALUES\n")
         f.write("=" * 60 + "\n\n")
 
         f.write("Distributions:\n")
@@ -116,7 +118,7 @@ def plot_correlations(correlations: pd.Series) -> None:
 
     plt.figure(figsize=(20, 7))
     ax = plot_data.plot(kind="bar")
-    plt.title("Correlation with expert judgments (60 experts) - Generalized ER")
+    plt.title("Correlation with expert judgments (60 experts) - Generalized ER/MEC")
     plt.xlabel("Measure")
     plt.ylabel("Kendall rank correlation coefficient")
 
