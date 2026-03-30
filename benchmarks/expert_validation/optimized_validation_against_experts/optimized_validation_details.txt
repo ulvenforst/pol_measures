@@ -1,0 +1,356 @@
+OPTIMIZED VALIDATION AGAINST THE EXPERT ORDER
+============================================================
+
+Optimized MEC parameters: alpha=2.024000, beta=1.178000
+
+RealMeanExp:
+----------------------------------------
+Values in original order:
+Distribution 1: 16.965500
+Distribution 2: 35.896600
+Distribution 3: 6.620700
+Distribution 4: 70.051700
+Distribution 5: 26.862100
+Distribution 6: 27.051700
+Distribution 7: 49.586200
+Distribution 8: 59.051700
+Distribution 9: 28.758600
+Distribution 10: 13.120700
+Distribution 11: 30.500000
+Distribution 12: 21.810300
+Distribution 13: 22.706900
+Distribution 14: 85.948300
+Distribution 15: 22.896600
+
+Expert order:
+[3, 10, 1, 12, 13, 15, 5, 6, 9, 11, 2, 7, 8, 4, 14]
+Produced order:
+[3, 10, 1, 12, 13, 15, 5, 6, 9, 11, 2, 7, 8, 4, 14]
+Kendall tau with expert order: 1.000000000000
+
+============================================================
+
+MEC(opt):
+----------------------------------------
+Values in original order:
+Distribution 1: 0.153482
+Distribution 2: 0.328953
+Distribution 3: 0.054675
+Distribution 4: 0.362446
+Distribution 5: 0.200151
+Distribution 6: 0.193470
+Distribution 7: 0.334435
+Distribution 8: 0.334781
+Distribution 9: 0.296210
+Distribution 10: 0.153474
+Distribution 11: 0.265045
+Distribution 12: 0.188749
+Distribution 13: 0.204878
+Distribution 14: 0.572849
+Distribution 15: 0.178711
+
+Expert order:
+[3, 10, 1, 12, 13, 15, 5, 6, 9, 11, 2, 7, 8, 4, 14]
+Produced order:
+[3, 10, 1, 15, 12, 6, 5, 13, 11, 9, 2, 7, 8, 4, 14]
+Kendall tau with expert order: 0.885714285714
+
+============================================================
+
+MEC(2,1.15):
+----------------------------------------
+Values in original order:
+Distribution 1: 0.151783
+Distribution 2: 0.327300
+Distribution 3: 0.053315
+Distribution 4: 0.359773
+Distribution 5: 0.197815
+Distribution 6: 0.191275
+Distribution 7: 0.330938
+Distribution 8: 0.333981
+Distribution 9: 0.294318
+Distribution 10: 0.151455
+Distribution 11: 0.264230
+Distribution 12: 0.186820
+Distribution 13: 0.203198
+Distribution 14: 0.570115
+Distribution 15: 0.176807
+
+Expert order:
+[3, 10, 1, 12, 13, 15, 5, 6, 9, 11, 2, 7, 8, 4, 14]
+Produced order:
+[3, 10, 1, 15, 12, 6, 5, 13, 11, 9, 2, 7, 8, 4, 14]
+Kendall tau with expert order: 0.885714285714
+
+============================================================
+
+MEC(1,1):
+----------------------------------------
+Values in original order:
+Distribution 1: 0.197500
+Distribution 2: 0.280000
+Distribution 3: 0.089844
+Distribution 4: 0.342500
+Distribution 5: 0.232323
+Distribution 6: 0.232323
+Distribution 7: 0.265000
+Distribution 8: 0.272500
+Distribution 9: 0.307500
+Distribution 10: 0.154041
+Distribution 11: 0.257500
+Distribution 12: 0.187501
+Distribution 13: 0.247500
+Distribution 14: 0.407500
+Distribution 15: 0.185000
+
+Expert order:
+[3, 10, 1, 12, 13, 15, 5, 6, 9, 11, 2, 7, 8, 4, 14]
+Produced order:
+[3, 10, 15, 12, 1, 6, 5, 13, 11, 7, 8, 2, 9, 4, 14]
+Kendall tau with expert order: 0.752380952381
+
+============================================================
+
+MEC(2,1.2):
+----------------------------------------
+Values in original order:
+Distribution 1: 0.024335
+Distribution 2: 0.059235
+Distribution 3: 0.007239
+Distribution 4: 0.066990
+Distribution 5: 0.033420
+Distribution 6: 0.032106
+Distribution 7: 0.060374
+Distribution 8: 0.059782
+Distribution 9: 0.052810
+Distribution 10: 0.024016
+Distribution 11: 0.045733
+Distribution 12: 0.030717
+Distribution 13: 0.034259
+Distribution 14: 0.113892
+Distribution 15: 0.028816
+
+Expert order:
+[3, 10, 1, 12, 13, 15, 5, 6, 9, 11, 2, 7, 8, 4, 14]
+Produced order:
+[3, 10, 1, 15, 12, 6, 5, 13, 11, 9, 2, 8, 7, 4, 14]
+Kendall tau with expert order: 0.866666666667
+
+============================================================
+
+MEC(2,2):
+----------------------------------------
+Values in original order:
+Distribution 1: 0.010029
+Distribution 2: 0.024135
+Distribution 3: 0.002517
+Distribution 4: 0.033480
+Distribution 5: 0.013660
+Distribution 6: 0.012989
+Distribution 7: 0.027555
+Distribution 8: 0.021305
+Distribution 9: 0.026802
+Distribution 10: 0.008113
+Distribution 11: 0.017592
+Distribution 12: 0.011325
+Distribution 13: 0.015753
+Distribution 14: 0.064374
+Distribution 15: 0.010517
+
+Expert order:
+[3, 10, 1, 12, 13, 15, 5, 6, 9, 11, 2, 7, 8, 4, 14]
+Produced order:
+[3, 10, 1, 15, 12, 6, 5, 13, 11, 8, 2, 9, 7, 4, 14]
+Kendall tau with expert order: 0.809523809524
+
+============================================================
+
+ER(0.8):
+----------------------------------------
+Values in original order:
+Distribution 1: 0.303704
+Distribution 2: 0.416939
+Distribution 3: 0.212003
+Distribution 4: 0.468137
+Distribution 5: 0.359567
+Distribution 6: 0.358324
+Distribution 7: 0.425396
+Distribution 8: 0.400592
+Distribution 9: 0.394093
+Distribution 10: 0.280571
+Distribution 11: 0.370067
+Distribution 12: 0.311332
+Distribution 13: 0.335958
+Distribution 14: 0.606501
+Distribution 15: 0.304743
+
+Expert order:
+[3, 10, 1, 12, 13, 15, 5, 6, 9, 11, 2, 7, 8, 4, 14]
+Produced order:
+[3, 10, 1, 15, 12, 13, 6, 5, 11, 9, 8, 2, 7, 4, 14]
+Kendall tau with expert order: 0.885714285714
+
+============================================================
+
+ER(1.6):
+----------------------------------------
+Values in original order:
+Distribution 1: 0.184169
+Distribution 2: 0.288214
+Distribution 3: 0.222844
+Distribution 4: 0.265297
+Distribution 5: 0.257718
+Distribution 6: 0.257417
+Distribution 7: 0.277772
+Distribution 8: 0.289997
+Distribution 9: 0.191103
+Distribution 10: 0.199309
+Distribution 11: 0.232647
+Distribution 12: 0.198885
+Distribution 13: 0.169160
+Distribution 14: 0.428881
+Distribution 15: 0.195345
+
+Expert order:
+[3, 10, 1, 12, 13, 15, 5, 6, 9, 11, 2, 7, 8, 4, 14]
+Produced order:
+[13, 1, 9, 15, 12, 10, 3, 11, 6, 5, 4, 7, 2, 8, 14]
+Kendall tau with expert order: 0.523809523810
+
+============================================================
+
+Experts:
+----------------------------------------
+Values in original order:
+Distribution 1: 0.231297
+Distribution 2: 0.290451
+Distribution 3: 0.057262
+Distribution 4: 0.674495
+Distribution 5: 0.266813
+Distribution 6: 0.277230
+Distribution 7: 0.487784
+Distribution 8: 0.506196
+Distribution 9: 0.481905
+Distribution 10: 0.176908
+Distribution 11: 0.274683
+Distribution 12: 0.236309
+Distribution 13: 0.336788
+Distribution 14: 0.731232
+Distribution 15: 0.230188
+
+Expert order:
+[3, 10, 1, 12, 13, 15, 5, 6, 9, 11, 2, 7, 8, 4, 14]
+Produced order:
+[3, 10, 15, 1, 12, 5, 11, 6, 2, 13, 9, 7, 8, 4, 14]
+Kendall tau with expert order: 0.809523809524
+
+============================================================
+
+BiPol:
+----------------------------------------
+Values in original order:
+Distribution 1: 0.411200
+Distribution 2: 0.563200
+Distribution 3: 0.185059
+Distribution 4: 0.711100
+Distribution 5: 0.472197
+Distribution 6: 0.472605
+Distribution 7: 0.571400
+Distribution 8: 0.546500
+Distribution 9: 0.615900
+Distribution 10: 0.310274
+Distribution 11: 0.533600
+Distribution 12: 0.394800
+Distribution 13: 0.499200
+Distribution 14: 0.815400
+Distribution 15: 0.385200
+
+Expert order:
+[3, 10, 1, 12, 13, 15, 5, 6, 9, 11, 2, 7, 8, 4, 14]
+Produced order:
+[3, 10, 15, 12, 1, 5, 6, 13, 11, 8, 2, 7, 9, 4, 14]
+Kendall tau with expert order: 0.771428571429
+
+============================================================
+
+Shannon:
+----------------------------------------
+Values in original order:
+Distribution 1: 0.371027
+Distribution 2: 0.500913
+Distribution 3: 0.160950
+Distribution 4: 0.666444
+Distribution 5: 0.431440
+Distribution 6: 0.437406
+Distribution 7: 0.510899
+Distribution 8: 0.482115
+Distribution 9: 0.582513
+Distribution 10: 0.267606
+Distribution 11: 0.486851
+Distribution 12: 0.344132
+Distribution 13: 0.463140
+Distribution 14: 0.797437
+Distribution 15: 0.337449
+
+Expert order:
+[3, 10, 1, 12, 13, 15, 5, 6, 9, 11, 2, 7, 8, 4, 14]
+Produced order:
+[3, 10, 15, 12, 1, 5, 6, 13, 8, 11, 2, 7, 9, 4, 14]
+Kendall tau with expert order: 0.752380952381
+
+============================================================
+
+EMD:
+----------------------------------------
+Values in original order:
+Distribution 1: 0.197500
+Distribution 2: 0.280000
+Distribution 3: 0.089844
+Distribution 4: 0.342500
+Distribution 5: 0.232323
+Distribution 6: 0.232323
+Distribution 7: 0.265000
+Distribution 8: 0.272500
+Distribution 9: 0.307500
+Distribution 10: 0.154040
+Distribution 11: 0.257500
+Distribution 12: 0.187500
+Distribution 13: 0.247500
+Distribution 14: 0.407500
+Distribution 15: 0.185000
+
+Expert order:
+[3, 10, 1, 12, 13, 15, 5, 6, 9, 11, 2, 7, 8, 4, 14]
+Produced order:
+[3, 10, 15, 12, 1, 5, 6, 13, 11, 7, 8, 2, 9, 4, 14]
+Kendall tau with expert order: 0.771428571429
+
+============================================================
+
+VanDerEijk:
+----------------------------------------
+Values in original order:
+Distribution 1: 0.312500
+Distribution 2: 0.366667
+Distribution 3: 0.136719
+Distribution 4: 0.526667
+Distribution 5: 0.260101
+Distribution 6: 0.260101
+Distribution 7: 0.434167
+Distribution 8: 0.441667
+Distribution 9: 0.514167
+Distribution 10: 0.237374
+Distribution 11: 0.350833
+Distribution 12: 0.272500
+Distribution 13: 0.405000
+Distribution 14: 0.744722
+Distribution 15: 0.272500
+
+Expert order:
+[3, 10, 1, 12, 13, 15, 5, 6, 9, 11, 2, 7, 8, 4, 14]
+Produced order:
+[3, 10, 5, 6, 12, 15, 1, 11, 2, 13, 7, 8, 9, 4, 14]
+Kendall tau with expert order: 0.676190476190
+
+============================================================
+

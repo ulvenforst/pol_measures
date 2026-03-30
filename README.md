@@ -30,6 +30,9 @@ An opinion opinion distribution is denoted by a pair of $n$-dimensional vectors 
 
 A polarization measure is a function $P:\mathscr{D}\to\mathbb{R}_+$.
 
+The public API does not normalize weights by default. If your histogram is given as
+counts or percentages instead of masses summing to 1, pass `normalize_weights=True`.
+
 This package includes the following polarization measurements:
 
 *   $\mathrm{MEC}_{\alpha,\beta}(M)$

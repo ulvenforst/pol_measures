@@ -64,7 +64,7 @@ def compute_measure_values(
 
     for dist in distributions:
         for name, measure in measures.items():
-            value = measure(x_values, dist)
+            value = measure(x_values, dist, normalize_weights=True)
             results[name].append(np.trunc(value * 10000) / 10000)
 
     return {name: np.array(vals) for name, vals in results.items()}

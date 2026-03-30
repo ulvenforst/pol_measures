@@ -1,4 +1,4 @@
-GENERALIZED ER VALIDATION - POLARIZATION VALUES
+GENERALIZED ER/MEC VALIDATION - POLARIZATION VALUES
 ============================================================
 
 Distributions:
@@ -291,6 +291,27 @@ Distribution 15: 0.1284
 Kendall tau with experts: 0.8095
 ============================================================
 
+MEC(0.8,d^2):
+----------------------------------------
+Distribution 1: 0.1101
+Distribution 2: 0.1295
+Distribution 3: 0.0493
+Distribution 4: 0.1937
+Distribution 5: 0.1224
+Distribution 6: 0.1271
+Distribution 7: 0.1337
+Distribution 8: 0.1262
+Distribution 9: 0.1772
+Distribution 10: 0.0713
+Distribution 11: 0.1365
+Distribution 12: 0.0889
+Distribution 13: 0.1417
+Distribution 14: 0.2389
+Distribution 15: 0.0907
+
+Kendall tau with experts: 0.6381
+============================================================
+
 ER(0.8,d^3):
 ----------------------------------------
 Distribution 1: 0.0735
@@ -310,6 +331,27 @@ Distribution 14: 0.4675
 Distribution 15: 0.0642
 
 Kendall tau with experts: 0.7714
+============================================================
+
+MEC(0.8,d^3):
+----------------------------------------
+Distribution 1: 0.0460
+Distribution 2: 0.0508
+Distribution 3: 0.0183
+Distribution 4: 0.0861
+Distribution 5: 0.0511
+Distribution 6: 0.0547
+Distribution 7: 0.0520
+Distribution 8: 0.0487
+Distribution 9: 0.0801
+Distribution 10: 0.0254
+Distribution 11: 0.0592
+Distribution 12: 0.0323
+Distribution 13: 0.0620
+Distribution 14: 0.1143
+Distribution 15: 0.0340
+
+Kendall tau with experts: 0.5619
 ============================================================
 
 ER(0.8,d+d^2):
@@ -333,6 +375,27 @@ Distribution 15: 0.2166
 Kendall tau with experts: 0.8667
 ============================================================
 
+MEC(0.8,d+d^2):
+----------------------------------------
+Distribution 1: 0.4027
+Distribution 2: 0.5032
+Distribution 3: 0.1980
+Distribution 4: 0.6680
+Distribution 5: 0.4490
+Distribution 6: 0.4566
+Distribution 7: 0.5078
+Distribution 8: 0.4933
+Distribution 9: 0.5993
+Distribution 10: 0.2959
+Distribution 11: 0.5072
+Distribution 12: 0.3560
+Distribution 13: 0.4958
+Distribution 14: 0.7580
+Distribution 15: 0.3574
+
+Kendall tau with experts: 0.7333
+============================================================
+
 ER(0.8,d+2d^2):
 ----------------------------------------
 Distribution 1: 0.1923
@@ -352,6 +415,27 @@ Distribution 14: 0.5443
 Distribution 15: 0.1872
 
 Kendall tau with experts: 0.8476
+============================================================
+
+MEC(0.8,d+2d^2):
+----------------------------------------
+Distribution 1: 0.5136
+Distribution 2: 0.6328
+Distribution 3: 0.2475
+Distribution 4: 0.8619
+Distribution 5: 0.5743
+Distribution 6: 0.5869
+Distribution 7: 0.6448
+Distribution 8: 0.6198
+Distribution 9: 0.7766
+Distribution 10: 0.3673
+Distribution 11: 0.6445
+Distribution 12: 0.4468
+Distribution 13: 0.6377
+Distribution 14: 0.9969
+Distribution 15: 0.4491
+
+Kendall tau with experts: 0.7143
 ============================================================
 
 ER(0.8,exp(d)-1):
@@ -375,6 +459,27 @@ Distribution 15: 0.2219
 Kendall tau with experts: 0.8667
 ============================================================
 
+MEC(0.8,exp(d)-1):
+----------------------------------------
+Distribution 1: 0.3561
+Distribution 2: 0.4478
+Distribution 3: 0.1767
+Distribution 4: 0.5873
+Distribution 5: 0.3978
+Distribution 6: 0.4039
+Distribution 7: 0.4484
+Distribution 8: 0.4392
+Distribution 9: 0.5258
+Distribution 10: 0.2649
+Distribution 11: 0.4501
+Distribution 12: 0.3171
+Distribution 13: 0.4366
+Distribution 14: 0.6601
+Distribution 15: 0.3181
+
+Kendall tau with experts: 0.7333
+============================================================
+
 ER(0.8,exp(2d)-1):
 ----------------------------------------
 Distribution 1: 0.1597
@@ -394,6 +499,27 @@ Distribution 14: 0.5197
 Distribution 15: 0.1541
 
 Kendall tau with experts: 0.8095
+============================================================
+
+MEC(0.8,exp(2d)-1):
+----------------------------------------
+Distribution 1: 0.8849
+Distribution 2: 1.0918
+Distribution 3: 0.4270
+Distribution 4: 1.4850
+Distribution 5: 1.0061
+Distribution 6: 1.0318
+Distribution 7: 1.1124
+Distribution 8: 1.0690
+Distribution 9: 1.3368
+Distribution 10: 0.6340
+Distribution 11: 1.1222
+Distribution 12: 0.7708
+Distribution 13: 1.0982
+Distribution 14: 1.7144
+Distribution 15: 0.7745
+
+Kendall tau with experts: 0.6952
 ============================================================
 
 ER(1,d^2):
@@ -417,6 +543,27 @@ Distribution 15: 0.1126
 Kendall tau with experts: 0.8667
 ============================================================
 
+MEC(1,d^2):
+----------------------------------------
+Distribution 1: 0.0726
+Distribution 2: 0.0948
+Distribution 3: 0.0283
+Distribution 4: 0.1445
+Distribution 5: 0.0832
+Distribution 6: 0.0857
+Distribution 7: 0.0992
+Distribution 8: 0.0892
+Distribution 9: 0.1293
+Distribution 10: 0.0460
+Distribution 11: 0.0946
+Distribution 12: 0.0611
+Distribution 13: 0.0980
+Distribution 14: 0.1906
+Distribution 15: 0.0608
+
+Kendall tau with experts: 0.6952
+============================================================
+
 ER(1,d^3):
 ----------------------------------------
 Distribution 1: 0.0614
@@ -436,6 +583,27 @@ Distribution 14: 0.4316
 Distribution 15: 0.0556
 
 Kendall tau with experts: 0.7714
+============================================================
+
+MEC(1,d^3):
+----------------------------------------
+Distribution 1: 0.0296
+Distribution 2: 0.0357
+Distribution 3: 0.0099
+Distribution 4: 0.0640
+Distribution 5: 0.0338
+Distribution 6: 0.0362
+Distribution 7: 0.0376
+Distribution 8: 0.0328
+Distribution 9: 0.0585
+Distribution 10: 0.0153
+Distribution 11: 0.0400
+Distribution 12: 0.0215
+Distribution 13: 0.0426
+Distribution 14: 0.0920
+Distribution 15: 0.0219
+
+Kendall tau with experts: 0.6000
 ============================================================
 
 ER(1,d+d^2):
@@ -459,6 +627,27 @@ Distribution 15: 0.1915
 Kendall tau with experts: 0.9048
 ============================================================
 
+MEC(1,d+d^2):
+----------------------------------------
+Distribution 1: 0.2706
+Distribution 2: 0.3763
+Distribution 3: 0.1181
+Distribution 4: 0.4992
+Distribution 5: 0.3156
+Distribution 6: 0.3181
+Distribution 7: 0.3768
+Distribution 8: 0.3618
+Distribution 9: 0.4368
+Distribution 10: 0.2001
+Distribution 11: 0.3578
+Distribution 12: 0.2493
+Distribution 13: 0.3456
+Distribution 14: 0.5981
+Distribution 15: 0.2462
+
+Kendall tau with experts: 0.7714
+============================================================
+
 ER(1,d+2d^2):
 ----------------------------------------
 Distribution 1: 0.1659
@@ -478,6 +667,27 @@ Distribution 14: 0.4984
 Distribution 15: 0.1652
 
 Kendall tau with experts: 0.8857
+============================================================
+
+MEC(1,d+2d^2):
+----------------------------------------
+Distribution 1: 0.3437
+Distribution 2: 0.4712
+Distribution 3: 0.1464
+Distribution 4: 0.6442
+Distribution 5: 0.3989
+Distribution 6: 0.4040
+Distribution 7: 0.4802
+Distribution 8: 0.4512
+Distribution 9: 0.5662
+Distribution 10: 0.2462
+Distribution 11: 0.4542
+Distribution 12: 0.3112
+Distribution 13: 0.4437
+Distribution 14: 0.7887
+Distribution 15: 0.3075
+
+Kendall tau with experts: 0.7524
 ============================================================
 
 ER(1,exp(d)-1):
@@ -501,6 +711,27 @@ Distribution 15: 0.1964
 Kendall tau with experts: 0.9048
 ============================================================
 
+MEC(1,exp(d)-1):
+----------------------------------------
+Distribution 1: 0.2397
+Distribution 2: 0.3356
+Distribution 3: 0.1058
+Distribution 4: 0.4389
+Distribution 5: 0.2809
+Distribution 6: 0.2827
+Distribution 7: 0.3313
+Distribution 8: 0.3233
+Distribution 9: 0.3832
+Distribution 10: 0.1798
+Distribution 11: 0.3173
+Distribution 12: 0.2226
+Distribution 13: 0.3045
+Distribution 14: 0.5202
+Distribution 15: 0.2198
+
+Kendall tau with experts: 0.7524
+============================================================
+
 ER(1,exp(2d)-1):
 ----------------------------------------
 Distribution 1: 0.1373
@@ -520,6 +751,27 @@ Distribution 14: 0.4769
 Distribution 15: 0.1358
 
 Kendall tau with experts: 0.8667
+============================================================
+
+MEC(1,exp(2d)-1):
+----------------------------------------
+Distribution 1: 0.5924
+Distribution 2: 0.8128
+Distribution 3: 0.2528
+Distribution 4: 1.1105
+Distribution 5: 0.6961
+Distribution 6: 0.7074
+Distribution 7: 0.8275
+Distribution 8: 0.7786
+Distribution 9: 0.9746
+Distribution 10: 0.4252
+Distribution 11: 0.7932
+Distribution 12: 0.5370
+Distribution 13: 0.7642
+Distribution 14: 1.3562
+Distribution 15: 0.5305
+
+Kendall tau with experts: 0.7524
 ============================================================
 
 ER(1.6,d^2):
@@ -543,6 +795,27 @@ Distribution 15: 0.0788
 Kendall tau with experts: 0.8095
 ============================================================
 
+MEC(1.6,d^2):
+----------------------------------------
+Distribution 1: 0.0217
+Distribution 2: 0.0409
+Distribution 3: 0.0062
+Distribution 4: 0.0600
+Distribution 5: 0.0276
+Distribution 6: 0.0271
+Distribution 7: 0.0449
+Distribution 8: 0.0358
+Distribution 9: 0.0503
+Distribution 10: 0.0152
+Distribution 11: 0.0333
+Distribution 12: 0.0217
+Distribution 13: 0.0326
+Distribution 14: 0.0987
+Distribution 15: 0.0205
+
+Kendall tau with experts: 0.7656
+============================================================
+
 ER(1.6,d^3):
 ----------------------------------------
 Distribution 1: 0.0382
@@ -562,6 +835,27 @@ Distribution 14: 0.3440
 Distribution 15: 0.0377
 
 Kendall tau with experts: 0.7524
+============================================================
+
+MEC(1.6,d^3):
+----------------------------------------
+Distribution 1: 0.0082
+Distribution 2: 0.0143
+Distribution 3: 0.0018
+Distribution 4: 0.0264
+Distribution 5: 0.0103
+Distribution 6: 0.0106
+Distribution 7: 0.0165
+Distribution 8: 0.0113
+Distribution 9: 0.0228
+Distribution 10: 0.0042
+Distribution 11: 0.0127
+Distribution 12: 0.0071
+Distribution 13: 0.0138
+Distribution 14: 0.0485
+Distribution 15: 0.0067
+
+Kendall tau with experts: 0.7143
 ============================================================
 
 ER(1.6,d+d^2):
@@ -585,6 +879,27 @@ Distribution 15: 0.1371
 Kendall tau with experts: 0.6762
 ============================================================
 
+MEC(1.6,d+d^2):
+----------------------------------------
+Distribution 1: 0.0853
+Distribution 2: 0.1680
+Distribution 3: 0.0286
+Distribution 4: 0.2081
+Distribution 5: 0.1195
+Distribution 6: 0.1168
+Distribution 7: 0.1686
+Distribution 8: 0.1596
+Distribution 9: 0.1692
+Distribution 10: 0.0725
+Distribution 11: 0.1359
+Distribution 12: 0.0936
+Distribution 13: 0.1178
+Distribution 14: 0.3030
+Distribution 15: 0.0891
+
+Kendall tau with experts: 0.8095
+============================================================
+
 ER(1.6,d+2d^2):
 ----------------------------------------
 Distribution 1: 0.1128
@@ -604,6 +919,27 @@ Distribution 14: 0.3911
 Distribution 15: 0.1177
 
 Kendall tau with experts: 0.7333
+============================================================
+
+MEC(1.6,d+2d^2):
+----------------------------------------
+Distribution 1: 0.1072
+Distribution 2: 0.2092
+Distribution 3: 0.0349
+Distribution 4: 0.2689
+Distribution 5: 0.1487
+Distribution 6: 0.1455
+Distribution 7: 0.2168
+Distribution 8: 0.1954
+Distribution 9: 0.2195
+Distribution 10: 0.0877
+Distribution 11: 0.1693
+Distribution 12: 0.1153
+Distribution 13: 0.1505
+Distribution 14: 0.4018
+Distribution 15: 0.1096
+
+Kendall tau with experts: 0.7905
 ============================================================
 
 ER(1.6,exp(d)-1):
@@ -627,6 +963,27 @@ Distribution 15: 0.1408
 Kendall tau with experts: 0.6762
 ============================================================
 
+MEC(1.6,exp(d)-1):
+----------------------------------------
+Distribution 1: 0.0760
+Distribution 2: 0.1502
+Distribution 3: 0.0258
+Distribution 4: 0.1827
+Distribution 5: 0.1068
+Distribution 6: 0.1044
+Distribution 7: 0.1481
+Distribution 8: 0.1437
+Distribution 9: 0.1483
+Distribution 10: 0.0656
+Distribution 11: 0.1217
+Distribution 12: 0.0841
+Distribution 13: 0.1041
+Distribution 14: 0.2628
+Distribution 15: 0.0801
+
+Kendall tau with experts: 0.8286
+============================================================
+
 ER(1.6,exp(2d)-1):
 ----------------------------------------
 Distribution 1: 0.0928
@@ -646,6 +1003,27 @@ Distribution 14: 0.3759
 Distribution 15: 0.0965
 
 Kendall tau with experts: 0.7524
+============================================================
+
+MEC(1.6,exp(2d)-1):
+----------------------------------------
+Distribution 1: 0.1849
+Distribution 2: 0.3615
+Distribution 3: 0.0603
+Distribution 4: 0.4646
+Distribution 5: 0.2646
+Distribution 6: 0.2605
+Distribution 7: 0.3728
+Distribution 8: 0.3376
+Distribution 9: 0.3778
+Distribution 10: 0.1517
+Distribution 11: 0.2952
+Distribution 12: 0.1992
+Distribution 13: 0.2593
+Distribution 14: 0.6907
+Distribution 15: 0.1893
+
+Kendall tau with experts: 0.8286
 ============================================================
 
 RealMeanExp:
