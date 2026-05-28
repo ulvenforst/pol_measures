@@ -1,0 +1,154 @@
+{
+  "benchmark_config": {
+    "auto": true,
+    "chunk_size": 25000,
+    "mode": "compute",
+    "repeat": 1,
+    "tune_chunk_size": 5000,
+    "tune_limit": 300000,
+    "tune_repeat": 1,
+    "worker_candidates": [
+      1,
+      4,
+      8,
+      12,
+      14,
+      16
+    ],
+    "workers": 1
+  },
+  "corpus": {
+    "benchmark_distributions": 300000,
+    "dtype": "float64",
+    "full_compositions": 4598126,
+    "generation_seconds": 0.09267837498919107,
+    "include_mirrors": false,
+    "limit": 300000,
+    "mass_size": 100,
+    "memory_mib": 11.444091796875,
+    "support_size": 5,
+    "visited_compositions": 306281
+  },
+  "measure_config": {
+    "er_alpha": 0.8,
+    "er_k": null,
+    "mec_alpha": 2.0,
+    "mec_beta": 1.15,
+    "use_call": false
+  },
+  "metadata": {
+    "logical_cpus": 16,
+    "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+    "processor": "arm",
+    "python": "3.14.3 (v3.14.3:323c59a5e34, Feb  3 2026, 11:41:37) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "repo_root": "/Users/ulvenforst/Codex/University/pol_measures"
+  },
+  "results": [
+    {
+      "checksum": 11475.038568984304,
+      "chunk_size": 25000,
+      "distributions": 300000,
+      "distributions_per_second_wall": 114398.84563624738,
+      "effective_evaluations": 300000,
+      "measure": "mec",
+      "repeat": 1,
+      "seconds_per_distribution_wall": 8.741346946626435e-06,
+      "support_size": 5,
+      "wall_seconds": 2.622404083987931,
+      "worker_compute_seconds": 23.49324079300277,
+      "workers": 16
+    }
+  ],
+  "tuning": [
+    {
+      "measure": "mec",
+      "results": [
+        {
+          "checksum": 11475.038568984297,
+          "chunk_size": 5000,
+          "distributions": 300000,
+          "distributions_per_second_wall": 14112.667888425885,
+          "effective_evaluations": 300000,
+          "measure": "mec",
+          "repeat": 1,
+          "seconds_per_distribution_wall": 7.085832444339758e-05,
+          "support_size": 5,
+          "wall_seconds": 21.257497333019273,
+          "worker_compute_seconds": 21.257001581019722,
+          "workers": 1
+        },
+        {
+          "checksum": 11475.038568984297,
+          "chunk_size": 5000,
+          "distributions": 300000,
+          "distributions_per_second_wall": 47754.676904815686,
+          "effective_evaluations": 300000,
+          "measure": "mec",
+          "repeat": 1,
+          "seconds_per_distribution_wall": 2.094035736003813e-05,
+          "support_size": 5,
+          "wall_seconds": 6.282107208011439,
+          "worker_compute_seconds": 23.070460916031152,
+          "workers": 4
+        },
+        {
+          "checksum": 11475.038568984295,
+          "chunk_size": 5000,
+          "distributions": 300000,
+          "distributions_per_second_wall": 82795.81599627947,
+          "effective_evaluations": 300000,
+          "measure": "mec",
+          "repeat": 1,
+          "seconds_per_distribution_wall": 1.207790499999343e-05,
+          "support_size": 5,
+          "wall_seconds": 3.6233714999980293,
+          "worker_compute_seconds": 23.54463753895834,
+          "workers": 8
+        },
+        {
+          "checksum": 11475.038568984295,
+          "chunk_size": 5000,
+          "distributions": 300000,
+          "distributions_per_second_wall": 114990.17696340808,
+          "effective_evaluations": 300000,
+          "measure": "mec",
+          "repeat": 1,
+          "seconds_per_distribution_wall": 8.696395000054811e-06,
+          "support_size": 5,
+          "wall_seconds": 2.6089185000164434,
+          "worker_compute_seconds": 23.906961461063474,
+          "workers": 12
+        },
+        {
+          "checksum": 11475.038568984297,
+          "chunk_size": 5000,
+          "distributions": 300000,
+          "distributions_per_second_wall": 111985.03853544136,
+          "effective_evaluations": 300000,
+          "measure": "mec",
+          "repeat": 1,
+          "seconds_per_distribution_wall": 8.929764306716e-06,
+          "support_size": 5,
+          "wall_seconds": 2.6789292920148,
+          "worker_compute_seconds": 26.51732474923483,
+          "workers": 14
+        },
+        {
+          "checksum": 11475.038568984297,
+          "chunk_size": 5000,
+          "distributions": 300000,
+          "distributions_per_second_wall": 120802.58619221843,
+          "effective_evaluations": 300000,
+          "measure": "mec",
+          "repeat": 1,
+          "seconds_per_distribution_wall": 8.277968473363822e-06,
+          "support_size": 5,
+          "wall_seconds": 2.483390542009147,
+          "worker_compute_seconds": 27.587987541104667,
+          "workers": 16
+        }
+      ],
+      "selected_workers": 16
+    }
+  ]
+}

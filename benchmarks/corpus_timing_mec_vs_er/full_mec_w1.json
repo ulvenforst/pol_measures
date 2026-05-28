@@ -1,0 +1,63 @@
+{
+  "benchmark_config": {
+    "auto": false,
+    "chunk_size": 25000,
+    "default_workers": 1,
+    "mode": "compute",
+    "repeat": 1,
+    "tune_chunk_size": 5000,
+    "tune_limit": 300000,
+    "tune_repeat": 1,
+    "worker_candidates": [
+      1,
+      4,
+      8,
+      12,
+      14,
+      16
+    ]
+  },
+  "corpus": {
+    "benchmark_distributions": 2299726,
+    "dtype": "float64",
+    "full_compositions": 4598126,
+    "generation_seconds": 0.9012890000012703,
+    "include_mirrors": false,
+    "limit": null,
+    "mass_size": 100,
+    "memory_mib": 87.72758483886719,
+    "support_size": 5,
+    "visited_compositions": 4598126
+  },
+  "measure_config": {
+    "er_alpha": 0.8,
+    "er_k": null,
+    "mec_alpha": 2.0,
+    "mec_beta": 1.15,
+    "use_call": false
+  },
+  "metadata": {
+    "logical_cpus": 16,
+    "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+    "processor": "arm",
+    "python": "3.14.3 (v3.14.3:323c59a5e34, Feb  3 2026, 11:41:37) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "repo_root": "/Users/ulvenforst/Codex/University/pol_measures"
+  },
+  "results": [
+    {
+      "checksum": 110811.59016877718,
+      "chunk_size": 25000,
+      "distributions": 2299726,
+      "distributions_per_second_wall": 14402.887004329663,
+      "effective_evaluations": 2299726,
+      "measure": "mec",
+      "repeat": 1,
+      "seconds_per_distribution_wall": 6.943052456770571e-05,
+      "support_size": 5,
+      "wall_seconds": 159.67118254199158,
+      "worker_compute_seconds": 159.67021753895096,
+      "workers": 1
+    }
+  ],
+  "tuning": []
+}

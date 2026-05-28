@@ -1,0 +1,2 @@
+measure,distributions,effective_evaluations,support_size,repeat,workers,chunk_size,wall_seconds,worker_compute_seconds,seconds_per_distribution_wall,distributions_per_second_wall,checksum
+mec,2299726,2299726,5,1,8,25000,22.956504707981367,174.0594420460693,9.982278196611843e-06,100177.53265376006,110811.59016877718

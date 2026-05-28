@@ -1,0 +1,258 @@
+{
+  "benchmark_config": {
+    "auto": true,
+    "chunk_size": 25000,
+    "mode": "compute",
+    "repeat": 1,
+    "tune_chunk_size": 5000,
+    "tune_limit": 100000,
+    "tune_repeat": 1,
+    "worker_candidates": [
+      1,
+      4,
+      8,
+      12,
+      14,
+      16
+    ],
+    "workers": 1
+  },
+  "corpus": {
+    "benchmark_distributions": 2299726,
+    "dtype": "float64",
+    "full_compositions": 4598126,
+    "generation_seconds": 0.8701973340066615,
+    "include_mirrors": false,
+    "limit": null,
+    "mass_size": 100,
+    "memory_mib": 87.72758483886719,
+    "support_size": 5,
+    "visited_compositions": 4598126
+  },
+  "measure_config": {
+    "er_alpha": 0.8,
+    "er_k": null,
+    "mec_alpha": 2.0,
+    "mec_beta": 1.15,
+    "use_call": false
+  },
+  "metadata": {
+    "logical_cpus": 16,
+    "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+    "processor": "arm",
+    "python": "3.14.3 (v3.14.3:323c59a5e34, Feb  3 2026, 11:41:37) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "repo_root": "/Users/ulvenforst/Codex/University/pol_measures"
+  },
+  "results": [
+    {
+      "checksum": 110811.59016877715,
+      "chunk_size": 25000,
+      "distributions": 2299726,
+      "distributions_per_second_wall": 146955.8173770068,
+      "effective_evaluations": 2299726,
+      "measure": "mec",
+      "repeat": 1,
+      "seconds_per_distribution_wall": 6.804766343033272e-06,
+      "support_size": 5,
+      "wall_seconds": 15.649098082998535,
+      "worker_compute_seconds": 173.87137408409035,
+      "workers": 12
+    },
+    {
+      "checksum": 955979.8392573649,
+      "chunk_size": 25000,
+      "distributions": 2299726,
+      "distributions_per_second_wall": 372249.1883272619,
+      "effective_evaluations": 2299726,
+      "measure": "er",
+      "repeat": 1,
+      "seconds_per_distribution_wall": 2.686372546555703e-06,
+      "support_size": 5,
+      "wall_seconds": 6.177920791000361,
+      "worker_compute_seconds": 6.177340832102345,
+      "workers": 1
+    }
+  ],
+  "tuning": [
+    {
+      "measure": "mec",
+      "results": [
+        {
+          "checksum": 3103.017556106617,
+          "chunk_size": 5000,
+          "distributions": 100000,
+          "distributions_per_second_wall": 14279.013348767607,
+          "effective_evaluations": 100000,
+          "measure": "mec",
+          "repeat": 1,
+          "seconds_per_distribution_wall": 7.003284999984317e-05,
+          "support_size": 5,
+          "wall_seconds": 7.0032849999843165,
+          "worker_compute_seconds": 7.003107374999672,
+          "workers": 1
+        },
+        {
+          "checksum": 3103.017556106617,
+          "chunk_size": 5000,
+          "distributions": 100000,
+          "distributions_per_second_wall": 40795.011137621565,
+          "effective_evaluations": 100000,
+          "measure": "mec",
+          "repeat": 1,
+          "seconds_per_distribution_wall": 2.451280124980258e-05,
+          "support_size": 5,
+          "wall_seconds": 2.451280124980258,
+          "worker_compute_seconds": 7.896685373969376,
+          "workers": 4
+        },
+        {
+          "checksum": 3103.0175561066167,
+          "chunk_size": 5000,
+          "distributions": 100000,
+          "distributions_per_second_wall": 60271.418785712616,
+          "effective_evaluations": 100000,
+          "measure": "mec",
+          "repeat": 1,
+          "seconds_per_distribution_wall": 1.6591612079937476e-05,
+          "support_size": 5,
+          "wall_seconds": 1.6591612079937477,
+          "worker_compute_seconds": 7.873915789008606,
+          "workers": 8
+        },
+        {
+          "checksum": 3103.017556106617,
+          "chunk_size": 5000,
+          "distributions": 100000,
+          "distributions_per_second_wall": 75741.29424917219,
+          "effective_evaluations": 100000,
+          "measure": "mec",
+          "repeat": 1,
+          "seconds_per_distribution_wall": 1.3202837499848101e-05,
+          "support_size": 5,
+          "wall_seconds": 1.3202837499848101,
+          "worker_compute_seconds": 7.987269459961681,
+          "workers": 12
+        },
+        {
+          "checksum": 3103.0175561066167,
+          "chunk_size": 5000,
+          "distributions": 100000,
+          "distributions_per_second_wall": 71726.5611175194,
+          "effective_evaluations": 100000,
+          "measure": "mec",
+          "repeat": 1,
+          "seconds_per_distribution_wall": 1.3941836669982876e-05,
+          "support_size": 5,
+          "wall_seconds": 1.3941836669982877,
+          "worker_compute_seconds": 8.559699541016016,
+          "workers": 14
+        },
+        {
+          "checksum": 3103.0175561066167,
+          "chunk_size": 5000,
+          "distributions": 100000,
+          "distributions_per_second_wall": 67950.21219887199,
+          "effective_evaluations": 100000,
+          "measure": "mec",
+          "repeat": 1,
+          "seconds_per_distribution_wall": 1.4716657500248402e-05,
+          "support_size": 5,
+          "wall_seconds": 1.4716657500248402,
+          "worker_compute_seconds": 9.233429038053146,
+          "workers": 16
+        }
+      ],
+      "selected_workers": 12
+    },
+    {
+      "measure": "er",
+      "results": [
+        {
+          "checksum": 31442.44340898839,
+          "chunk_size": 5000,
+          "distributions": 100000,
+          "distributions_per_second_wall": 355834.21330470126,
+          "effective_evaluations": 100000,
+          "measure": "er",
+          "repeat": 1,
+          "seconds_per_distribution_wall": 2.8102974998182617e-06,
+          "support_size": 5,
+          "wall_seconds": 0.28102974998182617,
+          "worker_compute_seconds": 0.28090116803650744,
+          "workers": 1
+        },
+        {
+          "checksum": 31442.44340898839,
+          "chunk_size": 5000,
+          "distributions": 100000,
+          "distributions_per_second_wall": 191419.76852189683,
+          "effective_evaluations": 100000,
+          "measure": "er",
+          "repeat": 1,
+          "seconds_per_distribution_wall": 5.2241208299528805e-06,
+          "support_size": 5,
+          "wall_seconds": 0.5224120829952881,
+          "worker_compute_seconds": 0.29171199805568904,
+          "workers": 4
+        },
+        {
+          "checksum": 31442.44340898839,
+          "chunk_size": 5000,
+          "distributions": 100000,
+          "distributions_per_second_wall": 187821.688672022,
+          "effective_evaluations": 100000,
+          "measure": "er",
+          "repeat": 1,
+          "seconds_per_distribution_wall": 5.324198749731295e-06,
+          "support_size": 5,
+          "wall_seconds": 0.5324198749731295,
+          "worker_compute_seconds": 0.29546212701825425,
+          "workers": 8
+        },
+        {
+          "checksum": 31442.44340898839,
+          "chunk_size": 5000,
+          "distributions": 100000,
+          "distributions_per_second_wall": 178592.31748700902,
+          "effective_evaluations": 100000,
+          "measure": "er",
+          "repeat": 1,
+          "seconds_per_distribution_wall": 5.599345000227913e-06,
+          "support_size": 5,
+          "wall_seconds": 0.5599345000227913,
+          "worker_compute_seconds": 0.3027054159028921,
+          "workers": 12
+        },
+        {
+          "checksum": 31442.44340898839,
+          "chunk_size": 5000,
+          "distributions": 100000,
+          "distributions_per_second_wall": 162034.01296219858,
+          "effective_evaluations": 100000,
+          "measure": "er",
+          "repeat": 1,
+          "seconds_per_distribution_wall": 6.1715437500970435e-06,
+          "support_size": 5,
+          "wall_seconds": 0.6171543750097044,
+          "worker_compute_seconds": 0.3319422939384822,
+          "workers": 14
+        },
+        {
+          "checksum": 31442.44340898839,
+          "chunk_size": 5000,
+          "distributions": 100000,
+          "distributions_per_second_wall": 152404.9985801592,
+          "effective_evaluations": 100000,
+          "measure": "er",
+          "repeat": 1,
+          "seconds_per_distribution_wall": 6.5614645800087605e-06,
+          "support_size": 5,
+          "wall_seconds": 0.656146458000876,
+          "worker_compute_seconds": 0.3800945860275533,
+          "workers": 16
+        }
+      ],
+      "selected_workers": 1
+    }
+  ]
+}
