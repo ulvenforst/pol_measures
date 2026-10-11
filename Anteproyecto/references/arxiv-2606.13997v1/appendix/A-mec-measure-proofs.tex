@@ -1,0 +1,81 @@
+\section{Proofs for The MEC Measure}
+\label{appendix:the-mec-measure-proofs}
+
+\subsection{Earth Mover's Distance on Opinion Distributions}
+\label{appendix:emd-definition}
+
+We briefly recall the Earth Mover's Distance for opinion distributions and establish the identity used in the body to express $\ECEMD(y)$ as a transportation cost.
+
+\begin{definition}[Transportation plan and \EMDLabel]\label{def:emd}
+Let $\mu,\nu\in\Dset$ with $\Mass{\mu}=\Mass{\nu}$. A \emph{transportation plan} from $\mu$ to $\nu$ is a function $\gamma:[0,1]\times[0,1]\to\PositiveReals$ with finite support contained in $\support(\mu)\times\support(\nu)$, satisfying
+\[
+\sum_{y'\in\support(\nu)} \gamma(x,y')=\mu(x)
+\qquad\text{for every } x\in\support(\mu),
+\]
+\[
+\sum_{x'\in\support(\mu)} \gamma(x',y)=\nu(y)
+\qquad\text{for every } y\in\support(\nu).
+\]
+The \emph{cost} of $\gamma$ is
+\[
+\mathrm{cost}(\gamma)\defsymbol \sum_{x,y} \gamma(x,y)\,|x-y|,
+\]
+and the \emph{Earth Mover's Distance} between $\mu$ and $\nu$ is
+\[
+\EMD(\mu,\nu)\defsymbol \min_{\gamma}\,\mathrm{cost}(\gamma),
+\]
+where the minimum is taken over all transportation plans from $\mu$ to $\nu$.
+\end{definition}
+
+\begin{lemma}[$\ECEMD$ as transportation cost]\label{lem:ecemd-as-emd}
+For every $\pi\in\Dset$ and every $y\in[0,1]$,
+\[
+\ECEMD(y)=\EMD(\pi,\pi_y),
+\]
+where $\pi_y$ is the consensus distribution at $y$ with $\Mass{\pi_y}=\Mass{\pi}$.
+\end{lemma}
+
+\begin{proof}
+Since $\pi_y$ is concentrated at the single point $y$, with $\pi_y(y)=\Mass{\pi}$, any transportation plan $\gamma$ from $\pi$ to $\pi_y$ has $\support(\gamma)\subseteq\support(\pi)\times\{y\}$. The marginal constraint at $y$ then reads
+\[
+\sum_{x\in\support(\pi)} \gamma(x,y)=\pi_y(y)=\Mass{\pi},
+\]
+and the marginal constraint at each $x\in\support(\pi)$ forces
+\[
+\gamma(x,y)=\pi(x).
+\]
+Hence there is a unique transportation plan from $\pi$ to $\pi_y$, given by $\gamma(x,y)=\pi(x)$ for $x\in\support(\pi)$ and zero elsewhere. Its cost is
+\[
+\sum_{x\in\support(\pi)} \pi(x)\,|x-y|=\ECEMD(y).
+\]
+Therefore $\EMD(\pi,\pi_y)=\ECEMD(y)$.
+\end{proof}
+
+\subsection{Proof of Theorem~\ref{th:mec-as-emd}}
+\label{appendix:proof-mec-as-emd}
+
+\mecAsEmd*
+\begin{proof}
+Let $m$ be any median of $\pi$. Notice that $m$ is also a median of $\pi^*$ because the set of medians of $\pi^*$ is $[0,1]$, so by Lemma~\ref{lem:ecemd-as-emd} we have $\MECEMD(\pi)=\EMD(\pi,\pi_m)$ and $\MECEMD(\pi^*)=\EMD(\pi^*,\pi_m)$.
+Using these equations and Equation~\eqref{eq:mec-emd-pi-m}, Equation~\eqref{eq:mec-emd-1} can be rewritten as
+\begin{equation}
+\EMD(\pi^*, \pi_m)=\EMD(\pi^*, \pi) + \EMD(\pi,\pi_m),
+\label{eq:mec-emd-2}
+\end{equation}
+which states that $\pi$ is an optimal transportation plan from $\pi^*$ to $\pi_m$ that moves masses from $\pi^*$ to the intermediate distribution $\pi$ and continues from $\pi$ to $\pi_m$.
+To prove~\eqref{eq:mec-emd-2}, for any opinion distribution $\mu$, define the right-continuous quantile function as $Q_\mu(q) := \max\{x_0\in\support(\mu): \sum_{x<x_0} \mu(x) \leq q\}$.
+On one hand, it is known~\cite{geher2020isometric,vallender1974calculation} that $\EMD$ can be expressed as
+\begin{equation}
+\EMD(\mu, \nu) = \int_0^{\Mass{\mu}} |Q_\mu(q)-Q_\nu(q)|\,dq, \quad \Mass{\mu}=\Mass{\nu}.
+\label{eq:mec-emd-3}
+\end{equation}
+On the other hand, the quantile function $Q_\pi$ is sandwiched between $Q_{\pi^*}$ and $Q_{\pi_m}$ because for all $q\in[0,\Mass{\pi}/2]$, $Q_\pi(q)\in[0,m] = [Q_{\pi^*}, Q_{\pi_m}]$ and for all $q\in(\Mass{\pi}/2, \Mass{\pi}]$, $Q_\pi(q)\in[m,1] = [Q_{\pi_m}, Q_{\pi^*}]$.
+Combining these two facts yields
+\[
+\begin{aligned}
+  \EMD(\pi^*,\pi_m) &= \int_0^{\Mass{\pi^*}} |Q_{\pi^*}(q)-Q_{\pi_m}(q)|\,dq\\
+  &= \int_0^{\Mass{\pi^*}} |Q_{\pi^*}(q)-Q_\pi(q)| + |Q_\pi(q)-Q_{\pi_m}(q)|\,dq\\
+  &= \EMD(\pi^*,\pi) + \EMD(\pi,\pi_m).
+\end{aligned}
+\]
+\end{proof}

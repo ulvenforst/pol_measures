@@ -1,0 +1,72 @@
+\section{Shifting Away From Consensus}\label{sec:shifting-away}
+
+This section is concerned with showing that \(\MEC\) is a polarization measure in the sense of Definition~\ref{pol:def}.
+
+The first condition of Definition~\ref{pol:def} presents no difficulty. If \(\pi\) is a consensus distribution, then all its mass is concentrated at some opinion \(y\), and therefore \(\EC(y)=0\). It follows at once that \(\MEC(\pi)=0\).
+
+The second condition is less immediate. We must show that \(\pi^*\) attains the greatest value of \(\MEC\) among all opinion distributions having total mass \(\Mass{\pi}\). This, however, is a more delicate matter and deserves some discussion.
+
+Broadly speaking, the argument proceeds in two stages. We first show that any non-consensus distribution $\pi$ can be made \emph{strictly} more polarized by shifting mass away from consensus. By repeating this operation, one arrives at a distribution supported on $\{0,1\}$ or, in the exceptional case $\beta=1$, on $\{0,y^*,1\}$, where $y^*$ is an optimal consensus point of the final distribution. We then show that the extremal distribution $\pi^*$ is at least as polarized as any such final distribution.
+
+%An important caveat is that the relevant operation is the displacement of an \emph{entire} group's mass away from the optimal consensus point, not the partial transfer of a fragment in that direction. Example~\ref{ex:group-identity} shows that moving only part of a group away from the optimal consensus point can in fact reduce polarization, because the detached fragment may be too small to dominate at its new position while the depleted group loses influence at its original one. The proof therefore proceeds by whole-mass shifts only, and Theorem~\ref{thm:mec-increases:body} below is stated accordingly.
+
+There are, however, certain subtleties in the operation involved in the first stage. One may ask what happens when a mass, after being moved away from the optimal consensus point, merges with a mass already present. If \(\alpha\) is sufficiently large, the resulting mass may become so influential as to draw the new optimal consensus point very near to it. It then ceases to be obvious that the minimum effort required to reach consensus must increase.
+
+\begin{example}
+Let \(\alpha=\beta=2\), and consider \(\pi=((2,3,2),(0,0.4,1))\). The optimal consensus point is \( \frac{7.6}{17}\approx 0.447\) thus near the midpoint. Now move the mass at \(0.4\) leftward to \(0\), away from the optimal consensus point. It then merges with the mass already at \(0\), yielding \(\pi'=((5,2),(0,1))\). The new optimal consensus point becomes \(\frac{4}{29}\approx 0.138\). Thus a mass has been moved away from consensus, but in so doing it has formed a larger block, with one small on the other extreme, which draws the new consensus point sharply toward one extreme.
+\end{example}
+
+Nevertheless, it follows from the results below that the potential merging of masses involved in a shift away from consensus does not prevent polarization from increasing.
+
+Also notice that Ex.~\ref{ex:group-identity} has already shown that moving a small \emph{portion} of a mass away from the optimal consensus point may in fact diminish polarization. For \(\alpha=\beta=2\), the optimal consensus point for \(\pi=((40,60),(0.25,0.75))\) is approximately \(0.59\), and yet, if one unit of mass is transferred from \(0.75\) to \(1\), the resulting distribution has smaller MEC. This may appear to conflict with the claim just made.
+
+The conflict, however, is only apparent. The operation employed in the proof is not the arbitrary removal of a small portion of a mass, but the displacement of a \emph{whole} mass situated at a support point. The example is instructive precisely because it shows what may go wrong otherwise: the original group is reduced, while the detached fragment may remain too small to exert sufficient influence at its new position. In such a case, polarization need not increase.
+
+Finally, there is a third observation, peculiar to the case \(\beta=1\). It arises when the consensus point is unique and the mass to be moved lies precisely at that point. By Cor.~\ref{cor:mec-special-cases}, the optimal point is then the median. If one moves the mass situated there, the median may be displaced with it. We shall refer to the resulting distribution as a \emph{median-shift}. In that case, as illustrated in the example below, the polarization need not increase.
+
+First we need the following notions and notations.  
+
+\begin{definition}[Shifting Masses]\label{def:movement}
+Let \(\pi\in\Dset\) and let \(a,b\in[0,1]\). We use \(\pi_{a\to b}\) to denote the distribution obtained from \(\pi\) by shifting the mass \(\pi(a)\) from \(a\) to \(b\). Thus, \(\pi_{a\to b}(x)=\pi(x)\) for \(x\notin\{a,b\}\) and if $a \neq b$ then \(\pi_{a\to b}(b)=\pi(a)+\pi(b)\) and \(\pi_{a\to b}(a)=0\). If \(a=b\), we let \(\pi_{a\to a}\defsymbol \pi\).
+
+Given $\pi$, we say that \(\pi_{a\to b}\) is a (distribution) \emph{shift away from consensus} for given \(\alpha,\beta\ge 1\) if \(b<a\le y^*\) or \(y^*\le a<b\) for every $(\alpha,\beta)$-optimal consensus point \(y^*\) of \(\pi\).
+
+Finally, \(\pi_{a\to b}\) is said to be a \emph{median-shift} if \(\beta=1\), \(b\neq a=y^*\), \(\pi(a)>0\), and \(y^*\) is the only $(\alpha,\beta)$-optimal consensus point of \(\pi\).
+\qed 
+\end{definition}
+
+\begin{example}
+Assume \(\alpha=\beta=1\). Let \(\pi=((20,60,20),(0,0.5,1))\) and \(\pi_{0.5\to 0.9}=((20,60,20),(0,0.9,1))\). Since \(0.5\) is the only optimal consensus for \(\pi\) (i.e., its only median), the distribution \(\pi_{0.5\to 0.9}\) is a median-shift of \(\pi\). Furthermore, the polarization remains unchanged by this shift away from consensus: i.e., \(\MEC(\pi_{0.5\to 0.9})=\MEC(\pi)\).
+\end{example}
+
+We now state the main theorems needed for proving the second condition for $\MEC$ being a polarization measure. 
+
+The following theorem establishes that shifting away from consensus increases polarization, which is the first step of our argument.
+
+\begin{restatable}[Shifting Away from Consensus]{theorem}{shiftingAway}
+\label{thm:mec-increases:body}
+Let $\pi \in \Dset$ and $a\in\support(\pi)$. Suppose that  $\pi_{a\to b}$ is a shift away from consensus and is not a median-shift. Then $\MEC(\pi_{a\to b})> \MEC(\pi)$.
+\end{restatable}
+
+The case of a median-shift is explicitly excluded. The proof divides into the cases $\beta=1$ and $\beta>1$. If $\beta=1$, we show that $\pi$ and $\pi_{a\to b}$ have a common median $m$. By Cor.~\ref{cor:mec-special-cases}, $\MEC(\pi_{a\to b})-\MEC(\pi)=\EC[\alpha,\beta][\pi_{a\to b}](m)-\EC[\alpha,\beta][\pi](m)$, and this is easily seen to be strictly positive. If $\beta>1$, let $y^*$ be the unique optimal consensus point of $\pi$. We consider the function $F(t)\defsymbol \MEC(\pi_{a\to t})$, where $t$ ranges over points lying farther from $y^*$ than $a$ on the same side of $y^*$. We then prove that $F'(t)>0$. It follows that $F(b)>F(a)=\MEC(\pi)$, hence $\MEC(\pi_{a\to b})>\MEC(\pi)$.
+
+The next theorem gives the second part of our strategy by reflecting a simple principle: when all opinion is concentrated at the two extremes, polarization is greatest when the two opposing groups are equal.
+
+\begin{restatable}[Two-Point Polarization]{theorem}{twoPointPolarization} \label{thm:two_massed_distribution:body}  For $A >0$, 
+let \(\pi_A\in\Dset\) satisfy
+\(\pi_A(0)=A\) and \(\pi_A(1)=\Mass{\pi_A}-A\). Then  $\MEC(\pi_A) \leq  \MEC(\pi_A^*)$.
+\end{restatable}
+ 
+Intuitively, as $A$ tends to $0$, the distribution $\pi_A$ approaches the consensus distribution concentrated at the extreme right, whose polarization is $0$. The proof of the theorem proceeds by showing that the minimum effort required for consensus increases as the imbalance between the two extreme masses diminishes. It follows that this effort is maximal when the two masses are equal, that is, at the balanced distribution $\pi_A^*$.
+
+More precisely, the proof reduces the question to establishing the maximum value of the function $g(A)\defsymbol \MEC(\pi_A)$ for $A\in[0,1]$. Since $\MEC$ satisfies Condition~H (Cor.~\ref{cor:condition-H-normalization}), it is enough to consider distributions $\pi_A$ with total mass $\Mass{\pi_A}=1$. By the Reflection Lemma (Lem.~\ref{lem:mec-reflection}), we have $g(A)=\MEC(\pi_A)=\MEC(\pi_A^{\mathrm{ref}(1/2)})=g(1-A)$; thus $g$ is symmetric about $1/2$. The remainder of the proof shows that $g$ increases on $[0,1/2]$. It then follows that $g$ attains its maximum at $A=1/2$. Hence $\pi_A^*$ maximizes $\MEC$ among two-point distributions supported at the extremes.
+
+Finally, we arrive to the main theorem.
+\begin{restatable}{theorem}{mecIsPolarization}\label{th:mec-is-a-polarization-measure} The function $\MEC$ is a polarization measure (Def.~\ref{pol:def}).
+\end{restatable}
+As mentioned above, the first condition of Def.~\ref{pol:def} is immediate. For the second, namely $\MEC(\pi)\leq \MEC(\pi^*)$, we argue by repeatedly applying Th.~\ref{thm:mec-increases:body}, each time performing a non-median shift away from consensus. If $\beta>1$, this process continues until one reaches a distribution $\pi'$ more polarized than $\pi$, with $\Mass{\pi'}=\Mass{\pi}$ and $\support(\pi')=\{0,1\}$. The conclusion then follows from Th.~\ref{thm:two_massed_distribution:body}.
+
+If $\beta=1$, the same argument applies, except that the final distribution $\pi'$ may also have support $\{0,y^*,1\}$, where $0<y^*<1$ is the unique median, and therefore the unique optimal consensus point, of $\pi'$. At that stage no further non-median shift away from consensus is possible.
+
+However, since $y^*$ is the unique median of $\pi'$, we have $\pi'(0)<\Mass{\pi}/2=\pi^*(0)$ and $\pi'(1)<\Mass{\pi}/2=\pi^*(1)$. Moreover, every point of $[0,1]$ is a median of $\pi^*$, and hence $y^*$ is an optimal consensus point for $\pi^*$. It follows that $\MEC(\pi')=\pi'(0)^\alpha y^*+\pi'(1)^\alpha(1-y^*)<\pi^*(0)^\alpha y^*+\pi^*(1)^\alpha(1-y^*)=\MEC(\pi^*)$. This completes the proof.
+

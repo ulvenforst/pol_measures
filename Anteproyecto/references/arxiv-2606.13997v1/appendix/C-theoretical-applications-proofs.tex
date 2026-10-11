@@ -1,0 +1,73 @@
+\section{Proofs for Theoretical Applications}
+\label{appendix:theoretical-applications-proofs}
+
+\subsection{A Minority Principle}
+
+\subsubsection{Proof of Lemma~\ref{lem:yopt-closest-to-largest-general}}
+\label{appendix:proof-yopt-closest-to-largest-general}
+
+\yoptClosest*
+\begin{proof}
+Since \(\beta>1\), the function \(\EC[\alpha,\beta][\pi]\) is strictly convex, hence it has a unique optimal consensus point \(y^*\). On \([l,r]\), we have \(\EC[\alpha,\beta][\pi](y)=A^\alpha (y-l)^\beta + B^\alpha (r-y)^\beta\), and for \(y\in(l,r)\),
+\[
+\frac{d}{dy}\EC[\alpha,\beta][\pi](y)
+=
+\beta A^\alpha (y-l)^{\beta-1}
+-
+\beta B^\alpha (r-y)^{\beta-1}.
+\]
+Moreover, \(\frac{d}{dy}\EC[\alpha,\beta][\pi](l^+)=-\beta B^\alpha (r-l)^{\beta-1}<0\) and \(\frac{d}{dy}\EC[\alpha,\beta][\pi](r^-)=\beta A^\alpha (r-l)^{\beta-1}>0\). Hence the unique optimal consensus point \(y^*\) lies in \((l,r)\). Since \(\EC[\alpha,\beta][\pi]\) is strictly convex, its derivative is strictly increasing on \((l,r)\).
+
+Suppose first that \(y^*>\frac{l+r}{2}\). Since \(\frac{d}{dy}\EC[\alpha,\beta][\pi](y^*)=0\), strict monotonicity of the derivative gives \(0>\frac{d}{dy}\EC[\alpha,\beta][\pi](\frac{l+r}{2})\). Thus \(0>\beta\left(\frac{r-l}{2}\right)^{\beta-1}(A^\alpha-B^\alpha)\), and therefore \(A^\alpha-B^\alpha<0\). Hence \(B^\alpha>A^\alpha\), so \(B>A\).
+
+If \(y^*<\frac{l+r}{2}\), the same argument yields \(0<\frac{d}{dy}\EC[\alpha,\beta][\pi](\frac{l+r}{2})\), hence \(A^\alpha-B^\alpha>0\), and therefore \(B<A\).
+
+Finally, if \(y^*=\frac{l+r}{2}\), then \(0=\frac{d}{dy}\EC[\alpha,\beta][\pi](\frac{l+r}{2})=\beta\left(\frac{r-l}{2}\right)^{\beta-1}(A^\alpha-B^\alpha)\), so \(A^\alpha=B^\alpha\), and therefore \(A=B\).
+\end{proof}
+
+\subsubsection{Proof of Lemma~\ref{lem:greatest-contribution-from-smallest-general}}
+\label{appendix:proof-greatest-contribution-from-smallest-general}
+
+\greatestContribution*
+\begin{proof}
+We prove (1); the other two cases are analogous. Suppose \(y^*>\frac{l+r}{2}\). Then \(y^*\in(l,r)\), so \(\EC[\alpha,\beta][\pi]\) is differentiable at \(y^*\). Since \(y^*\) is an optimal consensus point, we have
+\[
+\frac{d}{dy}\EC[\alpha,\beta][\pi](y^*)=0.
+\]
+Thus
+\[
+A^\alpha (y^*-l)^{\beta-1}=B^\alpha (r-y^*)^{\beta-1}.
+\]
+Moreover, \(y^*>\frac{l+r}{2}\) implies \(y^*-l>r-y^*\). Multiplying the equal sides above by these unequal positive factors, we obtain
+\[
+A^\alpha (y^*-l)^\beta > B^\alpha (r-y^*)^\beta.
+\]
+If \(y^*<\frac{l+r}{2}\), then \(y^*-l<r-y^*\), and the same argument yields
+\[
+A^\alpha (y^*-l)^\beta < B^\alpha (r-y^*)^\beta.
+\]
+Finally, if \(y^*=\frac{l+r}{2}\), then \(y^*-l=r-y^*\), and therefore
+\[
+A^\alpha (y^*-l)^\beta = B^\alpha (r-y^*)^\beta.
+\]
+\end{proof}
+
+\subsubsection{Proof of Theorem~\ref{thm:minority-principle-general}}
+\label{appendix:proof-minority-principle-general}
+
+\minorityPrinciple*
+\begin{proof}
+Assume first that \(\beta>1\). Suppose \(A<B\). Then \(B>A\). By Lem.~\ref{lem:yopt-closest-to-largest-general}, we cannot have \(y^*<\frac{l+r}{2}\), for that would imply \(B<A\), nor can we have \(y^*=\frac{l+r}{2}\), for that would imply \(B=A\). Hence \(y^*>\frac{l+r}{2}\). It now follows from Lem.~\ref{lem:greatest-contribution-from-smallest-general} that
+\[
+A^\alpha (y^*-l)^\beta > B^\alpha (r-y^*)^\beta.
+\]
+The case \(A>B\) is analogous. Indeed, if \(A>B\), then \(B<A\). By Lem.~\ref{lem:yopt-closest-to-largest-general}, we cannot have \(y^*>\frac{l+r}{2}\), nor can we have \(y^*=\frac{l+r}{2}\). Hence \(y^*<\frac{l+r}{2}\), and therefore, by Lem.~\ref{lem:greatest-contribution-from-smallest-general},
+\[
+A^\alpha (y^*-l)^\beta < B^\alpha (r-y^*)^\beta.
+\]
+Assume now that \(\beta=1\). By Cor.~\ref{cor:mec-special-cases}, \(y^*\) is a median of \(\pi^\alpha\). Since \(A\neq B\), we also have \(A^\alpha\neq B^\alpha\), so this median is unique and coincides with the location of the larger mass. Thus, if \(A<B\), then \(A^\alpha<B^\alpha\), hence \(y^*=r\). Therefore \(A^\alpha (y^*-l)=A^\alpha(r-l)>0\), while \(B^\alpha(r-y^*)=0\). Hence
+\[
+A^\alpha (y^*-l)^\beta > B^\alpha (r-y^*)^\beta.
+\]
+The case \(A>B\) is symmetric.
+\end{proof}

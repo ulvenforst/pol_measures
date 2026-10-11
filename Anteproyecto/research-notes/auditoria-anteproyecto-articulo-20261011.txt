@@ -1,0 +1,221 @@
+REVISIÓN DEL DOCUMENTO PARA SU ADAPTACIÓN A TESIS
+11 de octubre de 2026
+
+Nota posterior a la limpieza solicitada por Juan
+Los respaldos Springer, los PDFs antiguos y los temporales mencionados en esta revisión fueron eliminados tras verificar la conservación del contenido. Sus rutas y hashes en este informe y en el registro JSON son evidencia histórica de la comparación, no ubicaciones vigentes. Se conservaron el LaTeX actual, los PDFs de referencia, las fuentes completas del artículo y las notas de investigación. El archivo tar se eliminó porque su contenido ya está extraído y verificado.
+
+Resultado de la revisión
+
+La migración a LaTeX estándar conservó el contenido de investigación que estaba en la fuente Springer. La versión vigente todavía combina una introducción adaptada a los resultados terminados con el resto del anteproyecto. No corresponde afirmar que todo el documento sea ya una tesis terminada o que todas sus afirmaciones concuerden con el artículo.
+
+Esta revisión no modifica el texto de la tesis, los artículos de referencia ni el código de los experimentos. Se guarda como evidencia para trabajar posteriormente por secciones.
+
+1. Identificación de los documentos
+
+El archivo enlazado por Juan en este mensaje está en
+/Users/ulvenforst/Codex/University/pol_measures/Anteproyecto/.backups/before-migration-20261011-171333/sn-article.pdf
+
+Tiene 12 páginas y contiene la plantilla de ejemplo Springer, con “Article Title” y “First Author”. No es el anteproyecto ni el resultado de la migración actual. La extracción y la inspección visual de su portada confirman esta identificación. No debe usarse para evaluar la conservación del contenido académico.
+
+La fuente editable vigente está en
+/Users/ulvenforst/Codex/University/pol_measures/Anteproyecto/sn-article.tex
+
+El PDF situado directamente en esa misma carpeta tiene 22 páginas y corresponde a una compilación Springer anterior. Tampoco es una exportación de la fuente estándar vigente. La vista previa integrada es el resultado de compilación con el que venimos trabajando; en esta revisión no se exportó otro PDF.
+
+El anteproyecto de referencia tiene 21 páginas y está en
+/Users/ulvenforst/Codex/University/pol_measures/Anteproyecto/references/Anteproyecto_de_grado-vfinal.pdf
+
+El artículo científico de referencia tiene 55 páginas y está en
+/Users/ulvenforst/Codex/University/pol_measures/Anteproyecto/references/2606.13997v1.pdf
+
+Sus fuentes completas están en
+/Users/ulvenforst/Codex/University/pol_measures/Anteproyecto/references/arxiv-2606.13997v1/
+
+El artículo v1 establece las definiciones, resultados, nomenclatura y alcance de la investigación conjunta. El anteproyecto establece los objetivos y compromisos de la tesis. El repositorio proporciona las implementaciones y los resultados computacionales. Las tres funciones deben mantenerse diferenciadas al redactar.
+
+2. Conservación de información
+
+Se comparó la fuente vigente con la fuente Springer previa a la conversión y con la fuente original que quedó en el respaldo anterior a la migración.
+
+El cuerpo completo desde la introducción hasta las referencias coincide con la fuente inmediatamente anterior, descontando dos sustituciones de comandos de presentación y un comentario sobre la bibliografía incorporada. Desde “Motivation, Field Positioning, and Regional Context” hasta el final, el texto coincide también con la fuente original del anteproyecto, descontando el espaciado de una tabla y esos cambios de presentación.
+
+Se conservaron las nueve secciones, el resumen, las fórmulas del cuerpo, seis tablas activas, las actividades A1-A14 y su distinción entre obligatorias y deseables, el cronograma, el presupuesto, el contexto institucional, los casos regionales propuestos y la gobernanza de datos. Las diez referencias originales siguen presentes; se agregó la referencia del artículo MEC.
+
+La portada cambió de formato y presenta los roles de estudiante, directores y codirector. La introducción fue revisada antes de la conversión y ya distingue hipótesis original y resultados obtenidos. La fecha histórica de la portada original no debe confundirse con el año de la tesis. El PDF original conserva el registro documental del anteproyecto.
+
+Las comprobaciones, hashes y recuentos están en
+/Users/ulvenforst/Codex/University/pol_measures/Anteproyecto/research-notes/audit-verification-20261011.json
+
+Conservar el contenido no equivale a conservar sin revisión cada afirmación del anteproyecto. Una hipótesis puede quedar parcialmente confirmada; una actividad prevista puede requerir evidencia de ejecución; un error heredado debe corregirse.
+
+3. Correspondencia con los objetivos aprobados
+
+A1-A2, revisión y contexto. El anteproyecto conserva el marco conceptual y regional. El artículo aporta la fundamentación matemática y la comparación bibliográfica. Debemos actualizar afirmaciones generales y referencias, y separar motivación regional de resultados empíricos demostrados.
+
+A3, universo y criterios. El artículo y el generador del repositorio documentan el corpus de cinco posiciones y la reducción por reflexión. Hace falta describir las convenciones reales de normalización, puntuación y empates, en lugar de copiar solamente las opciones previstas.
+
+A4-A6, desarrollo teórico. El artículo contiene definiciones, resultados estructurales, identidad con EMD y demostraciones de los tres axiomas ER en los rangos indicados. Constituye material existente para incorporar a la tesis. Deben explicitarse las hipótesis de cada resultado y corregirse las confusiones con los axiomas fortalecidos de KNS.
+
+A7, propiedades adicionales, deseable. La propiedad de división central está demostrada en la sección 7 y el apéndice E. Otras aplicaciones existentes, como el principio de minoría y el método de punto crítico, pueden incorporarse donde contribuyan a explicar la investigación. No suponen tener que emprender una investigación nueva.
+
+A8, implementación. El repositorio contiene API, pruebas, licencia y configuración de integración continua. Hay scripts con interfaces de ejecución para experimentos. El paquete se distribuye como “measures”, versión 0.1.0a2; “pol_measures” es el nombre del repositorio. No se encontró un punto de entrada instalado para una CLI general en setup.py ni un flujo de publicación que permita dar por acreditado todo el compromiso “CLI y CI/CD”. La existencia de configuración de pruebas tampoco certifica por sí sola que cada ejecución histórica haya pasado.
+
+A9-A10, corpus y concordancia. El artículo y los archivos de benchmarks documentan enumeración y matrices de Kendall. Las superficies de búsqueda de parámetros son material adicional del repositorio. Debemos identificar qué ejecución produjo cada tabla o figura; la matriz publicada y las búsquedas adicionales no son automáticamente el mismo experimento.
+
+A11-A12, transformaciones y umbrales, deseables. Hay código de análisis relacionado, pero no basta con la existencia de un módulo para acreditar una ejecución y sus resultados. Debemos usar los artefactos ya obtenidos que correspondan, o declarar el alcance de lo realizado. La ausencia de estos resultados en el artículo no obliga por sí sola a realizar actividades adicionales.
+
+A13, solicitudes del equipo, deseable. Su acreditación depende de cambios y entregas identificables. No puede inferirse únicamente de la lista de autores.
+
+A14, contribución al manuscrito. Juan es coautor del artículo terminado. La tesis debe contextualizar la investigación conjunta y precisar su contribución personal a partir de su relato y los registros disponibles, sin atribuirle automáticamente todas las demostraciones o experimentos.
+
+Las ilustraciones regionales, los análisis Bradley-Terry/Thurstone, el top-k y otras pruebas de robustez se mencionan en la prosa del anteproyecto. No he establecido una cadena de evidencia completa para cada uno en el material revisado. Esto significa “pendiente de documentar”, no “no se hizo”. Su obligatoriedad debe cotejarse con los objetivos y actividades aprobados, sin convertir cada posibilidad narrativa en un nuevo requisito de investigación.
+
+4. Correcciones concretas del texto vigente
+
+Ubicaciones referidas a la fuente vigente indicada en el apartado 1. Los números de línea corresponden al estado revisado.
+
+4.1. Recuento del corpus, línea 258
+
+El texto da 2.299.063 representantes. El resultado correcto, que figura en la sección 8 del artículo y en los resultados del repositorio, es 2.299.726.
+
+Hay 4.598.126 composiciones y 1.326 palíndromos. El recuento es (4.598.126 + 1.326)/2. Dividir simplemente por dos omite la corrección por las configuraciones invariantes bajo reflexión.
+
+4.2. Tastle-Wierman, líneas 158-162
+
+Falta el término 1 en la definición del consenso. Para probabilidades que suman uno, la expresión es
+
+C_TW = 1 + suma_i p_i log_2(1 - |x_i - media|/d)
+D_TW = 1 - C_TW = -suma_i p_i log_2(1 - |x_i - media|/d)
+
+La fórmula vigente asignaría disenso 1 al consenso completo. La implementación devuelve la suma negativa correcta, con un epsilon numérico dentro del logaritmo. Debemos distinguir la fórmula matemática de ese detalle de implementación y definir d respecto a la escala fija.
+
+4.3. Van der Eijk, líneas 152-164
+
+La expresión presentada corresponde al acuerdo de un patrón, pero el algoritmo completo descompone el histograma en capas y agrega sus acuerdos ponderados. La implementación convierte el acuerdo agregado AA a polarización mediante (1-AA)/2. El texto presenta 1-A sin esa agregación ni esa normalización.
+
+Una transformación afín positiva puede conservar rankings, pero eso no corrige la omisión del algoritmo completo. Tampoco es correcto afirmar que Van der Eijk ignora la geometría bimodal; su implementación cuenta patrones de unimodalidad y multimodalidad. Las limitaciones deben exponerse mediante comparaciones precisas.
+
+4.4. Estudio de expertos, líneas 173-182, 260 y 346
+
+El estudio original pidió puntuar quince histogramas de 0 a 100. Participaron 60 expertos y se analizaron 58 tras excluir dos casos. No se recogieron decisiones de comparación por pares. Los pares usados por Kendall son una operación estadística posterior. Los datos locales contienen histogramas y medias agregadas; el índice ajustado de Koudenburg es otro objeto y no debe confundirse con esas medias.
+
+La fuente primaria explica además por qué algunos histogramas dibujados suman 64 o 99 y cómo los normalizó. Esa particularidad aparece en los datos locales y debe conservarse con su explicación.
+
+Fuente primaria
+https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2021.738258/full
+
+No debemos describir una nueva recolección o una réplica con participantes. La tesis reutiliza los datos publicados. Los modelos de preferencias por pares previstos requieren evidencia propia antes de presentarlos como ejecutados.
+
+4.5. Axiomas y propiedades, líneas 597-611
+
+La introducción describe correctamente el régimen demostrado. Axiom 1 requiere alpha > 1; Axioms 2 y 3 admiten alpha,beta >= 1. La sección de contribuciones, en cambio, reclama Axiom 1' y mezcla ER con la caracterización fortalecida KNS. El artículo demuestra los tres axiomas ER; no establece automáticamente todos los requisitos de una caracterización KNS.
+
+Axiom 3 añade masa a los grupos exteriores existentes. Property 1 permite división central hacia posiciones simétricas intermedias. Son afirmaciones distintas. La descripción de “incremento proporcional a beta-1” tampoco puede usarse como explicación general, pues Axiom 2 mantiene incremento estricto cuando beta=1 bajo sus condiciones.
+
+La estrategia propuesta de probar una derivada estrictamente positiva en el origen de la división central debe reemplazarse por la demostración existente. Para flancos interiores, el incremento es 2 Delta^alpha z^beta; su derivada en Delta=0 es cero cuando alpha>1.
+
+4.6. Evidencia empírica y selección de parámetros, líneas 105-109 y secciones posteriores
+
+La comprobación independiente de quince perfiles reproduce tau_B = 0,8857142857 para MEC(2,1.15) y ER(0.8). La introducción ya presenta adecuadamente el empate y sus límites.
+
+La selección de parámetros y su evaluación usan el mismo benchmark. No equivalen a una validación independiente sobre perfiles nuevos. Hay varios parámetros MEC empatados. Una búsqueda finita no acredita un máximo global en todo el dominio continuo. Los análisis posteriores deben mantener esas distinciones; el leaderboard ampliado del repositorio tampoco debe confundirse con el conjunto de comparadores publicado.
+
+4.7. Método computacional, líneas 264-267 y sección de metodología
+
+La clase pública MEC utiliza minimize_scalar con método bounded. La bisección existe como función separada para beta>1. La versión inspeccionada devuelve el valor de MEC, no el optimizador y*. Debemos describir cada algoritmo según la ejecución que realmente lo utilizó.
+
+La matriz de comparación tiene un redondeo configurado por defecto en 10^-4. Eso es distinto de la precisión de búsqueda del minimizador y de las tolerancias previstas en el anteproyecto. Los empates y su tratamiento afectan tau_B.
+
+MECNormalized emplea un cociente de raíces beta frente a una referencia de masa unitaria. No es idéntico a dividir directamente el MEC bruto por su máximo para cualquier población. Las masas y las posiciones deben normalizarse de forma explícita y consistente.
+
+La afirmación O(n log(1/epsilon)) describe la bisección con precisión del punto de consenso. La evaluación cuadrática ER es la implementación directa inspeccionada, no un límite inevitable de ER en una dimensión. Los benchmarks guardados para cinco posiciones registran aproximadamente 159,67 segundos para MEC y 6,11 para ER con un trabajador; no sustentan una afirmación de que MEC sea siempre más rápido. Los ensayos de soporte creciente estudian una situación distinta.
+
+4.8. Estado del trabajo y alcances, resumen y secciones 2-9
+
+El texto aún anuncia pruebas y experimentos futuros, un plan de preregistro y resultados esperados. Debe narrar lo realizado, distinguirlo de lo previsto y aportar evidencia para cualquier preregistro efectivo. Cronograma y presupuesto conservan valor como registro del proyecto, pero no sustituyen capítulos de resultados.
+
+Los casos de Valle del Cauca permanecen en el documento. No aparecen como resultados de la sección experimental del artículo v1 y todavía requieren sus datos, procedencia y salidas identificables para incorporarlos como casos realizados.
+
+La medida estática y el punto óptimo no prueban predicciones de tiempos de consenso ni efectos causales de intervenciones. La necesidad o exención de una aprobación ética tampoco debe deducirse únicamente de que los datos sean agregados; la tesis debe describir las condiciones y registros aplicables al trabajo efectivamente realizado.
+
+4.9. Bibliografía regional, línea 694
+
+La entrada sobre polarización sentimental durante el Paro Nacional atribuye el trabajo a García y Pérez y a Revista de Comunicación. La página primaria identifica a Elias Said-Hung, Sergio Arce-García y Daria Mottareale-Calvanese, en Cuadernos.info, con DOI 10.7764/cdi.55.50483. Es un error heredado, no una pérdida causada por la conversión.
+
+Fuente primaria
+https://ojs.uc.cl/index.php/cdi/article/view/50483
+
+Esta revisión detecta una referencia incorrecta concreta. No certifica todavía todos los metadatos y enlaces de la bibliografía regional.
+
+5. Precauciones al reutilizar el artículo como fuente científica
+
+El artículo sigue siendo la referencia central. Algunos detalles locales de su exposición merecen revisión antes de copiarlos literalmente a la tesis. Se conservan las referencias originales; las observaciones no editan el paper ni equivalen a refutar todo su desarrollo.
+
+En la sección 5.2, para masas 40 y 60 situadas en 0,25 y 1 tras el traslado completo, MEC(2,2) vale 8100/13 = 623,0769231. El artículo escribe aproximadamente 461,5. La conclusión cualitativa de incremento se mantiene.
+
+La conclusión describe MEC(1,1) como EMD a la distribución extrema. La identidad con esa distribución lleva un complemento M/2 - EMD; la identidad sin complemento corresponde al mínimo EMD a consenso. La introducción vigente usa correctamente esta segunda identidad.
+
+El enunciado de traslado estricto de la sección 6 debe explicitar que la distribución inicial no es ya un consenso. Mover una única masa mantiene MEC=0 y satisface literalmente las condiciones escritas cuando beta>1. La aplicación principal de maximalidad sí parte de distribuciones no consensuales.
+
+En Property 1, si los nuevos puntos coinciden con los extremos, las masas coincidentes se suman antes de elevar a alpha. La fórmula del incremento usada para puntos interiores requiere un tratamiento separado del borde. En los resultados de minoría deben explicitarse las distribuciones de soporte exactamente bipuntual, como indica el contexto.
+
+Estas observaciones y otras precisiones de exposición ya figuran en las notas de verificación. Deben tratarse al llegar a cada sección teórica, conservando lo demostrado y verificando cada detalle que vayamos a reutilizar.
+
+6. Fuentes experimentales y trazabilidad
+
+Repositorio local
+/Users/ulvenforst/Codex/University/pol_measures
+
+Repositorio remoto
+https://github.com/ulvenforst/pol_measures
+
+El HEAD local es 1efd4fe3f083e478cb91a6f3ca078cad01386a80 y coincide con main remoto en la consulta de esta revisión. Hay resultados locales de escalamiento sin seguimiento Git, además de la carpeta de tesis. Por ello la coincidencia del commit no significa que absolutamente todos los archivos locales ya estén publicados.
+
+Implementaciones y convenciones
+/Users/ulvenforst/Codex/University/pol_measures/src/measures/metrics/proposed/mec.py
+/Users/ulvenforst/Codex/University/pol_measures/src/measures/utils/optimization.py
+/Users/ulvenforst/Codex/University/pol_measures/src/measures/metrics/literature/shannon.py
+/Users/ulvenforst/Codex/University/pol_measures/src/measures/metrics/literature/van_der_eijk.py
+
+Corpus y concordancia
+/Users/ulvenforst/Codex/University/pol_measures/benchmarks/comparison_matrix/distribution_generator.py
+/Users/ulvenforst/Codex/University/pol_measures/benchmarks/comparison_matrix/measure_calculator.py
+/Users/ulvenforst/Codex/University/pol_measures/benchmarks/comparison_matrix/kendall_matrix.py
+
+Benchmark de expertos y búsqueda de parámetros
+/Users/ulvenforst/Codex/University/pol_measures/benchmarks/expert_validation/data.py
+/Users/ulvenforst/Codex/University/pol_measures/benchmarks/expert_validation/mec_parameter_search.py
+/Users/ulvenforst/Codex/University/pol_measures/benchmarks/expert_validation/mec_parameter_optimization.py
+/Users/ulvenforst/Codex/University/pol_measures/benchmarks/expert_validation/optimized_validation_against_experts/optimized_validation_details.txt
+
+Tiempos guardados y metadatos
+/Users/ulvenforst/Codex/University/pol_measures/benchmarks/corpus_timing_mec_vs_er/full_mec_w1.json
+/Users/ulvenforst/Codex/University/pol_measures/benchmarks/corpus_timing_mec_vs_er/full_er_w1.json
+/Users/ulvenforst/Codex/University/pol_measures/benchmarks/support_scaling_mec_vs_er/
+
+Para cada resultado incorporado a la tesis debemos registrar datos de entrada, normalización, parámetros, solver, tolerancia y redondeo, commit o estado local y archivo de salida. Esto permite reutilizar lo existente con trazabilidad, sin repetir indiscriminadamente los experimentos.
+
+7. Orden recomendado para continuar
+
+Primero corregir las discrepancias matemáticas, metodológicas y bibliográficas en las secciones que vayamos adaptando. Después fijar la correspondencia entre objetivos, resultados del artículo y artefactos del repositorio. Incorporar las definiciones y demostraciones existentes, la metodología realmente ejecutada y los resultados con sus límites. Mantener el cronograma y el presupuesto como antecedentes o anexos si su ubicación actual deja de servir a la tesis.
+
+La introducción está sustancialmente alineada en los puntos principales revisados. Debemos volver a examinar sus referencias a casos regionales y su hoja de ruta cuando tengamos la estructura y evidencia definitivas. El siguiente trabajo puede seguir siendo de redacción y documentación sobre investigación ya realizada. Esta revisión no demuestra que sea necesario realizar nuevos experimentos.
+
+Límites de la comprobación
+
+Se extrajo el contenido completo de los PDFs de comparación, se inspeccionaron portadas, se compararon las fuentes y se revisaron resultados y código relevantes. Se hicieron comprobaciones aritméticas y de concordancia independientes sobre quince perfiles. No se volvió a ejecutar el corpus completo, los benchmarks temporales ni toda la suite de software; tampoco se rehízo una demostración independiente de cada teorema. La apariencia del PDF estándar vigente no se certifica usando PDFs anteriores.
+
+8. Revisión del hilo narrativo solicitada por Juan
+
+Juan confirma que redactó la prosa explicativa del anteproyecto y autoriza reutilizarla literalmente en la tesis. La adaptación debe conservar las explicaciones que siguen siendo útiles, sin reformularlas únicamente para producir un texto diferente.
+
+Introduction, Research Question, and Hypothesis
+El recorrido original va de la formación de grupos a la distinción entre desigualdad y polarización, presenta identificación, alienación y concentración de masa, introduce el esfuerzo al consenso y plantea dos comparaciones empíricas. La introducción vigente conservaba la idea general, pero había abreviado la distinción con la desigualdad y eliminado la presentación explícita de las tres intuiciones. Se recuperaron esas explicaciones y las dos líneas de comparación. Se conservan literalmente varias frases del anteproyecto, entre ellas la formación de grupos y la distinción entre dispersión y campos opuestos. La fórmula MEC, la pregunta, la hipótesis histórica y los resultados corregidos no cambiaron. La compilación integrada terminó correctamente.
+
+Literature Review and Conceptual Framework
+El marco conserva el texto original y su orden explicativo. Parte de identificación y alienación, explica el programa axiomático, presenta los índices para escalas ordenadas, introduce la imagen de transporte de masa y conecta la evaluación con juicios de expertos. Las tres corrientes convergen después en la justificación de MEC. No se perdió esa estructura y no se sustituyó la sección en esta revisión narrativa. Al adaptarla a tesis debemos corregir los puntos matemáticos y metodológicos del apartado 4, manteniendo las explicaciones precisas y útiles. La referencia KNS, la agregación Van der Eijk, la fórmula Tastle-Wierman y el protocolo de expertos necesitan esas correcciones; no son razones para descartar toda la narración.
+
+Otros contenidos aprovechables
+La motivación sobre la utilidad de medir, la ubicación en PROMUEVA, la explicación de las distintas fuentes de datos, el sentido de la enumeración exhaustiva, la relación entre convexidad y cálculo, y las razones de reproducibilidad y límites de interpretación permanecen en el texto. Su adaptación debe distinguir motivación, métodos realmente ejecutados y resultados. Los antecedentes administrativos pueden cambiar de ubicación cuando definamos la estructura final. Las aplicaciones regionales previstas requieren evidencia antes de convertirse en resultados de la tesis.
+
+La comprobación de alcance confirmó que no se modificó ninguna sección desde Motivation, Field Positioning, and Regional Context hasta el final. La preservación narrativa queda registrada junto con la autorización de reutilizar la redacción de Juan.

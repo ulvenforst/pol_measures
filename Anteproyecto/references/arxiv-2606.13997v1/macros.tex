@@ -1,0 +1,72 @@
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+
+\newtheorem{proposition}{Proposition}
+
+
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\bvec}[1]{\boldsymbol{#1}}
+\newcommand{\Dset}{\mathcal{D}}
+\newcommand{\Pol}{\mathbf{P}}
+
+\newcommand{\Argmax}{\text{argmax}}
+\newcommand{\PositiveReals}{\Reals_{\geq 0}}
+
+\newcommand{\Mass}[1]{\Sigma #1}
+ \newcommand{\defsymbol}{\stackrel{\text{def}}{=}}
+
+\newcommand{\support}{\boldsymbol{s}}
+
+% This wrapper is just to avoid some wrong warnings in overleaf about math mode
+\def\oo{\infty}
+\def\eps{\epsilon}
+\def\calX{{\mathcal{X}}}
+
+%\NewDocumentCommand{\MEC}{O{\alpha,\beta,\pi}}{\text{MEC}_{#1}^\pi}
+
+\NewDocumentCommand{\ER}{O{\alpha}}{\operatorname{ER}_{#1}}
+
+% Candidate polarization measure labels used in prose and compact comparisons.
+\NewDocumentCommand{\ERLabel}{o}{\ensuremath{\mathrm{ER}\IfValueT{#1}{_{#1}}}}
+\newcommand{\EMDLabel}{\ensuremath{\mathrm{EMD}}}
+\newcommand{\VdELabel}{\ensuremath{\mathrm{VdE}}}
+\newcommand{\TWDLabel}{\ensuremath{\mathrm{TWD}}}
+\newcommand{\KILabel}{\ensuremath{\mathrm{KI}}}
+
+\NewDocumentCommand{\EC}{O{\alpha,\beta} O{\pi}}{%
+\operatorname{EC}_{#1}^{#2}%
+}
+
+\NewDocumentCommand{\MEC}{O{\alpha,\beta}}{\operatorname{MEC}_{#1}}
+
+\NewDocumentCommand{\ECEMD}{O{\alpha,\beta} O{\pi}}{%
+\operatorname{EC}^{#2}%
+}
+
+\NewDocumentCommand{\MECEMD}{O{\alpha,\beta}}{\operatorname{MEC}}
+
+\def\EMD{\operatorname{EMD}}
+
+\NewDocumentCommand{\set}{s m}{\IfBooleanTF{#1}{{\{#2\}}}{{\ensuremath{\left\{#2\right\}}}}}
+\NewDocumentCommand{\lr}{s m}{\IfBooleanTF{#1}{{(#2)}}{{\ensuremath{\left(#2\right)}}}}
+\NewDocumentCommand{\eqdef}{}{\stackrel{{\scriptscriptstyle \mathrm{def}}}{=}}
+\NewDocumentCommand{\argmin}{}{\operatorname*{arg\,min}}
+\NewDocumentCommand{\bpi}{}{{\boldsymbol{\pi}}}
+\NewDocumentCommand{\bx}{}{\boldsymbol{x}}
+\NewDocumentCommand{\midrange}{}{{\sigma_\oo}}
+\NewDocumentCommand{\lrfrac}{m m}{\lr{\frac{#1}{#2}}}
+
+
+\newcommand{\doubleCheckmark}[2][1]{%
+  \scalebox{#1}{\checkmark\hspace{-#2}\textcolor{white}{\checkmark}\hspace{-#2}\checkmark}%
+}
+\def\checkcheck{{\doubleCheckmark{1em}}}
+
+\newcommand{\Var}{\mathrm{Var}}
+
+\newcommand{\Disc}{\Delta
+}
+% \NewDocumentCommand{\pixn}{O{}}{(\pi^{#1}_i)_{i=1}^n, (x_i)_{i=1}^n}
+
+\newcommand{\proofpart}[1]{\par\medskip\noindent\textbf{#1.}\ }

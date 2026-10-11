@@ -1,0 +1,72 @@
+\section{Conclusions and Related Work}\label{sec:conclusion}
+
+We have introduced MEC, a polarization measure defined as the minimum
+effort required to bring an opinion distribution to consensus. The
+measure rests on three connected mathematical foundations: a
+transportation-theoretic interpretation as a Wasserstein-type distance
+to the set of consensus distributions, a Minkowski-type characterization
+as a weighted $L^\beta$-dispersion of the $\alpha$-power distribution,
+and an axiomatic compatibility with the framework of Esteban and
+Ray~\cite{esteban1994measurement}. The basic case $(\alpha,\beta)=(1,1)$
+recovers the Earth Mover's Distance to the extremal distribution, and
+the cases $(1,1)$ and $(1,2)$ specialize to mean absolute deviation
+about the median and to a variance-like dispersion respectively. The
+parameters $\alpha$ and $\beta$ admit a natural reading in terms of
+group identification~\cite{TajfelTurner1979} and cognitive cost of
+belief revision~\cite{Festinger1957}.
+
+Beyond the scalar value, the optimization formulation produces an
+optimal consensus point $y^*$, which existing pairwise and dispersion
+measures do not provide. This additional structure has both
+theoretical and practical use. On the theoretical side, $y^*$ anchors
+the proofs of the Minority Principle and of the shifting-away
+result, and supports a closed-form Tipping Point method that locates
+the critical mass at which a partial transfer of opinions away from
+$y^*$ ceases to reduce polarization and begins to increase it. The
+analysis also reveals that polarization is not monotone in extremism,
+nor in movement away from the optimal consensus point: whether such a
+movement raises or lowers polarization depends on whether a whole group
+or only a fragment of it is displaced. Empirically, MEC matches the
+strongest parametrization of \ERLabel{} on the expert-judgment
+benchmark of Koudenburg, Kiers, and Kashima~\cite{koudenburg2021new}, and
+outperforms the dispersion-based alternatives \VdELabel{} and
+\TWDLabel.
+
+The proposal is part of a broader effort to bring tools from optimal
+transport and convex analysis to the quantitative study of polarization,
+a field that has been dominated by pairwise constructions in the spirit
+of Gini and Esteban--Ray~\cite{esteban1994measurement,foster85}. The
+Earth Mover's Distance has appeared in this literature as a measure of
+distance between distributions~\cite{geher2020isometric,vallender1974calculation},
+but, to our knowledge, has not previously been used to define
+polarization itself as a distance to a structured target set. The
+parametric framework $(\alpha,\beta)$ also relates to the
+inequality-measurement tradition~\cite{foster85}, in which similar
+exponents control sensitivity to mass and distance, and to the
+sociological literature on group identification and cognitive
+dissonance~\cite{TajfelTurner1979,Festinger1957}, which motivates the
+specific role of the two parameters.
+
+Several directions remain open. The current formulation treats opinions
+as elements of $[0,1]$ and distributions as having finite support. A
+natural extension is to general metric spaces, in which the ground
+distance $|x-y|$ would be replaced by an arbitrary metric and the
+domain by a suitable measurable space. The parametric family invites
+further study of the dependence of $\MEC$ on $(\alpha,\beta)$, in
+particular a theoretical justification of the empirically successful
+parametrization $(2,1.15)$. The Tipping Point method, established here
+for $\alpha=\beta=2$, may admit extensions to other parameter ranges.
+The empirical validation rests on a synthetic benchmark; testing MEC
+on real survey data, and on dynamic models of opinion update, would
+clarify both its descriptive accuracy and its sensitivity to noise.
+Finally, the optimization formulation suggests a connection to
+mediation and policy framing through the optimal consensus point
+$y^*$, which we have treated here only as a structural object but
+which may admit substantive interpretation in applied settings.
+
+\paragraph{Acknowledgments.}
+The authors would like to thank the anonymous reviewers for their very
+insightful comments on an earlier version of this paper.  This work
+has been partially supported by the SGR project PROMUEVA (BPIN
+2021000100160) under the supervision of Minciencias (Ministerio de
+Ciencia Tecnolog\'ia e Innovaci\'on, Colombia),  by the CNRS project TOBIAS under the MITI interdisciplinary program, and the ECOSNORD Project BRAINS C26M02. 

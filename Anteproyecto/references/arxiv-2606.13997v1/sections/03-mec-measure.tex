@@ -1,0 +1,169 @@
+\section{The MEC Measure}\label{sec:mec}
+
+In this section we introduce our notion of polarization and establish
+some of its properties. For clarity of exposition, we begin with a
+simpler formulation, which will later be generalized to obtain the
+measure presented in this paper.
+
+As argued in the Introduction, the greater the polarization of a
+population, the more difficult it is to achieve consensus. It is
+therefore natural to define polarization in terms of the \emph{minimal
+effort} required to reach consensus. Inspired by transportation
+theory, we can measure the effort required to transform an opinion
+distribution $\pi$ into a consensus at $y$ by
+\begin{equation}\label{eq:emd}   
+\ECEMD(y)\defsymbol\sum_{x \in \support(\pi)}\pi(x) |x - y|.
+\end{equation}
+Thus, the minimal effort to a consensus (MEC) of $\pi$ would be:  
+\begin{equation}\label{eq:mecemd}     
+\MECEMD(\pi) \defsymbol  \min_{y\in[0,1]} {\ECEMD}(y)=\min_{y\in[0,1]}\sum_{x \in \support(\pi)}\pi(x) |x - y|.
+\end{equation}
+
+The quantity $\ECEMD(y)$ is precisely the \emph{Earth Mover's Distance} (\EMDLabel) between
+$\pi$ and the consensus distribution $\pi_y$; that is,
+\[
+\ECEMD(y) = \EMD(\pi,\pi_y).
+\]
+\todo{FV: Juan Camilo please double check this} A formal definition of \EMDLabel{} on opinion distributions, together with a proof of this identity, is given in Appendix~\ref{appendix:emd-definition} (Lemma~\ref{lem:ecemd-as-emd}). Intuitively, \EMDLabel{} represents the least amount of work required
+to transform one distribution into another. By Cor.~\ref{cor:mec-special-cases} in Sec.~\ref{section:special-cases}, this work is minimal when 
+$y$ is a median $m$ of $\pi$. Hence,
+\begin{equation}
+\MECEMD(\pi) = \EMD(\pi,\pi_m).\label{eq:mec-emd-pi-m}
+\end{equation}
+
+For example, consider the distribution 
+$\pi=((20,30,50),(0,0.8,1))$. 
+Reaching consensus at the median $y=0.8$ requires an effort of $
+\ECEMD(0.8)=26,
+$  
+and this value is minimal among the efforts required to reach a consensus. 
+Hence,
+$
+\MECEMD(\pi)=\ECEMD(0.8)=26
+= \EMD(\pi,\pi_{0.8}).
+$
+
+Now consider the extremal distribution 
+$\pi^*=((50,50),(0,1))$. 
+In this case,
+$
+\MECEMD(\pi^*)=50
+$. In general, for any $\pi$, \[ \MECEMD(\pi^*)=\frac{\Mass{\pi}}{2}\] 
+can be shown to be the maximal possible value of $\MECEMD$ among 
+distributions of total mass $\Mass{\pi}$, i.e., $\pi^*$ is the most polarized distribution of this mass. Furthermore, it is easy to see that if $\pi$ is a consensus distribution then $\MECEMD(\pi)=0$. Thus, according to Def.~\ref{pol:def}, $\MECEMD(.)$ is indeed a polarization measure.
+
+From the above observations and properties of \EMDLabel, we can derive the following elegant characterization for polarization in terms of the distance to the extremal distribution.
+
+\begin{restatable}[MEC as \EMDLabel\ distance to $\pi^*$]{theorem}{mecAsEmd}\label{th:mec-as-emd}
+Let $\pi$ be an opinion distribution. Then  \begin{equation}
+\MECEMD(\pi)=\frac{\Mass{\pi}}{2} - \EMD(\pi,\pi^*).    
+\label{eq:mec-emd-1}
+\end{equation}
+\end{restatable}
+
+The above proposition makes precise the intuition that proximity to the 
+extremal distribution corresponds to greater polarization.
+
+\subsection{Group Identity ($\alpha$) and Alienation ($\beta$)}
+As argued in \cite{esteban1994measurement}, polarization increases with the degree of homogeneity within groups and with the degree of heterogeneity across groups. 
+Greater within-group homogeneity reflects stronger \emph{group identity} or cohesion, while greater between-group heterogeneity captures increased \emph{alienation} across groups. 
+If these two dimensions are to be adequately represented, the measure $\MECEMD(\cdot)$ in Eq.~\ref{eq:emd} requires reconsideration.
+
+\emph{Alienation.}
+Observe first that opinion distance in Eq.~\ref{eq:emd} enters linearly through the term $|x-y|$, a feature it shares with the classical formulation of Esteban and Ray \cite{esteban1994measurement}. 
+Under this specification, a movement from $0$ to $1$ is exactly twice as costly as a movement from $0$ to $0.5$. 
+Opinion change is thus treated as proportional to ideological distance, much as the transportation of mass across space.
+
+There is, however, reason to doubt that ideological displacement proceeds in so uniform a manner. 
+According to Social Identity Theory, individuals derive part of their self-conception from membership in social groups, and opinions frequently serve as outward expressions of such affiliation \cite{TajfelTurner1979}.
+A modest adjustment within a shared ideological region may leave group attachment undisturbed. 
+A more substantial shift, by contrast, may be interpreted as a departure from one's group or an alignment with a rival one, thereby engaging considerations of identity. 
+In addition, significant revisions of belief may give rise to cognitive dissonance which individuals are inclined to avoid \cite{Festinger1957}.
+It is therefore plausible that large ideological displacements entail costs that increase more than proportionally with distance.
+
+To allow for this possibility, we introduce a parameter $\beta \geq 1$ and replace the term $|x-y|$ in Eq.~\ref{eq:emd} by $|x-y|^{\beta}$. 
+When $\beta=1$, the proportional structure is preserved. 
+When $\beta>1$, larger displacements receive disproportionately greater weight. 
+The parameter $\beta$ may thus be understood as regulating alienation: it determines the rate at which the cost of opinion change increases with ideological distance.
+
+\begin{example} Consider the two-point distribution
+\(
+\pi = ((49,52),(0,1)).
+\)
+Assume $\beta = 1$.  Since the median of $\pi$ is $m=1$, the minimal effort to consensus is obtained by moving the entire minority mass from $0$ to $1$, yielding a cost of $49$.
+Though mathematically correct, this conclusion may appear sociologically doubtful: a minority comprising $49\%$ of the population would not readily be expected to adopt the opposite extreme, but rather to sustain some intermediate position.
+
+If instead we set $\beta=2$, the objective becomes strictly convex and is minimized at the weighted mean (see Cor.~\ref{cor:mec-special-cases}), here $y^*=\frac{2704}{5105}\approx 0.5297.$
+The optimal consensus thus lies closer to the midpoint rather than at an extreme.
+\qed
+\end{example}
+
+\emph{Group Identity.} To address group identity in polarization, we also introduce a parameter $\alpha \geq 1$  and replace the mass $\pi(x)$ by $\pi(x)^\alpha$ in Eq.~\ref{eq:emd} to modulate the influence of group size. When $\alpha = 1$, a group's contribution is proportional to its mass.
+When $\alpha > 1$, larger groups receive more-than-proportional weight, while smaller groups are relatively downweighted.
+Thus increasing $\alpha$ amplifies the influence of cohesive majorities and attenuates the impact of negligible groups, mirroring the identification principle emphasized by \cite{esteban1994measurement}.
+
+To illustrate the role of group identity, we write \(\MEC(\cdot)\) for the variant of \(\MECEMD(\cdot)\) in Eq.~\ref{eq:mecemd} obtained by replacing \(\pi(x)\) with \(\pi(x)^\alpha\) and \(|x-y|\) with \(|x-y|^\beta\). A precise definition of \(\MEC(\cdot)\) will be given in the next section.
+
+\begin{example}\label{ex:group-identity}
+Assume $\beta=2$ and consider
+\[
+\pi=((40,60),(0.25,0.75)),
+\qquad
+\pi'=((40,59,1),(0.25,0.75,1)).
+\]
+The distribution $\pi$ represents two moderate groups of unequal size. 
+The distribution $\pi'$ may be viewed as arising from $\pi$ through a slight radicalization: a small minority moves toward the extreme right, while the majority remains moderate.
+
+If $\alpha=1$, as shown below in Cor.~\ref{cor:mec-special-cases}, the optimal consensus is attained at the mean of $\pi$
+($y=0.55$ for $\pi$ and $y=0.5525$ for $\pi'$). 
+Because of the small extreme mass, however, we obtain
+\[
+\MEC[1,2](\pi)=6.0 \;<\; 6.161875 \;=\; \MEC[1,2](\pi'),
+\]
+so that $\pi'$ appears more polarized.
+
+If instead $\alpha=2$, the ordering reverses. 
+In this case, from Cor.~\ref{cor:mec-special-cases}, the optimal consensus points are at the mean of $\overline{\pi^\alpha}$ and $\overline{\pi'^\alpha}$, respectively:
+\[
+y=\frac{31}{52}\approx 0.59615 \quad \text{for }\pi,
+\qquad
+y'=\frac{1721}{2904}\approx 0.59263 \quad \text{for }\pi',
+\]
+and we obtain
+\[
+\MEC[2,2](\pi)=\frac{3600}{13}\approx 276.923 \;>\; 274.207 \approx \frac{3185183}{11616} \;=\; \MEC[2,2](\pi').
+\]
+In this case, the larger cohesive groups dominate the polarization structure, and the small extremist minority exerts comparatively little influence.
+\qed
+\end{example}
+
+The above example shows that, for suitable values of the identification
+and alienation parameters (here $\alpha=\beta=2$), transferring a small
+portion of a group toward the extremes does not necessarily increase
+polarization. This accords with the thesis of Esteban and Ray
+\cite{esteban1994measurement} that small groups contribute little to
+overall polarization. Indeed, such a shift may diminish the effective
+weight of the original bloc, and thereby reduce the overall level of
+polarization.
+
+\subsection{Generalized MEC}
+The discussion in the previous section leads us to the following parametric definition of MEC.
+
+\begin{definition}[Generalized MEC]\label{mec:def} Let $\alpha,\beta \in [1,\infty)$, $y \in [0,1]$ and let $\pi \in \Dset$ be an opinion distribution. 
+The $(\alpha,\beta)$-\emph{effort to a consensus at $y$} for $\pi$ is determined by the function   $\EC:[0,1]\to \PositiveReals$ given by \begin{equation}    
+\EC(y)\defsymbol\sum_{x \in \support(\pi)}\pi(x)^\alpha |x - y|^\beta.
+\end{equation}
+The \emph{minimal  $(\alpha,\beta)$-effort to consensus} for $\pi$ is determined by the function $\MEC: \Dset\to\Reals_{\geq 0}$ given by \begin{equation}    
+\MEC(\pi) \defsymbol  \min_{y\in[0,1]} {\EC}(y).
+\end{equation}
+ \end{definition}
+Observe that \(\MEC(\pi)\) is well defined: Since the effort function \(\EC\) is continuous on the compact interval \([0,1]\), it must attain a minimum by the extreme value theorem. The points at which \(\EC\) attains its minimum will be called the $(\alpha,\beta)$-\emph{optimal consensus points} of $\pi$.  It follows from the strict convexity result in Th.~\ref{convexity} in the next section that, when \(\beta>1\), there is but one $(\alpha,\beta)$-optimal consensus point. We shall omit the prefix $(\alpha,\beta)$- when it is understood from the context. 
+
+\begin{remark}
+In what follows, we shall often use the term MEC to denote the general quantity $\MEC$ introduced in Definition~\ref{mec:def}, rather than the particular instance $\MEC[1,1]$ given in Eq.~\ref{eq:mecemd}, which was presented for motivational purposes.
+\end{remark}
+
+%\subsection{Computing MEC}\label{sec:computing-mec}
+%The computation of MEC requires finding the optimal consensus point $y^*$. For $\alpha>1$, the function $f(y) = \sum_{x<y} \pi(x)^\alpha (y-x)^{\beta-1} - \sum_{x>y} \pi(x)^\alpha (x-y)^{\beta-1}$ is strictly increasing, crosses zero and satisfies $f(y^*)=0$. Therefore, it suffices to use the bisection method to find $y^*$. For a distribution with a support of size $n$, this results in a complexity of $O(n\log(1/\epsilon))$ for a precision of $\pm\frac{\epsilon}{2}$. Once $y^*$ is found, the value of $\MEC(\pi)$ can be computed in $O(n)$, hence the total complexity is $O(n\log(1/\epsilon))$.
+
+%\paragraph{Implementation.} For reproducibility and benchmarking, we provide a reference implementation in the open-source library \href{https://github.com/ulvenforst/pol_measures}{\texttt{pol\_measures}}, which includes all measures in our candidate set. In the package, the class \emph{MECNormalized} exposes the parametric family $(\alpha,\beta)$ and locates $y^*$ by numerically minimizing the continuous objective $y \mapsto \sum_x \pi(x)^\alpha |x-y|^\beta$ over $[0,1]$ via bounded scalar optimization (SciPy's \texttt{minimize\_scalar}); the resulting minimum value is then normalized by the maximum attainable value under an extreme bimodal distribution that places half of the mass at each endpoint of the domain. This yields a scale-free index in $[0,1]$ while remaining consistent with the bisection-based characterization above (the solver numerically locates the optimal consensus point via $f(y^*)=0$). Each objective evaluation is $O(n)$, so the practical runtime is $O(n \cdot T)$ where $T$ is the number of objective evaluations required by the scalar solver for the prescribed tolerance.

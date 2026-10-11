@@ -1,0 +1,745 @@
+% Self-contained thesis source using the arXiv v1 article's visual settings.
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{newunicodechar}
+\newunicodechar{“}{\textquotedblleft}
+\newunicodechar{”}{\textquotedblright}
+\newunicodechar{’}{\textquoteright}
+\newunicodechar{–}{\textendash}
+\newunicodechar{—}{\textemdash}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathrsfs}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{parskip}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[numbers,square]{natbib}
+\usepackage{xurl}
+\usepackage{hyperref}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem{axiom}{Axiom}[section]
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+\newtheorem{proposition}{Proposition}
+
+\begin{document}
+
+\begin{titlepage}
+\centering
+{\large Universidad del Valle\par}
+\medskip
+Escuela de Ingeniería de Sistemas y Computación\par
+\vspace{1cm}
+Undergraduate Proposal\par
+\vfill
+{\LARGE\bfseries Towards a Principled Polarization Index: Axiomatic Foundations and Empirical Validation of the Minimum Effort to Consensus (MEC)\par}
+\vspace{1.5cm}
+{\Large Juan Camilo Narváez\par}
+\medskip
+\href{mailto:juan.narvaez.tascon@correounivalle.edu.co}{\nolinkurl{juan.narvaez.tascon@correounivalle.edu.co}}\par
+\vfill
+\textbf{Directors}\par
+\medskip
+Juan Francisco Díaz Frías\par
+\nolinkurl{juanfco.diaz@correounivalle.edu.co}\par
+\medskip
+Jesús Alexander Aranda Bueno\par
+\nolinkurl{jesus.aranda@correounivalle.edu.co}\par
+\medskip
+EISC, Universidad del Valle\par
+\vspace{0.6cm}
+\textbf{Co-director}\par
+\medskip
+Frank Valencia Posso\par
+\nolinkurl{frank.valencia@gmail.com}\par
+\medskip
+LIX, École Polytechnique de Paris\par
+\vfill
+2026\par
+\end{titlepage}
+
+\begin{abstract}
+This proposal tackles the problem of measuring social polarization on Likert-type survey data. The focus is on the \emph{Minimum Effort to Consensus} (MEC), a parametric family of indices that asks: how much ``effort'' would it take to move all respondents toward a single compromise point? The thesis will formalize MEC, test it against axiomatic requirements drawn from the polarization literature, and compare its empirical behavior to established alternatives. Specifically, the plan involves (i) proving---or attempting to prove---that MEC satisfies core polarization postulates and a central-split property suited to ordered scales; (ii) running exhaustive computational experiments on synthetic Likert universes to see where MEC agrees or disagrees with competing measures; (iii) checking external validity against \emph{published} expert rankings (no new human-data collection is involved); and (iv) illustrating the measure on small, aggregate cases from Valle del Cauca. The aim is to determine whether MEC can be both mathematically sound and practically useful.
+\end{abstract}
+
+\medskip
+\noindent\textbf{Keywords}\quad polarization measurement, axiomatic foundations, expert validation, computational social science, social networks, MEC
+
+\clearpage
+\tableofcontents
+\clearpage
+
+\section{Introduction, Research Question, and Hypothesis}\label{sec:intro}
+
+Public opinion can fracture into opposed camps. Some groups coalesce around one position, others around a rival stance, and the middle ground thins out. Polarization involves more than disagreement spread across individuals. It concerns a geometric pattern in which sizeable blocs stand apart while remaining internally cohesive. The distinction matters. Inequality metrics track how spread out a distribution is; polarization, by contrast, asks whether that spread concentrates into a few opposed camps. Esteban and Ray \citep{esteban1994measurement} gave this distinction a formal basis by relating polarization to \emph{identification} within groups and \emph{alienation} between them.
+
+Three intuitions anchor this approach. \textbf{Identification} concerns cohesion within a camp. \textbf{Alienation} concerns the distance between camps. \textbf{Mass concentration} concerns the size of the groups occupying those positions. Measuring polarization therefore requires attention to how opinion is organized into groups, as well as to how far apart those groups stand. A population scattered across a scale and one divided into two opposed camps may both display substantial disagreement, yet their structures differ.
+
+Different measures give different meanings to this structure. Agreement indices for ordered scales assess how responses concentrate around shared positions \citep{van2001measuring,tastle2007consensus}. Transport distances measure the cost of moving mass between distributions and have been used to study congruence between public and elite opinion \citep{lupu2017new}. The problem is therefore not merely to assign a number to a distribution of opinions, but to say what that number means.
+
+The \emph{Minimum Effort to Consensus} (MEC) interprets polarization as resistance to consensus. A population is highly polarized when much effort is needed to bring its members to a common position; it is weakly polarized when little effort is needed. This idea leads to an optimization problem. Given an opinion distribution, we define its polarization as the minimum effort required to transform it into a consensus distribution. The minimum is taken over all possible consensus points, so the least costly position is determined by the distribution itself.
+
+This thesis presents the research on MEC conducted within the PROMUEVA \emph{measures} subgroup at AVISPA--Universidad del Valle and reported in the joint paper by \citet{aranda2026mec}, of which I am a coauthor. It sets out the mathematical development, proofs, computational methods, and experimental findings of that research in relation to the objectives established in the thesis proposal.
+
+Let $\pi$ be an opinion distribution with finite, nonempty support $\mathbf{s}(\pi)\subseteq[0,1]$, where $\pi(x)>0$ is the mass at each occupied position $x$. The masses need not sum to one. For $\alpha,\beta\geq1$, the effort required to reach a common position $y$ and the minimum of that effort are
+\begin{equation}\label{eq:MEC}
+\begin{aligned}
+\mathrm{EC}_{\alpha,\beta}^{\pi}(y)
+  &= \sum_{x\in\mathbf{s}(\pi)} \pi(x)^{\alpha}\lvert x-y\rvert^{\beta},\\
+\mathrm{MEC}_{\alpha,\beta}(\pi)
+  &= \min_{y\in[0,1]} \mathrm{EC}_{\alpha,\beta}^{\pi}(y).
+\end{aligned}
+\end{equation}
+The exponent $\alpha$ controls the weight assigned to group size; $\beta$ controls how effort depends on distance from consensus. The minimization yields both a polarization value and an optimal consensus point $y^\star$. When $\beta>1$, strict convexity makes this point unique. At $\beta=1$, several positions may minimize the effort. In either case, an optimum describes the least costly consensus under the model; it does not predict which position a population will adopt.
+
+The empirical evaluation follows the two lines established in the proposal. First, exhaustive computational comparisons score five-point Likert histograms with MEC and competing indices, then map where they agree and where they diverge. Second, comparison with the published expert ratings of \citet{koudenburg2021new} assesses how closely each measure recovers the expert order. These comparisons complement the formal analysis. The axioms establish how MEC behaves under specified changes to a distribution; the experiments examine its rankings across profiles and their agreement with human judgments.
+
+\paragraph{Research question.}
+Does MEC provide a theoretically sound and empirically valid measure of polarization that satisfies core axiomatic requirements and aligns with expert judgments more closely than established alternatives?
+
+\paragraph{Objective, scope, and approach.}
+The objective is to establish the mathematical properties of MEC, implement its computation, and assess its rankings against competing measures and published expert judgments. The study combines formal proofs, a reproducible Python implementation, and computational comparisons. Its theoretical scope is finite opinion distributions on a one-dimensional interval; its main experiments use five-point scales. Regional cases from Valle del Cauca provide illustrations of the measure's application. Opinion positions are represented by fixed numerical coordinates, so the interpretation of distance depends on that representation. The analysis concerns the structure of observed distributions; it does not model opinion evolution. Axiomatic compliance and agreement with expert judgments provide distinct forms of evidence, both of which are examined below.
+
+\paragraph{Hypothesis and findings.}
+The proposal anticipated that MEC would satisfy the core polarization axioms for $\alpha\geq1$ and $\beta>1$, together with a central-split monotonicity property, and would improve agreement with expert judgments. The completed analysis refines this hypothesis. MEC satisfies the three Esteban--Ray axioms for $\alpha>1$ and $\beta\geq1$. The strict condition on $\alpha$ is necessary for Axiom~1, while Axioms~2 and~3 hold throughout $\alpha,\beta\geq1$. Thus the original claim requires a stricter condition on $\alpha$, although the results also include $\beta=1$.
+
+Central-split monotonicity holds for all $\alpha,\beta\geq1$ in the configuration defined in the paper. A central group lies between two equally sized, symmetrically placed outer groups. Equal positive portions of central mass are moved to distinct positions at equal distances from the centre. These positions lie within the interval bounded by the outer groups, and positive mass remains at the centre. Under these conditions, MEC strictly increases \citep{aranda2026mec}.
+
+The computational comparison covers all five-point histograms with nonnegative integer counts summing to $100$, retaining one representative per reflection class. A second comparison uses the published expert ratings of fifteen hypothetical histograms \citep{koudenburg2021new}. On this benchmark, $\mathrm{MEC}_{2,1.15}$ attains Kendall's $\tau_B\approx0.886$, matching $\mathrm{ER}_{0.8}$ and exceeding the concordance obtained by the Van der Eijk and Tastle--Wierman indices in the reported comparison \citep{aranda2026mec}. The same benchmark informed the parameter choice, and several MEC parameter pairs attained the same concordance. These results support strong agreement on the evaluated profiles and an advantage over some comparators. The hypothesis of improved agreement is therefore only partly supported. MEC does not outperform every tested alternative, and this comparison does not establish agreement on unseen profiles.
+
+\paragraph{Positioning in the literature.}
+MEC and the Esteban--Ray measure are conceptually different. The Esteban--Ray measure quantifies pairwise antagonism between groups. MEC measures the resistance of the whole distribution to being brought into agreement. In the linear case $(\alpha,\beta)=(1,1)$, MEC equals the minimum Earth Mover's Distance to a consensus distribution with the same total mass, using $|x-y|$ as the transport cost per unit of mass. The broader family allows group size and distance to enter through separate exponents. This formulation gives the polarization value an explicit interpretation and provides a structure for studying how it changes when groups move, merge, or split \citep{aranda2026mec}.
+
+The argument proceeds from the conceptual background to the definition and structural properties of MEC, followed by its axiomatic analysis. The computational methodology then provides the basis for interpreting the experimental results and regional illustrations. The discussion relates this evidence to the research question and its limitations; the conclusions assess the objectives and identify questions left open by the study.
+
+
+\section{Motivation, Field Positioning, and Regional Context}\label{sec:rationale}
+
+Polarization is not an academic abstraction. It shapes how people talk to each other, whether they trust institutions, and how hard it becomes to act collectively. Social networks have made this worse in obvious ways: engagement-driven algorithms and echo chambers harden camps and push them further apart. In Valle del Cauca, the 2021 national protests---centered on Cali---brought these dynamics into sharp relief. Youth-led mobilizations played out simultaneously on the streets and on platforms; emotionally charged posts polarized online audiences and sometimes fed back into offline confrontation \citep{scielo2023paro}. Observers noted a broader erosion of trust in information sources and a more hostile political climate \citep{swissinfo2021trust}. Regional universities responded with interdisciplinary efforts, including PROMUEVA's public events on ``Polarización en Redes Sociales: Impacto de la Inteligencia Artificial'' \citep{javerianaPROMUEVA}.
+At the same time, a cultural reading of that moment appears in the documentary \emph{“Sueños en concreto”, un documental sobre el estallido social de 2021}, which follows the construction of the Monument to Resistance in Cali and announced a theatrical release in October 2024, reinforcing the region’s memory of the 2021 uprising \citep{espectadorSuenos2024}. Against this backdrop, a reliable instrument for \emph{measuring} polarization is not optional: without it, diagnosis, monitoring, and evaluation remain anecdotal.
+
+This chapter steps back from formal definitions and asks a practical question: why does measurement matter here? Three use cases stand out. First, \emph{diagnosis}: which issues are most polarizing in Valle del Cauca right now? Second, \emph{monitoring}: can we detect spikes early, before they escalate? Third, \emph{evaluation}: if an intervention is attempted---a dialogue, a moderation policy---did it actually reduce antagonism? The chapter also situates the project within PROMUEVA and sketches how the proposed measure will be applied to small, ethically sourced regional cases.
+
+
+MEC is designed with these operational needs in mind. It outputs a single number---the minimum ``effort'' needed to pull everyone toward a compromise---that stakeholders can actually interpret. The parameters $(\alpha,\beta)$ let you tune how sensitive the measure is to bloc size versus distance. If the validation goes well, MEC could rank issues by polarizing potential, flag temporal spikes before they escalate, and assess whether a given intervention (dialogue, moderation, whatever) made things better or worse. Topics relevant to youth in Valle del Cauca---metropolitan governance, budget priorities, the legitimacy of civic protests---would be natural test cases.
+
+Looking ahead, although this thesis does not model opinion evolution, \text{MEC} can, in principle, be coupled with opinion-dynamics on networks to forecast both the timing of consensus and the location of the eventual compromise $y^\star$ on a Likert scale. Such foresight can guide timely de-escalation, deliberative design, and the allocation of mediation resources; yet it also creates a strategic lever by which powerful actors might engineer discourse to shift the future compromise. Because prediction can feed back into behavior (turning the metric into a target), any future coupling of \text{MEC} with predictive dynamics should be governed by transparency, non-manipulation norms, and explicit safeguards for minority voices. The present focus of this thesis remains strictly on measurement and validation, not on steering opinion.
+
+The work is embedded in \emph{PROMUEVA}, a multidisciplinary consortium funded by Colombia’s Ministry of Science (Minciencias) that connects computer science and the social sciences to study polarization in social networks. PROMUEVA brings together Pontificia Universidad Javeriana Cali, Universidad del Valle (AVISPA), CNRS–LIX/École Polytechnique (IP Paris), and Université Sorbonne Paris Nord. Within PROMUEVA, \textbf{Objective~1} develops a computational model of social networks for the study of polarization (grounded in epistemic logic and concurrency theory); \textbf{Objective~2} addresses privacy policies and leakage; and \textbf{Objective~3} designs scalable analytics and machine-learning methods.
+This thesis belongs to Objective~1, within the \emph{measures} subgroup at AVISPA–Universidad del Valle, coordinating with the data and algorithms teams when needed.
+
+\paragraph{Supervisory Fit}\label{subsec:fit}
+The thesis will be directed by \textbf{Prof.\ Juan Francisco Díaz Frías} and \textbf{Prof.\ Jesús Alexander Aranda Bueno} (EISC, Universidad del Valle), with \textbf{Prof.\ Frank Valencia Posso} (CNRS–LIX, École Polytechnique de Paris) as co-director. Prof.\ Díaz Frías—Professor (Program Director of Systems Engineering at Universidad del Valle), with research in programming languages and constraint programming, and leadership within AVISPA—will steer the project’s software engineering posture, reproducibility practices, and institutional alignment. Prof.\ Aranda Bueno—Associate Professor specializing in concurrency theory, logic for computer science, and formal methods—will guide the axiomatic development, proof strategy, and algorithmic analysis central to \text{MEC}. Prof.\ Valencia Posso—CNRS researcher, head of the AVISPA group at LIX, and scientific lead of PROMUEVA—will ensure integration with PROMUEVA’s objectives, methodological rigor, and international projection. This supervision triangle matches the proposal’s needs from formal theory to reproducible implementation within the PROMUEVA ecosystem.
+
+\paragraph{Background and Preparation}\label{subsec:prep}
+I am a BSc candidate in Systems Engineering (Universidad del Valle, 2021–2026), distinguished by academic merit scholarships (2021–2022, 2024–2025). Training combines rigorous mathematics (linear algebra, calculus, probability and statistics, discrete mathematics) with computer science foundations (algorithm analysis and design, artificial intelligence, parallel and distributed computing). Methodologically, the project is prepared for axiomatic reasoning and proof, and for empirical analysis via rank-based statistics and paired-comparison models (Bradley–Terry/Thurstone). Software practice spans scientific computing in Python (NumPy, SciPy, pandas).
+
+
+\section{Literature Review and Conceptual Framework}\label{sec:lit}
+
+The previous section gave the intuition; now for the formal backdrop. Esteban and Ray \citep{esteban1994measurement} defined polarization as a combination of two forces: \emph{identification} (within-group cohesion---people in a camp feel like a unit) and \emph{alienation} (distance between camps). Under this view, scattering opinions randomly does not raise polarization; consolidating them into a few opposed blocs does. That distinction---antagonistic structure versus mere noise---is the benchmark any new measure must meet. Three strands of literature frame the approach taken here: (i) the axiomatic program, culminating in recent characterizations of the Esteban--Ray (ER) family; (ii) transport-based geometry, which treats opinion profiles as piles of earth to be moved; and (iii) expert-grounded validity, which asks whether trained observers agree with the measure's rankings.
+
+A key result since 1994 is that the ER family is not just one proposal among many---it is, in a precise sense, \emph{the} answer if you accept certain axioms. Kawada, Nakamura, and Sunada showed that strengthening the within-group sensitivity requirement (to a local-concavity condition) and adding a homothetic scaling requirement pins down the ER form exactly. Any measure satisfying those postulates must be pairwise-additive in the ER style. Whether MEC complies with these axioms is one of the questions this thesis will try to answer. Full compliance is not guaranteed; the parameter regimes where it holds (if it holds) will need to be worked out.
+\[
+\text{ER}_{\alpha}(\pi)\;=\;K\!\!\sum_{x\in \mathbf{s}(\pi)}\ \sum_{z\in \mathbf{s}(\pi)} \pi(x)^{\,1+\alpha}\,\pi(z)\,\lvert x-z\rvert,
+\]
+for some $K>0$ and $\alpha\in(0,\alpha^\ast]$, $\alpha^\ast\approx 1.6$\citep{kawada2018characterization}. In this precise sense, transparent principles that encode identification and alienation lead back to ER, giving us a practical checklist to assess where \text{MEC} aligns with the ER tradition and where it deliberately departs.
+
+
+Real data, of course, means Likert scales---five points, seven points, agree-to-disagree. Two indices show up everywhere as foils. Van der Eijk's agreement measure \citep{van2001measuring} asks how concentrated responses are around a common point, taking the ordering of categories seriously. One version uses a unimodality coefficient $U$ built from triplet counts ($TU$ for consistent, $TDU$ for inconsistent) across $m$ categories:
+\[
+U \;=\; \frac{(m-2)\,TU \;-\;(m-1)\,TDU}{(m-2)\,(TU+TDU)}\,,\qquad
+A(\pi) \;=\; U \cdot \Bigl(1 - \tfrac{S-1}{m-1}\Bigr),
+\]
+$S$ is the count of non-empty bins. Flip the sign and you get a polarization proxy: $P^{\text{Eijk}}(\pi)=1-A(\pi)$. Tastle and Wierman \citep{tastle2007consensus} take a different route, more information-theoretic in flavor. Let $x_i$ be category centers, $\pi_i$ the weights, $\bar{x}$ the mean, and $d$ the range. Their consensus score is
+\[
+C_{\text{TW}}(\pi) \;=\; \sum_{i}\pi_i \,\log_2\!\left(1-\frac{|x_i-\bar{x}|}{d}\right),\qquad
+D_{\text{TW}}(\pi) \;=\; 1 - C_{\text{TW}}(\pi).
+\]
+Both indices are useful---compact, easy to compute, widely understood. But their logic is dispersion, not polarization. A uniform scatter and a clean bimodal split can score the same because neither index cares about two-peak geometry. That is precisely why the thesis keeps them in the analysis: not as targets to beat, but as contrasts that make the conceptual difference visible.
+
+
+A second tradition looks not at counts but at \emph{movement}. If an opinion profile is a set of piles of earth along a line, the Earth Mover’s Distance (EMD) is the minimal work required to reshape one profile into another. As a consensus baseline, the work to move $\pi$ onto a single point $y$ is
+\[
+D_{\text{EMD}}(\pi,y) \;=\; \sum_{x\in \mathbf{s}(\pi)} \pi(x)\,|x-y|\,,\qquad
+D^{\ast}_{\text{EMD}}(\pi) \;=\; \min_{y} D_{\text{EMD}}(\pi,y),
+\]
+which coincides with the special case $\text{EC}_{1,1}$ of the proposed framework. Beyond consensus baselines, Lupu, Selios, and Warner deploy this geometry to quantify \emph{congruence} between mass publics and elites: proximity reduces cost; divergence raises it \citep{lupu2017new}. Transport distances are attractive because they honor the full shape of a distribution and come with strong metric foundations. However, a \emph{plain} distance-to-consensus or distance-to-reference is silent about camp structure: two very different shapes—a flat plateau and a twin-peaked split—can tie on first-moment transport costs. This is not a flaw of EMD; it simply shows that distance is one ingredient and bloc organization is another.
+
+
+A third strand is more empirical: just ask people. Koudenburg, Kiers, and Kashima \citep{koudenburg2021new} did exactly that. They curated sets of five-point histograms, had 60 experts make pairwise ``which is more polarized?'' calls, and fitted a weighted index to match. For a histogram $h=(x_1,\ldots,x_5)$ with $n$ respondents, their formula comes out to
+\[
+\text{Experts}(h)\;=\;\frac{2.14\,x_2x_4\;+\;2.70\,(x_1x_4+x_2x_5)\;+\;3.96\,x_1x_5}{0.0099\,n^2}.
+\]
+This tells you what experts see as ``polarized'': two opposed peaks, eroded center. But the formula has quirks---it is tied to five-point scales and collapses to zero when one side is completely empty ($x_1=x_2=0$ or $x_4=x_5=0$), which you might not want. Two lessons. First, axioms alone are not enough; external validity matters. If a measure systematically contradicts what trained observers call ``more polarized,'' something is off. Second, variance and agreement deficits often fail this test once expert intuitions about camps and center erosion enter the picture. The thesis will follow this comparative logic: reuse the 15 histograms and ratings from \citet{koudenburg2021new}---no new human data---and check how well MEC matches the expert order compared to the baselines. Kendall's $\tau_B$ and Bradley--Terry models do the scoring.
+
+These three currents---axioms, transport, expert grounding---converge on MEC. From the axiomatic side, the measure should reward identification and alienation, not just variance. From the transport side, it should respect the geometry of moving mass along a line. From the expert side, it should rank shapes the way trained observers do. MEC is built to hit all three targets, but whether it actually does is an empirical and formal question the thesis will address.
+
+The empirical work proceeds in two stages. First, synthetic experiments: enumerate all five-point Likert histograms (quotiented by symmetry), compute MEC and the competing indices for each, and map where they agree and disagree. The goal is a ``concordance surface'' showing how MEC's rankings correlate with dispersion indices, transport baselines, and ER-style comparators across parameter choices. Second, expert validation: take the curated histograms from \citet{koudenburg2021new}, see how well MEC predicts the pairwise expert calls (center erosion vs.\ uniform spread, balanced vs.\ lopsided splits, etc.), and compare it to the baselines using Kendall's $\tau$ and Bradley--Terry models. The conceptual bet is simple: a good polarization index should satisfy the axioms, respect the geometry, and agree with expert intuition. Whether MEC delivers on all three is what the thesis will find out.
+
+\section{Objectives and Scope}
+What is this thesis trying to accomplish? In short: take MEC from a promising idea to a validated tool. That means proving (or trying to prove) that it satisfies the right formal properties, building software that computes it reliably, and checking that its outputs make sense both on synthetic data and against expert judgments. The Esteban--Ray axiomatic tradition---especially the Kawada--Nakamura--Sunada refinements---sets the bar for what a polarization measure should do; transport geometry and expert-grounded benchmarks provide complementary tests.
+
+\noindent\textit{Specific objectives (details in §\ref{sec:workplan}):}
+\begin{enumerate}\itemsep3pt
+  \item \textbf{Formal theory.} Work out whether MEC has a unique minimizer (the ``best compromise''), prove the link to Earth Mover's Distance at $(\alpha,\beta)=(1,1)$, and check compliance with ER-style axioms for specific parameter ranges. A central-split monotonicity tailored to Likert scales is also on the list. Some of these proofs may not go through cleanly; if so, partial results and counterexamples get documented.
+  \item \textbf{Synthetic universe.} Build the corpus of all five-point Likert histograms (quotiented by mirror symmetry), fix normalizations, and set up the competing measures---ER-style, Van der Eijk, Tastle--Wierman, EMD baseline---so comparisons are fair.
+  \item \textbf{Software.} Deliver a Python package (\texttt{pol\_measures}) with a clean API, command-line interface, unit tests, and fixed random seeds. Anyone should be able to reproduce the figures and tables.
+  \item \textbf{Computational experiments.} Sweep over a preregistered $(\alpha,\beta)$ grid, compute concordance surfaces (Kendall's $\tau_B$, top-$k$ overlap), and run diagnostic vignettes: flat scatter vs.\ two camps, extremism vs.\ polarization, small mass transfers.
+  \item \textbf{External validation.} Compare MEC's rankings to the expert-rated histograms from the literature; illustrate readings on small, aggregate cases from Valle del Cauca.
+\end{enumerate}
+
+% Preamble:
+% \usepackage{rotating}
+
+% \begin{sidewaystable*}[p]
+% \caption{Polarization measurement families at a glance: what they capture, what they miss, and how we use them}
+
+% \label{tab:lit-landscape-rot}
+% \footnotesize % (optional) tighten typesetting; remove if you prefer normal size
+% \setlength{\tabcolsep}{5pt}
+% \renewcommand{\arraystretch}{1.15}
+% \begin{tabular*}{\textheight}{@{\extracolsep\fill}p{0.15\textheight}p{0.16\textheight}p{0.11\textheight}p{0.18\textheight}p{0.21\textheight}p{0.11\textheight}}
+% \toprule
+% Family & Representative & Data domain & What it captures & What it misses (as a polarization proxy) & Use here\\
+% \midrule
+% Axiomatic polarization & Esteban--Ray (ER)\footnotemark[1]\footnotemark[2]
+% & Continuous/ordinal
+% & Identification (within-camp cohesion) and alienation (across-camp distance); few sizeable groups
+% & Parameters, not distances, carry geometry; abstract for stakeholders; mapping to discrete Likert needs care
+% & Conceptual baseline; ER-style comparator \\
+% Agreement / consensus (ordinal) & Van der Eijk\footnotemark[3]
+% & Likert
+% & Concentration around a common point; ordinal agreement
+% & Not camp-sensitive; uniform vs.\ bimodal conflation; no explicit alienation
+% & Dispersion foil / benchmark \\
+% Agreement / consensus (ordinal) & Tastle--Wierman\footnotemark[4]
+% & Likert
+% & Information-like consensus / dissention; penalizes spread
+% & Same conflation; focuses on dispersion, not antagonistic structure
+% & Dispersion foil / benchmark \\
+% Transport geometry & Earth Mover’s Distance (EMD)\footnotemark[5]
+% & Ordinal / numeric with distances
+% & Full-shape distance; interpretable “work” to reconfigure
+% & Plain distance-to-consensus can equate flat and bimodal when first-moment costs match; not inherently camp-sensitive
+% & Transport baseline \\
+% Expert-grounded validity & Expert-weighted index\footnotemark[6]
+% & Curated histograms (Likert)
+% & Aligns with perceived two-peak antagonism and center erosion; comparative judgments
+% & Depends on expert pool/task; less axiomatic; possible overfitting to stimuli
+% & External validation protocol / target \\
+% Proposed synthesis & MEC (this work)
+% & Likert histograms
+% & Transport-to-consensus with bloc weighting ($\alpha>1$) and distance aversion ($\beta>1$); central-split monotonicity; favors balanced bimodality
+% & Requires $(\alpha,\beta)$ choice; relation to ER outside certain regimes to be characterized; needs empirical validation
+% & Main index under study \\
+% \bottomrule
+% \end{tabular*}
+% \footnotetext[1]{ER family: \citep{esteban1994measurement}.}
+% \footnotetext[2]{Characterization of ER: \citep{kawada2018characterization}.}
+% \footnotetext[3]{Agreement index on ordered scales: \citep{van2001measuring}.}
+% \footnotetext[4]{Consensus/dissention on ordinals: \citep{tastle2007consensus}.}
+% \footnotetext[5]{Transport metric for congruence (EMD): \citep{lupu2017new}.}
+% \footnotetext[6]{Expert-judgment integration and validation: \citep{koudenburg2021new}.}
+% \end{sidewaystable*}
+
+\section{Data and Primary Sources: Availability, Measurement Strategy, and Feasibility}\label{sec:data}
+
+Data for this thesis comes from three sources, each serving a different purpose. First, a fully synthetic universe of Likert histograms---no sampling error, complete control. Second, published expert judgments from the literature, reused strictly for external validation. Third, small aggregate cases from Valle del Cauca to see how the measure reads real civic issues.
+
+Start with the synthetic corpus. Take a five-point Likert grid and enumerate every possible integer-valued histogram for $N=100$ respondents:
+\[
+\mathcal{D}^{(5)}_{100} \;=\; \bigl\{\, \pi=(\pi_1,\dots,\pi_5)\in\mathbb{N}_{\ge 0}^{5}:\ \sum_{i=1}^5 \pi_i = 100 \,\bigr\},
+\]
+By stars-and-bars, that gives $\binom{104}{4}=4{,}598{,}126$ histograms. Many indices are symmetric under reflection (swapping ``strongly agree'' with ``strongly disagree''), so the plan is to quotient by mirror symmetry: keep only the lexicographically smaller of each histogram and its reversal, with palindromes counted once. That cuts the set roughly in half, to $2{,}299{,}063$ unique representatives. Why bother with this exhaustive enumeration? Because it lets you test polarization transformations---consolidation, separation, center erosion---without worrying about sampling noise. You can sweep through the whole space, chart concordance surfaces, hunt for counterexamples, and see exactly which shapes different measures reward.
+
+For external validation, the plan is to reuse the expert-rated histograms from \citet{koudenburg2021new}. They collected pairwise judgments from 60 experts on 15 curated five-point profiles---uniform scatter, centered unimodality, balanced and lopsided bimodal shapes, controlled center erosion. From those ratings an aggregated expert order can be constructed. The thesis will then ask: does MEC's ranking match the experts' ranking? Kendall's $\tau_B$ and top-$k$ overlap will quantify the agreement; Bradley--Terry/Thurstone models will check comparative consistency. Leave-one-out and bootstrap summaries will probe stability. Importantly, \emph{no new expert data will be collected}---this is purely secondary analysis.
+
+Finally, a few local mini-cases. These are aggregate Likert summaries---no individual-level data---from youth and civic consultations in Valle del Cauca: budget priorities, institutional trust, attitudes toward civic actions. The point is not statistical inference; the samples are too small for that. Instead, they serve as reading exercises. Which issues does MEC rank as most polarized? How do those rankings shift over time? What does the ``effort-to-consensus'' number actually tell you about the shape of opinion? The compromise point $y^\star$ need not be the scale midpoint; MEC finds it endogenously.
+
+Computationally, MEC comes down to a one-dimensional minimization. For $\beta>1$ the objective is strictly convex (or so the theory predicts), which means a unique $y^\star$ exists. Bisection on the first-order condition works fine; a bounded scalar optimizer serves as a cross-check. Each function evaluation is $O(n)$ where $n$ is the number of categories---cheap. Scores get reported raw and also normalized to $[0,1]$, using the maximally polarized profile (half the mass at each extreme) as the reference.
+
+Implementation details---licensing, CI, installation---appear in \S\ref{sec:workplan}. The code ships with fixed random seeds; every figure and table should be reproducible. No GPUs needed; a decent laptop handles the full synthetic sweep. Mini-cases use only anonymized aggregates.
+
+\subsection*{Funding}
+
+The project activities are partially funded by the Colombian \emph{Minciencias} project PROMUEVA, BPIN 2021000100160. Dedications are in hours per week; values are in Colombian pesos (COP).
+
+\begin{table}[h]
+\centering
+\caption{Staff cost}
+\label{tab:staff-cost}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}l l c r r@{}}
+\toprule
+\textbf{Concept} & \textbf{Role} & \textbf{Dedication} & \textbf{Cost hour} & \textbf{Total cost}\\
+\midrule
+Juan Camilo Narváez Tascón & Researcher & 24 & \$48.000 & \$41.472.000\\
+Jesús Alexander Aranda & Director & 2 & \$180.000 & \$12.960.000\\
+Juan Francisco Díaz & Director & 2 & \$180.000 & \$12.960.000\\
+Frank Valencia Posso & Director & 2 & \$180.000 & \$12.960.000\\
+Carlos Pinzón & Advisor & 2 & \$120.000 & \$8.640.000\\
+\midrule
+\multicolumn{4}{r}{\textbf{Total staff cost}} & \textbf{\$88.992.000}\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Research Design and Methodology}\label{sec:methods}
+
+Everything in this thesis revolves around one optimization problem: minimize the effort function over $y$. Two mathematical facts do most of the heavy lifting. First, when $\beta>1$, the objective $y\mapsto \sum_x \pi(x)^\alpha |x-y|^\beta$ is strictly convex, so there is a unique minimizer. Second, the first-order condition defines a balance function $F(y)$ that is monotone increasing, which makes bisection a natural numerical strategy:
+\[ F(y)\;=\;\sum_{x<y}\pi(x)^{\alpha}(y-x)^{\beta-1}\;-\;\sum_{x>y}\pi(x)^{\alpha}(x-y)^{\beta-1}\;=\;0. \]
+These tools let you reason about how the minimum changes when you perturb the distribution, even without closed-form solutions.
+
+What formal results is the thesis aiming for? Here is the target list---though not all may survive the proof process:
+
+\begin{enumerate}\itemsep4pt
+  \item \emph{Existence and uniqueness.} For $\beta>1$, prove that $y^\star$ exists and is unique. The strict convexity argument looks straightforward; the monotonicity of $F$ should follow.
+  \item \emph{Link to EMD.} At $(\alpha,\beta)=(1,1)$, MEC should reduce to the Earth Mover's Distance to a point mass. This is almost definitional, but writing it out cleanly matters.
+  \item \emph{Identification and alienation.} When you consolidate nearby masses or push camps further apart, MEC should go up (weakly). The proof strategy: use perturbation paths and exploit the superadditivity that $\alpha>1$ induces. Whether ``weakly'' can be strengthened to ``strictly'' depends on regularity conditions still to be pinned down.
+  \item \emph{Central-split monotonicity.} Take mass sitting at the center of a five-point scale and split it symmetrically toward the flanks. Does MEC increase? The conjecture is yes, for $\alpha\ge1$ and $\beta>1$. Plan: parameterize the split by $\delta$, check that the derivative at $\delta=0^+$ is positive, then lean on convexity.
+\end{enumerate}
+
+If a proof does not go through, the thesis will document what broke and how far partial results extend.
+
+\paragraph{Proof sketches.}
+For \emph{identification}, compare two convex programs that differ by a transport-preserving relocation toward a local centroid. Jensen-type reasoning, combined with the superadditivity from $\alpha>1$, should yield a strict increase. For \emph{alienation}, shift one pole outward while $y^\star$ sits on the opposite side; the monotonicity of $F$ tracks how the minimizer moves, and a lower bound on the value increment makes the role of $\beta-1$ explicit. For \emph{dispersion to extremes}, the idea is a two-step argument: first show $y^\star$ stays near the center, then show the value goes up because you are now making longer moves.
+
+\medskip
+\noindent\textbf{Synthetic experiments.}
+
+The point of the synthetic universe (defined in \S\ref{sec:data}) is not to get a single number but to build a \emph{map}: where does MEC agree with competitors, and where does it diverge?
+
+\emph{Parameter grid.} Preregister $\alpha\in\{1,1.5,2\}$ and $\beta\in\{1,1.15,1.2,1.5,2\}$. Report scores raw and normalized (using the maximal bimodal profile as reference). Numerical tolerances fixed at $\varepsilon\in\{10^{-6},10^{-8}\}$.
+
+\emph{Solvers.} Two methods run side by side: a bounded scalar optimizer and bisection on $F$. If they disagree beyond $\varepsilon$, rerun at tighter tolerance and log the discrepancy.
+
+\emph{Concordance surfaces.} For each $(\alpha,\beta)$ pair, compute Kendall's $\tau_B$ between MEC and each comparator (ER-style, Van der Eijk, Tastle--Wierman, EMD baseline) over the full mirror-reduced corpus. Also compute top-$k$ overlaps for $k\in\{10,25,50\}$. Plot these as surfaces with bootstrap confidence bands.
+
+\emph{Diagnostic vignettes.}
+Three families will be preregistered: (I) \emph{flat dissent vs.\ two camps} at matched first–moment transport cost; (II) \emph{extremism vs.\ polarization}, adding mass to extremes without forming two blocs, contrasted with balanced bimodality; (III) \emph{small transfers} outside typical axiomatic quantifiers. For each, the thesis proposes to sweep the governing parameter (separation $s$, lopsidedness $\lambda$, erosion $\delta$), graph score gaps, and annotate order flips.
+
+\begin{table}[t]
+\centering
+\caption{Pre-registered computational grid and outputs on the synthetic universe}
+\label{tab:pregrid}
+\footnotesize
+\begin{tabular}{p{0.28\textwidth}p{0.62\textwidth}}
+\toprule
+Parameter grid & $\alpha\in\{1,1.5,2\}$;\quad $\beta\in\{1,1.15,1.2,1.5,2\}$;\quad normalization: raw and $[0,1]$-scaled.\\
+Optimization & Bounded scalar search on $[0,1]$; cross-check via bisection on $F$ for $\beta>1$; tolerances $\varepsilon\in\{10^{-6},10^{-8}\}$.\\
+Comparators & ER-style comparator (two settings), Van der Eijk, Tastle--Wierman, EMD-to-consensus.\\
+Global summaries & Kendall’s $\tau_B$ matrices; top-$k$ overlaps ($k\in\{10,25,50\}$); bootstrap stability bands.\\
+Vignettes & (I) flat vs two camps; (II) extremism vs polarization; (III) small transfers; score-gap plots vs $(s,\lambda,\delta)$.\\
+Robustness & $\pm 1$-respondent perturbations among adjacent bins; rank-flip rates reported.\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\medskip
+\noindent\textbf{Published expert corpus (analysis plan).}
+The thesis proposes to \emph{reuse} the fifteen five–point histograms and ratings reported by \citet{koudenburg2021new}. From their data the thesis will construct an aggregated expert order and pairwise preferences; for each index the thesis will report Kendall's $\tau_B$ and top–$k$ agreement with the aggregated order, and fit Bradley–Terry/Thurstone models on induced pairs to assess comparative consistency. Stability will be summarized via leave–one–out and bootstrap concordance on this small set.
+
+
+
+
+\medskip
+\noindent\textbf{Regional mini–cases (analysis plan).}
+For aggregate Likert snapshots tied to youth/civic topics in Valle del Cauca, the thesis proposes to report MEC (raw and normalized), ordinal agreement foils, and the transport baseline, then \emph{read} the result in terms of few long moves vs.\ many short moves, balanced vs.\ lopsided splits, and the cost of realigning opinions toward a single compromise point $y^\star$ (not necessarily the midpoint). When multiple time points exist, trajectories will include light noise bands via $\pm1$–respondent redistributions across adjacent categories to reflect survey roughness.
+
+\medskip\noindent\textbf{Reporting and robustness.}
+The thesis proposes to predeclare numerical tolerances, parameter grids, and exclusion rules; publish full code and seeds; and ship concordance surfaces, vignette plots, and expert–calibration figures as first–class outputs. Robustness will be part of the narrative: sensitivity to normalization, $(\alpha,\beta)$ choices, solver route, and small–count perturbations. Thresholding schemes (percentile bands vs.\ data–adaptive $k$–means) will appear once—in Results—with explicit caveats.
+
+\medskip
+\noindent\emph{Expected outcome of this methodology.}
+By the end of the thesis, the reader should know precisely which levers were used to attempt proofs of which properties, which comparisons illuminated which disagreements, and which diagnostics translated numbers into judgments. Proofs and estimates belong to the thesis proper; the path to them is laid here.
+
+\section{Work Plan, Schedule, Effort, and Milestones}\label{sec:workplan}
+
+So far the thesis has laid out what it wants to prove and how it plans to test those claims. This chapter gets concrete: what exactly needs to happen, in what order, and by when?
+
+The work has a natural arc. First, read the literature and lock down the experimental setup (which histograms, which comparators, which normalizations). Then push on the formal theory---try to prove the key lemmas, document what works and what does not. In parallel, build the software so that everything is reproducible. Finally, run the experiments: concordance surfaces, diagnostic vignettes, expert validation. Throughout, keep notes, commit code, and write up results as they come in. Some proofs may not go through; some experiments may surprise. That is fine---the goal is honest reporting, not a predetermined conclusion.
+
+\medskip
+
+\noindent\textbf{Scope.}
+Most experiments use five-point Likert scales. Why? Because they are ubiquitous in survey research and because the expert-rated histograms from the literature are defined on five points. The domain is one-dimensional. MEC's sensitivity gets explored across a preregistered $(\alpha,\beta)$ grid; no cherry-picking of parameters. Computations are seedable and run on a laptop---no GPUs, no cluster time.
+
+\medskip
+
+\noindent\textbf{Activities.}
+Fourteen activities (A1--A14), grouped under five objectives. Documentation and version control run throughout.
+
+\begin{table}[t]
+\centering
+\caption{Specific objectives, expected results, and activities. \textbf{Color Code:} \textcolor{blue}{Blue} indicates essential (mandatory) activities; \textcolor{gray}{Gray} indicates desirable activities.}
+\label{tab:activities}
+\footnotesize
+\begin{tabular}{@{}p{0.27\textwidth}p{0.30\textwidth}p{0.35\textwidth}@{}}
+\toprule
+\textbf{Specific Objective} & \textbf{Expected result} & \textbf{Activities (A\#)}\\
+\midrule
+Review and framing of polarization measures; define the synthetic universe (five-point, 1D) and comparison criteria
+&
+State-of-the-art note and experimental guidelines
+&
+\textcolor{blue}{A1. Read polarization measures and axioms.}
+\textcolor{blue}{A2. Read contextual applications and limitations.}
+\textcolor{blue}{A3. Fix the synthetic universe, normalizations, comparators, and metrics.}\\
+\midrule
+Theoretical results for MEC
+&
+Technical notes and formal proofs (to be compiled in an appendix)
+&
+\textcolor{blue}{A4. Draft target lemmas (technical outline).}
+\textcolor{blue}{A5. Prove $\mathrm{MEC}_{1,1}=\mathrm{EMD}$ (linear transport identity).}
+\textcolor{blue}{A6. Prove compliance of MEC with ER-style axioms under stated regimes.}
+\textcolor{gray}{A7. Add and prove team-proposed properties (e.g., central-split monotonicity).}\\
+\midrule
+Open, testable implementation
+&
+\texttt{pol\_measures} package with API/CLI/docstrings; CI/CD; GPL license
+&
+\textcolor{blue}{A8. Implement API and CLI with unit tests; enable CI/CD; provisional install via}
+\texttt{\textcolor{blue}{pip install git+https}}.\\
+\midrule
+Computational evaluation on the synthetic universe
+&
+Concordance surfaces and rank correlations
+&
+\textcolor{blue}{A9. Enumerate by stars-and-bars; generate ``concordance surfaces''.}
+\textcolor{blue}{A10. Compute Kendall $\tau_B$ correlations across measures.}
+\textcolor{gray}{A11. Empirically test ER-style transformations on literature measures.}
+\textcolor{gray}{A12. Threshold analysis (percentiles and $k$-means).}\\
+\midrule
+Transfer and dissemination
+&
+Hardened software and manuscript contributions
+&
+\textcolor{gray}{A13. Address feature requests from the research team.}
+\textcolor{blue}{A14. Contribute text and figures to the MEC paper (theory and experiments).}\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\medskip
+
+\noindent\textbf{Schedule (February--October 2026).}
+Month~1 is February 2026; Month~9 is October 2026. The first five months consolidate the review, the theoretical core, and the software skeleton; the last four months execute the synthetic evaluations, threshold studies, and deliverables.
+
+\begin{table}[t]
+\centering
+\caption{Timeline of activities, Months 1--5 (Feb--Jun 2026)}
+\label{tab:timeline1}
+\footnotesize
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Activity} & \textbf{Month 1} & \textbf{Month 2} & \textbf{Month 3} & \textbf{Month 4} & \textbf{Month 5}\\
+\midrule
+A1 & X & X &  &  &  \\
+A2 & X & X &  &  &  \\
+A3 & X & X &  &  &  \\
+A4 &  & X & X &  &  \\
+A5 &  &  & X & X &  \\
+A6 &  &  &  & X & X \\
+A7 &  &  &  &  & X \\
+A8 &  &  &  & X & X \\
+Documentation (log/CI) & X & X & X & X & X \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{Timeline of activities, Months 6--9 (Jul--Oct 2026)}
+\label{tab:timeline2}
+\footnotesize
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Activity} & \textbf{Month 6} & \textbf{Month 7} & \textbf{Month 8} & \textbf{Month 9}\\
+\midrule
+A9  & X & X &  &  \\
+A10 & X & X & X &  \\
+A11 & X & X & X &  \\
+A12 &  & X & X & X \\
+A13 &  &  & X & X \\
+A14 &  &  & X & X \\
+Documentation (log/CI) & X & X & X & X \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\medskip
+
+\noindent\textbf{Milestones and acceptance criteria.}
+Milestones close at month end and require a merged pull request and a verifiable artifact (note, proof draft, figure, or release).
+
+\begin{table}[t]
+\centering
+\caption{Milestones (M\#), target month, and deliverables}
+\label{tab:milestones}
+\footnotesize
+\begin{tabular}{p{0.09\textwidth}p{0.18\textwidth}p{0.60\textwidth}}
+\toprule
+\textbf{M\#} & \textbf{Target month} & \textbf{Acceptance criterion / Deliverable}\\
+\midrule
+M1 & Month 2 & State-of-the-art note (A1--A2) plus synthetic-universe spec and comparators (A3).\\
+M2 & Month 3 & Technical outline of lemmas (A4) and proof sketch for $\mathrm{MEC}_{1,1}=\mathrm{EMD}$ (A5).\\
+M3 & Month 4 & Completed proof of $\mathrm{MEC}_{1,1}=\mathrm{EMD}$ (A5) and ER-axioms plan (A6).\\
+M4 & Month 5 & Added formal properties (A7) and package skeleton with API/CLI and CI/CD running (A8).\\
+M5 & Month 7 & Enumerated universe and preliminary concordance surfaces (A9) plus first Kendall matrix (A10).\\
+M6 & Month 8 & Cross-validation among measures and empirical ER-transform tests (A11) plus threshold analysis (A12).\\
+M7 & Month 9 & Polished package with requested features (A13) and consolidated MEC manuscript draft (A14).\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\medskip
+
+\noindent\textbf{Effort and roles.}
+Average dedication: \emph{20 hours/week} (peaks around solver checks and figure generation), for a total of $\sim$720 hours over nine months. Supervision by Prof.\ Juan Francisco Díaz Frías, Prof.\ Jesús Alexander Aranda (directors) and Prof.\ Frank D.\ Valencia (co-director) ensures continuity from formal development to reproducible computation.
+
+\medskip
+
+\noindent\textbf{Software, licensing, and reproducibility.}
+The implementation will be released under the \emph{GNU General Public License (GPL)} in the repository \texttt{Ulvenforst/pol\_measures}. Continuous integration will enforce unit tests across all measures before publishing. A provisional install path will be provided via:
+\begin{quote}
+\texttt{pip install git+https://github.com/Ulvenforst/pol\_measures.git}
+\end{quote}
+Containerization is not planned at this stage. The long-term goal, conditional on an accepted article, is to propose MEC for inclusion in the SciPy ecosystem. All experiments (enumeration, scoring, concordance, figures) will ship with seeds and reproducible pipelines.
+
+\medskip
+
+\noindent\textbf{Ethics and data governance.}
+No new human-judgment study is conducted here. References to “experts” denote \emph{published} expert-based indices and scores reported by prior work; they will be used strictly for external comparisons. Any local demonstrations with public data will be handled by the research group’s data team, observing institutional guidance on consent, anonymization, and intellectual property. University-hosted educational activities will employ consented, non-sensitive aggregates only.
+
+\medskip
+
+\noindent\textbf{Computational resources and feasibility.}
+All computations run on a personal workstation (ROG Zephyrus G14, AMD Ryzen~9 4900HS, 24\,GB RAM). With five categories and inner loops of order $O(n\log(1/\varepsilon))$ for the compromise search, the full synthetic suite is well within capacity; no GPUs are required. This pragmatic constraint encourages careful engineering and audited tolerances rather than brute force.
+
+\medskip
+
+\noindent\textbf{Expected outcome.}
+If this plan succeeds, the reader will know not only \emph{what} results are sought, but \emph{how} they will be produced, verified, and reported: theory tied to geometry, geometry tied to code, and code tied to transparent comparisons. The path is laid out---month by month, milestone by milestone---though actual results may differ from expectations.
+
+\section{Ethics, Risks, and Data Governance}\label{sec:ethics}
+
+A few words on data and ethics, since these questions matter even for a largely mathematical thesis.
+
+The data footprint here is minimal by design. Most of the work runs on fully synthetic histograms---no human subjects at all. Where real data enters, it is either (a) published expert judgments from the literature, reused strictly for validation, or (b) aggregate Likert counts from public demonstrations, with no individual-level records. Nothing gets stored or distributed that could identify a person.
+
+\medskip
+
+\noindent\textbf{What the data is for.}
+Testing whether MEC behaves as claimed. That is it. No profiling, no prediction about individuals, no decision support for anyone. My role is the math; the PROMUEVA data team handles domain-specific applications outside this thesis.
+
+\medskip
+
+\noindent\textbf{Where the data comes from.}
+Three sources, all on five-point Likert scales:
+
+\begin{itemize}
+  \item \emph{Published expert ratings.} The Koudenburg et al.\ corpus---15 histograms rated by 60 experts. Already in the literature; no new collection. Use is limited to rank-correlation analyses.
+  \item \emph{Cali City Council (2024).} The \emph{Polarizometer} tool was used in late 2024 to gauge councilors' views on four civic topics. Only aggregate counts and index values appear in this thesis; no individual votes.
+  \item \emph{Youth demonstration (Aug.\ 2024).} A public outreach event where young people (17--25) rated 11 topical statements---climate vs.\ economy, data privacy, platform moderation, education reform, and so on. Again, only aggregate histograms are used, as reading exercises to illustrate what MEC says about different issues.
+\end{itemize}
+
+No microdata, period. Any table with cell counts small enough to risk re-identification gets excluded. Results are index values and narrative readings of shapes---not judgments about individuals.
+
+\medskip
+
+\noindent\textbf{Who is involved.}
+The thesis sits within PROMUEVA, a consortium spanning Javeriana Cali, Universidad del Valle, CNRS, École Polytechnique, and Sorbonne Paris Nord. I am at Universidad del Valle. Access runs on a least-privilege basis: the broader team can see project materials, but any internal drafts or early aggregates stay within the polarization-measures unit (Frank Valencia Posso, Jesús Alexander Aranda, Juan Francisco Díaz, Carlos Pinzón, Oscar Vargas).
+
+\medskip
+
+\noindent\textbf{Software and storage.}
+No data platform, no server pipeline. Code lives in a public GitHub repo under GPLv3:
+\begin{quote}
+\texttt{pip install git+https://github.com/Ulvenforst/pol\_measures.git}
+\end{quote}
+The repo has measure implementations, experiment scripts, and documentation. CI runs unit tests; no secrets are stored. The package is labeled alpha. Synthetic artifacts are public; any restricted aggregates stay off version control.
+
+\medskip
+
+\noindent\textbf{Risks.}
+Privacy risk is low---no individual records, only aggregates. The real risks are interpretive: confusing dispersion with polarization, or reading too much into an index value. Mitigation: keep the purpose scientific, present mini-cases as illustrations rather than evaluations, and always flag what the numbers do not tell you. No ethics-board approval is needed because no new human-subjects data are collected.
+
+\medskip
+
+\noindent\textbf{Summary.}
+Data is used only to test MEC against axioms and benchmarks. Sources: synthetic universes, published expert judgments, aggregate civic data. Storage: GPLv3 repo with CI, no microdata. Responsibility: the polarization-measures unit within PROMUEVA. What will not happen: no recruitment, no individual-level storage, no algorithmic decision-making about persons.
+
+\medskip
+
+\noindent\textbf{Bottom line.}
+Ethics here is a design choice, not an afterthought. The thesis stays math-first and aggregate-only, which keeps exposure low while preserving scientific value. The story is about shapes---how opinion coheres into camps and how far apart they stand---and it gets told with the smallest footprint consistent with rigor.
+
+
+
+
+\section{Expected Contributions, Limitations, and Impact}\label{sec:contrib}
+
+What should this thesis leave behind? Three things, ideally.
+
+\textbf{First, formal grounding.} The goal is to pin down whether MEC actually behaves like a polarization measure should, using the Kawada--Nakamura--Sunada (KNS) refinement of Esteban--Ray as the yardstick. Concretely:
+
+\begin{itemize}
+  \item \textbf{Axiom~1$'$ (identification).} Consolidating nearby masses around a central mound should raise MEC. The proof idea: strict convexity in $y$ plus Jensen-type comparisons, exploiting the superadditivity that $\alpha>1$ brings.
+  \item \textbf{Axiom~2 (alienation).} Pushing one pole outward, while the compromise sits on the other side, should raise MEC. Track how $y^\star$ moves via the monotonicity of $F$; the increment scales with $\beta-1$.
+  \item \textbf{Axiom~3 (center erosion).} Splitting central mass symmetrically toward the extremes should raise MEC. This is the ``central-split monotonicity'' tailored to Likert scales.
+\end{itemize}
+
+Not all of these may survive formal proof. If something breaks, the thesis will say what went wrong and how far partial results go. A clean demonstration of the link $\mathrm{MEC}_{1,1}=\min_y \mathrm{EMD}(\pi,\rho_y)$ anchors MEC to the transport literature; what MEC adds for $\alpha>1$ and $\beta>1$ is camp sensitivity.
+
+\textbf{Second, an empirical map.} Not just ``MEC correlates with X,'' but a full concordance surface: where does it agree with ER-style measures, where with dispersion indices, where with transport baselines? The synthetic universe and preregistered vignettes should make disagreements visible and interpretable. Key contrasts: few long moves vs.\ many short ones; balanced vs.\ lopsided splits; symmetric center erosion.
+
+\textbf{Third, reproducible infrastructure.} The Python package, the fixed seeds, the auditable solvers---these matter. Anyone should be able to drop a new measure into the same harness and compare it on the same ground.
+
+\medskip
+
+\noindent\textbf{Limitations.}
+This thesis stays on the Likert line: one dimension, ordered categories. No networks, no multi-issue embeddings. The parameters $(\alpha,\beta)$ are treated as levers to explore, not magic numbers to optimize; reporting stability regions is the goal, not finding a single ``best'' pair. MEC is not pairwise-additive, so ER characterization theorems do not apply directly; compliance with ER Axioms~1$'$--3 is the claim, not equivalence to ER. All ``expert'' references are to published data---no new human subjects, no causal or normative claims. And, frankly, some proofs may not work out. If that happens, documenting the obstacles is itself a contribution.
+
+\medskip
+
+\noindent\textbf{Why does this matter?}
+If it works, MEC would offer something missing in the current toolkit: a polarization measure that respects camp structure, has a clear geometric interpretation (``effort to reach consensus''), and can be checked against axiomatic and empirical benchmarks. For practitioners, it would provide a single number that tracks whether opinion is fracturing into opposed blocs---useful for diagnosis, monitoring, and evaluating interventions. Two rules of thumb should travel with it: treat thresholds as bands, not bright lines; always pair the number with context.
+
+\medskip
+
+\noindent\emph{What comes next (beyond this thesis).}
+Extend to multiple dimensions and network-embedded opinions. Fold sampling uncertainty into the concordance maps. Explore how camp-sensitive geometry interacts with deliberative or moderation interventions. Those are longer-term questions, but the groundwork laid here should make them easier to tackle.
+
+
+% References are included here so the integrated preview needs no .bib or .bst file.
+\begin{thebibliography}{11}
+\bibitem[Aranda et~al.(2026)]{aranda2026mec}
+
+Aranda, J.,
+D{\'i}az, J.F.,
+Narv{\'a}ez, J.C.,
+Palamidessi, C.,
+Pinz{\'o}n, C.,
+Valencia, F.,
+Vargas, O.
+Minimal Effort to Consensus ({MEC}) polarization measure.
+arXiv preprint arXiv:2606.13997v1
+(2026).
+\url{https://doi.org/10.48550/arXiv.2606.13997} .
+\url{https://arxiv.org/abs/2606.13997v1}
+
+\bibitem[Cultura(2024)]{espectadorSuenos2024}
+
+Cultura, R.
+“Sue{\~n}os en concreto”, un documental sobre el estallido social de 2021.
+\emph{El Magaz{\'\i}n Cultural, El Espectador}
+(2024).
+\url{https://www.elespectador.com/el-magazin-cultural/llegara-a-los-cines-suenos-en-concreto-un-documental-sobre-el-estallido-social-de-2021/}
+Accessed 2025-10-31
+
+\bibitem[Van~der Eijk(2001)]{van2001measuring}
+
+Eijk, C.
+Measuring agreement in ordered rating scales.
+\emph{Quality and Quantity}
+35(3),
+325--341
+(2001)
+
+\bibitem[Esteban and Ray(1994)]{esteban1994measurement}
+
+Esteban, J.-M.,
+Ray, D.
+On the measurement of polarization.
+\emph{Econometrica: Journal of the Econometric Society},
+819--851
+(1994)
+
+\bibitem[García and Pérez(2023)]{scielo2023paro}
+
+García, N.,
+Pérez, M.
+Polarización sentimental en twitter durante el paro nacional de 2021 en
+  colombia.
+\emph{Revista de Comunicación}
+(2023).
+Accessed 2025-10-21
+
+\bibitem[Kawada et~al.(2018)]{kawada2018characterization}
+
+Kawada, Y.,
+Nakamura, Y.,
+Sunada, K.
+A characterization of the esteban--ray polarization measures.
+\emph{Economics Letters}
+169,
+35--37
+(2018)
+
+\bibitem[Koudenburg et~al.(2021)]{koudenburg2021new}
+
+Koudenburg, N.,
+Kiers, H.A.,
+Kashima, Y.
+A new opinion polarization index developed by integrating expert
+  judgments.
+\emph{Frontiers in psychology}
+12,
+738258
+(2021)
+
+\bibitem[Lupu et~al.(2017)]{lupu2017new}
+
+Lupu, N.,
+Selios, L.,
+Warner, Z.
+A new measure of congruence: The earth mover’s distance.
+\emph{Political Analysis}
+25(1),
+95--113
+(2017)
+
+\bibitem[swissinfo.ch(2021)]{swissinfo2021trust}
+
+swissinfo.ch, S.
+La polarización política en Colombia hunde la confianza en los medios al
+  mínimo histórico.
+Accessed 2025-10-21
+(2021).
+\url{https://www.swissinfo.ch/spa/la-polarizaci%C3%B3n-pol%C3%ADtica-en-colombia-hunde-la-confianza-en-los-medios-al-m%C3%ADnimo-hist%C3%B3rico/89528434}
+
+\bibitem[Tastle and Wierman(2007)]{tastle2007consensus}
+
+Tastle, W.J.,
+Wierman, M.J.
+Consensus and dissention: A measure of ordinal dispersion.
+\emph{International Journal of Approximate Reasoning}
+45(3),
+531--545
+(2007)
+
+\bibitem[{Universidad Javeriana}(2024)]{javerianaPROMUEVA}
+
+{Universidad Javeriana}.
+Inteligencia artificial para bajar el tono del debate digital.
+Coverage of PROMUEVA public event; Accessed 2025-10-21
+(2024).
+\url{https://www.javeriana.edu.co/pesquisa/inteligencia-artificial-red-social/}
+
+\end{thebibliography}
+
+\end{document}

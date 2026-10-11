@@ -1,0 +1,17 @@
+# Local files and LaTeX compilation outputs
+.DS_Store
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.xdv
+*.bbl
+*.blg
+/sn-article.pdf
+/build/
+/tmp/

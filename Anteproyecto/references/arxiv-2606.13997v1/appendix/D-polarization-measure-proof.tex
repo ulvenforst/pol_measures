@@ -1,0 +1,226 @@
+\section{Proof that MEC is a Polarization Measure}
+\label{Appendix:mec-polarization-measure}
+\def\sign{{\textrm{sign}}}
+\def\half{{\frac{1}{2}}}
+
+This appendix proves Theorem~\ref{th:mec-is-a-polarization-measure}. The structure of the proof was outlined in Section~\ref{sec:shifting-away}. The key technical results are: (i) Theorem~\ref{thm:mec-increases:body}, which establishes that any non-median shift away from consensus strictly increases polarization; (ii) Theorem~\ref{thm:two_massed_distribution:body}, which shows that among two-point distributions supported at the extremes the balanced one is maximal; and (iii) Theorem~\ref{thm:mec-maximal}, which assembles the previous results into the full claim.
+
+We use the notation $\pi_{a\to b}$ from Definition~\ref{def:movement} throughout.
+
+\subsection{Shifts Away from Consensus Strictly Increase MEC}
+
+\begin{theorem}\label{thm:mec-increases-a1-b1}
+Let $\alpha = 1$ and $\beta=1$. For any distribution $\pi$ and $a\in\support(\pi)$, if $\pi_{a\to b}$ is a shift away from consensus and is not a median-shift (Def.~\ref{def:movement}), then $\MEC(\pi_{a\to b}) > \MEC(\pi)$.
+\end{theorem}
+\begin{proof}
+Let $[l,r]$ be the optimal consensus interval for $\pi$ for $\alpha=\beta=1$. Consider the case $r\le a<b$, as the mirror case $b<a\le l$ follows by symmetry.
+We will first show that $r$ is a median for $\pi_{a\to b}$.
+
+If $l<r$, then, given that $r$ is a median for $\pi$ and $a\ge r$, we have $\sum_{x\ge r}\pi_{a\to b}(x)=\sum_{x\ge r}\pi(x)=\frac{\Mass{\pi}}{2}=\frac{\Mass{\pi_{a\to b}}}{2}$. So $r$ is a median for $\pi_{a\to b}$.
+
+If $l=r$, then $\sum_{x\ge r} \pi(x)> \Mass{\pi}/2 > \sum_{x > r} \pi(x)$. Since $\pi_{a\to b}$ is not a median-shift, $a>r$, and therefore
+\[
+\sum_{x\ge r}\pi_{a\to b}(x)=\sum_{x\ge r} \pi(x),
+\qquad
+\sum_{x> r}\pi_{a\to b}(x)=\sum_{x> r} \pi(x).
+\]
+This implies $\sum_{x\ge r} \pi_{a\to b}(x)> \Mass{\pi_{a\to b}}/2 > \sum_{x > r} \pi_{a\to b}(x)$, so $r$ is a median for $\pi_{a\to b}$.
+
+Since $r$ is a median for both $\pi$ and $\pi_{a\to b}$, then
+\[
+\begin{aligned}
+\MEC(\pi_{a\to b}) - \MEC(\pi) &= \EC[\alpha,\beta][\pi_{a\to b}](r) - \EC[\alpha,\beta][\pi](r)\\
+&=\pi_{a\to b}(b) |b-r| - \pi(a) |a-r| - \pi(b) |b-r|\\
+&=\pi(a) (b-a) > 0.
+\end{aligned}
+\]
+\end{proof}
+
+\begin{theorem}\label{thm:mec-increases-a1-b}
+Let $\alpha = 1$ and $\beta>1$. Let $\pi\in\Dset$ and $a\in\support(\pi)$. If $\pi_{a\to b}$ is a shift away from consensus (Def.~\ref{def:movement}), then $\MEC(\pi_{a\to b})>\MEC(\pi)$.
+\end{theorem}
+\begin{proof}
+Let $y^*$ be the optimal consensus point for $\pi$.
+Consider the case $y^*\le a<b$, as the mirror case $b<a\le y^*$ follows by symmetry.
+To prove that $\MEC$ increases as $b$ increases away from $y^*$, it suffices to show that $\frac{\partial}{\partial b} \MEC(\pi_{a\to b})>0$.
+
+The Envelope Theorem states that
+\[
+\frac{\partial}{\partial b} \MEC(\pi_{a\to b})
+=\left.\frac{\partial}{\partial b} \EC[\alpha,\beta][\pi_{a\to b}](y)\right|_{y=y^*_{a\to b}}\hspace{-2.5em} = \pi(a)\, \beta |b-y^*_{a\to b}|^{\beta-1} \sign(b-y^*_{a\to b}),
+\]
+so it remains to show that $b > y^*_{a\to b}$.
+
+From the optimality of $y^*$ and $y^*_{a\to b}$, and letting $f(t):=\beta |t|^{\beta-1} \sign(t)$ and  $g(y) := \sum_{x \ne a} \pi(x) f(y-x)$, it holds that
+\begin{align}
+0 &= \left.\frac{\partial}{\partial y} \EC[\alpha,\beta][\pi](y)\right|_{y=y^*}
+= g(y^*) + \pi(a) f(y^*-a),\label{eq:894}\\
+0 &= \left.\frac{\partial}{\partial y} \EC[\alpha,\beta][\pi_{a\to b}](y)\right|_{y=y^*_{a\to b}}
+= g(y^*_{a\to b}) + \pi(a) f(y^*_{a\to b}-b).\label{eq:895}
+\end{align}
+
+Subtracting Equations~\eqref{eq:894} and~\eqref{eq:895} produces
+\begin{equation}
+\pi(a) (f(y^*-a) - f(y^*_{a\to b}-b)) = g(y^*_{a\to b}) - g(y^*).
+\label{eq:896}
+\end{equation}
+Note that $f$ is strictly increasing, hence so is $y\mapsto f(y-x)$ for every $x$, and so is the function $g$.
+Using the monotonicity of $f$ and $g$ on Equation~\eqref{eq:896} yields the following sign equalities
+\def\eqsign{\stackrel{\sign}{=}}
+\begin{align}
+    f(y^*-a) - f(y^*_{a\to b}-b) &\eqsign g(y^*_{a\to b}) - g(y^*)\nonumber\\
+    (y^*-a) - (y^*_{a\to b}-b) &\eqsign y^*_{a\to b} - y^*\nonumber\\
+    (b-a) - (y^*_{a\to b}-y^*) &\eqsign y^*_{a\to b} - y^*\label{eq:897}
+\end{align}
+
+Equation~\eqref{eq:897} has the form $z-w \eqsign w$ with $z>0$, which reduces to $0<w<z$. Therefore, $0 < y^*_{a\to b}-y^* < b-a$, and $b>y^*_{a\to b}>y^*$.
+\end{proof}
+
+\begin{theorem}\label{thm:mec-increases-aux}
+For any $\alpha,\beta\geq 1$, any distribution $\pi$, any $a\in\support(\pi)$ and any $b$, it holds that
+\[
+\MEC[1,\beta]((\pi^\alpha)_{a\to b}) \leq \MEC[1,\beta]((\pi_{a\to b})^\alpha).
+\]
+\end{theorem}
+\begin{proof}
+For any $c\ge 0$, let $\mu_c$ denote the distribution given by
+\[
+\mu_c(x)=\pi^\alpha(x) \text{ for all } x\notin \set{a,b},
+\qquad
+\mu_c(a)=0,
+\qquad
+\mu_c(b)=c.
+\]
+Then for $c_0:=(\pi^\alpha)_{a\to b}(b)$ we have $\mu_{c_0}=(\pi^\alpha)_{a\to b}$, and for $c_1:= (\pi_{a\to b})^\alpha(b)$ we have $\mu_{c_1} = (\pi_{a\to b})^\alpha$.
+
+Since
+\[
+ c_0=\pi(a)^\alpha + \pi(b)^\alpha \leq (\pi(a)+\pi(b))^\alpha = c_1,
+\]
+it suffices to show that the mapping $g(c)=\MEC[1,\beta](\mu_c)$ is non-decreasing over the interval $c\in[c_0, c_1]$. Applying the Envelope Theorem to $g$ and $f(c,y) := \EC[1,\beta][\mu_c](y)$ yields $g'(c) =\frac{\partial}{\partial c} f(c, y)|_{y=y^*_c}$, where $y^*_c$ is an optimal consensus point of $\mu_c$.
+So $g'(c) = \frac{\partial}{\partial c} c |b-y^*_c|^\beta = |b-y^*_c|^\beta \geq 0$.
+\end{proof}
+
+\shiftingAway*
+\begin{proof}
+Note that
+\[
+\MEC(\pi) = \MEC[1,\beta](\pi^\alpha)
+\qquad\text{and}\qquad
+\MEC(\pi_{a\to b})=\MEC[1,\beta]((\pi_{a\to b})^\alpha).
+\]
+Hence it suffices to show that 
+\[
+\MEC[1,\beta](\pi^\alpha) < \MEC[1,\beta]((\pi^\alpha)_{a\to b}) \leq \MEC[1,\beta]((\pi_{a\to b})^\alpha).
+\]
+The first inequality was shown in Theorems~\ref{thm:mec-increases-a1-b1} and~\ref{thm:mec-increases-a1-b} (for $\beta=1$ and $\beta>1$ respectively), and the second in Theorem~\ref{thm:mec-increases-aux}.
+\end{proof}
+
+\subsection{Two-Point Polarization}
+
+\begin{lemma}\label{lem:two-point-max-simple}
+Let \(k>0\) and \(A\in[0,k]\). Let \(\rho_A\in\Dset_k\) be the two-point distribution at $\{0,1\}$ with $\rho_A(0)=A$ and $\rho_A(1)=k-A$, and write \(g(A)\defsymbol \MEC(\rho_A)\). Then \(g(A)\le g(k/2)\) for every \(A\in[0,k]\).
+\end{lemma}
+
+\begin{proof}
+By definition,
+\[
+g(A)=\min_{y\in[0,1]}\,\bigl(A^\alpha y^\beta +(k-A)^\alpha(1-y)^\beta\bigr).
+\]
+Write $f_A(y)\defsymbol A^\alpha y^\beta +(k-A)^\alpha(1-y)^\beta=\EC[\alpha,\beta][\rho_A](y)$. If \(A=0\) or \(A=k\), then $\rho_A$ is a consensus distribution, so \(g(A)=0\) and the conclusion is immediate. Thus assume \(0<A<k\).
+
+If \(\beta=1\), then
+\[
+g(A)=\min\{A^\alpha,(k-A)^\alpha\},
+\]
+which is plainly maximal at \(A=k/2\).
+
+Assume now that \(\beta>1\). By Theorem~\ref{convexity}, $f_A$ is strictly convex, so $\rho_A$ has a unique optimal consensus point \(y_A\in(0,1)\) satisfying
+\[
+A^\alpha y_A^{\beta-1}=(k-A)^\alpha(1-y_A)^{\beta-1}.
+\]
+Using this identity, we obtain
+\[
+\begin{aligned}
+g(A)
+&=A^\alpha y_A^\beta +(k-A)^\alpha(1-y_A)^\beta \\
+&=A^\alpha y_A^\beta + A^\alpha y_A^{\beta-1}(1-y_A) \\
+&=A^\alpha y_A^{\beta-1}.
+\end{aligned}
+\]
+Similarly,
+\[
+g(A)=(k-A)^\alpha(1-y_A)^{\beta-1}.
+\]
+Multiplying these two expressions gives
+\[
+g(A)^2=[A(k-A)]^\alpha [y_A(1-y_A)]^{\beta-1}.
+\]
+Now \(A(k-A)\le (k/2)^2\) and \(y_A(1-y_A)\le 1/4\). Hence
+\[
+g(A)^2
+\le
+\left(\frac{k}{2}\right)^{2\alpha}\left(\frac14\right)^{\beta-1}.
+\]
+On the other hand, when \(A=k/2\) the distribution $\rho_{k/2}$ is symmetric about $1/2$, so by Lemma~\ref{lem:symmetry-mec} its optimal consensus point is $y=1/2$, and therefore
+\[
+g(k/2)
+=
+2\left(\frac{k}{2}\right)^\alpha \left(\frac12\right)^\beta
+=
+\left(\frac{k}{2}\right)^\alpha \left(\frac12\right)^{\beta-1}.
+\]
+Thus
+\[
+g(A)^2\le g(k/2)^2.
+\]
+Since \(g(A)\ge 0\), it follows that
+\[
+g(A)\le g(k/2).
+\]
+\end{proof}
+
+\twoPointPolarization*
+\begin{proof}
+By Corollary~\ref{cor:condition-H-normalization}, we may assume $\Mass{\pi_A}=1$, so $\pi_A(0)=A\in[0,1]$ and $\pi_A(1)=1-A$. In the notation of Lemma~\ref{lem:two-point-max-simple} with $k=1$, we have $\pi_A=\rho_A$, hence $\MEC(\pi_A)=g(A)$. The lemma gives $g(A)\le g(1/2)$ for all $A\in[0,1]$, with equality at $A=1/2$. Since $\pi_A^*$ corresponds precisely to $A=1/2$, we conclude that $\MEC(\pi_A)\le \MEC(\pi_A^*)$.
+\end{proof}
+
+\subsection{Proof of Theorem~\ref{th:mec-is-a-polarization-measure}}
+
+We first establish the auxiliary result that $\pi^*$ maximizes $\MEC$.
+
+\begin{theorem}\label{thm:mec-maximal}
+For any $\alpha,\beta\geq 1$ and any $\pi\in\Dset$, we have $\MEC(\pi)\le\MEC(\pi^*)$.
+\end{theorem}
+\begin{proof}
+If $\pi$ is a consensus distribution, then $\MEC(\pi^*)\geq 0 = \MEC(\pi)$, so we may assume $|\support(\pi)|\geq 2$.
+It suffices to find a distribution $\mu$ with $\support(\mu)=\set{0,1}$ and $\Mass{\mu}=\Mass{\pi}$ and $\MEC(\mu)\geq \MEC(\pi)$, since applying Theorem~\ref{thm:two_massed_distribution:body} to $\mu$ yields
+\[
+\MEC(\pi)\leq \MEC(\mu) \leq \MEC(\pi^*).
+\]
+
+If $\beta>1$, applying Theorem~\ref{thm:mec-increases:body} successively to $\pi$ with any $a\in\support(\pi)\setminus\{0,1\}$ and $b\in\set{0,1}$ chosen appropriately to move away from consensus yields, after finitely many steps, a distribution $\mu$ with $\support(\mu)=\{0,1\}$ and $\MEC(\mu)\ge\MEC(\pi)$. The conclusion follows.
+
+If $\beta=1$, the same process leads to a distribution $\mu$ with $\support(\mu)\subseteq\set{0,y^*,1}$ for some $y^*\in(0,1)$, where the case $\support(\mu)=\set{0,1}$ corresponds to no stalling. If $\support(\mu)=\set{0,1}$, the proof concludes with Theorem~\ref{thm:two_massed_distribution:body} as above.
+
+Otherwise, $y^*\in\support(\mu)$ and the process stalled because $y^*$ is the unique optimal consensus point of $\mu$. By Cor.~\ref{cor:mec-special-cases}, $y^*$ is then the unique median of $\mu^\alpha$. Therefore, $\mu(0),\mu(1)<\Mass{\pi}/2=\pi^*(0)=\pi^*(1)$, since otherwise $0$ or $1$ would also be a median of $\mu^\alpha$, contradicting uniqueness.
+
+Since $y^*$ is also a median for $\pi^*$ (every point in $[0,1]$ is), then 
+\[
+\begin{aligned}
+\MEC[\alpha,1](\pi)&\leq \MEC[\alpha,1](\mu)
+ = \EC[\alpha,1][\mu](y^*)\\
+&= \mu(0)^\alpha (y^*-0) + \mu(1)^\alpha (1-y^*)\\
+&\leq \pi^*(0)^\alpha (y^*-0) + \pi^*(1)^\alpha (1-y^*)\\
+&=\EC[\alpha,1][\pi^*](y^*)=\MEC(\pi^*),
+\end{aligned}
+\]
+where $\mu(0)^\alpha (y^*-0)$ is interpreted as $0$ when $0\notin\support(\mu)$, and similarly for the term at $1$.
+\end{proof}
+
+\mecIsPolarization*
+\begin{proof}
+The first condition of Def.~\ref{pol:def} holds because $\EC(y)=0$ at the consensus point of any consensus distribution, hence $\MEC(\pi)=0$ when $\pi$ is a consensus distribution. The second condition is exactly Theorem~\ref{thm:mec-maximal}.
+\end{proof}
+
+

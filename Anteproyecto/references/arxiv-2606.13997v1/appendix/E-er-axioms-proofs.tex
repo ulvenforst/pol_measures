@@ -1,0 +1,317 @@
+\section{Proofs for \texorpdfstring{\ERLabel}{ER} Axioms and Property 1}
+\label{appendix:MEC_proofs}
+
+\subsection{Proof of Theorem~\ref{th:mec-axiom-1} (\texorpdfstring{\ERLabel}{ER} Axiom~1)}
+\label{appendix:proof-mec-axiom-1}
+
+\mecAxiomOne*
+\begin{proof}
+\proofpart{Setup}
+Fix $p>0$, $x>0$, write $h\defsymbol y-x$, and set
+\[
+  \pi=((p,q,q),(0,x,x+h)),
+  \qquad
+  \tilde\pi=((p,2q),(0,x+h/2)).
+\]
+Define
+\[
+  E(z)\defsymbol \EC[\alpha,\beta][\pi](z)
+  =p^\alpha z^\beta+q^\alpha\lvert x-z\rvert^\beta+q^\alpha\lvert x+h-z\rvert^\beta,
+\]
+\[
+  \widetilde E(z)\defsymbol \EC[\alpha,\beta][\tilde\pi](z)
+  =p^\alpha z^\beta+(2q)^\alpha\left\lvert x+\tfrac{h}{2}-z\right\rvert^\beta,
+\]
+so that $\MEC(\pi)=\min_{z\in[0,1]}E(z)$ and $\MEC(\tilde\pi)=\min_{z\in[0,1]}\widetilde E(z)$.
+
+\proofpart{Central identity and decomposition}
+
+For $z\in(0,x)$, set $A\defsymbol x-z>0$, so that $\lvert x-z\rvert=A$ and
+$\lvert x+h-z\rvert=A+h$. Then
+\begin{equation}
+  \label{eq:central}
+  E(z)-\widetilde{E}(z)=q^\alpha\,\Delta(A,h),
+\end{equation}
+where we define
+\[
+  \Delta(A,h)\defsymbol A^\beta+(A+h)^\beta-2^\alpha\!\left(A+\tfrac{h}{2}\right)^\beta.
+\]
+The key to the proof is the decomposition
+\begin{equation}
+  \label{eq:decomp}
+  \Delta(A,h)
+  =\underbrace{\left[A^\beta+(A+h)^\beta-2\!\left(A+\tfrac{h}{2}\right)^\beta\right]}_{J(A,h)\;\geq\;0}
+  -(2^\alpha-2)\!\left(A+\tfrac{h}{2}\right)^\beta.
+\end{equation}
+The term $J(A,h)\geq 0$ is the Jensen remainder for the convex function
+$t\mapsto t^\beta$: it vanishes identically when $\beta=1$, and is strictly
+positive when $\beta>1$ and $h>0$. The subtracted term is strictly positive
+when $\alpha>1$, and vanishes when $\alpha=1$.
+
+The sign pattern of $\Delta$ in each regime is therefore:
+
+\begin{equation}
+  \label{eq:signs}
+  \begin{aligned}
+    \alpha>1,\;\beta=1\colon\quad &\Delta=-(2^\alpha-2)\!\left(A+\tfrac h2\right)<0,\\
+    \alpha>1,\;\beta>1\colon\quad &\Delta\big\vert_{h=0}=-(2^\alpha-2)A^\beta<0,\\
+    \alpha=1,\;\beta=1\colon\quad &\Delta\equiv 0,\\
+    \alpha=1,\;\beta>1\colon\quad &\Delta=J>0.
+  \end{aligned}
+\end{equation}
+
+In the case $\alpha>1$ and $\beta>1$, the inequality $\Delta(A,0)<0$ implies, by continuity and compactness of $[x/2,x]$, that $\Delta(A,h)<0$ for all $A\in[x/2,x]$ and all sufficiently small $h>0$. More precisely, since $\Delta(A,0)=-(2^\alpha-2)A^\beta$ is continuous and strictly negative on the compact interval $[x/2,x]$, there exists $c_x>0$ such that $\Delta(A,0)\le -c_x<0$ for all $A\in[x/2,x]$. By continuity of $\Delta$, there exists $\varepsilon_0>0$ such that $\Delta(A,h)<0$ for all $A\in[x/2,x]$ and $0<h<\varepsilon_0$.
+
+\proofpart{1. Assume $\beta=1$}
+Set $\mu\defsymbol\tfrac12$; the condition $q<p/2$ ensures $p>2q$, so $0$ is
+the unique weighted median of both $\pi^\alpha$ and $\tilde\pi^\alpha$.
+The characterization of $\MEC[\alpha,1]$ by weighted medians then gives exact formulae:
+\[
+  \MEC(\pi)=q^\alpha(2x+h),
+  \qquad
+  \MEC(\tilde\pi)=(2q)^\alpha\!\left(x+\tfrac{h}{2}\right)=2^{\alpha-1}q^\alpha(2x+h).
+\]
+\proofpart{1.1 Assume $\alpha>1$} Then $2^{\alpha-1}>1$ and so $\MEC(\pi)<\MEC(\tilde\pi)$ for every
+$h,q>0$: Axiom~1 holds.
+
+\proofpart{1.2 Assume $\alpha=1$} Then $\MEC(\pi)=\MEC(\tilde\pi)$ for every $h,q>0$: Axiom~1 fails.
+
+\proofpart{2. Assume $\beta>1$} First we locate the optimal consensus points.
+For any $q<\mu_0 p$, where
+\[
+  \mu_0\defsymbol\min\!\left\{(1+2^{\beta-1})^{-1/\alpha},\;2^{-(\alpha+\beta-1)/\alpha}\right\}>0,
+\]
+the conditions $p^\alpha>(1+2^{\beta-1})q^\alpha$ and $p^\alpha>2^{\alpha+\beta-1}q^\alpha$
+both hold. Since $h<x/2$ (to be enforced below), we have
+$x/2+h<x$ and $x/2+h/2<x$, so
+\[
+  E'(x/2)
+  \;\geq\;
+  \beta\!\left(\tfrac x2\right)^{\!\beta-1}\!\!\bigl[p^\alpha-(1+2^{\beta-1})q^\alpha\bigr]>0,
+\]
+\[
+  \widetilde{E}'(x/2)
+  \;\geq\;
+  \beta\!\left(\tfrac x2\right)^{\!\beta-1}\!\!\bigl[p^\alpha-2^{\alpha+\beta-1}q^\alpha\bigr]>0.
+\]
+Since $\beta>1$, $\beta p^\alpha z^{\beta-1}\to 0$ as $z\to 0^+$, giving
+\[
+  E'(0^+)=-\beta q^\alpha x^{\beta-1}-\beta q^\alpha(x+h)^{\beta-1}<0,
+\]
+\[
+  \widetilde{E}'(0^+)=-\beta(2q)^\alpha\!\left(x+\tfrac{h}{2}\right)^{\beta-1}<0.
+\]
+Combined with the bounds above, we have
+\[
+  E'(0^+)<0<E'(x/2),
+  \qquad
+  \widetilde{E}'(0^+)<0<\widetilde{E}'(x/2),
+\]
+and therefore, by strict convexity, the unique optimal consensus points $z_\pi$ and $z_{\tilde\pi}$ lie in $(0,x/2)$. In particular,
+\[
+  A_\pi\defsymbol x-z_\pi\in\!\left(\tfrac x2,x\right),
+  \qquad
+  A_{\tilde\pi}\defsymbol x-z_{\tilde\pi}\in\!\left(\tfrac x2,x\right).
+\]
+
+\proofpart{2.1 Assume $\alpha>1$}
+Set $\mu\defsymbol\mu_0$. Since $\Delta(A,0)=-(2^\alpha-2)A^\beta<0$ and $\Delta$ is continuous,
+compactness of $[x/2,x]$ yields $\varepsilon_0>0$ such that
+\[
+  \Delta(A,h)<0
+  \qquad\text{for all }A\in\bigl[\tfrac x2,x\bigr],\ h\in(0,\varepsilon_0).
+\]
+Set $\varepsilon\defsymbol\min(\varepsilon_0,x/2)$. This ensures both $h<\varepsilon_0$ (so that the sign
+condition on $\Delta$ applies) and $h<x/2$ (so that the location argument
+of the previous paragraph applies, giving $A_{\tilde\pi}\in(x/2,x)\subset[x/2,x]$).
+
+Applying identity~\eqref{eq:central} at $z=z_{\tilde\pi}$:
+\[
+  E(z_{\tilde\pi})-\widetilde{E}(z_{\tilde\pi})=q^\alpha\,\Delta(A_{\tilde\pi},h)<0,
+\]
+so $E(z_{\tilde\pi})<\widetilde{E}(z_{\tilde\pi})=\MEC(\tilde\pi)$. Since
+$\MEC(\pi)\leq E(z_{\tilde\pi})$, Axiom~1 holds.
+
+\proofpart{2.2 Assume $\alpha=1$}
+Let $\varepsilon,\mu>0$ be arbitrary. Choose
+\[
+  0<h<\min\!\left\{\varepsilon,\tfrac x2\right\},
+  \qquad
+  0<q<\min\!\left\{\mu p,\;\frac{p}{1+2^{\beta-1}}\right\},
+\]
+and set
+\[
+  \pi=((p,q,q),(0,x,x+h)),
+  \qquad
+  \tilde\pi=((p,2q),(0,x+h/2)).
+\]
+Since $\alpha=1$, the derivatives of $E$ satisfy
+\[
+  E'(x/2)\;\geq\;
+  \beta\!\left(\tfrac x2\right)^{\!\beta-1}\!\bigl[p-(1+2^{\beta-1})q\bigr]>0,
+\]
+\[
+  E'(0^+)=-\beta q\,x^{\beta-1}-\beta q\,(x+h)^{\beta-1}<0.
+\]
+By strict convexity the unique optimal consensus point $z_\pi$ of $\pi$ lies in $(0,x/2)$, so
+$A_\pi\defsymbol x-z_\pi>0$.
+By~\eqref{eq:decomp} with $\alpha=1$, we have $\Delta(A,h)=J(A,h)>0$ for all $A,h>0$.
+Applying identity~\eqref{eq:central} at $z=z_\pi$:
+\[
+  E(z_\pi)-\widetilde{E}(z_\pi)=q\,J(A_\pi,h)>0,
+\]
+so $\widetilde{E}(z_\pi)<E(z_\pi)=\MEC(\pi)$. Since $\MEC(\tilde\pi)\leq\widetilde{E}(z_\pi)$,
+we conclude $\MEC(\pi)>\MEC(\tilde\pi)$, and Axiom~1 fails.
+
+\medskip
+This completes the proof.
+\end{proof}
+
+\subsection{Proof of Theorem~\ref{th:mec-axiom-2} (\texorpdfstring{\ERLabel}{ER} Axiom~2)}
+\label{appendix:proof-mec-axiom-2}
+
+\mecAxiomTwo*
+\begin{proof}
+Fix $\alpha\ge 1$ and $\beta\ge 1$. Let $p,q,r>0$ with $p>r$, let $x,y>0$ satisfy $|y-x|<x<y$, and let $0<\Delta<y-x$. Define
+\[
+\pi=\big((p,q,r),(0,x,y)\big),\qquad
+\pi_\Delta=\big((p,q,r),(0,x+\Delta,y)\big).
+\]
+Since $0<\Delta<y-x$ we have $x+\Delta\notin\{0,x,y\}$, hence $\pi_\Delta=\pi_{x\to x+\Delta}$ in the sense of Def.~\ref{def:movement}. We treat the cases $\beta>1$ and $\beta=1$ separately.
+
+\proofpart{Case $\beta>1$}
+Set $f(t):=|t|^{\beta-1}\sign(t)$. The effort function of $\pi$,
+\[
+\EC[\alpha,\beta][\pi](u)
+= p^\alpha|u|^\beta+q^\alpha|u-x|^\beta+r^\alpha|u-y|^\beta,
+\]
+has derivative
+\[
+F_\pi(u):=\frac{\partial}{\partial u}\EC[\alpha,\beta][\pi](u)
+=\beta\big(p^\alpha f(u)+q^\alpha f(u-x)+r^\alpha f(u-y)\big).
+\]
+Evaluating at $u=x$,
+\begin{align*}
+F_\pi(x)
+&=\beta\big(p^\alpha f(x)+q^\alpha f(0)+r^\alpha f(x-y)\big) \\
+&=\beta\big(p^\alpha x^{\beta-1}-r^\alpha (y-x)^{\beta-1}\big)>0,
+\end{align*}
+because $p^\alpha>r^\alpha$ (since $\alpha\ge1$ and $p>r$) and
+$x^{\beta-1}>(y-x)^{\beta-1}$ (since $\beta>1$ and $x>y-x$).
+
+Since $\beta>1$, $\EC[\alpha,\beta][\pi]$ is strictly convex, so $F_\pi$ is strictly increasing and has a unique zero $y^*(\pi)$. The inequality $F_\pi(x)>0$ implies $y^*(\pi)<x<x+\Delta$, so $\pi_\Delta=\pi_{x\to x+\Delta}$ is a shift away from consensus. Strict convexity also gives uniqueness of $y^*(\pi)$, so the shift is not a median-shift. By Theorem~\ref{thm:mec-increases:body},
+\[
+\MEC(\pi_\Delta)>\MEC(\pi).
+\]
+
+\proofpart{Case $\beta=1$}
+By Cor.~\ref{cor:mec-special-cases}, the $(\alpha,1)$-optimal consensus points of $\pi$ are the medians of the renormalized distribution $\overline{\pi^\alpha}$, which has masses proportional to $(p^\alpha,q^\alpha,r^\alpha)$ at the support points $(0,x,y)$. Since $\alpha\ge 1$ and $p>r$ give $p^\alpha>r^\alpha$, the inequality $r^\alpha>p^\alpha+q^\alpha$ cannot hold, so $y$ is never a median. Hence every optimal consensus point of $\pi$ lies in $[0,x]$. The mass profile $(p^\alpha,q^\alpha,r^\alpha)$ is preserved by the shift, so the same conclusion holds for $\pi_\Delta$.
+
+We split into two sub-cases according to whether $\pi_{x\to x+\Delta}$ is a median-shift in the sense of Def.~\ref{def:movement}.
+
+\emph{Sub-case 1: $\pi_{x\to x+\Delta}$ is not a median-shift.}
+Since every optimal consensus point $y^*$ of $\pi$ satisfies $y^*\le x<x+\Delta$, the shift $\pi_{x\to x+\Delta}$ is away from consensus by Def.~\ref{def:movement}. Theorem~\ref{thm:mec-increases:body} therefore applies and yields $\MEC(\pi_\Delta)>\MEC(\pi)$.
+
+\emph{Sub-case 2: $\pi_{x\to x+\Delta}$ is a median-shift.}
+By Def.~\ref{def:movement}, this means that $x$ is the unique $(\alpha,1)$-optimal consensus point of $\pi$, equivalently the unique median of $\overline{\pi^\alpha}$. Concretely, this corresponds to the strict inequalities
+\[
+p^\alpha<q^\alpha+r^\alpha
+\quad\text{and}\quad
+p^\alpha+q^\alpha>r^\alpha.
+\]
+The same mass conditions hold for $\overline{\pi_\Delta^\alpha}$, so $x+\Delta$ is the unique median of $\overline{\pi_\Delta^\alpha}$, hence the unique optimal consensus point of $\pi_\Delta$. By Cor.~\ref{cor:mec-special-cases},
+\begin{align*}
+\MEC(\pi)
+&=\EC[\alpha,1][\pi](x)
+=p^\alpha\,x+r^\alpha(y-x),\\
+\MEC(\pi_\Delta)
+&=\EC[\alpha,1][\pi_\Delta](x+\Delta)
+=p^\alpha(x+\Delta)+r^\alpha\big(y-x-\Delta\big).
+\end{align*}
+Subtracting,
+\[
+\MEC(\pi_\Delta)-\MEC(\pi)
+=\big(p^\alpha-r^\alpha\big)\,\Delta>0,
+\]
+since $p>r$ and $\alpha\ge 1$ give $p^\alpha>r^\alpha$, and $\Delta>0$.
+
+In either sub-case, $\MEC(\pi_\Delta)>\MEC(\pi)$, which completes the proof.
+\end{proof}
+
+\subsection{Proof of Theorem~\ref{th:mec-axiom-3} (\texorpdfstring{\ERLabel}{ER} Axiom~3)}
+\label{appendix:proof-mec-axiom-3}
+
+\mecAxiomThree*
+\begin{proof}
+Fix $\alpha\ge 1$ and $\beta\ge 1$. Fix $p,q>0$ and $x>0$, let $y=2x$, and choose any $\Delta\in(0,q/2)$. Define
+\[
+\pi := \big((p,q,p), (0,x,2x)\big), \qquad
+\tilde{\pi} := \big((p+\Delta, q-2\Delta, p+\Delta), (0,x,2x)\big).
+\]
+For $\rho\in\{\pi,\tilde{\pi}\}$, consider the effort function
+\[
+\EC[\alpha,\beta][\rho](u):=\sum_{t\in\{0,x,2x\}} \rho(t)^\alpha\,|u-t|^\beta.
+\]
+Since $\beta\ge1$, the map $u\mapsto \EC[\alpha,\beta][\rho](u)$ is convex. Moreover, because $\rho(0)=\rho(2x)$ for both
+$\rho=\pi$ and $\rho=\tilde{\pi}$, both distributions are symmetric about $x$. By Lemma~\ref{lem:symmetry-mec},
+\[
+\MEC(\rho)=\EC[\alpha,\beta][\rho](x)\qquad\text{for }\rho\in\{\pi,\tilde{\pi}\}.
+\]
+Evaluating at $u=x$ yields
+\[
+\MEC(\pi)=\EC[\alpha,\beta][\pi](x)
+=p^\alpha|0-x|^\beta+q^\alpha|x-x|^\beta+p^\alpha|2x-x|^\beta
+=2p^\alpha x^\beta,
+\]
+and similarly
+\[
+\MEC(\tilde{\pi})=\EC[\alpha,\beta][\tilde{\pi}](x)
+=2(p+\Delta)^\alpha x^\beta.
+\]
+Since $\Delta>0$ and $\alpha\ge1$, we have $(p+\Delta)^\alpha>p^\alpha$. Multiplying by $2x^\beta>0$ gives
+\[
+2p^\alpha x^\beta < 2(p+\Delta)^\alpha x^\beta,
+\]
+and thus $\MEC(\pi)<\MEC(\tilde{\pi})$.
+\end{proof}
+
+\subsection{Proof of Theorem~\ref{th:mec-property-1} (Property~1)}
+\label{appendix:proof-mec-property-1}
+
+\mecPropertyOne*
+\begin{proof}
+Fix $\alpha\ge 1$ and $\beta\ge 1$. Fix the parameters $p,q,x,z,\Delta$ as in Axiom~\ref{axiom:property-1}, with $y=2x$, and define
+\[
+\pi := \big((p,q,p),(0,x,2x)\big),
+\]
+\[
+\tilde{\pi} := \big((p,\Delta,q-2\Delta,\Delta,p),(0,x-z,x,x+z,2x)\big).
+\]
+For $\rho\in\{\pi,\tilde{\pi}\}$, consider the effort function
+\[
+\EC[\alpha,\beta][\rho](u):=\sum_{t\in \support(\rho)} \rho(t)^\alpha\,|u-t|^\beta.
+\]
+Since $\beta\ge1$, the map $u\mapsto \EC[\alpha,\beta][\rho](u)$ is convex. Both $\pi$ and $\tilde{\pi}$ are symmetric about $x$ (their masses are paired at equal distance to the left and right of $x$). Therefore, by Lemma~\ref{lem:symmetry-mec},
+\[
+\MEC(\rho)=\EC[\alpha,\beta][\rho](x)\qquad\text{for }\rho\in\{\pi,\tilde{\pi}\}.
+\]
+
+Evaluating at $u=x$ yields
+\[
+\MEC(\pi)=\EC[\alpha,\beta][\pi](x)
+=p^\alpha|x-0|^\beta+q^\alpha|x-x|^\beta+p^\alpha|x-2x|^\beta
+=2p^\alpha x^\beta,
+\]
+and
+\begin{align*}
+\MEC(\tilde{\pi})
+&=\EC[\alpha,\beta][\tilde{\pi}](x) \\
+&=p^\alpha|x-0|^\beta+\Delta^\alpha|x-(x-z)|^\beta+(q-2\Delta)^\alpha|x-x|^\beta \\
+&\quad +\Delta^\alpha|x-(x+z)|^\beta+p^\alpha|x-2x|^\beta \\
+&=2p^\alpha x^\beta+2\Delta^\alpha z^\beta.
+\end{align*}
+Since $\Delta>0$ and $z>0$, we have $2\Delta^\alpha z^\beta>0$, and hence
+\[
+\MEC(\pi)=2p^\alpha x^\beta \;<\; 2p^\alpha x^\beta+2\Delta^\alpha z^\beta=\MEC(\tilde{\pi}).
+\]
+\end{proof}

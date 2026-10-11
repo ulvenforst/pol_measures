@@ -1,0 +1,113 @@
+{
+  "review_date": "2026-09-14",
+  "source_files": [
+    {
+      "file": "01-introduction.tex",
+      "bytes": 8154,
+      "sha256": "60df113637c49e53bc23dc04f5cf4f06e67b1181bdb106b3d4289024cade54c2"
+    },
+    {
+      "file": "02-preliminaries.tex",
+      "bytes": 3905,
+      "sha256": "122f7de1a5ea65e64c89d694d40f7bc99e6efd4bc26188c73e7957bab57f1532"
+    },
+    {
+      "file": "03-mec-measure.tex",
+      "bytes": 12443,
+      "sha256": "b30fe023aaa6dac01cc175bb99bf800977dba1f0a263d4a3411d3a69971fcd2f"
+    },
+    {
+      "file": "04-structural-properties.tex",
+      "bytes": 10495,
+      "sha256": "ef2ddcb513d55a7163f3d2019025c0360ac2a3d7988efda63276a2a377369b93"
+    },
+    {
+      "file": "05-theoretical-applications.tex",
+      "bytes": 9177,
+      "sha256": "c9234afdb8411394e777a3aa0c0553d6073135c1e4da0874d77299da90cdbd75"
+    },
+    {
+      "file": "06-shifting-away.tex",
+      "bytes": 10022,
+      "sha256": "96f82dc456c7e71a006ede59332da8f900d46af61c07db276fc744b87da00b56"
+    },
+    {
+      "file": "07-er-comparison.tex",
+      "bytes": 12653,
+      "sha256": "75ef49163edffab78edcbf76d37fc54cd20b91fc4f7cd92fba80b28a51c8a277"
+    },
+    {
+      "file": "08-experiments.tex",
+      "bytes": 10078,
+      "sha256": "35a5e0bcd0d4e7d14cacd0142809ab36b05a0c4de5cd591843bdf3e26b6040ec"
+    },
+    {
+      "file": "09-conclusion.tex",
+      "bytes": 4026,
+      "sha256": "5a04fecca2fd11dfc9a15539e2886cc8a1f18bb5f53c41ee5d03fe9d4273e54b"
+    },
+    {
+      "file": "A-mec-measure-proofs.tex",
+      "bytes": 3836,
+      "sha256": "fe646c1b3739ab899edde832f4efe71244ad898e777f26d32dec90931621ca51"
+    },
+    {
+      "file": "B-structural-properties-proofs.tex",
+      "bytes": 8999,
+      "sha256": "0290976781197917bc7cd61964cda907f2740fe2aed0759cc75089dd7ed6dac6"
+    },
+    {
+      "file": "C-theoretical-applications-proofs.tex",
+      "bytes": 4125,
+      "sha256": "925dbd2be4cf54db22ee993729ac61c8fedf66a642f99b7cc68248f3c9c7b2d8"
+    },
+    {
+      "file": "D-polarization-measure-proof.tex",
+      "bytes": 10878,
+      "sha256": "9f2ea183dfd5c897073a65c55821c0151e55e6824b44bc5068e5a04b6edfc186"
+    },
+    {
+      "file": "E-er-axioms-proofs.tex",
+      "bytes": 12984,
+      "sha256": "4aaab5dcf080a2f750b54f0dca1313a1c44b3a16eca2c1ab5afee222bfb807b2"
+    },
+    {
+      "file": "F-auxiliary-theorems.tex",
+      "bytes": 7621,
+      "sha256": "0f83a226c62825330cd9d6dbe72ac13bf9c3b117c9898e5de05c49b4471cdc6a"
+    },
+    {
+      "file": "MEC___ArXiv.pdf",
+      "bytes": 1460846,
+      "sha256": "938b841b4e67783c9727a8bd96db3f1c4894024554d0fac4b97ee8ec08ce2471"
+    },
+    {
+      "file": "macros.tex",
+      "bytes": 1962,
+      "sha256": "0fc7af79b6daed82597d7206f15475448daecc59fb18fe371792a803dd6940b5"
+    },
+    {
+      "file": "main.bib",
+      "bytes": 5019,
+      "sha256": "c877cd0be5f7c22703a7de8dfd13f57592678b1a4d69923b96a3b24933daf6e2"
+    },
+    {
+      "file": "main.tex",
+      "bytes": 1826,
+      "sha256": "d893e15fc316d75423cc43a9ac50f3cf8ab24d7fd99f17b23d3f2bd70ac0bcab"
+    }
+  ],
+  "external_repository": {
+    "url": "https://github.com/ulvenforst/pol_measures",
+    "commit": "1efd4fe3f083e478cb91a6f3ca078cad01386a80",
+    "commit_date": "2026-05-28",
+    "local_reference": "/Users/ulvenforst/.codex/.chatgpt-projects/g-p-679762270ce0819184d0049533dc560a/tmp/pol_measures-reference"
+  },
+  "pdf_pages": 55,
+  "pdf_creation_metadata": "2026-05-08T21:27:57Z",
+  "limitations": [
+    "PDF creation metadata is not a publication date.",
+    "The external repository commit is not established as the commit used to produce manuscript figures.",
+    "Original participant-level expert data and a complete historical project archive have not been reviewed."
+  ]
+}

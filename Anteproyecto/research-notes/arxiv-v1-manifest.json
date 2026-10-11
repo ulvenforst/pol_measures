@@ -1,0 +1,129 @@
+{
+  "arxiv": "2606.13997v1",
+  "user": "Juan Camilo Narváez",
+  "files": [
+    {
+      "path": "/Users/ulvenforst/Downloads/arXiv-2606.13997v1/.DS_Store",
+      "sha256": "238f164c8d131f8e4957b628bd16b532030e07069a5e40c106caac67ba26a407"
+    },
+    {
+      "path": "/Users/ulvenforst/Downloads/arXiv-2606.13997v1/00README.json",
+      "sha256": "d1f6b1a71c9accb812ec5121d1fff7910c025ca7bb201948bacdb40941bc14e5"
+    },
+    {
+      "path": "/Users/ulvenforst/Downloads/arXiv-2606.13997v1/Images/.DS_Store",
+      "sha256": "a08a5bcec3cbc75db404e6b2baa739cdc1ec3cda9fa911f8d1fa0e5a3c7f8066"
+    },
+    {
+      "path": "/Users/ulvenforst/Downloads/arXiv-2606.13997v1/Images/er_axioms/axiom1.png",
+      "sha256": "b35d7997e8a37991b4297548f63100fc88847a1a130b8c62bc2efd89749ae81b"
+    },
+    {
+      "path": "/Users/ulvenforst/Downloads/arXiv-2606.13997v1/Images/er_axioms/axiom2.png",
+      "sha256": "4a19828759b18cf64e675244efb43a5cb6f40e53c5d0bb6e4e6bb2bf19f80103"
+    },
+    {
+      "path": "/Users/ulvenforst/Downloads/arXiv-2606.13997v1/Images/er_axioms/axiom3.png",
+      "sha256": "44dbd2c2cffea8dd5b3ce449fd4a702a1e7b9fdf2b1fbb92ae7f00bfbd7bbcc4"
+    },
+    {
+      "path": "/Users/ulvenforst/Downloads/arXiv-2606.13997v1/Images/er_axioms/property1.png",
+      "sha256": "36090b0c91663da1fdb4896f84446f417124f668fbefe02e4e3d0103fa800a17"
+    },
+    {
+      "path": "/Users/ulvenforst/Downloads/arXiv-2606.13997v1/Images/experimental_comparisons/correlation_experts_opinion.png",
+      "sha256": "e901954d6a476edc15e8013546efc5f0b52198cec1835f539a0cd50d798fc991"
+    },
+    {
+      "path": "/Users/ulvenforst/Downloads/arXiv-2606.13997v1/Images/experimental_comparisons/experts_histograms.jpg",
+      "sha256": "8f36edf4b37397584b677866c5f0eb907f3096db4497e186d18acc8f54ac0df5"
+    },
+    {
+      "path": "/Users/ulvenforst/Downloads/arXiv-2606.13997v1/Images/experimental_comparisons/kendalltau_correlation_matrix.png",
+      "sha256": "62b3456e4154d1d05526ba30086c19ecbfb95a4e2eb604889a7a958e4773a38c"
+    },
+    {
+      "path": "/Users/ulvenforst/Downloads/arXiv-2606.13997v1/appendix/A-mec-measure-proofs.tex",
+      "sha256": "22a25e0c47ef3231dfc56978f947a1fa8223fb28d383116a188a01f2ce1ad978"
+    },
+    {
+      "path": "/Users/ulvenforst/Downloads/arXiv-2606.13997v1/appendix/B-structural-properties-proofs.tex",
+      "sha256": "0290976781197917bc7cd61964cda907f2740fe2aed0759cc75089dd7ed6dac6"
+    },
+    {
+      "path": "/Users/ulvenforst/Downloads/arXiv-2606.13997v1/appendix/C-theoretical-applications-proofs.tex",
+      "sha256": "925dbd2be4cf54db22ee993729ac61c8fedf66a642f99b7cc68248f3c9c7b2d8"
+    },
+    {
+      "path": "/Users/ulvenforst/Downloads/arXiv-2606.13997v1/appendix/D-polarization-measure-proof.tex",
+      "sha256": "9f2ea183dfd5c897073a65c55821c0151e55e6824b44bc5068e5a04b6edfc186"
+    },
+    {
+      "path": "/Users/ulvenforst/Downloads/arXiv-2606.13997v1/appendix/E-er-axioms-proofs.tex",
+      "sha256": "b9f2b5d31af73ad712db7dab5a5d050920f0e801a1d438ce606d836729238fc7"
+    },
+    {
+      "path": "/Users/ulvenforst/Downloads/arXiv-2606.13997v1/appendix/F-auxiliary-theorems.tex",
+      "sha256": "0f83a226c62825330cd9d6dbe72ac13bf9c3b117c9898e5de05c49b4471cdc6a"
+    },
+    {
+      "path": "/Users/ulvenforst/Downloads/arXiv-2606.13997v1/macros.tex",
+      "sha256": "af60ae3774df6c2a7bd9c2c337ba5929e6cb6381ec34b04f239a1af7b980640b"
+    },
+    {
+      "path": "/Users/ulvenforst/Downloads/arXiv-2606.13997v1/main.bib",
+      "sha256": "c877cd0be5f7c22703a7de8dfd13f57592678b1a4d69923b96a3b24933daf6e2"
+    },
+    {
+      "path": "/Users/ulvenforst/Downloads/arXiv-2606.13997v1/main.tex",
+      "sha256": "3afacbb783bab05a04c7a5cb4bf2d746843b38f0afb7524f464cdd5160740df1"
+    },
+    {
+      "path": "/Users/ulvenforst/Downloads/arXiv-2606.13997v1/sections/01-introduction.tex",
+      "sha256": "ee0e917b6349d8708546be1d3f3827455ba9ddc8d68ba989f20ead28d99d0147"
+    },
+    {
+      "path": "/Users/ulvenforst/Downloads/arXiv-2606.13997v1/sections/02-preliminaries.tex",
+      "sha256": "122f7de1a5ea65e64c89d694d40f7bc99e6efd4bc26188c73e7957bab57f1532"
+    },
+    {
+      "path": "/Users/ulvenforst/Downloads/arXiv-2606.13997v1/sections/03-mec-measure.tex",
+      "sha256": "99f67b44620848d1d3bba36e5e671844ab9101487d0407f5f5722721aed5349d"
+    },
+    {
+      "path": "/Users/ulvenforst/Downloads/arXiv-2606.13997v1/sections/04-structural-properties.tex",
+      "sha256": "ef2ddcb513d55a7163f3d2019025c0360ac2a3d7988efda63276a2a377369b93"
+    },
+    {
+      "path": "/Users/ulvenforst/Downloads/arXiv-2606.13997v1/sections/05-theoretical-applications.tex",
+      "sha256": "c9234afdb8411394e777a3aa0c0553d6073135c1e4da0874d77299da90cdbd75"
+    },
+    {
+      "path": "/Users/ulvenforst/Downloads/arXiv-2606.13997v1/sections/06-shifting-away.tex",
+      "sha256": "d341afef742b2dac58604a3debbb90846d79e006890ee6cce5d847dc6c2cf3e5"
+    },
+    {
+      "path": "/Users/ulvenforst/Downloads/arXiv-2606.13997v1/sections/07-er-comparison.tex",
+      "sha256": "ffbf51d372b31c9ba85a092fafc2f5e5505b8a4724989acaf9fe00e045582967"
+    },
+    {
+      "path": "/Users/ulvenforst/Downloads/arXiv-2606.13997v1/sections/08-experiments.tex",
+      "sha256": "c1ca46a169768e20a4a55adbf715848f9955139cd2d8eb8290234c4ff2ed0c71"
+    },
+    {
+      "path": "/Users/ulvenforst/Downloads/arXiv-2606.13997v1/sections/09-conclusion.tex",
+      "sha256": "dd53c7a6e4f7451b8edfe755eb0b775cc94020374f915ff03477bebc32179cd0"
+    }
+  ],
+  "pdf_sha256": "112d5432ae6bf49bf852815e22628b945a1e09abf9fde01cb634003357278951",
+  "pdf_pages": 55,
+  "active_source_directory": "/Users/ulvenforst/Codex/University/pol_measures/Anteproyecto/references/arxiv-2606.13997v1",
+  "active_pdf": "/Users/ulvenforst/Codex/University/pol_measures/Anteproyecto/references/2606.13997v1.pdf",
+  "recovered_from": {
+    "pdf": "https://arxiv.org/pdf/2606.13997v1",
+    "source": "https://arxiv.org/src/2606.13997v1",
+    "date": "2026-10-11",
+    "pdf_matches_original": true,
+    "source_files_matching_original": 26
+  }
+}

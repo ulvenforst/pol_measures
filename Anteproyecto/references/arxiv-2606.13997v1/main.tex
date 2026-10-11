@@ -1,0 +1,82 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{amsmath, amssymb}
+\usepackage{amsthm}
+\usepackage[disable]{todonotes}
+\usepackage{thmtools}
+\usepackage{thm-restate}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+\usepackage{mathrsfs}
+\usepackage{float}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{caption}
+\newtheorem{axiom}{Axiom}[section]
+
+
+\title{Minimal Effort to Consensus (MEC) polarization measure}
+\author{
+  Jes\'{u}s Aranda\\Universidad del Valle
+  \and
+  Juan Francisco D\'{\i}az\\Universidad del Valle
+  \and
+  Juan Camilo Narv\'{a}ez\\Universidad del Valle
+  \and
+  Catuscia Palamidessi \\ INRIA-Saclay
+  \and
+  Carlos Pinz\'{o}n\\INRIA-Saclay
+  \and
+  Frank Valencia\\CNRS-LIX, \'Ecole Polytechnique
+  \and
+  Oscar Vargas\\Universidad Javeriana Cali
+}
+
+\begin{document}
+\input{macros}
+\maketitle
+
+%---------- Body ----------
+\input{sections/01-introduction}
+\input{sections/02-preliminaries}
+\input{sections/03-mec-measure}
+\input{sections/04-structural-properties}
+\input{sections/05-theoretical-applications}
+\input{sections/06-shifting-away}
+\input{sections/07-er-comparison}
+\input{sections/08-experiments}
+\input{sections/09-conclusion}
+
+\bibliographystyle{plain}
+\bibliography{main}
+
+\newpage
+
+\appendix
+\begin{center}
+{\fontsize{24}{48}\selectfont \bfseries Appendix}
+\end{center}
+\vspace{2em}
+
+%---------- Appendix ----------
+\input{appendix/A-mec-measure-proofs}
+\input{appendix/B-structural-properties-proofs}
+\input{appendix/C-theoretical-applications-proofs}
+\input{appendix/D-polarization-measure-proof}
+\input{appendix/E-er-axioms-proofs}
+\input{appendix/F-auxiliary-theorems}
+
+\end{document}

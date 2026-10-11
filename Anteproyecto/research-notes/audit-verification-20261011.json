@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-11",
+  "source_path": "/Users/ulvenforst/Codex/University/pol_measures/Anteproyecto/sn-article.tex",
+  "source_sha256": "c9392fae60caeb3c8539a8a11e02a3b8f5ecd74db7bc639effda2c9749252df5",
+  "research_body_preserved_from_pre_conversion_source": true,
+  "sections_after_introduction_preserved_from_original_proposal_source_except_table_padding": true,
+  "abstract_preserved_from_pre_conversion_source": true,
+  "active_sections": [
+    "Introduction, Research Question, and Hypothesis",
+    "Motivation, Field Positioning, and Regional Context",
+    "Literature Review and Conceptual Framework",
+    "Objectives and Scope",
+    "Data and Primary Sources: Availability, Measurement Strategy, and Feasibility",
+    "Research Design and Methodology",
+    "Work Plan, Schedule, Effort, and Milestones",
+    "Ethics, Risks, and Data Governance",
+    "Expected Contributions, Limitations, and Impact"
+  ],
+  "active_table_count": 6,
+  "active_bibliography_keys": [
+    "esteban1994measurement",
+    "van2001measuring",
+    "tastle2007consensus",
+    "lupu2017new",
+    "aranda2026mec",
+    "koudenburg2021new",
+    "scielo2023paro",
+    "swissinfo2021trust",
+    "javerianaPROMUEVA",
+    "espectadorSuenos2024",
+    "kawada2018characterization"
+  ],
+  "pdfs": {
+    ".backups/before-migration-20261011-171333/sn-article.pdf": {
+      "pages": 12,
+      "sha256": "98f733c4946df6612fa8071dc864e3a43aa8be6dd7a4aacd1598cb6025216ac1"
+    },
+    "sn-article.pdf": {
+      "pages": 22,
+      "sha256": "678932d66491da39687ae3e81a37fa37873a42e632e1ffe922a2238b5ff35c52"
+    },
+    "references/Anteproyecto_de_grado-vfinal.pdf": {
+      "pages": 21,
+      "sha256": "7b6191884d410d4d3cc00117e146d5141bf107302b177c862e5ef551f99c1c3b"
+    },
+    "references/2606.13997v1.pdf": {
+      "pages": 55,
+      "sha256": "112d5432ae6bf49bf852815e22628b945a1e09abf9fde01cb634003357278951"
+    }
+  },
+  "corpus_counts": {
+    "all": 4598126,
+    "palindromes": 1326,
+    "reflection_representatives": 2299726
+  },
+  "independent_spot_checks": {
+    "expert_mec_2_1_15_tau_b": 0.8857142857142857,
+    "expert_er_0_8_tau_b": 0.8857142857142857,
+    "whole_group_transfer_mec_2_2": 623.0769230769231
+  },
+  "repository_head": "1efd4fe3f083e478cb91a6f3ca078cad01386a80",
+  "remote_main_matches_head": true,
+  "limits": [
+    "No full-corpus rerun",
+    "No fresh timing run",
+    "No independent reproof of every theorem",
+    "No current PDF export",
+    "No changes to thesis source"
+  ],
+  "non_content_transformations": [
+    "Funding heading macro",
+    "Table bottom-rule macro",
+    "Padding in activities table",
+    "Comment before inline bibliography"
+  ],
+  "post_audit_cleanup": {
+    "date": "2026-10-11",
+    "authorized_by": "Juan requested removal of obsolete proposal files and the reference tar",
+    "historical_backup_paths_removed": true,
+    "deleted_files": 55,
+    "deleted_bytes": 5870724,
+    "current_source_sha256": "4e79a1ba3dbecf760be81c91dc68b1cae2d044e1d90c5595b2720a834bc004ea",
+    "source_change": "Removed obsolete backup comment only; research text unchanged",
+    "retained": [
+      "sn-article.tex",
+      "references/2606.13997v1.pdf",
+      "references/Anteproyecto_de_grado-vfinal.pdf",
+      "references/arxiv-2606.13997v1/",
+      "references/INDEX.txt",
+      "research-notes/"
+    ]
+  },
+  "article_style_update": {
+    "date": "2026-10-11",
+    "reference_source": "/Users/ulvenforst/Codex/University/pol_measures/Anteproyecto/references/arxiv-2606.13997v1/main.tex",
+    "paper_format": "letter, 612 by 792 PDF points",
+    "font_size": "10 TeX points, as the reference article",
+    "page_layout": "standard article defaults, no geometry override",
+    "paragraph_style": "parskip",
+    "theorems": "styles and counters matched to main.tex and macros.tex",
+    "bibliography": "same eleven records, alphabetical order, inline for integrated compiler",
+    "preservation_verified": {
+      "body_text": true,
+      "equations": true,
+      "tables": true,
+      "bibliographic_fields": true
+    },
+    "integrated_compiler": "success",
+    "source_sha256": "48c3a09a8f1831b0cd428960f5c61b7a81eb421df5c1439b0c2c038258f7cc83",
+    "preview_limit": "Compilation and reference-page inspection performed; no separate PDF exported"
+  }
+}

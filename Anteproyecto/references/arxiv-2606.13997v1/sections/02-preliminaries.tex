@@ -1,0 +1,37 @@
+\section{Preliminaries}\label{sec:preliminaries}
+
+We will define a family of polarization measures for populations of individuals (agents) with opinions on some underlying proposition (e.g., \emph{climate change is a hoax}). These opinions are represented as numbers in $[0,1]$, where a value of $0$ (a value of $1$) indicates complete disagreement (complete agreement) with the proposition, and the higher the value, the stronger the agreement.
+
+We shall use mass \emph{distributions} with finite support to represent how agents are grouped according to their opinions. More precisely,
+
+\begin{definition}[Opinion Distribution]  
+An \emph{opinion distribution} is a function $\pi : [0,1] \to \PositiveReals$ with finite, non-empty support $\support(\pi)=\{x \in [0,1] \mid \pi(x) > 0\}$. For each $x \in \support(\pi)$, the value $\pi(x)$ is the \emph{weight} (or \emph{mass}) of the group of agents holding opinion $x$. The (total) \emph{mass} (or \emph{total weight}) of $\pi$ is $\Mass{\pi} \eqdef \sum_{x \in \support(\pi)} \pi(x)$. We write $\Dset$ for the set of all opinion distributions, and $\Dset_k$ for those with mass $k$.  
+\end{definition}
+
+We shall often use $(\bvec{\pi},\bvec{x})=((\pi_1,\ldots,\pi_n),(x_1,\ldots,x_n)) \in \Reals_{\geq 0}^n \times [0,1]^n$, with $x_1 < \cdots < x_n$ and $\sum_{i=1}^n \pi_i > 0$, to denote the unique opinion distribution $\pi$ satisfying $\pi(x_i)=\pi_i$ for each $i$ and $\Mass{\pi}=\sum_{i=1}^n \pi_i$.  
+
+Notice that opinion distributions do not need to be normalized (a probabilistic distribution). Thus, we define the following. 
+
+\begin{definition}[Power and Normalized Distributions]
+Let $\pi$ be an opinion distribution. The $\alpha$-power opinion distribution of $\pi$ is given by  $\pi^\alpha(x) \defsymbol \pi(x)^\alpha$ for every $x\in[0,1]$ where $\alpha \in \PositiveReals.$ 
+We shall use $\overline{\pi}(x)\defsymbol \frac{\pi(x)}{\Mass{\pi}}$ for every $x \in [0,1]$ for the normalized opinion distribution obtained from $\pi$. 
+\end{definition}
+
+It will also be convenient to recall the notion of median for an opinion distribution. A real number $m\in[0,1]$ is a \emph{median} of $\pi\in\Dset$ if $\sum_{x\le m}\pi(x)\ge \Mass{\pi}/2$ and $\sum_{x\ge m}\pi(x)\ge \Mass{\pi}/2$. Medians need not be unique; the set of medians of $\pi$ is a closed subinterval of $[0,1]$.
+
+Let us now introduce some representative families of one-point and two-point distributions for polarization. An extremal distribution is a two-point distribution placing half of its total mass at the minimum opinion value (0) and the other half at the maximum opinion value (1). More precisely, 
+
+\begin{definition}[Consensus and Extremal Distributions]  
+An opinion distribution $\pi$ is \emph{(two-point) extremal} if $\pi(0)=\pi(1)=\Mass{\pi}/2$. For any $\pi$, we write $\pi^*$ for the extremal distribution with the same mass, i.e.\ $\Mass{\pi^*}=\Mass{\pi}$. An opinion distribution $\pi$ is a \emph{consensus (distribution) at $y \in [0,1]$} if $\support(\pi)=\{y\}$, and a \emph{consensus} if this holds for some $y \in [0,1]$. If $\pi \in \Dset$, we write $\pi_y$ for the consensus distribution at $y$ with mass $\Mass{\pi_y}= \Mass{\pi}$.
+\end{definition}
+
+We can now introduce the notion of polarization measure.
+
+\begin{definition}[Polarization Measure]\label{pol:def}  
+A \emph{polarization measure} is a function $\Pol:\Dset \to \Reals_{\geq 0}$ such that:  
+(1) if $\pi \in \Dset$ is a consensus then $\Pol(\pi)=0$; and 
+(2) if $\pi \in \Dset_k$ is extremal, then $\Pol(\pi) \geq \Pol(\pi')$ for all $\pi' \in \Dset_k$.  
+\end{definition}
+
+The two basic conditions in the definition above are intuitive and standard properties in the literature \cite{esteban1994measurement} for polarization measures: if there is consensus, there is no polarization, and extremal distributions maximize polarization among distributions with the same total mass.
+

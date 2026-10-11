@@ -1,0 +1,254 @@
+\section{Structural Properties of MEC}\label{sec:structural}
+
+In this section we state some foundational properties of MEC such as its convexity,  $L^p$-dispersion characterization, symmetry and scaling.
+
+\subsection{Convexity}
+We now state a useful feature of our effort functions: They are \emph{convex}.  From a theoretical perspective, convexity provides a solid theoretical framework. As shown here, it allows us to use well-established results from convex analysis (e.g., \cite{Rockafellar1970}) to further analyze the behavior of and to derive additional properties of MEC. 
+
+\begin{restatable}[Convexity of Effort]{theorem}{convexityThm}\label{convexity}
+The effort function 
+$\EC:[0,1] \to \PositiveReals$ 
+in Def.~\ref{mec:def} is convex on $[0,1]$. Furthermore, if $\beta>1$, then $\EC$ is also strictly convex on $[0,1]$.
+\end{restatable}
+
+Convexity is also advantageous from a computational perspective. For a convex function, every local minimum is a global minimum. Thus, in computing the minimum effort to consensus (MEC), it suffices to find any local minimum of $\EC(y)$ on $[0,1]$. When $\beta>1$, the function $\EC(y)$ is continuously differentiable and strictly convex. It therefore admits a unique optimal consensus point characterized by the first-order condition $d/dy\EC(y)=0$. Standard root-finding procedures, such as the bisection method applied to $d/dy\EC(y)$, locate the optimal consensus point within $\varepsilon$ accuracy in $O(\log(1/\varepsilon))$ iterations.
+
+Nevertheless, for certain families of opinion distributions and values
+of $\alpha,\beta$, the value of $\MEC$ can be computed directly, either
+through a closed formula, through standard measures, or by exploiting
+symmetries of the distribution. In the next section we explore these special cases.  
+
+\subsection{Characterization and Special Cases for MEC}\label{section:special-cases}
+
+Recall that $L^p$-dispersion of a probability distribution (with finite support) $\rho$ is given by
+
+\begin{equation}
+D_p(\rho)\defsymbol \min_{y\in[0,1]} \sum_{x\in\support(\rho)} \rho(x)\,|x-y|^p.
+\end{equation}
+
+The $L^p$-dispersion is a way of measuring how spread out a probabilistic distribution is using an $L^p$ type of distance. MEC can be characterized in terms of this measure as follows. 
+
+\begin{restatable}[$L^\beta$-dispersion Characterization]{theorem}{mecLbeta}\label{thm:mec-Lbeta}
+Let $\alpha \ge 1$ and $\beta \ge 1$, and let $\pi\in\Dset$ be an opinion distribution. Then
+\(
+\MEC[\alpha,\beta](\pi) = \Mass{\pi^\alpha} \cdot D_\beta(\overline {\pi^\alpha}).
+\)
+\end{restatable}
+
+Thus, $\MEC$ equals the total transformed mass $\Mass{\pi^\alpha}$ times the $L^\beta$-dispersion of the normalized distribution $\overline{\pi^\alpha}$.
+
+Two familiar cases arise as a corollary from the above theorem. When $\beta=1$, the effort function
+is minimized at a median, and the resulting dispersion is the mean absolute
+deviation from that median. When $\beta=2$, the minimizing point is the mean,
+and the dispersion coincides with the variance. Thus, in these classical
+settings, the minimal effort to consensus is simply the dispersion of
+$\overline{\pi^\alpha}$, measured either by mean absolute deviation or by
+variance, scaled by the total mass $\Mass{\pi^\alpha}$.
+
+First recall that 
+the \emph{mean absolute deviation about a median} of a finitely
+supported probability distribution $\rho$ is defined as
+\(
+\mathrm{MAD}_{\mathrm{m}}(\rho)\defsymbol \sum_{x\in\support(\rho)} \rho(x)\,|x-m|,
+\)
+where $m$ is any median of $\rho$.
+Also, the \emph{variance} of $\rho$ is given by
+\(
+\mathrm{Var}(\rho)=\sum_{x\in\support(\rho)} \rho(x)\,(x-\mu)^2,
+\)
+where $\mu$ is the mean of $\rho$.
+
+\begin{restatable}[Median and Mean Consensus]{corollary}{specialCases}\label{cor:mec-special-cases}
+Under the assumptions of Theorem~\ref{thm:mec-Lbeta}, the following hold:
+\begin{enumerate}
+\item 
+\(
+\MEC[\alpha,1](\pi)
+=
+\Mass{\pi^\alpha}\cdot \mathrm{MAD}_{\mathrm{m}}(\overline{\pi^\alpha})
+=\EC[\alpha,1](m),
+\)
+where $m$ is a median of $\overline{\pi^\alpha}$.
+
+\item 
+\(
+\MEC[\alpha,2](\pi)
+=
+\Mass{\pi^\alpha}\cdot \mathrm{Var}(\overline{\pi^\alpha})
+=\EC[\alpha,2](\mu),
+\)
+where $\mu$ is the mean of $\overline{\pi^\alpha}$.
+\end{enumerate}
+\end{restatable}
+
+\subsection{Symmetry}
+
+We now consider opinion distributions whose symmetry determines their polarization.
+
+\begin{definition}[Reflection and symmetry]
+Let $\pi\in\Dset$ and let $c\in[0,1]$. We say that $c$ is an \emph{admissible reflection center} for $\pi$ if
+\(
+2c-x\in[0,1] \)
+for all \(x\in\support(\pi).
+\) 
+If $c$ is an admissible reflection center for $\pi$, the
+\emph{reflection of $\pi$ about $c$}, denoted $\pi^{\mathrm{ref}(c)}$,
+is the opinion distribution with support
+\(
+\support(\pi^{\mathrm{ref}(c)})
+=
+\{\,2c-x \mid x\in\support(\pi)\,\}
+\)
+and masses
+\(
+\pi^{\mathrm{ref}(c)}(2c-x)\defsymbol \pi(x)
+\) for all \( x\in\support(\pi).
+\) 
+
+We say that $\pi$ is \emph{symmetric about $c$} if $c$ is an admissible
+reflection center for $\pi$ and
+\(
+\pi=\pi^{\mathrm{ref}(c)}.
+\)
+\end{definition}
+
+The MEC measure is insensitive to whether masses lie to the left or to the
+right of the opinion spectrum. What matters are the masses of the groups and
+their distances from a candidate consensus point, not the orientation of the
+configuration. Reflecting a distribution about a point $c$ simply exchanges the
+positions of groups located on the left and on the right of $c$ while
+preserving these distances. Consequently, the minimal effort required to reach
+consensus remains unchanged.
+
+For example, consider the two-mass distribution
+\(
+\pi=((40,60),(0.2,0.6)).
+\)
+Reflecting $\pi$ about $c=0.4$ yields
+\(\
+\pi^{\mathrm{ref}(c)}=((60,40),(0.2,0.6)).
+\)
+The two distributions only differ by reversing the positions of the groups
+around $c$, hence the minimal
+effort required to reach consensus is the same for both distributions. Indeed, $\MEC[2,2](\pi)=\MEC[2,2](\pi^{\mathrm{ref}(c)})\approx 177.2$.
+The following lemma formalizes this invariance property. 
+
+\begin{restatable}[Reflection preserves MEC]{lemma}{mecReflection}
+\label{lem:mec-reflection}
+Let $\pi\in\Dset$ and let $c$ be an admissible reflection center for $\pi$.
+Then
+\(
+\MEC[\alpha,\beta](\pi^{\mathrm{ref}(c)})
+=
+\MEC[\alpha,\beta](\pi).
+\)
+\end{restatable}
+
+Another operation of interest in the study of polarization consists in \emph{shifting} the entire distribution of opinions either to the left or to the right.   
+
+\begin{definition}[Shifts]
+Let 
+\(
+\pi=((\pi_1,\ldots,\pi_n),(x_1,\ldots,x_n))\in\Dset
+\)
+be an opinion distribution. A real number $t$ is an \emph{admissible shift} for $\pi$ if
+\(
+0 \le x_1+t \)
+and \(
+x_n+t \le 1.
+\) If $t$ is admissible, the \emph{shift of $\pi$ by $t$} is the opinion distribution  
+\(
+\pi^{\mathrm{shift}(t)}
+=
+((\pi_1,\ldots,\pi_n),(x_1+t,\ldots,x_n+t)).
+\) 
+\end{definition}
+
+When an opinion distribution is shifted along the spectrum, the relative
+positions of the opinions remain unchanged; only their common location is
+altered. For this reason, the level of polarization measured by MEC should
+remain invariant under such shifts. 
+
+Indeed, the preservation of MEC under shifts follows directly from its
+invariance under reflection (Lem.~\ref{lem:mec-reflection}), owing to the identity
+\(
+\pi^{\mathrm{shift}(t)}
+=
+\left(\pi^{\mathrm{ref}(c)}\right)^{\mathrm{ref}(c+t/2)},
+\)
+which holds for admissible $c$ and $t$, and expresses a shift as the
+composition of two reflections.
+
+\begin{restatable}[Shift preserves MEC]{corollary}{mecShift}
+\label{cor:mec-shift}
+Let $\pi\in\Dset$ and let $t$ be an admissible shift for $\pi$. Then
+\(
+\MEC[\alpha,\beta](\pi^{\mathrm{shift}(t)})
+=
+\MEC[\alpha,\beta](\pi).
+\)
+\end{restatable}
+
+We now consider opinion distributions that are symmetric about a point $c$. 
+Such distributions represent situations in which opinions to the left and right of $c$ are balanced: for every group at distance $d$ from $c$ on one side, there is an equally large group at the same distance on the other. 
+The effort function is therefore symmetric, and the minimal effort to consensus is attained at $c$.
+
+\begin{restatable}[Symmetry]{lemma}{symmetryMec}
+\label{lem:symmetry-mec}
+Let $\alpha \ge 1$ and $\beta \ge 1$, and let $\pi\in\Dset$. If $\pi$ is symmetric about $c$, then
+\(
+\MEC[\alpha,\beta](\pi)
+=
+\EC(c).
+\)
+\end{restatable}
+
+As an immediate consequence of the symmetry lemma (Lem.~\ref{lem:symmetry-mec}) we derive an algebraic expression for the polarization of extremal opinion distributions. The minimal effort to consensus of any extremal distribution can be achieved by moving its population to the middle point $1/2$ since every $\pi^*$ is symmetric about this point.   
+
+\begin{restatable}{theorem}{mecPiStar}\label{th:mec-pi-star}
+For every $\pi \in \Dset$, we have
+\[
+\MEC(\pi^*)
+=
+\EC[\alpha,\beta][\pi^*](1/2)
+=
+2\left(\frac{\Mass{\pi^*}}{2}\right)^\alpha
+\left(\frac{1}{2}\right)^\beta .
+\]
+\end{restatable}
+
+\subsection{Population Scaling}
+
+The following theorem states a simple homogeneity property of the minimal effort to consensus: scaling all population masses by a factor $\lambda$ scales the value of $\MEC$ by $\lambda^{\alpha}$.
+
+\begin{restatable}[Population Scaling]{theorem}{multByScalar}\label{th:multbyscalar}
+Let $\pi=((\pi_1,\ldots,\pi_n),(x_1,\ldots,x_n))\in\Dset$ and let $\lambda>0$.
+We define
+\(
+\lambda\pi \defsymbol ((\lambda\pi_1,\ldots,\lambda\pi_n),(x_1,\ldots,x_n)).
+\)
+Then
+\(
+\MEC(\lambda\pi)=\lambda^{\alpha}\MEC(\pi).
+\)
+\end{restatable}
+
+As an immediate consequence of the previous theorem we obtain
+Condition~H of Esteban and Ray \cite{esteban1994measurement}. 
+A polarization measure $\Pol$ satisfies Condition~H if
+\begin{equation}\label{eq:condition-H}    
+\Pol(\pi)>\Pol(\pi') \Rightarrow \Pol(\lambda\pi)>\Pol(\lambda\pi')
+\end{equation}
+
+for every $\lambda>0,\pi,\pi' \in \Dset$. Condition~H expresses invariance to population scaling and is
+standard in the theory of inequality measurement (see, e.g., \cite{foster85}). 
+
+Another simple but useful application of the proposition is to obtain the polarization of a normalized distribution from that of the original distribution. This is especially useful if you want to compare populations of different sizes.  
+
+\begin{restatable}{corollary}{conditionH}\label{cor:condition-H-normalization}
+The following hold: 
+\begin{enumerate}
+\item $\MEC(\overline{\pi})=\frac{\MEC(\pi)}{(\Mass{\pi})^{\alpha}}.$
+\item The $\MEC$ satisfies Condition~H.
+\end{enumerate}
+\end{restatable}

@@ -1,0 +1,333 @@
+\section{Proofs for Structural Properties of MEC}
+\label{appendix:structural-properties-proofs}
+
+\subsection{Convexity}
+\subsubsection{Proof of Theorem~\ref{convexity}}
+\label{appendix:proof-convexity}
+\convexityThm*
+\begin{proof}
+From Def.~\ref{mec:def}, \(\beta \geq 1\). For any fixed \(x\in \support(\pi)\), consider 
+\[
+g_x(y)=|x-y|^\beta.
+\]
+It is a well-known result (see \cite{Rockafellar1970}) that \(g_x(y)\) is convex on \(\Reals\) for \(\beta\ge1\) and strictly convex for \(\beta>1\). Both convexity and strict convexity are preserved under multiplication by strictly positive constants. Hence, since for \(x\in \support(\pi)\) we have \(\pi(x)^\alpha>0\), the function 
+\[
+f_x(y)=\pi(x)^\alpha\, |x-y|^\beta
+\]
+is convex and, if \(\beta>1\), strictly convex as well. As \(\EC(y)\) is a finite sum of the functions \(f_x(y)\), and (strict) convexity is preserved under finite sums, it follows that \(\EC\) is convex for \(\beta\ge1\) and strictly convex for \(\beta>1\).
+\end{proof}
+
+\subsection{Characterization and Special Cases for MEC}
+\subsubsection{Proof of Theorem~\ref{thm:mec-Lbeta}}
+\label{appendix:proof-mec-lbeta}
+\mecLbeta*
+\begin{proof}
+For $\alpha\ge 1$ and $\beta\ge 1$, the effort function is
+\[
+\EC(y)=\sum_{x\in\support(\pi)} \pi(x)^\alpha |x-y|^\beta
+=\sum_{x\in\support(\pi)} \pi^\alpha(x)\,|x-y|^\beta.
+\]
+Factoring out $\Mass{\pi^\alpha}$ yields
+\[
+\EC(y)=\Mass{\pi^\alpha}\sum_{x\in\support(\pi)} \overline{\pi^\alpha}(x)\,|x-y|^\beta.
+\]
+Taking minima over $y\in[0,1]$ gives
+\[
+\MEC[\alpha,\beta](\pi)
+=\min_{y\in[0,1]}\EC(y)
+=\Mass{\pi^\alpha}\min_{y\in[0,1]}\sum_{x\in\support(\pi)} \overline{\pi^\alpha}(x)\,|x-y|^\beta
+=\Mass{\pi^\alpha}\cdot D_\beta(\overline{\pi^\alpha}),
+\]
+as claimed.
+\end{proof}
+
+\subsubsection{Proof of Corollary~\ref{cor:mec-special-cases}}
+\label{appendix:proof-cor-mec-special-cases}
+\specialCases*
+\begin{proof}
+Let $\rho=\overline{\pi^\alpha}$. If $\beta=1$, the function $y\mapsto \sum_x \rho(x)\,|x-y|$ is minimized at any
+median $m$ of $\rho$, hence
+\[
+\min_y \sum_x \rho(x)\,|x-y|=\sum_x \rho(x)\,|x-m|
+=\mathrm{MAD}_{\mathrm{m}}(\rho).
+\]
+If $\beta=2$, the function $y\mapsto \sum_x \rho(x)\,(x-y)^2$ is minimized at
+the mean $\mu$ of $\rho$, and the minimum equals
+\[
+\min_y \sum_x \rho(x)\,(x-y)^2=\sum_x \rho(x)\,(x-\mu)^2=\mathrm{Var}(\rho).
+\]
+Multiplying by $\Mass{\pi^\alpha}$ yields the stated identities.
+\end{proof}
+
+\subsection{Symmetry}
+
+\subsubsection{Proof of Lemma~\ref{lem:mec-reflection}}
+\label{appendix:proof-mec-reflection}
+
+\mecReflection*
+\begin{proof}
+Let
+\[
+I_c \defsymbol [0,1]\cap[2c-1,2c].
+\]
+By definition of reflection,
+\[
+\support(\pi^{\mathrm{ref}(c)})
+=
+\{\,2c-x \mid x\in\support(\pi)\,\}
+\]
+and
+\[
+\pi^{\mathrm{ref}(c)}(2c-x)\defsymbol \pi(x)
+\qquad\text{for all }x\in\support(\pi).
+\]
+Since $c$ is an admissible reflection center for $\pi$, for every
+$x\in\support(\pi)$ we have $2c-x\in[0,1]$, hence
+\[
+2c-1\le x\le 2c.
+\]
+Therefore
+\[
+\support(\pi)\subseteq I_c
+\qquad\text{and}\qquad
+\support(\pi^{\mathrm{ref}(c)})\subseteq I_c.
+\]
+For every $y\in I_c$ we have $2c-y\in I_c\subseteq[0,1]$, and
+\[
+\begin{aligned}
+\EC[\alpha,\beta][\pi^{\mathrm{ref}(c)}](y)
+&=
+\sum_{x\in\support(\pi^{\mathrm{ref}(c)})}
+\pi^{\mathrm{ref}(c)}(x)^\alpha |x-y|^\beta \\
+&=
+\sum_{z\in\support(\pi)}
+\pi(z)^\alpha |(2c-z)-y|^\beta \\
+&=
+\sum_{z\in\support(\pi)}
+\pi(z)^\alpha |z-(2c-y)|^\beta \\
+&=
+\EC(2c-y).
+\end{aligned}
+\]
+Since $\support(\pi)\subseteq I_c$, the minimum of $\EC$ over $[0,1]$
+is attained in $I_c$, and the same holds for $\EC[\alpha,\beta][\pi^{\mathrm{ref}(c)}]$.
+Because $y\mapsto 2c-y$ is a bijection from $I_c$ onto itself, we obtain
+\[
+\MEC[\alpha,\beta](\pi^{\mathrm{ref}(c)})
+=
+\MEC[\alpha,\beta](\pi).
+\]
+\end{proof}
+
+\subsubsection{Proof of Corollary~\ref{cor:mec-shift}}
+\label{appendix:proof-mec-shift}
+
+\mecShift*
+\begin{proof}
+Observe that a shift can be expressed as the composition of two reflections.
+If $c$ and $c+\tfrac{t}{2}$ are admissible reflection centers for the relevant
+distributions, then
+\[
+\pi^{\mathrm{shift}(t)}
+=
+\left(\pi^{\mathrm{ref}(c)}\right)^{\mathrm{ref}(c+t/2)},
+\]
+since for every $x\in\support(\pi)$,
+\[
+2\!\left(c+\frac{t}{2}\right)-(2c-x)=x+t.
+\]
+In particular, if
+\[
+c=\frac{x_1+x_n}{2},
+\]
+where $x_1=\min\support(\pi)$ and $x_n=\max\support(\pi)$, then $c$ is an
+admissible reflection center for $\pi$; and if $t$ is an admissible shift,
+then $c+\tfrac{t}{2}$ is an admissible reflection center for
+$\pi^{\mathrm{ref}(c)}$.
+\end{proof}
+
+\subsubsection{Proof of Lemma~\ref{lem:symmetry-mec}}
+\label{appendix:proof-symmetry-mec}
+
+\symmetryMec*
+\begin{proof}
+Recall that
+\[
+\EC(y)=\sum_{x\in\support(\pi)} \pi(x)^\alpha |x-y|^\beta.
+\]
+Since $\pi$ is symmetric about $c$, for every $x\in\support(\pi)$ we have
+$2c-x\in\support(\pi)$ and
+\[
+\pi(x)=\pi(2c-x).
+\]
+Hence every point of $\support(\pi)$ distinct from $c$ belongs to a symmetric
+pair $\{x,2c-x\}$, and if $c\in\support(\pi)$ it forms a singleton.
+
+We first show that $\EC$ is symmetric about $c$. Let $t$ be such that
+$c\pm t\in[0,1]$. For each symmetric pair $\{x,2c-x\}$, using
+$\pi(x)=\pi(2c-x)$, we have
+\[
+\begin{aligned}
+&\pi(x)^\alpha |x-(c+t)|^\beta
++\pi(2c-x)^\alpha |(2c-x)-(c+t)|^\beta \\
+&\qquad
+=\pi(x)^\alpha |x-(c+t)|^\beta
++\pi(x)^\alpha |x-(c-t)|^\beta .
+\end{aligned}
+\]
+Interchanging $t$ and $-t$ leaves this quantity unchanged, so the
+contribution of each symmetric pair to $\EC(c+t)$ equals its contribution
+to $\EC(c-t)$. If $c\in\support(\pi)$, then the singleton contributes
+\[
+\pi(c)^\alpha |c-(c+t)|^\beta
+=
+\pi(c)^\alpha |t|^\beta
+=
+\pi(c)^\alpha |c-(c-t)|^\beta,
+\]
+which is also the same at $c+t$ and $c-t$. Summing over all support points,
+we obtain
+\[
+\EC(c+t)=\EC(c-t).
+\]
+Therefore $\EC$ is symmetric about $c$.
+
+If $\beta>1$, then by Theorem~\ref{convexity}, $\EC$ is strictly convex on
+$[0,1]$, so it has a unique optimal consensus point. Since $\EC$ is symmetric about $c$,
+that unique optimal consensus point must be $c$. Hence
+\[
+\MEC[\alpha,\beta](\pi)=\EC(c).
+\]
+
+Assume now that $\beta=1$. By Corollary~\ref{cor:mec-special-cases}, the
+optimal consensus points of $\pi$ are precisely the medians of $\overline{\pi^\alpha}$. Since
+\[
+\pi(x)^\alpha=\pi(2c-x)^\alpha
+\qquad\text{for all }x\in[0,1],
+\]
+the distribution $\pi^\alpha$ is also symmetric about $c$. Therefore the
+total $\pi^\alpha$-mass strictly to the left of $c$ equals the total
+$\pi^\alpha$-mass strictly to the right of $c$, and thus both are at most
+$\Mass{\pi^\alpha}/2$. Hence $c$ is a median of $\pi^\alpha$, so $\EC(c)$
+attains the minimum. Therefore again
+\[
+\MEC[\alpha,\beta](\pi)=\EC(c).
+\]
+
+Thus, in all cases,
+\[
+\MEC[\alpha,\beta](\pi)
+=
+\EC(c)
+=
+\sum_{x\in\support(\pi)} \pi(x)^\alpha |x-c|^\beta.
+\]
+\end{proof}
+
+\subsubsection{Proof of Theorem~\ref{th:mec-pi-star}}
+\label{appendix:proof-mec-pi-star}
+
+\mecPiStar*
+\begin{proof}
+Since $\pi^*(0)=\pi^*(1)=\Mass{\pi^*}/2$, the distribution $\pi^*$ is symmetric about $1/2$. Hence, by Lemma~\ref{lem:symmetry-mec},
+\[
+\MEC(\pi^*)=\EC[\alpha,\beta][\pi^*](1/2).
+\]
+Evaluating the effort at $1/2$ gives
+\[
+\EC[\alpha,\beta][\pi^*](1/2)
+=
+\left(\frac{\Mass{\pi^*}}{2}\right)^\alpha\!\left(\frac12\right)^\beta
++
+\left(\frac{\Mass{\pi^*}}{2}\right)^\alpha\!\left(\frac12\right)^\beta
+=
+2\left(\frac{\Mass{\pi^*}}{2}\right)^\alpha\left(\frac12\right)^\beta.
+\]
+\end{proof}
+
+\subsection{Population Scaling}
+
+\subsubsection{Proof of Theorem~\ref{th:multbyscalar}}
+\label{appendix:proof-population-scaling}
+
+\multByScalar*
+\begin{proof}
+By definition,
+\[
+\MEC(\lambda\pi)
+=
+\min_{y\in[0,1]}
+\sum_{i=1}^{n}(\lambda\pi_i)^{\alpha}|x_i-y|^{\beta}.
+\]
+Since
+\[
+(\lambda\pi_i)^{\alpha}=\lambda^{\alpha}\pi_i^{\alpha},
+\]
+it follows that
+\[
+\MEC(\lambda\pi)
+=
+\min_{y\in[0,1]}
+\lambda^{\alpha}\sum_{i=1}^{n}\pi_i^{\alpha}|x_i-y|^{\beta}.
+\]
+Because $\lambda^{\alpha}$ does not depend on $y$, it can be factored out of the minimum:
+\[
+\MEC(\lambda\pi)
+=
+\lambda^{\alpha}
+\min_{y\in[0,1]}
+\sum_{i=1}^{n}\pi_i^{\alpha}|x_i-y|^{\beta}.
+\]
+Therefore,
+\[
+\MEC(\lambda\pi)=\lambda^{\alpha}\MEC(\pi).
+\]
+\end{proof}
+
+\subsubsection{Proof of Corollary~\ref{cor:condition-H-normalization}}
+\label{appendix:proof-condition-H-normalization}
+
+\conditionH*
+\begin{proof}
+(1) By definition of normalization,
+\[
+\overline{\pi}=\frac{1}{\Mass{\pi}}\,\pi.
+\]
+Applying Th.~\ref{th:multbyscalar} with
+\[
+\lambda=\frac{1}{\Mass{\pi}},
+\]
+we obtain
+\[
+\MEC(\overline{\pi})
+=
+\MEC\!\left(\frac{1}{\Mass{\pi}}\pi\right)
+=
+\left(\frac{1}{\Mass{\pi}}\right)^\alpha \MEC(\pi).
+\]
+Therefore,
+\[
+\MEC(\overline{\pi})
+=
+\frac{\MEC(\pi)}{(\Mass{\pi})^\alpha},
+\]
+as claimed.
+
+(2) From Th.~\ref{th:multbyscalar} we have
+\[
+\MEC(\lambda\pi)=\lambda^{\alpha}\MEC(\pi)
+\qquad\text{and}\qquad
+\MEC(\lambda\pi')=\lambda^{\alpha}\MEC(\pi').
+\]
+Since $\lambda^{\alpha}>0$, multiplying the inequality
+\[
+\MEC(\pi)>\MEC(\pi')
+\]
+by $\lambda^{\alpha}$ preserves the order, yielding
+\[
+\MEC(\lambda\pi)>\MEC(\lambda\pi').
+\]
+Hence MEC satisfies Condition~H.
+\end{proof}
+
+
