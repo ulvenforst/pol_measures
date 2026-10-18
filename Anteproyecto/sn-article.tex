@@ -179,10 +179,10 @@ The paper also draws on Social Identity Theory, which relates part of an individ
 
 \subsection{Agreement and Dissention on Ordered Scales}\label{subsec:lit-ordinal}
 
-The axiomatic tradition assesses polarization through specified changes in group structure. Agreement measures approach the same distributions by asking how responses concentrate around shared positions. Two relevant approaches are Van der Eijk's agreement measure and Tastle--Wierman Dissention. Their motivations and functional forms differ, so they should not be treated as interchangeable dispersion indices.
+The axiomatic tradition assesses polarization through specified changes in group structure. Agreement measures approach the same distributions by asking how responses concentrate around shared positions. Two relevant approaches are Van der Eijk's agreement measure and Tastle--Wierman Dissention.
 
 \paragraph{Van der Eijk.}
-Van der Eijk \citep{van2001measuring} measures agreement through the patterns of unimodality in an ordered rating scale. The construction decomposes a histogram into semiuniform layers. At each step, a layer assigns the smallest positive remaining mass to every category whose remaining mass is positive. Subtracting that layer and repeating the procedure exhausts the histogram. Each layer therefore has the same positive mass at its occupied categories and zero mass elsewhere. A binary vector $P_\ell$ records which categories are occupied in layer $\ell$.
+Van der Eijk \citep{van2001measuring} measures agreement through the patterns of unimodality in an ordered rating scale. Its interpretation assumes equally spaced categories. The construction decomposes a histogram into semiuniform layers. At each step, a layer assigns the smallest positive remaining mass to every category whose remaining mass is positive. Subtracting that layer and repeating the procedure exhausts the histogram. Each layer therefore has the same positive mass at its occupied categories and zero mass elsewhere. A binary vector $P_\ell$ records which categories are occupied in layer $\ell$.
 
 For $m\geq3$, consider all triples of category indices $1\leq i<j<k\leq m$. Let $TU_\ell$ count those for which $(P_{\ell,i},P_{\ell,j},P_{\ell,k})$ is $110$ or $011$, and let $TDU_\ell$ count those with pattern $101$. The latter pattern places an empty category between two occupied categories. If $TU_\ell+TDU_\ell>0$, define
 \begin{equation}\label{eq:lit-vde-layer}
@@ -219,7 +219,7 @@ C_{\mathrm{TW}}(\pi)
 \end{equation}
 Categories with $p_i=0$ contribute zero, including the limiting case in which the logarithm's argument is zero. The amplitude is that of the scale, not merely the range of its occupied categories. At consensus, all positive mass is at the mean, so $C_{\mathrm{TW}}=1$ and $\mathrm{TWD}=0$. For equal masses at the two endpoints, $C_{\mathrm{TW}}=0$ and $\mathrm{TWD}=1$.
 
-TWD combines category probabilities with distances from the mean and is consequently a mean-based dispersion measure. VdE instead uses the agreement of layers under a unimodality criterion. Both can distinguish a uniform distribution from a balanced split at the endpoints. The relevant question is how their rankings differ across more varied profiles, and how those rankings relate to the concept of polarization being studied. The paper therefore compares their empirical behavior with MEC and the other candidate measures, rather than inferring their limitations from the label of agreement or dispersion alone \citep{aranda2026mec}.
+Both VdE and TWD distinguish a uniform distribution from a balanced split at the endpoints. The paper compares their rankings with those of MEC and the other candidate measures across a wider range of profiles \citep{aranda2026mec}.
 
 \subsection{Transport Distances and Consensus}\label{subsec:lit-transport}
 
