@@ -42,7 +42,7 @@
 \medskip
 Escuela de Ingeniería de Sistemas y Computación\par
 \vspace{1cm}
-Undergraduate Proposal\par
+Undergraduate Thesis\par
 \vfill
 {\LARGE\bfseries Towards a Principled Polarization Index: Axiomatic Foundations and Empirical Validation of the Minimum Effort to Consensus (MEC)\par}
 \vspace{1.5cm}
@@ -75,7 +75,7 @@ Measuring opinion polarization requires distinguishing the formation of opposed 
 \end{abstract}
 
 \medskip
-\noindent\textbf{Keywords}\quad polarization measurement, axiomatic foundations, expert validation, computational social science, social networks, MEC
+\noindent\textbf{Keywords}\quad polarization measurement, axiomatic foundations, expert validation, computational social science, opinion distributions, MEC
 
 \clearpage
 \tableofcontents
@@ -111,7 +111,7 @@ The empirical evaluation follows the two lines established in the proposal. Exha
 \paragraph{Research question.}
 Does MEC provide a theoretically sound and empirically valid measure of polarization that satisfies core axiomatic requirements and aligns with expert judgments more closely than established alternatives?
 
-To address this question, the study combines formal proofs with a reproducible Python implementation to establish MEC's mathematical properties, compute its values, and compare its rankings with competing measures and published expert judgments. The theoretical analysis concerns finite opinion distributions on a one-dimensional interval, while the main experiments use five-point scales. The proposal also includes regional illustrations, which are not part of the experiments reported in the paper. Opinion positions are represented numerically in $[0,1]$, with distance measured by $|x-y|$. The analysis does not model how opinions evolve over time.
+To address this question, the study combines formal proofs with a reproducible Python implementation. The theoretical analysis concerns finite opinion distributions on a one-dimensional interval, while the main experiments use five-point scales. The proposal also includes regional illustrations, which are not part of the experiments reported in the paper. Opinion positions are represented numerically in $[0,1]$, with distance measured by $|x-y|$. The analysis does not model how opinions evolve over time.
 
 \paragraph{Mathematical and computational results.}
 The joint paper \citep{aranda2026mec} establishes that MEC satisfies the basic definition of a polarization measure for all $\alpha,\beta\geq1$. It is zero at consensus, and the distribution with half of the total mass at each endpoint maximizes MEC among distributions with that same total mass. This result is distinct from compliance with the three Esteban--Ray axioms.
@@ -143,17 +143,14 @@ The expert comparison reuses published ratings of fifteen hypothetical histogram
 The thesis first reviews the conceptual background and competing measures, then states the objectives and scope. The definition and structural properties of MEC lead into the theoretical results and axiomatic analysis. The computational methodology and implementation provide the basis for the experimental results. The discussion examines the evidence, its limitations, and fulfillment of the approved objectives. The thesis closes with conclusions and directions for future work.
 
 
+\clearpage
 \section{Literature Review and Conceptual Framework}\label{sec:lit}
 
-The introduction defined MEC and summarized its main results. This section develops the conceptual and mathematical background needed to interpret those results and compare MEC with other measures. The discussion follows the axiomatic tradition, agreement and dissention on ordered scales, transport geometry, and measurement based on expert judgments.
+Distinguishing polarization from dispersion and extremism clarifies what an index is intended to measure. Dispersion concerns how far opinions spread around a reference position. Extremism concerns their proximity to the ends of a scale. Polarization concerns the size, cohesion, and separation of groups, following the identification--alienation framework of Esteban and Ray \citep{esteban1994measurement}. A population concentrated at one extreme can therefore exhibit extremism while remaining in consensus. Conversely, two opposed groups need not occupy the endpoints to be polarized. Moving a whole group toward an extreme can affect polarization differently from transferring only part of its mass \citep{aranda2026mec}.
 
-\subsection{Opinion Polarization, Dispersion, and Extremism}\label{subsec:lit-concepts}
+Likert-type data provide ordered categories, such as levels of agreement with a proposition. A distance-based measure also requires numerical coordinates for those categories. The principal experiments use five equally spaced positions. The distances depend on that coding, since category order alone does not determine numerical separation. MEC's value alone does not establish affective hostility or network segregation.
 
-Distinguishing polarization from dispersion and extremism clarifies what an index is intended to measure. Dispersion concerns how far opinions spread around a reference position. Extremism concerns their proximity to the ends of a scale. Polarization concerns the size, cohesion, and separation of groups, following the identification--alienation framework of Esteban and Ray \citep{esteban1994measurement}. A population concentrated at one extreme can therefore exhibit extremism while remaining in consensus. Conversely, two opposed groups need not occupy the endpoints to be polarized.
-
-The distinction also matters when groups move. Moving an entire group and transferring only part of it produce different configurations even when the direction is the same. The paper's theoretical analysis examines this difference \citep{aranda2026mec}.
-
-Using the distribution notation of Section~\ref{sec:intro}, let an ordered scale have $m$ fixed categories with numerical positions $x_1<\cdots<x_m$ in $[0,1]$ and masses $\pi_i=\pi(x_i)$. Empty categories have $\pi_i=0$. The formulas below use the total mass, category probabilities, and mean
+Using the notation of Section~\ref{sec:intro}, consider an opinion distribution $\pi$ supported on the $m$ fixed categories of an ordered scale. Write their numerical positions as $x_1<\cdots<x_m$ in $[0,1]$ and their masses as $\pi_i=\pi(x_i)$. Empty categories have $\pi_i=0$. The total mass, category probabilities, and mean are
 \begin{equation}\label{eq:lit-probabilities}
 M=\Sigma\pi=\sum_{i=1}^{m}\pi_i>0,
 \qquad
@@ -161,9 +158,7 @@ p_i=\frac{\pi_i}{M},
 \qquad
 \mu=\sum_{i=1}^{m}p_i x_i.
 \end{equation}
-Thus $p_i$ are probabilities, while $\pi_i$ are nonnegative masses that may be counts. The normalized distribution is denoted by $\overline{\pi}$.
-
-Likert-type data provide ordered categories, such as levels of agreement with a proposition. A distance-based measure also requires numerical coordinates for those categories. The principal experiments use five equally spaced positions. The distances depend on that coding, since category order alone does not determine numerical separation. Such histograms describe opinion structure without directly measuring affective hostility or network segregation.
+The normalized distribution is $\overline{\pi}(x)=\pi(x)/M$ for $x\in[0,1]$. Thus $p_i=\overline{\pi}(x_i)$ are probabilities, while $\pi_i$ may be counts or other nonnegative masses.
 
 \subsection{Identification, Alienation, and the Axiomatic Tradition}\label{subsec:lit-axioms}
 
@@ -363,7 +358,7 @@ The preceding sections introduced MEC and established the criteria by which it w
 
 \subsection{Opinion Distributions and Consensus}\label{subsec:mec-distributions}
 
-We use the notation introduced in Sections~\ref{sec:intro} and~\ref{subsec:lit-concepts}. An opinion distribution is a function $\pi\colon[0,1]\to\mathbb{R}_{\geq0}$ whose support $\boldsymbol{s}(\pi)$ is finite and nonempty. The value $\pi(x)$ is the mass of the group holding opinion $x$, and $M=\Sigma\pi>0$ is the total mass. We write $\mathcal{D}$ for the set of these distributions and $\mathcal{D}_M$ for those with total mass $M$. An ordered vector representation is
+We use the notation introduced in Sections~\ref{sec:intro} and~\ref{sec:lit}. An opinion distribution is a function $\pi\colon[0,1]\to\mathbb{R}_{\geq0}$ whose support $\boldsymbol{s}(\pi)$ is finite and nonempty. The value $\pi(x)$ is the mass of the group holding opinion $x$, and $M=\Sigma\pi>0$ is the total mass. We write $\mathcal{D}$ for the set of these distributions and $\mathcal{D}_M$ for those with total mass $M$. An ordered vector representation is
 \[
 \pi=((\pi_1,\ldots,\pi_n),(x_1,\ldots,x_n)),
 \qquad 0\leq x_1<\cdots<x_n\leq1.
