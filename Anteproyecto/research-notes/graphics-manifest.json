@@ -5,7 +5,7 @@
     "width": 1342,
     "height": 724,
     "sha256": "b35d7997e8a37991b4297548f63100fc88847a1a130b8c62bc2efd89749ae81b",
-    "document_path": "images/codex-b35d7997e8a37991b4297548f63100fc88847a1a130b8c62bc2efd89749ae81b.png"
+    "document_path": "images/axiom1.png"
   },
   {
     "key": "ertwo",
@@ -13,7 +13,7 @@
     "width": 1341,
     "height": 694,
     "sha256": "4a19828759b18cf64e675244efb43a5cb6f40e53c5d0bb6e4e6bb2bf19f80103",
-    "document_path": "images/codex-4a19828759b18cf64e675244efb43a5cb6f40e53c5d0bb6e4e6bb2bf19f80103.png"
+    "document_path": "images/axiom2.png"
   },
   {
     "key": "erthree",
@@ -21,7 +21,7 @@
     "width": 1342,
     "height": 695,
     "sha256": "44dbd2c2cffea8dd5b3ce449fd4a702a1e7b9fdf2b1fbb92ae7f00bfbd7bbcc4",
-    "document_path": "images/codex-44dbd2c2cffea8dd5b3ce449fd4a702a1e7b9fdf2b1fbb92ae7f00bfbd7bbcc4.png"
+    "document_path": "images/axiom3.png"
   },
   {
     "key": "centralsplit",
@@ -29,7 +29,7 @@
     "width": 1342,
     "height": 695,
     "sha256": "36090b0c91663da1fdb4896f84446f417124f668fbefe02e4e3d0103fa800a17",
-    "document_path": "images/codex-36090b0c91663da1fdb4896f84446f417124f668fbefe02e4e3d0103fa800a17.png"
+    "document_path": "images/property1.png"
   },
   {
     "key": "corpusmatrix",
@@ -45,7 +45,7 @@
     "width": 3500,
     "height": 3863,
     "sha256": "8f36edf4b37397584b677866c5f0eb907f3096db4497e186d18acc8f54ac0df5",
-    "document_path": "images/codex-8f36edf4b37397584b677866c5f0eb907f3096db4497e186d18acc8f54ac0df5.jpg"
+    "document_path": "images/experts_histograms.jpg"
   },
   {
     "key": "expertconcordance",
