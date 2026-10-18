@@ -1,0 +1,128 @@
+Revisión y redacción de la sección 4
+11 de octubre de 2026
+
+Documento activo
+/Users/ulvenforst/Codex/University/pol_measures/Anteproyecto/sn-article.tex
+
+La sección Minimum Effort to Consensus and Structural Properties se redactó
+en el mismo documento, siguiendo los cinco bloques acordados. Se revisaron
+las definiciones preliminares, las secciones 3 y 4 y las demostraciones de los
+apéndices A y B del artículo 2606.13997v1. El anteproyecto aporta los compromisos
+de existencia, unicidad, conexión con EMD y fundamentos del cálculo numérico.
+
+Contenido incorporado
+1. Distribuciones de opinión, masas, potencias, normalización, medianas,
+   consenso y distribución extrema de igual masa.
+2. Planes de transporte, EMD y construcción de MEC generalizado.
+3. Existencia del mínimo, ubicación en el intervalo de opiniones ocupadas,
+   convexidad, unicidad para beta mayor que 1 y condición de balance.
+4. Caracterización por dispersión de la distribución de potencias normalizada,
+   medianas para beta igual a 1, media y varianza para beta igual a 2,
+   ejemplos del artículo e identidad lineal con EMD a la distribución extrema.
+5. Reflexión, traslación admisible, simetría, valor de la distribución extrema
+   y escalamiento de la población.
+
+Los enunciados incluyen demostraciones. Las fórmulas de MEC y transporte
+ya introducidas se citan mediante referencias internas. Se distingue la
+distribución original de su transformación por potencias y su normalización.
+La unicidad no se atribuye al caso beta igual a 1. La simetría garantiza un
+óptimo en el centro, pero solamente beta mayor que 1 garantiza su unicidad.
+La maximalidad general y el análisis axiomático quedan para el capítulo
+teórico siguiente. No se añaden experimentos ni resultados empíricos nuevos.
+
+Conservación
+Se verificó por SHA256 que el prefijo anterior a la sección 4, incluidas las
+secciones 1–3, permanece intacto. El apartado anterior de datos y financiación
+y las secciones posteriores se conservan como material del anteproyecto
+pendiente de adaptación. El apartado de datos que sigue a la sección 4 no
+representa la sección 5 acordada para la estructura final.
+Se agregó Convex Analysis de Rockafellar desde la bibliografía del artículo.
+Hay dieciséis entradas bibliográficas en el documento activo.
+
+Verificación
+Todas las referencias internas y citas tienen destinos existentes.
+No hay etiquetas duplicadas. Los entornos de la sección están equilibrados.
+Los cálculos de los ejemplos se comprobaron con aritmética racional exacta.
+No se añadieron dos puntos en la prosa. Los dos puntos de las etiquetas
+LaTeX no son signos de puntuación del texto visible.
+El compilador integrado confirmó success tras el ajuste final de la definición
+de cuantiles. No se exportó otro PDF ni se abrió otro documento.
+
+La redacción está lista para revisión del usuario. Esta comprobación no
+declara aprobada la sección ni sustituye la revisión final de la tesis.
+
+Auditoría final solicitada por Juan
+
+Se volvió a leer la sección 4 completa, las fuentes correspondientes del
+artículo y las páginas relevantes del PDF oficial. La revisión incluyó las
+páginas 4–12 y 31–38 del paper y las páginas 9–10, 12–13 y 15–16 del
+anteproyecto aprobado. No se usaron las notas anteriores como sustituto de
+los documentos de referencia.
+
+Correspondencia de resultados
+- Definiciones 1–4 del paper, página 4. Distribuciones, normalización,
+  medianas, consenso, extremo y requisitos de una medida de polarización
+  están cubiertos en 4.1.
+- Definición 5 y ecuaciones 1–6, páginas 5–8. Construcción lineal y general,
+  mínimo continuo y consenso óptimo están cubiertos en 4.2, con referencias
+  a las fórmulas ya presentadas en la introducción y sección 2.
+- Definición 10 y Lema 5, páginas 31–32. Planes de transporte y la identidad
+  con el coste de consenso se definen y demuestran en 4.2.
+- Teorema 2 y Apéndice B.1. Convexidad, estricta convexidad para beta mayor
+  que 1 y sus consecuencias están cubiertas en 4.3. La existencia y la
+  ubicación del mínimo en el intervalo ocupado se justifican explícitamente.
+- Teorema 3 y Corolario 1, con Apéndice B.2. Dispersión ponderada, medianas,
+  media y varianza están cubiertos en 4.4, con sus demostraciones.
+- Teorema 1 y Apéndice A.2. La identidad entre MEC lineal y distancia a la
+  distribución extrema se demuestra en 4.4. La igualdad por cuantiles se
+  formula casi en todas partes para excluir las fronteras de masa acumulada
+  que no afectan a la integral.
+- Ejemplo 2, página 7. Los cuatro valores y consensos de las dos distribuciones
+  se conservan y se comprobaron con aritmética racional exacta. El ejemplo
+  de masas 20, 30 y 50 mantiene los costes 26 y 24. No se afirma que 0.8
+  sea su única mediana.
+- Definiciones 6–7, Lema 1, Corolario 2, Lema 2 y Teorema 4, páginas 10–11,
+  con Apéndice B.3. Reflexión, traslación, simetría y valor extremo están
+  cubiertos en 4.5. Las pruebas operan sobre los intervalos ocupados para
+  respetar la admisibilidad de las transformaciones.
+- Teorema 5 y Corolario 3, páginas 11–12 y 37–38. Escalamiento, normalización
+  y Condition H se conservan y demuestran en 4.5. Se distingue la invariancia
+  de orden de la invariancia de un valor numérico bruto.
+
+Precisiones incorporadas durante esta auditoría
+Se indicó que una mediana pertenece a [0,1] y que el conjunto de medianas es
+un intervalo cerrado no vacío. Se explicitó la comprobación de que MEC es
+cero exactamente en consenso, usando existencia y positividad de los pesos.
+El enunciado del valor extremo ahora cuantifica alpha y beta mayores o iguales
+a 1. Se aclaró que el extremo tiene un único consenso óptimo para beta mayor
+que 1, pero todos los puntos de [0,1] son óptimos cuando beta es igual a 1.
+
+Alcance y omisiones
+No se detectaron resultados matemáticos esenciales omitidos dentro del
+alcance de fundamentos y propiedades estructurales. No se exige copiar cada
+ejemplo ilustrativo ni conservar la numeración de los teoremas del paper.
+La definición de potencias se restringe al dominio alpha mayor o igual a 1
+utilizado por MEC; no se desarrolla el caso alpha igual a 0 de la definición
+preliminar más amplia del paper, pues no pertenece al modelo estudiado.
+La maximalidad general, Minority Principle, Tipping Point, movimientos de
+grupos, axiomas ER y división central corresponden a la sección 5 acordada.
+Su ausencia en esta sección no acredita su cumplimiento en el documento
+completo. El objetivo formal del anteproyecto queda distribuido entre ambas
+secciones. Los compromisos de implementación y evaluación siguen en los
+capítulos posteriores.
+
+Comprobaciones adicionales
+Se verificaron 1.023 perfiles no vacíos de cinco posiciones con cuentas
+entre 0 y 3 usando fracciones exactas. Se contrastó la identidad de MEC
+lineal con un cálculo independiente de transporte monótono. Se comprobaron
+los casos de medianas y medias, la expresión cuadrática por diferencias
+entre pares, reflexión, traslaciones admisibles, escalamiento y normalización
+para alpha igual a 1 y 2. La comprobación cubre casos límite y complementa
+la revisión de las pruebas; no sustituye una demostración para todo el dominio.
+No se ejecutaron nuevos experimentos de tesis ni se modificó la librería.
+
+Se verificó que no cambió el contenido anterior ni posterior a la sección 4.
+Las etiquetas son únicas, todas las citas y referencias internas resuelven,
+los entornos están equilibrados y no se añadieron dos puntos en la prosa.
+El compilador integrado devolvió success después de las precisiones finales.
+La sección queda revisada y completa dentro de su alcance acordado.

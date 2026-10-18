@@ -1,0 +1,56 @@
+\section{Ethics, Risks, and Data Governance}\label{sec:ethics}
+
+A few words on data and ethics, since these questions matter even for a largely mathematical thesis.
+
+The data footprint here is minimal by design. Most of the work runs on fully synthetic histograms---no human subjects at all. Where real data enters, it is either (a) published expert judgments from the literature, reused strictly for validation, or (b) aggregate Likert counts from public demonstrations, with no individual-level records. Nothing gets stored or distributed that could identify a person.
+
+\medskip
+
+\noindent\textbf{What the data is for.}
+Testing whether MEC behaves as claimed. That is it. No profiling, no prediction about individuals, no decision support for anyone. My role is the math; the PROMUEVA data team handles domain-specific applications outside this thesis.
+
+\medskip
+
+\noindent\textbf{Where the data comes from.}
+Three sources, all on five-point Likert scales:
+
+\begin{itemize}
+  \item \emph{Published expert ratings.} The Koudenburg et al.\ corpus---15 histograms rated by 60 experts. Already in the literature; no new collection. Use is limited to rank-correlation analyses.
+  \item \emph{Cali City Council (2024).} The \emph{Polarizometer} tool was used in late 2024 to gauge councilors' views on four civic topics. Only aggregate counts and index values appear in this thesis; no individual votes.
+  \item \emph{Youth demonstration (Aug.\ 2024).} A public outreach event where young people (17--25) rated 11 topical statements---climate vs.\ economy, data privacy, platform moderation, education reform, and so on. Again, only aggregate histograms are used, as reading exercises to illustrate what MEC says about different issues.
+\end{itemize}
+
+No microdata, period. Any table with cell counts small enough to risk re-identification gets excluded. Results are index values and narrative readings of shapes---not judgments about individuals.
+
+\medskip
+
+\noindent\textbf{Who is involved.}
+The thesis sits within PROMUEVA, a consortium spanning Javeriana Cali, Universidad del Valle, CNRS, École Polytechnique, and Sorbonne Paris Nord. I am at Universidad del Valle. Access runs on a least-privilege basis: the broader team can see project materials, but any internal drafts or early aggregates stay within the polarization-measures unit (Frank Valencia Posso, Jesús Alexander Aranda, Juan Francisco Díaz, Carlos Pinzón, Oscar Vargas).
+
+\medskip
+
+\noindent\textbf{Software and storage.}
+No data platform, no server pipeline. Code lives in a public GitHub repo under GPLv3:
+\begin{quote}
+\texttt{pip install git+https://github.com/Ulvenforst/pol\_measures.git}
+\end{quote}
+The repo has measure implementations, experiment scripts, and documentation. CI runs unit tests; no secrets are stored. The package is labeled alpha. Synthetic artifacts are public; any restricted aggregates stay off version control.
+
+\medskip
+
+\noindent\textbf{Risks.}
+Privacy risk is low---no individual records, only aggregates. The real risks are interpretive: confusing dispersion with polarization, or reading too much into an index value. Mitigation: keep the purpose scientific, present mini-cases as illustrations rather than evaluations, and always flag what the numbers do not tell you. No ethics-board approval is needed because no new human-subjects data are collected.
+
+\medskip
+
+\noindent\textbf{Summary.}
+Data is used only to test MEC against axioms and benchmarks. Sources: synthetic universes, published expert judgments, aggregate civic data. Storage: GPLv3 repo with CI, no microdata. Responsibility: the polarization-measures unit within PROMUEVA. What will not happen: no recruitment, no individual-level storage, no algorithmic decision-making about persons.
+
+\medskip
+
+\noindent\textbf{Bottom line.}
+Ethics here is a design choice, not an afterthought. The thesis stays math-first and aggregate-only, which keeps exposure low while preserving scientific value. The story is about shapes---how opinion coheres into camps and how far apart they stand---and it gets told with the smallest footprint consistent with rigor.
+
+
+
+

@@ -1,0 +1,82 @@
+Revisión y redacción de la sección 8, 11 de octubre de 2026
+
+Objeto
+Se reemplazó únicamente el antiguo capítulo Ethics, Risks, and Data Governance
+por Discussion and Limitations, en el mismo sn-article.tex abierto en el editor.
+Se conservaron exactamente el contenido previo y posterior a ese capítulo.
+La antigua sección ética está archivada íntegramente en
+etica-del-anteproyecto-preservada-20261011.txt.
+
+Estructura
+Cuatro subsecciones desarrollan interpretación de la evidencia, evaluación de
+los objetivos, alcance y validez, e interpretación y uso responsable. Una tabla
+breve relaciona los cinco objetivos con la evidencia y los límites de verificación.
+Se mantuvo sec:ethics en el bloque sobre uso y datos y se añadió sec:discussion.
+No se reprodujeron pruebas, matrices, gráficos ni tablas de resultados anteriores.
+La sección 9, el resumen y otros elementos todavía pendientes no se modificaron.
+
+Fuentes y contraste
+Se releyeron la conclusión del paper, sus condiciones de Axiom 1 y Tipping Point,
+los objetivos y la tabla de actividades del PDF aprobado, las secciones 3, 6 y 7,
+la configuración del paquete y el workflow, y las notas y outputs de auditoría.
+El paper sigue siendo la fuente científica. El anteproyecto define compromisos;
+el repositorio y los outputs aportan evidencia sobre ejecución e implementación.
+
+Resultados e interpretación
+Se distinguen las garantías de los teoremas y la evidencia del benchmark de quince
+perfiles. Cumplimiento ER requiere alpha > 1, beta >= 1; no se afirma cumplimiento
+integral de la caracterización KNS. Central-split conserva su configuración.
+Tipping Point se limita a alpha = beta = 2. La concordancia de MEC(2,1.15) coincide
+con ER(0.8), sin afirmar rankings idénticos ni superioridad universal. Calibración
+y evaluación comparten benchmark; remuestreos no equivalen a validación externa.
+Se distinguen exponente del modelo, costo observado, y consenso óptimo predictivo.
+La reflexión preserva scores sin garantizar correlaciones con multiplicidades
+iguales a las del corpus completo. Cuantización y tolerancia siguen diferenciadas.
+Los timings se limitan al workload y las implementaciones medidos.
+
+Balance de compromisos
+Se documenta el núcleo formal, corpus y concordancias, API, tests, licencia GPLv3,
+CI y análisis suplementarios. No se atribuyen a scripts experimentales una CLI
+instalada general ni despliegue automático. Se conservan pendientes de evidencia
+regional, top-k de perfiles, preregistro, modelos pareados, perturbaciones y todas
+las vignettes previstas. Los cutoffs guardados no acreditan la calibración A12.
+Se evalúan A1–A14 distinguiendo esenciales y extensiones deseables. Ausencia de
+verificación no se presenta como prueba de inexistencia de trabajo. No se infieren
+contribuciones individuales a pruebas o figuras desde la lista de coautores.
+
+Ética y conservación
+Se mantiene el propósito descriptivo, uso secundario de scores publicados,
+ausencia de nueva recogida de juicios, interpretación contextual y separación
+entre material restringido y código público. No se presentan como ejecutados los
+casos cívicos o juveniles no verificados. Se evita la antigua exención categórica
+de evaluación ética y la equiparación entre datos agregados y anonimato.
+El texto anterior permanece en el archivo de conservación, sin borrado de evidencia.
+
+Verificación
+El compilador integrado confirmó success tras guardar el texto final.
+Etiquetas únicas, citas y referencias resueltas, entornos equilibrados.
+La comprobación exacta de prefijo y sufijo confirmó que solo cambió la sección 8.
+Se conservaron las imágenes y sus referencias. No se exportó otro PDF ni se abrió
+otra pestaña. No se cambió la librería ni se repitieron experimentos o tests sin
+necesidad. Las noventa pruebas citadas son las del registro de revisión de sección 6.
+No se realizó commit. El capítulo presenta el balance sustentado disponible,
+no certifica cumplimiento total de la tesis ni elimina obligaciones del anteproyecto.
+
+Auditoría final de la sección 8, 11 de octubre de 2026
+Se releyó el capítulo completo, se contrastaron nuevamente las condiciones ER
+y Tipping Point con las fuentes del paper, y se revisaron objetivos y actividades
+9 y 16 del PDF aprobado. Se cotejaron metadatos, CI, API MEC, búsqueda de parámetros
+y disponibilidad de análisis con el repositorio. No se identificaron omisiones
+esenciales dentro de la función de discusión y balance del capítulo.
+Se precisó que la homogeneidad lambda^alpha requiere multiplicar todas las masas
+por el mismo factor positivo, conservando posiciones y exponentes. Se mejoraron
+las transiciones hacia evaluación de objetivos y límites de la evidencia.
+Se conservaron cuatro subsecciones, la tabla de cinco objetivos, condiciones de
+los resultados y distinción entre cumplimiento documentado y falta de evidencia.
+Compilación integrada success; referencias, citas, etiquetas y entornos correctos.
+El texto fuera de la sección 8 permaneció exactamente igual. No se repitieron
+experimentos ni pruebas de implementación porque no se modificó código.
+El capítulo queda culminado como discusión de la evidencia actualmente disponible.
+Los entregables sin verificación siguen requiriendo evidencia o una decisión de
+alcance justificada antes de cerrar el cumplimiento global de la tesis. No se
+alteró sección 9 ni se abrió otra pestaña, exportó otro PDF o realizó commit.

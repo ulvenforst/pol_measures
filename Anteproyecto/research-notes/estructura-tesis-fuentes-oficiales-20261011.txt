@@ -1,0 +1,569 @@
+ESTRUCTURA PROPUESTA PARA LA TESIS MEC
+Revisión del 11 de octubre de 2026
+
+Estado y alcance de esta revisión
+
+Este informe fundamenta una propuesta de organización. No modifica sn-article.tex ni certifica que la EISC haya aprobado este índice. Los títulos y el número de capítulos son una decisión editorial razonada, sujeta a las instrucciones específicas del programa. La sección 1 ya revisada se conserva. Su descripción del recorrido del documento se ajustará cuando se acuerde el índice final.
+
+Documento institucional recuperado
+
+La consulta de los turnos anteriores del chat permitió identificar el documento previamente citado. Era la Resolución 137 del Consejo de Facultad de Ingeniería, de 18 de abril de 2023. La nota arxiv-v1-thesis-reference.md es una referencia científica del artículo, no una guía institucional.
+
+FUENTES OFICIALES CONSULTADAS
+
+Universidad del Valle, Facultad de Ingeniería, Resolución 137 de 2023. Se revisaron sus doce páginas.
+https://eime.univalle.edu.co/images/documentos/programas/docu_curricular/Resolucion_No_137-2023_Reglamento_De_Trabajo_De_Grado_ABR_18.pdf
+
+El artículo 12 enumera elementos del anteproyecto. No prescribe el índice de la tesis final. El artículo 18, parágrafos 1 y 3, delega las normas de presentación, la plantilla de tabla de contenido y el formato al Comité del Programa Académico. El parágrafo 2 limita el documento a 80 páginas incluidos los anexos. Excluye del conteo portada, agradecimientos o dedicatoria, tabla de contenido, listas de figuras o tablas e índice. No se debe asumir que bibliografía o resumen están excluidos. No se localizó la plantilla específica del programa de Ingeniería de Sistemas que permita certificar los nombres y el orden obligatorios de sus capítulos.
+
+Universidad del Valle, Consejo Académico, Resolución 287 de 5 de diciembre de 2024. Se revisaron sus tres páginas.
+https://registro.univalle.edu.co/wp-content/uploads/2025/11/RCA-287-modalidades_trabajo_de_grado.pdf
+
+Actualiza modalidades y delega su adopción y reglamentación. No establece un índice universal. No se infiere de la existencia del artículo una modificación de la modalidad bajo la cual Juan obtuvo aprobación de su anteproyecto.
+
+Harvard, Computer Science, Senior Thesis Guide. Guía de pregrado en Computación.
+https://csadvising.seas.harvard.edu/research/thesis-guide/index.html
+
+Deja libertad de presentación y recomienda identificar claramente las contribuciones y dónde se desarrollan. No exige un número fijo de capítulos. Es una referencia comparativa, no una norma aplicable a Univalle.
+
+Cambridge, Computer Science Part II, Dissertation. Instrucciones para su proyecto de pregrado en Computación.
+https://www.cst.cam.ac.uk/teaching/part-ii/projects/dissertation
+https://www.cst.cam.ac.uk/teaching/part-ii/projects/assessment
+
+El contenido indexado de la página oficial establece cinco capítulos superiores, Introduction, Preparation, Implementation, Evaluation y Conclusions. La teoría desarrollada puede formar parte de Implementation. Las aperturas posteriores de la página principal devolvieron HTTP 403; la información se obtuvo del contenido indexado oficial y se contrastó con la página de evaluación accesible. Su estructura es obligatoria para ese programa, no para Univalle. Su aporte comparativo es la secuencia de preparación, desarrollo, evaluación y conclusiones.
+
+Edinburgh, School of Informatics, MSc Dissertation. Guía de maestría, usada como complemento y no como requisito de pregrado.
+https://opencourse.inf.ed.ac.uk/diss/the-dissertation
+
+Ofrece una estructura típica con introducción, antecedentes, descripción del trabajo, análisis o evaluación y conclusiones. Permite separar diseño e implementación y pide evaluar críticamente el trabajo frente a los objetivos originales.
+
+Monash, Student Academic Success, Thesis Structures. Orientación de escritura, no reglamento del programa de Juan.
+https://www.monash.edu/student-academic-success/excel-at-writing/how-to-write/thesis-chapter/thesis-structures
+
+Expone estructuras distintas según la investigación y admite varios capítulos de resultados. Respalda organizar el argumento según el trabajo realizado, sin convertir la secuencia empírica habitual en una ley universal.
+
+EVIDENCIA DEL PROYECTO
+
+Referencias primarias locales
+/Users/ulvenforst/Codex/University/pol_measures/Anteproyecto/references/Anteproyecto_de_grado-vfinal.pdf
+/Users/ulvenforst/Codex/University/pol_measures/Anteproyecto/references/2606.13997v1.pdf
+/Users/ulvenforst/Codex/University/pol_measures/Anteproyecto/references/arxiv-2606.13997v1/main.tex
+/Users/ulvenforst/Codex/University/pol_measures/Anteproyecto/sn-article.tex
+
+El artículo suministra los resultados científicos. El anteproyecto suministra los objetivos y compromisos aprobados. El repositorio /Users/ulvenforst/Codex/University/pol_measures suministra implementaciones, pruebas y experimentos. La organización de la tesis debe permitir vincular los objetivos con evidencia verificable de cumplimiento.
+
+Se recuperaron las observaciones originales del jurado en
+/Users/ulvenforst/Documents/Atelier Virtual/Univalle/Subjects/Trabajo de grado/Juan/Anteproyecto/correcciones.md
+
+La evaluación del 1 de diciembre de 2025 recomendó una sección Objectives and Scope, porque los objetivos estaban dentro de la revisión de literatura. También pidió distinguir actividades obligatorias de deseables. Esto apoya conservar los objetivos identificables y separados. No implica que el jurado exigiera un número concreto de capítulo en la tesis final.
+
+La captura del índice de referencia coloca un marco de referencia después del planteamiento del problema, seguido de justificación, objetivos, alcance, metodología y resultados. Incluye resultados esperados y no muestra capítulos de discusión o conclusiones. La captura ilustra una organización, pero no acredita una plantilla obligatoria de la EISC ni que corresponda al documento final completo. Se encontró una versión local anterior de veinte páginas, cuyo índice difiere del de la captura; no se la trató como el mismo documento actualizado.
+
+ÍNDICE RECOMENDADO
+
+1. Introduction, Research Question, and Hypothesis
+Problema de medición, motivación y justificación, contexto PROMUEVA, pregunta, hipótesis original y refinamientos, contribuciones y recorrido del documento. Conservar la introducción científicamente revisada. Evitar duplicar el detalle de objetivos, antecedentes o pruebas. Explicar la relación con el artículo conjunto sin inventar atribuciones individuales.
+
+2. Literature Review and Conceptual Framework
+Conceptos de polarización, dispersión y extremismo. Identificación y alienación. Tradición axiomática de Esteban–Ray y alcance de las caracterizaciones posteriores. Datos ordinales, medidas de acuerdo y dispersión, transporte y consenso, juicios expertos y antecedentes del benchmark. Cerrar con la posición conceptual de MEC. Reutilizar la narrativa útil del anteproyecto y las fuentes del artículo, corrigiendo fórmulas y afirmaciones al revisar esta sección. No denominarla revisión sistemática si no se realizó y documentó un protocolo de esa clase.
+
+3. Objectives and Scope
+Objetivo general, objetivos específicos aprobados, límites del estudio y entregables. Mantener la distinción entre obligatorio y deseable. Este capítulo debe ser breve y permitir evaluar posteriormente el cumplimiento. No convertir actividades planeadas en actividades concluidas sin evidencia.
+
+4. Minimum Effort to Consensus and Structural Properties
+Dominio, soporte y masas, consenso, EC y MEC, parámetros, existencia y minimizadores. Relación con transporte, casos de dispersión ponderada, simetrías y escalamiento. Aprovechar las secciones 2–4 del artículo. Estas propiedades justifican los procedimientos computacionales posteriores.
+
+5. Theoretical Results and Axiomatic Analysis
+Resultados de maximalidad y movimientos de grupos; axiomas de Esteban–Ray con sus condiciones; propiedad de división central presentada separadamente del Axioma 3; Minority Principle y Tipping Point bajo sus supuestos. Aprovechar las secciones 5–7 del artículo y sus demostraciones. Presentar en el cuerpo enunciados, condiciones, interpretación y argumentos centrales. Ubicar pruebas técnicas extensas en anexos sin repetirlas ni ocultar el argumento esencial.
+
+6. Computational Methodology and Implementation
+Implementación de pol_measures, algoritmos y tolerancias, normalización, corpus y reducción por reflexión, comparadores, parámetros y métricas de concordancia, datos publicados de expertos y reproducción. Incluir procedencia y tratamiento de los datos. Describir lo efectivamente realizado. Contrastar cada detalle con los scripts y resultados guardados, no sólo con el plan original.
+
+7. Experimental Results and Regional Illustrations
+Comparación exhaustiva de histogramas y resultados frente a las quince distribuciones del benchmark experto, correspondientes a la sección 8 del artículo. Incorporar otros resultados del repositorio pertinentes a los objetivos cuando su procedencia esté verificada. Los casos regionales forman parte del alcance aprobado y deben mantenerse identificables; los archivos y resultados específicos aún deben localizarse o ser suministrados antes de redactarlos como trabajo concluido.
+
+8. Discussion and Limitations
+Relacionar pruebas y experimentos con pregunta, hipótesis y objetivos. Distinguir evidencia axiomática y empírica. Explicar selección de parámetros sobre el mismo benchmark, límites de generalización, representación numérica de opiniones ordinales e interpretación del esfuerzo. Evaluar los compromisos aprobados y las actividades efectivamente realizadas. No atribuir predicción dinámica a un índice estático.
+
+9. Conclusions and Future Work
+Respuesta directa a la pregunta, resultados y objetivos alcanzados, límites persistentes y preguntas abiertas. Aprovechar la sección 9 del artículo, adaptando su discusión y conclusiones a los compromisos de la tesis.
+
+Antes del cuerpo se incluyen los preliminares pertinentes. Después se ubican referencias y anexos. Cronograma proyectado, presupuesto y perfiles de supervisión no requieren capítulos propios de la tesis final. Financiación y atribuciones pueden pasar a preliminares; ética y procedencia, a métodos o discusión. No se elimina contenido de valor antes de decidir su destino.
+
+FUNDAMENTO DE LA DECISIÓN
+
+El capítulo 2 recomendado define conceptos y criterios con los que se evaluará MEC. Por ello antecede al desarrollo matemático y computacional. La justificación ya puede integrarse en la introducción. Un capítulo separado de motivación regional y perfiles de supervisión tendría menor utilidad para la lectura de esta investigación terminada.
+
+Separar fundamentos estructurales de resultados teóricos avanzados facilita distinguir definiciones y herramientas de los teoremas que responden al problema. Separar resultados teóricos de resultados experimentales reconoce que las demostraciones también son resultados de investigación. La teoría antes de los procedimientos computacionales permite justificar minimización, normalización y comparación.
+
+Mantener un capítulo breve de objetivos y alcance conserva un elemento explícito del anteproyecto final y responde a una observación documentada del jurado. Es una decisión propia de este proyecto, no un capítulo exigido por Harvard o Cambridge.
+
+El trabajo restante consiste en adaptar y explicar la investigación existente y verificar sus entregables. Esta revisión no identifica una obligación de inventar una investigación nueva. Tampoco demuestra que cada actividad planeada ya esté cumplida. Especialmente, los casos regionales, CLI, pruebas, automatización y análisis complementarios deben vincularse con evidencia antes de declarar su cumplimiento.
+
+PENDIENTE INSTITUCIONAL
+
+Localizar la plantilla o reglamento interno de trabajo de grado del programa de Ingeniería de Sistemas. Si establece títulos, orden o formato obligatorios, habrá que incorporar esas instrucciones. Hasta entonces, este índice es una recomendación académica fundamentada, no una certificación formal de cumplimiento del programa. El límite de 80 páginas debe considerarse desde la planificación e incluye anexos.
+
+REVALIDACIÓN PARA DECIDIR LA SECCIÓN 3
+
+Se reabrieron las fuentes oficiales de Univalle, Harvard CS y Edinburgh Informatics y se recuperó de nuevo el contenido indexado oficial de Cambridge Part II, cuyo acceso directo sigue fallando. La Resolución 137, artículo 12, corresponde al anteproyecto; el artículo 18 remite las normas y la plantilla del documento final al Comité del Programa. La Resolución 287 de 2024 actualiza modalidades y su reglamentación, sin un índice universal de capítulos. No se obtuvo una plantilla vigente específica de EISC. No se presenta la organización recomendada como certificación de cumplimiento institucional.
+
+Se revisaron además la página del programa de Ingeniería de Sistemas, las preguntas frecuentes y los enlaces de servicios de EISC. El enlace público Gestión de tesis no pudo abrirse mediante el navegador de investigación. Las páginas accesibles no proporcionaron una plantilla de índice final.
+https://eisc.univalle.edu.co/index.php/programas-academicos/ingenieria-de-sistemas
+https://eisc.univalle.edu.co/index.php/servicios-estudiantes/preguntas-frecuentes
+
+La guía de Harvard distingue las contribuciones y deja flexibilidad de presentación. Cambridge prescribe para su propio Part II cinco capítulos y permite que Implementation contenga teoría desarrollada. Edinburgh, guía de MSc usada sólo como comparación, propone antecedentes, desarrollo, evaluación y conclusiones y pide contrastar el trabajo con sus objetivos originales. Estas diferencias impiden afirmar que una secuencia universal establezca qué título debe llevar nuestro capítulo 3.
+
+Se leyeron nuevamente el archivo original correcciones.md, la página 9 y la tabla de actividades de la página 16 del anteproyecto, el recorrido y las contribuciones del artículo y el capítulo 3 actual. La respuesta vfinal del estudiante registra expresamente la sugerencia del jurado de crear Objectives and Scope y su implementación. La tabla del anteproyecto distingue actividades obligatorias y deseables. El artículo organiza el desarrollo científico, pero no sustituye los compromisos de la propuesta aprobada.
+
+El índice adjunto por Juan separa Justificación, Objetivos y Alcance. Su captura no aporta prueba de que esa disposición sea obligatoria ni de que se trate de una tesis final completa. Resultados esperados y la ausencia visible de discusión y conclusiones impiden tratarlo como plantilla completa para una investigación terminada. Se conserva como ejemplo comparativo.
+
+Se ratifica la recomendación de los nueve capítulos ya descritos en este informe. La sección 3 será Objectives and Scope, breve, con General Objective, Specific Objectives, Scope and Delimitations, y Deliverables and Relation to the Approved Proposal. Justificación y contexto pueden integrarse en la introducción sin multiplicar capítulos breves. El recorrido posterior distingue definiciones y herramientas, resultados matemáticos, métodos computacionales, resultados empíricos, discusión y conclusiones. Las pruebas son resultados, no se subordinan todas a un capítulo experimental.
+
+El texto actual de la sección 3 aún requiere adaptación. No declarar preregistro retrospectivo, cumplimiento KNS completo ni entregables alcanzados sólo porque figuran en el plan. No eliminar silenciosamente compromisos o actividades opcionales de la propuesta. Documentar su alcance y explicar los ajustes y resultados en los capítulos pertinentes. La revisión es una decisión de estructura; no se modificó sn-article.tex ni se ejecutó una compilación sin cambios.
+
+
+REVALIDACIÓN PARA DECIDIR LA SECCIÓN 4
+
+Se volvió a consultar la Resolución 137 de 2023 (12 páginas), en particular los artículos 12 y 18, y la Resolución 287 de 2024 (3 páginas). La primera distingue requisitos del anteproyecto y formato del documento final, cuya plantilla se delega al Comité del Programa. La segunda exige actualizar la reglamentación de modalidades; no establece un índice de tesis. Esta consulta no recuperó una plantilla pública específica vigente de Ingeniería de Sistemas. La página de EISC enlaza Gestión de tesis; el portal general consultado requiere autenticación. No se afirma que la Resolución 137 sea la única norma actualmente aplicable ni que esta búsqueda certifique ausencia de una guía interna.
+
+Se releyó la guía de Harvard CS Senior Thesis. Reconoce trabajos teóricos, experimentales y de sistemas, exige identificar las contribuciones y no proporciona una secuencia fija de capítulos. La página principal de Cambridge Part II volvió a fallar al abrirse directamente; su contenido indexado oficial pudo recuperarse mediante búsqueda. Prescribe Introduction, Preparation, Implementation, Evaluation y Conclusions para ese programa, y señala que Implementation incluye programas, hardware o teoría desarrollada. Se consultó de nuevo Edinburgh Informatics MSc, como comparación de posgrado. Su estructura típica distingue antecedentes, desarrollo conceptual e implementación, análisis/evaluación y conclusiones. Estas fuentes sostienen una distinción de funciones y dependencias, no un mandato sobre el capítulo 4 de Univalle.
+
+Se contrastaron las páginas pertinentes del anteproyecto aprobado (objetivos, metodología, actividades y alcance), las secciones 2–4 del artículo v1, sus conexiones con las secciones 5–8 y los PDF correspondientes. Se releyeron las observaciones del jurado en correcciones.md. La captura del índice proporcionada por Juan muestra Justificación, Objetivos, Alcance y Metodología separados y Resultados esperados. Es un ejemplo de organización; no acredita un índice institucional obligatorio ni el estado final del documento completo. Sus posiciones ordinales no se trasladan mecánicamente a esta tesis.
+
+Se ratifica la secuencia de nueve capítulos recomendada, con sección 4 titulada Minimum Effort to Consensus and Structural Properties. Su función es desarrollar formalmente la medida que las secciones 1–3 presentan y justifican. Integra los preliminares, construcción de MEC y propiedades estructurales de las secciones 2–4 del paper, con referencias cruzadas para evitar repetir la sección 2 de la tesis. La teoría hace posible justificar las pruebas posteriores y los procedimientos computacionales.
+
+Los cinco bloques razonables para esta sección son (1) distribuciones, masas, soporte, consenso y distribuciones extremales; (2) transporte a consenso y familia generalizada MEC, con parámetros; (3) existencia, convexidad y consensos óptimos; (4) caracterización mediante dispersión ponderada y casos de mediana y media; (5) reflexión, traslación, simetría y escalamiento poblacional. La identidad del caso lineal con EMD y la caracterización por distancia a la distribución extremal pertenecen a su fundamentación. La expresión del esfuerzo de una distribución extremal no debe confundirse con la demostración general de maximalidad, que corresponde al siguiente capítulo.
+
+La sección 5 desarrolla movimientos de grupos, maximalidad general, axiomas, división central, Minority Principle y Tipping Point bajo sus condiciones. Las secciones 6 y 7 tratan métodos computacionales y resultados experimentales. La separación entre 4 y 5 distingue fundamentos de construcción y propiedades estructurales de los resultados posteriores sobre transformaciones y criterios axiomáticos; ambos capítulos contienen resultados matemáticos.
+
+El apartado que actualmente ocupa el cuarto lugar del LaTeX, Data and Primary Sources: Availability, Measurement Strategy, and Feasibility, sigue siendo prosa del anteproyecto pendiente de adaptación. Sus fuentes, corpus y decisiones experimentales deben integrarse en metodología y sus aplicaciones en resultados. El recuento por reflexión y la descripción de las puntuaciones expertas requieren las correcciones ya detectadas; esto no elimina sus compromisos ni sus datos. Presupuesto, cronograma y perfiles no necesitan capítulos propios del cuerpo científico. Los contenidos aprovechables se conservarán antes de reubicarlos.
+
+El índice recomendado sigue siendo una decisión académica documentada, sujeta al reglamento específico del programa que pudiera proporcionarse posteriormente. Debe planificarse evitando duplicación y respetando el límite de 80 páginas que establece la Resolución 137, incluidos anexos y con sus exclusiones expresas. No se modificó sn-article.tex ni se inició la redacción de la sección 4 en esta revisión.
+
+
+REVALIDACIÓN PARA DECIDIR LA SECCIÓN 5
+
+Se volvieron a consultar las fuentes oficiales enlazadas arriba. Se revisaron
+los artículos 12 y 18 de la Resolución 137 de 2023, incluidas sus páginas PDF,
+y los artículos 2–4 de la Resolución 287 de 2024. La primera distingue el
+anteproyecto del documento final y delega la plantilla y el formato en el
+Comité del Programa Académico. La segunda requiere actualizar la
+reglamentación de modalidades sin fijar un índice universal. No se recuperó
+en esta consulta una plantilla vigente específica de EISC. El enlace Gestión
+de tesis de la página oficial de servicios devolvió un error al abrirse. Se
+buscó también normativa posterior, sin localizar una actualización específica
+que permita certificar aquí los títulos obligatorios. Esto no demuestra que
+no exista una guía interna ni certifica la vigencia exclusiva de la 137.
+
+Se releyó Harvard CS Senior Thesis Guide, particularmente su descripción de
+tesis teóricas, experimentales y de sistemas y sus recomendaciones de formato
+y exposición de contribuciones. No prescribe un índice numerado común.
+Cambridge Part II mantiene una estructura superior estricta para su propio
+programa. La apertura directa de su guía falló, pero su contenido indexado
+oficial se recuperó completo mediante búsqueda. Implementation admite teoría
+desarrollada y precede Evaluation. Se consultó la guía de Edinburgh MSc
+Informatics, como referencia de posgrado, cuya secuencia típica es contexto,
+desarrollo, evaluación crítica y conclusiones. No se transfieren como
+obligaciones de Univalle los títulos, límites ni requisitos de esos programas.
+
+Se revisaron las secciones 5–7 del artículo v1 en fuente y las páginas 12–23
+del PDF, además de los objetivos y actividades del anteproyecto, páginas 9,
+12 y 16. Se releyeron las observaciones originales del jurado en correcciones.md.
+La captura del índice de referencia aportada por Juan separa Justificación,
+Objetivos, Alcance, Metodología y Resultados. Es un ejemplo comparativo; no
+acredita que la quinta posición deba dedicarse al alcance en esta tesis. Aquí
+objetivos y alcance ya están integrados en la sección 3. La captura no muestra
+todo lo necesario para certificar el índice completo de una tesis terminada.
+
+Se recomienda mantener Theoretical Results and Axiomatic Analysis como
+sección 5. Su justificación es la dependencia entre contenidos del proyecto,
+no una regla institucional que asigne ese título al quinto capítulo. La
+sección 4 proporciona dominio, óptimos, convexidad, dispersión, simetría y
+escalamiento. La siguiente sección debe establecer cómo cambia MEC bajo
+transformaciones y qué requisitos axiomáticos satisface. La metodología y
+evaluación computacionales pueden apoyarse luego en esta teoría.
+
+Orden interno recomendado para la redacción
+5.1. Group Movements and Maximal Polarization. Movimientos de grupos completos,
+     fusiones al llegar a posiciones ocupadas, excepción median-shift para
+     beta igual a 1, máximo en dos extremos y maximalidad general. Aprovecha
+     la sección 6 del paper y el Apéndice D.
+5.2. Esteban–Ray Axioms. Enunciados con sus cuantificadores y condiciones,
+     demostraciones y regímenes. Axiom 1 requiere alpha mayor que 1; Axioms
+     2 y 3 se satisfacen para alpha y beta mayores o iguales a 1. Aprovecha
+     la sección 7.2 y el Apéndice E. No se vuelve a desarrollar toda la
+     literatura ER/KNS ya explicada en la sección 2.
+5.3. Central-Split Monotonicity. Property 1 separada del Axiom 3, condiciones
+     simétricas, compatibilidad con masas exteriores nulas y fusiones en los
+     extremos cuando corresponda, y el contraejemplo ER del paper. Aprovecha
+     la sección 7.3 y su prueba en el Apéndice E.
+5.4. Minority Principle. Dos posiciones ocupadas con masas positivas y
+     desiguales; ubicación del óptimo y comparación de contribuciones al
+     esfuerzo para alpha y beta mayores o iguales a 1. Aprovecha la
+     sección 5.1 y el Apéndice C.1. No se generaliza a poblaciones con
+     cualquier número de grupos.
+5.5. Tipping Point and Partial Mass Transfers. Caso alpha igual a beta igual
+     a 2, umbral único para la familia inicial de dos puntos, ejemplo ya
+     iniciado en la sección 4 y extensión de la expresión cúbica al
+     traslado desde el máximo soporte a 1. Aprovecha la sección 5.2 y el
+     Apéndice C.2. La expresión cúbica para soporte general no establece
+     por sí sola un umbral único para toda distribución.
+
+Este orden interno da prioridad a la maximalidad y los axiomas que responden
+al objetivo formal del anteproyecto; luego expone las aplicaciones teóricas
+del mismo trabajo. El paper presenta primero las aplicaciones, después los
+movimientos y luego los axiomas. Ese orden también es válido. La adaptación
+propuesta reorganiza la exposición y mantiene sus resultados y supuestos.
+Las guías universitarias no deciden entre estos dos órdenes internos.
+
+Los resultados estructurales de la sección 4 también son resultados
+matemáticos. El título de la sección 5 no implica que los primeros sean sólo
+antecedentes ajenos; delimita el bloque de transformaciones, axiomas y
+aplicaciones. Evitar repetir definiciones, EMD, convexidad o normalizaciones.
+En el cuerpo deben quedar condiciones, enunciados, interpretación y argumentos
+centrales. Las derivaciones extensas pueden ir a anexos con referencias
+explícitas, evitando duplicación y contando los anexos en el límite de páginas.
+
+Se mantiene la secuencia de nueve capítulos ya registrada. El apartado Data
+and Primary Sources que actualmente figura quinto en el LaTeX es material
+preservado del anteproyecto pendiente de adaptación. Sus datos, corpus,
+procedencia y decisiones de cálculo deben integrarse en la sección 6;
+las ilustraciones regionales, en la sección 7. El presupuesto requiere decidir
+su destino fuera del cuerpo científico, sin eliminar material silenciosamente.
+
+Esta revisión no modifica sn-article.tex, no redacta todavía la sección 5 y
+no requiere compilar un documento que no cambió. La conclusión es una
+recomendación académica fundamentada, no una certificación del índice EISC.
+
+
+REVALIDACIÓN PARA DECIDIR LA SECCIÓN 6
+
+Se reabrieron las resoluciones 137 de 2023 y 287 de 2024, la guía de Harvard
+CS Senior Thesis y la guía de Edinburgh Informatics MSc. El contenido oficial
+indexado de Cambridge Part II permitió revisar sus cinco capítulos prescritos,
+la distinción entre Implementation y Evaluation y la explicación del punto de
+partida del proyecto. Estos requisitos pertenecen a esos programas y no se
+trasladan como obligaciones a Univalle. Harvard no prescribe una secuencia de
+capítulos; Edinburgh propone separar desarrollo y evaluación cuando conviene.
+
+La Resolución 137, artículos 12 y 18, distingue anteproyecto y documento final.
+El formato e índice final corresponden al Comité del Programa. La Resolución
+287 delega la actualización de modalidades y reglamentos, sin establecer un
+índice. Se consultó de nuevo la página EISC y se buscaron instrucciones
+específicas de pregrado. Gestión de tesis falló por timeout. No se recuperó una
+plantilla específica vigente. Esta consulta no certifica que no exista ni que
+la Resolución 137 sea la única norma aplicable actualmente.
+
+Se contrastaron la sección 8 del paper en fuente y PDF, las páginas 9, 10,
+12–14 y 16 del anteproyecto, los objetivos vigentes de la tesis y el texto
+actual de la sección 6. La captura del índice de referencia sitúa metodología
+antes de resultados. Apoya esa distinción funcional, sin acreditar un índice
+institucional obligatorio ni imponer sus posiciones ordinales a este proyecto.
+
+Se mantiene el índice recomendado de nueve capítulos. La sección 6 debe ser
+Computational Methodology and Implementation. Las secciones 4 y 5 ya exponen
+la construcción matemática y las pruebas. La sección 6 explicará cómo se
+calculan y comparan las medidas mediante software y datos; la sección 7
+presentará resultados experimentales e ilustraciones regionales con evidencia.
+
+Bloques propuestos para desarrollar este capítulo
+6.1. Numerical Computation of MEC. Algoritmos realmente utilizados, casos beta
+     igual a 1 y mayor que 1, escalas y normalización, criterios de parada y
+     tolerancias. Remitir a la teoría previa para justificar los procedimientos.
+6.2. Library Implementation and Verification. Estructura y funciones pertinentes
+     de pol_measures, API, estado de CLI, pruebas, CI y licencia. Distinguir
+     entregables documentados de los que sólo figuraban en el plan.
+6.3. Data Sources and Computational Corpus. Coordenadas, conteos y proporciones,
+     enumeración y reflexión, corpus experto publicado y procedencia de los
+     agregados regionales cuando se disponga de ellos.
+6.4. Comparison Protocol and Parameter Selection. Comparadores y ajustes, Kendall
+     tau_B y empates, parámetros explorados, calibración sobre el mismo benchmark,
+     métodos complementarios efectivamente realizados y límites del protocolo.
+6.5. Reproducibility and Computational Resources. Versiones, scripts, ajustes,
+     artefactos, semillas donde intervenga aleatoriedad y recursos de las ejecuciones.
+Los cinco bloques son una propuesta editorial, no una exigencia universitaria.
+
+Correcciones necesarias al adaptar el texto preservado
+No repetir pruebas ni presentarlas como conjeturas pendientes. Corregir el número
+de representantes reflejados a 2,299,726, con 1,326 palíndromos, conforme al paper.
+Mantener 4,598,126 como cardinalidad del corpus completo. Describir la reutilización
+de puntuaciones publicadas de quince perfiles, no una nueva recogida de juicios
+expertos. No declarar preregistro a partir de una tabla proyectada. Separar
+procedimiento, resultados y explicación de desviaciones frente al plan. No
+eliminar compromisos como CLI, top-k o casos regionales sin evaluar su estado.
+
+La revisión preliminar del repositorio confirma la existencia de implementaciones,
+tests, CI y scripts de comparación y ajuste de parámetros. No se reprodujeron
+experimentos en esta revisión. El generador de comparison_matrix convierte los
+conteos en proporciones; su MeasureCalculator redondea con paso 1e-4 por defecto
+y lista medidas adicionales a las del paper. Estos detalles requieren comprobar
+qué ejecución produjo cada figura antes de redactar el protocolo definitivo.
+La tolerancia del solver y la cuantización de puntuaciones son conceptos distintos;
+la segunda puede introducir empates y afectar tau_B. No se atribuye una figura del
+paper a esos scripts únicamente por encontrarlos en el repositorio.
+
+Se conservan los objetivos obligatorios y deseables del anteproyecto como criterios
+de evaluación. Presupuesto y cronograma no explican el procedimiento computacional
+de una investigación terminada; su destino se decidirá sin borrar información.
+No se modificó el LaTeX ni se abrió otra pestaña en esta revisión de estructura.
+
+REVALIDACIÓN PARA DECIDIR LA SECCIÓN 7
+
+Se consultaron nuevamente las resoluciones oficiales 137 de 2023, artículos
+12 y 18, y 287 de 2024, artículos 2–4. La primera prescribe elementos del
+anteproyecto, incluido cronograma, pero delega formato e índice del documento
+final al Comité de Programa. La segunda dispone actualizaciones de modalidades
+y reglamentos, sin establecer un capítulo universal de resultados. Se buscaron
+instrucciones específicas en el sitio EISC y se abrió su enlace Gestión de tesis,
+que devolvió timeout. No se recuperó una plantilla específica de índice EISC.
+La consulta no certifica ausencia de instrucciones internas ni vigencia exclusiva
+de una única resolución para la cohorte del estudiante.
+
+Harvard CS Senior Thesis Guide sigue priorizando identificación de contribuciones
+y libertad de extensión y presentación, sin un índice universal. Cambridge Part
+II prescribe Implementation seguido de Evaluation y Conclusions para su programa;
+la página principal no abrió directamente, pero se recuperó su contenido oficial
+indexado. Evaluation pide evidencia de resultados y valoración de objetivos.
+Edinburgh Informatics MSc, usado como comparación de posgrado, separa descripción
+del trabajo de análisis/evaluación y pide contrastar resultados con expectativas,
+trabajo relacionado y objetivos originales. Sus reglas no se trasladan como normas
+de Univalle. Las URLs verificadas son las registradas arriba en este informe.
+
+Se releyeron las páginas 23–27 del paper v1, la sección 08-experiments.tex, las
+páginas 9–10, 13–14 y 16 del anteproyecto, y la sección 7 actual del LaTeX.
+El índice de referencia proporcionado por Juan ubica Metodología antes de Resultados.
+Esa captura apoya la relación funcional, pero no permite certificar una plantilla
+institucional ni que se trate del índice completo de una tesis final.
+
+Decisión recomendada
+La sección 7 será Experimental Results, ubicada después de Computational
+Methodology and Implementation y antes de Discussion and Limitations.
+Se propone un título general que permite incorporar las ilustraciones regionales
+sin afirmar en el encabezado que ya están verificadas. Esto precisa el título
+anterior Experimental Results and Regional Illustrations; no elimina ese compromiso.
+El actual Work Plan, Schedule, Effort, and Milestones es material de anteproyecto
+pendiente de adaptación, no el capítulo adecuado en ese lugar para la tesis final.
+Su cronograma proyectado y estimaciones se preservarán al decidir su destino.
+Una comparación breve entre actividades realizadas y objetivos corresponde a la
+discusión, sin convertir el cronograma original en un relato de ejecución real.
+
+Contenido y orden sugeridos
+7.1 Concordance Across Polarization Measures. Matriz de tau_B del corpus
+    canónico, patrones relevantes y discrepancias interpretadas con la teoría.
+    Remitir a la sección 6 para corpus, parámetros y cálculo. No duplicar pruebas.
+7.2 Agreement with Published Expert Judgments. Los quince perfiles, puntuaciones
+    y comparación de índices. Mantener MEC(2,1.15) y el empate reportado con ER(0.8).
+    Reutilizar las figuras científicas verificadas del paper; no describir nueva
+    recolección humana ni superioridad sobre todos los comparadores.
+7.3 Parameter Sensitivity and Stability. Resultados suplementarios guardados de
+    rejillas y remuestreo, si se incluyen tras cotejar scripts y datos. Distinguir
+    la referencia del paper de ajustes posteriores. No llamar validación externa
+    independiente al remuestreo del mismo benchmark utilizado para calibrar.
+7.4 Computational Performance. Tiempos de corpus y de escalamiento de soporte
+    documentados en benchmarks/corpus_timing_mec_vs_er y support_scaling_mec_vs_er.
+    Distinguir implementaciones, parámetros, precisión, cargas y máquinas. No
+    transformar tiempos medidos en pruebas de complejidad ni proclamar a MEC
+    más rápido para todas las cargas. Son resultados complementarios, no parte
+    de la sección experimental original del paper.
+7.5 Regional Illustrations. Incorporar cuando estén disponibles los agregados,
+    procedencia y resultados correspondientes. Es un compromiso del alcance
+    aprobado y no debe desaparecer por omisión. Si no se realizó, su estado
+    debe justificarse expresamente en discusión, sin simular observaciones.
+
+Los dos primeros bloques forman el núcleo publicado. Los dos siguientes pueden
+ampliarlo con evidencia existente del repositorio; el quinto requiere datos no
+verificados hasta el momento. No se fuerzan cinco subsecciones si un bloque carece
+de resultados. Las extensiones deseables A11 y A12, top-k, perturbaciones y otros
+análisis del plan se evalúan mediante sus propios artefactos antes de darles lugar
+como resultados. Umbrales estáticos no acreditan por sí solos su calibración.
+
+La interpretación local de tablas y figuras pertenece al capítulo 7. La respuesta
+general a la pregunta, el veredicto sobre hipótesis y cumplimiento de los objetivos,
+y los límites de generalización pertenecen al capítulo 8. El 9 recoge conclusiones
+y trabajo futuro. Esta separación conserva la secuencia de nueve capítulos y
+reconoce que el capítulo 5 ya contiene resultados matemáticos.
+
+No se modificó sn-article.tex, no se abrió otra pestaña ni se compiló un documento
+sin cambios. No se reprodujeron los experimentos en esta revisión de estructura.
+La propuesta de contenido y ubicación es una recomendación académica fundamentada;
+no es certificación del índice interno del Programa de Ingeniería de Sistemas.
+
+REVALIDACIÓN PARA DECIDIR LA SECCIÓN 8
+11 de octubre de 2026
+
+Fuentes oficiales nuevamente consultadas
+Se reabrió la Resolución 137 de 2023 de la Facultad de Ingeniería de Univalle,
+en particular artículos 9, 12 y 18. El artículo 12 corresponde al anteproyecto;
+el artículo 18 delega presentación, formato y plantilla de índice del documento
+final al Comité del Programa. Se consultó nuevamente la Resolución 287 de 2024,
+que actualiza modalidades y su reglamentación sin prescribir capítulos de tesis.
+Se buscó la reglamentación específica en las páginas públicas de EISC y se abrió
+su enlace Gestión de tesis; el portal no fue accesible mediante la herramienta.
+No se recuperó una plantilla vigente de índice EISC. No se infiere su inexistencia
+ni se certifica el índice como requisito institucional.
+
+Se reabrió Harvard CS Senior Thesis Guide. Recomienda declarar las contribuciones
+y sus ubicaciones, sin proporcionar una secuencia universal de capítulos.
+Cambridge Part II prescribe Introduction, Preparation, Implementation, Evaluation,
+Conclusions para su programa. La apertura directa falló, pero se obtuvo su contenido
+oficial indexado completo, incluyendo la función de Evaluation y la valoración
+frente a los objetivos iniciales. Se consultó también su guía oficial de assessment,
+que valora análisis crítico y justificación de áreas incompletas. Edinburgh MSc
+Informatics pide análisis de resultados, comparación con expectativas y trabajos
+relacionados, evaluación de objetivos originales, y conclusiones. Monash distingue
+resultados, significado de los resultados y conclusiones, reconociendo variación
+según disciplina y argumento. Estas fuentes aportan criterios comparativos, no
+normas vinculantes para Univalle.
+
+URLs oficiales
+https://eime.univalle.edu.co/images/documentos/programas/docu_curricular/Resolucion_No_137-2023_Reglamento_De_Trabajo_De_Grado_ABR_18.pdf
+https://registro.univalle.edu.co/wp-content/uploads/2025/11/RCA-287-modalidades_trabajo_de_grado.pdf
+https://eisc.univalle.edu.co/index.php/servicios-estudiantes
+https://eisc.tesis.univalle.edu.co/
+https://csadvising.seas.harvard.edu/research/thesis-guide/index.html
+https://www.cst.cam.ac.uk/teaching/part-ii/projects/dissertation
+https://www.cst.cam.ac.uk/teaching/part-ii/projects/assessment
+https://opencourse.inf.ed.ac.uk/diss/the-dissertation
+https://www.monash.edu/student-academic-success/excel-at-writing/how-to-write/thesis-chapter/thesis-structures
+
+Contraste local
+Se revisó la sección 9 del paper en su fuente 09-conclusion.tex y la página 28 del
+PDF, la pregunta e hipótesis de la introducción actual, los objetivos y delimitaciones
+de sección 3, el cierre de resultados en sección 7 y los capítulos 8 y 9 aún pendientes.
+Se contrastaron páginas 9, 16, 19 y 20 del anteproyecto aprobado. Se consideró de
+nuevo el índice adjunto por Juan como captura de referencia. La captura coloca
+métodos antes de resultados, incluye resultados esperados y no muestra discusión
+ni conclusiones. No acredita una plantilla institucional ni permite decidir si es
+el índice completo de una tesis final. No se afirma haber releído una tesis completa
+actualizada de la que sólo se dispone de esa captura en el chat.
+
+Decisión editorial fundamentada
+Ratificar nueve capítulos. La sección 8 debe ser Discussion and Limitations,
+entre Experimental Results y Conclusions and Future Work. El capítulo actual
+Ethics, Risks, and Data Governance es contenido del anteproyecto pendiente de
+adaptación. No responde por sí solo a la función crítica necesaria tras capítulos
+5 y 7. El contenido útil sobre procedencia y datos corresponde a métodos; sus
+implicaciones interpretativas y de uso pueden integrarse en la discusión. No se
+eliminará como material de investigación ni se asumirán verificados los casos
+regionales o exenciones institucionales de revisión ética por estar escritos en
+el anteproyecto.
+
+Funciones del capítulo 8
+1. Integrar el significado de pruebas y experimentos para responder a la pregunta
+   y valorar la hipótesis. Explicitar el régimen alpha>1, beta>=1 para los tres
+   axiomas ER, la distinción con Property 1 y el empate MEC(2,1.15)/ER(0.8) en el
+   benchmark. No repetir pruebas, matrices o la revisión de literatura.
+2. Evaluar los cinco objetivos aprobados con referencias a evidencia de capítulos
+   4–7 y distinguir actividades obligatorias y deseables. La presencia de un script
+   no demuestra ejecución; casos regionales y otros análisis no documentados
+   requieren evidencia o una explicación del ajuste, sin declararlos cumplidos.
+3. Examinar límites de alcance y validez. Opiniones finitas unidimensionales,
+   distancias asignadas a categorías ordinales, normalización de masas, elección
+   de parámetros sobre los mismos quince perfiles, remuestreo sin test independiente,
+   precisión y dependencia de implementación, y límites de los tiempos medidos.
+4. Explicar interpretación y uso responsable. El esfuerzo es una función del modelo,
+   no una magnitud psicológica observada. El consenso óptimo es un objeto estructural,
+   no predicción, recomendación normativa ni evidencia causal de intervención.
+   Conservar lo pertinente del anteproyecto sobre agregados y prudencia interpretativa.
+
+Estos son cuatro bloques de argumentación, no una exigencia de cuatro subsecciones.
+Un cuadro breve objetivo/evidencia/estado resulta apropiado cuando los estados hayan
+sido verificados. No duplicar gráficos de sección 7; remitir a sus figuras. Las
+extensiones a espacios métricos generales, otros parámetros del Tipping Point y
+validación en encuestas reales pueden mencionarse como límites; el desarrollo del
+trabajo futuro se reserva a sección 9.
+
+El artículo integra interpretación, trabajo relacionado y conclusiones en una
+sección breve. La tesis puede distribuir ese material entre discusión y conclusiones
+para hacer explícito el vínculo con el anteproyecto, sin introducir nuevas afirmaciones
+científicas. El futuro capítulo 9 reunirá la respuesta final y las líneas abiertas.
+No se modificó sn-article.tex, no se compiló ni se abrió otra pestaña. No se redactó
+el capítulo 8 en esta revisión de estructura.
+
+REVALIDACIÓN PARA DECIDIR LA SECCIÓN 9
+11 de octubre de 2026
+
+Se reabrieron las fuentes oficiales de Univalle Resolución 137/2023 y 287/2024,
+Harvard CS Senior Thesis Guide, Cambridge Part II Dissertation y Assessment,
+y Edinburgh Informatics MSc Dissertation. La resolución 137 art. 18 remite
+presentación e índice al Comité del Programa y establece el límite de 80 páginas
+con las exclusiones indicadas en el informe original. Su art. 12 regula anteproyecto,
+no prescribe índice del documento final. La resolución 287 actualiza modalidades
+y exige actualizar reglamentos; no fija una secuencia de capítulos. No se certifica
+que la norma de 2023 sea la única actualmente aplicable. La página pública EISC
+volvió a proporcionar el enlace Gestión de tesis, pero su apertura falló. No se
+recuperó una plantilla específica EISC vigente en esta consulta.
+
+Harvard deja flexibilidad de formato, exige identificar contribuciones y sitúa
+el trabajo respecto de antecedentes y lo que puede seguir. No prescribe nueve
+capítulos. Cambridge Part II establece cinco capítulos para su propio programa;
+Conclusions sigue a Evaluation y debe ser breve y remitir a Introduction. Sus
+criterios de evaluación piden síntesis del trabajo realizado, justificación de
+áreas incompletas y trabajo futuro. La apertura directa volvió a fallar; el texto
+oficial fue recuperado mediante indexación de búsqueda. Edinburgh distingue
+análisis/evaluación de resultados frente a objetivos originales y un cierre con
+observaciones, problemas sin resolver y sugerencias de trabajo futuro. Es guía
+MSc comparativa y no requisito de pregrado de Juan.
+
+URLs consultadas
+https://eime.univalle.edu.co/images/documentos/programas/docu_curricular/Resolucion_No_137-2023_Reglamento_De_Trabajo_De_Grado_ABR_18.pdf
+https://registro.univalle.edu.co/wp-content/uploads/2025/11/RCA-287-modalidades_trabajo_de_grado.pdf
+https://eisc.univalle.edu.co/index.php/servicios-estudiantes
+https://eisc.tesis.univalle.edu.co/
+https://csadvising.seas.harvard.edu/research/thesis-guide/index.html
+https://www.cst.cam.ac.uk/teaching/part-ii/projects/dissertation
+https://www.cst.cam.ac.uk/teaching/part-ii/projects/assessment
+https://opencourse.inf.ed.ac.uk/diss/the-dissertation
+
+Contraste local
+Se releyeron las páginas 28–29 del PDF oficial y 09-conclusion.tex del paper,
+las páginas 19–20 del anteproyecto aprobado, objetivos y discusión actuales,
+y el capítulo 9 todavía titulado Expected Contributions, Limitations, and Impact.
+Se consideró la captura del índice de referencia aportada previamente por Juan.
+Esta muestra resultados esperados y no muestra discusión/conclusiones; no se
+infirió que fuera una plantilla obligatoria ni un índice final completo. No se
+asegura haber revisado una tesis completa que no ha sido proporcionada.
+
+Decisión
+Se ratifica el capítulo 9 Conclusions and Future Work como cierre del cuerpo,
+después de Experimental Results (7) y Discussion and Limitations (8), manteniendo
+la secuencia de nueve capítulos ya fundamentada. Es decisión editorial basada en
+las funciones de las secciones y las dependencias del trabajo, no el nombre y
+ordinal de un capítulo exigidos por las universidades consultadas.
+
+El título actual y sus condicionales prospectivos corresponden al anteproyecto.
+Debe convertirse en respuesta final a pregunta e hipótesis, síntesis de aportes
+demostrados y balance breve del cumplimiento respaldado, seguido de preguntas
+abiertas. Deben corregirse Axiom 1' por el alcance de los tres axiomas originales
+ER efectivamente demostrados, y la equiparación central-split con Axiom 3. No
+volver a presentar como inciertas las pruebas ya desarrolladas.
+
+Propuesta de redacción
+Dos bloques amplios, Conclusions y Future Work, son suficientes si se emplean
+subsecciones. Un hilo continuo con transición clara también cumple la función.
+No forzar subsecciones por cada objetivo ni reproducir la tabla de balance del
+capítulo 8. La extensión debe ser proporcional al cierre, sin convertir la brevedad
+recomendada en una cuota de páginas externa obligatoria.
+
+Conclusions debe responder que la fundamentación formal está establecida bajo
+condiciones precisas, mientras la comparación experta apoya parcialmente la
+superioridad prevista. Sintetizar transporte/convexidad/axiomas, consenso óptimo,
+Minority Principle y Tipping Point con sus límites, comparaciones y software.
+No atribuir validación independiente, superioridad universal, cumplimiento KNS
+completo, ni todos los compromisos ejecutados. No introducir nuevas pruebas,
+experimentos, gráficos, revisión de literatura o atribuciones individuales.
+
+Future Work puede desarrollar las cinco direcciones del paper: espacios métricos
+generales; justificación y sensibilidad de (alpha,beta), incluido (2,1.15);
+Tipping Point fuera de alpha=beta=2; encuestas reales y ruido, contrastes con
+modelos dinámicos; interpretación aplicada de y* en mediación. El anteproyecto
+aporta dimensiones/redes e incertidumbre. Presentar como extensiones posteriores,
+sin afirmar que el índice estático predice dinámica o consenso.
+
+Los casos regionales y otros entregables aprobados sin verificar no pasan por
+su simple omisión a investigación futura. Mantener su estado y necesidad de
+evidencia o justificación de ajuste como se documentó en el capítulo 8.
+
+No se modificó sn-article.tex, no se abrió otra pestaña, no se compiló ni se
+exportó otro PDF en esta revisión exclusivamente de estructura y contenido.

@@ -1,0 +1,48 @@
+Tablas sustituidas por las figuras originales del paper. Sus valores y explicaciones permanecen en la tesis y en la verificación JSON.
+
+\begin{table}[htbp]
+\centering
+\caption{Published Kendall concordance on the canonical five-point corpus, transcribed from the paper \citep{aranda2026mec}. Values retain the displayed precision.}
+\label{tab:results-corpus-concordance}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lrrrrrrrrr@{}}
+\toprule
+Measure & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9\\
+\midrule
+1 $\mathrm{MEC}_{2,1.15}$ & 1.000 & .573 & .764 & .254 & .626 & .732 & .496 & .604 & .744\\
+2 $\mathrm{MEC}_{1,2}$    & .573 & 1.000 & .764 & .356 & .755 & .769 & .676 & .916 & .695\\
+3 $\mathrm{MEC}_{2,2}$    & .764 & .764 & 1.000 & .384 & .817 & .806 & .636 & .791 & .770\\
+4 $\mathrm{ER}_{1.6}$     & .254 & .356 & .384 & 1.000 & .553 & .261 & .353 & .379 & .204\\
+5 $\mathrm{ER}_{0.8}$     & .626 & .755 & .817 & .553 & 1.000 & .688 & .636 & .784 & .627\\
+6 EMD                    & .732 & .769 & .806 & .261 & .688 & 1.000 & .624 & .807 & .763\\
+7 KI                     & .496 & .676 & .636 & .353 & .636 & .624 & 1.000 & .697 & .560\\
+8 TWD                    & .604 & .916 & .791 & .379 & .784 & .807 & .697 & 1.000 & .694\\
+9 VdE                    & .744 & .695 & .770 & .204 & .627 & .763 & .560 & .694 & 1.000\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\begin{table}[htbp]
+\centering
+\caption{Published concordance with the expert scores \citep{aranda2026mec}, reproduced by the original validation script on the stored benchmark. Coefficients retain the paper's four-decimal display convention.}
+\label{tab:results-expert-concordance}
+\small
+\begin{tabular}{@{}lr@{}}
+\toprule
+Measure & Kendall's $\tau_B$\\
+\midrule
+$\mathrm{MEC}_{2,1.15}$ & 0.8857\\
+$\mathrm{ER}_{0.8}$     & 0.8857\\
+$\mathrm{MEC}_{2,1.2}$  & 0.8666\\
+$\mathrm{MEC}_{2,2}$    & 0.8095\\
+KI                     & 0.8095\\
+EMD                    & 0.7655\\
+TWD                    & 0.7523\\
+VdE                    & 0.6698\\
+$\mathrm{ER}_{1.6}$     & 0.5238\\
+\bottomrule
+\end{tabular}
+\end{table}
+

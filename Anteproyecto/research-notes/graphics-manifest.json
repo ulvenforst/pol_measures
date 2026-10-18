@@ -1,0 +1,90 @@
+[
+  {
+    "key": "erone",
+    "path": "references/arxiv-2606.13997v1/Images/er_axioms/axiom1.png",
+    "width": 1342,
+    "height": 724,
+    "sha256": "b35d7997e8a37991b4297548f63100fc88847a1a130b8c62bc2efd89749ae81b",
+    "document_path": "images/codex-b35d7997e8a37991b4297548f63100fc88847a1a130b8c62bc2efd89749ae81b.png"
+  },
+  {
+    "key": "ertwo",
+    "path": "references/arxiv-2606.13997v1/Images/er_axioms/axiom2.png",
+    "width": 1341,
+    "height": 694,
+    "sha256": "4a19828759b18cf64e675244efb43a5cb6f40e53c5d0bb6e4e6bb2bf19f80103",
+    "document_path": "images/codex-4a19828759b18cf64e675244efb43a5cb6f40e53c5d0bb6e4e6bb2bf19f80103.png"
+  },
+  {
+    "key": "erthree",
+    "path": "references/arxiv-2606.13997v1/Images/er_axioms/axiom3.png",
+    "width": 1342,
+    "height": 695,
+    "sha256": "44dbd2c2cffea8dd5b3ce449fd4a702a1e7b9fdf2b1fbb92ae7f00bfbd7bbcc4",
+    "document_path": "images/codex-44dbd2c2cffea8dd5b3ce449fd4a702a1e7b9fdf2b1fbb92ae7f00bfbd7bbcc4.png"
+  },
+  {
+    "key": "centralsplit",
+    "path": "references/arxiv-2606.13997v1/Images/er_axioms/property1.png",
+    "width": 1342,
+    "height": 695,
+    "sha256": "36090b0c91663da1fdb4896f84446f417124f668fbefe02e4e3d0103fa800a17",
+    "document_path": "images/codex-36090b0c91663da1fdb4896f84446f417124f668fbefe02e4e3d0103fa800a17.png"
+  },
+  {
+    "key": "corpusmatrix",
+    "path": "references/arxiv-2606.13997v1/Images/experimental_comparisons/kendalltau_correlation_matrix.png",
+    "width": 3333,
+    "height": 2994,
+    "sha256": "62b3456e4154d1d05526ba30086c19ecbfb95a4e2eb604889a7a958e4773a38c",
+    "document_path": "images/codex-62b3456e4154d1d05526ba30086c19ecbfb95a4e2eb604889a7a958e4773a38c.png"
+  },
+  {
+    "key": "expertprofiles",
+    "path": "references/arxiv-2606.13997v1/Images/experimental_comparisons/experts_histograms.jpg",
+    "width": 3500,
+    "height": 3863,
+    "sha256": "8f36edf4b37397584b677866c5f0eb907f3096db4497e186d18acc8f54ac0df5",
+    "document_path": "images/codex-8f36edf4b37397584b677866c5f0eb907f3096db4497e186d18acc8f54ac0df5.jpg"
+  },
+  {
+    "key": "expertconcordance",
+    "path": "references/arxiv-2606.13997v1/Images/experimental_comparisons/correlation_experts_opinion.png",
+    "width": 4168,
+    "height": 2068,
+    "sha256": "e901954d6a476edc15e8013546efc5f0b52198cec1835f539a0cd50d798fc991",
+    "document_path": "images/codex-e901954d6a476edc15e8013546efc5f0b52198cec1835f539a0cd50d798fc991.png"
+  },
+  {
+    "key": "coarseparameters",
+    "path": "../benchmarks/expert_validation/mec_parameter_optimization/coarse/kendall_heatmap.png",
+    "width": 1800,
+    "height": 1080,
+    "sha256": "57c5d75df53c7b91bc78fc089f9b79f53768643ca453f524168024eb3e5c0635",
+    "document_path": "images/codex-57c5d75df53c7b91bc78fc089f9b79f53768643ca453f524168024eb3e5c0635.png"
+  },
+  {
+    "key": "refinedparameters",
+    "path": "../benchmarks/expert_validation/mec_parameter_optimization/refined/kendall_heatmap.png",
+    "width": 1800,
+    "height": 1080,
+    "sha256": "9ac3fd35594fc18d906637241095d79a48a21c20d582cfa63a1e72e3ded7a52c",
+    "document_path": "images/codex-9ac3fd35594fc18d906637241095d79a48a21c20d582cfa63a1e72e3ded7a52c.png"
+  },
+  {
+    "key": "supportlinear",
+    "path": "../benchmarks/support_scaling_mec_vs_er/support_scaling_fixed1000_linear.png",
+    "width": 1620,
+    "height": 990,
+    "sha256": "a708b1db6f8647eed8899da60eab4b4e626dec6cf8591e7c0f214fcc8439b678",
+    "document_path": "images/codex-a708b1db6f8647eed8899da60eab4b4e626dec6cf8591e7c0f214fcc8439b678.png"
+  },
+  {
+    "key": "supportlog",
+    "path": "../benchmarks/support_scaling_mec_vs_er/support_scaling_fixed1000_loglog.png",
+    "width": 1620,
+    "height": 990,
+    "sha256": "bfde8a50ff289aa024167f7a8c98644722b058ec999ef3dcefee2d1f0f846dee",
+    "document_path": "images/codex-bfde8a50ff289aa024167f7a8c98644722b058ec999ef3dcefee2d1f0f846dee.png"
+  }
+]

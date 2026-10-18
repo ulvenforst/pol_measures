@@ -1,0 +1,172 @@
+Plan de trabajo preservado al redactar Experimental Results, 11 de octubre de 2026.
+Texto íntegro de la antigua sección 7. Es planificación del anteproyecto, no certificación de ejecución. Los objetivos y entregables siguen identificados en la sección 3.
+
+\section{Work Plan, Schedule, Effort, and Milestones}\label{sec:workplan}
+
+So far the thesis has laid out what it wants to prove and how it plans to test those claims. This chapter gets concrete: what exactly needs to happen, in what order, and by when?
+
+The work has a natural arc. First, read the literature and lock down the experimental setup (which histograms, which comparators, which normalizations). Then push on the formal theory---try to prove the key lemmas, document what works and what does not. In parallel, build the software so that everything is reproducible. Finally, run the experiments: concordance surfaces, diagnostic vignettes, expert validation. Throughout, keep notes, commit code, and write up results as they come in. Some proofs may not go through; some experiments may surprise. That is fine---the goal is honest reporting, not a predetermined conclusion.
+
+\medskip
+
+\noindent\textbf{Scope.}
+Most experiments use five-point Likert scales. Why? Because they are ubiquitous in survey research and because the expert-rated histograms from the literature are defined on five points. The domain is one-dimensional. MEC's sensitivity gets explored across a preregistered $(\alpha,\beta)$ grid; no cherry-picking of parameters. Computations are seedable and run on a laptop---no GPUs, no cluster time.
+
+\medskip
+
+\noindent\textbf{Activities.}
+Fourteen activities (A1--A14), grouped under five objectives. Documentation and version control run throughout.
+
+\begin{table}[t]
+\centering
+\caption{Specific objectives, expected results, and activities. \textbf{Color Code:} \textcolor{blue}{Blue} indicates essential (mandatory) activities; \textcolor{gray}{Gray} indicates desirable activities.}
+\label{tab:activities}
+\footnotesize
+\begin{tabular}{@{}p{0.27\textwidth}p{0.30\textwidth}p{0.35\textwidth}@{}}
+\toprule
+\textbf{Specific Objective} & \textbf{Expected result} & \textbf{Activities (A\#)}\\
+\midrule
+Review and framing of polarization measures; define the synthetic universe (five-point, 1D) and comparison criteria
+&
+State-of-the-art note and experimental guidelines
+&
+\textcolor{blue}{A1. Read polarization measures and axioms.}
+\textcolor{blue}{A2. Read contextual applications and limitations.}
+\textcolor{blue}{A3. Fix the synthetic universe, normalizations, comparators, and metrics.}\\
+\midrule
+Theoretical results for MEC
+&
+Technical notes and formal proofs (to be compiled in an appendix)
+&
+\textcolor{blue}{A4. Draft target lemmas (technical outline).}
+\textcolor{blue}{A5. Prove $\mathrm{MEC}_{1,1}=\mathrm{EMD}$ (linear transport identity).}
+\textcolor{blue}{A6. Prove compliance of MEC with ER-style axioms under stated regimes.}
+\textcolor{gray}{A7. Add and prove team-proposed properties (e.g., central-split monotonicity).}\\
+\midrule
+Open, testable implementation
+&
+\texttt{pol\_measures} package with API/CLI/docstrings; CI/CD; GPL license
+&
+\textcolor{blue}{A8. Implement API and CLI with unit tests; enable CI/CD; provisional install via}
+\texttt{\textcolor{blue}{pip install git+https}}.\\
+\midrule
+Computational evaluation on the synthetic universe
+&
+Concordance surfaces and rank correlations
+&
+\textcolor{blue}{A9. Enumerate by stars-and-bars; generate ``concordance surfaces''.}
+\textcolor{blue}{A10. Compute Kendall $\tau_B$ correlations across measures.}
+\textcolor{gray}{A11. Empirically test ER-style transformations on literature measures.}
+\textcolor{gray}{A12. Threshold analysis (percentiles and $k$-means).}\\
+\midrule
+Transfer and dissemination
+&
+Hardened software and manuscript contributions
+&
+\textcolor{gray}{A13. Address feature requests from the research team.}
+\textcolor{blue}{A14. Contribute text and figures to the MEC paper (theory and experiments).}\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\medskip
+
+\noindent\textbf{Schedule (February--October 2026).}
+Month~1 is February 2026; Month~9 is October 2026. The first five months consolidate the review, the theoretical core, and the software skeleton; the last four months execute the synthetic evaluations, threshold studies, and deliverables.
+
+\begin{table}[t]
+\centering
+\caption{Timeline of activities, Months 1--5 (Feb--Jun 2026)}
+\label{tab:timeline1}
+\footnotesize
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Activity} & \textbf{Month 1} & \textbf{Month 2} & \textbf{Month 3} & \textbf{Month 4} & \textbf{Month 5}\\
+\midrule
+A1 & X & X &  &  &  \\
+A2 & X & X &  &  &  \\
+A3 & X & X &  &  &  \\
+A4 &  & X & X &  &  \\
+A5 &  &  & X & X &  \\
+A6 &  &  &  & X & X \\
+A7 &  &  &  &  & X \\
+A8 &  &  &  & X & X \\
+Documentation (log/CI) & X & X & X & X & X \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{Timeline of activities, Months 6--9 (Jul--Oct 2026)}
+\label{tab:timeline2}
+\footnotesize
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Activity} & \textbf{Month 6} & \textbf{Month 7} & \textbf{Month 8} & \textbf{Month 9}\\
+\midrule
+A9  & X & X &  &  \\
+A10 & X & X & X &  \\
+A11 & X & X & X &  \\
+A12 &  & X & X & X \\
+A13 &  &  & X & X \\
+A14 &  &  & X & X \\
+Documentation (log/CI) & X & X & X & X \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\medskip
+
+\noindent\textbf{Milestones and acceptance criteria.}
+Milestones close at month end and require a merged pull request and a verifiable artifact (note, proof draft, figure, or release).
+
+\begin{table}[t]
+\centering
+\caption{Milestones (M\#), target month, and deliverables}
+\label{tab:milestones}
+\footnotesize
+\begin{tabular}{p{0.09\textwidth}p{0.18\textwidth}p{0.60\textwidth}}
+\toprule
+\textbf{M\#} & \textbf{Target month} & \textbf{Acceptance criterion / Deliverable}\\
+\midrule
+M1 & Month 2 & State-of-the-art note (A1--A2) plus synthetic-universe spec and comparators (A3).\\
+M2 & Month 3 & Technical outline of lemmas (A4) and proof sketch for $\mathrm{MEC}_{1,1}=\mathrm{EMD}$ (A5).\\
+M3 & Month 4 & Completed proof of $\mathrm{MEC}_{1,1}=\mathrm{EMD}$ (A5) and ER-axioms plan (A6).\\
+M4 & Month 5 & Added formal properties (A7) and package skeleton with API/CLI and CI/CD running (A8).\\
+M5 & Month 7 & Enumerated universe and preliminary concordance surfaces (A9) plus first Kendall matrix (A10).\\
+M6 & Month 8 & Cross-validation among measures and empirical ER-transform tests (A11) plus threshold analysis (A12).\\
+M7 & Month 9 & Polished package with requested features (A13) and consolidated MEC manuscript draft (A14).\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\medskip
+
+\noindent\textbf{Effort and roles.}
+Average dedication: \emph{20 hours/week} (peaks around solver checks and figure generation), for a total of $\sim$720 hours over nine months. Supervision by Prof.\ Juan Francisco Díaz Frías, Prof.\ Jesús Alexander Aranda (directors) and Prof.\ Frank D.\ Valencia (co-director) ensures continuity from formal development to reproducible computation.
+
+\medskip
+
+\noindent\textbf{Software, licensing, and reproducibility.}
+The implementation will be released under the \emph{GNU General Public License (GPL)} in the repository \texttt{Ulvenforst/pol\_measures}. Continuous integration will enforce unit tests across all measures before publishing. A provisional install path will be provided via:
+\begin{quote}
+\texttt{pip install git+https://github.com/Ulvenforst/pol\_measures.git}
+\end{quote}
+Containerization is not planned at this stage. The long-term goal, conditional on an accepted article, is to propose MEC for inclusion in the SciPy ecosystem. All experiments (enumeration, scoring, concordance, figures) will ship with seeds and reproducible pipelines.
+
+\medskip
+
+\noindent\textbf{Ethics and data governance.}
+No new human-judgment study is conducted here. References to “experts” denote \emph{published} expert-based indices and scores reported by prior work; they will be used strictly for external comparisons. Any local demonstrations with public data will be handled by the research group’s data team, observing institutional guidance on consent, anonymization, and intellectual property. University-hosted educational activities will employ consented, non-sensitive aggregates only.
+
+\medskip
+
+\noindent\textbf{Computational resources and feasibility.}
+All computations run on a personal workstation (ROG Zephyrus G14, AMD Ryzen~9 4900HS, 24\,GB RAM). With five categories and inner loops of order $O(n\log(1/\varepsilon))$ for the compromise search, the full synthetic suite is well within capacity; no GPUs are required. This pragmatic constraint encourages careful engineering and audited tolerances rather than brute force.
+
+\medskip
+
+\noindent\textbf{Expected outcome.}
+If this plan succeeds, the reader will know not only \emph{what} results are sought, but \emph{how} they will be produced, verified, and reported: theory tied to geometry, geometry tied to code, and code tied to transparent comparisons. The path is laid out---month by month, milestone by milestone---though actual results may differ from expectations.
+

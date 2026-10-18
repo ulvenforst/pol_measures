@@ -1,0 +1,116 @@
+Texto preservado antes de redactar la sección 6. Su condición de propuesta no acredita ejecución.
+
+\section{Research Design and Methodology}\label{sec:methods}
+
+Everything in this thesis revolves around one optimization problem: minimize the effort function over $y$. Two mathematical facts do most of the heavy lifting. First, when $\beta>1$, the objective $y\mapsto \sum_x \pi(x)^\alpha |x-y|^\beta$ is strictly convex, so there is a unique minimizer. Second, the first-order condition defines a balance function $F(y)$ that is monotone increasing, which makes bisection a natural numerical strategy:
+\[ F(y)\;=\;\sum_{x<y}\pi(x)^{\alpha}(y-x)^{\beta-1}\;-\;\sum_{x>y}\pi(x)^{\alpha}(x-y)^{\beta-1}\;=\;0. \]
+These tools let you reason about how the minimum changes when you perturb the distribution, even without closed-form solutions.
+
+What formal results is the thesis aiming for? Here is the target list---though not all may survive the proof process:
+
+\begin{enumerate}\itemsep4pt
+  \item \emph{Existence and uniqueness.} For $\beta>1$, prove that $y^\star$ exists and is unique. The strict convexity argument looks straightforward; the monotonicity of $F$ should follow.
+  \item \emph{Link to EMD.} At $(\alpha,\beta)=(1,1)$, MEC should reduce to the Earth Mover's Distance to a point mass. This is almost definitional, but writing it out cleanly matters.
+  \item \emph{Identification and alienation.} When you consolidate nearby masses or push camps further apart, MEC should go up (weakly). The proof strategy: use perturbation paths and exploit the superadditivity that $\alpha>1$ induces. Whether ``weakly'' can be strengthened to ``strictly'' depends on regularity conditions still to be pinned down.
+  \item \emph{Central-split monotonicity.} Take mass sitting at the center of a five-point scale and split it symmetrically toward the flanks. Does MEC increase? The conjecture is yes, for $\alpha\ge1$ and $\beta>1$. Plan: parameterize the split by $\delta$, check that the derivative at $\delta=0^+$ is positive, then lean on convexity.
+\end{enumerate}
+
+If a proof does not go through, the thesis will document what broke and how far partial results extend.
+
+\paragraph{Proof sketches.}
+For \emph{identification}, compare two convex programs that differ by a transport-preserving relocation toward a local centroid. Jensen-type reasoning, combined with the superadditivity from $\alpha>1$, should yield a strict increase. For \emph{alienation}, shift one pole outward while $y^\star$ sits on the opposite side; the monotonicity of $F$ tracks how the minimizer moves, and a lower bound on the value increment makes the role of $\beta-1$ explicit. For \emph{dispersion to extremes}, the idea is a two-step argument: first show $y^\star$ stays near the center, then show the value goes up because you are now making longer moves.
+
+\medskip
+\noindent\textbf{Synthetic experiments.}
+
+The point of the synthetic universe (defined in \S\ref{sec:data}) is not to get a single number but to build a \emph{map}: where does MEC agree with competitors, and where does it diverge?
+
+\emph{Parameter grid.} Preregister $\alpha\in\{1,1.5,2\}$ and $\beta\in\{1,1.15,1.2,1.5,2\}$. Report scores raw and normalized (using the maximal bimodal profile as reference). Numerical tolerances fixed at $\varepsilon\in\{10^{-6},10^{-8}\}$.
+
+\emph{Solvers.} Two methods run side by side: a bounded scalar optimizer and bisection on $F$. If they disagree beyond $\varepsilon$, rerun at tighter tolerance and log the discrepancy.
+
+\emph{Concordance surfaces.} For each $(\alpha,\beta)$ pair, compute Kendall's $\tau_B$ between MEC and each comparator (ER-style, Van der Eijk, Tastle--Wierman, EMD baseline) over the full mirror-reduced corpus. Also compute top-$k$ overlaps for $k\in\{10,25,50\}$. Plot these as surfaces with bootstrap confidence bands.
+
+\emph{Diagnostic vignettes.}
+Three families will be preregistered: (I) \emph{flat dissent vs.\ two camps} at matched first–moment transport cost; (II) \emph{extremism vs.\ polarization}, adding mass to extremes without forming two blocs, contrasted with balanced bimodality; (III) \emph{small transfers} outside typical axiomatic quantifiers. For each, the thesis proposes to sweep the governing parameter (separation $s$, lopsidedness $\lambda$, erosion $\delta$), graph score gaps, and annotate order flips.
+
+\begin{table}[t]
+\centering
+\caption{Pre-registered computational grid and outputs on the synthetic universe}
+\label{tab:pregrid}
+\footnotesize
+\begin{tabular}{p{0.28\textwidth}p{0.62\textwidth}}
+\toprule
+Parameter grid & $\alpha\in\{1,1.5,2\}$;\quad $\beta\in\{1,1.15,1.2,1.5,2\}$;\quad normalization: raw and $[0,1]$-scaled.\\
+Optimization & Bounded scalar search on $[0,1]$; cross-check via bisection on $F$ for $\beta>1$; tolerances $\varepsilon\in\{10^{-6},10^{-8}\}$.\\
+Comparators & ER-style comparator (two settings), Van der Eijk, Tastle--Wierman, EMD-to-consensus.\\
+Global summaries & Kendall’s $\tau_B$ matrices; top-$k$ overlaps ($k\in\{10,25,50\}$); bootstrap stability bands.\\
+Vignettes & (I) flat vs two camps; (II) extremism vs polarization; (III) small transfers; score-gap plots vs $(s,\lambda,\delta)$.\\
+Robustness & $\pm 1$-respondent perturbations among adjacent bins; rank-flip rates reported.\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\medskip
+\noindent\textbf{Published expert corpus (analysis plan).}
+The thesis proposes to \emph{reuse} the fifteen five–point histograms and ratings reported by \citet{koudenburg2021new}. From their data the thesis will construct an aggregated expert order and pairwise preferences; for each index the thesis will report Kendall's $\tau_B$ and top–$k$ agreement with the aggregated order, and fit Bradley–Terry/Thurstone models on induced pairs to assess comparative consistency. Stability will be summarized via leave–one–out and bootstrap concordance on this small set.
+
+
+
+
+\medskip
+\noindent\textbf{Regional mini–cases (analysis plan).}
+For aggregate Likert snapshots tied to youth/civic topics in Valle del Cauca, the thesis proposes to report MEC (raw and normalized), ordinal agreement foils, and the transport baseline, then \emph{read} the result in terms of few long moves vs.\ many short moves, balanced vs.\ lopsided splits, and the cost of realigning opinions toward a single compromise point $y^\star$ (not necessarily the midpoint). When multiple time points exist, trajectories will include light noise bands via $\pm1$–respondent redistributions across adjacent categories to reflect survey roughness.
+
+\medskip\noindent\textbf{Reporting and robustness.}
+The thesis proposes to predeclare numerical tolerances, parameter grids, and exclusion rules; publish full code and seeds; and ship concordance surfaces, vignette plots, and expert–calibration figures as first–class outputs. Robustness will be part of the narrative: sensitivity to normalization, $(\alpha,\beta)$ choices, solver route, and small–count perturbations. Thresholding schemes (percentile bands vs.\ data–adaptive $k$–means) will appear once—in Results—with explicit caveats.
+
+\medskip
+\noindent\emph{Expected outcome of this methodology.}
+By the end of the thesis, the reader should know precisely which levers were used to attempt proofs of which properties, which comparisons illuminated which disagreements, and which diagnostics translated numbers into judgments. Proofs and estimates belong to the thesis proper; the path to them is laid here.
+
+% Proposal material retained for the subsequent methodology revision.
+\subsection{Data and Primary Sources: Availability, Measurement Strategy, and Feasibility}\label{sec:data}
+
+Data for this thesis comes from three sources, each serving a different purpose. First, a fully synthetic universe of Likert histograms---no sampling error, complete control. Second, published expert judgments from the literature, reused strictly for external validation. Third, small aggregate cases from Valle del Cauca to see how the measure reads real civic issues.
+
+Start with the synthetic corpus. Take a five-point Likert grid and enumerate every possible integer-valued histogram for $N=100$ respondents:
+\[
+\mathcal{D}^{(5)}_{100} \;=\; \bigl\{\, \pi=(\pi_1,\dots,\pi_5)\in\mathbb{N}_{\ge 0}^{5}:\ \sum_{i=1}^5 \pi_i = 100 \,\bigr\},
+\]
+By stars-and-bars, that gives $\binom{104}{4}=4{,}598{,}126$ histograms. Many indices are symmetric under reflection (swapping ``strongly agree'' with ``strongly disagree''), so the plan is to quotient by mirror symmetry: keep only the lexicographically smaller of each histogram and its reversal, with palindromes counted once. That cuts the set roughly in half, to $2{,}299{,}063$ unique representatives. Why bother with this exhaustive enumeration? Because it lets you test polarization transformations---consolidation, separation, center erosion---without worrying about sampling noise. You can sweep through the whole space, chart concordance surfaces, hunt for counterexamples, and see exactly which shapes different measures reward.
+
+For external validation, the plan is to reuse the expert-rated histograms from \citet{koudenburg2021new}. They collected pairwise judgments from 60 experts on 15 curated five-point profiles---uniform scatter, centered unimodality, balanced and lopsided bimodal shapes, controlled center erosion. From those ratings an aggregated expert order can be constructed. The thesis will then ask: does MEC's ranking match the experts' ranking? Kendall's $\tau_B$ and top-$k$ overlap will quantify the agreement; Bradley--Terry/Thurstone models will check comparative consistency. Leave-one-out and bootstrap summaries will probe stability. Importantly, \emph{no new expert data will be collected}---this is purely secondary analysis.
+
+Finally, a few local mini-cases. These are aggregate Likert summaries---no individual-level data---from youth and civic consultations in Valle del Cauca: budget priorities, institutional trust, attitudes toward civic actions. The point is not statistical inference; the samples are too small for that. Instead, they serve as reading exercises. Which issues does MEC rank as most polarized? How do those rankings shift over time? What does the ``effort-to-consensus'' number actually tell you about the shape of opinion? The compromise point $y^\star$ need not be the scale midpoint; MEC finds it endogenously.
+
+Computationally, MEC comes down to a one-dimensional minimization. For $\beta>1$ the objective is strictly convex (or so the theory predicts), which means a unique $y^\star$ exists. Bisection on the first-order condition works fine; a bounded scalar optimizer serves as a cross-check. Each function evaluation is $O(n)$ where $n$ is the number of categories---cheap. Scores get reported raw and also normalized to $[0,1]$, using the maximally polarized profile (half the mass at each extreme) as the reference.
+
+Implementation details---licensing, CI, installation---appear in \S\ref{sec:workplan}. The code ships with fixed random seeds; every figure and table should be reproducible. No GPUs needed; a decent laptop handles the full synthetic sweep. Mini-cases use only anonymized aggregates.
+
+\subsection*{Funding}
+
+The project activities are partially funded by the Colombian \emph{Minciencias} project PROMUEVA, BPIN 2021000100160. Dedications are in hours per week; values are in Colombian pesos (COP).
+
+\begin{table}[h]
+\centering
+\caption{Staff cost}
+\label{tab:staff-cost}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}l l c r r@{}}
+\toprule
+\textbf{Concept} & \textbf{Role} & \textbf{Dedication} & \textbf{Cost hour} & \textbf{Total cost}\\
+\midrule
+Juan Camilo Narváez Tascón & Researcher & 24 & \$48.000 & \$41.472.000\\
+Jesús Alexander Aranda & Director & 2 & \$180.000 & \$12.960.000\\
+Juan Francisco Díaz & Director & 2 & \$180.000 & \$12.960.000\\
+Frank Valencia Posso & Director & 2 & \$180.000 & \$12.960.000\\
+Carlos Pinzón & Advisor & 2 & \$120.000 & \$8.640.000\\
+\midrule
+\multicolumn{4}{r}{\textbf{Total staff cost}} & \textbf{\$88.992.000}\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+

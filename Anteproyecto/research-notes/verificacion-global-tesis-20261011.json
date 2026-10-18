@@ -1,0 +1,58 @@
+{
+  "scope": "Global thesis audit",
+  "repo_revision": "7c431768d725822fe933104e1733887ba67d591b",
+  "expert_results": {
+    "MEC(1,1)": {
+      "tau_B": 0.7655590023509529,
+      "display_truncated": 0.7655
+    },
+    "MEC(2,1.15)": {
+      "tau_B": 0.8857142857142857,
+      "display_truncated": 0.8857
+    },
+    "MEC(2,2)": {
+      "tau_B": 0.8095238095238096,
+      "display_truncated": 0.8095
+    },
+    "EMD": {
+      "tau_B": 0.7655590023509529,
+      "display_truncated": 0.7655
+    },
+    "ER(0.8)": {
+      "tau_B": 0.8857142857142857,
+      "display_truncated": 0.8857
+    },
+    "ER(1.6)": {
+      "tau_B": 0.5238095238095238,
+      "display_truncated": 0.5238
+    },
+    "Experts": {
+      "tau_B": 0.8095238095238096,
+      "display_truncated": 0.8095
+    },
+    "Shannon": {
+      "tau_B": 0.7523809523809525,
+      "display_truncated": 0.7523
+    },
+    "VanDerEijk": {
+      "tau_B": 0.6698641270570838,
+      "display_truncated": 0.6698
+    }
+  },
+  "tests": {
+    "runner": "python3 -m tests.run_tests",
+    "count": 90,
+    "result": "OK"
+  },
+  "compile": "success",
+  "source_sha256": "1395e613dfc3eceae8ba5c0a9a5c4bd54791626be0ecbbf8eee011617d0d8fd5",
+  "images_verified": 11,
+  "unresolved_refs": [],
+  "unresolved_cites": [],
+  "uncited_bibliography": [
+    "espectadorSuenos2024",
+    "javerianaPROMUEVA",
+    "scielo2023paro",
+    "swissinfo2021trust"
+  ]
+}

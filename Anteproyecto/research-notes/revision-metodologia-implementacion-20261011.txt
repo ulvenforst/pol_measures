@@ -1,0 +1,114 @@
+Revisión de la sección 6, 11 de octubre de 2026
+
+Objeto y alcance
+Se redactó Computational Methodology and Implementation en sn-article.tex,
+con cinco subsecciones sobre cómputo, software, datos, comparación y reproducción.
+Se preservaron exactamente las secciones 1–5, los capítulos posteriores todavía
+pendientes, el apéndice teórico A y la bibliografía. El presupuesto original pasó
+íntegro al apéndice B como estimación del anteproyecto, no gasto auditado.
+El texto anterior de metodología y datos está conservado en
+metodologia-del-anteproyecto-preservada-20261011.txt.
+
+Fuentes
+Paper oficial references/2606.13997v1.pdf y sección 8 de sus fuentes,
+references/arxiv-2606.13997v1/sections/08-experiments.tex.
+Anteproyecto aprobado references/Anteproyecto_de_grado-vfinal.pdf.
+Código del repositorio padre, en src/measures, tests y benchmarks.
+Documentación oficial de scipy.optimize.minimize_scalar y scipy.stats.kendalltau.
+La API de SciPy consultada y el entorno instalado no se identifican como una
+misma versión. El entorno de pruebas usó SciPy 1.17.0 y NumPy 2.4.2.
+
+Métodos contrastados
+MEC usa minimize_scalar con method bounded sin tolerancia explícita en la API.
+La bisección es una utilidad de referencia para beta mayor que uno, no la ruta
+pública de MEC. Epsilon limita el ancho del intervalo, no directamente el error
+del esfuerzo. Las identidades de mediana y media se separaron de los solvers.
+MECNormalized toma la potencia 1/beta de la razón de esfuerzos y no normaliza
+por sí misma las masas. La interfaz normaliza posiciones por defecto y conserva
+pesos salvo petición explícita. compute evita el procesamiento de entradas.
+El dominio de validación de exponentes es más amplio que el dominio demostrado.
+
+Corpus
+El total es 4598126 perfiles, con 1326 palíndromos y 2299726 representantes por
+reflexión. Se corrigió el mero cociente por dos que figuraba en el anteproyecto.
+Cada representante tiene peso uno; no se afirma que su correlación coincida
+necesariamente con la del corpus completo con multiplicidades distintas.
+Los quince histogramas expertos se normalizan por sus propios totales. Las
+puntuaciones humanas agregadas son diferentes del índice ajustado KI. No se
+atribuyeron respuestas individuales ni datos pareados humanos al módulo de datos.
+
+Implementaciones y comparación
+Se identificaron las clases MEC, EstebanRay, EMDPol, VanDerEijkPol, ShannonPol
+(TWD, no entropía de Shannon) y Experts (KI, no puntuaciones humanas).
+EMDPol se utiliza en categorías igualmente espaciadas con masa unitaria.
+El paper conserva MEC(2,1.15) como referencia. Su condición de máximo dentro de
+los parámetros evaluados no demuestra optimalidad en un dominio continuo.
+Se documentaron redondeo a 1e-4 en corpus, truncamiento a cuatro decimales en el
+script original de validación y flotantes sin cuantización en búsqueda.
+La ordenación estricta con desempates por orden de identificador de un informe
+suplementario no se equipara con tau_B sobre vectores de puntuaciones.
+La fórmula de tau_B excluye empates conjuntos y reconoce denominador nulo.
+
+Análisis suplementario
+La configuración guardada tiene 30371 pares en rejilla gruesa y 1656 refinados.
+Se describieron selección de regiones, 100 candidatos, 1000 remuestreos con
+semilla 42 y quince omisiones individuales. Leave-one-out no reentrena parámetros.
+Bootstrap remuestrea perfiles, no expertos. No se presenta como validación
+independiente porque calibración y concordancia emplean el mismo benchmark.
+Las regiones con exponentes menores que uno no heredan garantías teóricas.
+No se sustituyó la referencia histórica del paper por la recomendación posterior.
+
+Compromisos conservados y límites de evidencia
+Se mantienen identificables top-k de perfiles, vignettes, perturbaciones,
+Bradley–Terry/Thurstone y casos regionales del anteproyecto, sin declararlos
+realizados a partir de otros scripts. La rejilla propuesta no prueba preregistro.
+Los scripts con argumentos no equivalen a una CLI instalada para la librería.
+La configuración CI no prueba despliegue automático ni todos los runs remotos.
+No se identificó inequívocamente la revisión generadora de cada figura del paper.
+El presupuesto y la especificación de recursos del anteproyecto no se describen
+como gasto real ni máquina usada por todos los experimentos.
+No se alteró código de la librería ni se ejecutó el corpus completo de millones
+de perfiles. Las secciones posteriores continúan siendo texto pendiente de adaptación.
+
+Verificación de este turno
+La suite existente python -m tests.run_tests pasó sus 90 pruebas.
+Entorno usado /Library/Frameworks/Python.framework/Versions/3.14/bin/python3.
+El intento inicial con Python incluido en las dependencias de escritorio carecía
+de SciPy; no se instalaron dependencias ni se modificó ese entorno.
+Se comprobaron 255 histogramas pequeños de cinco categorías y total ocho.
+EMDPol coincidió con la referencia de mediana ponderada en todos ellos.
+Se recalcularon total, palíndromos y representantes del corpus principal.
+MEC(2,1.15) dio tau_B 0.8857142857142857 contra los quince scores expertos;
+la normalización por raíz y el truncamiento original mantuvieron ese valor.
+Esto verifica casos concretos, no reproduce por sí solo toda la evaluación publicada.
+El compilador integrado devolvió success después de guardar el mismo sn-article.tex.
+Referencias internas y citas tienen destino, no hay etiquetas duplicadas, y los
+entornos están equilibrados. Las cinco subsecciones se conservaron.
+No se exportó otro PDF ni se abrió otra pestaña. No se realizó commit.
+
+Auditoría final de la sección 6, 11 de octubre de 2026
+Se releyeron la sección completa, la sección experimental del paper, las páginas
+9, 12–13 y 16 del anteproyecto y las implementaciones y scripts pertinentes.
+Se contrastaron otra vez la bisección, el optimizador público, los datos expertos,
+los recuentos por reflexión, las convenciones de cuantización y los ajustes
+suplementarios guardados. La fórmula de tau_B y los dominios y normalizaciones
+siguen siendo correctos dentro de las condiciones expresadas.
+Se conservaron las cinco subsecciones. Se mejoraron las transiciones hacia
+software y corpus. Se sustituyó broader grid por additional parameter grid para
+no atribuir una extensión mayor a la rejilla original frente a la suplementaria.
+Se añadió la clasificación opcional mediante cutoffs de thresholds.py, cotejada
+con base.py. La interfaz consulta umbrales guardados para medidas y parámetros;
+no calcula percentiles ni ajusta k-means al histograma recibido. Su existencia
+no identifica por sí misma el corpus de calibración. La comparación del paper
+emplea puntuaciones, no etiquetas. Esta aclaración preserva la actividad A12.
+No se encontraron otras omisiones esenciales dentro del cometido metodológico.
+La sección queda completa dentro de ese cometido. Este cierre no certifica
+cumplimiento de entregables pendientes, datos regionales no aportados o
+proveniencia exacta de todas las figuras. Su evaluación pertenece a resultados
+y discusión, con los elementos ya identificados en la metodología y objetivos.
+El compilador integrado devolvió success después de los ajustes. Comparación
+exacta confirma que el contenido anterior y posterior a la sección 6 no cambió.
+Referencias, citas, etiquetas y entornos pasaron la comprobación estática.
+No se repitió la suite de la librería, que ya había pasado 90 pruebas en el turno
+anterior, porque no se cambió código, fórmulas ni algoritmos. No se exportó otro
+PDF ni se abrió otra pestaña. No se realizó commit.

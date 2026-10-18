@@ -1,0 +1,125 @@
+Revisión y redacción de la sección 7, 11 de octubre de 2026
+
+Alcance
+Se sustituyó exclusivamente Work Plan, Schedule, Effort, and Milestones por
+Experimental Results en el mismo sn-article.tex abierto. La nueva sección
+contiene cuatro subsecciones y seis tablas nativas de LaTeX. No depende de
+imágenes externas, de modo que conserva la compilación integrada autocontenida.
+No cambió el contenido anterior ni posterior a esta sección. Los capítulos 8 y
+9, portada y abstract todavía contienen material pendiente del anteproyecto.
+El plan anterior está íntegro en plan-de-trabajo-del-anteproyecto-preservado-20261011.txt.
+Objetivos, actividades esenciales y deseables siguen identificados en sección 3.
+
+Fuentes contrastadas
+Paper oficial references/2606.13997v1.pdf, sección experimental de sus fuentes
+y las imágenes de matriz Kendall y comparación experta. La matriz completa se
+transcribió y cotejó visualmente, sin pretender regenerar millones de scores.
+Anteproyecto aprobado, particularmente sus páginas 9, 12 y 16 sobre objetivos,
+metodología, actividades y entregables. Se conserva la finalidad de comparaciones,
+sensibilidad de parámetros, reproducción y factibilidad computacional.
+Código de ValidationData, ValidationCalculator, scripts de búsqueda y estabilidad,
+corpus_timing_mec_vs_er.py y support_scaling_mec_vs_er.py. Se contrastaron resultados
+con los CSV y JSON guardados y el antiguo valores_polarizacion.txt.
+
+Resultados publicados
+La matriz conserva los nueve candidatos y todos sus coeficientes a tres decimales.
+Se distingue concordancia mutua de exactitud o validez frente a expertos.
+TWD/MEC(1,2) tiene el máximo off-diagonal 0.916; ER(1.6) tiene concordancias
+menores que 0.4 salvo con ER(0.8); KI conserva su limitación en perfiles de un lado.
+Los quince perfiles se presentan como transcripción almacenada por el repositorio,
+con totales propios y medias agregadas. No se atribuyen nuevas observaciones ni
+se confunde KI con las puntuaciones humanas.
+
+Reproducción focalizada
+Se recalcularon los valores de todos los candidatos con el script original,
+normalización de masas y truncamiento a cuatro decimales, sin llamar a main ni
+sobrescribir los resultados de la librería. Las nueve cifras de la figura oficial
+se reprodujeron exactamente con su convención de truncamiento para display.
+MEC(2,1.15) y ER(0.8) alcanzan 0.8857142857142857, con 99 pares concordantes y
+6 discordantes de 105. Sus pares discordantes no son los mismos. EMD y MEC(1,1)
+tienen 0.7655590023509529 y el mismo vector truncado; VdE 0.6698641270570838.
+Ambas medidas EMD y VdE tienen un par empatado. Se explicó por qué el informe
+suplementario con permutaciones estrictas no sustituye esta tau_B.
+No se presenta MEC como superior a todos los comparadores ni como validación
+independiente, ya que calibración y evaluación usan el mismo pequeño benchmark.
+
+Análisis complementarios
+Los CSV guardados confirman 30371 puntos y 198 máximos en rejilla gruesa, y
+1656 puntos y 865 máximos en refinamiento, ambos con máximo 0.8857142857142857.
+Los 100 candidatos guardados tienen idénticas medias y desviaciones bootstrap y
+leave-one-out. El win share 0.01 divide empates entre 100 y no mide probabilidad
+de superioridad única. La recomendación posterior (2.024,1.178) conserva el mismo
+Kendall y usa Pearson dentro de la shortlist; no sustituye (2,1.15).
+No se repitió la búsqueda completa ni se atribuyó a resultados publicados.
+
+Rendimiento
+Se reportan los runs de scoring full_mec_w1.json y full_er_w1.json, ambos con
+2299726 histogramas, un worker, repeat uno y compute directo. MEC usa 159.671 s,
+ER 6.110 s. ER es aproximadamente 26.1 veces más rápido en cinco categorías.
+No se confunde scoring con duración de todo el pipeline ni con generación.
+Se distingue la máquina ARM/macOS/Python de los recursos planeados en propuesta.
+La prueba de soporte usa masas exponenciales positivas normalizadas, seed
+20260528 y 1000 perfiles por tamaño; preparación y warm-up fuera del timer.
+Se transcribieron tamaños 5, 100, 200, 400, 800, 2000 del JSON fixed1000. Ambos
+solvers MEC superan ER desde 400 en los tamaños probados, sin afirmar punto de
+cruce universal ni deducir complejidad asintótica a partir de tiempos finitos.
+El JSON registra 110 comparaciones de solvers, con máximo absoluto 3.575193e-7
+y relativo 3.460230e-5, distintos de la tolerancia de intervalo 1e-8.
+No se repitieron benchmarks de corpus completo ni se modificó código.
+
+Límites y compromisos pendientes
+Se conserva expresamente el compromiso de casos regionales sin inventar scores,
+poblaciones, histogramas o datos humanos. Requieren provenance verificable.
+Top-k de perfiles, modelos pareados, perturbaciones y todos los sweeps planeados
+no se declaran ejecutados sin sus propios outputs. No se añade una quinta
+subsección vacía de resultados regionales. Su integración queda pendiente.
+
+Verificación final
+El compilador integrado devolvió success después de guardar el mismo archivo.
+La comparación exacta con backup temporal confirma prefijo y sufijo intactos.
+Etiquetas únicas, destinos de referencias y citas, y entornos equilibrados.
+La matriz transcrita es simétrica con diagonal unitaria. Se verificaron cifras
+contra la imagen oficial. No se usaron dos puntos en prosa de nueva sección.
+No se abrió otra pestaña, no se exportó PDF ni se creó documento sustituto.
+La suite de librería ya había pasado 90 tests en sección 6; no se repitió al no
+alterarse implementación. La ejecución focalizada verificó el resultado experto.
+No se realizó commit. Los cambios previos del repositorio se preservaron.
+
+Auditoría final posterior a la incorporación de gráficos
+Se releíeron íntegramente la sección 7 actual y la sección experimental del paper,
+y se contrastaron de nuevo objetivos, metodología y actividades del anteproyecto
+aprobado (páginas 9, 13 y 16). Se inspeccionaron código original de validación,
+búsqueda y resampling, registros JSON de corpus y soporte y CSV de búsqueda.
+Los mapas y el gráfico de rendimiento conservan el protocolo de los datos descritos.
+La secuencia narrativa va de concordancia entre índices a referencia humana,
+sensibilidad de parámetros y viabilidad computacional. Cada gráfico tiene llamada
+en el texto y un pie que identifica su procedencia y límites. Ningún gráfico nuevo
+se presenta como prueba de propiedades matemáticas o validación independiente.
+
+Se reprodujeron otra vez los coeficientes del benchmark con ValidationCalculator,
+sin ejecutar main ni sobrescribir resultados. Todos coinciden con la verificación
+previa. Se confirmaron 99 pares concordantes y 6 discordantes para MEC(2,1.15) y
+ER(0.8), los 30371/198 y 1656/865 puntos/máximos de las rejillas y 1000 muestras
+por tamaño para las tres implementaciones en los once tamaños del benchmark.
+
+Corrección puntual necesaria
+La afirmación anterior sobre vectores truncados idénticos de EMD y MEC(1,1)
+era incorrecta. Los perfiles 8 y 15 difieren en 0.0001 entre implementaciones.
+La identidad matemática permanece; sus ordenaciones, patrón de empates y tau_B
+son iguales. Se corrigió únicamente ese párrafo del LaTeX, dejando coeficientes,
+figuras, tablas y el resto del documento sin cambios. Esta constatación corrige
+la descripción histórica del apartado Reproducción focalizada de esta nota.
+
+Resultado y límite del cierre
+Las cuatro subsecciones están completas para los resultados publicados y los
+experimentos complementarios verificados que presentan. No se detectaron otras
+discrepancias en esos resultados. Las siete imágenes de la sección coinciden
+byte a byte con originales; cinco figuras y cuatro tablas; etiquetas únicas y
+referencias resueltas. El compilador integrado confirmó success tras la corrección.
+No se reran experimentos completos, ni se modificó implementación de la librería.
+
+Puede continuarse con discusión y limitaciones. Esto no certifica cumplimiento
+integral de todos los compromisos del anteproyecto. Los casos regionales y los
+análisis anunciados sin resultados verificables siguen pendientes de evidencia
+o de una delimitación académica justificada. Su situación debe quedar explícita
+en el balance de objetivos antes del cierre definitivo de la tesis.

@@ -1,0 +1,76 @@
+Redacción de la sección 9, 11 de octubre de 2026
+
+Objeto y conservación
+Se reemplazó solamente Expected Contributions, Limitations, and Impact por
+Conclusions and Future Work en el mismo sn-article.tex abierto en el editor.
+Dos subsecciones desarrollan Conclusions y Future Work. Se mantuvo la etiqueta
+sec:contrib como alias de compatibilidad y se añadió sec:conclusion.
+El texto anterior se conserva íntegro en
+contribuciones-del-anteproyecto-preservadas-20261011.txt.
+La comparación exacta confirmó que el texto antes y después del capítulo permanece
+igual, incluidas sección 8, portada, resumen, apéndices, imágenes y bibliografía.
+
+Fuentes
+Se releyeron páginas 28–29 del PDF oficial references/2606.13997v1.pdf,
+su sección 09-conclusion.tex, páginas 19–20 del anteproyecto aprobado, y el
+capítulo actual de discusión. Se aplicó russellian-clear-writing.
+La propuesta de estructura ya había sido sustentada en la revisión oficial anterior.
+
+Contenido
+Conclusions responde a la pregunta mediante fundamentación formal y concordancia
+empírica en el benchmark estudiado. Sintetiza transporte, convexidad, dispersión,
+consenso óptimo, maximalidad, axiomas, división central, Minority Principle y
+Tipping Point, comparación empírica e implementación. Conserva los tres ejes de
+contribución del anteproyecto sin convertir todo el plan en trabajo ejecutado.
+No repite matrices, pruebas, timings, listado A1–A14 ni la tabla de objetivos de
+sección 8. Remite a su balance para los entregables sin evidencia suficiente.
+No se afirma que los casos regionales pasen automáticamente a trabajo futuro.
+
+Condiciones matemáticas
+MEC cero exactamente al consenso y máximo en la distribución extrema equilibrada
+para masa total fija en alpha,beta>=1. Existencia en ese dominio y unicidad beta>1.
+El caso lineal es mínimo EMD al consenso, sin repetir la formulación abreviada del
+cierre del paper como igualdad directa a EMD de la distribución extrema.
+Los tres axiomas originales ER tienen régimen conjunto alpha>1,beta>=1; no se
+atribuye caracterización KNS íntegra ni equivalencia a ER. Central-split conserva
+configuración propia y no se identifica con Axiom 3. Minority Principle se refiere
+a dos posiciones; método Tipping Point se limita a alpha=beta=2.
+MEC(2,1.15) y ER(0.8) coinciden en tau_B aproximado 0.886 en quince perfiles;
+no se atribuyen rankings idénticos, superioridad universal o validación externa
+independiente. Se expresa apoyo parcial a la hipótesis comparativa.
+
+Trabajo futuro
+Desarrolla las líneas del paper: espacios métricos generales y dominios más amplios;
+sensibilidad y justificación de alpha,beta, incluido (2,1.15); extensión del Tipping
+Point; validación independiente y encuestas reales, ruido e incertidumbre; modelos
+de actualización de opiniones; interpretación aplicada de y* en mediación y política.
+Se conservan las extensiones multidimensionales, redes e incertidumbre mencionadas
+en el anteproyecto. Son preguntas posteriores, no resultados nuevos. No se deriva
+predicción de consenso o de su tiempo a partir del óptimo estático.
+
+Verificación
+Compilador integrado devolvió success después de guardar el mismo archivo.
+Citas y referencias resueltas, etiquetas únicas, entornos equilibrados.
+Texto fuera del capítulo preservado exactamente, archivo anterior conservado.
+No se cambió código de pol_measures ni se repitieron experimentos o pruebas de
+implementación sin necesidad. No se exportó otro PDF, abrió otra pestaña ni hizo
+commit. El cierre sintetiza la evidencia disponible; no certifica cumplimiento
+integral de los entregables pendientes ni adaptación del resumen y portada.
+
+Auditoría final de la sección 9
+Se releyó el cierre completo junto con la discusión de sección 8, el cierre y
+las identidades de dispersión del paper, y los objetivos y contribuciones de
+las páginas 9 y 19–20 del anteproyecto aprobado. La síntesis recoge los tres
+ejes prometidos y las líneas abiertas del artículo sin repetir pruebas, figuras,
+tablas ni el balance detallado de entregables. Sus recapitulaciones de resultados
+son necesarias para responder a la pregunta de investigación en las conclusiones.
+Se precisó únicamente el párrafo formal. Se identifica explícitamente (1,1)
+como mínimo EMD a consenso de la misma masa. MAD sobre una mediana y varianza
+coinciden con MEC(1,1) y MEC(1,2) para masa unitaria; para masa general ambas
+dispersiones normalizadas se multiplican por Sigma pi. Esta precisión sigue
+el corolario Median and Mean Consensus del paper y no añade resultados.
+El compilador integrado confirmó success. Se comprobaron etiquetas únicas,
+referencias y citas resueltas y entornos equilibrados. El texto fuera de sección 9
+permanece exactamente igual. No se ejecutaron nuevos experimentos ni se modificó
+la librería. La sección puede cerrarse editorialmente dentro de su alcance, sin
+certificar el cumplimiento de entregables que el capítulo 8 deja sin verificar.

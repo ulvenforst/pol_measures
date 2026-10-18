@@ -1,0 +1,172 @@
+Auditoría global de la tesis
+11 de octubre de 2026
+
+Documento revisado
+/Users/ulvenforst/Codex/University/pol_measures/Anteproyecto/sn-article.tex
+Revisión del repositorio 7c431768d725822fe933104e1733887ba67d591b.
+Se revisó el texto completo, incluidos preliminares, nueve capítulos, dos apéndices
+y dieciséis referencias, y se contrastó con el artículo, su fuente, el anteproyecto
+aprobado y la implementación y resultados disponibles. No se modificó el LaTeX
+ni el código de la librería. Se conservaron el editor y todos los documentos.
+
+Veredicto
+El núcleo científico está desarrollado. No se identificó una omisión esencial de
+los resultados formales del paper dentro del alcance acordado ni un error nuevo
+que exija rehacer las demostraciones. La declaración de que cada capítulo está
+editorialmente terminado no equivale a certificar la entrega completa. La portada
+y el resumen aún describen un anteproyecto; la ejecución de parte del alcance
+aprobado sigue sin verificarse. Hace falta cerrar esas diferencias con evidencia
+o con una modificación de alcance debidamente justificada.
+
+1. Preliminares y coherencia global
+La línea 45 conserva Undergraduate Proposal. Debe identificar el trabajo final,
+el programa y título al que se opta, con los datos que requiera la plantilla del
+programa. Conviene verificar nombre completo, título aprobado, nombres y cargos
+de dirección, afiliaciones, ciudad y fecha. Los correos no son un requisito
+científico y su presencia debe decidirse conforme al formato institucional.
+El resumen, línea 74, sigue íntegramente en estado prospectivo. Dice This proposal,
+will formalize y plan involves, y anuncia casos regionales sin resultados en el
+cuerpo. Debe reescribirse a partir de lo realmente documentado. Ha de incluir el
+problema, formulación de MEC, análisis formal, corpus y benchmark, hallazgo principal
+y límite empírico. El régimen conjunto ER es alpha>1,beta>=1 y la concordancia
+MEC(2,1.15) coincide con ER(0.8), aproximadamente 0.886. No debe afirmar validación
+independiente en perfiles nuevos ni ejecución de los casos regionales pendientes.
+Verificar si el programa exige resumen en español además del abstract inglés.
+La keyword social networks necesita revisión porque el trabajo no desarrolla un
+modelo de redes. La frase final de introducción, línea 146, anuncia una futura
+presentación de los casos regionales con datos y resultados. Debe concordar con
+el alcance final que se cierre, en vez de anunciar material que no existe aún.
+Al cerrar los entregables, armonizar sus estados en capítulos 1, 3, 6, 7, 8 y 9.
+
+2. Precisión del benchmark original
+El paper y la tesis describen un estudio en el que participaron sesenta expertos.
+La fuente primaria de Koudenburg, Kiers y Kashima especifica sesenta participantes,
+pero excluye dos respuestas tras el screening y realiza los análisis cuantitativos
+con cincuenta y ocho. La tesis debe distinguir participación y muestra analítica
+cuando describe los scores agregados, sin cambiar la figura heredada del paper
+ni sus resultados. Esta precisión se añade como procedencia, no como sustitución
+silenciosa de la fuente científica de MEC.
+La fuente primaria también explica los cuatro totales no unitarios de la tabla.
+La barra central del perfil 3 se truncó inadvertidamente a 44 en lugar de 80;
+en los perfiles 5, 6 y 10 se mostraron 44 en lugar de 45. Los autores utilizaron
+las frecuencias efectivamente mostradas, dividiéndolas por su suma y escalándolas
+a 100. Esto respalda la transcripción actual y la normalización por cada total.
+No deben corregirse esos histogramas a los valores inicialmente pretendidos.
+Añadir una explicación breve de esta procedencia en métodos/resultados y cotejar
+los scores transcritos con el suplemento original si se exige trazabilidad completa.
+Fuente primaria, apartados Selection of Experts, Data Screening y Exploratory Analyses
+https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2021.738258/full
+
+3. Objetivos y compromiso regional
+Objetivos 1 y 2 tienen fundamentación formal, corpus y comparación publicados.
+Objetivo 3 tiene API, docstrings, instalación, tests, GPLv3 y workflow CI. setup.py
+no define console_scripts y el workflow instala dependencias y ejecuta pruebas,
+sin mostrar una publicación o despliegue automatizados. Se debe aclarar qué CLI
+y qué alcance de CI/CD comprometido se consideran cumplidos, documentar lo existente
+o completar lo necesario. No se prescribe una infraestructura de despliegue nueva
+por defecto ni se equiparan scripts experimentales a una CLI general instalada.
+Objetivo 4 tiene matriz, comparación de parámetros y evidencia suplementaria de
+estabilidad y tiempos. No se verificaron outputs de top-k de perfiles, toda la
+rejilla anunciada, todas las vignettes y perturbaciones de cuentas. Los modelos
+Bradley–Terry/Thurstone y preregistro pertenecían al plan, pero el paper no demuestra
+su ejecución. Una shortlist de parámetros no es un solapamiento top-k de perfiles.
+No puede fabricarse preregistro retrospectivo. Se necesitan registros previos si
+existieron, o explicar honestamente que el análisis fue exploratorio y su desviación.
+Objetivo 5 cumple la comparación publicada con expertos, pero los casos regionales
+siguen sin datos y resultados verificados en los materiales revisados. Para incluirlos
+se necesitan preguntas, posiciones, masas agregadas, fechas, procedencia y condiciones
+de uso, y luego scores e interpretación. Su exclusión necesita una decisión de alcance
+justificada, no simplemente trasladarlos a Future Work.
+A7 está realizado mediante central-split. A11, A12 y A13 son actividades deseables;
+no deben transformarse automáticamente en requisitos universales. Los umbrales
+en thresholds.py no documentan por sí solos el estudio de calibración A12. No se
+verificaron el estudio completo de transformaciones A11 ni el registro A13.
+El artículo documenta A14 como producto conjunto; se debe explicitar el aporte
+propio de Juan con información confirmada, sin inferir tareas individuales desde
+la lista de autores. La autoría del paquete en setup.py no asigna cada prueba formal.
+
+4. Reproducibilidad y procedencia
+La matriz del corpus se reproduce fielmente del paper, pero no se regeneraron sus
+millones de scores en esta auditoría. No es necesario repetirla para citarla como
+resultado publicado. Para afirmar reproducción numérica integral, hace falta un
+registro preciso o una regeneración controlada con la configuración documentada.
+El run_comparison.py actual calcula doce entradas; la figura publicada contiene
+nueve. Hay que documentar la selección y los renombres y determinar si la referencia
+MEC usa MEC o MECNormalized antes de redondear. Una transformación monótona preserva
+rankings exactos, pero redondear a 1e-4 después de distintas transformaciones puede
+crear empates distintos. No se afirma que la matriz publicada sea incorrecta.
+Conservar matrices/arrays numéricos y configuración, no solamente PNG. Fijar la
+revisión de código, versiones de dependencias, comandos, parámetros, datos y regla
+de redondeo/truncamiento de cada resultado. requirements y setup declaran rangos,
+no identifican un entorno histórico. Registrar el entorno actual tampoco identifica
+por sí solo el que produjo una figura anterior.
+Mantener la diferencia entre MEC(2,1.15) del paper y (2.024,1.178) de la recomendación
+suplementaria, y entre la rejilla fuera del dominio teórico y los teoremas >=1.
+No hace falta realizar otra validación independiente para conservar una conclusión
+limitada al benchmark; esa validación continúa siendo una línea de trabajo futuro.
+
+5. Contexto, bibliografía y apéndices
+La narrativa conceptual útil del anteproyecto está integrada en los capítulos 1–3.
+El bloque regional/PROMUEVA original está preservado en research-notes. Conviene
+recuperar solamente el contexto institucional o motivación necesario para entender
+el trabajo y el aporte propio, verificando sus afirmaciones. No hace falta recuperar
+el CV, los perfiles extensos de directores ni las predicciones especulativas.
+Cuatro entradas de la bibliografía actual no están citadas en el cuerpo
+espectadorSuenos2024, javerianaPROMUEVA, scielo2023paro, swissinfo2021trust.
+Conservarlas sólo si se integran fuentes pertinentes; en otro caso retirarlas de
+la bibliografía final sin borrar la documentación de referencia. Revisar metadatos,
+autores, capitalización de nombres propios, DOI y datos editoriales. No se atribuye
+un error bibliográfico concreto a una entrada sin comprobar su fuente primaria.
+La cita del trabajo MEC lo identifica correctamente como arXiv preprint v1. No
+se verificó aceptación en revista; la tesis no debe inferirla de estar en arXiv.
+La discrepancia Minimum en el texto y Minimal en el título citado corresponde al
+propio paper y no debe corregirse cambiando el título bibliográfico oficial.
+Apéndice A conserva la demostración auxiliar necesaria para tipping-point. Apéndice B
+es un presupuesto planificado, no gastos ejecutados, y así está identificado. Decidir
+con el formato/directores si corresponde incluirlo en el documento final o preservarlo
+sólo en el expediente. No requiere inventar una contabilidad ejecutada.
+Eliminar del .tex final el bloque de tabla obsoleta comentada después de sección 3
+si se desea limpiar el código fuente; no afecta al PDF ni constituye contenido perdido.
+
+6. Formato y entrega
+El formato visual sigue el artículo por petición de Juan. Esa equivalencia no prueba
+por sí sola cumplimiento de la plantilla institucional. El artículo 18 de Resolución
+137/2023 remite formato e índice al Comité del Programa y establece 80 páginas,
+incluidos anexos y con exclusiones expresas. Su artículo 24 remite modificaciones
+del anteproyecto al Comité para consideración y aprobación. Verificar la guía vigente
+de EISC y el procedimiento aplicable con los directores antes de descartar objetivos.
+Revisar idioma permitido, portada y página de título, resumen/abstract, listas de figuras
+y tablas, numeración y extensión. Las listas no están en el fuente actual, pero no se
+presentan como exigencia confirmada sin la plantilla del programa. Agradecimientos,
+dedicatoria y lista de notación son decisiones o requisitos a comprobar, no carencias
+científicas universales.
+Fuente oficial reabierta
+https://eime.univalle.edu.co/images/documentos/programas/docu_curricular/Resolucion_No_137-2023_Reglamento_De_Trabajo_De_Grado_ABR_18.pdf
+No se certifica vigencia exclusiva de esa resolución ni disponibilidad de una plantilla
+específica de Ingeniería de Sistemas. La revisión visual página a página de la última
+vista renderizada, el conteo definitivo y la comprobación de saltos, legibilidad,
+figuras, tablas y enlaces siguen pendientes. Compilar no basta para certificarlos.
+No se exportó un PDF alternativo ni se abrió otra pestaña para esta auditoría.
+
+7. Comprobaciones ejecutadas
+Compilador integrado devolvió success para el archivo abierto.
+Se ejecutó python3 -m tests.run_tests en el repositorio actual, noventa pruebas OK.
+El entorno inspeccionado fue Python 3.14.3, NumPy 2.4.2, SciPy 1.17.0, pandas 3.0.0
+y Matplotlib 3.10.8. No se atribuye ese entorno a todos los resultados históricos.
+Se reprodujeron los nueve coeficientes del benchmark con ValidationCalculator,
+sus datos almacenados y truncamiento; coinciden con los publicados.
+MEC(2,1.15) y ER(0.8) dieron 0.8857142857142857.
+Se comprobaron etiquetas únicas, referencias y citas resueltas. Nueve figuras
+contienen once archivos de imagen; hay ocho tablas. Las once copias de imagen
+coinciden byte a byte y por SHA256 con sus originales. Las tablas y cifras de búsqueda
+y tiempos se cotejaron con los outputs disponibles. No se ejecutó el barrido completo
+ni nuevos experimentos. Verificacion-global-tesis-20261011.json conserva los checks.
+
+Orden de cierre recomendado
+Primero cerrar la matriz de compromisos y el alcance con evidencia disponible.
+Después documentar procedencia del benchmark, aportes propios y reproducción.
+Actualizar portada, resumen, keywords y los anuncios del contenido una vez que
+se sepa qué incluye efectivamente el documento. Integrar el contexto pertinente
+y depurar referencias y apéndices. Terminar con formato institucional, revisión
+visual de todo el PDF, conteo y compilación final. Mantener cerrados los capítulos
+científicos salvo estas correcciones puntuales y las que requiera nueva evidencia.

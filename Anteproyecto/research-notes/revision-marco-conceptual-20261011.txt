@@ -1,0 +1,181 @@
+REVISIÓN DE LITERATURE REVIEW AND CONCEPTUAL FRAMEWORK
+11 de octubre de 2026
+
+Alcance
+
+Revisión de contenido y planificación de redacción del futuro capítulo 2. El texto existente está todavía en la sección 3, líneas 170–210 de sn-article.tex. La sección 2 actual sigue siendo Motivation, Field Positioning, and Regional Context. No se reordenó ni modificó el manuscrito en esta revisión.
+
+Se contrastó el texto íntegro de Literature Review and Conceptual Framework con el anteproyecto aprobado, páginas 6–9; las secciones 1, 2, 3, 4, 7, 8 y 9 del artículo y sus macros y bibliografía; las páginas correspondientes de su PDF; y las implementaciones de los comparadores y los scripts del benchmark experto. Se consultaron fuentes primarias adicionales cuando el artículo describe una medida pero no proporciona su fórmula completa. Esto no constituye una reproducción de todos los experimentos ni una auditoría independiente de todas las demostraciones del artículo.
+
+Fuentes locales
+/Users/ulvenforst/Codex/University/pol_measures/Anteproyecto/sn-article.tex
+/Users/ulvenforst/Codex/University/pol_measures/Anteproyecto/references/2606.13997v1.pdf
+/Users/ulvenforst/Codex/University/pol_measures/Anteproyecto/references/Anteproyecto_de_grado-vfinal.pdf
+/Users/ulvenforst/Codex/University/pol_measures/Anteproyecto/references/arxiv-2606.13997v1/main.tex
+/Users/ulvenforst/Codex/University/pol_measures/Anteproyecto/references/arxiv-2606.13997v1/sections/
+/Users/ulvenforst/Codex/University/pol_measures/Anteproyecto/references/arxiv-2606.13997v1/main.bib
+/Users/ulvenforst/Codex/University/pol_measures/src/measures/metrics/literature/
+/Users/ulvenforst/Codex/University/pol_measures/benchmarks/expert_validation/
+
+Veredicto
+
+El hilo identificación–alienación, transporte y juicios expertos debe conservarse. El texto aún no está listo para darse por terminado. Contiene errores de fórmula, una presentación incompleta de VdE, una confusión entre los supuestos de la caracterización ER y los axiomas demostrados para MEC, una descripción incorrecta del protocolo experto y afirmaciones demasiado amplias sobre medidas alternativas. Mantiene además promesas del anteproyecto que no son los métodos reportados en el artículo terminado.
+
+CORRECCIONES NECESARIAS
+
+1. Caracterización ER y Kawada–Nakamura–Sunada, líneas 174–178
+
+La fórmula ER es correcta, pero el texto atribuye fuerza excesiva al resultado de caracterización. La clase de medidas pairwise de antagonismo efectivo es una hipótesis de partida, no una consecuencia que esos axiomas impongan a toda función de polarización. El artículo de Kawada y colaboradores presenta un contraejemplo a la caracterización original y fortalece el Axioma 1. La condición de homoteticidad H ya estaba en el marco original; no debe presentarse como una novedad añadida por KNS. La concavidad local aparece en el razonamiento de la caracterización, pero no debe sustituir informalmente la formulación del Axioma 1'.
+
+El paper MEC demuestra los tres axiomas originales de ER. Axiom 1 se cumple si y sólo si alpha>1, dentro del dominio alpha,beta>=1. Axioms 2 y 3 se cumplen para alpha,beta>=1. No contiene una demostración de cumplimiento de todos los supuestos de caracterización de KNS. Esto debe quedar separado de cualquier discusión bibliográfica de ese trabajo.
+
+En la fórmula ER usar alpha_ER cuando se compara directamente con alpha_MEC, o explicar expresamente que los símbolos pertenecen a familias distintas. El exponente de masa es 1+alpha_ER en ER y alpha_MEC en MEC. La correspondencia entre exponentes no identifica las dos medidas.
+
+La cifra alpha*=aproximadamente1.6 corresponde al régimen ER presentado en el artículo. No trasladarla como límite de alpha_MEC. La descripción de su origen no necesita la expresión empirically derived, que aparece en la definición ER del paper pero entra en tensión con el tratamiento teórico de esa cota en la sección 8.2.
+
+Fuentes primarias suplementarias
+https://www.sciencedirect.com/science/article/abs/pii/S0165176518301848
+https://www.dc.kier.kyoto-u.ac.jp/DC2017papers/Sunada.pdf
+El segundo enlace es una versión de trabajo de 2017, no el PDF editorial final de 2018. Se leyeron modelo, axiomas, contraejemplo y caracterización corregida, páginas 2–7.
+
+2. Van der Eijk, líneas 181–186 y 191
+
+U y la expresión U(1-(S-1)/(m-1)) describen el acuerdo de una capa o patrón de frecuencias semiuniformes. Para una distribución general hay que descomponerla en capas, ponderar el acuerdo de cada capa por la fracción de masa que contiene y sumar. Es incorrecto presentar esa expresión sin las capas como la definición completa de A(pi).
+
+La implementación usa A(pi)=sum_l w_l A_l y VdE(pi)=(1-A(pi))/2. El anteproyecto escribe 1-A(pi), que tiene escala [0,2] cuando A está en [-1,1]. Esa transformación es ordinalmente equivalente, pero no corresponde a la escala [0,1] empleada en la librería. No es simplemente cambiar de signo.
+
+Si se conserva la fórmula de U, deben definirse los patrones contados por TU y TDU, m>=3, S para cada capa y la convención cuando TU+TDU=0. La fórmula sola da 0/0 para capas uniformes o de consenso. También es válido explicar las capas en el marco conceptual y reservar el algoritmo completo para metodología.
+
+VdE sí utiliza unimodalidad y patrones de separación. Eliminar la afirmación de que no considera la geometría de dos picos. La crítica debe limitarse a diferencias concretas de interpretación y resultados del benchmark.
+
+Fuente original subida por el autor
+https://www.researchgate.net/publication/225958476_Measuring_Agreement_in_Ordered_Rating_Scales
+Registro institucional de la publicación
+https://dare.uva.nl/id/5469d114-4f86-4f03-9187-f2a02237ae2a
+
+3. Tastle–Wierman, líneas 186–191
+
+Falta el término inicial 1 en la fórmula de consenso. Con p_i=pi(x_i)/Sigma pi, mu=sum_i p_i x_i y d como amplitud positiva de la escala, las fórmulas son
+C_TW(pi)=1+sum_i p_i log_2(1-|x_i-mu|/d),
+TWD(pi)=1-C_TW(pi)=-sum_i p_i log_2(1-|x_i-mu|/d).
+
+La expresión actual da D_TW=1 ante consenso, cuando el disenso debe valer 0. Hay que distinguir masas de probabilidades. En el paper las masas no están obligadas a sumar uno; la fórmula TW requiere probabilidades. La amplitud corresponde a la escala y no debe contraerse a los bins ocupados. Las categorías con probabilidad cero requieren la convención habitual de contribución cero. En los experimentos la rejilla de cinco categorías evita una escala de amplitud cero.
+
+El archivo shannon.py calcula el negativo de la suma logarítmica, consistente con TWD cuando los pesos están normalizados. La etiqueta de clase ShannonPol es un nombre del código; la denominación académica del manuscrito debe seguir siendo TWD, como en el paper.
+
+Fuente primaria de uno de los autores donde constan ambas fórmulas
+https://iscap.us/proceedings/isecon/2007/2344/ISECON.2007.Tastle.pdf
+Esta fuente es un trabajo de aplicación de Tastle y colaboradores. La referencia principal de la tesis sigue siendo Tastle y Wierman (2007), Consensus and dissention.
+
+4. Afirmaciones sobre dispersión y bimodalidad, líneas 172 y 191
+
+El criterio axiomático se refiere a transformaciones y condiciones específicas. Evitar reglas universales como que dispersar opiniones nunca aumenta polarización o que toda consolidación siempre la incrementa.
+
+No se sostiene que VdE y TWD ignoren ambas la estructura de grupos. Tampoco basta señalar una distribución uniforme y dos grupos en extremos sin construir un ejemplo preciso. Se verificó por cálculo directo el caso de probabilidades uniformes en 0,.25,.5,.75,1 frente a .5,0,0,0,.5.
+VdE uniforme=.5; VdE extremos=1.
+TWD uniforme=.5660149997; TWD extremos=1.
+MEC11 uniforme=.3; MEC11 extremos=.5.
+Estos resultados no afirman que nunca puedan existir empates entre perfiles distintos. Demuestran que la explicación genérica actual no es suficiente y que el caso canónico no es un empate.
+
+El intento de importar la librería en el Python del runtime incluido no pudo ejecutarse por ausencia de scipy. Se inspeccionó el código y los cálculos concretos anteriores se hicieron con las fórmulas y la biblioteca estándar. No se instaló nada ni se modificó el paquete. No presentar estos cálculos como una ejecución de su suite de pruebas.
+
+5. EMD, líneas 194–199
+
+Separar claramente
+EC_{1,1}^pi(y)=EMD(pi,pi_y)=sum_x pi(x)|x-y|,
+MEC_{1,1}(pi)=min_{y in [0,1]}EMD(pi,pi_y).
+La primera es esfuerzo a un punto fijado; la segunda es el mínimo. La frase actual which coincides with EC1,1 tras las dos expresiones resulta ambigua.
+
+El transporte utiliza distribuciones de la misma masa. pi_y debe definirse como consenso con masa Sigma pi. Si se usa W_1, explicar la normalización o la extensión a masas finitas adoptada en el paper.
+
+La EMD general es una distancia entre dos distribuciones; la etiqueta EMD del benchmark representa el mínimo al consenso, equivalente a MEC11, no una distancia a un objetivo arbitrario. Se puede mencionar la identidad con distancia al perfil extremo, pero el teorema y su demostración corresponden al capítulo de MEC.
+
+Compartir la media no implica compartir una distancia de transporte ni el mínimo al consenso. Las dos distribuciones del punto 4 tienen la misma media .5 y distinto MEC11. Eliminar la insinuación de que la sola coincidencia de primeros momentos determina ese coste. Si se desean ejemplos de empate, habrá que construirlos explícitamente y especificar la referencia.
+
+Lupu y colaboradores aportan una aplicación a congruencia. Para los fundamentos de transporte el paper cita Vallender y Geher–Titkos–Virosztek. Añadir sus referencias al redactar si se desarrollan esas bases. No afirmar que toda la familia MEC es una métrica de Wasserstein ordinaria. Para parámetros generales hay una minimización con masas elevadas a alpha y coste elevado a beta.
+
+6. Koudenburg, Kiers y Kashima, líneas 202–206
+
+El protocolo descrito no consiste en comparaciones expertas por pares entre histogramas. Se solicitaron puntuaciones de 0 a 100 para quince histogramas. Los pares que intervienen en la regresión son pares de individuos/categorías dentro de las distribuciones; no hay que confundirlos con pares de histogramas evaluados por expertos.
+
+Mantener las etiquetas KI para el índice y expert scores o expert ranking para la referencia humana. La clase Experts del código implementa KI y no contiene los juicios expertos observados. Éstos están en ValidationData._expert_scores.
+
+La fórmula del anteproyecto es la expresión del índice en escala 0–100, que la implementación divide adicionalmente entre100. Por tanto no es un error de coeficientes, sino una convención de escala que debe quedar explicitada. Usar pi_i o n_i para frecuencias; reservar x_i para posiciones, como en el paper. La versión normalizada al intervalo [0,1] es
+KI(pi)=[2.14 pi_2 pi_4+2.70(pi_1 pi_4+pi_2 pi_5)+3.96 pi_1 pi_5]/[.99 (Sigma pi)^2].
+
+La condición KI=0 si no hay masa en uno de los lados se verifica en la fórmula y figura en la sección 8.2 del paper. Presentarla como rasgo y límite de su definición basada en oposición entre lados, sin concluir que cualquier perfil no consensual necesariamente es altamente polarizado. La definición básica de polarización del paper sólo exige cero ante consenso, no el recíproco.
+
+Precisión adicional de la fuente original
+Sesenta investigadores participaron; después se excluyeron dos casos y el análisis original se basó en58. El paper MEC usa60 como descripción del grupo consultado. Ambos datos son compatibles si se distinguen participación y análisis. Los promedios del repositorio son coherentes numéricamente con58, pero esa coherencia no sustituye una auditoría de los datos individuales. No cambiar silenciosamente una atribución del paper ni confundir este matiz con nueva recolección de datos.
+
+Fuente original, procedimiento, depuración, fórmula y normalización
+https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2021.738258/full
+
+7. Métodos realizados frente a planes, líneas 206 y 210
+
+Bradley–Terry, Thurstone y las preferencias expertas por pares pertenecen al plan del anteproyecto. El paper reporta Kendall tau_B sobre los quince histogramas y sus puntuaciones publicadas. No se localizaron menciones de Bradley o Thurstone en benchmarks, src y tests del repositorio durante esta revisión. No redactarlos como análisis realizados sin evidencia adicional.
+
+La enumeración, tamaño exacto, reducción por reflexión, solvers, grid, concordancias y resultados pertenecen a los capítulos de métodos y experimentos. El marco puede explicar por qué comparar rankings y por qué importan los empates, sin repetir su procedimiento completo ni asegurar preregistro retrospectivo.
+
+El benchmark utilizado para elegir parámetros es también el utilizado para informar concordancia. Diferenciar alineamiento en los perfiles evaluados de validación independiente fuera de muestra. MEC2,1.15 empata con ER0.8, no supera todas las alternativas. Los valores y su interpretación detallada pertenecen a resultados y discusión.
+
+OMISIONES RELEVANTES
+
+La sección debe explicar el alcance de opinión unidimensional representada en coordenadas numéricas. Las distancias suponen una representación fija. No confundir un histograma estático con polarización afectiva, relaciones de red o un modelo dinámico.
+
+Faltan la teoría de identidad social de Tajfel y Turner y la disonancia cognitiva de Festinger, ambas empleadas por el paper para motivar el peso de grupos y el coste de cambios grandes. Presentarlas como motivación e interpretación del modelo, sin afirmar que alpha o beta son parámetros psicológicos directamente medidos o empíricamente calibrados por esas teorías.
+
+Conviene desarrollar la diferencia entre dispersión, extremismo y polarización, junto con un ejemplo verificable. La distinción entre mover un grupo completo y trasladar un fragmento puede anunciarse como una razón para el análisis teórico posterior. No hace falta duplicar aquí las demostraciones de Minority Principle, Tipping Point o maximalidad.
+
+Falta un cierre que explique la diferencia conceptual entre antagonismo pairwise y resistencia al consenso, y la salida adicional y^*. Esta última representa un óptimo del modelo, no una predicción de consenso real. No copiar sin matizar la afirmación de novedad de que ninguna medida previa ofrece optimización, dado que minimizar EMD a consenso precisamente aporta esa estructura en el caso lineal.
+
+La bibliografía actual no incluye Tajfel–Turner, Festinger, Vallender, Geher–Titkos–Virosztek ni Rockafellar. Incorporar las entradas del main.bib que se usen efectivamente. Rockafellar resulta especialmente pertinente en el capítulo matemático. No es necesario añadir toda la bibliografía del artículo al marco sólo por exhaustividad.
+
+NOMENCLATURA A CONSERVAR
+
+pi para distribución; boldsymbol{s}(pi) para soporte; Sigma pi para masa total; pi_i para masas por categoría; p_i o bar{pi}_i para probabilidades; x_i para posiciones; pi_y para consenso con igual masa; pi* para perfil extremo; y* para un minimizador; EC_{alpha,beta}^pi(y) y MEC_{alpha,beta}(pi); ER, VdE, TWD, EMD y KI para comparadores. Conservar alpha,beta>=1 para MEC y distinguir el parámetro de ER. Usar tau_B cuando corresponde al cálculo reportado.
+
+REDACCIÓN Y CONSERVACIÓN
+
+El texto actual conserva prácticamente íntegra la revisión del anteproyecto. No se detectó pérdida de su hilo narrativo en esta sección. Lo pendiente es transformar ese material en una exposición correcta de una investigación terminada. Preservar los párrafos y expresiones útiles de Juan; cambiar lo que sea incorrecto, propuesto pero no realizado, demasiado general o propio de otro capítulo. Evitar el tono promocional de the answer, two indices show up everywhere, something is off y los giros coloquiales. Evitar los dos puntos salvo necesidad. Mantener la voz explicativa y el recorrido de los tres enfoques.
+
+SUBSECCIONES PROPUESTAS PARA EL CAPÍTULO 2
+
+2.1 Opinion Polarization, Dispersion, and Extremism
+Conceptos y alcance de la representación de datos; notación mínima necesaria para los comparadores.
+
+2.2 Identification, Alienation, and the Axiomatic Tradition
+ER, interpretación, axiomas originales y distinción respecto de la caracterización KNS.
+
+2.3 Agreement and Dissention on Ordered Scales
+VdE con capas y escala; TWD con probabilidades, fórmula correcta y amplitud de la escala.
+
+2.4 Transport Distances and Consensus
+EMD entre distribuciones de la misma masa y mínimo al consenso; relación con el caso lineal de MEC.
+
+2.5 Expert Judgments and the Koudenburg–Kiers–Kashima Index
+Diseño original de puntuaciones, construcción del índice, benchmark humano y límites.
+
+2.6 Positioning MEC in the Literature
+Resistencia al consenso, óptimo endógeno, motivación social de parámetros y complementariedad de evidencia teórica y empírica. Enlace a capítulos posteriores sin repetir sus pruebas o resultados.
+
+Estos títulos son una propuesta de redacción. No se aplicaron al LaTeX ni se movió contenido en esta revisión. No hubo compilación, puesto que el manuscrito no se editó.
+
+APLICACIÓN POSTERIOR AUTORIZADA POR JUAN
+
+El 11 de octubre se aplicó la revisión en el mismo sn-article.tex. Literature Review and Conceptual Framework ocupa ahora la sección 2 con las seis subsecciones descritas. El antiguo bloque Motivation, Field Positioning, and Regional Context se conservó íntegro en contexto-del-anteproyecto-pendiente-de-integracion-20261011.txt para su integración posterior cuando corresponda. Los compromisos regionales siguen en las secciones posteriores. Se añadieron cuatro referencias del main.bib del artículo, para un total de15 entradas en línea.
+
+La introducción y el cuerpo a partir de Objectives and Scope se comprobaron idénticos a sus versiones inmediatamente anteriores a esta edición mediante SHA256. Se verificaron las claves de citas, la unicidad de etiquetas y la resolución de referencias cruzadas. La prosa nueva no contiene dos puntos. El compilador integrado confirmó success para el archivo guardado después de aplicar los cambios. No se creó un documento sustituto ni se exportó un PDF separado. Las secciones posteriores siguen pendientes de su propia adaptación y no quedan certificadas por esta revisión.
+
+REVISIÓN FINAL Y CIERRE DE LA SECCIÓN 2
+
+Se contrastaron de nuevo las seis subsecciones con la revisión de literatura y los objetivos del anteproyecto aprobado (páginas 6–9), y con las definiciones, propiedades estructurales, comparación axiomatica y experimentos del artículo v1. El hilo de identificación y alienación, transporte y evidencia experta se mantiene. Los cinco comparadores cuentan con explicación y notación consistente. Las fórmulas de VdE, TWD y KI conservan las correcciones documentadas arriba. No se presentan como realizados Bradley–Terry, Thurstone ni estudios nuevos de expertos.
+
+Se hicieron tres precisiones finales en el mismo LaTeX. La representación por categorías presupone una distribución soportada en la escala especificada. La maximalidad de ER se compara entre distribuciones con igual masa total. La explicación de Axiom 2 indica el movimiento del grupo intermedio alejándose del grupo extremo mayor y acercándose al menor, evitando la ambigüedad de more distant endpoint.
+
+Las claves de citas y referencias cruzadas resuelven y las etiquetas son únicas. Los hashes de la introducción y del cuerpo posterior a la sección 2 siguen coincidiendo con los registrados antes de redactarla. El compilador integrado devolvió kind success para el archivo guardado después de estas precisiones.
+
+La sección 2 se considera cerrada como revisión de literatura y marco conceptual. Las demostraciones, configuración computacional, resultados y justificación de cambios respecto del plan pertenecen a capítulos posteriores. Este cierre no certifica que todos los compromisos del anteproyecto estén ya cumplidos por la tesis completa. La sección 3, Objectives and Scope, continúa pendiente de su revisión y no se editó en esta comprobación.
+
+Narrative adjustment requested by Juan on October 11
+Retained the six subsections and improved transitions between the representation of opinions, axiomatic requirements, agreement measures, transport geometry, expert judgments, and MEC. Added a direct connection to the objectives in section 3. All equations and citation keys were verified unchanged. The introduction and later sections were preserved. The integrated compiler returned success.

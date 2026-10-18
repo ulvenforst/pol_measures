@@ -1,0 +1,30 @@
+REVISIÓN Y REDACCIÓN DE LA SECCIÓN 3
+11 de octubre de 2026
+
+Se revisaron Objectives and Scope y los apartados de datos, metodología y plan de trabajo del anteproyecto aprobado, páginas 9–16. Se contrastaron con las definiciones, resultados estructurales, axiomas y evaluación del artículo v1, y con las notas previas de auditoría del repositorio. El marco de estructura sigue la decisión registrada en estructura-tesis-fuentes-oficiales-20261011.txt.
+
+La edición se realizó en sn-article.tex. Se sustituyó exclusivamente la prosa de Objectives and Scope, conservando el bloque comentado posterior y las demás secciones. La nueva sección tiene cuatro subsecciones y mantiene cinco objetivos específicos.
+
+Correspondencia con el anteproyecto
+
+1. Teoría formal. Se conservan minimización, identidad con EMD, axiomas y división central. Se precisan existencia y unicidad para beta>1, y la referencia a los axiomas ER originales. La delimitación distingue la caracterización KNS de los resultados establecidos por el artículo.
+2. Universo sintético. Se conserva la enumeración exhaustiva de histogramas de cinco categorías con masa 100, reducción por reflexión, normalización y comparadores. Se explicita KI como comparador del artículo. No se repite el recuento incorrecto del anteproyecto.
+3. Software. Se mantienen API, CLI, pruebas, documentación, reproducción y semillas cuando hay procedimientos aleatorios. CI/CD y GPL quedan identificados como entregables aprobados de A8. Su enumeración no certifica que se haya acreditado todo el compromiso.
+4. Evaluación computacional. Se mantienen parámetros, superficies de concordancia, tau_B, top-k y perfiles diagnósticos. Se distingue lo planeado de lo ejecutado. No se afirma un preregistro demostrado ni un óptimo global sobre parámetros continuos.
+5. Expertos y aplicaciones regionales. Se conserva la comparación con quince histogramas y sus puntuaciones publicadas, sin nueva recolección. Se mantienen los casos agregados de Valle del Cauca como parte del alcance aprobado, sin afirmar que sus resultados se incluyan en el artículo ni que ya esté verificada su procedencia.
+
+La sección 3.4 conserva A1–A6, A8–A10 y A14 como esenciales, y A7, A11, A12 y A13 como deseables. Se explicita la relación entre A7 y el resultado de división central del artículo. También se conservan como elementos del plan el preregistro, top-k, Bradley–Terry/Thurstone, remuestreo y perturbaciones. No se los presenta como realizados ni se los reclasifica automáticamente como opcionales.
+
+Las delimitaciones distinguen el dominio teórico del corpus finito, el óptimo estático de una predicción dinámica, el benchmark usado en selección y evaluación de una validación independiente, y la interpretación regional descriptiva de inferencia representativa o causal. Minority Principle y Tipping Point se reconocen como desarrollos existentes del mismo modelo, sin añadir metas de investigación nuevas.
+
+Verificación
+
+Se comprobaron cuatro subsecciones, cinco objetivos, etiquetas únicas, resolución de todas las claves de citas y referencias cruzadas, y ausencia de dos puntos en la prosa nueva. El compilador integrado devolvió kind success después de guardar la edición. No se creó otro documento ni se exportó otro PDF.
+
+Las secciones posteriores permanecen pendientes de adaptación, incluidas las afirmaciones del antiguo plan sobre preregistro, preferencias expertas por pares y axiomas KNS. Esta redacción no certifica el cumplimiento completo de la tesis ni sustituye la verificación de entregables en métodos, resultados y discusión.
+
+Narrative adjustment requested by Juan on October 11
+Removed the four subsection headings and integrated their openings into a continuous narrative. Retained all five enumerated objectives verbatim and all scope, delimitations, mandatory and desirable activities, and distinctions between planned and executed analyses. Verified that no references depended on the removed heading labels. Mathematics, citations, and later sections were preserved. The integrated compiler returned success.
+
+Última revisión antes de pasar a la sección 4
+Se contrastó nuevamente el texto vigente con el anteproyecto aprobado, especialmente sus objetivos, datos, metodología, actividades A1–A14 y delimitaciones (páginas 9–10 y 12–20), y con las definiciones, convexidad, axiomas y evaluación del artículo v1 (PDF y fuentes). Se conservaron las cinco líneas de objetivos y la distinción entre actividades esenciales y deseables. La sección no convierte las propuestas de preregistro, top-k, Bradley–Terry/Thurstone, remuestreo o perturbaciones en resultados ejecutados. Las condiciones sobre parámetros, existencia y unicidad, EMD, corpus y uso del benchmark concuerdan con el artículo. No se encontró una corrección necesaria en el LaTeX. El compilador integrado confirmó éxito. La sección 3 queda lista para continuar la redacción; la acreditación del cumplimiento de cada objetivo corresponde a metodología, resultados y discusión, y no queda certificada por este cierre editorial.

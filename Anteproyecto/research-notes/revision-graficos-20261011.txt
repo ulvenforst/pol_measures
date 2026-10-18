@@ -1,0 +1,23 @@
+Graphics review for thesis sections 1–7
+October 11, 2026
+
+Purpose and placement
+Reviewed the original paper figures and the repository's saved experiment plots. Reused eleven source images in nine figure environments. Kept sections 1–4 and 6 free of duplicated illustrations. Section 5 is the natural location for the paper's axiom and central-split diagrams because those configurations are stated and proved there. Section 7 is the natural location for the experimental figures because it reports the corresponding results. The later proposal material remains pending its own revision.
+
+Section 5
+Four original diagrams accompany ER Axioms 1, 2 and 3 and central splitting. Captions follow the thesis's masses and coordinates, state y=2x where the original drawing uses y, and identify the intermediate-position central split with 0<z<x. Endpoint mergers remain explained in the text. Theorems and proofs were preserved.
+
+Section 7
+Reproduced all three published experimental figures. Replaced the native corpus-correlation matrix and native expert-concordance table with their corresponding original plots, retaining the numerical discussion. The full earlier tables are preserved in tablas-resultados-sustituidas-por-figuras-20261011.txt and the previous numerical audit. The expert-profile count and score table remains because it supplies exact data beyond the histogram shapes.
+
+Added the coarse and refined Kendall parameter maps as one vertically paired figure. Each panel has its own colour scale. The cross marks the supplementary pipeline recommendation (2.024,1.178), not the paper's reference (2,1.15). Coarse settings below one do not inherit the theoretical guarantees.
+
+Added the fixed-1000-profile support-size runtime plots as one vertically paired figure with linear and logarithmic axes. They correspond to the saved experiment summarized by the adjacent timing table. The logarithmic slopes are finite-range fits, not asymptotic complexity results. Different-size workload plots and later crossover reruns were not mixed into this figure.
+
+Preservation and implementation
+All eleven manuscript image copies match the original file bytes and SHA-256 hashes. The graphics-manifest.json records source paths, document paths and original dimensions. No image was regenerated, rescaled on disk or relabelled. Ordinary graphicx sizing sets their printed width. The editor recognizes images/codex-<sha256>.png and .jpg paths and includes those files in compilation. Retain these copies as required document assets.
+
+An initial embedded-raster approach was discarded after discovering TeX memory and compiler-call source-size limits. Its helper macros and generator were removed. The final source uses standard includegraphics and remains about 161 kB.
+
+Checks
+All figure labels are unique and all cross-references resolve. Each selected image is included exactly once. Sections 8 onward are identical to the pre-graphics snapshot. No package implementation or experiment output was changed. No experiment was rerun. The built-in compile_latex_document tool returned success for the final saved source. A diagnostic XDV-only pass also loaded all eleven images, without float-too-large or undefined-reference warnings. Existing unrelated paragraph overflows remain; no separate PDF was exported and no alternate document or tab was opened.

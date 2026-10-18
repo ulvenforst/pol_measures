@@ -1,0 +1,166 @@
+Revisión de la introducción de la tesis
+11 de octubre de 2026
+
+Alcance y estado
+
+Se revisó la sección Introduction, Research Question, and Hypothesis de sn-article.tex, líneas 81–124 del estado actual, frente al PDF definitivo 2606.13997v1.pdf y sus fuentes en references/arxiv-2606.13997v1. Se consultaron las secciones 1–9 y las demostraciones pertinentes de los apéndices A, B, C, D, E y F. El análisis se limita a la introducción y a la precisión necesaria para presentar las contribuciones del artículo. No certifica la reproducción de todos los experimentos ni una nueva verificación formal de todas las demostraciones.
+
+El manuscrito no se modificó durante esta revisión. Se conserva el estado respaldado por el commit 7c43176. Su SHA256 antes de la revisión es 48c3a09a8f1831b0cd428960f5c61b7a81eb421df5c1439b0c2c038258f7cc83. El PDF de referencia tiene SHA256 112d5432ae6bf49bf852815e22628b945a1e09abf9fde01cb634003357278951.
+
+Juan autoriza reutilizar literalmente su propio texto del anteproyecto y del artículo. Las recomendaciones siguientes buscan completar el contenido y precisar su alcance, conservando los pasajes ya correctos. No requieren una redacción desde cero.
+
+Dictamen
+
+La introducción conserva un hilo adecuado y su ecuación central es correcta. La distinción entre dispersión y estructura de grupos, la interpretación de MEC como resistencia al consenso y el contraste con ER están alineados con el artículo. Los rangos de los tres axiomas y el resultado principal del benchmark también son correctos. No obstante, el resumen actual todavía no representa todas las contribuciones principales del artículo. Conviene completarlo antes de dar esta sección por cerrada y corregir una afirmación de aplicación regional que todavía no tiene respaldo entre los materiales verificados.
+
+1. Definición y nomenclatura
+
+Las líneas 95–103 reproducen correctamente
+
+EC^pi_(alpha,beta)(y) = sum_x pi(x)^alpha |x-y|^beta
+MEC_(alpha,beta)(pi) = min_(y in [0,1]) EC^pi_(alpha,beta)(y).
+
+El dominio de parámetros alpha,beta >= 1, el soporte finito no vacío y las masas positivas en los puntos ocupados coinciden con la definición del artículo. No se debe restringir las masas a probabilidades. Para completar la presentación basta explicitar pi como función de [0,1] a R_>=0 y definir su masa total Sigma pi = sum_x pi(x). Fuera del soporte las masas son cero.
+
+La notación actual mathbf{s}(pi) tiene el mismo significado que boldsymbol{s}(pi) en macros.tex, aunque cambia la tipografía. Si buscamos coincidencia visual exacta con el artículo, usar boldsymbol{s}. EC y MEC escritos con mathrm son legibles y semánticamente equivalentes a los operadores del artículo. La elección y^star frente a y^* tampoco altera el significado. Conviene adoptar una sola forma para toda la tesis. pi^* designará la distribución extrema balanceada y y^* un minimizador, por lo que no deben intercambiarse.
+
+El título del artículo dice Minimal Effort to Consensus, pero su propia introducción también usa Minimum Effort to Consensus. El nombre actual de la tesis no constituye una contradicción científica. No hace falta cambiarlo durante esta revisión.
+
+La existencia del mínimo debe aparecer expresamente. Se sigue de continuidad sobre el intervalo compacto [0,1]. La unicidad para beta>1, ya indicada, es correcta porque hay al menos un sumando con peso positivo y cada |x-y|^beta es estrictamente convexo. Para beta=1 el conjunto de minimizadores es el de medianas de la distribución con masas pi(x)^alpha, no necesariamente las medianas de pi. Normalizar esas masas no cambia las medianas. El consenso óptimo puede ser una posición intermedia que no coincida con una categoría de la escala Likert. La introducción ya lo permite al minimizar en todo [0,1], pero explicitarlo evita ambigüedad.
+
+2. Interpretación de los parámetros y masa total
+
+La explicación actual de alpha como ponderación del tamaño de los grupos y beta como dependencia del esfuerzo respecto de la distancia es correcta. Puede completarse con la asociación a identificación y alienación que emplea el artículo. La teoría de identidad social y la disonancia cognitiva son motivaciones de modelado, no mediciones psicológicas validadas por el índice. Las referencias de Tajfel–Turner y Festinger ya están en main.bib y podrían incorporarse si se añade esa motivación.
+
+Hace falta recordar que el esfuerzo es el definido por el modelo. No se ha estimado un costo psicológico observado ni se ha demostrado que y^* prediga un acuerdo social efectivo. La aclaración actual de que el óptimo no predice qué posición adoptará la población debe conservarse.
+
+La masa no normalizada exige mencionar el resultado de escalamiento
+
+MEC_(alpha,beta)(lambda pi) = lambda^alpha MEC_(alpha,beta)(pi), lambda>0.
+
+Por ello, comparar valores brutos entre poblaciones de tamaños distintos requiere una convención de normalización. La correspondencia entre mucho esfuerzo y mucha polarización se interpreta con parámetros, coordenadas y convención de masas fijados. Esta precisión puede expresarse en una frase; su tratamiento completo corresponde al capítulo matemático o metodológico.
+
+No debe añadirse una afirmación de que incrementar beta incrementa siempre MEC. En [0,1], elevar beta reduce cada distancia no extrema en términos absolutos. La interpretación correcta describe el peso relativo de movimientos largos frente a cortos para un beta dado.
+
+3. Propiedades matemáticas fundamentales omitidas
+
+El artículo distingue la definición básica de medida de polarización de los tres axiomas ER. MEC satisface la definición básica para todos alpha,beta >= 1. Vale cero en consenso y la distribución con mitad de la masa en cada extremo maximiza MEC entre distribuciones de igual masa total. Esto no exige alpha>1. Esa restricción aparece al exigir también el Axioma 1 de ER.
+
+La introducción debería anunciar este resultado antes o junto al resumen de compatibilidad axiomática. Para una masa M=Sigma pi, el valor extremo es
+
+MEC_(alpha,beta)(pi^*) = 2 (M/2)^alpha (1/2)^beta = 2^(1-alpha-beta) M^alpha.
+
+No hace falta incluir esta fórmula en la introducción si se anuncia claramente la maximalidad. No debe afirmarse unicidad del máximo. En el caso alpha=beta=1 puede haber otras distribuciones que alcancen el mismo valor máximo.
+
+La caracterización L^beta tampoco está anunciada. El Teorema 3 del PDF establece
+
+MEC_(alpha,beta)(pi) = Sigma(pi^alpha) D_beta(overline{pi^alpha}),
+
+con D_beta(rho) = min_y sum_x rho(x)|x-y|^beta para una distribución de probabilidad rho. En esta definición D_beta no lleva raíz beta. La raíz corresponde a otra convención de dispersión o normalización y no debe introducirse inadvertidamente.
+
+De aquí se obtienen la desviación absoluta media respecto de una mediana para beta=1 y la varianza para beta=2, calculadas sobre overline{pi^alpha} y multiplicadas por Sigma(pi^alpha). Cuando alpha=1, esas fórmulas son la dispersión de overline{pi} multiplicada por M. Decir simplemente que MEC_(1,2) es la varianza sin precisar la masa sería incorrecto salvo M=1.
+
+Las invariancias por reflexión y traslación admisible y el escalamiento de población pueden resumirse en una oración. La invariancia por reflexión también fundamenta la reducción del corpus experimental. Las demostraciones y las fórmulas completas deben ir en los capítulos correspondientes.
+
+4. Relación con transporte
+
+La línea 122 da correctamente
+
+MEC_(1,1)(pi) = min_y EMD(pi,pi_y),
+
+donde pi_y tiene la misma masa total que pi. Falta la segunda caracterización geométrica principal del artículo
+
+MEC_(1,1)(pi) = M/2 - EMD(pi,pi^*).
+
+Es el Teorema 1 del PDF y conecta cercanía al perfil extremo balanceado con mayor MEC. No es MEC_(1,1)(pi)=EMD(pi,pi^*). La conclusión del artículo contiene una frase que omite el complemento M/2; la introducción y el teorema del propio artículo dan la identidad correcta. Al reutilizar contenido debe prevalecer la ecuación demostrada.
+
+El caso de transporte clásico se refiere a alpha=beta=1. No debe llamarse distancia métrica entre las distribuciones originales a toda la familia MEC sin precisar la transformación de masas y la potencia de la distancia. La introducción actual evita esta confusión y debe conservar esa precisión.
+
+5. Compatibilidad axiomática y división central
+
+Las líneas 114–115 son fieles a los Teoremas 10–12 del PDF y al apéndice E. En el dominio alpha,beta >= 1, MEC satisface el Axioma 1 si y solo si alpha>1. Los Axiomas 2 y 3 se cumplen en todo el dominio. En consecuencia, cumple los tres simultáneamente para alpha>1,beta>=1. No debe sustituirse este resultado por cumplimiento de todos los postulados de la caracterización KNS o por pertenencia a la familia ER.
+
+El párrafo de división central es correcto para los grupos exteriores positivos que describe, pero resume una versión más restringida que Property 1. El artículo permite masas exteriores iguales p>=0, por lo que también incluye p=0. La condición Delta in (0,q/2) obliga a q>0 y deja masa central positiva. La separación z satisface 0<z<=x, con centro x y extremos 0,2x dentro de [0,1].
+
+Si 0<z<x, la división coloca dos masas Delta en nuevas posiciones interiores x-z y x+z. Por simetría, el incremento de MEC es 2 Delta^alpha z^beta>0. Si z=x, las masas llegan a los extremos ya existentes y deben sumarse allí antes de aplicar alpha. El incremento es 2[(p+Delta)^alpha-p^alpha]x^beta>0. El resultado sigue siendo válido, pero la fórmula interior del apéndice E no cubre literalmente ese extremo.
+
+Conviene identificar explícitamente el resultado como Property 1 y distinguirlo del Axioma 3, que transfiere directamente a los extremos existentes. El contraejemplo ER_(0.8) muestra que Property 1 no se deduce de los tres axiomas ER y aporta una diferencia importante entre MEC y ER que la introducción no anuncia. No hace falta insertar los valores numéricos del contraejemplo en esta sección.
+
+6. Aplicaciones teóricas principales ausentes
+
+El artículo dedica una sección a dos resultados que la introducción actual omite.
+
+El Minority Principle se refiere a una distribución con exactamente dos posiciones ocupadas y masas positivas desiguales. La menor masa aporta más esfuerzo total en el consenso óptimo para alpha,beta>=1. Para beta=1 la mayor masa no se mueve y la menor asume todo el esfuerzo. Para beta>1 ambas contribuyen, pero la minoría aporta más. El resultado concierne al costo matemático definido y no establece un deber social ni un resultado para poblaciones con cualquier número de grupos. La restricción de dos puntos debe aparecer al anunciarlo.
+
+El Tipping Point method se desarrolla para alpha=beta=2. En la configuración inicial de dos grupos y una transferencia parcial a una posición más extrema existe un umbral único que vuelve a igualar el MEC inicial. Por debajo de él MEC disminuye; por encima aumenta. El umbral de cruce de nivel no es el punto donde cambia el signo de la derivada respecto de la masa transferida. La extensión a un soporte general da un polinomio cúbico que gobierna el signo, pero no prueba una raíz única para todo soporte general.
+
+Estos resultados permiten explicar una idea esencial del artículo. Radicalizar una pequeña fracción de un grupo puede disminuir MEC, aunque desplazar el grupo completo bajo las condiciones del resultado de shifting-away lo aumente. Polarización y extremismo no son intercambiables. Si se anuncia el teorema de desplazamiento completo, deben conservarse las condiciones de distribución no consensual y la excepción median-shift para beta=1. Una frase introductoria sobre el contraste entre fragmentación y desplazamiento completo basta; los detalles deben desarrollarse después.
+
+7. Antecedentes y conjunto comparativo
+
+La introducción ya identifica la diferencia conceptual entre ER y MEC. El párrafo general de antecedentes, líneas 87–89, no identifica el conjunto completo de alternativas del artículo ni formula claramente qué aporta la optimización respecto de la comparación directa de perfiles.
+
+El conjunto es ER, EMD, VdE, TWD y KI. Conviene nombrarlos una vez con los rótulos del artículo y explicar brevemente sus enfoques. KI significa Koudenburg–Kiers–Kashima Index. Es un índice ajustado a juicios expertos; no es el orden empírico de los expertos. El benchmark y el índice KI deben mantenerse separados.
+
+VdE usa un criterio de unimodalidad, de modo que no conviene describirlo como indiferente a la estructura de picos. La introducción actual no incurre en esa afirmación, aunque el marco conceptual pendiente sí la contiene. El resumen introductorio puede describir VdE de manera más precisa sin trasladar allí todo el marco teórico.
+
+El aporte de MEC puede presentarse como una formulación de esfuerzo mínimo que produce un valor y un consenso endógeno, con propiedades geométricas y axiomáticas. No hace falta copiar una afirmación universal de que ningún método anterior puede proporcionar un centro o resolver una minimización. En particular, la distancia EMD a un consenso ya conduce a una mediana y coincide con el caso lineal de MEC.
+
+8. Experimentos y comprobación numérica
+
+La línea 119 describe correctamente el corpus exhaustivo, aunque no da su tamaño. El cálculo independiente por stars-and-bars y reflexión reproduce 4 598 126 perfiles, 1 326 palíndromos y 2 299 726 representantes. La introducción puede dar solo este último total y N=100, dejando la derivación al capítulo experimental. La correlación sobre representantes se calcula sobre ese universo; no debe equipararse automáticamente con una correlación que dé igual peso a cada histograma antes de la reducción.
+
+Se verificaron de manera independiente las correlaciones principales sobre las 15 distribuciones y medias expertas de benchmarks/expert_validation/data.py. Se normalizó cada histograma por su suma y se usaron coordenadas 0,1/4,1/2,3/4,1. MEC_(2,1.15) se calculó por bisección de la derivada y ER_(0.8) por su suma explícita. Ambos dieron tau_B=0.8857142857142857. Cada comparación tuvo 99 pares concordantes, 6 discordantes y ningún empate, sobre 105 pares. Esto corrobora el 0.886 de la introducción y el 0.8857 de la Figura 7. No se ejecutó el corpus completo ni una nueva búsqueda de parámetros.
+
+La Figura 7 del artículo da valores inferiores para VdE y TWD, por lo que la comparación verbal actual está respaldada. Las cifras de resultados guardados en el repositorio no deben sustituir automáticamente las de la figura, pues hay diferencias por tratamiento de empates y precisión en algunos comparadores. Esta observación no afecta el empate principal MEC–ER comprobado aquí.
+
+La aclaración actual de que los mismos perfiles informaron la elección de parámetros es pertinente. Debe preservarse. No hay evidencia aquí de validación independiente sobre perfiles no usados para elegir parámetros. Tampoco debe convertir la búsqueda finita en una demostración de optimalidad sobre todos los pares reales permitidos. La hipótesis de superar a las alternativas es solo parcialmente respaldada, tal como ya indica la introducción.
+
+Es importante conservar el carácter secundario de la evaluación experta. El artículo y los datos locales describen puntuaciones de histogramas reutilizadas, no una nueva investigación humana realizada para esta tesis. Las comparaciones por pares de Kendall no implican que se solicitaran juicios por pares a los expertos.
+
+9. Computación
+
+El resumen actual no anuncia la tractabilidad numérica. Para beta>1, una evaluación de la derivada cuesta O(n), con n igual al número de posiciones ocupadas, y la bisección localiza y^* con precisión posicional epsilon en O(n log(1/epsilon)). Para beta=1 se dispone de la caracterización por mediana ponderada. Esto cubre el aporte computacional sin enumerar detalles de implementación.
+
+La precisión posicional no equivale automáticamente a igual precisión en el valor del objetivo. Tampoco conviene afirmar que ER es inherentemente cuadrático ni que MEC siempre es más rápido. El O(n^2) describe la evaluación por pares directa utilizada en la comparación; sobre soporte unidimensional ordenado ER permite sumas acumuladas. Los tiempos dependen de implementación, soporte, tolerancia y entorno.
+
+La clase pública MEC inspeccionada usa minimize_scalar acotado y devuelve solo el valor; el resultado matemático también determina y^*, pero la API no lo expone. Si la introducción anuncia una implementación reproducible, no debe decir que esa API ya retorna ambos objetos. El detalle del algoritmo utilizado pertenece al capítulo metodológico.
+
+10. Alcance regional y atribución
+
+La frase de la línea 112, Regional cases from Valle del Cauca provide illustrations of the measure's application, presenta esas aplicaciones como disponibles. La última oración organizativa vuelve a anunciar regional illustrations. El artículo no contiene esas aplicaciones ni se han verificado sus activos entre los materiales proporcionados. Su conclusión mantiene la aplicación a encuestas reales como trabajo futuro.
+
+El anteproyecto sí contemplaba ilustraciones regionales, y Juan ha indicado que tiene más recursos. Por ello no corresponde declararlas incumplidas ni eliminarlas de la tesis. Hasta recibir o localizar las tablas y resultados, deben figurar como un componente previsto por verificar, separado de los resultados publicados. La afirmación en presente debe ajustarse en la siguiente revisión o reservarse hasta que exista respaldo documental.
+
+La atribución a la investigación conjunta y la coautoría de Juan es adecuada. Las contribuciones individuales concretas no deben inferirse de la lista de autores. Se precisarán con su relato y evidencia. No se requiere resolver esa atribución completa dentro del primer párrafo introductorio.
+
+11. Hilo y plan concreto de revisión
+
+Conservar la apertura sobre desacuerdo, grupos e identificación–alienación. Conservar la interpretación de resistencia al consenso, la definición central, la pregunta y la distinción entre evidencia formal y empírica. Conservar el resultado de axiomas, el empate MEC–ER y la cautela sobre los parámetros. Son piezas ya correctas y útiles del texto propio de Juan.
+
+Completar en este orden
+
+1. Afinar los antecedentes con el conjunto ER, EMD, VdE, TWD y KI y el aporte de la optimización.
+2. Completar la definición con masa total, existencia del mínimo y la mediana ponderada en beta=1.
+3. Anunciar la caracterización L^beta, sus casos clásicos y la identidad con el extremo balanceado.
+4. Resumir cero en consenso, maximalidad a masa fija, simetrías y escalamiento.
+5. Anunciar Minority Principle, Tipping Point para (2,2) y la diferencia entre fragmentación y desplazamiento completo.
+6. Mantener la hipótesis original y presentar después su evaluación, diferenciando definición básica, axiomas ER y Property 1.
+7. Conservar el benchmark y sus límites, añadir el tamaño del corpus y una frase computacional con las condiciones correctas.
+8. Precisar el estado de las ilustraciones regionales y hacer que el cierre anuncie la organización prevista de la tesis, pues sus capítulos todavía no se han convertido todos desde el anteproyecto.
+
+No se propone trasladar todas las demostraciones, excepciones, fórmulas del cúbico, tablas comparativas ni ejemplos numéricos a la introducción. Una introducción completa debe anunciar el problema, el aporte, las contribuciones principales y su alcance. El desarrollo íntegro pertenece a los capítulos correspondientes. Esta revisión no obliga a realizar experimentos nuevos.
+
+Aplicación tras contrastar el anteproyecto aprobado
+
+En el siguiente turno, Juan pidió verificar la pertinencia de estos ajustes frente al anteproyecto y aplicarlos cuando correspondiera. Se releyeron la introducción e hipótesis en las páginas 3–4, los objetivos específicos en la página 9, el diseño formal y experimental en las páginas 12–13, la tabla de actividades en la página 16 y las contribuciones previstas en la página 19 del PDF aprobado.
+
+La existencia, convexidad, unicidad y métodos de cálculo corresponden al objetivo específico 1 y al diseño de la página 12; el cálculo numérico también apoya el objetivo 3 y A8. La relación con transporte responde al objetivo 1 y A5. Los axiomas y Property 1 responden al objetivo 1 y A6–A7. La normalización, las simetrías y los casos particulares de dispersión fundamentan los objetivos 1–2 y A3–A4. El corpus y las correlaciones corresponden a los objetivos 2 y 4, A9–A10. La distinción entre KI y las valoraciones expertas precisa los antecedentes y el objetivo 5.
+
+Minority Principle y Tipping Point no se presentan como dos obligaciones nuevas del anteproyecto. Son resultados complementarios del artículo, coherentes con el desarrollo formal, A7 y la contribución al manuscrito de A14. Tipping Point también explica las viñetas previstas de extremismo frente a polarización y pequeñas transferencias del objetivo 4 y la página 13. Se anuncian con sus condiciones, sin extender el teorema bipuntual a cualquier soporte ni el método (2,2) a otros parámetros.
+
+Se aplicaron los cambios exclusivamente en Introduction, Research Question, and Hypothesis de sn-article.tex. Se conservaron la apertura y el hilo del texto propio de Juan, la pregunta, la hipótesis original como antecedente, el resultado axiomático y la evaluación parcial de la ventaja empírica. Se completaron la definición, las contribuciones matemáticas y computacionales y el conjunto comparativo. Se mantuvo el alcance regional como componente previsto del anteproyecto, separado de los experimentos publicados, sin declararlo realizado ni incumplido. No se afirmaron preregistro, análisis top-k o modelos Bradley–Terry ya ejecutados, pues su realización requiere evidencia propia.
+
+La identidad con EMD al extremo se tomó del Teorema 1 del artículo, conservando M/2 menos EMD. Los capítulos posteriores todavía contienen formulaciones del anteproyecto pendientes de revisión; esta edición no certifica su concordancia científica con la introducción actualizada. Tampoco cambia el plan aprobado ni sustituye la posterior verificación de entregables.
+
+Se comprobó por comparación con Git que el preámbulo y todo el contenido posterior a la introducción permanecieron iguales. Todas las claves bibliográficas empleadas por la sección existen en la bibliografía integrada. El compilador integrado del editor confirmó compilación correcta. No se creó un documento alternativo ni se exportó otro PDF. Los cambios de este turno no se guardaron automáticamente en un commit.

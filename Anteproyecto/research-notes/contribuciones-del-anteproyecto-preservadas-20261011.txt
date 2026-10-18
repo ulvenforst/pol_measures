@@ -1,0 +1,34 @@
+\section{Expected Contributions, Limitations, and Impact}\label{sec:contrib}
+
+What should this thesis leave behind? Three things, ideally.
+
+\textbf{First, formal grounding.} The goal is to pin down whether MEC actually behaves like a polarization measure should, using the Kawada--Nakamura--Sunada (KNS) refinement of Esteban--Ray as the yardstick. Concretely:
+
+\begin{itemize}
+  \item \textbf{Axiom~1$'$ (identification).} Consolidating nearby masses around a central mound should raise MEC. The proof idea: strict convexity in $y$ plus Jensen-type comparisons, exploiting the superadditivity that $\alpha>1$ brings.
+  \item \textbf{Axiom~2 (alienation).} Pushing one pole outward, while the compromise sits on the other side, should raise MEC. Track how $y^\star$ moves via the monotonicity of $F$; the increment scales with $\beta-1$.
+  \item \textbf{Axiom~3 (center erosion).} Splitting central mass symmetrically toward the extremes should raise MEC. This is the ``central-split monotonicity'' tailored to Likert scales.
+\end{itemize}
+
+Not all of these may survive formal proof. If something breaks, the thesis will say what went wrong and how far partial results go. A clean demonstration of the link $\mathrm{MEC}_{1,1}=\min_y \mathrm{EMD}(\pi,\rho_y)$ anchors MEC to the transport literature; what MEC adds for $\alpha>1$ and $\beta>1$ is camp sensitivity.
+
+\textbf{Second, an empirical map.} Not just ``MEC correlates with X,'' but a full concordance surface: where does it agree with ER-style measures, where with dispersion indices, where with transport baselines? The synthetic universe and preregistered vignettes should make disagreements visible and interpretable. Key contrasts: few long moves vs.\ many short ones; balanced vs.\ lopsided splits; symmetric center erosion.
+
+\textbf{Third, reproducible infrastructure.} The Python package, the fixed seeds, the auditable solvers---these matter. Anyone should be able to drop a new measure into the same harness and compare it on the same ground.
+
+\medskip
+
+\noindent\textbf{Limitations.}
+This thesis stays on the Likert line: one dimension, ordered categories. No networks, no multi-issue embeddings. The parameters $(\alpha,\beta)$ are treated as levers to explore, not magic numbers to optimize; reporting stability regions is the goal, not finding a single ``best'' pair. MEC is not pairwise-additive, so ER characterization theorems do not apply directly; compliance with ER Axioms~1$'$--3 is the claim, not equivalence to ER. All ``expert'' references are to published data---no new human subjects, no causal or normative claims. And, frankly, some proofs may not work out. If that happens, documenting the obstacles is itself a contribution.
+
+\medskip
+
+\noindent\textbf{Why does this matter?}
+If it works, MEC would offer something missing in the current toolkit: a polarization measure that respects camp structure, has a clear geometric interpretation (``effort to reach consensus''), and can be checked against axiomatic and empirical benchmarks. For practitioners, it would provide a single number that tracks whether opinion is fracturing into opposed blocs---useful for diagnosis, monitoring, and evaluating interventions. Two rules of thumb should travel with it: treat thresholds as bands, not bright lines; always pair the number with context.
+
+\medskip
+
+\noindent\emph{What comes next (beyond this thesis).}
+Extend to multiple dimensions and network-embedded opinions. Fold sampling uncertainty into the concordance maps. Explore how camp-sensitive geometry interacts with deliberative or moderation interventions. Those are longer-term questions, but the groundwork laid here should make them easier to tackle.
+
+

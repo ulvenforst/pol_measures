@@ -1,0 +1,99 @@
+REDACCIÓN DE LA SECCIÓN 5
+11 de octubre de 2026
+
+Documento activo
+/Users/ulvenforst/Codex/University/pol_measures/Anteproyecto/sn-article.tex
+
+Fuentes reabiertas
+Paper v1, páginas 12–23, fuentes de las secciones 5–7 y Apéndices C–F.
+Anteproyecto aprobado, páginas 9, 12 y 16, objetivos formales y actividades A4–A7.
+Skill russellian-clear-writing, con precisión de hipótesis, argumentos y límites.
+
+Sección 5
+Theoretical Results and Axiomatic Analysis, con cinco subsecciones.
+1. Group Movements and Maximal Polarization. Definición de movimiento completo,
+   separación de median-shift, prueba de aumento estricto, máximo bipuntual
+   equilibrado y máximo general bajo alpha, beta mayores o iguales a 1.
+2. Esteban–Ray Axioms. Cuantificadores y configuraciones de los tres axiomas
+   originales, con demostraciones. Axiom 1 si y solo si alpha mayor que 1;
+   Axioms 2–3 en todo el dominio. No se afirma caracterización KNS.
+3. Central-Split Monotonicity. Condiciones, propiedad y demostración; masas
+   exteriores cero admitidas, rama de fusión en extremos diferenciada, y
+   contraejemplo ER0.8 con evaluación explícita de su constante K.
+4. Minority Principle. Distribuciones con exactamente dos posiciones, ubicación
+   del consenso y contribución agregada de la minoría para todos los parámetros.
+5. Tipping Point and Partial Mass Transfers. Caso alpha=beta=2, fórmula por pares,
+   cambio racional, cubicidad, raíz única bipuntual y ejemplo k*=17.1559796441.
+   La extensión a soporte general no afirma unicidad de un punto crítico.
+
+La prueba larga del discriminante se incluye en el Apéndice A del mismo
+LaTeX. Se conservan todos sus coeficientes y certificado de positividad.
+Los demás argumentos se sitúan junto a los enunciados. No se utilizan
+input, archivos de figuras ni dependencias LaTeX externas nuevas.
+
+Precisiones respecto a enunciados y aproximaciones del paper
+El Teorema 7 del PDF no dice expresamente que pi sea no consensual, aunque
+la explicación previa en página 16 comienza con ese supuesto. Sin él, el
+caso de un único grupo y beta mayor que 1 refuta el aumento estricto.
+La tesis cuantifica al menos dos posiciones ocupadas y explica la razón.
+
+La prueba de Property 1 del Apéndice E evalúa masas separadas aun cuando
+z=x coloca los fragmentos sobre posiciones exteriores ya ocupadas. En la
+tesis ese caso fusiona las masas y usa 2[(p+Delta)^alpha-p^alpha]x^beta.
+La desigualdad sigue siendo estricta, y se mantiene el alcance z<=x.
+
+El contraejemplo ER0.8 del PDF cita aproximadamente 0.53 y 0.44, sin
+precisar allí K. Recalcular la ecuación ER con las masas y posiciones
+indicadas da 0.15426289161062057 K y 0.12289451274597979 K. Se usan estas
+aproximaciones explícitas en la tesis. El sentido de la comparación del
+paper se conserva y no depende de un K positivo común.
+
+El punto crítico es una recuperación del valor inicial, no un mínimo local.
+No se infiere monotonía de MEC en todo el intervalo anterior a la raíz.
+No se atribuye este método cerrado a todos los parámetros de MEC.
+
+Preservación y estructura
+Las secciones 1–4 permanecen idénticas al inicio del turno, comprobado por
+comparación exacta. El antiguo bloque de datos y financiación permanece
+íntegro como subsección de la metodología pendiente de revisión; solamente
+cambió su nivel de encabezado. Su etiqueta sec:data sigue resolviendo.
+La metodología, cronograma, ética y contribuciones todavía conservan texto
+del anteproyecto. Su estado futuro y afirmaciones pendientes no se declaran
+concluidos mediante esta redacción. La bibliografía permanece idéntica.
+
+Verificación
+Compilador integrado devolvió success durante la revisión.
+No hay referencias internas ni citas sin destino ni etiquetas duplicadas.
+Los entornos LaTeX están equilibrados y no se añadieron dos puntos en prosa.
+Se comprobaron 164 identidades y certificados
+algebraicos con fracciones exactas, 144 divisiones centrales
+incluyendo fusiones y p=0, y 6138 cotas extremales exactas para
+perfiles pequeños. La raíz y el orden ER se recalcularon por separado.
+Estas comprobaciones complementan las pruebas, no las sustituyen ni
+reproducen los experimentos empíricos de la tesis. La librería no cambió.
+La inspección visual mediante CUA no estuvo disponible para Codex. No se
+exportó otro PDF, no se abrió otra pestaña y no se realizó un commit.
+
+Auditoría final de la sección 5, 11 de octubre de 2026
+Se revisaron los cinco bloques, sus condiciones, demostraciones y transiciones
+contra las aplicaciones, movimientos y axiomas del paper y sus apéndices C–F,
+y contra los objetivos formales y el alcance del anteproyecto. No se detectaron
+omisiones esenciales dentro del cometido teórico de esta sección. Los resultados
+estructurales y la identidad con EMD ya pertenecen a la sección 4; los métodos
+computacionales, experimentos y entregables de software requieren capítulos
+posteriores y no quedan certificados por este cierre.
+
+Se conservaron las cinco subsecciones. Se hizo explícita la justificación por
+el teorema de la envolvente al derivar el esfuerzo mínimo, sin presuponer que
+el óptimo sea una función diferenciable de la posición del grupo. Se precisó
+el argumento cuantificado que descarta Axiom 1 con alpha=beta=1. La transición
+al Tipping Point conecta la distribución fija del Minority Principle con el
+cambio de valor bajo transferencias y distingue la creación de un grupo nuevo
+en una posición desocupada. Los demás enlaces narrativos se conservaron.
+
+Compilación integrada confirmada como success después de estos ajustes.
+Comparación exacta confirma que las secciones anteriores y posteriores, incluido
+el apéndice, no cambiaron en esta auditoría. Se verificaron de nuevo etiquetas,
+referencias, citas y balance de entornos. Las comprobaciones algebraicas de la
+redacción anterior siguen siendo aplicables; no se repitió el conjunto completo
+de pruebas numéricas porque no cambiaron fórmulas ni resultados.
