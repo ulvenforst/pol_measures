@@ -144,7 +144,8 @@ The thesis first reviews the conceptual background and competing measures, then 
 
 
 \clearpage
-\section{Literature Review and Conceptual Framework}\label{sec:lit}
+\section[Literature Review and Conceptual Framework]{Literature Review and\\Conceptual Framework}\label{sec:lit}
+\setlength{\emergencystretch}{2em}
 
 Distinguishing polarization from dispersion and extremism clarifies what an index is intended to measure. Dispersion concerns how far opinions spread around a reference position. Extremism concerns their proximity to the ends of a scale. Polarization concerns the size, cohesion, and separation of groups, following the identification--alienation framework of Esteban and Ray \citep{esteban1994measurement}. A population concentrated at one extreme can therefore exhibit extremism while remaining in consensus. Conversely, two opposed groups need not occupy the endpoints to be polarized. Moving a whole group toward an extreme can affect polarization differently from transferring only part of its mass \citep{aranda2026mec}.
 
@@ -205,7 +206,7 @@ A(\pi)=\sum_\ell w_\ell A_\ell,
 The agreement score lies in $[-1,1]$ and the transformed score lies in $[0,1]$. The division by two specifies the scale used in the implementation. Van der Eijk's construction therefore responds to the arrangement of occupied categories and to patterns of separation, rather than simply measuring distance from a mean.
 
 \paragraph{Tastle--Wierman.}
-Where Van der Eijk's construction examines patterns within layers, Tastle and Wierman \citep{tastle2007consensus} use information-theoretic ideas to define consensus and dissention on ordinal scales. With the probabilities and mean in Eq.~\eqref{eq:lit-probabilities}, let $d=x_m-x_1>0$ be the amplitude of the fixed numerical scale. Their scores are
+Tastle and Wierman \citep{tastle2007consensus} use information-theoretic ideas to define consensus and dissention on ordinal scales. Their construction combines category probabilities with distances from the mean. With the probabilities and mean in Eq.~\eqref{eq:lit-probabilities}, let $d=x_m-x_1>0$ be the amplitude of the fixed numerical scale. Their scores are
 \begin{equation}\label{eq:lit-twd}
 \begin{aligned}
 C_{\mathrm{TW}}(\pi)
@@ -242,7 +243,7 @@ Beyond consensus baselines, Lupu, Selios, and Warner \citep{lupu2017new} use EMD
 
 Transport respects the locations and masses of the groups being moved, but a scalar cost does not uniquely determine a distribution's shape. Different profiles can have the same cost, and sharing a mean does not imply sharing a transport distance. The linear consensus cost also weights every group proportionally to its mass. The generalized MEC family changes this weighting through $\alpha$ and changes the dependence on displacement through $\beta$. Its weighted optimization retains the transport motivation without being identified, for arbitrary parameters, with an ordinary Wasserstein metric on the original distribution.
 
-\subsection{Expert Judgments and the Koudenburg--Kiers--Kashima Index}\label{subsec:lit-experts}
+\subsection{Expert Judgments and KI}\label{subsec:lit-experts}
 
 Expert judgments provide a reference for assessing whether an index's rankings agree with informed views of polarization. Koudenburg, Kiers, and Kashima \citep{koudenburg2021new} asked sixty researchers to rate fifteen hypothetical five-point histograms from $0$, meaning not polarized, to $100$, meaning maximally polarized. After data screening, their quantitative analyses used responses from fifty-eight experts.
 
@@ -276,8 +277,8 @@ This purpose is developed through five specific objectives that connect formal t
   \item \textbf{Formal theory.} Establish the existence of optimal consensus points and their uniqueness when $\beta>1$. Prove the relation between $\mathrm{MEC}_{1,1}$ and the minimum Earth Mover's Distance to consensus. Determine compliance with the Esteban--Ray axioms under explicit parameter conditions, and examine additional properties, including central-split monotonicity. The literature review supplies the conceptual basis for these requirements.
   \item \textbf{Synthetic universe.} Construct the exhaustive corpus of five-point histograms with nonnegative integer counts summing to $100$, retaining one representative per reflection class. Define consistent conventions for masses, positions, and normalization, and implement the competing measures. The comparison includes ER, VdE, TWD, and the EMD-to-consensus baseline envisaged in the proposal, together with KI as used in the completed paper.
   \item \textbf{Software.} Provide an open Python implementation in the \texttt{pol\_measures} repository, with a documented application programming interface, a command-line interface, unit tests, and reproducible execution procedures. Record numerical settings and use fixed random seeds wherever a procedure involves randomness.
-  \item \textbf{Computational evaluation.} Examine MEC across specified parameter choices and compare its rankings with the candidate measures through concordance surfaces and Kendall's $\tau_B$. The planned evaluation also includes top-$k$ overlap and diagnostic profiles contrasting dispersed opinion with opposed camps, extremism with polarization, and movements of whole groups with transfers of small portions of mass.
-  \item \textbf{Expert comparison and regional illustration.} Assess agreement with the published scores for the fifteen hypothetical histograms of \citet{koudenburg2021new}, without collecting new expert judgments. Illustrate the interpretation of MEC on small aggregate Likert-type cases from Valle del Cauca, as envisaged in the approved proposal.
+  \item \textbf{Computational evaluation.} Examine MEC across specified parameter choices and compare its rankings with the candidate measures through concordance surfaces and Kendall's $\tau_B$. The proposal also envisaged top-$k$ overlap and diagnostic profiles contrasting dispersed opinion with opposed camps, extremism with polarization, and movements of whole groups with transfers of small portions of mass.
+  \item \textbf{Expert comparison and regional illustration.} Assess agreement with the published scores for the fifteen hypothetical histograms of \citet{koudenburg2021new}, without collecting new expert judgments. Contribute to descriptive readings of small aggregate Likert-type cases from Valle del Cauca within the PROMUEVA team's regional applications, as envisaged in the approved proposal.
 \end{enumerate}
 
 The theoretical analysis underlying these objectives concerns opinion distributions with finite, nonempty support in $[0,1]$, with parameters $\alpha,\beta\geq1$. Masses need not sum to one. Existence of a minimum applies throughout this domain; uniqueness is established for $\beta>1$, while $\beta=1$ allows several optimal consensus points. The axiomatic analysis concerns the three original Esteban--Ray axioms. The paper establishes their joint satisfaction for $\alpha>1$ and $\beta\geq1$, with Axioms~2 and~3 also holding at $\alpha=1$ \citep{aranda2026mec}. As explained in Section~\ref{subsec:lit-axioms}, this does not establish all the assumptions of the later Kawada--Nakamura--Sunada characterization. Central-split monotonicity is a separate property with its own configuration and conditions.
@@ -292,7 +293,7 @@ The objectives are also assessed against the deliverables specified in the propo
 
 The desirable activities are additional properties proposed by the research team (A7), empirical checks of Esteban--Ray transformations on literature measures (A11), threshold analysis using percentiles and $k$-means (A12), and responses to software feature requests (A13). The completed paper contains the central-split result associated with A7 \citep{aranda2026mec}. The remaining extensions are assessed through their own methods and outputs, rather than inferred from the paper's existence.
 
-The proposal also set out a parameter grid, a preregistration plan, top-$k$ comparisons, Bradley--Terry/Thurstone models, resampling analyses, and small-count perturbations. These remain identifiable elements of the original plan. They are distinguished from the analyses reported in the paper, which use Kendall's $\tau_B$ for the expert benchmark. A proposed grid is not evidence of preregistration, and a planned analysis is not evidence of execution.
+The proposal also set out a parameter grid, a preregistration plan, top-$k$ comparisons, Bradley--Terry/Thurstone models, resampling analyses, and small-count perturbations. These are elements of the methodological plan, not separate mandatory activities in its activity table. The completed analyses must be assessed against their scientific purpose and documented outputs. In particular, the expert comparison reported in the paper uses Kendall's $\tau_B$ on aggregate histogram ratings. A proposed grid is not evidence of preregistration, and a planned analysis is not evidence of execution.
 
 Fulfillment is assessed through the proofs, documented software, data provenance, and experimental outputs presented in the thesis. The discussion relates that evidence to the objectives, distinguishes completed and partial deliverables, and explains any changes from the approved plan. This preserves the proposal as the basis of evaluation while allowing the completed research to determine the conclusions.
 
@@ -416,7 +417,7 @@ A plan from $\pi$ to $\pi_y$ can send mass only to $y$. The source constraints t
 The linear construction makes each group's contribution proportional to its mass and its displacement. The generalized model changes these two dependencies separately. For positive masses $p>q$, their weights have ratio $(p/q)^\alpha$. For positive displacements $d_2>d_1$, their costs have ratio $(d_2/d_1)^\beta$. Thus $\alpha>1$ amplifies the relative influence of larger groups, and $\beta>1$ amplifies the relative cost of longer moves. The conceptual motivation for these choices was given in Section~\ref{subsec:lit-axioms}; here their roles enter the effort function explicitly.
 
 \begin{definition}[Generalized MEC]\label{def:mec-generalized}
-Let $\pi\in\mathcal{D}$ and $\alpha,\beta\geq1$. The effort $\mathrm{EC}_{\alpha,\beta}^{\pi}\colon[0,1]\to\mathbb{R}_{\geq0}$ and its minimum $\mathrm{MEC}_{\alpha,\beta}(\pi)$ are given by Eq.~\eqref{eq:MEC}. A point at which that minimum is attained is an $(\alpha,\beta)$-optimal consensus point. When the parameters are fixed, we omit them from this description and write $y^\star$ for an optimal point.
+Let $\pi\in\mathcal{D}$ and $\alpha,\beta\geq1$. The effort function $\mathrm{EC}_{\alpha,\beta}^{\pi}$ and its minimum $\mathrm{MEC}_{\alpha,\beta}(\pi)$ are given by Eq.~\eqref{eq:MEC}. A point at which that minimum is attained is an $(\alpha,\beta)$-optimal consensus point. When the parameters are fixed, we omit them from this description and write $y^\star$ for an optimal point.
 \end{definition}
 The possible consensus positions fill $[0,1]$, even when the observed opinions occupy only a few categories. The minimum is therefore taken over a continuous interval. The identity with ordinary EMD on the original distribution concerns $(\alpha,\beta)=(1,1)$; it is not asserted for arbitrary parameters.
 
@@ -799,7 +800,7 @@ This establishes the upper bound needed for the extremal normalization introduce
 
 \subsection{Esteban--Ray Axioms}\label{subsec:mec-er-axioms}
 
-Section~\ref{subsec:lit-axioms} explained identification and alienation and distinguished axiomatic compliance from characterization. We now state the three original axioms precisely and prove the corresponding MEC results. Let $P\colon\mathcal{D}\to\mathbb{R}_{\geq0}$ be a polarization measure. The conditions below are those used in the paper, following Esteban and Ray \citep{esteban1994measurement,aranda2026mec}. They concern specified configurations rather than arbitrary mergers or movements.
+Section~\ref{subsec:lit-axioms} explained identification and alienation and distinguished axiomatic compliance from characterization. We now state the three original axioms precisely and prove the corresponding MEC results. I developed the ER-axiom and central-split proofs with Jesús Aranda's guidance; Frank Valencia reviewed and improved this material. Let $P\colon\mathcal{D}\to\mathbb{R}_{\geq0}$ be a polarization measure. The conditions below are those used in the paper, following Esteban and Ray \citep{esteban1994measurement,aranda2026mec}. They concern specified configurations rather than arbitrary mergers or movements.
 
 \begin{axiom}[ER Axiom 1, increased identification]\label{axiom:mec-er1}
 For every $p>0$ and $x\in(0,1)$, there exist $\varepsilon,\mu>0$ such that, for every $x<y\leq1$ and $0<q<p$ satisfying $y-x<\varepsilon$ and $q<\mu p$,
@@ -1017,7 +1018,7 @@ It lies to the right of $(l+r)/2$ if $B>A$, to the left if $A>B$, and at the mid
 The derivative is negative at $l$ and positive at $r$. Strict convexity therefore gives an interior zero and Eq.~\eqref{eq:mec-two-group-balance}. At the midpoint, the derivative has the sign of $A^\alpha-B^\alpha$. Its strict increase locates the zero on the claimed side.
 \end{proof}
 
-\begin{theorem}[Minority Principle for two-point distributions]\label{th:mec-minority}
+\begin{theorem}[Minority Principle]\label{th:mec-minority}
 Let $\pi=((A,B),(l,r))$ with $0\leq l<r\leq1$ and unequal positive masses $A,B$. At an optimal consensus $y^\star$, the smaller group contributes strictly more total effort. In particular,
 \[
 \begin{aligned}
@@ -1147,7 +1148,7 @@ The theoretical analysis now answers the formal part of the research question un
 
 \section{Computational Methodology and Implementation}\label{sec:methods}
 
-The preceding sections establish what MEC measures and how it behaves under specified transformations. We now explain how it is computed and compared with other indices. The empirical design follows Section~8 of the completed paper \citep{aranda2026mec}. It combines an exhaustive comparison on five-point histograms with a comparison against published expert ratings. The implementation and numerical conventions are documented through the \texttt{pol\_measures} repository.\footnote{\url{https://github.com/ulvenforst/pol_measures}}
+The preceding sections establish what MEC measures and how it behaves under specified transformations. We now explain how it is computed and compared with other indices. The empirical design follows Section~8 of the completed paper \citep{aranda2026mec}. It combines an exhaustive comparison on five-point histograms with a comparison against published expert ratings. I carried out these experiments within the joint research, with experimental proposals and guidance from Frank Valencia, Jesús Aranda, and Juan Francisco Díaz. The implementation and numerical conventions are documented through the \texttt{pol\_measures} repository.\footnote{\url{https://github.com/ulvenforst/pol_measures}}
 
 The approved proposal supplies the objectives for the corpus, software, comparisons, and reproducibility. The completed paper supplies the scientific protocol and reference parametrization. The code provides the operational detail needed to interpret those comparisons. These sources have different roles. A planned procedure is not evidence that it was executed, and a script in the current repository does not by itself identify the version that produced a published figure. We therefore distinguish the paper's comparisons, the conventions of the available scripts, and the supplementary analyses supported by saved outputs.
 
@@ -1161,9 +1162,9 @@ All five coordinates are retained, including categories with zero mass. Removing
 
 This mass convention is compatible with the paper's count-based corpus. By Theorem~\ref{th:mec-population-scaling}, using counts rather than proportions multiplies MEC by $N^\alpha$. Since the exhaustive corpus fixes $N=100$, the multiplier is common to every histogram at a fixed $\alpha$. Its ranking is therefore unchanged. For profiles with different totals, each must be normalized by its own total when the comparison concerns opinion structure independently of population size.
 
-The public \texttt{MEC} class precomputes $p_i^\alpha$ and passes the effort as a scalar objective to SciPy's \texttt{minimize\_scalar}, with \texttt{method='bounded'} and bounds $(0,1)$.\footnote{\url{https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize_scalar.html}} It returns the computed minimum value. The class does not return the optimizer's consensus point or termination record. A numerical value from this routine approximates the mathematical minimum; in particular, a consensus at an endpoint need not be returned as exactly zero.
+The public \texttt{MEC} class precomputes $p_i^\alpha$ and passes the effort as a scalar objective to SciPy's \texttt{minimize\_\allowbreak scalar}, with \texttt{method='bounded'} and bounds $(0,1)$.\footnote{\url{https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize_scalar.html}} It returns the computed minimum value. The class does not return the optimizer's consensus point or termination record. A numerical value from this routine approximates the mathematical minimum; in particular, a consensus at an endpoint need not be returned as exactly zero.
 
-For $\beta>1$, strict convexity justifies minimizing this objective without a search over competing local minima. The repository also provides \texttt{mec\_bisection\_value}, a reference solver based on the increasing balance function of Section~\ref{subsec:mec-convexity}. It brackets the optimum between the first and last supplied coordinates and repeatedly retains the half containing the derivative's zero. After $r$ iterations, the interval has width $(x_5-x_1)/2^r$. Thus
+For $\beta>1$, strict convexity justifies minimizing this objective without a search over competing local minima. The repository also provides \texttt{mec\_\allowbreak bisection\_\allowbreak value}, a reference solver based on the increasing balance function of Section~\ref{subsec:mec-convexity}. It brackets the optimum between the first and last supplied coordinates and repeatedly retains the half containing the derivative's zero. After $r$ iterations, the interval has width $(x_5-x_1)/2^r$. Thus
 \[
 r=\left\lceil\log_2\frac{x_5-x_1}{\varepsilon}\right\rceil
 \]
@@ -1182,11 +1183,11 @@ It evaluates the denominator numerically at the supplied endpoints with masses $
 
 \subsection{Library Implementation and Verification}\label{subsec:methods-software}
 
-To apply these numerical conventions through a common interface, the repository separates numerical measures from input handling and experiment scripts. The base classes in \texttt{src/measures/base.py} define the callable interface and parameter access. Input handling is in \texttt{validation.py}; the measure implementations are divided between \texttt{metrics/proposed/} and \texttt{metrics/literature/}; the bisection reference is in \texttt{utils/optimization.py}. The \texttt{benchmarks/} directory contains the experiments, while \texttt{tests/} contains automated checks. This structure allows several measures to receive the same histogram without duplicating the comparison protocol.
+To apply these numerical conventions through a common interface, the repository separates numerical measures from input handling and experiment scripts. The base classes in \path{src/measures/base.py} define the callable interface and parameter access. Input handling is in \path{validation.py}; the measure implementations are divided between \path{metrics/proposed/} and \path{metrics/literature/}; the bisection reference is in \path{utils/optimization.py}. The \path{benchmarks/} directory contains the experiments, while \path{tests/} contains automated checks. This structure allows several measures to receive the same histogram without duplicating the comparison protocol.
 
-The callable interface validates the supplied arrays and, by default, normalizes positions but preserves masses. Weight normalization requires \texttt{normalize\_weights=True}. Direct calls to \texttt{compute} bypass that histogram-processing step. The experiments must therefore either use the callable interface with the intended options or prepare the coordinates and weights explicitly before calling \texttt{compute}. A one-position mathematical consensus is represented in the five-category experiments by one positive weight and four zeros; the public histogram interface requires at least two supplied coordinates.
+The callable interface validates the supplied arrays and, by default, normalizes positions but preserves masses. Weight normalization requires \texttt{normalize\_\allowbreak weights=True}. Direct calls to \texttt{compute} bypass that histogram-processing step. The experiments must therefore either use the callable interface with the intended options or prepare the coordinates and weights explicitly before calling \texttt{compute}. A one-position mathematical consensus is represented in the five-category experiments by one positive weight and four zeros; the public histogram interface requires at least two supplied coordinates.
 
-The interface can also assign categorical labels using the fixed cutoffs in \texttt{thresholds.py}, stored under percentile and $k$-means schemes for specified measures and parameter sets. It looks up these cutoffs rather than fitting them to the input histogram. This facility relates to the proposal's desirable threshold-analysis activity, but the stored values alone do not document their calibration corpus or establish universal boundaries between levels of polarization. The paper's ranking comparisons use numerical scores without these labels.
+The interface can also assign categorical labels using the fixed cutoffs in \path{thresholds.py}, stored under percentile and $k$-means schemes for specified measures and parameter sets. It looks up these cutoffs rather than fitting them to the input histogram. This facility relates to the proposal's desirable threshold-analysis activity, but the stored values alone do not document their calibration corpus or establish universal boundaries between levels of polarization. The paper's ranking comparisons use numerical scores without these labels.
 
 The package's parameter validator accepts positive exponents, including values below one. This software domain is broader than the theoretical domain established in the thesis. The computational searches described below may explore it, but the axiomatic results are invoked only under their stated conditions. In particular, a successful numerical evaluation does not imply convexity or compliance with the polarization axioms outside those conditions.
 
@@ -1194,7 +1195,7 @@ Verification includes input-validation tests, standard MEC profiles, normalizati
 
 The project provides a Python API, installation instructions, docstrings, and the test runner \texttt{python -m tests.run\_tests}. Its GitHub Actions workflow installs dependencies and runs that suite on pushes and pull requests. A configured workflow is not evidence that every remote run or declared Python version succeeds. The repository contains a GPLv3 license, and its package metadata identifies the distribution as \texttt{measures}, version \texttt{0.1.0a2}. The research repository retains the name \texttt{pol\_measures}.
 
-Some experiment scripts expose command-line arguments. The package metadata does not define an installed \texttt{console\_scripts} entry point. These script interfaces are distinguished from the general library CLI promised in the proposal. Similarly, the available workflow establishes continuous-integration configuration, not an automated release or deployment pipeline. Their status remains part of the assessment of the software objective in Section~\ref{sec:objectives}.
+Some experiment scripts expose command-line arguments. The package metadata does not define an installed \texttt{console\_\allowbreak scripts} entry point. These script interfaces are distinguished from the general library CLI promised in the proposal. Similarly, the available workflow establishes continuous-integration configuration, not an automated release or deployment pipeline. Their status remains part of the assessment of the software objective in Section~\ref{sec:objectives}.
 
 \subsection{Data Sources and Computational Corpus}\label{sec:data}\label{subsec:methods-data}
 
@@ -1219,11 +1220,11 @@ This is the exact count reported in the completed paper. It replaces the proposa
 
 Each canonical histogram contributes once to the comparison corpus. The reduction preserves the score assigned to a histogram and its reflection. It does not, by itself, assert equality between a correlation computed on this corpus and one computed on the full corpus with different multiplicities. The unit of analysis is the canonical profile. Exhaustive enumeration removes sampling uncertainty within this finite universe; it does not establish behavior on every distribution in $\mathcal{D}$.
 
-The second corpus consists of the fifteen hypothetical five-point profiles and published expert scores used by Koudenburg, Kiers, and Kashima \citep{koudenburg2021new,aranda2026mec}. Their study involved sixty experts rating polarization from zero to one hundred. The thesis reuses the published benchmark and does not recruit experts or collect new judgments. The repository's \texttt{ValidationData} stores the histogram vectors, their identifiers, and the aggregate expert scores. Every profile is normalized by its own recorded total. This matters because the stored rows do not all sum to one hundred.
+The second corpus consists of the fifteen hypothetical five-point profiles and published expert scores used by Koudenburg, Kiers, and Kashima \citep{koudenburg2021new,aranda2026mec}. Their study collected ratings from sixty experts on a zero-to-one-hundred scale; the quantitative analysis retained fifty-eight after screening, as described in Section~\ref{subsec:lit-experts}. The thesis reuses the published benchmark and does not recruit experts or collect new judgments. The repository's \texttt{ValidationData} stores the histogram vectors, their identifiers, and the aggregate expert scores. Every profile is normalized by its own recorded total. This matters because the stored rows do not all sum to one hundred.
 
 The aggregate ratings supply the reference ordering. They are distinct from KI, the fitted index implemented by the class \texttt{Experts}. Agreement with that formula and agreement with the published human scores are different comparisons. The available benchmark is not a file of individual expert responses or pairwise choices. A ranking induced from aggregate scores does not supply the participant-level evidence required to reconstruct a human paired-comparison study.
 
-The proposal also includes regional illustrations using aggregate opinions from Valle del Cauca. Their role is descriptive. The synthetic and expert-data modules do not supply those regional observations. Each illustration therefore requires its own provenance, question wording, category coding, aggregate counts, and observation date before it can be presented as an empirical case. No new regional observations are generated by the method described here. The use of aggregates and the distinction between an illustration and population inference are retained from the approved scope.
+The proposal also includes regional illustrations using aggregate opinions from Valle del Cauca. Their role is descriptive. The companion manuscript documents a youth demonstration in August 2024 and a Cali City Council exercise in late 2024, with question wording, histograms, and comparisons between MEC and ER \citep[Section~12]{arandaMECcompanion}. These observations are separate from the synthetic and expert-data modules. Section~\ref{subsec:results-regional} summarizes the documented comparisons without presenting them as population estimates or as newly collected data.
 
 \subsection{Comparison Protocol and Parameter Selection}\label{subsec:methods-comparison}
 
@@ -1284,13 +1285,13 @@ Some coarse-grid points have $\alpha<1$ or $\beta<1$. They are exploratory numer
 
 Stability is assessed on profile--score pairs. Bootstrap resampling draws fifteen profile identifiers with replacement, and leave-one-out removes one profile at a time while retaining the scores of the candidate parameters. Neither procedure resamples individual experts, and leave-one-out in this implementation does not refit parameters on the remaining profiles. These are sensitivity checks on the existing benchmark. Parameter selection and reported agreement use the same benchmark, so they do not constitute independent validation on unseen profiles.
 
-The proposal's additional parameter grid, top-$k$ overlaps between histogram rankings, diagnostic vignettes, adjacent-count perturbations, and Bradley--Terry/Thurstone models remain identifiable parts of the original plan. They are not inferred from the paper's Kendall comparisons. In particular, a file of the top parameter candidates is not a top-$k$ overlap analysis of opinion profiles. Only methods supported by their own scripts, inputs, and outputs can be presented as executed analyses. The proposed grid is also not evidence of preregistration.
+The comparison reported here uses Kendall's $\tau_B$ on aggregate histogram ratings. The proposal also envisaged top-$k$ overlaps between histogram rankings, diagnostic vignettes, adjacent-count perturbations, and Bradley--Terry/Thurstone models. Their execution cannot be inferred from this protocol, but their absence alone does not establish failure to complete a mandatory activity. In particular, a shortlist of parameter candidates is distinct from top-$k$ overlap between profile rankings, and the saved grid does not establish preregistration.
 
 \subsection{Reproducibility and Computational Resources}\label{subsec:methods-reproducibility}
 
 These distinctions determine what is needed to reproduce a comparison. The inputs must specify the fixed coordinates, count or proportion convention, and profile identifiers. The configuration must identify candidate implementations, parameters, normalization, solver route, and any rounding or truncation. The resulting score arrays, correlation matrices, and parameter tables must retain that configuration. Reproducing a rendered figure alone cannot resolve a difference between two numerical protocols.
 
-The corpus comparison is organized in \texttt{benchmarks/comparison\_matrix/}, while the published expert-data comparison and parameter searches are in \texttt{benchmarks/expert\_validation/}. The saved search outputs include coarse and refined score tables, maxima, shortlisted candidates, stability summaries, and heatmaps. These artifacts document the supplementary settings in Table~\ref{tab:methods-search}. Associating them with a particular paper figure still requires matching the candidate set and numerical conventions.
+The corpus comparison is organized in \path{benchmarks/comparison_matrix/}, while the published expert-data comparison and parameter searches are in \path{benchmarks/expert_validation/}. The saved search outputs include coarse and refined score tables, maxima, shortlisted candidates, stability summaries, and heatmaps. These artifacts document the supplementary settings in Table~\ref{tab:methods-search}. Associating them with a particular paper figure still requires matching the candidate set and numerical conventions.
 
 The repository also contains timing experiments for the finite corpus and for increasing support size. They distinguish the public SciPy implementation from the bisection reference and record settings such as solver tolerance, workload, and execution environment. The support-size benchmark uses random normalized masses with seed $20260528$. Timing comparisons require the same inputs and numerical task, and their observed performance is reported separately from the mathematical operation count. The proposal's workstation specification is a planned resource declaration, not evidence that every saved run used that machine.
 
@@ -1327,7 +1328,7 @@ The matrix thus fulfills the proposal's principal comparison of rankings over th
 
 \subsection{Agreement with Published Expert Judgments}\label{subsec:results-experts}
 
-The synthetic comparison has no human reference ordering. The second comparison uses the fifteen hypothetical histograms evaluated by sixty experts in the study of \citet{koudenburg2021new}. Figure~\ref{fig:results-expert-profiles} displays the original histogram shapes. Table~\ref{tab:results-expert-profiles} records the numerical transcription stored in the repository together with the aggregate expert scores. Each histogram is normalized by its own total, as described in Section~\ref{subsec:methods-data}. The table does not represent new observations or individual expert responses.
+The synthetic comparison has no human reference ordering. The second comparison uses the fifteen hypothetical histograms and the aggregate ratings retained after screening in the study of \citet{koudenburg2021new}. Figure~\ref{fig:results-expert-profiles} displays the original histogram shapes. Table~\ref{tab:results-expert-profiles} records the numerical transcription stored in the repository together with the aggregate expert scores. Each histogram is normalized by its own total, as described in Section~\ref{subsec:methods-data}. The table does not represent new observations or individual expert responses.
 
 \begin{figure}[htbp]
 \centering
@@ -1369,7 +1370,7 @@ Figure~\ref{fig:results-expert-concordance} gives the values displayed in the pa
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=1.0\linewidth]{images/codex-e901954d6a476edc15e8013546efc5f0b52198cec1835f539a0cd50d798fc991.png}
-\caption{Concordance with the published expert scores. Original figure from the completed paper \citep{aranda2026mec}. All displayed coefficients were reproduced with the original validation script and its tie-aware truncation convention.}
+\caption{Concordance with the published expert scores. Original figure from the completed paper \citep{aranda2026mec}. All displayed coefficients were reproduced with the original validation script and its tie-aware truncation convention. The source figure's title refers to sixty participants; the original study retained fifty-eight for quantitative analysis.}
 \label{fig:results-expert-concordance}
 \end{figure}
 
@@ -1381,7 +1382,7 @@ The transport case gives further perspective. EMD and $\mathrm{MEC}_{1,1}$ produ
 
 At the level of individual shapes, the experts assign the lowest score to the centrally concentrated profile~3 and the highest to the opposed-endpoint profile~14. The reference MEC places these profiles at the same two ends of its ordering. The nearly uniform profile~9 receives a lower expert score than profiles~4, 7, 8, and 14, which have separated concentrations and a depleted centre. MEC preserves those four comparisons. Agreement is not complete, as the six discordant pairs show, but these profiles illustrate the distinction between widespread disagreement and opposed camps that motivated the proposal.
 
-This evidence supports agreement on the evaluated benchmark. The same profiles informed MEC's reference parameter choice, and the benchmark is small and deliberately constructed. The reported concordance therefore does not establish performance on unseen profiles, on other scale lengths, or on regional survey populations. Nor does it measure agreement separately for each of the sixty experts, whose individual responses are absent from the stored aggregate data.
+This evidence supports agreement on the evaluated benchmark. The same profiles informed MEC's reference parameter choice, and the benchmark is small and deliberately constructed. The reported concordance therefore does not establish performance on unseen profiles, on other scale lengths, or on regional survey populations. Nor does it measure agreement separately for the individual experts, whose responses are absent from the stored aggregate data.
 
 \subsection{Parameter Sensitivity and Stability}\label{subsec:results-parameters}
 
@@ -1488,11 +1489,21 @@ $2{,}000$ & $374.01$ & $183.97$ & $4{,}809.16$\\
 \label{fig:results-support-runtime}
 \end{figure}
 
-ER remains faster at support sizes $5$, $100$, and $200$ in this workload. At $400$ and each larger tested size, both MEC solvers are faster. The growth is consistent with the operation counts discussed in Section~\ref{subsec:methods-computation}, where bisection is linear in support size at fixed precision and the implemented ER calculation forms pairwise terms. These finite measurements do not prove asymptotic complexity or a universal crossover size. Their absolute times depend on the implementations, machine, numerical settings, and sampled masses.
+ER remains faster at support sizes $5$, $100$, and $200$ in this workload. At $400$ and each larger tested size, both MEC solvers are faster. The growth reflects the linear support dependence of bisection at fixed precision and the pairwise terms formed by the implemented ER calculation.
 
-The same saved experiment compares the two MEC values on ten profiles at each support size, for $110$ checks in total. Its largest absolute difference is approximately $3.58\times10^{-7}$ and its largest relative difference approximately $3.46\times10^{-5}$, both recorded at size~$5$. This documents numerical agreement on those checks. It is not a uniform bound on solver error and should not be confused with the bisection interval tolerance.\footnote{The timing and numerical-comparison records are in \path{benchmarks/support_scaling_mec_vs_er/support_scaling_fixed1000.json}.}
+A separate saved run samples sizes $200,225,\ldots,400$, using one thousand distributions at each size and the same parameters and bisection tolerance. In that run, SciPy MEC first becomes faster than the implemented ER at the tested size $275$, and bisection MEC at $350$. These observations narrow the sampled crossover intervals for that run, rather than identify exact thresholds.\footnote{The additional record is \path{benchmarks/support_scaling_mec_vs_er/support_scaling_crossover_eps1e8.json}.} These finite measurements do not prove asymptotic complexity or a universal crossover size. Their absolute times depend on the implementations, machine, numerical settings, and sampled masses.
 
-Taken together, the results provide the finite-corpus concordance comparison and the published expert comparison envisaged in the proposal, with supplementary evidence on parameter sensitivity and computation. They leave identifiable limits in the empirical record. The regional illustrations require verified aggregate observations and their provenance before scores can be reported. The paper and outputs examined here also do not establish the proposal's top-$k$ overlaps, paired-comparison models, adjacent-count perturbation study, or all planned diagnostic sweeps. These commitments remain part of the assessment of objectives; they are not replaced by the parameter-search shortlist or the timing experiments. The discussion will relate the evidence presented here to those objectives and to the research question.
+The original eleven-size experiment compares the two MEC values on ten profiles at each support size, for $110$ checks in total. Its largest absolute difference is approximately $3.58\times10^{-7}$ and its largest relative difference approximately $3.46\times10^{-5}$, both recorded at size~$5$. This documents numerical agreement on those checks. It is not a uniform bound on solver error and should not be confused with the bisection interval tolerance.\footnote{The timing and numerical-comparison records are in \path{benchmarks/support_scaling_mec_vs_er/support_scaling_fixed1000.json}.}
+
+\subsection{Regional Illustrations}\label{subsec:results-regional}
+
+The companion manuscript reports two applications of the Polarizometer within PROMUEVA \citep[Section~12]{arandaMECcompanion}. I prepared the figures for these applications; the substantive analysis belongs to the team's joint work. These cases illustrate how the measures order topics in the observed groups. They do not provide a new expert benchmark or establish population-level polarization.
+
+In August 2024, participants aged seventeen to twenty-five responded to eleven statements on a five-category agreement scale. MEC and ER both placed the statement about tougher measures against drug trafficking and insecurity in Cali lowest in polarization. They also agreed on the two highest-scoring statements, concerning non-traditional gender and family models and transgender participation in sport. They differed elsewhere: the statement about dialogue with armed groups ranked second from the least polarized under MEC and fifth under ER. This is a comparison of orderings within the demonstration, conditional on the statements and responses recorded there.
+
+The late-2024 City Council exercise considered a metropolitan area, the planned 2025 budget, a proposed loan, and the mayor's management during 2024. Both measures assigned the lowest score to the metropolitan-area statement and the highest to the statement about the mayor's management. MEC placed the loan above the budget in polarization, while ER reversed those two. The figures thus document both agreement and disagreement between the measures on aggregate civic responses. On the four council histograms, the current reference implementations reproduce the displayed scores using $\mathrm{MEC}_{2,1.15}$ with the root normalization of Eq.~\eqref{eq:methods-root-normalization} and $\mathrm{ER}_{0.8}$. This consistency check does not identify the historical code revision that generated the figures. The cases illustrate the measures' interpretations; they do not independently calibrate their parameters.
+
+Together with the synthetic and expert comparisons, these illustrations address the descriptive use envisaged in the proposal. Section~\ref{subsec:discussion-objectives} relates the evidence to the mandatory activities, desirable extensions, and other methods in that plan.
 
 
 \section{Discussion and Limitations}\label{sec:discussion}
@@ -1529,8 +1540,8 @@ Objective & Assessment\\
 Formal theory & Established under the conditions in Sections~\ref{sec:mec-foundations} and~\ref{sec:mec-theory}, including the transport relation, original ER axioms, and central-split property.\\[4pt]
 Synthetic universe & The corpus, comparison conventions, implementations, and published concordance matrix are documented in Sections~\ref{sec:methods} and~\ref{sec:results}. Full numerical regeneration was outside the present cross-check.\\[4pt]
 Software & API, documentation, tests, licensing, and CI configuration are documented. A general installed CLI and an automated release or deployment pipeline are not established by the inspected materials.\\[4pt]
-Computational evaluation & Corpus concordance, parameter comparisons, and supplementary stability and timing outputs are documented. Top-$k$ profile overlap, preregistration, and all planned diagnostic sweeps remain unverified.\\[4pt]
-Expert comparison and regional illustration & The published expert comparison is established. The regional component remains unverified in the available data and results.\\
+Computational evaluation & Corpus concordance, parameter comparisons, and supplementary stability and timing outputs are documented. The top-$k$ profile overlap and other planned methods are distinct from the mandatory concordance activities A9--A10.\\[4pt]
+Expert comparison and regional illustration & The published expert comparison is established. Section~\ref{subsec:results-regional} summarizes the team's documented regional illustrations; my contribution to those cases was the figures.\\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -1539,11 +1550,11 @@ The formal work addresses the essential activities A4--A6 and the additional cen
 
 The software evidence supports substantial progress on A8. The existing suite passed ninety tests during the implementation review, and targeted checks supported the corpus count, transport baseline, and expert concordance. Those checks establish correctness on the cases examined. The proposal also promised a CLI and CI/CD. Command-line options in experiment scripts and a workflow that runs tests do not establish all those deliverables. The reproducibility record further lacks an unambiguous association between every published figure and its generating code revision. The available implementation and saved outputs make the comparisons inspectable, while this remaining provenance limits complete reconstruction of the historical runs.
 
-The computational evaluation covers the main concordance comparisons and includes supplementary analyses beyond the paper's reported results. It does not certify every proposed procedure. The parameter-search shortlist is a list of parameter candidates, so it cannot stand in for top-$k$ overlap between histogram rankings. Likewise, bootstrap resampling of profiles and leave-one-out concordance do not establish the proposed Bradley--Terry or Thurstone analyses, adjacent-count perturbations, or preregistration. Mathematical examples of group movements support the interpretation of diagnostic profiles, but do not by themselves document every planned computational sweep.
+The computational evaluation addresses A9--A10 through the corpus and Kendall comparisons, with supplementary stability and timing analyses. Top-$k$ overlaps and the other methods envisaged in the narrative plan are not separate mandatory activities in Table~3 of the proposal. Their absence from the reported results should therefore be distinguished from an unmet mandatory deliverable. The implemented protocol compares aggregate histogram ratings with Kendall's $\tau_B$; it does not reconstruct participant-level paired choices or establish preregistration.
 
-The regional component retains its place in the approved scope. The proposal envisaged aggregate illustrations from Valle del Cauca, including civic and youth applications. The materials assessed here do not provide the corresponding verified observations, provenance, and scores. These cases therefore cannot be reported as experimental findings. Their inclusion requires their own evidence; any change to that commitment must be justified explicitly rather than inferred from completion of the paper.
+The proposal envisaged aggregate regional cases as exercises in interpreting opinion distributions and assigned domain-specific applications to the PROMUEVA data team. My contribution to the regional applications was the preparation of figures, rather than the whole substantive analysis. This division of work is consistent with the proposal's scope and does not impose an additional individual application study. The regional observations are separate from the synthetic and expert benchmarks reported here.
 
-The desirable activities also require separate judgments. Central-split monotonicity is established. The software's stored classification cutoffs relate to A12, but do not alone establish a documented percentile or $k$-means calibration study. The inspected outputs do not establish the full empirical transformation checks of A11 or the feature-request record of A13. The joint manuscript provides the research product envisaged in A14, and the thesis author participated as a coauthor. The allocation of individual proofs, figures, and implementation tasks is not inferred from the joint author list. This assessment preserves the distinction between the completed scientific core and the wider set of approved deliverables.
+The desirable activities A7 and A11--A13 are assessed separately from the mandatory tasks. Central-split monotonicity is established. The companion manuscript reports empirical transformation checks related to A11 \citep[Section~10]{arandaMECcompanion}. Its finite tests do not establish universal compliance for VdE or TWD, and an isolated merger does not refute the existential bounds in Axiom~1. The software's stored classification cutoffs relate to A12, while their calibration and the feature-request record for A13 are not established by the outputs examined here. A14 required contributions of text and figures to the joint MEC manuscript. I carried out experiments and developed proofs and text within that collective work, with the guidance and revisions described above. This contribution does not imply individual authorship of every result in the paper.
 
 \subsection{Scope and Validity of the Findings}\label{subsec:discussion-validity}
 
@@ -1563,9 +1574,9 @@ The performance evidence likewise has a defined scope. ER is faster in the saved
 
 The proposal's concern with diagnosis, monitoring, and evaluation motivates measurement, but the present evidence supports descriptive comparisons of opinion distributions. A score and its histogram can help distinguish concentration, separation, and imbalance. A change in the score alone does not identify its cause, demonstrate the effect of an intervention, or forecast social conflict. Interpreting a result requires the survey question, response scale, population, mass convention, and parameter choice. Threshold labels additionally require evidence for their calibration and suitability in the setting where they are used.
 
-The data used in the reported evaluation consist of synthetic profiles and published aggregate expert scores. No new expert judgments were collected. The analysis does not use respondent-level records to profile individuals. This retains the proposal's limited data footprint without treating every aggregate dataset as automatically anonymous. If regional illustrations are incorporated, their provenance, conditions of use, and disclosure risks must be documented before the corresponding observations are presented. Restricted records should remain separate from the public code and synthetic artifacts.
+The main evaluation uses synthetic profiles and published aggregate expert scores. No new expert judgments were collected. The regional illustrations summarize previously documented aggregate comparisons from the team's applications. The analysis does not use respondent-level records to profile individuals. This retains the proposal's limited data footprint without treating every aggregate dataset as automatically anonymous. Further use of the regional observations must respect their provenance, conditions of use, and disclosure risks. Restricted records remain separate from the public code and synthetic artifacts.
 
-The open implementation, license, test workflow, and documented experiments support scrutiny of the measurement procedure. They do not substitute for the contextual evidence needed to interpret a civic application. The same applies to $y^\star$. A least costly consensus under the model is a structural result; using it in mediation or policy would require a substantive account of whose positions and costs it represents. The paper identifies such applications as questions for further investigation. The present assessment supports MEC as a mathematically grounded measure with strong agreement on the evaluated expert profiles, while leaving those broader applications and the unverified proposal deliverables to be established on their own evidence.
+The open implementation, license, test workflow, and documented experiments support scrutiny of the measurement procedure. They do not substitute for the contextual evidence needed to interpret a civic application. The same applies to $y^\star$. A least costly consensus under the model is a structural result; using it in mediation or policy would require a substantive account of whose positions and costs it represents. The paper identifies such applications as questions for further investigation. The present assessment supports MEC as a mathematically grounded measure with strong agreement on the evaluated expert profiles. Broader applications require their own contextual evidence.
 
 
 \section{Conclusions and Future Work}\label{sec:conclusion}\label{sec:contrib}
@@ -1582,7 +1593,7 @@ The optimal consensus point gives the measure additional structure. It supports 
 
 The empirical contribution locates MEC among competing measures through the exhaustive five-point corpus and the fifteen published expert-rated profiles. On the expert benchmark, $\mathrm{MEC}_{2,1.15}$ attains Kendall's $\tau_B\approx0.886$, matching $\mathrm{ER}_{0.8}$ and exceeding VdE and TWD in the reported comparison. The hypothesis of improved agreement is partly supported. Parameter selection and evaluation use the same profiles, so this result establishes concordance on that benchmark without establishing independent validity on unseen data. The supplementary search supports the finding that several evaluated parameter pairs achieve the same concordance.
 
-The implementation supplies the computational part of this development. The Python API, tests, comparison scripts, and saved outputs allow the numerical procedures and reported comparisons to be examined. Analytical identities and reference computations provide checks on the optimization. These contributions develop the proposal's three central aims of formal grounding, an empirical comparison, and reproducible infrastructure. The detailed assessment in Section~\ref{subsec:discussion-objectives} also identifies approved deliverables whose completion remains unverified, including regional illustrations and parts of the software and analysis plan. They remain commitments to be documented or addressed through an explicit justification of scope.
+The implementation supplies the computational part of this development. The Python API, tests, comparison scripts, and saved outputs allow the numerical procedures and reported comparisons to be examined. Analytical identities and reference computations provide checks on the optimization. These contributions develop the proposal's three central aims of formal grounding, an empirical comparison, and reproducible infrastructure. Section~\ref{subsec:discussion-objectives} distinguishes this completed core from the software deliverables whose completion remains unverified, the desirable extensions, and the wider methodological plan. The regional figures form part of my contribution to the team's applications, rather than an individual claim to their full analysis.
 
 The resulting contribution is a measure whose value has a stated geometric meaning and whose behavior can be examined through proofs and computations. Its strongest conclusion concerns the finite one-dimensional model and the profiles actually evaluated. The evidence supports MEC as a mathematically grounded and empirically promising approach to measuring opinion polarization, with a clear basis for further investigation.
 
@@ -1681,7 +1692,12 @@ Carlos Pinzón & Advisor & 2 & \$120.000 & \$8.640.000\\
 \end{tabular}
 \end{table}
 
-\begin{thebibliography}{16}
+\begin{thebibliography}{13}
+\bibitem[Aranda et~al.(2025)]{arandaMECcompanion}
+Aranda, J., Díaz, J.F., Narváez, J.C., Pinzón, C., Valencia, F., Vargas, O.
+Minimal Effort to Consensus (MEC) polarization measure.
+Unpublished working manuscript, dated October 2025; author-supplied version received 19 October 2026.
+
 \bibitem[Aranda et~al.(2026)]{aranda2026mec}
 
 Aranda, J.,
@@ -1697,18 +1713,9 @@ arXiv preprint arXiv:2606.13997v1
 \url{https://doi.org/10.48550/arXiv.2606.13997} .
 \url{https://arxiv.org/abs/2606.13997v1}
 
-\bibitem[Cultura(2024)]{espectadorSuenos2024}
-
-Cultura, R.
-“Sue{\~n}os en concreto”, un documental sobre el estallido social de 2021.
-\emph{El Magaz{\'\i}n Cultural, El Espectador}
-(2024).
-\url{https://www.elespectador.com/el-magazin-cultural/llegara-a-los-cines-suenos-en-concreto-un-documental-sobre-el-estallido-social-de-2021/}
-Accessed 2025-10-31
-
 \bibitem[Van~der Eijk(2001)]{van2001measuring}
 
-Eijk, C.
+Van der Eijk, C.
 Measuring agreement in ordered rating scales.
 \emph{Quality and Quantity}
 35(3),
@@ -1731,16 +1738,6 @@ Festinger, L.
 Stanford University Press, Stanford, CA
 (1957)
 
-\bibitem[García and Pérez(2023)]{scielo2023paro}
-
-García, N.,
-Pérez, M.
-Polarización sentimental en twitter durante el paro nacional de 2021 en
-  colombia.
-\emph{Revista de Comunicación}
-(2023).
-Accessed 2025-10-21
-
 \bibitem[Geh\'{e}r et~al.(2020)]{geher2020isometric}
 
 Geh\'{e}r, G.,
@@ -1757,7 +1754,7 @@ Isometric study of Wasserstein spaces---the real line.
 Kawada, Y.,
 Nakamura, Y.,
 Sunada, K.
-A characterization of the esteban--ray polarization measures.
+A characterization of the Esteban--Ray polarization measures.
 \emph{Economics Letters}
 169,
 35--37
@@ -1770,7 +1767,7 @@ Kiers, H.A.,
 Kashima, Y.
 A new opinion polarization index developed by integrating expert
   judgments.
-\emph{Frontiers in psychology}
+\emph{Frontiers in Psychology}
 12,
 738258
 (2021)
@@ -1780,7 +1777,7 @@ A new opinion polarization index developed by integrating expert
 Lupu, N.,
 Selios, L.,
 Warner, Z.
-A new measure of congruence: The earth mover’s distance.
+A new measure of congruence: The Earth Mover’s Distance.
 \emph{Political Analysis}
 25(1),
 95--113
@@ -1792,15 +1789,6 @@ Rockafellar, R.T.
 \emph{Convex Analysis}.
 Princeton University Press, Princeton, NJ
 (1970)
-
-\bibitem[swissinfo.ch(2021)]{swissinfo2021trust}
-
-swissinfo.ch, S.
-La polarización política en Colombia hunde la confianza en los medios al
-  mínimo histórico.
-Accessed 2025-10-21
-(2021).
-\url{https://www.swissinfo.ch/spa/la-polarizaci%C3%B3n-pol%C3%ADtica-en-colombia-hunde-la-confianza-en-los-medios-al-m%C3%ADnimo-hist%C3%B3rico/89528434}
 
 \bibitem[Tajfel and Turner(1979)]{TajfelTurner1979}
 
@@ -1822,14 +1810,6 @@ Consensus and dissention: A measure of ordinal dispersion.
 45(3),
 531--545
 (2007)
-
-\bibitem[{Universidad Javeriana}(2024)]{javerianaPROMUEVA}
-
-{Universidad Javeriana}.
-Inteligencia artificial para bajar el tono del debate digital.
-Coverage of PROMUEVA public event; Accessed 2025-10-21
-(2024).
-\url{https://www.javeriana.edu.co/pesquisa/inteligencia-artificial-red-social/}
 
 \bibitem[Vallender(1974)]{vallender1974calculation}
 
