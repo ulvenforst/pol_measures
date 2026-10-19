@@ -1,0 +1,138 @@
+Revisión desde capítulo 2 — 19 de octubre de 2026
+
+AISLAMIENTO Y BASE
+Rama: snotra/revision-tesis-cap2-20261019.
+Worktree: /Users/ulvenforst/Documents/Codex/2026-10-19/task-2/revision-tesis.
+Base: 49d4e2d36d5fd32c0552a691fdec1b4545d66e11 (main al iniciar).
+No había cambios de texto pendientes ni staged en la tesis. Preexistían 11 PDF en
+references/Articles y 5 resultados support_scaling_crossover_eps1e8: copiados intactos,
+no atribuidos a esta revisión ni añadidos a sus commits. Inventario con tamaños y
+SHA-256: ../initial-untracked-manifest.json, fuera del worktree.
+.DS_Store excluidos. Sin cambios al checkout original, main o código experimental.
+Sin push, merge, stash, reset o barridos. No se encontraron AGENTS.md aplicables.
+Leídas completas la skill local russellian-clear-writing y editorial-basis.md.
+
+REGISTRO POR SECCIONES
+El prefijo desde el inicio y el contexto vecino se revisaron acumulativamente al
+contrastar cada sección. Capítulo 1: leído como contexto; su fuente permanece intacta.
+2 (2.1–2.4). Fórmulas, condiciones y conceptos verificados: ER, VdE, TWD, EMD y KI.
+Sin cambios conceptuales. Estilo/maquetación: título KI más breve, transición TWD,
+corte de línea del encabezado largo. Se preservan masa/probabilidad, escala fija,
+EMD mínima a consenso, MAD media sobre mediana y selección/evaluación no independientes.
+3. Contenido: distinguir A1–A6,A8–A10,A14 obligatorias de A7,A11–A13 deseables.
+Top-k, modelos pareados y perturbaciones son métodos del plan narrativo, no actividades
+obligatorias separadas. Regionales: ejercicios del equipo PROMUEVA. La jerarquía entre
+el objetivo narrativo y la tabla no se resuelve inventando una exigencia institucional.
+4 (4.1–4.5). Releídas definición, transporte, convexidad, mediana/media, cuantiles,
+invariancia, escalamiento y normalizaciones. Fórmulas/pruebas conservadas. Solo se
+abrevia una oración que repetía el tipo de la función de esfuerzo y desbordaba el margen.
+5 (5.1–5.5). Verificados movimiento con al menos dos posiciones, excepción mediana,
+fusión antes de potenciar, máximo, axiomas, divisióncentral z=x y p=0, minoría con
+exactamente dos puntos, transferencia y unicidad. No se reintroducen errores históricos.
+Contenido: atribución según declaración del autor para pruebas ER/divisióncentral,
+guía de Jesús y revisión/mejora de Frank. Rótulo del teorema de minoría abreviado;
+sus hipótesis permanecen completas. No se cambia ninguna fórmula.
+6 (6.1–6.5). Contraste de código real: SciPy público vs bisección auxiliar, tolerancias,
+normalización por raíz, API, CLI no instalada, CI sin pipeline de publicación, corpus,
+empates y búsquedas/resampling. Contenido: ejecución experimental de Juan con guía
+colectiva; distinguir 60 participantes/58 retenidos; fuente regional ahora accesible.
+Se reducen repeticiones del inventario de planes y se permiten cortes en rutas largas.
+7 (7.1–7.5). Nueve coeficientes de la figura reproducidos; MEC(1,1) además comprobado.
+Tablas de búsqueda contrastadas con CSV: 30371/198 y 1656/865; estabilidad y tiempos
+con CSV/JSON guardados. Sin regenerar corpus ni búsquedas. Se integra el refinamiento
+preexistente del cruce de tiempos (SciPy primero supera ER a 275; bisección a 350,
+solo tamaños probados en esa ejecución). Nueva 7.5 resume las dos aplicaciones ya
+existentes en §12 del complemento; Juan hizo figuras, no todo su análisis. Cuatro
+histogramas del Concejo reproducen los scores mostrados con MECNormalized(2,1.15)
+y ER(0.8); esto no acredita la revisión histórica del código. No se copian microdatos,
+figuras privadas ni nuevas observaciones. Se conserva el límite descriptivo de los casos.
+8 (8.1–8.4). Alcance teórico/empírico coherente con el prefijo. Se corrige la evaluación
+de obligaciones y de contribuciones A14, y se elimina la afirmación de que no hay
+casos regionales documentados. A11: el complemento documenta tests finitos; no se
+convierten en demostraciones universales. A8: CLI general y CD siguen sin acreditarse.
+9 (9.1–9.2). Conclusiones ajustadas al alcance y atribución corregidos. Se conserva
+MEC(1,1)=mínima EMD a consenso y la validez limitada del benchmark. Futuro: líneas
+abiertas de la investigación colectiva, sin nuevos compromisos para Juan.
+Apéndice A. Leído y contrastado con arXiv F y complemento F. Factorización del
+discriminante y de 4AC-B^2 verificadas por coeficientes enteros exactos. Sin cambios.
+Apéndice B. Tabla cotejada con anteproyecto p.11; suma COP 88.992.000 correcta.
+Se mantiene como estimación prevista, no gasto auditado. Sin cambios.
+Bibliografía. Se añade la referencia privada al complemento, se corrigen apellido
+Van der Eijk y capitalización, y se retiran cuatro entradas no citadas. Sin consultas
+nuevas ni contenido tomado de esas notas de prensa.
+
+FUENTES CONTRASTADAS
+Publicado: references/2606.13997v1.pdf (55 pp.) y fuente TeX local, secciones y apéndices
+pertinentes. Originales nuevos: Esteban–Ray 1994 (axiomas/medida), Kawada et al. 2018
+(completo), Van der Eijk 2001 (construcción/supuestos), Tastle–Wierman 2007 (shannon.pdf,
+definición), Koudenburg et al. 2021 (fórmula, protocolo, cribado), Lupu et al. 2017
+(congruencia/EMD). Otros PDF del directorio se identificaron y extrajeron; no se afirma
+una auditoría integral de todos los artículos ajenos a los comparadores utilizados.
+Anteproyecto: copia local y original indicado cotejados; pp.9–10,16 tabla3,18 para alcance.
+Complemento: MEC_Measure(20261019-143958).pdf, libfile_5dd854ea47c48191b90fffa9c8e9bbf7,
+file_00000000214881fda27eb79f7eab22b9. Obtenido con helper Library oficial preservando
+identidad/xattrs. 1935434 bytes, SHA-256
+8c3edf85d7e8ba4da4b13eabc9d01b780b948721767698897dbc9391f19a4458.
+Leídos §3.2,§7–12,ap.E y F pertinentes. Se inspeccionaron visualmente pp.29–33.
+El fallo inicial fue técnico (Python sin certificados TLS), no denegación de permisos;
+resuelto con certificados del sistema. El PDF y su extracción permanecen privados,
+fuera del repositorio; no se publicaron ni incorporaron a commits.
+
+COMPROBACIONES Y EVIDENCIA
+- Suite existente: 90 tests, OK. Log ../tests-baseline.log. Código sin cambios.
+- Benchmark pequeño: ../expert-check.json; MEC(2,1.2)=0.8666666666666667 comprobado aparte.
+- ../math-checks.py y ../math-checks.log: discriminante exacto, 64 casos racionales
+  de transferencia, dos ejemplos exactos, raíz 17.15597964414758, 16 checks EMD,
+  contraejemplo ER (0.15426289161062057 -> 0.12289451274597979, K=1), Concejo.
+- Búsquedas grandes, correlaciones completas y tiempos: resultados existentes,
+  contrastados con metadatos, no experimentos nuevos ni barridos.
+- Compilación y QA finales: ver adenda al cerrar revisión.
+
+DISCREPANCIAS Y LÍMITES REALES
+1. No se modifica el publicado ni el complemento: su conclusión confunde EMD al
+   extremo con su complemento; la tesis conserva la identidad correcta. El borrador
+   §9 condiciona la bisección a alpha>1; el requisito pertinente es beta>1. La tesis
+   y helper actual conservan beta>1. Property1 del borrador admite colisiones y z=0;
+   la tesis separa z=x y exige z>0. Su ap.E limita ER2 a beta>1; arXiv y tesis prueban
+   también beta=1. No se rebajan resultados vigentes para copiar esas versiones.
+2. Tests del complemento §10: ausencia de contraejemplos no prueba axiomas en todo
+   el dominio; una fusión aislada no refuta los cuantificadores existenciales de ER1.
+   No se incorpora la tabla como demostración de VdE/TWD ni como disproof universal.
+   §10.4(II) invierte la dirección verbal del movimiento (1,9,0,9,1)->(0,10,0,10,0).
+   No se reproduce ese pasaje. No queda una corrección matemática bloqueada en la tesis.
+3. Falta trazabilidad histórica inequívoca figura->commit/configuración para todas
+   las ejecuciones. Consistencia numérica actual no la sustituye. No se inventa.
+4. Software A8: no entry point CLI general ni CD acreditada; no se implementan aquí
+   ni se añaden experimentos para convertir la revisión en otra obligación.
+5. Regionales: dos casos e interpretación documentados, no inferencia poblacional.
+   No se atribuye a Juan todo §12 ni se cambia el rol del equipo.
+6. Capítulo 1: no se reescribe. Su referencia a regionales fuera de los experimentos
+   del artículo público es compatible con la nueva síntesis del complemento privado.
+
+CIERRE DE AUDITORÍA GLOBAL
+Comprobados nuevamente prefijo, transiciones y contexto tras los cambios. Capítulo1
+idéntico byte por byte; todas las etiquetas, referencias y citas resuelven; no hay
+etiquetas duplicadas. No se alteraron fórmulas, código, tests ni resultados preexistentes.
+La atribución procede de la declaración expresa de Juan, no del orden de firmas:
+§8,10,11 del complemento, sus experimentos/pruebas/texto; ap.E suyo con revisión y
+mejora de Frank; correcciones al9, texto ER del7 modificado por Frank, contribución3.2,
+y revisiones generales. En §12 solo se le atribuyen las gráficas. Esta numeración no
+se traslada a la tesis o a arXiv. La prosa incorpora solo las atribuciones pertinentes.
+Anteproyecto local y original señalado: identidad binaria comprobada, SHA-256
+7b6191884d410d4d3cc00117e146d5141bf107302b177c862e5ef551f99c1c3b.
+
+Compilación final con Tectonic 0.17.0 y caché local: éxito, PDF de 66 páginas con
+imágenes y sin citas/referencias indefinidas. Salida ../build-final/sn-article.pdf;
+log y auxiliares en esa misma carpeta. Los problemas iniciales de imágenes del
+compilador standalone y fuentes no cacheadas se resolvieron usando el proyecto local
+y descargando únicamente dependencias TeX. No se modificó el preámbulo tipográfico.
+Revisión visual: páginas renderizadas con PDFKit, contactos del documento completo
+y vistas de detalle de secciones/figuras/tablas pertinentes. Se arreglaron desbordes
+de rutas y rótulos en capítulos2–9, preservando la notación. Resta una advertencia
+preexistente de 4.25945pt en el encabezado del capítulo1 (línea84), fuera del alcance;
+no oculta contenido. No se observan imágenes faltantes, fórmulas cortadas ni solapes.
+Capturas de control en ../pdf-preview-final; son intermedios fuera de Git.
+
+No quedan bloqueos de acceso o compilación. Límites pendientes: procedencia histórica
+de todas las figuras/runs y entregables CLI/CD no acreditados; no se promete exactitud
+matemática perfecta ni aprobación institucional. Nada publicado ni enviado al remoto.
