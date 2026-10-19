@@ -221,3 +221,10 @@ Capítulo 7, segunda pasada por 7.1–7.5: en cada subsección se releyó litera
 7.4: registros JSON originales y refinamiento preexistente examinados; 275/350 son primeros tamaños muestreados en esa corrida, no umbrales universales. 110 controles corresponden solo al experimento original. Sin cambios; no se ejecutan nuevas mediciones.
 7.5: nueva lectura literal de pp29–33 del adjunto verificado. Ordenamientos y alcances descriptivos coinciden. Atribución limitada a figuras para §12, colectiva para el análisis. Sin cambios. No se añaden datos individuales ni se distribuye el documento privado.
 Capítulo 7 cerrado. Cambio adicional: una frase de interpretación de la matriz.
+
+Capítulo 8, segunda pasada: lectura literal del prefijo completo antes y después de 8.1, 8.2, 8.3 y 8.4 (bloques íntegros en contexto), cotejando cada afirmación con los resultados y sus fuentes, y manteniendo el capítulo9 como contexto vecino.
+8.1: no requiere cambios; discusión distingue prueba, interpretación y benchmark, sin supremacía universal ni extensión del tipping a beta1.15.
+8.2: se elimina un párrafo que repetía A9–A10, top-k y criterios ya fijados en capítulo3 y en la tabla inmediata; se acorta la reiteración de atribución regional sin borrar su aportación en figuras ni el trabajo colectivo. Se conserva el vínculo con el alcance del anteproyecto y el carácter deseable A7/A11–13. No se transforma el plan metodológico en nuevas obligaciones.
+8.3: se precisa que la justificación abierta corresponde a elegir esos exponentes concretos (no a la validez de sus garantías matemáticas), y que el primer tamaño400 corresponde a la corrida original de once tamaños, compatible con el refinamiento. Resto sin cambios.
+8.4: sin cambios; no se añaden datos, estudios ni compromisos. La interpretación del óptimo sigue siendo estática y dependiente del modelo.
+Capítulo8 cerrado; cambios de continuidad y dos precisiones de alcance, sin nuevos resultados.
