@@ -800,7 +800,7 @@ This establishes the upper bound needed for the extremal normalization introduce
 
 \subsection{Esteban--Ray Axioms}\label{subsec:mec-er-axioms}
 
-Section~\ref{subsec:lit-axioms} explained identification and alienation and distinguished axiomatic compliance from characterization. We now state the three original axioms precisely and prove the corresponding MEC results. I developed the ER-axiom and central-split proofs with Jesús Aranda's guidance; Frank Valencia reviewed and improved this material. Let $P\colon\mathcal{D}\to\mathbb{R}_{\geq0}$ be a polarization measure. The conditions below are those used in the paper, following Esteban and Ray \citep{esteban1994measurement,aranda2026mec}. They concern specified configurations rather than arbitrary mergers or movements.
+Section~\ref{subsec:lit-axioms} explained identification and alienation and distinguished axiomatic compliance from characterization. We now state the axioms using the paper's formulations and prove the corresponding MEC results. I developed the ER-axiom and central-split proofs with Jesús Aranda's guidance; Frank Valencia reviewed and improved this material. Let $P\colon\mathcal{D}\to\mathbb{R}_{\geq0}$ be a polarization measure. The conditions below are those used in the paper, following Esteban and Ray \citep{esteban1994measurement,aranda2026mec}. They concern specified configurations rather than arbitrary mergers or movements.
 
 \begin{axiom}[ER Axiom 1, increased identification]\label{axiom:mec-er1}
 For every $p>0$ and $x\in(0,1)$, there exist $\varepsilon,\mu>0$ such that, for every $x<y\leq1$ and $0<q<p$ satisfying $y-x<\varepsilon$ and $q<\mu p$,
@@ -886,13 +886,15 @@ The required inequality fails for arbitrarily close, arbitrarily small groups. T
 
 The gain in identification is represented by the factor $2^\alpha-2$. At $\alpha=1$, that gain disappears. This explains why the linear transport and variance instances discussed earlier do not satisfy Axiom~1, despite satisfying the basic definition of a polarization measure.
 
-\begin{axiom}[ER Axiom 2, increased alienation]\label{axiom:mec-er2}
+\begin{axiom}[ER Axiom 2, strengthened movement condition]\label{axiom:mec-er2}
 For all $p,q,r>0$ with $p>r$, all $0<x<y\leq1$ with $y-x<x$, and all $\Delta\in(0,y-x)$,
 \[
 P((p,q,r),(0,x,y))
 <P((p,q,r),(0,x+\Delta,y)).
 \]
 \end{axiom}
+
+Esteban and Ray originally require the increase only for sufficiently small positive movements \citep[p.~833]{esteban1994measurement}. The paper uses the stronger condition above, covering every $\Delta\in(0,y-x)$ \citep{aranda2026mec}. The proof below establishes this stronger result and hence the original axiom.
 
 \begin{figure}[htbp]
 \centering
