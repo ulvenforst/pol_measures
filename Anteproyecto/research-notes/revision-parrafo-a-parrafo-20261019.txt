@@ -1,0 +1,975 @@
+REVISIÓN SECUENCIAL DE PÁRRAFOS, 19 OCTUBRE 2026
+
+Base estable:179fd869d3c8e7888f3e6300cdaaf5de7c7f90c8. Rama snotra/revision-tesis-cap2-20261019.
+Método previo realmente realizado: lectura íntegra por bloques/capítulos, selección de cambios y revisión de los pasajes modificados en contexto. No se había documentado una decisión individual para cada párrafo sin cambios. Este registro corresponde a la revisión secuencial nueva, no reconstruye una garantía retrospectiva.
+
+Alcance actual: ritmo/puntuación párrafo por párrafo y cinco pendientes de auditoría. La revisión global de redundancias y de la introducción de conceptos queda para otra tarea; no se modifica la remisión inicial a sección1 ni la introducción de ConditionH.
+Criterios: lectura íntegra local previa de /Users/ulvenforst/.agents/skills/russellian-clear-writing/SKILL.md y references/editorial-basis.md. Sustain the exposition exige relaciones reales y variación de longitud; Respect the task and meaning obliga a preservar contenido, notación, negaciones, condiciones y atribuciones. La referencia editorial apoya familiar→nuevo (Harvard Transitions), desarrollo del párrafo (Harvard Anatomy) y funciones de puntuación; no fija cuotas de signos.
+
+INVENTARIO Y ALCANCE DE LA COBERTURA
+P001–P306 son unidades contiguas de fuente separadas por blancos, desde capítulo1 hasta bibliografía. No se afirma que sean306 párrafos naturales: también se indexan enunciados, pruebas, figuras, tablas y campos bibliográficos. Cada párrafo de prosa queda cubierto; en unidades con varios entornos se dan subrangos y decisiones de enunciado/prueba/glosa. Los cinco ítems de objetivos tienen además decisiones individuales I1–I5. Se omiten comandos puramente de diseño y comentarios no renderizados.
+La prosa de cada unidad se leyó en orden y se evaluó individualmente, también donde no se editó. Desde P096 las visualizaciones de lectura abreviaron únicamente displays matemáticos ya leídos; se mantuvieron toda la prosa y la notación inline. Esta es una revisión de prosa, no una nueva certificación matemática.
+Las líneas remiten a la base179fd86 y no se han movido: los cinco cambios no añaden ni quitan líneas.
+
+P001 | §1 | líneas86–86
+Sin cambio: contraste y razón enlazados; las dos frases iniciales desarrollan la escena sin ocultar la distinción.
+
+P002 | §1 | líneas88–88
+Sin cambio: las tres cláusulas son una enumeración paralela anunciada, seguida de su interpretación común.
+
+P003 | §1 | líneas90–90
+Sin cambio: cada oración presenta una medida distinta con su cita; la separación permite comparar y la conclusión da unidad.
+
+P004 | §1 | líneas92–92
+Sin cambio: interpretación, problema y minimización forman una progresión con longitudes variadas.
+
+P005 | §1 | líneas94–94
+Sin cambio: procedencia, participación y alcance cumplen funciones diferentes; preservar la atribución y su redacción.
+
+P006 | §1 | líneas96–105
+Corrección concreta tras auditoría y revisión en contexto: cambiar las dos uniones dimension, and when por dimension; when. El punto y coma liga cláusulas estrechamente relacionadas, conforme a Sustain the exposition/puntuación y editorial-basis; conserva todos los términos y condiciones y evita repetir and.
+
+P007 | §1 | líneas107–107
+Sin cambio: existencia, unicidad condicionada y caso beta1 permanecen diferenciados; el límite predictivo ya está ligado con but.
+
+P008 | §1 | líneas109–109
+Sin cambio: las dos vías de evaluación se desarrollan en oraciones paralelas y se relacionan con la prueba formal al cierre.
+
+P009 | §1 | líneas111–112
+Sin cambio: pregunta de investigación única, completa y delimitada; conservar la navegación académica.
+
+P010 | §1 | líneas114–114
+Sin cambio: las frases distribuyen dominio, representación y exclusión dinámica; juntarlas acumularía salvedades (test2).
+
+P011 | §1 | líneas116–117
+Sin cambio: resultado básico y salvedad axiomatización quedan explícitos; la oración breve final protege esa distinción.
+
+P012 | §1 | líneas119–119
+Sin cambio: los casos beta1/beta2 y alfa1 son recordatorios separados necesarios; el escalamiento se desarrolla con su consecuencia.
+
+P013 | §1 | líneas121–126
+Sin cambio: motivación, identidad y lectura geométrica se desarrollan antes/después de la ecuación con referencia inequívoca.
+
+P014 | §1 | líneas128–128
+Sin cambio: contraste hipótesis/resultado y condiciones por axioma ya tiene coordinación; no esconder los regímenes.
+
+P015 | §1 | líneas130–130
+Sin cambio: enunciado largo conserva simetría y masa central positiva; la diferencia con A3 queda desarrollada aparte.
+
+P016 | §1 | líneas132–132
+Sin cambio: una transición y un resultado con dominio preciso; ritmo y longitud ya variados.
+
+P017 | §1 | líneas134–134
+Sin cambio: cada paso añade dominio, cruce, extensión y distinción whole/partial; las restricciones no deben comprimirse.
+
+P018 | §1 | líneas136–136
+Sin cambio: separar beta>1/beta1 mantiene las condiciones visibles y cierra con el nexo computacional.
+
+P019 | §1 | líneas138–139
+Sin cambio: universo, reducción y estadístico son tres pasos informativos; ni repetición ni fragmentos.
+
+P020 | §1 | líneas141–141
+Sin cambio: resultado y apoyo parcial preceden a límites de selección; las frases cortas conservan salvedades decisivas.
+
+P021 | §1 | líneas143–143
+Sin cambio: recorrido de la tesis en orden; cada oración agrupa una etapa sustantiva y la estructura es útil.
+
+P022 | §2 | líneas150–150
+Sin cambio: tres significados técnicos paralelos justifican separaciones; las aplicaciones están unidas por therefore/Conversely.
+
+P023 | §2 | líneas152–152
+Sin cambio: orden, coordenadas y codificación se desarrollan con since; conservar aparte límite afectivo/network.
+
+P024 | §2 | líneas154–162
+Sin cambio: notación prepara ecuación y distingue probabilidades/masas; frases cortas evitan condiciones ambiguas. La posible redundancia de la remisión se reserva para revisión global posterior, fuera del alcance actual.
+
+P025 | §2.1 | líneas166–173
+Sin cambio: fórmula seguida de parámetros, comparación y máximo; cada oración cumple una función matemática propia.
+
+P026 | §2.1 | líneas175–175
+Sin cambio: una oración por transformación preserva las tres configuraciones; la salvedad final impide generalizarlas.
+
+P027 | §2.1 | líneas177–177
+Sin cambio: problema, corrección y alcance de caracterización se desarrollan lógicamente; se mantiene la cautela final. La introducción de ConditionH se reserva para revisión global posterior; no se interviene en este turno.
+
+P028 | §2.1 | líneas179–179
+Sin cambio: motivaciones psicológicas conectadas por so/further; el límite de medición queda visible.
+
+P029 | §2.2 | líneas183–183
+Sin cambio: transición entre tradiciones y presentación de dos enfoques, sin segmentación innecesaria.
+
+P030 | §2.2 | líneas185–186
+Sin cambio: condición junto a medida y consecuencia de uniformidad junto a asignación; procedimiento y vector continúan el desarrollo.
+
+P031 | §2.2 | líneas188–198
+Sin cambio: contar triples, definir el índice y fijar la convención cero son pasos distintos; condiciones y fórmula necesitan esa separación.
+
+P032 | §2.2 | líneas200–206
+Sin cambio: agregado, escalas e interpretación se desarrollan con therefore; no se repite la construcción de capas.
+
+P033 | §2.2 | líneas208–221
+Sin cambio: condición de escala, fórmula y casos límite están conectados; las salvedades de ceros y amplitud quedan visibles.
+
+P034 | §2.2 | líneas223–223
+Sin cambio: una comparación concreta prepara la comparación general posterior, con cita propia; dos oraciones de funciones distintas.
+
+P035 | §2.3 | líneas227–227
+Sin cambio: pasa de objeto comparado a coste, denominación y dominio de aplicación; separar estas definiciones evita sobrecargar la primera frase.
+
+P036 | §2.3 | líneas229–240
+Sin cambio: ecuaciones y glosa ya conectan coste fijo/mínimo y óptimo/valor; la distinción entre dos MAD queda deliberadamente aparte.
+
+P037 | §2.3 | líneas242–242
+Corrección mínima tras reconsiderar en contexto: integrar That application compares two distributions como by comparing two distributions en la oración de Lupu. El contraste con la construcción de consenso permanece en la oración siguiente.
+
+P038 | §2.3 | líneas244–244
+Sin cambio: but, and y without relacionan límites y generalización; separar pesos de distancias mantiene el desarrollo.
+
+P039 | §2.4 | líneas248–248
+Sin cambio: contexto, participantes/tarea y cribado no se acumulan en una sola frase con varias cifras.
+
+P040 | §2.4 | líneas250–257
+Sin cambio: nombre del índice, fórmula, normalización y significado de símbolos siguen orden lógico; no modificar definiciones por ritmo.
+
+P041 | §2.4 | líneas259–259
+Sin cambio: Consequently explicita consecuencia de los términos; la interpretación y la cautela de no igualdad tienen funciones propias.
+
+P042 | §2.4 | líneas261–261
+Sin cambio: candidato/referencia ya coordinados; se desarrolla estadístico y unidad de juicio sin cambiar la distinción técnica.
+
+P043 | §2.4 | líneas263–263
+Sin cambio: cautela causal ya unida con so; segunda oración es navegación útil, no una conclusión redundante.
+
+P044 | §2.4 | líneas265–265
+Sin cambio: comparación entre familias y contraste lineal/general usan while con relaciones diferentes y explícitas, no muletillas vacías.
+
+P045 | §2.4 | líneas267–267
+Sin cambio: cada criterio tiene función distinta y remisión; las frases separadas mantienen la comparación formal/empírica.
+
+P046 | §3 | líneas271–271
+Sin cambio: propósito, retención de objetivos y fuentes quedan conectados; el punto y coma distingue dos fuentes de alcance diferente.
+
+P047 | §3 | líneas273–273
+Sin cambio: objetivo largo y oración de alcance; ya hay variación de longitud y no fragmentación.
+
+P048 | §3 | líneas275–282
+Sin cambio en introducción y lista académica de cinco objetivos; véanse decisiones individuales I1–I5.
+P048.I1: Sin cambio, línea277: objetivos formales paralelos en imperativos; no son frases cortas de un argumento continuo.
+P048.I2: Sin cambio, línea278: corpus, convenciones y comparadores se desarrollan como acciones y alcance propios.
+P048.I3: Sin cambio, línea279: entrega de software y registro de configuración son dos acciones distintas en la lista.
+P048.I4: Sin cambio, línea280: comparación principal y métodos previstos quedan diferenciados sin unir obligaciones.
+P048.I5: Sin cambio, línea281: comparación secundaria y contribución regional conservan sus dominios y autoría.
+
+P049 | §3 | líneas284–284
+Sin cambio: dominio, propiedades contrastadas y exclusión de KNS tienen relaciones explícitas y límites visibles.
+
+P050 | §3 | líneas286–286
+Sin cambio: escala, finitud, búsqueda y codificación distinguen límites diferentes; because relaciona coordenadas con interpretación.
+
+P051 | §3 | líneas288–288
+Sin cambio: se separan benchmark y regionales; sus límites explícitos se conservan por test2, sin hacer una cadena de salvedades.
+
+P052 | §3 | líneas290–290
+Sin cambio: exclusión dinámica y significado estático del óptimo ya contrastado con but; las aplicaciones completan el propósito.
+
+P053 | §3 | líneas292–292
+Sin cambio: criterio de obligatoriedad precede al catálogo; los puntos aíslan la enumeración extensa sin alterar compromisos.
+
+P054 | §3 | líneas294–294
+Sin cambio: enumeración de actividades deseables seguida de evidencia y criterio de evaluación, sin redundancia añadida.
+
+P055 | §3 | líneas296–296
+Sin cambio: distingue plan, clasificación y evidencia de ejecución; el cierre mantiene las dos exigencias con punto y coma útil.
+
+P056 | §3 | líneas298–298
+Sin cambio: evidencia, método de discusión y relación con propuesta forman tres pasos consecutivos; no necesita otra unión.
+
+P057 | §4 | líneas356–356
+Sin cambio: transición breve, desarrollo y guía del capítulo tienen longitudes diferentes; las frases centrales ya coordinan el recorrido.
+
+P058 | §4.1 | líneas360–365
+Sin cambio: notación y representación preceden a ceros, soporte y tipos de masa; el punto y coma conserva la distinción técnica.
+
+P059 | §4.1 | líneas367–375
+Sin cambio en definición formal y glosa posterior; se distinguen decisiones D/G para ambos párrafos.
+Subrangos: definition:367–374; glosa:375–375.
+P059.D: Sin cambio, líneas367–374: definición y fórmula formales, con In particular introduciendo la igualdad.
+P059.G: Sin cambio, línea375: la glosa distingue alfa1 del caso general; las condiciones quedan junto a sus afirmaciones.
+
+P060 | §4.1 | líneas377–379
+Sin cambio: definiciones formales separan tres objetos y concluyen su masa común; precisión y notación tienen prioridad.
+
+P061 | §4.1 | líneas381–387
+Sin cambio: definición de mediana seguida de conjunto, posiciones intermedias y efecto de normalización; since conecta la última razón.
+
+P062 | §4.1 | líneas389–392
+Definición sin cambio: dos requisitos y dominio explícitos. Glosa sin cambio: remisión axiomas y función de construcción están diferenciadas.
+Subrangos: definition:389–391; glosa:392–392.
+
+P063 | §4.2 | líneas396–408
+Sin cambio: contexto→plan→marginales→coste→existencia del mínimo; cada paso usa la información precedente y las frases breves introducen objetos.
+
+P064 | §4.2 | líneas410–415
+Enunciado sin cambio: identidad y consecuencia diferenciadas. Prueba sin cambio: restricción de destino→plan único→coste→mínimo, con therefore y which.
+Subrangos: lemma:410–412; proof:413–415.
+
+P065 | §4.2 | líneas417–417
+Sin cambio: pesos/distancias ya coordinados por while; explicación Thus y remisión mantienen la progresión sin unir todo en una frase.
+
+P066 | §4.2 | líneas419–422
+Definición sin cambio: nombre, notación y punto óptimo completos. Glosa sin cambio: dominio continuo y límite EMD quedan explícitos y conectados.
+Subrangos: definition:419–421; glosa:422–422.
+
+P067 | §4.3 | líneas426–426
+Sin cambio: anuncio y contraste existencia/unicidad en longitudes distintas; whereas ya expresa la relación.
+
+P068 | §4.3 | líneas428–433
+Enunciado sin cambio: existencia y localización son propiedades distintas. Prueba sin cambio: cada caso fuera del soporte tiene su consecuencia clara.
+Subrangos: proposition:428–430; proof:431–433.
+
+P069 | §4.3 | líneas435–435
+Sin cambio: argumento de ida y vuelta organizado con At consensus/Conversely/Since/Thus; los puntos sostienen la inferencia, no la interrumpen.
+
+P070 | §4.3 | líneas437–442
+Enunciado sin cambio: condición beta>1 visible. Prueba sin cambio: función→peso→suma→unicidad, con since y remisión para existencia.
+Subrangos: theorem:437–439; proof:440–442.
+
+P071 | §4.3 | líneas444–459
+Sin cambio: ecuación, derivada y cero se desarrollan en orden; separar caso no consenso/consenso conserva condiciones y lectura del cálculo.
+
+P072 | §4.3 | líneas461–461
+Sin cambio: coste por evaluación→iteraciones→coste total; se mantiene aparte la excepción beta1 y el alcance de la precisión.
+
+P073 | §4.4 | líneas465–470
+Sin cambio: definición de dispersión y explicación del mínimo preparan el nombre técnico; no añade muletillas ni una cuota de puntos.
+
+P074 | §4.4 | líneas472–487
+Enunciado sin cambio: identidad formal. Prueba sin cambio: independencia del factor y toma de mínimos son pasos sucesivos, seguidos del dato sobre minimizadores.
+Subrangos: theorem:472–478; proof:479–487.
+
+P075 | §4.4 | líneas489–489
+Sin cambio: notación de dos estadísticos preparada antes del corolario; la separación evita mezclar mediana y media.
+
+P076 | §4.4 | líneas491–516
+Corolario sin cambio: beta1/beta2 separados para conservar el dominio. Prueba sin cambio: derivadas laterales y expansión cuadrática son argumentos distintos.
+Subrangos: corollary:491–502; proof:503–516.
+
+P077 | §4.4 | líneas518–518
+Texto conservado por límite de autorización: el contraste alfa1/general está enlazado, pero It also explains remite a una distinción de pesos que no explica la diferencia entre mean y median absolute deviation. Propuesta sustantiva separada para Juan; no se valida ese razonamiento como cuestión de ritmo.
+
+P078 | §4.4 | líneas520–538
+Sin cambio: ejemplo recorre entrada→dos parámetros→dos valores→interpretación y límite, sin alterar redacción o cifras por ritmo.
+
+P079 | §4.4 | líneas540–540
+Sin cambio: el recordatorio de mediana introduce una prueba concreta con remisión; ambas oraciones son completas y de longitudes distintas.
+
+P080 | §4.4 | líneas542–566
+Enunciado sin cambio: identidad precisa. Prueba sin cambio: definición de cuantiles, casos por mitad e identidad triangular quedan separados con sus límites a.e.
+Subrangos: theorem:542–548; proof:549–566.
+
+P081 | §4.4 | líneas568–568
+Sin cambio: ejemplo numérico desarrolla identidad y cota, y distingue luego maximalidad general; so y with conectan los pasos.
+
+P082 | §4.5 | líneas572–572
+Sin cambio: transición de dispersión a transformaciones, con anuncio de sus tres papeles; no mezcla definición con resultado.
+
+P083 | §4.5 | líneas574–575
+Sin cambio: definición formal de reflexión, masas y simetría; cada término se introduce antes de usarlo.
+
+P084 | §4.5 | líneas577–578
+Sin cambio: definición de desplazamiento y soporte transformado, paralela a reflexión; conservar estructura formal útil.
+
+P085 | §4.5 | líneas580–600
+Lema sin cambio: dos invariancias paralelas. Prueba sin cambio: cambio de intervalo antes de igualdad y mínimos. Glosa sin cambio: aclara intervalo admisible y significado de cada transformación.
+Subrangos: lemma:580–590; proof:591–599; glosa:600–600.
+
+P086 | §4.5 | líneas602–612
+Lema sin cambio: condición y dos regímenes. Prueba sin cambio: simetría/uniquidad y mediana necesitan casos propios, sin comprimir premisas.
+Subrangos: lemma:602–609; proof:610–612.
+
+P087 | §4.5 | líneas614–625
+Corolario sin cambio: valor extremo. Prueba sin cambio: simetría justifica evaluación. Glosa sin cambio: diferencia beta1/beta>1 y evaluación/maximalidad preserva límites.
+Subrangos: corollary:614–621; proof:622–624; glosa:625–625.
+
+P088 | §4.5 | líneas627–637
+Enunciado sin cambio: valor y minimizadores. Prueba sin cambio: igualdad y factor independiente expresan claramente por qué se conservan posiciones.
+Subrangos: theorem:627–634; proof:635–637.
+
+P089 | §4.5 | líneas639–657
+Sin cambio: dos normalizaciones y ConditionH se desarrollan con fórmulas y contraste; la advertencia de escalas complementa la equivalencia ordinal.
+
+P090 | §4.5 | líneas659–659
+Sin cambio: cierre recoge lo necesario para movimientos y cómputo; no repite pruebas ni términos con sinónimos.
+
+P091 | §5 | líneas663–663
+Sin cambio: panorama del capítulo desarrolla cada parte sustantiva y atribuye fuentes; ritmo ya varía entre transiciones y explicación.
+
+P092 | §5 | líneas665–665
+Sin cambio: dominio, abreviaturas y remisión son requisitos de lectura; no unirlos en una cadena larga.
+
+P093 | §5.1 | líneas669–669
+Sin cambio: razón sobre masa ya enlazada, ejemplo y operación distinta la desarrollan; no ampliar el resultado.
+
+P094 | §5.1 | líneas671–678
+Sin cambio: definición formal y caso identidad preceden a condición para todos los óptimos; conservar cuantificadores y navegación.
+
+P095 | §5.1 | líneas680–681
+Sin cambio: definición formal de excepción en una oración, con todas sus condiciones.
+
+P096 | §5.1 | líneas683–683
+Sin cambio: razón de todos los óptimos y caso de fusión ya conectados; las dos condiciones no se confunden.
+
+P097 | §5.1 | líneas685–692
+Enunciado sin cambio: hipótesis/excepción visibles. Inicio de prueba sin cambio: reducción alfa1 y reflexión preparan el caso derecho.
+Subrangos: theorem:685–690; proof:691–692.
+
+P098 | §5.1 | líneas694–698
+Sin cambio: los dos regímenes de mediana tienen razones y conclusiones explícitas; la repetición r remains a median sirve para llegar a un óptimo común.
+
+P099 | §5.1 | líneas700–704
+Sin cambio: define función auxiliar antes de su uso y deduce ubicación del cero con so/because/therefore; cada condición queda junto a la inferencia.
+
+P100 | §5.1 | líneas706–710
+Sin cambio: hipótesis del sobre y derivada seguidas por la salvedad de diferenciabilidad y la continuidad; no unir ocultando la excepción.
+
+P101 | §5.1 | líneas712–725
+Sin cambio: paso a pesos potencia y comparación de fusiones preceden a desigualdad y mínimos; since y whereas explican relaciones.
+
+P102 | §5.1 | líneas727–727
+Sin cambio: el caso consenso y la excepción mediana son fronteras distintas; las frases separadas evitan identificarlas.
+
+P103 | §5.1 | líneas729–736
+Sin cambio: entrada, medianas, valores y conclusión son pasos de ejemplo completos; el cierre aporta el contraejemplo concreto.
+
+P104 | §5.1 | líneas738–738
+Sin cambio: transición de mover grupos a dividir masas entre extremos; dos oraciones medianas con funciones distintas.
+
+P105 | §5.1 | líneas740–751
+Enunciado sin cambio: máximo de dos puntos. Inicio de prueba sin cambio: extremos consenso y beta1 con mediana requieren casos explícitos.
+Subrangos: theorem:740–745; proof:746–751.
+
+P106 | §5.1 | líneas753–768
+Sin cambio: balance→dos expresiones→cota→signo, con Hence y so; no alterar el razonamiento matemático bajo edición de ritmo.
+
+P107 | §5.1 | líneas770–779
+Enunciado sin cambio: propiedad y cota. Inicio de prueba sin cambio: resultado previo, obligación restante y reducción no consenso.
+Subrangos: theorem:770–777; proof:778–779.
+
+P108 | §5.1 | líneas781–781
+Sin cambio: procedimiento de movimientos se desarrolla paso a paso, con condición, terminación y cota final; no es fragmentación arbitraria.
+
+P109 | §5.1 | líneas783–783
+Sin cambio: excepción beta1, intervalo mediano y dos finales posibles se enlazan con therefore; la notación final se introduce al necesitarla.
+
+P110 | §5.1 | líneas785–797
+Sin cambio: contradicción y comparación usan Indeed/if/Since; se separan los dos casos terminales sin esconder masas cero.
+
+P111 | §5.1 | líneas799–799
+Sin cambio: alcance de maximalidad y límite axiomatización cumplen funciones diferentes; las condiciones de parámetros quedan visibles.
+
+P112 | §5.2 | líneas803–803
+Sin cambio: transición, autoría, función y alcance tienen finalidades distintas; preservar atribución y estructura formal.
+
+P113 | §5.2 | líneas805–811
+Sin cambio: enunciado cuantificado de A1, sin prosa cortada entre condiciones; notación protegida.
+
+P114 | §5.2 | líneas813–818
+Sin cambio: pie identifica fuente y explica la operación; ambas oraciones son necesarias para lectura autónoma de figura.
+
+P115 | §5.2 | líneas820–820
+Sin cambio: premisas, consecuencia y cuantificadores se suceden con Under those conditions; la remisión final navega al dibujo.
+
+P116 | §5.2 | líneas822–845
+Enunciado sin cambio. Preparación de prueba sin cambio: variables y diferencia antes de Jensen, con casos beta separados al cierre.
+Subrangos: theorem:822–824; proof:825–845.
+
+P117 | §5.2 | líneas847–853
+Sin cambio: elección, mediana, comparación y fallo alfa1 están encadenados con Then/For/so; mantener cada régimen explícito.
+
+P118 | §5.2 | líneas855–870
+Sin cambio: Now assume abre el caso; elección y signos se presentan antes de ubicar el óptimo. No unir varios cálculos.
+
+P119 | §5.2 | líneas872–877
+Sin cambio: continuidad, elección de cotas y evaluación óptima se desarrollan en orden y concluyen Thus; precisión sobre ritmo.
+
+P120 | §5.2 | líneas879–885
+Sin cambio: cuantificadores arbitrarios y elección exhiben necesidad; las dos frases finales distinguen fallo e implicación lógica.
+
+P121 | §5.2 | líneas887–887
+Sin cambio: factor y caso alfa1 ya coordinados; explicación posterior conserva el vínculo con ejemplos de dispersión.
+
+P122 | §5.2 | líneas889–895
+Sin cambio: enunciado formal de condición reforzada A2 con todos los regímenes visibles.
+
+P123 | §5.2 | líneas897–897
+Sin cambio: tres formulaciones, original/reforzada/demostrada, necesitan mantenerse distinguibles y citadas.
+
+P124 | §5.2 | líneas899–904
+Sin cambio: pie de figura con procedencia y operación bajo condiciones; estructura académica útil.
+
+P125 | §5.2 | líneas906–906
+Sin cambio: movimiento precede a explicación de las condiciones que lo justifican, sin un conector ficticio.
+
+P126 | §5.2 | líneas908–916
+Enunciado sin cambio. Primer caso de prueba sin cambio: deriva ubicación del óptimo antes de invocar movimiento; therefore explicita consecuencia.
+Subrangos: theorem:908–910; proof:911–916.
+
+P127 | §5.2 | líneas918–924
+Sin cambio: If/Otherwise separan excepción y caso cubierto; mantener la evaluación en los dos óptimos al final.
+
+P128 | §5.2 | líneas926–926
+Sin cambio: salvedad del teorema general y condición más fuerte de A2 son el argumento central, no repetición vacía.
+
+P129 | §5.2 | líneas928–934
+Sin cambio: enunciado formal de A3, no fragmentación editorial de un párrafo explicativo.
+
+P130 | §5.2 | líneas936–941
+Sin cambio: pie fuente/redistribución y nota y=2x, con punto y coma útil para condición breve.
+
+P131 | §5.2 | líneas943–943
+Sin cambio: operación, posiciones fijas y centro positivo distinguen premisas; remisión a figura no altera esa secuencia.
+
+P132 | §5.2 | líneas945–950
+Enunciado sin cambio. Prueba sin cambio: simetría→óptimo→dos valores→signo, con Since explícito.
+Subrangos: theorem:945–947; proof:948–950.
+
+P133 | §5.2 | líneas952–952
+Sin cambio: resultado conjunto, refinamiento de hipótesis y exclusión KNS están separados para conservar sus límites.
+
+P134 | §5.3 | líneas956–956
+Sin cambio: contraste A3/propiedad y vínculo con propuesta se desarrollan en tres oraciones completas.
+
+P135 | §5.3 | líneas958–964
+Sin cambio: definición formal introduce condiciones, transformación y exigencia de aumento en orden; no fusionar cuantificadores por ritmo.
+
+P136 | §5.3 | líneas966–976
+Representación sin cambio: caso z<x explícito. Pie sin cambio: fuente, masas pareadas y y=2x cumplen funciones distintas.
+
+P137 | §5.3 | líneas978–978
+Sin cambio: contraste fusión/intermedio y restricción de masa están explícitos; las frases cortas previenen posiciones duplicadas.
+
+P138 | §5.3 | líneas980–995
+Enunciado sin cambio. Prueba sin cambio: dos casos de destino y p0 se distinguen antes de concluir; no unir sus condiciones.
+Subrangos: theorem:980–982; proof:983–995.
+
+P139 | §5.3 | líneas997–1005
+Sin cambio: contraejemplo se introduce, calcula e interpreta con Thus; cautela final limita la comparación sin suprimirla.
+
+P140 | §5.4 | líneas1009–1009
+Sin cambio: el paso de comparar distribuciones a contribuciones internas prepara el resultado inesperado mediante nevertheless.
+
+P141 | §5.4 | líneas1011–1021
+Enunciado sin cambio: tres posiciones del óptimo paralelas. Prueba sin cambio: signos y punto medio son dos pasos lógicos propios.
+Subrangos: lemma:1011–1018; proof:1019–1021.
+
+P142 | §5.4 | líneas1023–1036
+Enunciado sin cambio: dos masas y desigualdad. Prueba sin cambio: beta>1, beta1 y reflexión son casos necesarios y mantienen los conectores.
+Subrangos: theorem:1023–1033; proof:1034–1036.
+
+P143 | §5.4 | líneas1038–1038
+Sin cambio: caso igualitario, dominio exacto y alcance interpretativo aportan límites diferentes que deben permanecer visibles.
+
+P144 | §5.5 | líneas1042–1042
+Sin cambio: las oraciones contrastan mover todo/mover parte antes de introducir potencias y su consecuencia This is why; la progresión ya está conectada.
+
+P145 | §5.5 | líneas1044–1044
+Sin cambio: una definición y dos casos frontera; claridad de notación y rango antes de aplicarlos.
+
+P146 | §5.5 | líneas1046–1051
+Sin cambio: fórmula, expansión e interpretación computacional se desarrollan con Indeed/which; no fragmentos sin antecedente.
+
+P147 | §5.5 | líneas1053–1088
+Enunciado sin cambio: notación, valores y diferencia ordenados. Prueba sin cambio: aplicación doble, resta y positividad son pasos completos.
+Subrangos: proposition:1053–1082; proof:1083–1088.
+
+P148 | §5.5 | líneas1090–1108
+Enunciado sin cambio: dominio y cruce. Prueba sin cambio: existencia→discriminante→unicidad→signo, con therefore y alcance k>0.
+Subrangos: theorem:1090–1100; proof:1101–1108.
+
+P149 | §5.5 | líneas1110–1110
+Sin cambio: umbral/no estacionario ya conectados con but; la salvedad de no monotonía queda separada y no oculta.
+
+P150 | §5.5 | líneas1112–1119
+Sin cambio: parámetros, polinomio, raíz e interpretación son un ejemplo gradual; las frases finales preservan igualdad y masa real/entera.
+
+P151 | §5.5 | líneas1121–1121
+Sin cambio: una oración completa enlaza extensión cúbica y reserva de unicidad con but.
+
+P152 | §5.5 | líneas1123–1147
+Enunciado sin cambio: rango y signo. Prueba sin cambio: notación, numerador, grado y positividad tienen nexos explícitos y preservan hipótesis.
+Subrangos: proposition:1123–1130; proof:1131–1147.
+
+P153 | §5.5 | líneas1149–1149
+Sin cambio: resumen de condiciones es una enumeración compleja con punto y coma justificado; desarrollo y transición no requieren unión adicional.
+
+P154 | §6 | líneas1153–1153
+Sin cambio: método, dos comparaciones, atribución y repositorio tienen funciones propias; conservar la participación y la remisión de fuente.
+
+P155 | §6 | líneas1155–1155
+Sin cambio: papeles de fuentes ya contrastados por while y límites ligados por and; These sources hace de anclaje del argumento siguiente.
+
+P156 | §6.1 | líneas1159–1163
+Sin cambio: contraste masa/proporciones enlazado; representación, ceros y normalización de posiciones se desarrollan en orden.
+
+P157 | §6.1 | líneas1165–1165
+Sin cambio: escalamiento, masa fija y consecuencia ordinal enlazados con Since/therefore; dejar visible la condición de totales distintos.
+
+P158 | §6.1 | líneas1167–1167
+Sin cambio: objetivo, retorno y límite ya conectados con but; la aproximación y caso de extremo son cautelas distintas.
+
+P159 | §6.1 | líneas1169–1173
+Sin cambio: descripción del algoritmo y cota por pasos, sin ocultar precondiciones de beta o precisión; el cierre limita la complejidad.
+
+P160 | §6.1 | líneas1175–1175
+Sin cambio: dos criterios y explicación since enlazados; las frases sobre tolerancia heredada y plan histórico conservan su alcance.
+
+P161 | §6.1 | líneas1177–1177
+Sin cambio: casos beta1/beta2 y ruta pública distintos; nevertheless expresa el contraste y el cierre aclara finalidad de los controles.
+
+P162 | §6.1 | líneas1179–1184
+Sin cambio: normalización de masa/índice, referencia, raíz y peso unitario se explican por etapas; no acumular límites en una sola cláusula.
+
+P163 | §6.2 | líneas1188–1188
+Sin cambio: mapa de módulos es enumeración compleja; punto y coma distingue componentes y la finalidad del diseño cierra el párrafo.
+
+P164 | §6.2 | líneas1190–1190
+Sin cambio: interfaz, opción, bypass y consecuencia se enlazan con therefore; el consenso y límite de la interfaz quedan claros.
+
+P165 | §6.2 | líneas1192–1192
+Sin cambio: uso de cortes, ausencia de ajuste y falta de calibración universal tienen relaciones explícitas; separar ranking sin etiquetas evita confundir tareas.
+
+P166 | §6.2 | líneas1194–1194
+Sin cambio: dominio software más amplio y límite de garantías se desarrollan con but/In particular; salvedades necesarias visibles.
+
+P167 | §6.2 | líneas1196–1196
+Sin cambio: tipos de prueba, casos y alcance ya conectados; no ampliar evidencia computacional a universalidad.
+
+P168 | §6.2 | líneas1198–1198
+Sin cambio: API, CI, licencia y nombres son información paralela distinta; la advertencia de workflow conserva su negación.
+
+P169 | §6.2 | líneas1200–1200
+Sin cambio: scripts/CLI y CI/CD se comparan con These/Similarly; el último enunciado remite a su evaluación, sin nuevos requisitos.
+
+P170 | §6.3 | líneas1204–1209
+Sin cambio: universo formal, conteo y secuencia del generador preceden a la razón de reflexión.
+
+P171 | §6.3 | líneas1211–1221
+Sin cambio: conteo de palíndromos lleva al total y corrige una aproximación; so explica la cautela sobre progreso.
+
+P172 | §6.3 | líneas1223–1223
+Sin cambio: unidad, reflexión, multiplicidades y límite de exhaustividad son distinciones necesarias; no eliminarlas por longitud.
+
+P173 | §6.3 | líneas1225–1225
+Sin cambio: benchmark, cribado y registros se presentan con límites; la normalización y su motivo ya unidos por which matters because.
+
+P174 | §6.3 | líneas1227–1227
+Sin cambio: contraste KI/ratings y aggregate/pairwise se desarrolla antes del límite de reconstrucción; las negaciones son decisivas.
+
+P175 | §6.3 | líneas1229–1229
+Sin cambio: la breve delimitación descriptiva se mantiene al principio antes de la evidencia regional larga; ritmo ya variado.
+
+P176 | §6.4 | líneas1233–1233
+Sin cambio: una oración por comparación y otra por conjunto candidato, con contraste inequívoco.
+
+P177 | §6.4 | líneas1235–1252
+Sin cambio: tabla comparativa, no párrafo de exposición; rótulos paralelos y settings deben conservarse.
+
+P178 | §6.4 | líneas1254–1254
+Sin cambio: una explicación por implementación con remisiones y límites; la diversidad de medidas justifica las separaciones.
+
+P179 | §6.4 | líneas1256–1256
+Sin cambio: código histórico, alcance del artículo y variante suplementaria están enlazados por Likewise con funciones diferentes.
+
+P180 | §6.4 | líneas1258–1262
+Sin cambio: definición de conteos, fórmula, empates y elección estadística están ordenados; las frases cortas mantienen límites de interpretación.
+
+P181 | §6.4 | líneas1264–1264
+Sin cambio: convenciones comparadas con whereas y consecuencias para empates; el límite de solver está explícito y no se confunde con redondeo.
+
+P182 | §6.4 | líneas1266–1266
+Corrección concreta: stable sorting. This resolves… pasa a stable sorting, which resolves…; integra la operación y efecto ya enunciados, conserva después el contraste con tauB.
+
+P183 | §6.4 | líneas1268–1268
+Sin cambio: criterio del artículo, pipeline, configuración y límite de rejilla forman funciones distintas; no convertirlas en optimización continua.
+
+P184 | §6.4 | líneas1270–1284
+Sin cambio: tabla por etapas y metadatos, no argumento fragmentado; puntuación organiza ajustes complejos.
+
+P185 | §6.4 | líneas1286–1286
+Sin cambio: región exploratoria y cautela teórica preceden a selección y resúmenes secundarios; las salvedades permanecen visibles.
+
+P186 | §6.4 | líneas1288–1288
+Sin cambio: se explica unidad, dos procedimientos y límites con Neither/so; no hay desconexión de premisas.
+
+P187 | §6.4 | líneas1290–1290
+Sin cambio: remisión de alcance y distinción shortlist/topk aportan contexto y límite, sin redefinir obligaciones.
+
+P188 | §6.5 | líneas1294–1294
+Sin cambio: entradas, configuración y salidas son requisitos paralelos y diferentes; una oración por componente conserva claridad.
+
+P189 | §6.5 | líneas1296–1296
+Sin cambio: ubicaciones, artefactos y asociación histórica están diferenciados; while y These mantienen referente.
+
+P190 | §6.5 | líneas1298–1298
+Sin cambio: clases de timing, solver y semilla conducen a la cautela de máquina; las condiciones no se acumulan en una frase.
+
+P191 | §6.5 | líneas1300–1300
+Sin cambio: determinismo, aleatoriedad y dependencias son tres causas distintas; because/therefore enlazan conclusión de reproducibilidad.
+
+P192 | §6.5 | líneas1302–1302
+Sin cambio: transición a resultados y discusión está ligada con while, seguida de su relación con propuesta; mantener alcance.
+
+P193 | §7 | líneas1306–1306
+Sin cambio: presentación de resultados sigue pregunta→fuente→convenciones→orden→suplementos, con variedad de longitudes.
+
+P194 | §7 | líneas1308–1308
+Sin cambio: contraste de comparaciones ya ligado con while y salvedad formal separada; no añadir otra coordinación.
+
+P195 | §7.1 | líneas1312–1312
+Sin cambio: corpus, matriz y significado de fila EMD se desarrollan con because; las funciones de cada oración son distintas.
+
+P196 | §7.1 | líneas1314–1319
+Sin cambio: pie de matriz con universo, fuente e interpretación de EMD; lectura autónoma justifica frases propias.
+
+P197 | §7.1 | líneas1321–1321
+Sin cambio: cifras y límites ya enlazados por but; no confundir correlaciones entre variantes con alternativas.
+
+P198 | §7.1 | líneas1323–1323
+Sin cambio: dato→razón estructural→interpretación→límite; la frase corta final conserva el énfasis de no igualdad.
+
+P199 | §7.1 | líneas1325–1325
+Sin cambio: casos ER0.8/1.6 diferenciados antes de interpretación y advertencia de no generalización; no mover cuantificadores.
+
+P200 | §7.1 | líneas1327–1327
+Sin cambio: límite KI se desarrolla mediante fórmula, ejemplo y contraste MEC; las frases cortas cumplen pasos del argumento.
+
+P201 | §7.1 | líneas1329–1329
+Sin cambio: procedencia y alcance del chequeo se mantienen con punto y coma; la exclusión de regeneración es clara.
+
+P202 | §7.2 | líneas1333–1333
+Sin cambio: referencia humana y transcripción se diferencian; las remisiones a figura/tabla y la cautela no se deben fundir.
+
+P203 | §7.2 | líneas1335–1340
+Sin cambio: pie atribuye formas y explica identificadores; dos datos distintos para lectura autónoma.
+
+P204 | §7.2 | líneas1342–1368
+Sin cambio: tabla de transcripción y leyenda de score; cifras y filas quedan intactas.
+
+P205 | §7.2 | líneas1370–1370
+Sin cambio: reproducibilidad, tratamiento de empates, truncación de score y de coeficiente se explican antes de Thus; cada etapa importa.
+
+P206 | §7.2 | líneas1372–1377
+Sin cambio: pie mantiene origen y aclaración60/58; la puntuación permite separar título histórico de cribado.
+
+P207 | §7.2 | líneas1379–1379
+Sin cambio: coeficiente, ausencia de empates, pares e igualdad ordinal ya conectados; as une la cautela final a su ejemplo.
+
+P208 | §7.2 | líneas1381–1381
+Sin cambio: alcance comparativo con but, apoyo parcial y contraste de parámetros; el cierre sintetiza sin añadir superioridad.
+
+P209 | §7.2 | líneas1383–1383
+Corrección concreta: unir Both have one tied profile pair y Van der Eijk also has one tie con and; comparación paralela sin cambiar conteo ni tratamiento de empates.
+
+P210 | §7.2 | líneas1385–1385
+Sin cambio: ejemplos concretos, comparaciones conservadas y límite ya enlazados con as/but; no unir varios perfiles y sus condiciones.
+
+P211 | §7.2 | líneas1387–1387
+Sin cambio: evidencia, selección compartida y límites de extrapolación se desarrollan con therefore/Nor; negaciones precisas.
+
+P212 | §7.3 | líneas1391–1391
+Sin cambio: dos grids, máximos y resolución se distinguen con punto y coma; remisión gráfica explica, no reinicia el argumento.
+
+P213 | §7.3 | líneas1393–1406
+Sin cambio: tabla y leyenda especifican máximo finito; estructura tabular preservada.
+
+P214 | §7.3 | líneas1408–1423
+Sin cambio: subtítulos comparativos y pie con escalas/recomendación/límite, cada dato necesario para interpretar figura.
+
+P215 | §7.3 | líneas1425–1425
+Sin cambio: marco y dos estadísticas seguidos del límite inferencial; mezclar las dos medidas dificultaría la lectura.
+
+P216 | §7.3 | líneas1427–1427
+Sin cambio: ausencia de separación→reparto de empates por because→advertencia probabilística; ya hay desarrollo y variación.
+
+P217 | §7.3 | líneas1429–1429
+Sin cambio: regla de recomendación, estadísticos y alcance primario coordinados; mantener parámetros y salvedad.
+
+P218 | §7.3 | líneas1431–1431
+Sin cambio: hallazgo no único y sensibilidad tienen funciones distintas; las dos rutas se comparan con and y el límite final con therefore.
+
+P219 | §7.4 | líneas1435–1435
+Sin cambio: transición de rankings a tiempos y delimitación de suplemento; frases de longitudes diferentes, sin fragmentos.
+
+P220 | §7.4 | líneas1437–1437
+Sin cambio: condiciones de corridas, entrada, tabla, plataforma y exclusión de generación son metadatos distintos que deben verse.
+
+P221 | §7.4 | líneas1439–1452
+Sin cambio: tabla y pie distinguen corridas de promedios; la segunda oración es una salvedad explícita, no un fragmento.
+
+P222 | §7.4 | líneas1454–1454
+Sin cambio: comparación temporal ya enlazada por whereas, y alcance por Thus/but; mantener las aproximaciones y exclusión del pipeline completo.
+
+P223 | §7.4 | líneas1456–1456
+Sin cambio: condiciones, entrada, semilla, métodos y exclusiones se exponen por pasos; la puntuación sostiene el procedimiento.
+
+P224 | §7.4 | líneas1458–1475
+Sin cambio: tabla comparativa y leyenda de parámetros, sin prosa entrecortada que corregir.
+
+P225 | §7.4 | líneas1477–1492
+Sin cambio: subtítulos de ejes y pie con advertencia de pendientes ajustadas son información autónoma necesaria.
+
+P226 | §7.4 | líneas1494–1494
+Sin cambio: dos rangos de tamaños y explicación de crecimiento son pasos distintos; no convertir medidas finitas en asintótica.
+
+P227 | §7.4 | líneas1496–1496
+Sin cambio: definición de corrida, cruces y límites se presentan antes de dependencia de tiempos; mantener todas las restricciones.
+
+P228 | §7.4 | líneas1498–1498
+Sin cambio: controles, diferencias y alcance están diferenciados; la oración breve This documents antecede una cautela necesaria.
+
+P229 | §7.5 | líneas1502–1502
+Sin cambio: atribución colectiva y alcance descriptivo ya ligados con punto y coma y but; no alterar contribuciones.
+
+P230 | §7.5 | líneas1504–1504
+Sin cambio: muestra, acuerdos, desacuerdo introducido por dos puntos y alcance final desarrollan el caso sin fragmentos.
+
+P231 | §7.5 | líneas1506–1506
+Sin cambio: cuatro temas, ordenamientos y comprobación actual/histórica se distinguen con while/Thus/punto y coma; no comprimir condiciones.
+
+P232 | §7.5 | líneas1508–1508
+Sin cambio: síntesis descriptiva y navegación hacia objetivos tienen funciones distintas y redacción completa.
+
+P233 | §8 | líneas1513–1513
+Corrección concreta: dos puntos entre anuncio de dos requisitos y su contenido; función introductoria de la puntuación admitida por skill/referencia, sin cambiar requisitos.
+
+P234 | §8.1 | líneas1517–1517
+Sin cambio: interpretación, construcción y resultados se desarrollan por then/Together; las oraciones se necesitan mutuamente.
+
+P235 | §8.1 | líneas1519–1519
+Sin cambio: hipótesis, casos alfa1, propiedad adicional y límite KNS permanecen separados para no ocultar condiciones.
+
+P236 | §8.1 | líneas1521–1521
+Sin cambio: ER/MEC ya enlazados por whereas; desarrollo y límite de correlación conectados con while y punto y coma.
+
+P237 | §8.1 | líneas1523–1523
+Sin cambio: whole/partial y régimen22 están explícitos; la interpretación se limita con rather than al final.
+
+P238 | §8.1 | líneas1525–1525
+Sin cambio: resultado, apoyo parcial y límite se enlazan con since/as/therefore; no simplificar a superioridad global.
+
+P239 | §8.1 | líneas1527–1527
+Sin cambio: aporte informativo ya enlazado por as; aplicación y límites del óptimo conservan sus condiciones.
+
+P240 | §8.2 | líneas1531–1531
+Sin cambio: fuentes y evaluación están separados; punto y coma distingue no acreditación de ausencia de trabajo.
+
+P241 | §8.2 | líneas1533–1549
+Sin cambio: tabla de evaluación, con frases propias por objetivo y límites explícitos; conservar estructura y atribución.
+
+P242 | §8.2 | líneas1551–1551
+Sin cambio: una correspondencia por grupo de actividades y explicación de alcance; revisión de redundancias globales queda para tarea posterior.
+
+P243 | §8.2 | líneas1553–1553
+Sin cambio: evidencia, límites de tests, CLI/CD y procedencia son razones distintas; la separación mantiene los alcances y no añade compromisos.
+
+P244 | §8.2 | líneas1555–1555
+Sin cambio: atribución a equipo y figuras se relacionan con separación de benchmarks; tres frases medianas, sin fragmentos.
+
+P245 | §8.2 | líneas1557–1557
+Sin cambio: actividades deseables tienen evidencias y límites diferentes; cada frase preserva una asignación o conclusión propia.
+
+P246 | §8.3 | líneas1561–1561
+Sin cambio: dominio, extensión y codificación se desarrollan con would/but; las condiciones se conservan antes de las aplicaciones.
+
+P247 | §8.3 | líneas1563–1563
+Sin cambio: escalamiento y normalización llevan a límite de representación y significado psicológico; therefore y negaciones son claros.
+
+P248 | §8.3 | líneas1565–1565
+Sin cambio: selección compartida, no unicidad y sensibilidad preceden a límites de garantías; cautelas no deben comprimirse.
+
+P249 | §8.3 | líneas1567–1567
+Sin cambio: las dos limitaciones paralelas ya coordinadas; reflexión/multiplicidades y requisito de especificación desarrollan su consecuencia.
+
+P250 | §8.3 | líneas1569–1569
+Sin cambio: causas de empates, controles y límites se relacionan con and/while/punto y coma; no se oculta diferencia exacto/aproximado.
+
+P251 | §8.3 | líneas1571–1571
+Sin cambio: comparación de cargas enlazada; el límite de universalidad y distinción operaciones/tiempo conservan funciones distintas.
+
+P252 | §8.4 | líneas1575–1575
+Sin cambio: diagnóstico y evidencia descriptiva contrastados con but, luego efectos, contexto y etiquetas; límites claros sin frases incompletas.
+
+P253 | §8.4 | líneas1577–1577
+Sin cambio: tipos de datos y condiciones de uso se distinguen; las negaciones protegen alcance y no requieren conectores adicionales.
+
+P254 | §8.4 | líneas1579–1579
+Sin cambio: escrutinio, contexto y óptimo se desarrollan; punto y coma explica paso estructural/aplicado. La revisión global de reiteraciones queda aparte.
+
+P255 | §9.1 | líneas1586–1586
+Sin cambio: aportes formales/empíricos ya coordinados y limitados antes de la conclusión; las frases tienen longitudes variadas.
+
+P256 | §9.1 | líneas1588–1588
+Sin cambio: recapitulación de propiedades y casos distintos, cada uno condicionado; separación útil para no confundir regímenes.
+
+P257 | §9.1 | líneas1590–1590
+Sin cambio: garantías, refinamiento y exclusión se ordenan con límites visibles; no introducir una subordinación extensa.
+
+P258 | §9.1 | líneas1592–1592
+Sin cambio: aplicaciones del óptimo enlazadas; caso tipping, condiciones y conclusión guardan su alcance.
+
+P259 | §9.1 | líneas1594–1594
+Sin cambio: resultado comparativo y apoyo parcial preceden a condición de evaluación; so enlaza la limitación sin modificarla.
+
+P260 | §9.1 | líneas1596–1596
+Sin cambio: desarrollo computacional, controles, objetivos y contribución regional son funciones distintas; conservar remisión y atribución.
+
+P261 | §9.1 | líneas1598–1598
+Sin cambio: valor, alcance y conclusión se distinguen; la última oración larga mantiene cautela y expectativa sin superlativos nuevos.
+
+P262 | §9.2 | líneas1602–1602
+Sin cambio: dirección, representación y condiciones hipotéticas progresan con would/Such; cada restricción queda visible.
+
+P263 | §9.2 | líneas1604–1604
+Sin cambio: problema de elección, límite del benchmark y dos líneas posibles enlazadas con but/could; no imponer tareas.
+
+P264 | §9.2 | líneas1606–1606
+Sin cambio: dos comparaciones posibles y vínculo con propuesta; las oraciones no son cortas ni fragmentarias.
+
+P265 | §9.2 | líneas1608–1608
+Sin cambio: aplicación posible y necesidad de modelo ya conectadas con since; se mantienen could/would y negación.
+
+P266 | §9.2 | líneas1610–1610
+Sin cambio: pregunta abierta, objeto estructural y evidencia requerida son pasos distintos; la oración final define la cuestión, no agrega una conclusión vaga.
+
+P267 | §A | líneas1618–1618
+Sin cambio: función del apéndice, procedencia y exclusión del caso general se mantienen separadas por precisión de alcance.
+
+P268 | §A | líneas1620–1633
+Sin cambio: preparación algebraica, transformación de variable y signos extremos se desarrollan en orden con Then/and.
+
+P269 | §A | líneas1635–1661
+Sin cambio: discriminante, coeficientes y positividad conectados con Moreover/therefore/so; no modificar fórmulas para afectar puntuación.
+
+P270 | §A | líneas1663–1664
+Sin cambio: número de raíces, simplicidad e intervalo son tres conclusiones diferentes; hence hace visible la última inferencia.
+
+P271 | §B | líneas1670–1670
+Sin cambio: origen y carácter previsto del presupuesto ya coordinados, conservando rather than audited expenditure.
+
+P272 | §B | líneas1672–1672
+Sin cambio: fuente de financiación y unidades son metadatos diferentes; punto y coma distingue dos convenciones de la tabla.
+
+P273 | §B | líneas1674–1693
+Sin cambio: tabla presupuestal y leyenda, estructura académica fuera de la prosa a enlazar.
+
+P274 | §Bibliografía | líneas1695–1699
+Sin cambio: entrada bibliográfica del adjunto no publicado; título, autores y procedencia son campos de referencia, no prosa entrecortada.
+
+P275 | §Bibliografía | líneas1701–1701
+Sin cambio: marcador bibliográfico aranda2026mec; no constituye un párrafo argumentativo.
+
+P276 | §Bibliografía | líneas1703–1714
+Sin cambio: campos de autoría, título, preprint y enlaces; puntuación bibliográfica preservada, sin revisión de contenido nueva.
+
+P277 | §Bibliografía | líneas1716–1716
+Sin cambio: marcador bibliográfico de Redacción Cultura; conservar clave y autor.
+
+P278 | §Bibliografía | líneas1718–1723
+Sin cambio: ficha periodística con título, fecha y acceso; no aplicar conectores de prosa a sus campos.
+
+P279 | §Bibliografía | líneas1725–1725
+Sin cambio: marcador de Van der Eijk; metadato de cita, no argumento.
+
+P280 | §Bibliografía | líneas1727–1732
+Sin cambio: ficha de Van der Eijk con revista y páginas; conservar formato bibliográfico.
+
+P281 | §Bibliografía | líneas1734–1734
+Sin cambio: marcador ER94, parte de la bibliografía.
+
+P282 | §Bibliografía | líneas1736–1741
+Sin cambio: ficha ER94; nombres, título y datos editoriales permanecen intactos.
+
+P283 | §Bibliografía | líneas1743–1743
+Sin cambio: marcador Festinger1957; estructura bibliográfica.
+
+P284 | §Bibliografía | líneas1745–1748
+Sin cambio: ficha del libro; campos no requieren enlace narrativo.
+
+P285 | §Bibliografía | líneas1750–1750
+Sin cambio: marcador Said-Hung2023; conservar clave de cita.
+
+P286 | §Bibliografía | líneas1752–1760
+Sin cambio: ficha del artículo colombiano; campos y DOI no se reescriben como párrafo.
+
+P287 | §Bibliografía | líneas1762–1762
+Sin cambio: marcador Geher2020; estructura de referencia.
+
+P288 | §Bibliografía | líneas1764–1771
+Sin cambio: ficha de Wasserstein; título y datos de revista, sin intervención por puntuación de campos.
+
+P289 | §Bibliografía | líneas1773–1773
+Sin cambio: marcador Kawada2018; clave y etiqueta se conservan.
+
+P290 | §Bibliografía | líneas1775–1782
+Sin cambio: ficha KNS, con autores, revista y páginas en formato bibliográfico.
+
+P291 | §Bibliografía | líneas1784–1784
+Sin cambio: marcador Koudenburg2021, metadato de referencia.
+
+P292 | §Bibliografía | líneas1786–1794
+Sin cambio: ficha de expert judgments; el salto de línea del título no es segmentación de prosa renderizada.
+
+P293 | §Bibliografía | líneas1796–1796
+Sin cambio: marcador Lupu2017; conservar clave y autoría.
+
+P294 | §Bibliografía | líneas1798–1805
+Sin cambio: ficha EMD/congruencia; dos puntos pertenecen al título original y se conservan.
+
+P295 | §Bibliografía | líneas1807–1807
+Sin cambio: marcador Rockafellar1970; estructura bibliográfica.
+
+P296 | §Bibliografía | líneas1809–1812
+Sin cambio: ficha del libro; campos editoriales completos en su formato.
+
+P297 | §Bibliografía | líneas1814–1814
+Sin cambio: marcador EFE2025; no es una oración de exposición.
+
+P298 | §Bibliografía | líneas1816–1821
+Sin cambio: ficha periodística, fechas y URL; no aplicar una heurística de signos a enlaces o citas.
+
+P299 | §Bibliografía | líneas1823–1823
+Sin cambio: marcador Tajfel/Turner; metadato bibliográfico.
+
+P300 | §Bibliografía | líneas1825–1832
+Sin cambio: ficha de capítulo de libro; autores, editores y páginas son campos distintos y se conservan.
+
+P301 | §Bibliografía | líneas1834–1834
+Sin cambio: marcador Tastle/Wierman, clave de referencia.
+
+P302 | §Bibliografía | líneas1836–1842
+Sin cambio: ficha TWD; metadatos y puntuación editorial, sin cambios narrativos.
+
+P303 | §Bibliografía | líneas1844–1844
+Sin cambio: marcador Universidad Javeriana; conservar autor corporativo y clave.
+
+P304 | §Bibliografía | líneas1846–1850
+Sin cambio: ficha periodística existente; no reabre verificación bibliográfica o firma bajo corrección de ritmo.
+
+P305 | §Bibliografía | líneas1852–1852
+Sin cambio: marcador Vallender; estructura de referencia.
+
+P306 | §Bibliografía | líneas1854–1859
+Sin cambio: ficha del artículo, revista, volumen y páginas; puntuación de metadatos preservada.
+
+RESULTADO DE LA REVISIÓN
+Cinco intervenciones adicionales sobre179fd86: P006/línea105 (cláusulas próximas con punto y coma), P037/línea242 (comparación de Lupu integrada), P182/línea1266 (which liga stable sorting con su efecto), P209/línea1383 (conteos de empates coordinados), P233/línea1513 (dos puntos entre anuncio y contenido). Se revisaron en contexto después de editar.
+P077/línea518 se conserva: la propuesta de corrección del referente está en propuesta-mad-sin-aplicar-20261019.txt y requiere decisión separada de Juan. No se aplica bajo autorización de ritmo.
+Cobertura sin casillas pendientes: P001–P306 y siete decisiones adicionales de ítems/definición. No se cambió texto para completar una cuota.
+VERIFICACIÓN LOCAL COMPLETADA
+Tectonic --only-cached --keep-logs --keep-intermediates compiló con salida0; PDF de65 páginas y1.887.774 bytes. Se renderizaron las65 páginas con PDFKit, se inspeccionaron las seis hojas de contacto y se ampliaron las páginas físicas6,12,43,49 y55 que contienen los cinco cambios. No se observaron defectos nuevos de composición.
+Avisos preexistentes: overfull de4,25945pt en el encabezado del capítulo1 (línea84), cuatro underfull de tablas (líneas1244,1249,1545,1546) y ancla duplicada @page.1. Sin errores ni referencias indefinidas.
+Comparación exacta con179fd86: solo las cinco sustituciones de prosa registradas;1.020 expresiones matemáticas idénticas en orden; entornos de definiciones, resultados, pruebas, ejemplos, figuras, tablas y bibliografía idénticos; encabezados, citas, etiquetas, referencias y rutas idénticos. La línea518, la remisión inicial a sección1 y la introducción de ConditionH están intactas.
+Las16 referencias/resultados preexistentes sin seguimiento conservan sus hashes y quedan fuera del commit. El PDF anterior de179fd86 conserva su hash. Main permanece en49d4e2d36d5fd32c0552a691fdec1b4545d66e11 y el trabajo se limita al worktree separado. Sin escrituras externas, publicación, push ni merge en este ciclo.
+Fuente SHA256: f10315336feec6dc071544b66a155412427c2217109bfccdf1e177af230a1c04
+PDF SHA256: 23a28ee38011df40cd59af57fb72f0bcbffbf49fb2f5b518d4181cb6cbba7734
+Artefactos de compilación/renderizado y comprobaciones: /Users/ulvenforst/Documents/Codex/2026-10-19/task-2/continuidad-parrafos-local/ (fuera del repositorio).

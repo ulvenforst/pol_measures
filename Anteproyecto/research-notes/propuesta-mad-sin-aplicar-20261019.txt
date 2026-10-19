@@ -1,0 +1,15 @@
+PROPUESTA DE CONTENIDO SEPARADA — NO APLICADA
+Ubicación: sn-article.tex, sección4.4, línea518; mismo texto en179fd86 y en el snapshot actual.
+
+Texto vigente (dos últimas oraciones del párrafo):
+This distinction matters when computing the consensus point. It also explains why mean absolute deviation about a median, rather than median absolute deviation, appears in the linear case.
+
+Problema señalado por la auditoría:
+It also explains remite a la distinción entre la distribución normalizada original y la distribución normalizada de potencias. Esa distinción determina qué pesos se usan para obtener el consenso. La elección de mean absolute deviation about a median frente a median absolute deviation procede de minimizar la suma ponderada de distancias absolutas. Son razones diferentes; no se debe corregir una atribución causal como si fuera solo ritmo.
+
+Propuesta mínima para Juan, sustituyendo únicamente la última oración:
+The minimization of absolute-distance effort explains why mean absolute deviation about a median, rather than median absolute deviation, appears in the linear case.
+
+Se conservaría la oración anterior sobre la importancia de distinguir los pesos para calcular el consenso y se haría explícita la razón pertinente para el estadístico. El corolario Median and mean consensus y su demostración (cor:mec-median-mean, eq:mec-median-case), inmediatamente anteriores, minimizan G(y)=sum_x rho(x)|x-y| y caracterizan sus minimizadores como medianas. El valor usa la suma ponderada de distancias, no la mediana de esas distancias. Se conserva el alcance del caso lineal y no se añaden teoremas, datos ni experimentos.
+
+Base editorial: Respect the task and meaning exige señalar problemas sustantivos en vez de alterar silenciosamente la posición del autor; distingue claridad, validez lógica y soporte. Sustain the exposition pide relaciones reales entre ideas. Por ello esta propuesta queda fuera de las cinco ediciones aplicadas de ritmo. Estado: pendiente de decisión de Juan, sin modificar la tesis.
