@@ -169,3 +169,11 @@ Cierre2.4: relectura literal posterior completada en dos bloques contiguos1–18
 y181–400, al iniciar capítulo3. Capítulo2 cerrado sin nuevas ediciones de prosa.
 Hallazgo del auditor recibido: repetición de planes/obligaciones en3,6.4 y8.2;
 se valorará en los ciclos correspondientes, sin declarar esas secciones verificadas.
+
+3: lectura literal previa1–400 en bloques contiguos1–180 y181–400; fuentes originales
+pp.9–10,12–16,18. Se acorta la repetición de resultados de existencia/unicidad/ER
+ya expuestos en1 y2, preservando dominio y distinción de marcos. Se precisa el
+criterio para métodos narrativos no clasificados separadamente en tabla3; no se
+resuelve la jerarquía institucional ni se declaran automáticamente opcionales.
+Relectura literal posterior completada en1–180 y181–430 antes del commit del
+capítulo3. Conservados objetivos y premisas; sin cambios matemáticos o compromisos.
