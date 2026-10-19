@@ -228,3 +228,9 @@ Capítulo 8, segunda pasada: lectura literal del prefijo completo antes y despu�
 8.3: se precisa que la justificación abierta corresponde a elegir esos exponentes concretos (no a la validez de sus garantías matemáticas), y que el primer tamaño400 corresponde a la corrida original de once tamaños, compatible con el refinamiento. Resto sin cambios.
 8.4: sin cambios; no se añaden datos, estudios ni compromisos. La interpretación del óptimo sigue siendo estática y dependiente del modelo.
 Capítulo8 cerrado; cambios de continuidad y dos precisiones de alcance, sin nuevos resultados.
+
+Capítulo9 y apéndices, segunda pasada: relectura literal de los prefijos completos, incluidos 8 corregido y contexto posterior, antes y después de 9.1/9.2 y de cada apéndice.
+9.1: cotejo con §9 de arXiv y resultados anteriores. No se incorpora la identidad incorrecta de su conclusión que iguala MEC11 con EMD al extremo; la tesis conserva la identidad correcta y la distancia mínima a consenso. Las recapitulaciones son sustantivas para una conclusión y permanecen. Sin cambios.
+9.2: líneas abiertas, no nuevas actividades exigidas a Juan. Cambio mínimo a condicional de la posibilidad de comparar nuevos perfiles; se elimina una formulación prescriptiva redundante. No se añaden estudios ni promesas.
+Apéndice A: cotejo completo con arXiv ap.F y verificación algebraica exacta ya guardada (discriminante y 4AC-B²). Prefijo completo y límites del teorema revisados: positividad u,s, raíz única real, ausencia de extrapolación al cúbico general. Sin cambios.
+Apéndice B: tabla de la propuesta cotejada; son costes previstos, no gasto auditado. Multiplicaciones y suma 88.992.000 COP verificadas. Sin cambios.
