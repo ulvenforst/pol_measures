@@ -141,7 +141,7 @@ No quedan bloqueos de acceso o compilación. Límites pendientes: procedencia hi
 de todas las figuras/runs y entregables CLI/CD no acreditados; no se promete exactitud
 matemática perfecta ni aprobación institucional. Nada publicado ni enviado al remoto.
 
-SEGUNDA PASADA LITERAL (en curso; sin actualizar el PDF Library)
+SEGUNDA PASADA LITERAL (cerrada; PDF Library actualizado y verificado)
 Base de esta pasada: 0f6fd1f. Se registra cada lectura realmente completada.
 2.1: leído literalmente sn-article.tex líneas1–185 (prefijo, subsección y comienzo
 de2.2), contrastado con Kawada2018 completo y arXiv §7 (medida, axiomas y regímenes).
