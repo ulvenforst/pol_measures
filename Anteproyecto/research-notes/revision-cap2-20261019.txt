@@ -213,3 +213,11 @@ Capítulo 6, segunda pasada: para cada 6.1, 6.2, 6.3, 6.4 y 6.5 se releyó el pr
 6.4: calculador y validación histórica, optimización y summary de salidas guardadas. Verificados redondeo/truncamiento/float, empates, bootstrap de perfiles y LOO sin reajuste. Cambio editorial: se remite a capítulo3 para el alcance del plan, retirando repetición de métodos y defensa de obligatoriedad. Se conserva distinción de top-k perfiles/candidatos y falta de registro de prerregistro.
 6.5: metadatos guardados y protocolo de soporte; se conserva diferencia entre información reproducible actual y commit histórico no demostrado. Sin cambios.
 Capítulo 6 cerrado. El único cambio adicional es de continuidad, no un nuevo compromiso metodológico.
+
+Capítulo 7, segunda pasada por 7.1–7.5: en cada subsección se releyó literalmente todo el prefijo conservado en contexto, con la subsección siguiente, antes del cotejo y después de cualquier decisión o corrección.
+7.1: §8 arXiv completo y matriz gráfica inspeccionada. Cambio de precisión: VdE es el mayor acuerdo entre familias alternativas, no entre todas las parametrizaciones (MEC22 da .764). Las cifras se conservan. No se regenera la matriz exhaustiva.
+7.2: ValidationData, validación original y tabla/fuentes del benchmark; se conservan las nueve concordancias ya reproducidas, empates y 58 observaciones cuantitativas. La transcripción con totales variables se identifica como tal. Sin cambios.
+7.3: summary y fila efectiva de stability_results cotejadas: .888559, .082044, .885714, .021534 y reparto de empates .01. No se interpreta como prueba externa o probabilidad de victoria única. Sin cambios.
+7.4: registros JSON originales y refinamiento preexistente examinados; 275/350 son primeros tamaños muestreados en esa corrida, no umbrales universales. 110 controles corresponden solo al experimento original. Sin cambios; no se ejecutan nuevas mediciones.
+7.5: nueva lectura literal de pp29–33 del adjunto verificado. Ordenamientos y alcances descriptivos coinciden. Atribución limitada a figuras para §12, colectiva para el análisis. Sin cambios. No se añaden datos individuales ni se distribuye el documento privado.
+Capítulo 7 cerrado. Cambio adicional: una frase de interpretación de la matriz.
