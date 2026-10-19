@@ -1,0 +1,206 @@
+REVISIÓN LOCAL DE CONTINUIDAD DE PROSA, 19 OCTUBRE 2026
+
+Base: fef89a8222bfeb4a99259fc1c641302f5ebe4bef.
+Rama: snotra/revision-tesis-cap2-20261019.
+Alcance autorizado: lectura íntegra desde capítulo1 al final; ajustes mínimos de continuidad, conservando contenido y redacción sustantiva. El capítulo1 se incluye por autorización expresa nueva.
+Estado inicial: sin cambios versionados posteriores a la base; referencias/Articles y cinco salidas crossover preexistentes no rastreadas conservadas y excluidas del commit.
+
+CRITERIOS LEÍDOS ÍNTEGRAMENTE
+/Users/ulvenforst/.agents/skills/russellian-clear-writing/SKILL.md
+/Users/ulvenforst/.agents/skills/russellian-clear-writing/references/editorial-basis.md
+Aplicación: Respect the task and meaning; tests2–3; Sustain the exposition. En particular: “connect it to what precedes it through the actual relationship between ideas” y “Vary sentence length so restraint does not produce choppy prose.”
+editorial-basis: Connected academic prose, Harvard Anatomy of a Body Paragraph y Transitions (desarrollo de la idea y movimiento familiar→nuevo); Vocabulary and punctuation (función explicativa/introductoria del signo cuando corresponde, sin umbrales numéricos). Estos son criterios adaptados por la skill, no citas adicionales atribuidas a Russell.
+Se conservaron términos, orden de exposición, párrafos, encabezados, citas y límites explícitos. El único movimiento de una oración es la consecuencia de uniformidad en Van der Eijk, junto a su premisa dentro del mismo párrafo.
+
+RECORRIDO Y REVISIÓN EN CONTEXTO
+Lectura completa del archivo líneas1–1875, sin omitir pruebas, comentarios, apéndices o bibliografía, antes de editar. Revisión posterior de todos los fragmentos intervenidos con párrafos y contexto adyacentes, desde el capítulo1 hasta el final.
+Capítulos1–9 y apéndices A/B revisados. En 2.1,5.3,5.4,6.5,7.3,8.2,8.4 y apéndiceA no se hizo una intervención adicional: las separaciones existentes no exigían una unión conforme al alcance y criterios. Bibliografía, abstract, portada y elementos formales permanecen intactos.
+Intervenciones por capítulo: 1: 6, 2: 5, 3: 3, 4: 4, 5: 4, 6: 7, 7: 6, 8: 4, 9: 3, B: 1. Los números describen el resultado, no una cuota de edición.
+
+JUSTIFICACIÓN DE CADA INTERVENCIÓN
+Las líneas remiten a la fuente base y coinciden con la fuente editada, pues no se cambió su distribución en líneas. El diff del commit conserva los antes/después completos; changes.json fuera del repositorio conserva además cada reemplazo literal y su motivo.
+
+C01 | §1 | sn-article.tex:86
+Fragmento inicial: Polarization involves more than disagreement spread across individuals. It concerns a geometric pattern in whi...
+Motivo: Sustain the exposition: coordinar las dos caracterizaciones y ligar la importancia de la distinción con su explicación ya presente; editorial-basis/Harvard Transitions, relación real y familiar→nuevo.
+
+C02 | §1 | sn-article.tex:88
+Fragmento inicial: Three intuitions anchor this approach. \textbf{Identification} concerns cohesion within a camp. \textbf{Aliena...
+Motivo: Sustain the exposition y puntuación: una enumeración paralela dentro del mismo párrafo conecta anuncio y contenido; dos puntos con función explicativa/introductoria permitida por editorial-basis, sin cambiar etiquetas ni estructura.
+
+C03 | §1 | sn-article.tex:92
+Fragmento inicial: This idea leads to an optimization problem. Given an opinion distribution, we define its polarization as the m...
+Motivo: Sustain the exposition: integrar la especificación en la presentación del problema; Harvard Anatomy/Transitions, desarrollar la idea principal sin reiniciarla.
+
+C04 | §1 | sn-article.tex:105
+Fragmento inicial: The exponent $\alpha$ controls the weight assigned to group size and represents the identification dimension. ...
+Motivo: Sustain the exposition y test2: mantener cada condición junto al papel del exponente que limita, conservando dos frases distintas para las dos dimensiones; variar longitud sin acumular toda la explicación en una frase.
+
+C05 | §1 | sn-article.tex:107
+Fragmento inicial: The minimization yields both a polarization value and an optimal consensus point $y^\star$. When $\beta>1$, st...
+Motivo: Sustain the exposition/test2: unir la presentación del punto con su condición de unicidad, sin desplazar la salvedad beta=1 ni cambiar cuantificadores.
+
+C06 | §1 | sn-article.tex:107
+Fragmento inicial: In either case, an optimum describes the least costly consensus under the model. It does not predict which pos...
+Motivo: Sustain the exposition: hacer explícito el contraste interpretativo ya expresado; preservar negación y alcance conforme a Respect the task and meaning.
+
+C07 | §2.2 | sn-article.tex:186
+Fragmento inicial: Van der Eijk \citep{van2001measuring} measures agreement through the patterns of unimodality in an ordered rat...
+Motivo: Sustain the exposition/test2: adjuntar la condición a la medida y mover la consecuencia de uniformidad junto a su premisa (asignación de masa), antes de continuar el procedimiento. Harvard Transitions: familiar→nuevo y relación real, sin añadir inferencias; se conserva todo el contenido del ejemplo señalado por Juan.
+
+C08 | §2.2 | sn-article.tex:209
+Fragmento inicial: Tastle and Wierman \citep{tastle2007consensus} use information-theoretic ideas to define consensus and dissent...
+Motivo: Sustain the exposition: unir presentación y especificación de la misma construcción sin introducir causalidad; conservar términos técnicos y cita.
+
+C09 | §2.3 | sn-article.tex:240
+Fragmento inicial: Thus a cost to a fixed point and a minimum cost to consensus are different quantities. The former depends on t...
+Motivo: Sustain the exposition: ligar la distinción con la razón que la desarrolla, ya expresada en la comparación former/latter; editorial-basis/Harvard Anatomy y Transitions.
+
+C10 | §2.3 | sn-article.tex:240
+Fragmento inicial: In this linear case, any median of $\pi$ is an optimal consensus point. The minimum equals $M$ times the mean ...
+Motivo: Sustain the exposition: coordinar la posición óptima y el valor que se evalúa allí; se deja separada la distinción con median absolute deviation para no ocultarla (test2).
+
+C11 | §2.4 | sn-article.tex:265
+Fragmento inicial: ER aggregates antagonism between groups, VdE and TWD assess agreement or dissention, and KI approximates exper...
+Motivo: Sustain the exposition: incorporar MEC al contraste entre interpretaciones ya enumeradas, sin sinonimia ni cambio de cita; Harvard Transitions.
+
+C12 | §3 | sn-article.tex:271
+Fragmento inicial: The approved proposal framed this purpose through five specific objectives. They are retained below as the bas...
+Motivo: Sustain the exposition: conectar el antecedente objectives con la explicación de su función, manteniendo la misma información y modalidad.
+
+C13 | §3 | sn-article.tex:288
+Fragmento inicial: The expert comparison is a secondary analysis of published histogram scores. It evaluates agreement on those p...
+Motivo: Sustain the exposition: dos predicados del mismo sujeto en una frase, sin ampliar el dominio those profiles ni la fuerza de la afirmación.
+
+C14 | §3 | sn-article.tex:290
+Fragmento inicial: The optimal point $y^\star$ is a least costly consensus position under the effort model. It is not a predictio...
+Motivo: Sustain the exposition/test3: enlazar significado y límite interpretativo contiguos con contraste, conservando la negación y la redacción sustantiva.
+
+C15 | §4.2 | sn-article.tex:417
+Fragmento inicial: For positive masses $p>q$, their weights have ratio $(p/q)^\alpha$. For positive displacements $d_2>d_1$, thei...
+Motivo: Sustain the exposition: coordinar las dos comparaciones paralelas ya usadas para explicar los exponentes; Harvard Transitions, relación real sin nuevas inferencias. Se conservan ambas condiciones.
+
+C16 | §4.3 | sn-article.tex:426
+Fragmento inicial: Existence follows from continuity. Uniqueness requires a condition on the distance exponent.
+Motivo: Sustain the exposition: expresar en la sintaxis el contraste entre las dos exigencias ya anunciadas; variar longitud sin unir las proposiciones formales.
+
+C17 | §4.4 | sn-article.tex:518
+Fragmento inicial: When $\alpha=1$, these are the median and mean of the original normalized distribution. For general $\alpha$, ...
+Motivo: Sustain the exposition/test2: unir la distinción caso particular/general conservando cada condición junto a su cláusula y toda la notación.
+
+C18 | §4.5 | sn-article.tex:651
+Fragmento inicial: This is Condition~H of Esteban and Ray \citep{esteban1994measurement}. It concerns invariance of comparisons u...
+Motivo: Sustain the exposition: conectar denominación y explicación sin reiniciar el mismo referente; Harvard Anatomy/Transitions. Se mantiene íntegra la distinción comparaciones/valor.
+
+C19 | §5.1 | sn-article.tex:669
+Fragmento inicial: An increase in distance from an optimal consensus does not by itself establish an increase in MEC. The amount ...
+Motivo: Sustain the exposition: unir la reserva con la explicación inmediata ya dada y desarrollada por el ejemplo; preservar does not by itself y no introducir premisas.
+
+C20 | §5.1 | sn-article.tex:683
+Fragmento inicial: The definition also allows the moved group to merge with a group already at its destination. Its new weight is...
+Motivo: Sustain the exposition/test2: adjuntar el peso resultante al caso de fusión que lo determina; se conserva la condición implícita en then y la fórmula literal.
+
+C21 | §5.2 | sn-article.tex:887
+Fragmento inicial: The gain in identification is represented by the factor $2^\alpha-2$. At $\alpha=1$, that gain disappears.
+Motivo: Sustain the exposition: enlazar la interpretación del factor con el valor límite que explica el resultado, manteniendo separada su aplicación posterior.
+
+C22 | §5.5 | sn-article.tex:1110
+Fragmento inicial: The threshold is the transferred mass at which the original score is recovered. It is not a stationary point o...
+Motivo: Sustain the exposition/test3: conectar definición y límite de interpretación con el contraste ya existente; sin alterar negación ni confundir cruce y derivada.
+
+C23 | §6 | sn-article.tex:1155
+Fragmento inicial: The completed paper supplies the scientific protocol and reference parametrization. The code provides the oper...
+Motivo: Sustain the exposition: relacionar dos funciones complementarias de fuentes ya diferenciadas; Harvard Transitions. Se conserva aparte la función de la propuesta y la advertencia de procedencia.
+
+C24 | §6.1 | sn-article.tex:1159
+Fragmento inicial: The mathematical definition permits arbitrary positive total mass. The main empirical comparisons instead use ...
+Motivo: Sustain the exposition: hacer gramatical el contraste ya expresado por instead, sin cambiar el dominio matemático o el protocolo.
+
+C25 | §6.1 | sn-article.tex:1167
+Fragmento inicial: It returns the computed minimum value. The class does not return the optimizer's consensus point or terminatio...
+Motivo: Sustain the exposition: enlazar retorno y límite contiguos de la misma interfaz; conservar negación, objetos retornados y certeza.
+
+C26 | §6.1 | sn-article.tex:1175
+Fragmento inicial: These are separate criteria. A bound on the consensus interval is not the same as a prescribed error in the ef...
+Motivo: Sustain the exposition: integrar la explicación que concreta la distinción, conforme a Harvard Anatomy/Transitions, sin equiparar tolerancias.
+
+C27 | §6.2 | sn-article.tex:1196
+Fragmento inicial: The tests are evidence about the implementation on the cases examined. They complement the proofs rather than ...
+Motivo: Sustain the exposition/test2: conservar el límite on the cases examined junto a la evidencia y coordinar su función frente a las pruebas, sin debilitar rather than.
+
+C28 | §6.3 | sn-article.tex:1225
+Fragmento inicial: Every profile is normalized by its own recorded total. This matters because the stored rows do not all sum to ...
+Motivo: Sustain the exposition: mantener seguida la operación y la razón ya enunciada; preservar do not all (no convertirla en none).
+
+C29 | §6.4 | sn-article.tex:1264
+Fragmento inicial: The original expert-validation script truncates nonnegative scores to four decimal places. The parameter-searc...
+Motivo: Sustain the exposition: unir el contraste explícito de convenciones (instead→whereas), dejando aparte el redondeo del corpus y la consecuencia sobre empates.
+
+C30 | §7 | sn-article.tex:1308
+Fragmento inicial: Agreement between indices describes how similarly they order distributions. Agreement with the published human...
+Motivo: Sustain the exposition: presentar juntas las dos funciones de comparación ya distinguidas; se mantiene on the evaluated profiles, Harvard Transitions.
+
+C31 | §7.1 | sn-article.tex:1321
+Fragmento inicial: These values locate MEC among related but distinct ways of ordering opinion profiles. They do not identify a s...
+Motivo: Sustain the exposition/test3: adjuntar la limitación a la interpretación de las cifras sin sugerir primero equivalencia; preservar la negación.
+
+C32 | §7.1 | sn-article.tex:1329
+Fragmento inicial: The matrix thus fulfills the proposal's principal comparison of rankings over the finite synthetic universe. I...
+Motivo: Sustain the exposition: coordinar dos predicados del mismo objeto, sin alterar la advertencia siguiente de no regeneración.
+
+C33 | §7.2 | sn-article.tex:1379
+Fragmento inicial: Equal concordance does not imply identical rankings. The discordant pairs differ between MEC and ER.
+Motivo: Sustain the exposition: conectar la cautela con el dato que ya la ilustra, Harvard Anatomy/Transitions; no se cambia el número de pares o el coeficiente.
+
+C34 | §7.4 | sn-article.tex:1454
+Fragmento inicial: MEC scores this corpus in approximately $2.66$ minutes. ER is approximately $26.1$ times faster in these runs.
+Motivo: Sustain the exposition/test2: contrastar las medidas del mismo conjunto de corridas conservando approximately y in these runs; no convertirlo en garantía general.
+
+C35 | §7.5 | sn-article.tex:1502
+Fragmento inicial: These cases illustrate how the measures order topics in the observed groups. They do not provide a new expert ...
+Motivo: Sustain the exposition/test3: enlazar alcance descriptivo y límite ya enunciados, manteniendo los grupos observados y ambas negaciones.
+
+C36 | §8 | sn-article.tex:1513
+Fragmento inicial: The proofs establish behavior throughout stated domains of distributions and parameters. The experiments estab...
+Motivo: Sustain the exposition: expresar el contraste teórico/empírico mediante la relación ya establecida, sin ensanchar dominios ni datos.
+
+C37 | §8.1 | sn-article.tex:1521
+Fragmento inicial: ER aggregates antagonism between groups. MEC evaluates the least effort needed to bring the whole distribution...
+Motivo: Sustain the exposition: conectar la diferencia de construcciones que inicia el párrafo; Harvard Transitions, sin términos nuevos o valoración añadida.
+
+C38 | §8.1 | sn-article.tex:1527
+Fragmento inicial: The optimal consensus point adds information to the scalar score. It locates the least costly common position ...
+Motivo: Sustain the exposition: adjuntar la explicación del aporte informativo al enunciado que desarrolla; mantener el condicionamiento del modelo, test2.
+
+C39 | §8.3 | sn-article.tex:1567
+Fragmento inicial: It does not supply an external criterion of polarization. It also does not cover other category spacings, tota...
+Motivo: Sustain the exposition: coordinar límites paralelos del mismo corpus; ambas negaciones y la enumeración permanecen intactas.
+
+C40 | §9.1 | sn-article.tex:1586
+Fragmento inicial: The results establish resistance to consensus as a precise interpretation of polarization for finite opinion d...
+Motivo: Sustain the exposition/test2: coordinar dos aportes del mismo sujeto reteniendo las dos restricciones explícitas de dominio y benchmark; no añadir superioridad o validación externa.
+
+C41 | §9.1 | sn-article.tex:1592
+Fragmento inicial: The optimal consensus point gives the measure additional structure. It supports the Minority Principle for two...
+Motivo: Sustain the exposition: mantener el mismo sujeto y conectar su aporte con las aplicaciones enumeradas, sin tocar el dominio de los teoremas.
+
+C42 | §9.2 | sn-article.tex:1608
+Fragmento inicial: Such a study would need an explicit dynamic model. The static consensus optimum alone does not determine an ev...
+Motivo: Sustain the exposition: unir el requisito hipotético con la explicación inmediata ya dada; conservar would, alone y does not para no introducir compromisos.
+
+C43 | §B | sn-article.tex:1670
+Fragmento inicial: This estimate is retained from the approved proposal. It records planned costs rather than audited expenditure...
+Motivo: Sustain the exposition/test2: coordinar origen y naturaleza de la misma estimación sin cambiar su condición de plan ni los importes.
+
+COMPROBACIONES DE PRESERVACIÓN
+Comparación exacta con la base:1020 expresiones matemáticas en el mismo orden;7 definiciones,13 teoremas,4 lemas,2 corolarios,3 proposiciones,3 axiomas y23 pruebas idénticos. También son idénticas las9 figuras,8 tablas y toda la bibliografía.
+Encabezados, citas, etiquetas, remisiones y rutas, límites de párrafos, portada y abstract idénticos. Reconstrucción de la fuente mediante los43 reemplazos registrados coincide exactamente con la fuente actual: no hay otros cambios de prosa.
+Sin cambios de código o experimentos. No se requerían pruebas nuevas del software para esta corrección de prosa.
+Artefactos y datos de verificación locales: /Users/ulvenforst/Documents/Codex/2026-10-19/task-2/continuidad-local/.
+Compilación real: Tectonic0.17.0 con recursos en caché, exit0; PDF65páginas. Se renderizaron65/65 con PDFKit; se inspeccionaron seis hojas de contacto y ampliaciones de páginas5,6,10,37,55,60,61. No se observan recortes o solapamientos nuevos.
+Advertencias idénticas a la compilación anterior: encabezado capítulo1 overfull4.25945pt; cuatro underfull en tablas; ancla PDF@page.1 duplicada. Se conserva la estructura autorizada.
+Fuente SHA256: 650d092c4193e289529427a504e60fa5b6eb15e138ed04c6bd1a1154e60c8348.
+PDF local: /Users/ulvenforst/Documents/Codex/2026-10-19/task-2/continuidad-local/build/sn-article.pdf
+PDF SHA256: 0ebc3178c52cdd8138f1f897dbdfaefad337043c8bae05ea414592798b70e976,1887779bytes.
+Los16 archivos no rastreados preexistentes conservan sus hashes iniciales. El PDF entregado anteriormente conserva SHA256 fbb97680d0c4f57c993c86f72e5feda1a8a23902fe79cd98d69a7a1fbcddc67a.
+Esta tarea se ejecutó únicamente en archivos locales del worktree y su directorio de artefactos. No se realizaron llamadas de escritura a Library ni a otro servicio, push o merge. El registro histórico de la segunda pasada no se modifica. Sin bloqueos pendientes de esta corrección de prosa.
