@@ -1,0 +1,1018 @@
+REVISIÓN GLOBAL SECUENCIAL — 19 OCTUBRE 2026
+
+Base comprobada: cfaac59a8519c7d151672427fde009f21de7fd9e.
+Rama: snotra/revision-tesis-cap2-20261019.
+Worktree: /Users/ulvenforst/Documents/Codex/2026-10-19/task-2/revision-tesis.
+Autorización: aplicar los siete hallazgos globales y la precisión conceptual pendiente; conservar main y el checkout original y guardar esta fase por separado. No publicar ni escribir en servicios externos.
+
+GUÍA Y MÉTODO REALMENTE SEGUIDO
+Se leyeron íntegramente la skill local /Users/ulvenforst/.agents/skills/russellian-clear-writing/SKILL.md y su única referencia local, references/editorial-basis.md, antes de editar. La revisión nueva fue secuencial, desde el capítulo 1 hasta bibliografía, con toda la prosa, fórmulas, enunciados y pruebas mostrados sin abreviación. Cada decisión contrasta la unidad con Respect the task and meaning, los tres tests y/o Sustain the exposition, según lo que gobierna ese pasaje; no se usa cuota de cambios, signos o longitud.
+P001–P306 identifican 306 unidades contiguas de fuente de la base, separadas por blancos. NO son 306 párrafos naturales: algunas incluyen enunciado y prueba, glosa o figura/tabla y otras son marcadores de bibliografía. Los rangos de líneas identifican el contenido exacto. Las decisiones nombran las partes formales y explicativas cuando comparten unidad. Los cinco ítems de objetivos y las dos partes de la definición de potencias tienen siete decisiones adicionales. Se revisaron también los encabezados y su función sustantiva. Se omiten solo blancos, comentarios no renderizados y órdenes de diseño; no queda prosa renderizada fuera de las unidades.
+Tras cada edición se releyeron en el manuscrito actual los párrafos anteriores y posteriores. El contexto global se contrastó con lo ya recorrido y, al llegar a capítulos posteriores, con sus definiciones y funciones previas. La comprobación final protege matemáticas, pruebas, datos, resultados, atribuciones y compromisos frente a la base; no equivale a una nueva certificación matemática completa ni a repetir todos los experimentos.
+Las líneas se conservan respecto a cfaac59: los dos párrafos retirados dejan líneas vacías para trazabilidad.
+
+CAMBIOS Y RELECTURAS TRAS EDITAR
+
+P024 | líneas 154–162
+Corregir apertura aprobada: retirar Using the notation of Section 1 y comenzar Consider an opinion distribution. Mantener categorías fijas/vacías, coordenadas, masas y fórmula íntegros. Sustain: P023 prepara el contenido nuevo; la remisión genérica no aporta premisa.
+Comprobación posterior: Releídos P023–P025: escala ordinal → categorías fijas/vacías → ER. El prefijo 1 ya define distribución y P024 añade coordenadas y normalización, sin depender de una remisión genérica.
+
+P027 | líneas 177–177
+Aplicar precisión aprobada. Introducir (KNS) junto a los tres apellidos y llamar Condition H a la propiedad de preservar rankings al escalar masas. Luego MEC satisfies this condition evita un nombre sin antecedente. Sustain: requisito antes de uso; Respect meaning: no ampliar clase de caracterización.
+Comprobación posterior: Releídos P026–P028 y contrastado con P089: tras los axiomas se nombra su límite de caracterización, la propiedad recibe nombre antes de this condition y KNS antes de usos posteriores. El desarrollo formal4.5 se conserva.
+
+P044 | líneas 265–265
+Retirar párrafo aprobado. Reenumera objetos ya explicados en P025–P043 y repite interpretación de P004/P038. P045 enlaza directamente las limitaciones del benchmark con criterios de evaluación; Sustain permite eliminar recapitulación sin desarrollo.
+Comprobación posterior: Releídos P042–P046: la distinción KI/score y el límite del benchmark conducen al puente de criterios formales/empíricos y objetivos. La construcción MEC sigue definida en P004/P024/P038; no se elimina premisa.
+
+P058 | líneas 360–365
+Retirar segunda remisión consecutiva a1 y2; comenzar la segunda oración An ordered vector representation is. La primera remisión sigue definiendo D y D_M. Mantener vector y glosa de entradas cero. Sustain evita remisiones repetidas que no añaden información.
+Comprobación posterior: Releídos P057–P060: primera referencia introduce D/D_M, luego vector, ceros y pesos transformados. Quitar segunda remisión no deja símbolo sin antecedente.
+
+P077 | líneas 518–518
+Aplicar propuesta aprobada. Sustituir It also explains por The minimization of absolute-distance effort explains. El corolario P076 da G(y)=sum rho|x-y| y P075 define su valor como media ponderada; distinguir pesos solo determina rho. Respect meaning permite reparar la relación causal con autorización expresa.
+Comprobación posterior: Releídos P075–P079: definiciones de estadísticos → corolario con minimización de G → glosa causal corregida → ejemplo de pesos → interpretación geométrica. Se conservan ambos pesos y significado de mediana, sin modificar teorema o prueba.
+
+P091 | líneas 663–663
+Retirar dos primeras oraciones generales y comenzar This section first establishes maximality... Conserva itinerario, atribución y fuente. Sustain: el cierre P090 ya explica que las propiedades permiten estudiar grupos; la apertura debe aportar recorrido concreto.
+Comprobación posterior: Releídos P089–P093: escalado/Condition H → cierre4 → itinerario5 → convenciones comunes → grupos enteros. El cierre4 conserva fundamento y la apertura aporta pasos concretos.
+
+P192 | líneas 1302–1302
+Retirar cierre aprobado. Repite itinerario que P193 ya presenta y cautela de procedencia P155/P191. Al pasar P191→P193 se conserva la base metodológica y se avanza a evidencia, según Sustain.
+Comprobación posterior: Releídos P190–P195: metadatos de reproducción cierran6; pregunta empírica abre7 y distingue dos propósitos antes del corpus. Cautela de procedencia queda en P155/P191; mapa general queda en P021.
+
+P218 | líneas 1431–1431
+Abreviar aprobado: conservar dos primeras oraciones y conclusión sobre evidencia suplementaria del benchmark, retirando dos oraciones que reexplican bootstrap/leave-one-out y test set de P186. Sustain: resultado desarrolla protocolo, no lo reimprime; conservar límite de calibración.
+Comprobación posterior: Releídos P216–P220 y P186: no discriminación entre candidatos → elección secundaria → conclusión limitada de sensibilidad → tiempo computacional. La mecánica de bootstrap/leave-one-out permanece en6.4 y aquí no se pierde resultado.
+
+P229 | líneas 1502–1502
+Identificar aplicación en primera mención: two uses of the Polarizometer application sustituye two applications of the Polarizometer. Mantener contribución de figuras y análisis colectivo íntegros. Sustain: contexto y término antes de uso; Respect meaning: sin ampliar autoría.
+Comprobación posterior: Releídos P228–P232: termina validación numérica, se presenta aplicación con atribución y alcance, después los dos casos y su relación con objetivos. No cambia contribución a figuras ni análisis colectivo.
+
+P254 | líneas 1579–1579
+Retirar solo la oración The present assessment supports MEC as a mathematically grounded measure with strong agreement on the evaluated expert profiles. Anticipa conclusión P255/P261. Mantener software, evidencia cívica, y*, mediación y último límite contextual; Sustain evita recapitulación sin borrar premisas.
+Comprobación posterior: Releídos P252–P256: interpretación contextual y datos → software/y*/uso cívico → conclusión general. Eliminar una frase valorativa anticipada conserva premisas cívicas, modalidad futura y límites.
+
+EXTRACTOS ANTES / DESPUÉS
+P024, apertura del capítulo 2: Using the notation of Section~\ref{sec:intro}, consider an opinion distribution → Consider an opinion distribution. El resto de la definición y sus fórmulas queda intacto.
+P027, introducción del nombre: a common positive factor. MEC satisfies Condition~H → a common positive factor, a property called Condition~H. MEC satisfies this condition. También se añade (KNS) junto a los tres apellidos.
+P077, causalidad: It also explains why mean absolute deviation about a median → The minimization of absolute-distance effort explains why mean absolute deviation about a median. El contraste final con median absolute deviation se conserva.
+P091, apertura del capítulo 5: dos oraciones genéricas seguidas de It first establishes → This section first establishes. Se mantiene el itinerario específico y la fuente.
+P229: two applications of the Polarizometer within PROMUEVA → two uses of the Polarizometer application within PROMUEVA. Ejecución de figuras y análisis colectivo no cambian.
+P266, solo composición: se antepone \enlargethispage{\baselineskip} al último párrafo del capítulo 9. Una línea adicional en esa página evita un folio propio de dos palabras; texto literal, tipografía base y párrafos intactos. Se releyeron P265–P267 y se verificó el resultado renderizado sin choque con el folio.
+
+COBERTURA Y DECISIONES INDIVIDUALES
+
+P001 | Introduction, Research Question, and Hypothesis | líneas 86–86
+Conservar. Sustain the exposition: la escena inicial desarrolla la diferencia entre dispersión y campamentos antes de nombrar su fundamento; la repetición de polarization mantiene el término técnico.
+
+P002 | Introduction, Research Question, and Hypothesis | líneas 88–88
+Conservar. Define tres intuiciones paralelas y cierra con su consecuencia común; los dos puntos anuncian una enumeración justificada, no fragmentan el argumento (Sustain; editorial-basis).
+
+P003 | Introduction, Research Question, and Hypothesis | líneas 90–90
+Conservar. Cada medida añade un significado distinto con su cita; la última oración plantea la necesidad interpretativa que responde P004. Precisión y términos estables antes que brevedad (tests 1; Sustain).
+
+P004 | Introduction, Research Question, and Hypothesis | líneas 92–92
+Conservar. Interpretación, esfuerzo y mínimo sobre consensos forman una explicación progresiva; eliminar una etapa dejaría implícito el objetivo de la optimización (Sustain; Respect meaning).
+
+P005 | Introduction, Research Question, and Hypothesis | líneas 94–94
+Conservar. Procedencia, coautoría y marco institucional cumplen funciones distintas. Respect meaning impide borrar o ampliar esta atribución.
+
+P006 | Introduction, Research Question, and Hypothesis | líneas 96–105
+Conservar definición y glosa. Dominio, soporte, masas y parámetros preceden a su uso; los puntos y coma de las dos cláusulas de exponentes unen información estrechamente relacionada sin confundirla con la fórmula (Sustain; puntuación).
+
+P007 | Introduction, Research Question, and Hypothesis | líneas 107–107
+Conservar. Las condiciones beta>1 y beta=1 aparecen junto a cada conclusión, con límite predictivo explícito; los tests 2–3 no justifican dispersarlas ni abreviarlas.
+
+P008 | Introduction, Research Question, and Hypothesis | líneas 109–109
+Conservar. Distingue los dos comparadores empíricos y su relación complementaria con el análisis axiomático; desarrolla P004/P007 en vez de redefinir MEC (Sustain).
+
+P009 | Introduction, Research Question, and Hypothesis | líneas 111–112
+Conservar pregunta. La etiqueta separa un elemento académico útil; reúne dos criterios que el desarrollo posterior evaluará, sin prometer su cumplimiento (Respect meaning; Sustain).
+
+P010 | Introduction, Research Question, and Hypothesis | líneas 114–114
+Conservar. El alcance unidimensional y las ilustraciones regionales quedan delimitados antes de inferencias; cada restricción sigue a la parte que limita (tests 2–3).
+
+P011 | Introduction, Research Question, and Hypothesis | líneas 116–117
+Conservar. Presenta el resultado básico y lo distingue de axiomas ER; esa diferencia evita una conclusión engañosa al leer la pregunta (Respect meaning; tests 3).
+
+P012 | Introduction, Research Question, and Hypothesis | líneas 119–119
+Conservar. Distribución de potencias, casos lineal/cuadrático e invariancias anticipan resultados precisos; las condiciones y factores de masa no son redundancia prescindible (Respect meaning; Sustain).
+
+P013 | Introduction, Research Question, and Hypothesis | líneas 121–126
+Conservar planteamiento, identidad y glosa. Cada uno aporta interpretación, formulación y consecuencia para masa fija. No sustituir símbolos o términos por variedad (Respect meaning; Sustain).
+
+P014 | Introduction, Research Question, and Hypothesis | líneas 128–128
+Conservar. Separa expectativa del anteproyecto y resultado alcanzado, con desigualdades estrictas explícitas. La repetición de condiciones evita invertir el alcance (tests 3; Respect meaning).
+
+P015 | Introduction, Research Question, and Hypothesis | líneas 130–130
+Conservar. Define el cambio simétrico y su relación con axioma3; la referencia exacta permite anticipar sin duplicar demostración (Sustain).
+
+P016 | Introduction, Research Question, and Hypothesis | líneas 132–132
+Conservar. Vincula la comparación extremismo/polarización con Minority Principle y da sus premisas; omitir dos posiciones o masas desiguales cambiaría el resultado (Respect meaning).
+
+P017 | Introduction, Research Question, and Hypothesis | líneas 134–134
+Conservar. Distingue transferencia parcial de desplazamiento de grupo entero y mantiene sus dominios; la longitud está justificada por resultados diferentes (Sustain; tests 2–3).
+
+P018 | Introduction, Research Question, and Hypothesis | líneas 136–136
+Conservar. Del resultado convexo pasa al coste algorítmico y a beta=1; los términos técnicos y la precisión posicional son necesarios (test1; Sustain).
+
+P019 | Introduction, Research Question, and Hypothesis | líneas 138–139
+Conservar etiqueta y párrafo. Introduce universo y reducción por reflexión antes de la concordancia; los números son evidencia, no ornamento (Respect meaning; Sustain).
+
+P020 | Introduction, Research Question, and Hypothesis | líneas 141–141
+Conservar. Expone empate, apoyo parcial y reutilización del benchmark antes de generalizar; las cautelas están próximas a la afirmación que limitan (tests3; Respect meaning).
+
+P021 | Introduction, Research Question, and Hypothesis | líneas 143–143
+Conservar. Mapa global único que sirve de navegación al manuscrito largo; no repite resultados ni añade encabezados pequeños (Sustain; editorial-basis headings).
+
+P022 | Literature Review and Conceptual Framework | líneas 150–150
+Conservar. El capítulo2 requiere contraste explícito entre tres conceptos y añade ejemplos y diferencia de transformaciones; no es repetición literal vacía de la introducción (Sustain, contexto necesario).
+
+P023 | Literature Review and Conceptual Framework | líneas 152–152
+Conservar. Orden ordinal y distancia numérica se distinguen antes de presentar categorías fijas; el límite interpretativo evita sobrelectura (tests3; Sustain).
+
+P024 | Literature Review and Conceptual Framework | líneas 154–162
+Corregir apertura aprobada: retirar Using the notation of Section 1 y comenzar Consider an opinion distribution. Mantener categorías fijas/vacías, coordenadas, masas y fórmula íntegros. Sustain: P023 prepara el contenido nuevo; la remisión genérica no aporta premisa.
+
+P025 | Identification, Alienation, and the Axiomatic Tradition | líneas 166–173
+Conservar fórmula y glosa. Parámetro propio y exponente ER se distinguen expresamente de MEC; la cota y masa fija limitan las afirmaciones en su lugar (Respect meaning; tests3).
+
+P026 | Identification, Alienation, and the Axiomatic Tradition | líneas 175–175
+Conservar. La descripción sucesiva de tres axiomas mantiene sus transformaciones separadas y cierra delimitando su alcance. Cada condición impide una generalización falsa (Respect meaning; tests3).
+
+P027 | Identification, Alienation, and the Axiomatic Tradition | líneas 177–177
+Aplicar precisión aprobada. Introducir (KNS) junto a los tres apellidos y llamar Condition H a la propiedad de preservar rankings al escalar masas. Luego MEC satisfies this condition evita un nombre sin antecedente. Sustain: requisito antes de uso; Respect meaning: no ampliar clase de caracterización.
+
+P028 | Identification, Alienation, and the Axiomatic Tradition | líneas 179–179
+Conservar. La motivación psicológica sigue a la tradición axiomática y acaba delimitando interpretación frente a medición; el límite sigue al modelo que restringe (tests3; Respect meaning).
+
+P029 | Agreement and Dissention on Ordered Scales | líneas 183–183
+Conservar. El cambio desde transformaciones a concentración común justifica la nueva sección y anuncia solo dos enfoques concretos (Sustain, transiciones reales).
+
+P030 | Agreement and Dissention on Ordered Scales | líneas 185–186
+Conservar glosa VdE. La secuencia de capas define semiuniform antes de usar el vector binario; separar o abreviar quitaría el procedimiento necesario (Sustain; test1).
+
+P031 | Agreement and Dissention on Ordered Scales | líneas 188–198
+Conservar definición, ecuación y convención degenerada. La condición de denominador precede a la fórmula y su excepción se resuelve inmediatamente; no se edita notación (Respect meaning; tests3).
+
+P032 | Agreement and Dissention on Ordered Scales | líneas 200–206
+Conservar. Ponderación, escalas e interpretación responden a tres preguntas distintas; la glosa desarrolla P031 sin repetir el algoritmo (Sustain).
+
+P033 | Agreement and Dissention on Ordered Scales | líneas 208–221
+Conservar etiqueta, definición y glosa. Amplitud fija, categorías vacías y extremos son premisas de uso de TWD. El contexto de P024 vuelve útil la referencia exacta (Sustain; Respect meaning).
+
+P034 | Agreement and Dissention on Ordered Scales | líneas 223–223
+Conservar. Conclusión comparativa breve añade el contraste uniforme/extremos y prepara comparación amplia, en lugar de resumir cada definición (Sustain).
+
+P035 | Transport Distances and Consensus | líneas 227–227
+Conservar. La transición de descripción ordinal a transporte da el nuevo objeto y restringe Wasserstein a probabilidades antes de trasladarlo a masas iguales (Sustain; tests3).
+
+P036 | Transport Distances and Consensus | líneas 229–240
+Conservar pasajes alrededor de las dos ecuaciones. Blanco fijo y minimización son objetos distintos; la glosa distingue desviación media/mediana sin eliminar premisas (Respect meaning; Sustain).
+
+P037 | Transport Distances and Consensus | líneas 242–242
+Conservar. La aplicación Lupu se integra con su operación y se distingue del benchmark MEC por referencia exacta. La unión de la fase previa mejora continuidad (Sustain).
+
+P038 | Transport Distances and Consensus | líneas 244–244
+Conservar. De limitación de un escalar pasa al papel de los exponentes; la negación de métrica general es un límite necesario junto a la interpretación (tests3; Respect meaning).
+
+P039 | Expert Judgments and KI | líneas 248–248
+Conservar. Tarea, escala, muestra inicial y retenida preceden al índice ajustado; no confundir número de participantes con respuesta cuantitativa (Respect meaning; Sustain).
+
+P040 | Expert Judgments and KI | líneas 250–257
+Conservar origen, fórmula y glosa KI. Define sigla y masas antes de productos y explicita la escala de implementación; las aclaraciones evitan ambigüedad, no son redundancia (Sustain; test1).
+
+P041 | Expert Judgments and KI | líneas 259–259
+Conservar. Los productos dan una consecuencia estructural y después su interpretación limitada; el cierre evita equiparar no-consenso y polarización uniforme (tests3).
+
+P042 | Expert Judgments and KI | líneas 261–261
+Conservar. Distingue índice candidato de referencia observada y unidades de juicio. Es requisito de entender el estudio, no recapitulación del catálogo (Sustain).
+
+P043 | Expert Judgments and KI | líneas 263–263
+Conservar. La dependencia entre selección y benchmark limita la inferencia inmediatamente; referencias exactas conducen al protocolo y resultados (tests3; Sustain).
+
+P044 | Expert Judgments and KI | líneas 265–265
+Retirar párrafo aprobado. Reenumera objetos ya explicados en P025–P043 y repite interpretación de P004/P038. P045 enlaza directamente las limitaciones del benchmark con criterios de evaluación; Sustain permite eliminar recapitulación sin desarrollo.
+
+P045 | Expert Judgments and KI | líneas 267–267
+Conservar puente. Distingue preguntas formales, concordancia entre medidas y validación experta, dando razón de los objetivos siguientes. Tras retirar P044 sigue teniendo antecedente this construction = MEC (Sustain).
+
+P046 | Objectives and Scope | líneas 271–271
+Conservar. Procedencia del plan y distinción entre papel/artículo y entregables adicionales determinan cómo evaluar alcance; Respect meaning prohíbe convertirlos en nuevas obligaciones.
+
+P047 | Objectives and Scope | líneas 273–273
+Conservar. Enuncia objetivo general antes de lista específica; condiciones y límites expresan el propósito sin prometer validación universal (Sustain; tests3).
+
+P048 | Objectives and Scope | líneas 275–282
+Conservar anuncio y enumeración. Cinco objetivos académicos paralelos justifican lista y etiquetas; no son fragmentación artificial (Sustain; editorial-basis Lists). Ver decisiones I1–I5.
+
+P048.I1
+Conservar formal theory. Hipótesis de unicidad y condiciones explícitas pertenecen al objetivo; no sustituirlas por promesa general de axiomas (Respect meaning; tests3).
+
+P048.I2
+Conservar synthetic universe. Universo, simetría y comparadores fijan la comparación concreta; KI se atribuye al papel completado (Respect meaning; Sustain).
+
+P048.I3
+Conservar software. Entregables y semillas ya existentes se mantienen con alcance condicionado a aleatoriedad; no añadir trabajo ni omitir restricciones (Respect meaning).
+
+P048.I4
+Conservar computational evaluation. Mantiene análisis ejecutado y usa envisaged para top-k y perfiles del plan. Distinción verbal evita inflar obligaciones (tests3; Respect meaning).
+
+P048.I5
+Conservar expert/regional. Distingue datos reutilizados y contribución colectiva descriptiva; no exige recogida nueva o análisis individual completo (Respect meaning).
+
+P049 | Objectives and Scope | líneas 284–284
+Conservar. Referencia exacta a2.1 evita reproducir caracterización KNS y deja explícito el dominio formal del objetivo; breve recuerdo útil (Sustain).
+
+P050 | Objectives and Scope | líneas 286–286
+Conservar. Escala, corpus y búsqueda finita limitan tres inferencias distintas. Los límites están cerca de sus objetos y no deben fundirse en cautela vaga (tests2–3).
+
+P051 | Objectives and Scope | líneas 288–288
+Conservar. Precisa alcance secundario del benchmark y carácter descriptivo regional; la repetición breve de la dependencia de selección es útil en la sección autónoma de alcance (Sustain; tests3).
+
+P052 | Objectives and Scope | líneas 290–290
+Conservar. La delimitación estática se acompaña de resultados que sí interpreta; no atribuye predicción dinámica a un punto óptimo (Respect meaning; tests3).
+
+P053 | Objectives and Scope | líneas 292–292
+Conservar. Actividades esenciales enumeradas con sus códigos permiten evaluar compromisos; la lista en prosa es comparación paralela útil, no fragmentación (Sustain; Respect meaning).
+
+P054 | Objectives and Scope | líneas 294–294
+Conservar. Separa deseables y estado de A7 del resto. No convertir existencia del artículo en prueba de ejecución de todas las extensiones (Respect meaning).
+
+P055 | Objectives and Scope | líneas 296–296
+Conservar. El plan metodológico no se equipara a actividades obligatorias; registros de ejecución y preregistro se distinguen antes de evaluar cumplimiento (tests3; Respect meaning).
+
+P056 | Objectives and Scope | líneas 298–298
+Conservar. Explica cómo se usarán objetivos y evidencia en discusión, sin volver a listar entregables. Cierra el alcance con una relación evaluativa real (Sustain).
+
+P057 | Minimum Effort to Consensus and Structural Properties | líneas 356–356
+Conservar. Itinerario sustantivo del capítulo matemático: construcción, existencia, interpretación y cómputo; la fuente y organización de pruebas se atribuyen expresamente (Sustain; Respect meaning).
+
+P058 | Opinion Distributions and Consensus | líneas 360–365
+Retirar segunda remisión consecutiva a1 y2; comenzar la segunda oración An ordered vector representation is. La primera remisión sigue definiendo D y D_M. Mantener vector y glosa de entradas cero. Sustain evita remisiones repetidas que no añaden información.
+
+P059 | Opinion Distributions and Consensus | líneas 367–375
+Conservar definición y glosa por separado. La definición formaliza potencias y normalización antes del teorema de dispersión; la glosa explica pesos y caso alfa=1. Es desarrollo técnico necesario, no sinónimos por variedad (Sustain; Respect meaning).
+
+P059.D
+Definición intacta: conserva dominios y las dos normalizaciones con notación diferenciada. Respect meaning, precisión antes que brevedad.
+
+P059.G
+Glosa intacta: distingue soporte conservado de pesos cambiados y avisa qué determina el consenso; prepara la precisión aprobada de P077 (Sustain, prerrequisitos).
+
+P060 | Opinion Distributions and Consensus | líneas 377–379
+Conservar definición. Presenta pi_y y pi* con la misma masa antes de transporte y máximo; cada igualdad de masa sirve a esos resultados (Sustain; Respect meaning).
+
+P061 | Opinion Distributions and Consensus | líneas 381–387
+Conservar desigualdades y glosa. La definición de mediana admite intervalo y normalización; no basta la idea coloquial de categoría central (Sustain; test1).
+
+P062 | Opinion Distributions and Consensus | líneas 389–392
+Conservar definición y enlace posterior. Separa mínimo requisito de polarización de axiomas ER, remitiendo al lugar preciso en vez de repetirlos (Sustain; tests3).
+
+P063 | From Transportation to Generalized MEC | líneas 396–408
+Conservar todos los párrafos ligados a ecuaciones. Se pasa de intuición a plan, marginales, coste y existencia; cada paso precisa una restricción antes de minimizar (Sustain; Respect meaning).
+
+P064 | From Transportation to Generalized MEC | líneas 410–415
+Conservar enunciado/prueba. La referencia evita reimprimir identidades del capítulo2 y el plan único justifica ambas conclusiones. Estructura lema/prueba académica útil (Sustain).
+
+P065 | From Transportation to Generalized MEC | líneas 417–417
+Conservar. Las razones de pesos y desplazamientos desarrollan el papel de exponentes en el modelo, con referencia precisa a motivación previa; no repiten la motivación psicológica (Sustain).
+
+P066 | From Transportation to Generalized MEC | líneas 419–422
+Conservar definición/glosa. Usa ecuación previa y añade nombre del punto óptimo y dominio continuo; limita identidad EMD al caso correcto inmediatamente (Sustain; tests3).
+
+P067 | Existence, Convexity, and Optimal Consensus | líneas 426–426
+Conservar. Distingue los fundamentos de existencia y unicidad antes de resultados, sin hacer anuncio idéntico al del capítulo (Sustain).
+
+P068 | Existence, Convexity, and Optimal Consensus | líneas 428–433
+Conservar enunciado y prueba. Compacto/continuo da existencia y reducción de distancias acota minimizadores; los dos argumentos no son intercambiables (Respect meaning; Sustain).
+
+P069 | Existence, Convexity, and Optimal Consensus | líneas 435–435
+Conservar. Prueba en prosa de las dos direcciones y vinculación al requisito de polarización; no es simple recapitulación de existencia (Sustain).
+
+P070 | Existence, Convexity, and Optimal Consensus | líneas 437–442
+Conservar resultado/prueba. Beta>=1 y beta>1 se mantienen ligados a convexidad/estricta convexidad; referencia a existencia evita duplicar demostración (Respect meaning; tests3).
+
+P071 | Existence, Convexity, and Optimal Consensus | líneas 444–459
+Conservar exposición completa. Balance, derivada, signos en extremos y caso consenso producen caracterización, con condiciones antes de cada conclusión (Sustain; tests2–3).
+
+P072 | Existence, Convexity, and Optimal Consensus | líneas 461–461
+Conservar. Deriva complejidad de P071 y reserva opciones numéricas al capítulo6; beta=1 tiene una limitación explícita y remisión útil (Sustain; tests3).
+
+P073 | Weighted Dispersion and Special Cases | líneas 465–470
+Conservar definición y glosa de D_p. Relaciona transformaciones ya definidas con nuevo objeto; el término Lp-dispersion se explica sin cambiar convención (test1; Sustain).
+
+P074 | Weighted Dispersion and Special Cases | líneas 472–487
+Conservar enunciado/prueba. Sacar factor positivo independiente de y explica la identidad y los minimizadores; no volver a definir pesos en la prueba (Respect meaning; Sustain).
+
+P075 | Weighted Dispersion and Special Cases | líneas 489–489
+Conservar. Define los estadísticos y el peso rho antes del corolario. La distinción de mean absolute deviation y variance es precisa y necesaria para P076/P077 (Sustain; test1).
+
+P076 | Weighted Dispersion and Special Cases | líneas 491–516
+Conservar corolario y prueba. G suma distancias ponderadas, sus derivadas caracterizan medianas; la expansión cuadrática distingue media. Las premisas están antes del resultado (Sustain; Respect meaning). Verificación local del fundamento conceptual de P077, sin cambiar demostración.
+
+P077 | Weighted Dispersion and Special Cases | líneas 518–518
+Aplicar propuesta aprobada. Sustituir It also explains por The minimization of absolute-distance effort explains. El corolario P076 da G(y)=sum rho|x-y| y P075 define su valor como media ponderada; distinguir pesos solo determina rho. Respect meaning permite reparar la relación causal con autorización expresa.
+
+P078 | Weighted Dispersion and Special Cases | líneas 520–538
+Conservar ejemplo completo. Valores y parámetros documentan inversión de orden; la última oración niega generalización de transferencias parciales. No simplificar eliminando caso o cautela (Respect meaning; tests3).
+
+P079 | Weighted Dispersion and Special Cases | líneas 540–540
+Conservar. La referencia exacta lleva de mediana a prueba pendiente de la identidad anunciada; no redefine polarización (Sustain).
+
+P080 | Weighted Dispersion and Special Cases | líneas 542–566
+Conservar enunciado y prueba. Introduce cuantiles antes de usarlos y distingue valores en fronteras de la integral. La cadena de distancias desarrolla el argumento sin etiquetas artificiosas (Sustain; Respect meaning).
+
+P081 | Weighted Dispersion and Special Cases | líneas 568–568
+Conservar. Ejemplo numérico interpreta identidad y cota lineal antes de distinguir maximalidad general. Una conclusión más breve ocultaría el cambio de alcance (tests3).
+
+P082 | Symmetry and Population Scaling | líneas 572–572
+Conservar. Sección nueva cambia de mínimo interno a transformaciones; tres papeles orientación/localización/masa justifican división sustantiva (Sustain; headings).
+
+P083 | Symmetry and Population Scaling | líneas 574–575
+Conservar primer párrafo de definición. Admisibilidad se introduce antes de reflexión y simetría; cada restricción tiene función en la prueba siguiente (Sustain; Respect meaning).
+
+P084 | Symmetry and Population Scaling | líneas 577–578
+Conservar segundo párrafo de definición. Tras reflexión define desplazamiento y convenio fuera del soporte; mantiene término shift sin sinónimos innecesarios (test1; Sustain).
+
+P085 | Symmetry and Population Scaling | líneas 580–600
+Conservar lema, prueba y glosa. La prueba trabaja intervalos del soporte y la glosa explica por qué no todo[0,1]; es aclaración necesaria, no repetición literal (Sustain; tests3).
+
+P086 | Symmetry and Population Scaling | líneas 602–612
+Conservar enunciado y prueba. Distingue unicidad de beta>1 de posible intervalo de medianas; las dos ramas requieren sus condiciones (Respect meaning; tests3).
+
+P087 | Symmetry and Population Scaling | líneas 614–625
+Conservar corolario, prueba y glosa. Calcular valor extremo no prueba maximalidad; esta diferencia prepara capítulo5 y evita sobreafirmar el cálculo (Respect meaning; tests3).
+
+P088 | Symmetry and Population Scaling | líneas 627–637
+Conservar enunciado/prueba. Factor positivo independiente de y fundamenta valor y minimizadores. No añadir explicaciones repetidas de la potencia (Sustain).
+
+P089 | Symmetry and Population Scaling | líneas 639–657
+Conservar los párrafos entre fórmulas. Formaliza Condition H nombrada en2.1 y distingue rankings, valor bruto y dos normalizaciones. El recordatorio es desarrollo con prueba, no duplicación (Sustain; Respect meaning).
+
+P090 | Symmetry and Population Scaling | líneas 659–659
+Conservar cierre aprobado. Reúne propiedades ya probadas para fundamentar el cambio de objeto del capítulo5; evitar duplicación suprimiendo anuncio repetido en P091 (Sustain).
+
+P091 | Theoretical Results and Axiomatic Analysis | líneas 663–663
+Retirar dos primeras oraciones generales y comenzar This section first establishes maximality... Conserva itinerario, atribución y fuente. Sustain: el cierre P090 ya explica que las propiedades permiten estudiar grupos; la apertura debe aportar recorrido concreto.
+
+P092 | Theoretical Results and Axiomatic Analysis | líneas 665–665
+Conservar. Convenciones comunes y parámetros al comienzo evitan repetirlos en cada enunciado; referencia precisa a notación previa es útil (Sustain; Respect meaning).
+
+P093 | Group Movements and Maximal Polarization | líneas 669–669
+Conservar. Antes del teorema separa masa parcial y movimiento completo con ejemplo exacto; premisa conceptual oportuna según Sustain.
+
+P094 | Group Movements and Maximal Polarization | líneas 671–678
+Conservar definición de movimiento y shift away. El cuantificador every optimum y las desigualdades son esenciales; no abreviar con terminología informal (Respect meaning; test1).
+
+P095 | Group Movements and Maximal Polarization | líneas 680–681
+Conservar párrafo median-shift. Introduce excepción beta=1 antes del teorema, sin reinterpretar unicidad (Sustain; Respect meaning).
+
+P096 | Group Movements and Maximal Polarization | líneas 683–683
+Conservar glosa. Explica el cuantificador y efecto de fusión de pesos; aporta dos razones técnicas no contenidas en el nombre de operación (Sustain).
+
+P097 | Group Movements and Maximal Polarization | líneas 685–692
+Conservar teorema y apertura de prueba. Enunciado excluye median-shift y prueba reduce por reflexión con pesos lineales; la organización mantiene la dependencia (Sustain; Respect meaning).
+
+P098 | Group Movements and Maximal Polarization | líneas 694–698
+Conservar párrafo de prueba. Distingue intervalo de mediana y único punto para sostener mismo óptimo; la ecuación sigue de esas premisas (Sustain; tests2).
+
+P099 | Group Movements and Maximal Polarization | líneas 700–704
+Conservar párrafo de prueba. Define f,H y el óptimo y_t antes de emplearlos, con signos y desigualdades ligados a hipótesis. No cambiar demostración bajo revisión global editorial (Respect meaning; Sustain).
+
+P100 | Group Movements and Maximal Polarization | líneas 706–710
+Conservar párrafo de prueba. Condiciones de continuidad/unicidad anteceden al teorema de envolvente; precisión sobre no derivar y_t previene una premisa extra (Sustain; tests3).
+
+P101 | Group Movements and Maximal Polarization | líneas 712–725
+Conservar cierre de prueba. Distingue mover pesos ya elevados de fusionar masas antes de elevar; desigualdad y mínimos permiten pasar a alfa general. Esa distinción no se debe comprimir (Respect meaning; Sustain).
+
+P102 | Group Movements and Maximal Polarization | líneas 727–727
+Conservar. Hace explícita la frontera consenso y separa excepción median-shift; no añade resultado nuevo. El límite es decisivo para leer el teorema correctamente (tests3).
+
+P103 | Group Movements and Maximal Polarization | líneas 729–736
+Conservar ejemplo. Ambos consensos/valores concretan la excepción recién definida; es desarrollo de una premisa, no repetición del teorema (Sustain).
+
+P104 | Group Movements and Maximal Polarization | líneas 738–738
+Conservar transición. Mover a extremos deja pendiente reparto entre extremos; explicita exactamente qué resuelve el siguiente resultado (Sustain, relaciones reales).
+
+P105 | Group Movements and Maximal Polarization | líneas 740–751
+Conservar enunciado y comienzo de prueba. Delimita extremos degenerados y beta=1 antes de tratar caso suave; cada rama conserva sus premisas (Respect meaning; tests2).
+
+P106 | Group Movements and Maximal Polarization | líneas 753–768
+Conservar resto de prueba. Igualdad de balance produce las dos expresiones de g y comparación no negativa; términos introducidos antes de usar (Sustain).
+
+P107 | Group Movements and Maximal Polarization | líneas 770–779
+Conservar teorema y apertura. La definición exacta y el caso no-consenso preparan el argumento, mientras referencia a4.3 evita repetir prueba de cero (Sustain).
+
+P108 | Group Movements and Maximal Polarization | líneas 781–781
+Conservar párrafo beta>1. Describe la operación finita y enlaza a dos teoremas ya demostrados; no volver a exponer sus pruebas (Sustain).
+
+P109 | Group Movements and Maximal Polarization | líneas 783–783
+Conservar párrafo beta=1. Explicita posible terminación en tres puntos y define mu antes de la cota; una abreviación borraría excepción esencial (Respect meaning; tests3).
+
+P110 | Group Movements and Maximal Polarization | líneas 785–797
+Conservar cota y cierre de prueba. La contradicción por mediana única justifica masas de extremos; el caso extremo no ocupado y la alternativa de dos puntos cierran el dominio (Sustain; Respect meaning).
+
+P111 | Group Movements and Maximal Polarization | líneas 799–799
+Conservar. Interpreta la cota probada y separa condición de axiomas, preparando cambio de sección sin duplicar la prueba (Sustain; tests3).
+
+P112 | Esteban--Ray Axioms | líneas 803–803
+Conservar. Referencia precisa sustituye recapitulación larga y atribución se conserva; introduce P y las fuentes de los axiomas. Respect meaning protege ejecución y guía.
+
+P113 | Esteban--Ray Axioms | líneas 805–811
+Conservar axioma1. Orden de cuantificadores, cotas y transformación formal deben permanecer intactos; la forma axiomática es estructura académica útil (Respect meaning; Sustain).
+
+P114 | Esteban--Ray Axioms | líneas 813–818
+Conservar figura/pie. Describe merger y fuente sin agregar promesa o atribución exclusiva; el apoyo visual acompaña el axioma (Respect meaning; Sustain).
+
+P115 | Esteban--Ray Axioms | líneas 820–820
+Conservar glosa. Explicita el alcance de cuantificadores existenciales de P113 y remite a figura; facilita leer fórmula sin reemplazarla (Sustain; tests3).
+
+P116 | Esteban--Ray Axioms | líneas 822–845
+Conservar teorema y apertura de prueba. Variables h,A,B,J se definen antes de dependencias; la descomposición prepara el umbral y no admite recorte editorial (Sustain; Respect meaning).
+
+P117 | Esteban--Ray Axioms | líneas 847–853
+Conservar rama beta=1. Da suficiencia y construcción contra cualquier cota para alfa=1; las dos direcciones son necesarias para iff (Respect meaning; tests2–3).
+
+P118 | Esteban--Ray Axioms | líneas 855–870
+Conservar rama beta>1. La elección de mu y signos de derivadas preceden a localización de óptimos; omitir condiciones ocultaría el argumento (Sustain).
+
+P119 | Esteban--Ray Axioms | líneas 872–877
+Conservar suficiencia alfa>1. La uniformidad sobre compacto y elección conjunta de cotas mantienen el vínculo entre enunciado y mínimo (Respect meaning; Sustain).
+
+P120 | Esteban--Ray Axioms | líneas 879–885
+Conservar necesidad alfa=1. Cotas arbitrarias, elección de h,q y reversión de desigualdad refutan la condición en toda cercanía; el cierre no exagera el resultado (tests3).
+
+P121 | Esteban--Ray Axioms | líneas 887–887
+Conservar. La interpretación del factor explica por qué casos familiares fallan axioma1 y distingue requisito básico; no vuelve a demostrarlo (Sustain).
+
+P122 | Esteban--Ray Axioms | líneas 889–895
+Conservar axioma2. El dominio completo de Delta y condiciones de masas/distancias constituyen el resultado que la glosa siguiente compara con original (Respect meaning).
+
+P123 | Esteban--Ray Axioms | líneas 897–897
+Conservar. Diferencia versión original local y fortalecimiento del artículo con fuentes precisas; su posición anterior a la prueba evita atribución errónea (Respect meaning; tests3).
+
+P124 | Esteban--Ray Axioms | líneas 899–904
+Conservar figura/pie. Describe dirección y condición remitiendo al axioma, sin repetir toda la fórmula ni desligar la fuente (Sustain; Respect meaning).
+
+P125 | Esteban--Ray Axioms | líneas 906–906
+Conservar glosa. La relación respecto a los dos extremos explica aumento de alienación bajo condiciones; vocabulario común conserva el término técnico (test1; Sustain).
+
+P126 | Esteban--Ray Axioms | líneas 908–916
+Conservar teorema y rama beta>1. La derivada localiza óptimo y permite invocar movimiento previamente probado; no repetir toda la prueba mejora proporción (Sustain).
+
+P127 | Esteban--Ray Axioms | líneas 918–924
+Conservar rama beta=1. Trata excepción median-shift directamente por optima y valores, con hipótesis asimétrica explícita (Respect meaning; tests3).
+
+P128 | Esteban--Ray Axioms | líneas 926–926
+Conservar glosa. Explica por qué la excepción general no impide axioma2; la repetición del término median-shift conecta familiar y nuevo (Sustain; editorial-basis Transitions).
+
+P129 | Esteban--Ray Axioms | líneas 928–934
+Conservar axioma3. Parámetros y límites garantizan posición simétrica y masa central positiva; no alterar cuantificadores por fluidez (Respect meaning).
+
+P130 | Esteban--Ray Axioms | líneas 936–941
+Conservar figura/pie. Diferencia transferencia de masa y desplazamiento de posiciones con y=2x; atribución de fuente permanece (Sustain; Respect meaning).
+
+P131 | Esteban--Ray Axioms | líneas 943–943
+Conservar glosa. Resalta grupos existentes y posiciones fijas, premisas necesarias para comparar después con central-split (Sustain, definición oportuna).
+
+P132 | Esteban--Ray Axioms | líneas 945–950
+Conservar teorema/prueba. Simetría ya definida reduce cálculo y mantiene beta=1 expresamente; no hace falta reexplicar todo el lema (Sustain).
+
+P133 | Esteban--Ray Axioms | líneas 952–952
+Conservar. Integra condiciones finales y comparación con hipótesis inicial, distinguiendo KNS y ER. La sigla ahora tiene antecedente en P027; el límite de caracterización sigue necesario (tests3; Respect meaning).
+
+P134 | Central-Split Monotonicity | líneas 956–956
+Conservar. La nueva sección se justifica por destinos intermedios frente a existentes; no reenumera axiomas, aporta la diferencia sustantiva (Sustain; headings).
+
+P135 | Central-Split Monotonicity | líneas 958–964
+Conservar definición. Presenta Property1 y dominios antes de la configuración y operación; los casos p=0,z=x se mantienen para desarrollo posterior (Respect meaning; Sustain).
+
+P136 | Central-Split Monotonicity | líneas 966–976
+Conservar representación y figura. El caso z<x evita posiciones duplicadas y pie detalla masas remanentes; apoyo visual no sustituye hipótesis (Sustain).
+
+P137 | Central-Split Monotonicity | líneas 978–978
+Conservar glosa de frontera. Explica z=x y p=0 para no aplicar ciegamente representación de cinco grupos; es contexto indispensable (tests3; Respect meaning).
+
+P138 | Central-Split Monotonicity | líneas 980–995
+Conservar teorema/prueba. Ramas intermedia y fusión distinguen pesos distintos; la simetría permite resultado uniforme sin recortar argumentos (Sustain; Respect meaning).
+
+P139 | Central-Split Monotonicity | líneas 997–1005
+Conservar contraejemplo y conclusión limitada. Valores concretos refutan implicación, mientras última oración impide convertirlo en superioridad universal de MEC (tests3; Respect meaning).
+
+P140 | Minority Principle | líneas 1009–1009
+Conservar transición a Minority Principle. Cambia comparación entre distribuciones por reparto dentro de una, con dos grupos y resultado esperado; división sustantiva (Sustain).
+
+P141 | Minority Principle | líneas 1011–1021
+Conservar lema/prueba. Balance y derivada en punto medio vinculan tamaño de grupo y localización; define cada símbolo antes de la comparación (Sustain).
+
+P142 | Minority Principle | líneas 1023–1036
+Conservar teorema/prueba. A/B desiguales y beta=1 se tratan sin eliminar frontera; reflection evita prueba duplicada y mantiene rigor (Sustain; Respect meaning).
+
+P143 | Minority Principle | líneas 1038–1038
+Conservar. Distingue masas iguales, grupos múltiples y interpretación normativa; cada límite cierra una posible inferencia distinta (tests3; Respect meaning).
+
+P144 | Tipping Point and Partial Mass Transfers | líneas 1042–1042
+Conservar. Explica nueva operación y razón por la que teorema de grupos enteros no basta; la relación por potencias es premisa del Tipping Point, no recapitulación gratuita (Sustain).
+
+P145 | Tipping Point and Partial Mass Transfers | líneas 1044–1044
+Conservar notación. Introduce transferencia parcial y los dos extremos k=0,k=pi(a) antes de fórmulas; recordar relación con grupo entero evita ambigüedad (Sustain).
+
+P146 | Tipping Point and Partial Mass Transfers | líneas 1046–1051
+Conservar identidad y explicación. La referencia a dispersión evita nuevo cálculo de consenso y los pesos cuadráticos se especifican; no cambiar ecuación (Respect meaning; Sustain).
+
+P147 | Tipping Point and Partial Mass Transfers | líneas 1053–1088
+Conservar proposición/prueba completa. Definiciones d,e,C, denominador y polinomio preceden a su uso; la positividad garantiza interpretación del signo. Extensión justificada por cálculo formal, no exceso de prosa (Sustain; Respect meaning).
+
+P148 | Tipping Point and Partial Mass Transfers | líneas 1090–1108
+Conservar teorema/prueba. Distingue existencia de unicidad por referencia exacta al apéndice; la raíz simple y denominador positivo sostienen las dos ramas (Sustain).
+
+P149 | Tipping Point and Partial Mass Transfers | líneas 1110–1110
+Conservar. Separa recuperar nivel de ser punto estacionario y de monotonía respecto a k. Son negaciones decisivas para interpretar el gráfico/resultados (Respect meaning; tests3).
+
+P150 | Tipping Point and Partial Mass Transfers | líneas 1112–1119
+Conservar ejemplo. Retoma el caso previo para cuantificar umbral y limita masa real frente a conteos enteros; añade precisión, no repite ejemplo de4.4 (Sustain; tests3).
+
+P151 | Tipping Point and Partial Mass Transfers | líneas 1121–1121
+Conservar. Anticipa extensión cúbica con negación de unicidad automática; límite antes del enunciado impide extrapolar teorema de dos puntos (tests3).
+
+P152 | Tipping Point and Partial Mass Transfers | líneas 1123–1147
+Conservar proposición/prueba. Dominio de soporte, definición de D,N y coeficiente líder sustentan cúbica positiva en denominador; no se afirma unicidad (Respect meaning; Sustain).
+
+P153 | Tipping Point and Partial Mass Transfers | líneas 1149–1149
+Conservar cierre de5. Resume respuestas formales con restricciones y abre cuestión computacional; frente a nuevo capítulo6 el cambio de objeto resulta explícito (Sustain; tests3).
+
+P154 | Computational Methodology and Implementation | líneas 1153–1153
+Conservar apertura de6. Introduce diseño y autoría de ejecución/guía, con fuente y repositorio; se distingue del cierre5 al añadir protocolo empírico (Sustain; Respect meaning).
+
+P155 | Computational Methodology and Implementation | líneas 1155–1155
+Conservar. Roles del plan, papel y código previenen atribuir ejecuciones históricas al script actual. Son límites de procedencia que condicionan la lectura del capítulo (tests3; Respect meaning).
+
+P156 | Numerical Computation of MEC | líneas 1159–1163
+Conservar representación y glosa. Coordenadas fijas y ceros conectan2.0 con implementación y evitan normalización distinta de distancias; condición antes de resultados (Sustain).
+
+P157 | Numerical Computation of MEC | líneas 1165–1165
+Conservar. Aplica escalado probado al corpus de total fijo y distingue perfiles de distinto total. Es uso de teorema, no nueva definición redundante (Sustain; Respect meaning).
+
+P158 | Numerical Computation of MEC | líneas 1167–1167
+Conservar. Operación real de clase y límites de su salida se explican juntos; no presentar aproximación como valor matemático exacto (tests3; Respect meaning).
+
+P159 | Numerical Computation of MEC | líneas 1169–1173
+Conservar texto y fórmula. Relaciona convexidad con solver y acota iteraciones antes de complejidad; la última oración impide confundir cota aritmética con tiempo medido (tests3; Sustain).
+
+P160 | Numerical Computation of MEC | líneas 1175–1175
+Conservar. Tolerancia posicional, error de valor y defaults históricos son diferentes criterios; abreviar mezclándolos cambiaría alcance (Respect meaning; tests2).
+
+P161 | Numerical Computation of MEC | líneas 1177–1177
+Conservar. Distingue beta=1, beta=2 y ruta numérica usada. Las referencias exactas a corolario aportan comprobación sin reimprimir prueba (Sustain).
+
+P162 | Numerical Computation of MEC | líneas 1179–1184
+Conservar normalización, fórmula y glosa. Distingue masa de raíz del índice, escala y ranking; premisa de masa unitaria aparece junto al uso de clase (Respect meaning; tests3).
+
+P163 | Library Implementation and Verification | líneas 1188–1188
+Conservar. Arquitectura se organiza por función concreta y rutas existentes; lista en prosa permite identificar las piezas sin subsecciones artificiales (Sustain; test1).
+
+P164 | Library Implementation and Verification | líneas 1190–1190
+Conservar. Ruta callable y compute tienen efectos diferentes, y representación de consenso tiene una restricción distinta de dominio teórico (Respect meaning; tests3).
+
+P165 | Library Implementation and Verification | líneas 1192–1192
+Conservar. Describe lookup de umbrales y limita calibración/conclusiones; etiquetas categóricas se distinguen de rankings numéricos (tests3; Sustain).
+
+P166 | Library Implementation and Verification | líneas 1194–1194
+Conservar. Presenta dominio software más amplio antes de usar búsquedas; afirma explícitamente que éxito numérico no prueba axiomas (tests3).
+
+P167 | Library Implementation and Verification | líneas 1196–1196
+Conservar. Cobertura de tests y semilla son evidencia concreta, con límite no universal; no añadir pruebas o experimentos nuevos (Respect meaning; Sustain).
+
+P168 | Library Implementation and Verification | líneas 1198–1198
+Conservar. API, instalación, CI, licencia y metadatos son datos paralelos relevantes al objetivo software; límite de CI antes de reclamar éxito remoto (Sustain; tests3).
+
+P169 | Library Implementation and Verification | líneas 1200–1200
+Conservar. Distingue interfaces de scripts de CLI general y configuración CI de despliegue; evita completar obligaciones por inferencia (Respect meaning; tests3).
+
+P170 | Data Sources and Computational Corpus | líneas 1204–1209
+Conservar texto/fórmula. Define universo antes del conteo y operación de reducción por reflexión; liga formalidad con generador sin mezclar números (Sustain).
+
+P171 | Data Sources and Computational Corpus | líneas 1211–1221
+Conservar cálculo y glosa. Casos palindrómicos justifican corrección del aproximado, y contador total se distingue de retenidos. No acortar premisa del conteo (Respect meaning; Sustain).
+
+P172 | Data Sources and Computational Corpus | líneas 1223–1223
+Conservar. Unidad canónica, multiplicidades y finitud son tres límites del análisis; negación explícita de correlación idéntica evita sobreinterpretar simetría (tests3).
+
+P173 | Data Sources and Computational Corpus | líneas 1225–1225
+Conservar. Muestra inicial/retenida y totales de perfiles se precisan en el contexto metodológico autónomo; referencia exacta evita repetir explicación del estudio (Sustain; Respect meaning).
+
+P174 | Data Sources and Computational Corpus | líneas 1227–1227
+Conservar. Distingue KI, agregado humano y respuestas individuales antes de método de comparación; conceptos no intercambiables (Sustain; test1).
+
+P175 | Data Sources and Computational Corpus | líneas 1229–1229
+Conservar. Procedencia regional, fecha y papel descriptivo se dan antes de resultados, con referencia exacta al adjunto no publicado y sección7.5 (Sustain; Respect meaning).
+
+P176 | Comparison Protocol and Parameter Selection | líneas 1233–1233
+Conservar. Explica dos comparaciones con mismas entradas y delimita candidatos a los del artículo. Reintroducción breve en protocolo autónomo, no nueva lista (Sustain).
+
+P177 | Comparison Protocol and Parameter Selection | líneas 1235–1252
+Conservar tabla completa. Relación medida/ajuste/clase es información paralela adecuada para tabla; no rehacer como prosa ni cambiar nombres (Sustain; Respect meaning).
+
+P178 | Comparison Protocol and Parameter Selection | líneas 1254–1254
+Conservar. Etiquetas de implementación, escalado y limitación de EMD son diferencias operacionales necesarias; referencia exacta evita repetir derivación geométrica (Sustain; tests3).
+
+P179 | Comparison Protocol and Parameter Selection | líneas 1256–1256
+Conservar. Distingue scripts exploratorios y variante optimizada de candidato publicado; mantiene alcance de resultados antes de presentarlos (tests3; Respect meaning).
+
+P180 | Comparison Protocol and Parameter Selection | líneas 1258–1262
+Conservar definición y glosa tauB. Conteos, empates, denominador y transformación creciente forman requisitos de interpretación; el contraste Pearson no es redundancia de introducción (Sustain; tests3).
+
+P181 | Comparison Protocol and Parameter Selection | líneas 1264–1264
+Conservar. Especifica tres cuantizaciones y su efecto sobre empates sin confundirlas con tolerancia. Separar más produciría fragmentos y perdería comparación (Sustain; tests2).
+
+P182 | Comparison Protocol and Parameter Selection | líneas 1266–1266
+Conservar. Relativa which integra stable sorting y desempate; la cautela distingue protocolos antes de comparar coeficientes (Sustain; Respect meaning).
+
+P183 | Comparison Protocol and Parameter Selection | líneas 1268–1268
+Conservar. No evaluated pair y finite grids limitan el hallazgo a búsquedas realizadas; tabla concreta desarrolla la afirmación (tests3; Sustain).
+
+P184 | Comparison Protocol and Parameter Selection | líneas 1270–1284
+Conservar tabla de búsqueda. Etapas, rangos y número de muestras son datos paralelos; no interpretar bootstrap como participantes o validación externa (Respect meaning; Sustain).
+
+P185 | Comparison Protocol and Parameter Selection | líneas 1286–1286
+Conservar. Separa dominio exploratorio del garantizado y criterios secundarios del primario; las condiciones están junto al argumento pertinente (tests3).
+
+P186 | Comparison Protocol and Parameter Selection | líneas 1288–1288
+Conservar protocolo completo. Unidad perfil-score, remuestreo y ausencia de refit deben quedar definidos aquí. P218 se abreviará para que resultados no reimpriman este método (Sustain).
+
+P187 | Comparison Protocol and Parameter Selection | líneas 1290–1290
+Conservar. Referencia al alcance distingue shortlist/top-k y preregistro; son límites diferentes y no simples avisos repetidos (Respect meaning; Sustain).
+
+P188 | Reproducibility and Computational Resources | líneas 1294–1294
+Conservar. Pasa de diferencias metodológicas a requisitos concretos de reproducción; la secuencia input/configuración/output desarrolla una relación causal (Sustain).
+
+P189 | Reproducibility and Computational Resources | líneas 1296–1296
+Conservar. Identifica rutas y artefactos sin inferir procedencia de una figura; la última condición limita exactamente esa vinculación (Respect meaning; tests3).
+
+P190 | Reproducibility and Computational Resources | líneas 1298–1298
+Conservar. Distingue dos cargas temporales y semillas, conteo de operaciones y tiempo observado, y plan de equipo frente a registro. Cada precisión corresponde a una comparación (tests2–3).
+
+P191 | Reproducibility and Computational Resources | líneas 1300–1300
+Conservar. Determinismo y aleatoriedad justifican metadatos necesarios; el último límite no borra evidencia existente ni declara completas revisiones no registradas (Respect meaning; Sustain).
+
+P192 | Reproducibility and Computational Resources | líneas 1302–1302
+Retirar cierre aprobado. Repite itinerario que P193 ya presenta y cautela de procedencia P155/P191. Al pasar P191→P193 se conserva la base metodológica y se avanza a evidencia, según Sustain.
+
+P193 | Experimental Results | líneas 1306–1306
+Conservar apertura de resultados. Define pregunta empírica y orden de evidencia con referencia exacta al método, útil después de capítulo extenso (Sustain).
+
+P194 | Experimental Results | líneas 1308–1308
+Conservar. Distingue concordancia entre índices y con humanos antes de resultados; evita tratarlas como validación axiomática (tests3; Respect meaning).
+
+P195 | Concordance Across Polarization Measures | líneas 1312–1312
+Conservar. Corpus y significado de cada celda se recuerdan para leer figura, con referencia exacta al conteo; no se reexplica generador (Sustain).
+
+P196 | Concordance Across Polarization Measures | líneas 1314–1319
+Conservar figura/pie. Fuente y caso EMD están especificados para lectura autónoma del gráfico; no cambiar datos o imagen (Respect meaning; Sustain).
+
+P197 | Concordance Across Polarization Measures | líneas 1321–1321
+Conservar. Enumera comparadores en relación al MEC de referencia y limita similitud a concordancia, sin inferir índice equivalente (tests3).
+
+P198 | Concordance Across Polarization Measures | líneas 1323–1323
+Conservar. Identidad de varianza interpreta asociación, manteniendo diferencia entre proximidad de rankings e igualdad funcional (Respect meaning; Sustain).
+
+P199 | Concordance Across Polarization Measures | líneas 1325–1325
+Conservar. El contraste entre parámetros explica cambio y limita conclusión a parametrizaciones concretas; términos técnicos estables (tests3; test1).
+
+P200 | Concordance Across Polarization Measures | líneas 1327–1327
+Conservar. La fórmula KI aporta contraejemplo concreto independiente de matriz; la conclusión distingue evidencia algebraica de correlación (Sustain; Respect meaning).
+
+P201 | Concordance Across Polarization Measures | líneas 1329–1329
+Conservar. Explicita alcance real de comprobación y origen publicado de matriz; diferencia entre contrastar conteo y regenerar millones no debe desaparecer (Respect meaning; tests3).
+
+P202 | Agreement with Published Expert Judgments | líneas 1333–1333
+Conservar. Presenta cambio a referencia humana y distingue tabla transcrita de observaciones nuevas; el recuerdo de normalización por perfil es necesario para interpretar tabla (Sustain).
+
+P203 | Agreement with Published Expert Judgments | líneas 1335–1340
+Conservar figura/pie. Procedencia y sistema de identificadores explican relación gráfico/repositorio; no duplicar la descripción de cada perfil (Sustain; Respect meaning).
+
+P204 | Agreement with Published Expert Judgments | líneas 1342–1368
+Conservar tabla íntegra. Datos, totales y puntuaciones son información verificable paralela; la leyenda distingue agregados de respuestas individuales (Respect meaning; Sustain).
+
+P205 | Agreement with Published Expert Judgments | líneas 1370–1370
+Conservar. Informa reproducción y convención de truncamiento antes de leer dígitos; no equiparar último dígito con redondeo convencional (tests3).
+
+P206 | Agreement with Published Expert Judgments | líneas 1372–1377
+Conservar figura/pie. Describe reproducción y diferencia sesenta/cincuenta y ocho junto a título original; no alterar figura para ocultar discrepancia de rótulo (Respect meaning; Sustain).
+
+P207 | Agreement with Published Expert Judgments | líneas 1379–1379
+Conservar. Conteos de pares explican mismo coeficiente y rankings distintos; una igualdad numérica no se transforma en identidad de orden (Respect meaning; tests3).
+
+P208 | Agreement with Published Expert Judgments | líneas 1381–1381
+Conservar. Evalúa hipótesis con empate y cambios de parámetros; supported against some limita conclusión antes de generalizar (tests3).
+
+P209 | Agreement with Published Expert Judgments | líneas 1383–1383
+Conservar. Distingue identidad matemática, diferencias numéricas, empates y cálculo distinto; la coordinación de dos conteos mantiene el hilo (Sustain; Respect meaning).
+
+P210 | Agreement with Published Expert Judgments | líneas 1385–1385
+Conservar. Perfiles concretos vuelven al concepto inicial con evidencia y discordancias; no se limita a reanunciar que existe concordancia (Sustain).
+
+P211 | Agreement with Published Expert Judgments | líneas 1387–1387
+Conservar. Cierra evaluación experta con límites específicos de muestra y unidad de datos; relevantes antes de sensibilidad y no sustituidos por cautela genérica (tests3; Respect meaning).
+
+P212 | Parameter Sensitivity and Stability | líneas 1391–1391
+Conservar. Las tablas siguientes dan soporte a no unicidad y las resoluciones limitan interpretación de región óptima; condiciones oportunas (Sustain; tests3).
+
+P213 | Parameter Sensitivity and Stability | líneas 1393–1406
+Conservar tabla de resultados de búsqueda. Máximo se delimita al grid; datos y formato paralelos facilitan contraste de etapas (Respect meaning; Sustain).
+
+P214 | Parameter Sensitivity and Stability | líneas 1408–1423
+Conservar figura/pie. Distingue escalas de color y recomendación tardía frente a referencia del papel; límite de dominio exploratorio permanece junto al gráfico (tests3; Respect meaning).
+
+P215 | Parameter Sensitivity and Stability | líneas 1425–1425
+Conservar. Resultados de sensibilidad requieren número y unidad de remuestreo y desviación; advierte que no son intervalos poblacionales (tests3).
+
+P216 | Parameter Sensitivity and Stability | líneas 1427–1427
+Conservar. Divide empates de win share y probabilidad de victoria única; aporta interpretación distinta de medias, no recapitulación (Sustain; Respect meaning).
+
+P217 | Parameter Sensitivity and Stability | líneas 1429–1429
+Conservar. Criterio secundario explica recomendación y por qué no cambia referencia; preserva valores y procedencia de tablas (Respect meaning; Sustain).
+
+P218 | Parameter Sensitivity and Stability | líneas 1431–1431
+Abreviar aprobado: conservar dos primeras oraciones y conclusión sobre evidencia suplementaria del benchmark, retirando dos oraciones que reexplican bootstrap/leave-one-out y test set de P186. Sustain: resultado desarrolla protocolo, no lo reimprime; conservar límite de calibración.
+
+P219 | Computational Performance | líneas 1435–1435
+Conservar. Cambia pregunta de rankings a coste y declara condición suplementaria, lo que justifica sección de desempeño (Sustain; headings).
+
+P220 | Computational Performance | líneas 1437–1437
+Conservar. Configuración de dos runs y exclusión de generación de datos preceden a comparación temporal; no recortar condiciones que hacen interpretable tabla (Respect meaning; tests3).
+
+P221 | Computational Performance | líneas 1439–1452
+Conservar tabla. Cifras de tiempos y nota individual-run evitan presentarlas como promedios de réplicas; estructura tabular adecuada (Sustain; Respect meaning).
+
+P222 | Computational Performance | líneas 1454–1454
+Conservar. Cálculo de minutos/razón se interpreta con límite de pipeline y sin promesa de ventaja en escala fija; citas de archivos sostienen procedencia (tests3).
+
+P223 | Computational Performance | líneas 1456–1456
+Conservar. Explica carga de soporte, muestra, semilla y rutas numéricas; condiciones experimentales antes de resultados (Sustain; Respect meaning).
+
+P224 | Computational Performance | líneas 1458–1475
+Conservar tabla íntegra. Parámetros, unidades y tamaño de muestra figuran en leyenda para lectura autónoma; no cambia resultados (Respect meaning; Sustain).
+
+P225 | Computational Performance | líneas 1477–1492
+Conservar figura/pie. Representaciones lineal/logarítmica son comparación útil y la pendiente finita no se presenta como exponente asintótico (tests3; Respect meaning).
+
+P226 | Computational Performance | líneas 1494–1494
+Conservar. Describe cruces observados y vincula crecimiento a operaciones implementadas, con referencia a esta carga y precisión fija (Respect meaning; tests3).
+
+P227 | Computational Performance | líneas 1496–1496
+Conservar. Run separado, tamaños muestreados y dependencias limitan el crossover antes de extrapolar; no convertir intervalos observados en umbral universal (tests3).
+
+P228 | Computational Performance | líneas 1498–1498
+Conservar. Número de comprobaciones, máximos de discrepancia y tolerancia son objetos distintos; se preserva la limitación de evidencia finita (Respect meaning; tests3).
+
+P229 | Regional Illustrations | líneas 1502–1502
+Identificar aplicación en primera mención: two uses of the Polarizometer application sustituye two applications of the Polarizometer. Mantener contribución de figuras y análisis colectivo íntegros. Sustain: contexto y término antes de uso; Respect meaning: sin ampliar autoría.
+
+P230 | Regional Illustrations | líneas 1504–1504
+Conservar. Población observada, preguntas y diferencias de rankings desarrollan la ilustración; alcance condicional al ejercicio al final limita exactamente esas comparaciones (Respect meaning; tests3).
+
+P231 | Regional Illustrations | líneas 1506–1506
+Conservar. Caso Concejo distingue ordenamientos y reproducción con referencia numérica, sin identificar revisión histórica o calibración. Cada cautela limita evidencia distinta (tests3; Sustain).
+
+P232 | Regional Illustrations | líneas 1508–1508
+Conservar. Puente preciso desde ilustraciones a evaluación de objetivos, sin listar de nuevo resultados ni inventar actividades obligatorias (Sustain; Respect meaning).
+
+P233 | Discussion and Limitations | líneas 1513–1513
+Conservar. Dos puntos justifican relación anuncio/contenido y el párrafo distingue apoyo formal y empírico para abrir discusión (Sustain; puntuación).
+
+P234 | Interpreting the Theoretical and Empirical Evidence | líneas 1517–1517
+Conservar. Discusión explica qué aporta construcción más allá del ajuste, relacionando varias pruebas sin reimprimirlas (Sustain, desarrollo interpretativo).
+
+P235 | Interpreting the Theoretical and Empirical Evidence | líneas 1519–1519
+Conservar. Evalúa hipótesis frente a dominios probados y caracterización KNS con referencia exacta; repetir condiciones es necesario en juicio global (Respect meaning; tests3).
+
+P236 | Interpreting the Theoretical and Empirical Evidence | líneas 1521–1521
+Conservar. Relación funcional explica discrepancias y qué las hace informativas; no es catálogo nuevo porque evalúa el significado de comparaciones (Sustain).
+
+P237 | Interpreting the Theoretical and Empirical Evidence | líneas 1523–1523
+Conservar. Diferencia operaciones y limita Tipping Point a2,2 frente a referencia empírica; evita trasladar un resultado a parámetros no probados (tests3; Respect meaning).
+
+P238 | Interpreting the Theoretical and Empirical Evidence | líneas 1525–1525
+Conservar. Discute apoyo parcial a hipótesis y mismo coeficiente sin mismo ranking; no universaliza un éxito en quince perfiles (tests3).
+
+P239 | Interpreting the Theoretical and Empirical Evidence | líneas 1527–1527
+Conservar. Explica información adicional de óptimo y límites sociales; intervalos/categorías sirven al sentido del modelo, no son muletilla de recapitulación (Sustain; Respect meaning).
+
+P240 | Assessment of the Approved Objectives | líneas 1531–1531
+Conservar. Separa respuesta científica y cumplimiento documental, con límite de que falta de evidencia no prueba ausencia de trabajo (tests3; Respect meaning).
+
+P241 | Assessment of the Approved Objectives | líneas 1533–1549
+Conservar tabla. Cinco objetivos y evidencia comparable justifican formato; conserva límites de regeneración/software y atribución restringida a figuras regionales (Sustain; Respect meaning).
+
+P242 | Assessment of the Approved Objectives | líneas 1551–1551
+Conservar. Relaciona tareas esenciales y extensión con evidencia formal y aclara que corregir hipótesis es resultado, no incumplimiento automático (Respect meaning; Sustain).
+
+P243 | Assessment of the Approved Objectives | líneas 1553–1553
+Conservar. Tests realizados, A8 y procedencia se diferencian; el juicio se limita a materiales inspeccionados, sin exigir pruebas nuevas o borrar progreso (tests3; Respect meaning).
+
+P244 | Assessment of the Approved Objectives | líneas 1555–1555
+Conservar. Vincula reparto regional del plan con trabajo colectivo ya documentado; conserva lenguaje de ejercicios interpretativos (Respect meaning).
+
+P245 | Assessment of the Approved Objectives | líneas 1557–1557
+Conservar. Distingue deseables, límites de prueba finita y A14 colectivo; verbos de ejecución/guía no atribuyen exclusividad o meras gráficas fuera de12 (Respect meaning; tests3).
+
+P246 | Scope and Validity of the Findings | líneas 1561–1561
+Conservar. Cambia evaluación de entregables por validez y enumera dominios que requieren análisis propio; la escala numérica se recuerda con propósito interpretativo (Sustain).
+
+P247 | Scope and Validity of the Findings | líneas 1563–1563
+Conservar. Consecuencia del escalado limita comparación de poblaciones y normalización; exponente como modelo no equivale a medida psicológica real (tests3; Respect meaning).
+
+P248 | Scope and Validity of the Findings | líneas 1565–1565
+Conservar. Discusión de identificabilidad de parámetros requiere no unicidad y dependencia del benchmark; no es repetición del protocolo eliminado en7.3 (Sustain; tests3).
+
+P249 | Scope and Validity of the Findings | líneas 1567–1567
+Conservar. Contrasta función del corpus con referencia humana y especificación de multiplicidades; desarrolla validez del análisis finito (Sustain; Respect meaning).
+
+P250 | Scope and Validity of the Findings | líneas 1569–1569
+Conservar. Relaciona cuantización, exactitud y evidencias complementarias, sin convertir checks en garantía total. Términos solver, ties y ranking permanecen consistentes (test1; tests3).
+
+P251 | Scope and Validity of the Findings | líneas 1571–1571
+Conservar. Compara dos regímenes temporales con alcance de carga y separa operación de tiempo observado; no universaliza laptop-feasibility (tests3; Respect meaning).
+
+P252 | Interpretation and Responsible Use | líneas 1575–1575
+Conservar. La sección de uso cambia a interpretación cívica y enumera contexto necesario, distinguiendo asociación, causa e intervención. Es desarrollo sustantivo (Sustain).
+
+P253 | Interpretation and Responsible Use | líneas 1577–1577
+Conservar. Procedencia agregada no se equipara a anonimato automático; restricciones y separación de registros ya declaradas se mantienen sin añadir obligaciones experimentales (Respect meaning; tests3).
+
+P254 | Interpretation and Responsible Use | líneas 1579–1579
+Retirar solo la oración The present assessment supports MEC as a mathematically grounded measure with strong agreement on the evaluated expert profiles. Anticipa conclusión P255/P261. Mantener software, evidencia cívica, y*, mediación y último límite contextual; Sustain evita recapitulación sin borrar premisas.
+
+P255 | Conclusions | líneas 1586–1586
+Conservar. Apertura conclusiva da respuesta global cualificada, distinta de discusión de uso; condiciones y alcance gobiernan lo que sigue (Sustain; tests3).
+
+P256 | Conclusions | líneas 1588–1588
+Conservar. Síntesis formal con escala de masas y parámetros es necesaria para conclusión autónoma; no reimprime demostraciones ni define sinónimos (Sustain; Respect meaning).
+
+P257 | Conclusions | líneas 1590–1590
+Conservar. Condiciones ER y central-split se sintetizan y distinguen de caracterización KNS; repetición de desigualdades impide cerrar con afirmación demasiado fuerte (tests3).
+
+P258 | Conclusions | líneas 1592–1592
+Conservar. Relaciona resultados de grupos y transferencias con la distinción conceptual; agrega interpretación de lo logrado, sin nuevo compromiso (Sustain).
+
+P259 | Conclusions | líneas 1594–1594
+Conservar. Cifra, empate y apoyo parcial a hipótesis quedan junto a limitación de validación; ninguna cautela tardía revierte una promesa universal inicial (tests3).
+
+P260 | Conclusions | líneas 1596–1596
+Conservar. Conecta evidencia software con objetivos y remite precisamente a evaluación de entregables, sin relistar pendientes. Atribución regional limitada preservada (Respect meaning; Sustain).
+
+P261 | Conclusions | líneas 1598–1598
+Conservar. Cierre destaca contribución con dominio y perfiles evaluados explícitos; no promete corrección universal ni aprobación institucional (Respect meaning; tests3).
+
+P262 | Future Work | líneas 1602–1602
+Conservar. Futuro matemático se formula como dirección abierta del papel, con requisitos hipotéticos del dominio; no impone experimentos al autor (Respect meaning; Sustain).
+
+P263 | Future Work | líneas 1604–1604
+Conservar. No unicidad y ausencia de razón teórica motivan selección y extensión futura de transferencias; mantiene modalidad could (Respect meaning; tests3).
+
+P264 | Future Work | líneas 1606–1606
+Conservar. Comparaciones independientes y sensibilidad aparecen como posibilidades, no tareas obligatorias nuevas; se ligan al límite real del benchmark (Sustain; Respect meaning).
+
+P265 | Future Work | líneas 1608–1608
+Conservar. Modelo dinámico explícito es premisa hipotética de evolución y se distingue de óptimo estático; la dirección no reinterpreta resultados presentes (tests3).
+
+P266 | Future Work | líneas 1610–1610
+Conservar. Problema interpretativo de y* cierra futuras aplicaciones con sentido social condicionado, sin vender solución técnica de mediación (Respect meaning; Sustain). Ajuste de composición tras QA: anteponer \enlargethispage{\baselineskip} admite una línea más en la página final del capítulo9 y evita una página propia de dos palabras; el párrafo conserva literalmente toda su prosa.
+
+P267 | Uniqueness of the Tipping Point | líneas 1618–1618
+Conservar. Alcance del apéndice y fuente se delimitan antes de la prueba y se excluye general-support; breve contexto necesario a distancia (Sustain; tests3).
+
+P268 | Uniqueness of the Tipping Point | líneas 1620–1633
+Conservar apertura de prueba. Cambio de variables, factor positivo y extremos se introducen secuencialmente; no abreviar notación o premisas (Respect meaning; Sustain).
+
+P269 | Uniqueness of the Tipping Point | líneas 1635–1661
+Conservar párrafos de discriminante. Define P y coeficientes antes del criterio de positividad; relación entre desigualdades y signo se mantiene. La longitud se justifica por demostración (Sustain; Respect meaning).
+
+P270 | Uniqueness of the Tipping Point | líneas 1663–1664
+Conservar cierre de prueba. Separa unicidad, simplicidad y localización usando signos ya dados; no es recapitulación opcional, completa inferencia (Sustain).
+
+P271 | Funding Estimate from the Approved Proposal | líneas 1670–1670
+Conservar. Antes de presupuesto deja explícito que es estimación planificada, no gasto auditado (tests3; Respect meaning).
+
+P272 | Funding Estimate from the Approved Proposal | líneas 1672–1672
+Conservar. Financiación parcial, dedicación y moneda son contexto indispensable de tabla y no deben confundirse con aportes realizados (Respect meaning; Sustain).
+
+P273 | Funding Estimate from the Approved Proposal | líneas 1674–1693
+Conservar tabla presupuestaria íntegra. Roles, dedicaciones y costos se preservan tal como plan, con unidades ya indicadas; estructura paralela adecuada (Sustain; Respect meaning).
+
+P274 | Bibliografía | líneas 1695–1699
+Conservar ficha del manuscrito complementario. Carácter no publicado y versión recibida son procedencia, no contenido para divulgar; no se amplía cita o distribución (Respect meaning).
+
+P275 | Bibliografía | líneas 1701–1701
+Conservar marcador de referencia publicada. Forma bibliográfica requerida, sin cambio de cita/clave; guía editorial no exige reformatear metadatos (Respect task/meaning).
+
+P276 | Bibliografía | líneas 1703–1714
+Conservar ficha arXiv. Nombres, título, versión, DOI y enlace son metadatos; la guía exige respetar citas y atribución, no uniformar por cuota (Respect task/meaning).
+
+P277 | Bibliografía | líneas 1716–1716
+Conservar marcador Redacción Cultura. Autor corporativo y clave bibliográfica intactos (Respect meaning).
+
+P278 | Bibliografía | líneas 1718–1723
+Conservar ficha cultural. Mantiene español del título y fecha de acceso; no traducir o reformular citas para homogeneizar prosa inglesa (Respect task/meaning).
+
+P279 | Bibliografía | líneas 1725–1725
+Conservar marcador Van der Eijk. Nombre y año remiten a la fuente usada en2.2 (Respect meaning).
+
+P280 | Bibliografía | líneas 1727–1732
+Conservar ficha VdE. Título y datos de publicación no son prosa argumentativa que deba abreviarse (Respect task/meaning).
+
+P281 | Bibliografía | líneas 1734–1734
+Conservar marcador ER. Autoría y clave se mantienen con todas las citas del cuerpo (Respect meaning).
+
+P282 | Bibliografía | líneas 1736–1741
+Conservar ficha Esteban–Ray. Revista, páginas y año se preservan; no inventar complemento bibliográfico bajo edición de continuidad (Respect meaning).
+
+P283 | Bibliografía | líneas 1743–1743
+Conservar marcador Festinger. Referencia de motivación psicológica intacta (Respect meaning).
+
+P284 | Bibliografía | líneas 1745–1748
+Conservar ficha libro Festinger. Título original y editorial no se simplifican ni traducen (Respect task/meaning).
+
+P285 | Bibliografía | líneas 1750–1750
+Conservar marcador Said-Hung. Año y clave sin cambio (Respect meaning).
+
+P286 | Bibliografía | líneas 1752–1760
+Conservar ficha colombiana. Acentos, título español y DOI preservan identificación precisa; no cambiar lengua (Respect task/meaning).
+
+P287 | Bibliografía | líneas 1762–1762
+Conservar marcador Gehér. Diacrítico y clave se mantienen (Respect meaning).
+
+P288 | Bibliografía | líneas 1764–1771
+Conservar ficha Wasserstein. Título técnico y datos de revista se conservan, sin sustituir términos por variantes (test1; Respect meaning).
+
+P289 | Bibliografía | líneas 1773–1773
+Conservar marcador Kawada. La nueva introducción de sigla KNS no altera la cita o autoría bibliográfica (Respect meaning).
+
+P290 | Bibliografía | líneas 1775–1782
+Conservar ficha KNS. Tres nombres y título identifican caracterización discutida; no ampliar alcance desde el título (Respect meaning).
+
+P291 | Bibliografía | líneas 1784–1784
+Conservar marcador Koudenburg. Clave y año preservados para comparación experta (Respect meaning).
+
+P292 | Bibliografía | líneas 1786–1794
+Conservar ficha del índice experto. Corte de línea entre expert/judgments es solo fuente TeX, no fragmentación de prosa; no editar por apariencia del código (Respect task).
+
+P293 | Bibliografía | líneas 1796–1796
+Conservar marcador Lupu. Autoría y fecha intactas (Respect meaning).
+
+P294 | Bibliografía | líneas 1798–1805
+Conservar ficha congruencia. Los dos puntos forman parte del título citado y deben respetarse, sin prohibición mecánica de puntuación (Respect meaning; Sustain punctuation).
+
+P295 | Bibliografía | líneas 1807–1807
+Conservar marcador Rockafellar. Referencia de convexidad intacta (Respect meaning).
+
+P296 | Bibliografía | líneas 1809–1812
+Conservar ficha libro Convex Analysis. Título y datos editoriales identifican fuente; no simplificar terminología (test1; Respect meaning).
+
+P297 | Bibliografía | líneas 1814–1814
+Conservar marcador EFE. Autor corporativo se mantiene aunque la clave heredada no refleje año; no renombrar citas por estilo (Respect meaning).
+
+P298 | Bibliografía | líneas 1816–1821
+Conservar ficha SWI. Título español, fecha, enlace y acceso son metadatos documentados; no reabrir consulta factual ajena al cambio autorizado (Respect task/meaning).
+
+P299 | Bibliografía | líneas 1823–1823
+Conservar marcador Tajfel/Turner. Clave y año estables (Respect meaning).
+
+P300 | Bibliografía | líneas 1825–1832
+Conservar ficha capítulo Social Identity. Editor, volumen y páginas tienen funciones distintas para localizar fuente; no borrar por concisión (Respect meaning; test1).
+
+P301 | Bibliografía | líneas 1834–1834
+Conservar marcador Tastle/Wierman. Mantener nombres, fecha y clave (Respect meaning).
+
+P302 | Bibliografía | líneas 1836–1842
+Conservar ficha TWD. Dissention corresponde al título y al término técnico usado; no sustituirlo por sinónimo (Sustain; Respect meaning).
+
+P303 | Bibliografía | líneas 1844–1844
+Conservar marcador Universidad Javeriana. Autor corporativo no se reduce a nombre personal (Respect meaning).
+
+P304 | Bibliografía | líneas 1846–1850
+Conservar ficha institucional. Título español, fecha y URL se mantienen; no traducir cita ni atribuir firma no indicada (Respect task/meaning).
+
+P305 | Bibliografía | líneas 1852–1852
+Conservar marcador Vallender. Año y clave intactos (Respect meaning).
+
+P306 | Bibliografía | líneas 1854–1859
+Conservar ficha transporte. Título técnico, revista, volumen y páginas cierran bibliografía; formato académico útil y no argumento que precise transición (Respect task/meaning).
+
+RESULTADO Y VERIFICACIÓN
+Diez unidades de prosa modificadas para los siete hallazgos aprobados, más un ajuste local de composición en P266 detectado durante la revisión del PDF. El cambio conceptual material es la explicación causal de P077; los restantes son introducción de términos o eliminación de redundancias. Se mantiene el inglés académico del manuscrito. Ningún cambio por cuota.
+La propuesta de línea 518 antes pendiente quedó aplicada; la nota histórica correspondiente se actualiza sin borrar la propuesta original.
+COMPROBACIONES COMPLETADAS
+Tectonic --only-cached --keep-logs --keep-intermediates: salida 0. PDF final de 64 páginas y 1,886,119 bytes. Se renderizaron todas las páginas. Se inspeccionaron las seis hojas de contacto de la primera salida, que revelaron una página casi vacía al final del capítulo 9; tras el ajuste se renderizaron las 64 páginas finales. Las páginas 1–60, salvo la 4 del índice, resultaron idénticas píxel a píxel a esa salida ya inspeccionada. Se revisaron la nueva página 4, las páginas finales 61–64 y, a tamaño ampliado, los pasajes corregidos en las páginas físicas 9,10,13,16,21,24,44,50,54,59 y61. No se observaron nuevos defectos de composición tras el ajuste.
+Avisos preexistentes, sin nuevos: overfull de 4,25945 pt en encabezado de capítulo 1 (línea 84), cuatro underfull de tablas (líneas 1244,1249,1545,1546) y ancla duplicada @page.1. Sin errores ni referencias indefinidas.
+La comparación exacta con cfaac59 se reconstruye mediante diez sustituciones de prosa registradas y un prefijo de composición. Las 1.020 expresiones matemáticas son idénticas en orden. Los siete entornos de definición, trece teoremas, cuatro lemas, dos corolarios, tres proposiciones, tres axiomas, veintitrés pruebas, tres ejemplos, nueve figuras, ocho tablas y la bibliografía son idénticos byte a byte. Encabezados, etiquetas, enlaces y rutas no cambian. Solo se retiran la cita repetida de aranda2026mec dentro del párrafo eliminado P044 y cuatro remisiones genéricas aprobadas; las demás citas y referencias se conservan.
+El capítulo 1 se leyó y permanece intacto respecto a cfaac59; el material anterior al capítulo 1 también permanece intacto. El desarrollo formal de Condition H en 4.5 es idéntico. Datos, código, resultados, atribuciones y compromisos quedan preservados por el diff delimitado; no se ejecutaron barridos ni se añadieron experimentos.
+Los 16 archivos preexistentes sin seguimiento conservan sus hashes y no se incluyen en el commit. Los PDF previos de 179fd86 y cfaac59 se conservan. Main permanece en 49d4e2d36d5fd32c0552a691fdec1b4545d66e11 y el manuscrito del checkout original no tiene diferencias. No hubo operaciones en Library u otros servicios, push ni merge.
+Fuente SHA256: 1f5f9badfa76a6c88ba47ee842522199d47d58edf0172a570ef337ff4f286add
+PDF SHA256: fce6efdca60e72b1eabbcae8fe05bdece12f1706aafccb9dbd8256f344ae5fdf
+PDF: /Users/ulvenforst/Documents/Codex/2026-10-19/task-2/revision-global-local/build/sn-article.pdf
+Comprobaciones reproducibles, inventario, decisiones y renders: /Users/ulvenforst/Documents/Codex/2026-10-19/task-2/revision-global-local/ (fuera del repositorio).
+Pendientes de esta fase aprobada: ninguno. Se mantienen los límites sustantivos y documentales ya declarados en la tesis. Esta revisión global no garantiza perfección matemática ni aprobación institucional.

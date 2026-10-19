@@ -151,7 +151,7 @@ Distinguishing polarization from dispersion and extremism clarifies what an inde
 
 Likert-type data provide ordered categories, such as levels of agreement with a proposition. A distance-based measure also requires numerical coordinates for those categories. The principal experiments use five equally spaced positions. The distances depend on that coding, since category order alone does not determine numerical separation. MEC's value alone does not establish affective hostility or network segregation.
 
-Using the notation of Section~\ref{sec:intro}, consider an opinion distribution $\pi$ supported on the $m$ fixed categories of an ordered scale. Write their numerical positions as $x_1<\cdots<x_m$ in $[0,1]$ and their masses as $\pi_i=\pi(x_i)$. Empty categories have $\pi_i=0$. The total mass, category probabilities, and mean are
+Consider an opinion distribution $\pi$ supported on the $m$ fixed categories of an ordered scale. Write their numerical positions as $x_1<\cdots<x_m$ in $[0,1]$ and their masses as $\pi_i=\pi(x_i)$. Empty categories have $\pi_i=0$. The total mass, category probabilities, and mean are
 \begin{equation}\label{eq:lit-probabilities}
 M=\Sigma\pi=\sum_{i=1}^{m}\pi_i>0,
 \qquad
@@ -174,7 +174,7 @@ where $K>0$ is a normalization constant and $\alpha_{\mathrm{ER}}\in(0,\alpha^\a
 
 Esteban and Ray's three axioms specify changes under which polarization should increase. The first concerns merging two groups of equal mass at their midpoint, when they are sufficiently close to one another and sufficiently small relative to a third group. The second concerns moving an intermediate group away from the larger endpoint group and toward the smaller one, to which it is already closer. The third concerns transferring equal portions of central mass to two equally sized, symmetrically placed outer groups. Each axiom has conditions on masses, positions, and the permitted transformation. These conditions do not imply that every merger or every movement toward an extreme increases polarization.
 
-Satisfying these axioms does not by itself characterize the form of a measure. Kawada, Nakamura, and Sunada \citep{kawada2018characterization} identified a counterexample to the original Esteban--Ray characterization and restored the result by strengthening the first axiom. Their characterization applies to measures expressed as pairwise sums of effective antagonism and requires rankings to be preserved when all masses are multiplied by a common positive factor. MEC satisfies Condition~H and, under the parameter conditions summarized in Section~\ref{sec:intro}, the three original axioms \citep{aranda2026mec}. These results alone do not establish that MEC belongs to the class covered by the corrected characterization.
+Satisfying these axioms does not by itself characterize the form of a measure. Kawada, Nakamura, and Sunada (KNS) \citep{kawada2018characterization} identified a counterexample to the original Esteban--Ray characterization and restored the result by strengthening the first axiom. Their characterization applies to measures expressed as pairwise sums of effective antagonism and requires rankings to be preserved when all masses are multiplied by a common positive factor, a property called Condition~H. MEC satisfies this condition and, under the parameter conditions summarized in Section~\ref{sec:intro}, the three original axioms \citep{aranda2026mec}. These results alone do not establish that MEC belongs to the class covered by the corrected characterization.
 
 The paper also draws on Social Identity Theory, which relates part of an individual's self-conception to membership in social groups \citep{TajfelTurner1979}. Opinions can express such affiliations, so substantial opinion changes may also concern group identity. The theory of cognitive dissonance provides a further reason to consider the cost of revising established beliefs \citep{Festinger1957}. These ideas motivate the possibility that large ideological shifts entail costs that grow more than proportionally with distance, as represented in MEC when $\beta>1$. This interpretation does not make MEC's weights and costs direct measurements of psychological identification or dissonance.
 
@@ -262,7 +262,7 @@ KI is therefore a candidate measure, while the observed expert scores supply the
 
 The benchmark also informed MEC's parameter selection, so agreement on these profiles does not establish performance on unseen distributions. Sections~\ref{sec:methods} and~\ref{sec:results} describe the comparison protocol and findings.
 
-The measures reviewed here differ in what they quantify. ER aggregates antagonism between groups, VdE and TWD assess agreement or dissention, and KI approximates expert ratings, while MEC evaluates the minimum effort required to reach consensus \citep{aranda2026mec}. Its linear case shares the transport-to-consensus construction described above, while the exponents permit separate sensitivity to group mass and displacement. The optimal consensus point provides additional structure for studying group movements.
+
 
 The thesis assesses this construction through formal and empirical criteria. The original ER axioms test specified changes in group structure. The paper's central-split property adds a criterion not implied by those axioms, as shown in Section~\ref{subsec:mec-central-split}. Concordance with other measures describes similarities between rankings, while comparison with expert scores assesses agreement with human judgments on the benchmark. These distinct questions guide the objectives in the next section.
 
@@ -357,7 +357,7 @@ The preceding sections introduced MEC and established the criteria by which it w
 
 \subsection{Opinion Distributions and Consensus}\label{subsec:mec-distributions}
 
-Let $\mathcal{D}$ denote the opinion distributions introduced in Section~\ref{sec:intro}, and $\mathcal{D}_M$ those with total mass $M>0$. Using the mass and support notation of Sections~\ref{sec:intro} and~\ref{sec:lit}, an ordered vector representation is
+Let $\mathcal{D}$ denote the opinion distributions introduced in Section~\ref{sec:intro}, and $\mathcal{D}_M$ those with total mass $M>0$. An ordered vector representation is
 \[
 \pi=((\pi_1,\ldots,\pi_n),(x_1,\ldots,x_n)),
 \qquad 0\leq x_1<\cdots<x_n\leq1.
@@ -515,7 +515,7 @@ The convex minimum condition $G'_-(y)\leq0\leq G'_+(y)$ is equivalent to the two
 The second term is minimized uniquely at $\mu_\alpha$. Multiplication by $\Sigma(\pi^\alpha)$ yields both values.
 \end{proof}
 
-When $\alpha=1$, these are the median and mean of the original normalized distribution, whereas for general $\alpha$, they belong to its normalized power distribution. This distinction matters when computing the consensus point. It also explains why mean absolute deviation about a median, rather than median absolute deviation, appears in the linear case.
+When $\alpha=1$, these are the median and mean of the original normalized distribution, whereas for general $\alpha$, they belong to its normalized power distribution. This distinction matters when computing the consensus point. The minimization of absolute-distance effort explains why mean absolute deviation about a median, rather than median absolute deviation, appears in the linear case.
 
 \begin{example}[The influence of group weights]\label{ex:mec-weighted-consensus}
 Consider the distributions from the paper
@@ -660,7 +660,7 @@ These properties complete the construction needed for the next parts of the stud
 
 \section{Theoretical Results and Axiomatic Analysis}\label{sec:mec-theory}
 
-The structural results of Section~\ref{sec:mec-foundations} make it possible to study how MEC changes when groups move, merge, or split. This section develops the formal analysis promised in the proposal. It first establishes maximality at the balanced extreme distribution, then examines the three Esteban--Ray axioms and central-split monotonicity. The Minority Principle and the Tipping Point method complete the analysis by clarifying how the effort is shared and why a partial transfer toward an extreme may reduce polarization. The results and proof strategies follow the completed paper \citep{aranda2026mec}.
+This section first establishes maximality at the balanced extreme distribution, then examines the three Esteban--Ray axioms and central-split monotonicity. The Minority Principle and the Tipping Point method complete the analysis by clarifying how the effort is shared and why a partial transfer toward an extreme may reduce polarization. The results and proof strategies follow the completed paper \citep{aranda2026mec}.
 
 Throughout, $\alpha,\beta\geq1$, distributions belong to $\mathcal{D}$, and all opinion positions lie in $[0,1]$. When these parameters are fixed, we write $\mathrm{MEC}(\pi)$ and $\mathrm{EC}^{\pi}(u)$ for the corresponding minimum and effort. The notation for powers, optimal consensus, and extremal distributions remains that of Section~\ref{sec:mec-foundations}.
 
@@ -1299,7 +1299,7 @@ The repository also contains timing experiments for the finite corpus and for in
 
 Enumeration and fixed-profile scoring are deterministic given the implementation and configuration. Seeds matter for the random support benchmarks and resampling analyses. Dependency versions also matter because the public optimizer inherits library defaults. A reproducible execution therefore records the repository revision, Python and scientific-library versions, platform, and experiment settings. The available timing metadata records several of these items; it does not establish that every historical output contains a complete revision record.
 
-The software and data conventions described here supply the basis for presenting the experimental evidence. The next part of the thesis reports the comparisons and their interpretation, while the discussion assesses their relation to the research question and the approved objectives. This retains the proposal's concern with auditable computation without treating a planned deliverable or an available script as a completed result.
+
 
 \section{Experimental Results}\label{sec:results}
 
@@ -1428,7 +1428,7 @@ Neither procedure separates the shortlisted candidates by these criteria. The re
 
 The pipeline recommends $(\alpha,\beta)=(2.024,1.178)$ after comparing full-sample Pearson correlations within the shortlist. Its Kendall concordance remains $0.885714\ldots$, while its recorded Spearman correlation is approximately $0.9643$ and Pearson correlation $0.9387$. This secondary choice does not improve the paper's primary rank criterion and does not replace $(2,1.15)$ as the reference parametrization used in this thesis.\footnote{Saved search and stability tables are in \path{benchmarks/expert_validation/mec_parameter_optimization/}.}
 
-The analysis supports the paper's conclusion that several evaluated settings achieve the same best expert concordance. It also gives a limited sensitivity check around that result. Bootstrap resamples the existing profiles, and leave-one-out retains the already computed candidate scores without refitting the parameters. Neither supplies an independent test set. The searches therefore remain supplementary evidence about the benchmark, rather than a general calibration of the MEC family.
+The analysis supports the paper's conclusion that several evaluated settings achieve the same best expert concordance. It also gives a limited sensitivity check around that result. The searches therefore remain supplementary evidence about the benchmark, rather than a general calibration of the MEC family.
 
 \subsection{Computational Performance}\label{subsec:results-performance}
 
@@ -1499,7 +1499,7 @@ The original eleven-size experiment compares the two MEC values on ten profiles 
 
 \subsection{Regional Illustrations}\label{subsec:results-regional}
 
-The companion manuscript reports two applications of the Polarizometer within PROMUEVA \citep[Section~12]{arandaMECcompanion}. I prepared the figures for these applications; the substantive analysis belongs to the team's joint work. These cases illustrate how the measures order topics in the observed groups, but they do not provide a new expert benchmark or establish population-level polarization.
+The companion manuscript reports two uses of the Polarizometer application within PROMUEVA \citep[Section~12]{arandaMECcompanion}. I prepared the figures for these applications; the substantive analysis belongs to the team's joint work. These cases illustrate how the measures order topics in the observed groups, but they do not provide a new expert benchmark or establish population-level polarization.
 
 In August 2024, participants aged seventeen to twenty-five responded to eleven statements on a five-category agreement scale. MEC and ER both placed the statement about tougher measures against drug trafficking and insecurity in Cali lowest in polarization. They also agreed on the two highest-scoring statements, concerning non-traditional gender and family models and transgender participation in sport. They differed elsewhere: the statement about dialogue with armed groups ranked second from the least polarized under MEC and fifth under ER. This is a comparison of orderings within the demonstration, conditional on the statements and responses recorded there.
 
@@ -1576,7 +1576,7 @@ The proposal's concern with diagnosis, monitoring, and evaluation motivates meas
 
 The main evaluation uses synthetic profiles and published aggregate expert scores. No new expert judgments were collected. The regional illustrations summarize previously documented aggregate comparisons from the team's applications. The analysis does not use respondent-level records to profile individuals. This retains the proposal's limited data footprint without treating every aggregate dataset as automatically anonymous. Further use of the regional observations must respect their provenance, conditions of use, and disclosure risks. Restricted records remain separate from the public code and synthetic artifacts.
 
-The open implementation, license, test workflow, and documented experiments support scrutiny of the measurement procedure. They do not substitute for the contextual evidence needed to interpret a civic application. The same applies to $y^\star$. A least costly consensus under the model is a structural result; using it in mediation or policy would require a substantive account of whose positions and costs it represents. The paper identifies such applications as questions for further investigation. The present assessment supports MEC as a mathematically grounded measure with strong agreement on the evaluated expert profiles. Broader applications require their own contextual evidence.
+The open implementation, license, test workflow, and documented experiments support scrutiny of the measurement procedure. They do not substitute for the contextual evidence needed to interpret a civic application. The same applies to $y^\star$. A least costly consensus under the model is a structural result; using it in mediation or policy would require a substantive account of whose positions and costs it represents. The paper identifies such applications as questions for further investigation. Broader applications require their own contextual evidence.
 
 
 \section{Conclusions and Future Work}\label{sec:conclusion}\label{sec:contrib}
@@ -1607,7 +1607,7 @@ Comparisons on independent collections of profiles and real survey distributions
 
 The paper also identifies opinion-update models as a setting for further study. Applying MEC along a sequence of modeled distributions could clarify how its value changes during opinion evolution. Such a study would need an explicit dynamic model, since the static consensus optimum alone does not determine an eventual agreement or the time needed to reach it.
 
-Finally, the substantive interpretation of $y^\star$ in mediation and policy framing remains open. The present research treats it as a structural object determined by the effort function. Exploring an applied interpretation would require evidence about what the modeled masses, distances, and costs represent in the setting concerned. This is a question about the connection between the mathematical model and collective deliberation, in addition to the computation of the optimum.
+\enlargethispage{\baselineskip} Finally, the substantive interpretation of $y^\star$ in mediation and policy framing remains open. The present research treats it as a structural object determined by the effort function. Exploring an applied interpretation would require evidence about what the modeled masses, distances, and costs represent in the setting concerned. This is a question about the connection between the mathematical model and collective deliberation, in addition to the computation of the optimum.
 
 
 % References are included here so the integrated preview needs no .bib or .bst file.

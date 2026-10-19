@@ -1,3 +1,6 @@
+ACTUALIZACIÓN DE ESTADO — 19 OCTUBRE 2026
+Juan aprobó esta precisión conceptual. Se aplicó en la fase global posterior a cfaac59, cotejando la minimización de G y el corolario previo. La propuesta ya no está pendiente. El registro revision-global-parrafos-20261019.txt documenta el cambio y su comprobación. El texto que sigue conserva la propuesta histórica que inicialmente no se había aplicado.
+
 PROPUESTA DE CONTENIDO SEPARADA — NO APLICADA
 Ubicación: sn-article.tex, sección4.4, línea518; mismo texto en179fd86 y en el snapshot actual.
 
