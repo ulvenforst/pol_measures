@@ -1287,7 +1287,7 @@ Some coarse-grid points have $\alpha<1$ or $\beta<1$. They are exploratory numer
 
 Stability is assessed on profile--score pairs. Bootstrap resampling draws fifteen profile identifiers with replacement, and leave-one-out removes one profile at a time while retaining the scores of the candidate parameters. Neither procedure resamples individual experts, and leave-one-out in this implementation does not refit parameters on the remaining profiles. These are sensitivity checks on the existing benchmark. Parameter selection and reported agreement use the same benchmark, so they do not constitute independent validation on unseen profiles.
 
-The comparison reported here uses Kendall's $\tau_B$ on aggregate histogram ratings. The proposal also envisaged top-$k$ overlaps between histogram rankings, diagnostic vignettes, adjacent-count perturbations, and Bradley--Terry/Thurstone models. Their execution cannot be inferred from this protocol, but their absence alone does not establish failure to complete a mandatory activity. In particular, a shortlist of parameter candidates is distinct from top-$k$ overlap between profile rankings, and the saved grid does not establish preregistration.
+The additional methods envisaged in the proposal are assessed under the scope criteria of Section~\ref{sec:objectives}. A shortlist of parameter candidates is distinct from top-$k$ overlap between profile rankings, and the saved grid does not establish preregistration.
 
 \subsection{Reproducibility and Computational Resources}\label{subsec:methods-reproducibility}
 
