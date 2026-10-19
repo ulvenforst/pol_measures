@@ -1,0 +1,77 @@
+Hora UTC de cierre de evidencia previa: 2026-10-19T23:06:58.766349+00:00
+DOS PRECISIONES RESPALDADAS POR EL ARTÍCULO — 19 OCTUBRE 2026
+
+BASE Y CONDICIÓN PREVIA
+Base: a2d1597e9ba78f3ecd665dc0034308fd023dcb18.
+Rama: snotra/revision-tesis-cap2-20261019.
+Worktree: /Users/ulvenforst/Documents/Codex/2026-10-19/task-2/revision-tesis.
+Antes de editar el manuscrito se leyó íntegramente la skill local russellian-clear-writing/SKILL.md y references/editorial-basis.md, y se recorrió el texto completo de las 55 páginas del artículo público local, incluidos apéndices A–F. Se revisaron con especial detalle definiciones, parámetros, pruebas estructurales, protocolo empírico, figuras y discusión pertinentes a las dos precisiones. La extracción presenta fórmulas compactadas y rótulos gráficos omitidos: para las afirmaciones que se van a modificar se comprobaron las páginas renderizadas 4,7,8,9,10,18,24,26,27,28,34 y 36; la figura 7 se extrajo además a resolución original. No se asume que esta lectura certifique todas las afirmaciones del artículo.
+Fuente: Anteproyecto/references/2606.13997v1.pdf (55 páginas; 1.912.858 bytes; numeración impresa igual a la física).
+SHA256 de fuente: 112d5432ae6bf49bf852815e22628b945a1e09abf9fde01cb634003357278951.
+El archivo es el público de junio de 2026, no el manuscrito complementario no publicado.
+
+EVIDENCIA DOCUMENTADA ANTES DE EDITAR — PRECISIÓN 1
+Destino: tesis §7.2, primera oración del párrafo que comienza The reference MEC exceeds (línea 1381 de la base).
+Artículo p.24, §8.1, párrafo Choice of parameters for empirical analyses: fija MEC_{2,1.15} como referencia. La continuación en p.25 limita la selección al benchmark experto y declara no unicidad.
+Artículo p.26, §8.3, último párrafo: protocolo de quince histogramas, puntuaciones expertas y Kendall tau_B entre el ranking experto y el inducido por cada medida. No es la concordancia entre índices del corpus de 2.299.726 perfiles de §8.2.
+Artículo p.27, figura 7, eje Kendall's rank correlation coefficient y rótulos de las nueve barras (valores impresos):
+  MEC(2,1.15)  0.8857
+  ER(0.8)      0.8857
+  MEC(1,2)     0.8666
+  MEC(2,2)     0.8095
+  KI           0.8095
+  EMD          0.7655
+  TWD          0.7523
+  VdE          0.6698
+  ER(1.6)      0.5238
+La primera oración bajo la figura afirma el máximo compartido de MEC_{2,1.15} y ER_{0.8}, aproximadamente 0.89. La discusión en p.28, §9, párrafo Beyond the scalar value, confirma que MEC iguala la parametrización ER más fuerte en ese benchmark y supera VdE/TWD.
+La figura 7 incrustada en p.27 y la imagen utilizada por la tesis en fig:results-expert-concordance tienen las mismas dimensiones (4168x2068) y los mismos píxeles RGB: SHA256 de píxeles e318fffa5e5441c2fd6c9432b3adea1281aef5b0d5bf0b3243bdcb6f625ac0d4. El título gráfico refiere sesenta expertos; la precisión ya existente de la tesis sobre cincuenta y ocho respuestas retenidas no se modifica.
+Discrepancia interna localizada: el párrafo bajo figura 7 dice followed by MEC_{1,1} (tau_B=0.77), aunque la propia figura incluye MEC(1,2)=0.8666, MEC(2,2)=0.8095 y KI=0.8095 por encima de EMD=0.7655. No se reproduce ese orden intermedio de la prosa ni se corrige el artículo. El empate y la superioridad frente a las otras siete opciones están confirmados directamente por figura 7 y no dependen de ese resumen impreciso.
+Alcance respaldado: primero empate de la MEC de referencia con ER_{0.8}; luego superioridad sobre las restantes opciones mostradas en esa figura, con esa métrica y esos quince perfiles. No superioridad sobre ER en general, toda la familia MEC u otros conjuntos de datos. El valor no truncado 0.885714... del párrafo previo de la tesis es un resultado de la comprobación anterior y no se atribuye como cifra literal al artículo; queda intacto.
+Decisión previa: aplicar solo la reordenación de la primera oración. No hay discrepancia entre esta precisión acotada y la figura fuente; la imprecisión de su comentario intermedio se informa expresamente.
+
+EVIDENCIA DOCUMENTADA ANTES DE EDITAR — PRECISIÓN 2
+Destino: tesis §8.1, oración An optimum need not coincide (línea 1527 de la base).
+Artículo p.4, §2, definiciones 1–2 y párrafo de medianas: dominio de posiciones [0,1], masas no negativas con soporte finito no vacío; define potencias y normalización. El párrafo It will also be convenient to recall... declara que el conjunto de medianas es un subintervalo cerrado de [0,1] y que puede no ser único.
+Artículo p.8, §3.2, definición 5, ecuaciones (5)–(6): alpha,beta>=1; y recorre [0,1]; el esfuerzo usa pi(x)^alpha |x-y|^beta. Los puntos que alcanzan el mínimo son puntos óptimos. La continuidad da existencia y beta>1 da unicidad.
+Artículo p.9, §4.1, teorema 2 y párrafo siguiente: convexidad para beta>=1 y convexidad estricta/óptimo único para beta>1. §4.2, teorema 3: factor positivo de masa transformada por dispersión de la distribución de potencias normalizada.
+Artículo p.10, corolario 1: para beta=1 los consensos se alcanzan en medianas de la distribución pi^alpha normalizada; no necesariamente en medianas de los pesos originales cuando alpha cambia. La prueba de B.2.2, p.34, comienza Let rho = normalized pi^alpha y minimiza la suma rho(x)|x-y| en cualquier mediana.
+Artículo p.36, prueba de lema 2, rama beta=1: indica expresamente que los puntos de consenso óptimo son precisamente las medianas de la distribución de potencias normalizada. Combinado con p.4, el conjunto de óptimos es un intervalo cerrado que puede reducirse a un punto. No se identifica un punto individual con un intervalo.
+Artículo p.18, explicación de teorema 9, párrafo However, since y* is the unique median...: para la distribución extrema balanceada todo punto de [0,1] es mediana y por tanto óptimo en el caso beta=1. Las potencias de dos masas iguales siguen siendo iguales, por lo que ilustra un intervalo no trivial dentro del dominio establecido.
+Artículo p.7, ejemplo 2: con opiniones 0.25,0.75 y alpha=beta=2, el óptimo es 31/52, que no es una de esas posiciones (ni una de las cinco categorías equiespaciadas 0,0.25,0.5,0.75,1). Se comprueba visualmente la fracción y sus parámetros. La definición continua de p.8 respalda que el óptimo no tenga que ser una categoría disponible; no afirma que siempre quede fuera de ellas.
+Artículo pp.28–29, §9: trata y* como objeto estructural y deja interpretación aplicada para investigación futura. Se preserva el límite social ya escrito en la tesis.
+Alcance respaldado: distribución finita no vacía, masas según el modelo, alpha>=1; un punto óptimo puede no coincidir con una categoría. Para beta=1 puede haber un intervalo de posiciones óptimas. No se afirma que todos los casos beta=1 sean no únicos, que un punto sea un intervalo, ni que beta>1 permita múltiples óptimos.
+Decisión previa: aplicar solo esta distinción de objeto/punto/conjunto, conservando el resto del párrafo y toda fórmula, resultado y demostración.
+
+CRITERIO EDITORIAL Y CONTEXTO YA LEÍDO ANTES DE EDITAR
+Se releyeron en la tesis las líneas 1370–1389 (figura, empate, comparación, diferencias numéricas, perfiles y límite de benchmark), 1513–1532 (interpretación teórica/empírica, transferencias, consenso y evaluación de objetivos), y el corolario y prueba de 489–518.
+Precisión 1: el test 3 pide adelantar el límite decisivo del empate para no abrir con una superioridad que luego se revoca. Sustain the exposition conserva progresión desde el coeficiente del párrafo anterior a apoyo parcial de la hipótesis y después al caso de transporte. Respect meaning impide ampliar más allá de la figura y el benchmark.
+Precisión 2: Respect meaning exige distinguir un punto del conjunto que lo contiene; Sustain exige términos consistentes y antecedentes claros. La frase sobre múltiples posiciones continúa la caracterización formal previa, sin volver a desarrollar o cambiar su prueba. La advertencia sobre aceptación social sigue ligada al modelo.
+Las mejoras opcionales sobre Van der Eijk y la apertura del capítulo 6 quedan fuera del alcance y se conservarán byte a byte.
+
+REGISTRO POSTERIOR A LAS EDICIONES
+Dos precisiones aplicadas, tras el cierre de evidencia previa (23:06:58 UTC) y sin ampliar alcance. Hora de edición registrada: 23:07:22 UTC.
+
+ANTES / DESPUÉS
+Línea 1381 de la base
+Antes: The reference MEC exceeds the other settings and alternatives shown in Figure~\ref{fig:results-expert-concordance}, but it does not exceed $\mathrm{ER}_{0.8}$.
+Después: The reference MEC ties with $\mathrm{ER}_{0.8}$ and exceeds the other settings and alternatives shown in Figure~\ref{fig:results-expert-concordance}.
+
+Línea 1527 de la base
+Antes: An optimum need not coincide with an available survey category, and at $\beta=1$ it may be an interval of positions.
+Después: An optimal point need not coincide with an available survey category, and at $\beta=1$ there may be an interval of optimal positions.
+
+RELECTURA POSTERIOR CON LA GUÍA
+§7.2: se releyó el párrafo completo modificado junto al previo sobre el coeficiente compartido y al siguiente de transporte, y los perfiles y límites que cierran la sección. El empate aparece antes de toda superioridad; other settings and alternatives shown mantiene la comparación circunscrita a figura 7. La consecuencia sobre apoyo parcial de la hipótesis sigue siendo válida, y la comparación entre parametrizaciones mantiene todas sus cifras y condiciones. El primer resultado no se presenta como superioridad de toda la familia. Cumple Respect meaning, test3 y Sustain the exposition.
+§8.1: se releyó el párrafo completo con el anterior sobre la referencia empírica y el posterior sobre evaluación de objetivos, además del contexto de transferencias. Optimal point sigue siendo una posición; interval of optimal positions describe un conjunto de posiciones. Beta=1 limita la posible multiplicidad y el contexto formal conserva alpha>=1, distribución de potencias y dominio continuo. Ni se afirma multiplicidad para todo caso beta=1 ni se revoca unicidad para beta>1. La limitación social final se conserva. Cumple Respect meaning y Sustain, sin sustituir términos técnicos por variedad.
+
+COMPROBACIONES
+El diff reconstruye exactamente dos sustituciones en las líneas 1381 y 1527. Las 1.020 expresiones matemáticas son idénticas en orden. Definiciones, 13 teoremas, 23 pruebas, ejemplos, nueve figuras, ocho tablas y bibliografía son idénticos byte a byte. Encabezados, citas, referencias, enlaces y rutas también son idénticos. No se cambió resultado, dato, código, atribución o compromiso. Van der Eijk y la apertura del capítulo 6 permanecen intactos.
+Tectonic --only-cached --keep-logs --keep-intermediates compiló con salida 0; PDF final de 64 páginas. Se renderizaron las 64 páginas con PDFKit, alternativa local a Poppler no disponible. Las 62 páginas físicas distintas de 48 y 56 son idénticas píxel a píxel a las del snapshot a2d1597 previamente inspeccionado. Se ampliaron e inspeccionaron completas las dos páginas modificadas 48 y 56, con sus contextos. No se observaron nuevos defectos de composición.
+Persisten los mismos avisos previos: encabezado overfull de 4,25945 pt (línea 84), cuatro underfull de tablas (1244,1249,1545,1546) y ancla duplicada @page.1. Sin errores ni referencias indefinidas. No se ejecutaron experimentos ni barridos.
+El artículo público conserva su SHA256. Los 16 archivos preexistentes sin seguimiento conservan sus hashes y se excluyen del commit. Main permanece en 49d4e2d36d5fd32c0552a691fdec1b4545d66e11; manuscrito del checkout original sin diferencias. PDF anterior de a2d1597 preservado. Sin Library, otros servicios, push ni merge.
+Fuente de tesis SHA256: b4347d4474fb06568ae4c7cb57ade9aa3b7e90dae2401745d1442de1fb84be8d
+PDF SHA256: f44107e7608f1dc4629e97435d20ed48c65929e7643ac5d7296898045eb0c14e
+PDF: /Users/ulvenforst/Documents/Codex/2026-10-19/task-2/precision-dos-local/build/sn-article.pdf
+Evidencia previa congelada, imágenes fuente, diff verificable y renderizados: /Users/ulvenforst/Documents/Codex/2026-10-19/task-2/precision-dos-local/ (fuera del repositorio).
+Límites y discrepancias: ambas precisiones autorizadas tienen respaldo suficiente y se completaron. La imprecisión del comentario intermedio de figura 7 del artículo permanece registrada en la evidencia previa; no se modifica ese archivo ni se le atribuye un orden que su gráfico no muestra. Esta fase no corrige otras afirmaciones del artículo ni declara validados todos sus resultados.
