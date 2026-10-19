@@ -12,9 +12,12 @@ SHA-256: ../initial-untracked-manifest.json, fuera del worktree.
 Sin push, merge, stash, reset o barridos. No se encontraron AGENTS.md aplicables.
 Leídas completas la skill local russellian-clear-writing y editorial-basis.md.
 
-REGISTRO POR SECCIONES
-El prefijo desde el inicio y el contexto vecino se revisaron acumulativamente al
-contrastar cada sección. Capítulo 1: leído como contexto; su fuente permanece intacta.
+PRIMERA PASADA (hasta 0f6fd1f; no acredita el ciclo literal pedido)
+El manuscrito se leyó por bloques y se contrastó con el contexto acumulado. No se
+releyó literalmente el prefijo completo antes y después de cada subsección. Por tanto,
+esta primera pasada no cumple íntegramente ese procedimiento. Capítulo 1: contexto
+leído y fuente intacta. Lo que sigue registra sus contrastes y cambios, no una segunda
+verificación literal. La segunda pasada se documenta por separado al final.
 2 (2.1–2.4). Fórmulas, condiciones y conceptos verificados: ER, VdE, TWD, EMD y KI.
 Sin cambios conceptuales. Estilo/maquetación: título KI más breve, transición TWD,
 corte de línea del encabezado largo. Se preservan masa/probabilidad, escala fija,
@@ -109,8 +112,9 @@ DISCREPANCIAS Y LÍMITES REALES
 6. Capítulo 1: no se reescribe. Su referencia a regionales fuera de los experimentos
    del artículo público es compatible con la nueva síntesis del complemento privado.
 
-CIERRE DE AUDITORÍA GLOBAL
-Comprobados nuevamente prefijo, transiciones y contexto tras los cambios. Capítulo1
+CIERRE DE LA PRIMERA PASADA
+Contrastados transiciones y contexto tras los cambios, sin relectura literal integral
+del prefijo en cada subsección. Capítulo1
 idéntico byte por byte; todas las etiquetas, referencias y citas resuelven; no hay
 etiquetas duplicadas. No se alteraron fórmulas, código, tests ni resultados preexistentes.
 La atribución procede de la declaración expresa de Juan, no del orden de firmas:
@@ -136,3 +140,32 @@ Capturas de control en ../pdf-preview-final; son intermedios fuera de Git.
 No quedan bloqueos de acceso o compilación. Límites pendientes: procedencia histórica
 de todas las figuras/runs y entregables CLI/CD no acreditados; no se promete exactitud
 matemática perfecta ni aprobación institucional. Nada publicado ni enviado al remoto.
+
+SEGUNDA PASADA LITERAL (en curso; sin actualizar el PDF Library)
+Base de esta pasada: 0f6fd1f. Se registra cada lectura realmente completada.
+2.1: leído literalmente sn-article.tex líneas1–185 (prefijo, subsección y comienzo
+de2.2), contrastado con Kawada2018 completo y arXiv §7 (medida, axiomas y regímenes).
+Reauditoría del mismo texto sin cambios: condiciones y distinción caracterización/
+cumplimiento correctas; repetición introductoria útil como marco del capítulo.
+No se declaran verificadas por este procedimiento las subsecciones posteriores.
+2.2: lectura literal completa1–226, más226–249 para el contexto siguiente; salida
+sin truncar repetida cuando un primer lote combinado se truncó. Cotejo de VdE2001
+pp.5–10 (capas, pesos, TU/TDU, escala) y TWD2007 §9 (fórmula, ancho y límites).
+Reauditoría sin edición: m>=3 en VdE, d>0 en TWD, categorías vacías y media coherentes
+con el prefijo; las fórmulas desarrollan la presentación introductoria y no la duplican.
+2.3: lectura literal completa1–270. Fuente arXiv ap.A completo (plan único a consenso,
+mediana, masa común y relación al extremo), construcción EMD y aplicación de Lupu.
+Reauditoría sin edición: se distingue distancia entre distribuciones de mínima distancia
+a consenso, se conserva M por MAD media y no se confunde con MAD mediana. La remisión
+al resultado introductorio evita volver a definir la proximidad al extremo equilibrado.
+2.4: lectura literal completa1–294, con contexto del capítulo3. Cotejo de Koudenburg
+pp.5,7–8 (60 participantes,58 retenidos, fórmula y regresión sobre las medias), clase
+Experts y arXiv §8. Reauditoría sin edición: fórmula, escala, pares de categorías y
+separación KI/ratings correctas. El prefijo no aporta ya esos detalles; el cierre
+recapitula familias y conecta con objetivos sin redefinir sus fórmulas.
+Las lecturas del prefijo de la subsección siguiente sirven también de relectura
+literal posterior de la anterior sin cambios (2.1 en1–226;2.2 en1–270;2.3 en1–294).
+Cierre2.4: relectura literal posterior completada en dos bloques contiguos1–180
+y181–400, al iniciar capítulo3. Capítulo2 cerrado sin nuevas ediciones de prosa.
+Hallazgo del auditor recibido: repetición de planes/obligaciones en3,6.4 y8.2;
+se valorará en los ciclos correspondientes, sin declarar esas secciones verificadas.
