@@ -357,7 +357,7 @@ The preceding sections introduced MEC and established the criteria by which it w
 
 \subsection{Opinion Distributions and Consensus}\label{subsec:mec-distributions}
 
-We use the notation introduced in Sections~\ref{sec:intro} and~\ref{sec:lit}. An opinion distribution is a function $\pi\colon[0,1]\to\mathbb{R}_{\geq0}$ whose support $\boldsymbol{s}(\pi)$ is finite and nonempty. The value $\pi(x)$ is the mass of the group holding opinion $x$, and $M=\Sigma\pi>0$ is the total mass. We write $\mathcal{D}$ for the set of these distributions and $\mathcal{D}_M$ for those with total mass $M$. An ordered vector representation is
+Let $\mathcal{D}$ denote the opinion distributions introduced in Section~\ref{sec:intro}, and $\mathcal{D}_M$ those with total mass $M>0$. Using the mass and support notation of Sections~\ref{sec:intro} and~\ref{sec:lit}, an ordered vector representation is
 \[
 \pi=((\pi_1,\ldots,\pi_n),(x_1,\ldots,x_n)),
 \qquad 0\leq x_1<\cdots<x_n\leq1.
@@ -389,7 +389,7 @@ The set of medians is a nonempty closed interval, which may reduce to a single p
 \begin{definition}[Polarization measure]\label{def:mec-polarization-measure}
 A function $P\colon\mathcal{D}\to\mathbb{R}_{\geq0}$ is a polarization measure in the sense used in the paper if it is zero at every consensus distribution and, for every $M>0$, an extremal distribution maximizes $P$ on $\mathcal{D}_M$.
 \end{definition}
-This definition states the two basic requirements used to establish MEC as a polarization measure. The three Esteban--Ray axioms impose further requirements on specified changes to group structure. As discussed in Section~\ref{subsec:lit-axioms}, these are separate questions. The present section constructs MEC and derives its structural properties; its general maximality and axiomatic analysis build on these results.
+The three Esteban--Ray axioms impose further requirements on changes to group structure, as discussed in Section~\ref{subsec:lit-axioms}. The construction and structural properties developed here provide the basis for the maximality and axiomatic analysis that follows.
 
 \subsection{From Transportation to Generalized MEC}\label{subsec:mec-transport-construction}
 

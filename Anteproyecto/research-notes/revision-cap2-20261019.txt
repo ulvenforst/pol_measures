@@ -177,3 +177,23 @@ criterio para métodos narrativos no clasificados separadamente en tabla3; no se
 resuelve la jerarquía institucional ni se declaran automáticamente opcionales.
 Relectura literal posterior completada en1–180 y181–430 antes del commit del
 capítulo3. Conservados objetivos y premisas; sin cambios matemáticos o compromisos.
+
+4.1: lectura literal previa1–430 en dos bloques1–180,181–430; cotejo con arXiv §2.
+Se sustituye la redefinición idéntica de distribución por remisión exacta a1 y se
+introducen D,D_M y la representación vectorial. Se conserva soporte finito no vacío,
+masas no normalizadas, potencia con alpha>=1, mediana y dos requisitos básicos.
+Se elimina una glosa obvia de la definición y otra repetición sobre los axiomas.
+Pendiente relectura posterior del prefijo al iniciar4.2.
+4.1: relectura literal posterior completada1–180 y181–465; remisiones y premisas\ncompletas. El texto no redefine pi pero conserva explícitas D_M, masa y vector.
+4.2: lectura literal completa1–465 en esos mismos bloques, con4.3 y comienzo4.4\ncomo contexto. Cotejo con la definición/plan único de arXiv ap.A, §3 y complemento\n§3.2 ya leídos íntegros en los pasajes pertinentes. Sin edición: el plan de transporte\nformal es nuevo respecto de2.3; MEC remite a Eq.1 y no repite su fórmula; los cocientes\nde pesos/distancias precisan el papel relativo de los exponentes. Pendiente relectura\nposterior del prefijo en4.3 antes de cerrar esta subsección.
+4.2: relectura posterior literal1–180 y181–500 completada, sin cambio de texto.
+4.3: lectura literal completa1–500 en esos mismos bloques. Se cotejan continuidad,
+convexidad, derivada, signo en límites del soporte y beta=1 con arXiv §4 y ap.B.
+Sin cambios: las pruebas desarrollan los resultados anunciados en1, y la complejidad
+se limita correctamente a precisión posicional y beta>1. El caso de consenso está
+incluido sin exigir indebidamente un cero interior. Pendiente relectura posterior4.4.
+
+4.3: relectura posterior del prefijo literal 1–665 (tres bloques completos) realizada antes de 4.4.
+4.4: cotejo con arXiv §3 y apéndice A completos, apéndice B (dispersión), y cálculos racionales de math-checks.log. Se verifican pesos transformados, derivadas laterales, medias, ejemplo numérico y cuantiles salvo fronteras de medida cero. No requiere cambios.
+4.5: relectura literal del prefijo íntegro 1–665 conservado en los tres bloques anteriores, incluyendo 4.4 después de su cotejo y contexto de 5. Cotejo con apéndice B, reflexión, simetría y escalamiento (lectura completa de las demostraciones pertinentes). La prueba restringe correctamente el cambio de variable al intervalo del soporte, no a todo [0,1]. Se verifican beta=1, valor extremo y normalización. Sin cambios. Relectura posterior del mismo prefijo completo y contexto de capítulo 5: no se detecta contradicción ni reiteración que requiera otra edición.
+Capítulo 4 cerrado en esta segunda pasada. Cambios propios: dos párrafos en 4.1 remiten a las definiciones y criterios ya establecidos. No cambian fórmulas, hipótesis ni demostraciones. Las lecturas de un prefijo sin cambios pueden reutilizar los bloques literales completos ya presentes en el contexto; no se sustituyen por búsquedas o resúmenes.
