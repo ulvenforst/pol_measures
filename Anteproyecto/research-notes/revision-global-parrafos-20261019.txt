@@ -1016,3 +1016,442 @@ PDF SHA256: fce6efdca60e72b1eabbcae8fe05bdece12f1706aafccb9dbd8256f344ae5fdf
 PDF: /Users/ulvenforst/Documents/Codex/2026-10-19/task-2/revision-global-local/build/sn-article.pdf
 Comprobaciones reproducibles, inventario, decisiones y renders: /Users/ulvenforst/Documents/Codex/2026-10-19/task-2/revision-global-local/ (fuera del repositorio).
 Pendientes de esta fase aprobada: ninguno. Se mantienen los límites sustantivos y documentales ya declarados en la tesis. Esta revisión global no garantiza perfección matemática ni aprobación institucional.
+
+================================================================================
+REVISIÓN GLOBAL NUEVA — 20 OCTUBRE 2026 — ESTILO Y CONTINUIDAD
+================================================================================
+Esta entrada documenta la nueva revisión de todo el manuscrito solicitada tras la integración completa de A12. No atribuye esta cobertura a las entradas anteriores del 19 de octubre.
+Checkpoint obligatorio, creado y comunicado antes de editar: e219d6b637d70c42825c231dead164813f7834d5 (commit local vacío: no había contenido de tesis sin confirmar; solo metadatos .DS_Store ajenos).
+Base de contenido: 0685ca02a5cd71eaf4be07f7017ca6f5d0468680. Rama: snotra/revision-tesis-cap2-20261019.
+Proyecto existente: /Users/ulvenforst/Codex/University/pol_measures. No se crearon carpetas, worktrees o chats; no push, merge ni escritura en Library. Main se conserva en 49d4e2d36d5fd32c0552a691fdec1b4545d66e11.
+SHA256 fuente checkpoint: 59b4758fc1734d0fc6e0e87617f2289b5dfa16966fbcf2742d89058bcf2b9e8d
+SHA256 fuente final: d86fbdef65d299515b4849cf328aa634484f49804952964962c868674e42e58b
+ALCANCE Y MÉTODO
+Portada, resumen, capítulos 1–9 completos, apéndices A y B, bibliografía; incluidas pruebas, leyendas, notas y texto de tablas. El alcance global posterior amplió la revisión anterior desde capítulo 2 para incluir ahora también el capítulo 1.
+Primera pasada: evaluación individual en orden de lectura de función, enlace al contexto anterior, progresión de información conocida a nueva, sintaxis, léxico, ritmo y puntuación. Los cambios fueron decisiones locales expresas, no sustituciones automáticas de signos ni cuotas de longitud. Las pausas que distinguen condiciones, casos o límites se conservaron.
+La matriz G001–G375 identifica unidades contiguas de fuente, no 375 párrafos naturales: algunas contienen varios párrafos, un enunciado y su prueba, o una tabla. Se leyeron sus componentes; las notas distinguen enunciado/prueba y los cinco objetivos. Incluye unidades estructurales para que los localizadores sean exhaustivos. Se excluyen del alcance de estilo comandos de preámbulo y comentarios no impresos, que se conservaron.
+375/375 unidades evaluadas; 87 modificadas y 288 conservadas. No se eliminaron párrafos, secciones, pruebas ni fuentes. No se hicieron cambios de contenido ni nuevos experimentos.
+Skill local completa: /Users/ulvenforst/.agents/skills/russellian-clear-writing/SKILL.md; referencia local completa: references/editorial-basis.md.
+Se consultaron íntegramente las guías directas enlazadas sobre How I Write (Russell, 1956, tres páginas), Anatomy of a Body Paragraph y Transitions (Harvard), Headings y Lists (APA), Concision y Punctuation Overview (Purdue), punto y coma y dos puntos (RAE). Sus recomendaciones se aplicaron al inglés académico sin imponer un estilo mecánico.
+Voz del autor: lectura del adjunto page(2).mdx (libfile_3edaf1654a948191aa0b6ba1f16193e4); su texto extraído coincide con el del page.mdx ya citado (libfile_57ba161ca4dc81919f9400249c0aaf26). Se tomó su continuidad expositiva como referencia sin copiar errores ni reintroducir cifras o afirmaciones superadas. Se conservan los títulos bibliográficos originales. No se afirma identidad binaria del PDF nuevo a partir de texto extraído.
+SEGUNDA PASADA DISTINTA
+Después de terminar G001–G375 se releyó la fuente resultante de principio a fin, en bloques consecutivos de líneas 1–355, 354–570, 571–790, 791–1030, 1031–1245, 1246–1465, 1466–1668, 1669–1870 y 1871–final; se recuperó el tramo 170–189 para cubrir una salida truncada. Esta pasada examinó flujo, reiteraciones, antecedentes y transiciones de capítulos.
+Se corrigió governing en el resumen, se simplificó la apertura, se hizo explícita la actividad propia sin cambiar atribución (G010), se rehízo el itinerario (G026), se quitó repetición Each operation, se adelantó el alcance alfa/beta (G129), se desambiguó el antecedente de la matriz (G230), se reformuló el acuerdo sobre perfiles (G246) y se aligeraron G298/G305/G314.
+Se descartaron siete cambios de la primera pasada en G033, G134, G178, G190, G213, G253 y G290: las oraciones originales daban límites más visibles, voz más directa o evitaban conexiones causales innecesarias. Sus razones constan en la matriz. Los ajustes finales se volvieron a leer con su contexto.
+TRANSICIONES VERIFICADAS
+1→2: pregunta e itinerario conducen a conceptos y medidas; 2→3: criterios distintos se convierten en objetivos; 3→4: alcance explícito precede construcción; 4→5: propiedades estructurales sustentan movimientos y máximo; 5→6: condiciones probadas preceden implementación; 6→7: cada protocolo precede su resultado; 7→8: evidencia sintética, experta y regional conserva funciones distintas; 8→9: conclusiones retienen límites; 9→A: prueba diferida identificada; A→B→referencias: apéndices sustantivos y bibliografía conservados.
+COMPROBACIONES DE INTEGRIDAD (contra el checkpoint, no meros recuentos de palabras)
+{
+  "display_math_exact_order": true,
+  "display_math_count": 105,
+  "inline_math_multiset_exact": true,
+  "inline_math_count": 973,
+  "bib_exact": true,
+  "label_exact_multiset": true,
+  "ref_exact_multiset": true,
+  "eqref_exact_multiset": true,
+  "includegraphics_exact_multiset": true,
+  "citep_exact_multiset": true,
+  "citet_exact_multiset": true,
+  "url_exact_multiset": true,
+  "path_exact_multiset": true,
+  "theorem_statements_exact": true,
+  "lemma_statements_exact": true,
+  "axiom_statements_exact": true,
+  "proposition_statements_exact": true,
+  "corollary_statements_exact": true,
+  "definition_statements_exact": true,
+  "tables_count": 12,
+  "tabular_exact_except_authorized_header": true,
+  "all_numeric_tokens_multiset_exact": true,
+  "coverage_375": true,
+  "regional_attribution_and_results_exact": true,
+  "branch_source_sha256": "d86fbdef65d299515b4849cf328aa634484f49804952964962c868674e42e58b"
+}
+Comparación exacta y en orden de 105 bloques matemáticos desplegados; comparación multiconjunto exacta de 973 expresiones inline (algunas se reubicaron dentro de su párrafo). Coinciden todos los tokens numéricos y los enunciados de axiomas, teoremas, lemas, proposiciones, corolarios y definiciones.
+Las 12 tablas conservan cuerpo y datos exactamente; única diferencia dentro de tabular: etiqueta Cost hour → Cost per hour. Bibliografía exacta; iguales citas, referencias cruzadas, etiquetas, rutas e instrucciones includegraphics.
+Se preservaron literalmente G282–G284, G297, G300 y G322 para autoría/alcance regional; también permanece la ejecución propia guiada en las pruebas y los experimentos. No cambia la jerarquía de actividades obligatorias y deseables.
+COMPILACIÓN Y REVISIÓN VISUAL
+Compilación local completada con Tectonic --only-cached --keep-logs --keep-intermediates sn-article.tex, sin acceso a red; PDF habitual regenerado: Anteproyecto/sn-article.pdf, 71 páginas.
+PDF SHA256: 4d99cfa44b934e7f05b63b85353e3cf62aed0f4957af3e3379a9bfabfc729fc9; bytes: 2301543
+Avisos preexistentes conservados: overfull hbox 4.25945pt en encabezado capítulo 1 (línea84); underfull en tabla de candidatos (líneas1244/1249) y tabla de objetivos (1682/1683); Object @page.1 already defined. Sin error de compilación ni referencias indefinidas.
+Revisión visual: 71 páginas en seis hojas de contacto; inspección ampliada de páginas físicas 2,5,28,50,55,67,68,69 (resumen, apertura, axioma/figura/prueba, concordancia, tablas A12, cierre, apéndice algebraico y financiación). Sin solapamiento o recorte nuevo observado. Los gráficos originales y las tablas siguen completos. No se afirma haber actualizado una vista previa de la interfaz de Codex.
+LÍMITES Y PENDIENTES
+Esta vuelta revisa estilo, continuidad y preservación del contenido previamente auditado. No sustituye una nueva demostración independiente de cada resultado ni una aprobación institucional. Los límites de procedencia del ajuste histórico A12 y otros entregables no verificados siguen descritos en la tesis; no se resolvieron mediante cambios de redacción. Sin bloqueos de ejecución ni acciones denegadas o de resultado incierto en esta vuelta.
+MATRIZ INDIVIDUAL — localizadores y hashes corresponden al checkpoint; estado y nota describen el resultado final
+G001 | L37 | SHA256 49d34b0366eb0a68eb35c75d6d8aeb1d60be3c49779501a7e1cdf4941acdab46 | CONSERVADO | Inicio formal; conservar entorno.
+G002 | L39 | SHA256 a451131bc5974fd98b9bf51edad3f0f500432d5670227a76fe3750cb2341267b | CONSERVADO | Identidad y portada; conservar nombres, título y jerarquía institucional.
+G003 | L73 | SHA256 cb3cf67d6cc63b638dd1e4065cee5106a1d1507e80499698ff3166919d645c97 | ESTILO | Resumen: del problema a teoría y evidencia limitada; unir dominio y parámetros para que el modelo avance sin un corte innecesario; conservar condiciones y cifras. Segunda lectura: ajuste contextual de sintaxis, antecedente o enlace; conservado contenido.
+G004 | L77 | SHA256 7882f11c44045f71e5a04e7da4e2d674b8a1853a2348f7ac730371a6eaefadf2 | CONSERVADO | Palabras clave paralelas; conservar.
+G005 | L84 | SHA256 f9c89fbd1e942c260b67d869ae36c1c8c6690a164a2dc2be9506d80a7b7c385b | CONSERVADO | Encabezado sustantivo; conservar.
+G006 | L86 | SHA256 07da00354d4da2650699f9dc55fec62c37abe4ae5210207d5bd285c98c5b4553 | ESTILO | Apertura e identificación del problema; conectar la fractura con la formación de grupos y usar palabras familiares sin cambiar cohesión ni oposición. Segunda lectura: ajuste contextual de sintaxis, antecedente o enlace; conservado contenido.
+G007 | L88 | SHA256 a8654da1d35701eb17d19af308b520d7e73d4040a12a513ce2bf5b1090202ba8 | CONSERVADO | Desarrolla tres conceptos del párrafo anterior; conservar paralelismo y dos puntos explicativo.
+G008 | L90 | SHA256 18d995b02266bd43da5ecd100e814fb65bce8f1ee8c91d086049a599fead9dbd | CONSERVADO | Compara interpretaciones de cinco medidas; las oraciones separadas dan a cada definición el mismo peso; conservar citas y cierre.
+G009 | L92 | SHA256 720bc5f3bb36370c18fc7a89a52db3361d9d843dde8fcda9b1723a2816a2e4b0 | ESTILO | Pasa de las alternativas a MEC; integrar interpretación y consecuencia para evitar reiniciar la misma idea.
+G010 | L94 | SHA256 0192416b30c9ee4db27706187335f9bfd2605ac75259d99fd2e718e04c07e808 | ESTILO | Sitúa contribución colectiva y ejecución propia; conservar alcance y atribución. Segunda lectura: ajuste contextual de sintaxis, antecedente o enlace; conservado contenido.
+G011 | L96 | SHA256 256e3d26b72dd7c49c524f6daa46c5348ecdd92a6486ccad6d49691d2fa3edfe | ESTILO | Define distribución antes de la función; integrar falta de normalización en la definición de masa; conservar fórmula y punto y coma entre parámetro y régimen.
+G012 | L107 | SHA256 cdc956e3b3f7c034761325e1c8f8befbf041094064f6eb49ee33bdb613a85d1e | CONSERVADO | Existencia, unicidad y excepción lineal; conservar cortes que separan condiciones y la distinción entre óptimo y predicción.
+G013 | L109 | SHA256 28f61af5636d33685521fceba2e356bf4fff7d182cbe354bfc29a5378ccfa1b3 | CONSERVADO | Dos vías empíricas y su relación con axiomas; conservar contraste y desarrollo.
+G014 | L111 | SHA256 d65d09959fbd40625145a700d06fb190fc63a397cfdb64219fae26d1fbdda202 | CONSERVADO | Pregunta central; conservar enunciado íntegro.
+G015 | L114 | SHA256 13c24c95f2d9ab338ffa51aa41818a71959860622d118de07816ad26cf455e79 | CONSERVADO | Del método al dominio y límite dinámico; conservar contexto regional y límites.
+G016 | L116 | SHA256 81dc77545d6744b90d83d5b94071920f4a5f910200e1a74d968370ffbcc64aa5 | CONSERVADO | Resultado básico antes de axiomas; conservar separación lógica.
+G017 | L119 | SHA256 fd9b688ecae054d56d6100cb36d032ede9d8a9f305ede736183e2080d71ea5a1 | ESTILO | Especializa la dispersión; reunir los dos casos vecinos con whereas, manteniendo varianza y leyes de escala separadas.
+G018 | L121 | SHA256 c87c56c7e467acc217372dd4ba7e6ae02d4de8480a7a299b3e9efd4ec69c33cd | ESTILO | Introduce identidad de transporte; integrar interpretación y definición en una oración, preservar coste unitario e igualdad.
+G019 | L128 | SHA256 4abd4b6263a316004293fcfb5f40ba15bffa9b65fc125ccbeb1147bb54fec53f | CONSERVADO | Contrasta hipótesis prevista con resultado probado; conservar condiciones estrictas y la excepción de Axioma 1.
+G020 | L130 | SHA256 32e3c4bfddbd5bd145bfe17fff8797bc21240319e189602a1ba307797ed72bcf | CONSERVADO | Añade propiedad independiente; conservar hipótesis simétricas y transferencia positiva.
+G021 | L132 | SHA256 c576d8ec1b2e81ce679a46d6d6b51a723283c7062461126add2b7c65e3bc3a89 | CONSERVADO | Introduce interpretación de minoría; conservar cuantificadores y masas desiguales.
+G022 | L134 | SHA256 15f2dd014b55223b38ae7e9e25c945b54c4964c6e89eefebda4e92799e998d93 | CONSERVADO | Separa punto crítico de dos grupos, extensión cúbica y movimiento de grupo; conservar porque los cortes protegen regímenes distintos.
+G023 | L136 | SHA256 256d57fb1f9244e37b353cca10cf2ab5474ed964464a835354abc95f956b26dd | CONSERVADO | Conecta convexidad y algoritmo; conservar complejidad, precisión y caso mediana.
+G024 | L138 | SHA256 5fd9e64fe75f10ff11c88307338efdecb67836b7c2982a4d5f7a26234362b82c | CONSERVADO | Presenta universo antes de concordancia; conservar ambos recuentos y cociente por reflexión.
+G025 | L141 | SHA256 5ab4f4562f94f63ecaf9d132479841db363ca527326be3907b224b32b2e5dffb | ESTILO | Da evidencia y limita generalización; unir selección y límite mediante because, conservando multiplicidad de parámetros óptimos.
+G026 | L143 | SHA256 b27f07531948c11adbb809c5b664455d4fcf2333dd38d4ce98101a350cc0689a | ESTILO | Mapa de capítulos; conectar metodología con resultados y discusión con cierre, sin concatenar todos los capítulos en una oración. Segunda lectura: ajuste contextual de sintaxis, antecedente o enlace; conservado contenido.
+G027 | L146 | SHA256 b87a72aefa68f2f7efaee0985ff4908bd952c3b8d9867939eee4aca3a683c618 | CONSERVADO | División sustantiva; conservar.
+G028 | L150 | SHA256 f7ddde41283a19560529143d16d81660c66bd9fa8bc18ea0bf14aa68327c9061 | ESTILO | Abre marco conceptual; vincular dispersión y extremismo como contraste, conservar polarización y ejemplos separados.
+G029 | L152 | SHA256 824b97b2bf55d4e7e9ce3fb46f6d6ef7e405fc4c34555dcbdb35931e46b392e7 | ESTILO | De orden a coordenadas; introducir cinco posiciones dentro del requisito numérico y conservar limitación interpretativa.
+G030 | L154 | SHA256 e3622419c0acaa09ff434d216029d3247090136cedf952fd7ca1772cecea45f3 | ESTILO | Notación para medidas; integrar categorías vacías en la definición de masas; conservar fórmula y distinción entre probabilidades y conteos.
+G031 | L164 | SHA256 942e5a8c4a4ae9d142e2415600eb769d26c73bfbf8dc40689e91bbf2a0b93404 | CONSERVADO | Encabezado de tradición axiomática; conservar.
+G032 | L166 | SHA256 44fd7b6cc53b5c828f7d7afce8f0fa5bd563d2d5c1f2e80173aeafb7d8cd8363 | CONSERVADO | Definición ER y lectura de factores; conservar fórmula, intervalo paramétrico y normalización.
+G033 | L175 | SHA256 50781688150782d9fe666fddcea1272d999b39f698f204bb84776b730af1adbf | CONSERVADO | Desarrolla tres axiomas distintos; conservar oraciones para sus hipótesis y unir la advertencia final con condiciones explícitas. Segunda lectura: Las condiciones y su límite se entienden mejor en dos oraciones; se descarta unión causal reiterativa.
+G034 | L177 | SHA256 e2767b48f4170b891dacabf14cceac30309856e9ebe229a8103f560790120275 | CONSERVADO | Aclara alcance de caracterización; conservar contraejemplo y conclusión limitada.
+G035 | L179 | SHA256 412df65afb0755bfbf6a5d8668b9687a797238b5396c98ee534a0c049ac19375 | ESTILO | Motivación psicológica antes de interpretación matemática; sustituir entail por involve, conservando la advertencia de no medición directa.
+G036 | L181 | SHA256 8946195d89571b84b963faae7777302e0000662faba50bb1259e69945ee61c54 | CONSERVADO | División temática ordinal; conservar.
+G037 | L183 | SHA256 9f0124d571bcfafb7665f0c9e978cfa8557010de9f5fc2a9ee9ab71fb3d13861 | CONSERVADO | Transición de axiomas a acuerdo; conservar comparación y presentación de dos enfoques.
+G038 | L185 | SHA256 8151f6c09a0babeba648902bcf941bcd86974fb3c842a24a88dd52210346d215 | ESTILO | Construcción por capas; unir la definición del vector a la resta iterada para dar continuidad sin perder el procedimiento.
+G039 | L188 | SHA256 81b6250432e9aa35a745a0770883337ee7ecec53da97db88c81a25ffdf9151da | CONSERVADO | Conteos antes de fórmula y caso degenerado después; conservar condiciones, convención y explicación.
+G040 | L200 | SHA256 54ae7b9039b44571260604b9cdc61e22e911b3e8196f52abff096c3e1668a205 | ESTILO | De capas a índice global; integrar el factor de escala con el intervalo resultante, mantener significado geométrico.
+G041 | L208 | SHA256 256af62c620fb44ed0af09245417f8f079f4c1844123dc95580e1610af2771c0 | CONSERVADO | Definición TWD; conservar fórmula, amplitud fija, límites de contribución cero y dos configuraciones extremas separadas.
+G042 | L223 | SHA256 debd90b53167207000545333c3463c2550936889404c5c65c414bb81a3471892 | CONSERVADO | Cierra comparación ordinal y anuncia evidencia; conservar.
+G043 | L225 | SHA256 c754aba14c1e24fd666e5bec0b93ce3b28e8828c81a05f41ea332d026587b2f0 | CONSERVADO | División de transporte; conservar.
+G044 | L227 | SHA256 3751d4dd9f943c641a4d471a753341122fbc1105e6298025fc3ac3aba266ec21 | ESTILO | De histograma a transporte; ligar trabajo y coste unitario, conservar probabilidad frente a masa finita.
+G045 | L229 | SHA256 40796586c4f59e9a3b7fed28e22a73c6c5e25836e570b3446195a9b7d34b1a20 | CONSERVADO | Construye identidad y distingue coste fijo de mínimo; conservar ecuaciones y distinción entre dos desviaciones absolutas.
+G046 | L242 | SHA256 c338fac9e6f67aa0cdf936d242b29ec671c87bf46b64ddc58ff468d043595ba8 | CONSERVADO | De literatura aplicada a baseline propio; conservar identidad y referencia cruzada.
+G047 | L244 | SHA256 5b874f1cedc9f71bf56bcc0326366789943b7dea57f4ff5982ee3828332e02c1 | ESTILO | Del límite geométrico a generalización; reunir efectos de alfa y beta por paralelismo, conservar no identificación con Wasserstein general.
+G048 | L246 | SHA256 d2a4309df7f8d198fab7e294ed1a1876d329708b9d1b330c9e3ec52221ec9458 | CONSERVADO | División empírica; conservar.
+G049 | L248 | SHA256 b1ed35c76481c4cb0378a9de11d5e4f72320389fadc794c1153ea23cebb4f68f | CONSERVADO | Fuente de juicio experto; conservar sesenta, quince y cincuenta y ocho como niveles de muestreo distintos.
+G050 | L250 | SHA256 3240f29775ce6a43217f8217be55bd555cf0e1ce53acbaa919b84d31fe5c21c2 | CONSERVADO | Introduce KI y escala; conservar fórmula, normalización y significado de masas.
+G051 | L259 | SHA256 3181b6fdf46aa4b28b50ef14179055cc40771f413d392f323b12d1170265341b | ESTILO | De ceros algebraicos a interpretación; integrar última cautela con énfasis del índice, conservando condición exacta.
+G052 | L261 | SHA256 2b9925f8d314507d256bb233a768878e2db7ae71335be3c2480d231ef1a8c358 | CONSERVADO | Distingue candidato y referencia; conservar tau y unidad de observación.
+G053 | L263 | SHA256 9687e63aa6ef534f40a8d30592c8815794b9e90a766c278e6edafc03286c562f | CONSERVADO | Limitación de selección y navegación; conservar.
+G054 | L267 | SHA256 5bb5c3b0d5fd5352de7b2be0cb4954b0f17f7e3aac0085711a2b9e229224b449 | ESTILO | Síntesis antes de objetivos; conectar axiomas y central-split sin desdibujar independencia, conservar comparación empírica separada.
+G055 | L269 | SHA256 14a6eba11f07af61f90c30cb610cb723def76c69c435b2fd9fa6bd963a0530ca | CONSERVADO | Encabezado objetivos; conservar.
+G056 | L271 | SHA256 59b1c2e58dc8e9905dc919caedfce58dc135493f38b84284c6142d28369da23d | CONSERVADO | Origen y evaluación de objetivos; conservar distinción entre artículo y propuesta, dos puntos no necesarios.
+G057 | L273 | SHA256 19c88ccfe0ca70facf0e10a2a4748db072ced380b7ddd121863160ff89bc66a3 | CONSERVADO | Objetivo general y límite; conservar.
+G058 | L275 | SHA256 6837546c4b16d7fa8e1b504cf3b3dc347bd9ff18c3e2a21ceaac3f5491f7d961 | CONSERVADO | Cinco objetivos paralelos; revisar cada ítem: teoría/condiciones, corpus/reflexión, software/semillas, evaluación/top-k previsto, expertos/regional colectivo. Conservar lista y verbos que no añaden obligaciones.
+G059 | L284 | SHA256 9ebb73015dc9c7b273123fd528e26107fb882c44e4852fbd0256d6fc0bab3688 | CONSERVADO | Dominio formal y caracterización excluida; conservar distinciones.
+G060 | L286 | SHA256 43b34e7d97cdc4f3fc331b821797bea3f7659d2dd3c61e69ee11fc6f6799695f | ESTILO | De dominio teórico a universo experimental; vincular restricción de masa con alcance del corpus, conservar límite de búsqueda continua y codificación.
+G061 | L288 | SHA256 23417a08ab66e2534f68bfa1a07acfa1e02cfb6c71ae31f907b636f8cc924290 | CONSERVADO | Experto y regional: límites distintos; mantener puntos para no atribuir selección a datos regionales ni causalidad a comparación temporal.
+G062 | L290 | SHA256 4775065fc5a7ac9fe40d48f22b42833265b7e126a74cc57633f4d6bd2f5acbdd | CONSERVADO | Medición estática frente a dinámica; conservar frontera entre óptimo y predicción.
+G063 | L292 | SHA256 63886603a56ced68c66ca9a09420ba0282df226cec48c61036e6ef917193ceea | CONSERVADO | Criterios esenciales de propuesta; conservar lista A1-A14 y alcance.
+G064 | L294 | SHA256 3f6b52979daef30f999e566f8deb25eab0547fba3628d55ee7d0ff41c46b1e05 | CONSERVADO | Actividades deseables y evidencia; conservar jerarquía y existencia de A7.
+G065 | L296 | SHA256 72924b3d38d12b36e47d2edbda6107dcf31defce84b8560190243b44d8aa839b | CONSERVADO | Plan metodológico frente a obligaciones; conservar precauciones, registros y nivel de certeza.
+G066 | L298 | SHA256 69a1adba01acdae15188929130fc34116c3abab1d01e411fc1378d266c97cb2d | CONSERVADO | Cierre de evaluación y transición a fundamentos; conservar relación entre propuesta y evidencia.
+G067 | L354 | SHA256 9695284cc8d867af96354f3a6ffd06f7c85dd6129dd4464ec72b2547dae2e6ef | CONSERVADO | División sustantiva de construcción; conservar.
+G068 | L356 | SHA256 53d774af89c6b40f487fd53373ae9a092d9975a7961f68da5e33f72afc5e9407 | ESTILO | Puente desde criterios a desarrollo; unir primera pareja de oraciones para introducir construcción sin reinicio y mantener ruta de pruebas.
+G069 | L358 | SHA256 ae7570c57407e04866d4cc220b8837ebc6f7f3aaad2436706c1154f20b5ae1fe | CONSERVADO | Subdivisión de objetos; conservar.
+G070 | L360 | SHA256 0e67b802f7d56302cd48b0fc3f769c05c3c1669bbd9a1e2ee6d98959e552536f | CONSERVADO | Representación ordenada; conservar coordenadas, ceros y diferencia de masas.
+G071 | L367 | SHA256 699e2d557085510107c1573525cd1084a51713df7c7804d37516f491ec36a985 | CONSERVADO | Definición de dos operaciones y explicación; mantener definiciones formales separadas para no mezclar normalización con potencia.
+G072 | L377 | SHA256 8135afa34ad505377cc71a030be0fe374160a4dda972edf599a07cf7c55a501e | CONSERVADO | Define consenso y extremo con masa común; conservar nombres y cuantificadores.
+G073 | L381 | SHA256 00384ec86d0bf22f3da51049000d53b9a837d1af9034132bb568dccc168da049 | CONSERVADO | Desarrolla mediana antes de usarla; conservar dos desigualdades, intervalo y efecto de normalizar.
+G074 | L389 | SHA256 80be9d8dbfd3a28d8b3280df216cefd6dba3237318a08687eb2f24fc89a89372 | CONSERVADO | Definición mínima y requisitos posteriores; conservar diferencia con axiomas.
+G075 | L394 | SHA256 e79efd104dec23ee4e6faad71e8fc5d7939699ad3021e61f368204e80b6184fe | CONSERVADO | División construcción de transporte; conservar.
+G076 | L396 | SHA256 71a4abbb6673bcaf5f0dd97ef002d15f805468aba3ac4e906d36097a8bf4c3be | ESTILO | Del trabajo al plan; integrar motivación y plan, conservar balances, compactitud y existencia del mínimo.
+G077 | L410 | SHA256 31a9be0287c9b0d04c3d2d5e4e99ad430428ca90e3a7e15bcfc1564920e65c1d | CONSERVADO | Enunciado y prueba de transporte a consenso; conservar pasos porque cada uno establece unicidad del plan, valor y mínimo.
+G078 | L417 | SHA256 ca7c544636fe52c6c5cc58cc798480b06a26d4d686603f0336ffd3b636736cf3 | ESTILO | De caso lineal a dos exponentes; unir primera pareja para expresar cambio relativo al modelo ya conocido; conservar razones y regímenes.
+G079 | L419 | SHA256 3a0978e3771878089b7871db468bc4e8a89c423a761f4b6dcaf9d7bcacf7a864 | ESTILO | Definición MEC y ámbito continuo; unir continuidad del intervalo con toma del mínimo, conservar exclusión de EMD general.
+G080 | L424 | SHA256 6e85a11dbcadb4348e713679f2de88f058aa7716d14278f35df9eb2105fa6325 | CONSERVADO | Encabezado convexidad; conservar.
+G081 | L426 | SHA256 f926709716c1498f8d8a0f3e126cb589d451e9d7ae51aed6033ac8d0902ccfa4 | CONSERVADO | Conecta objetivo con condición de unicidad; conservar contraste.
+G082 | L428 | SHA256 2a73669f74a75fcc5a0e7355424733e0f24ae670444a36b14c304e0af05c122d | CONSERVADO | Enunciado de existencia y localización; prueba continuidad y descarte de ambos extremos exteriores. Conservar cortes de casos y condición de masa positiva.
+G083 | L435 | SHA256 f8f8400a5848dde856ae551931f81a4c614de303a39f87dbc3b14eefa9d04ee3 | ESTILO | Cero si y solo si consenso; unir anulación de términos con consecuencia de pesos positivos; conservar ambas direcciones.
+G084 | L437 | SHA256 033c8450fddd9d4e63cdecc371f25b75f4188e7d4f05fcc6d7a5bd025fdf0c57 | CONSERVADO | Enunciado y prueba de convexidad; conservar régimen beta y argumento de punto medio.
+G085 | L444 | SHA256 e0d41751ecee2b7d58a46e1eebd55eac1218ebcffd3d5fbe58f74eae56f9190d | ESTILO | Balance y cero único; integrar localización y cero para continuidad, conservar consenso separado y todas las fórmulas.
+G086 | L461 | SHA256 af1c01bb14cd24ce38cbed8efad65be2fa76e722ce046ec877444044bb7a56e3 | ESTILO | De balance a bisección; conservar complejidad y excepción beta=1, sustituir belong to por are discussed in para referencia directa.
+G087 | L463 | SHA256 3a69ade8f8a3600bfbb0736bb2f58bece250a2442eeee0424d736850991fa1b5 | CONSERVADO | División dispersión; conservar.
+G088 | L465 | SHA256 6f7490cd392b16dc40c4ae61f3df484b76737a101b40f6635997a7119d83f0b4 | ESTILO | Definición dispersión y lectura; conectar nombre técnico con criterio de posición, sin cambiar potencia ni tomar raíz.
+G089 | L472 | SHA256 3364aa12bf608affa1437181df92e5a29804ed12afd206a98a93249b42812be9 | ESTILO | Identidad y prueba por factor constante; unir independencia del factor con operación de mínimo, conservar equivalencia de minimizadores.
+G090 | L489 | SHA256 b058f9bf842e7b30835acf4b5996fbb2ceb329b7cd948e74d3dbe7c738ee6b69 | CONSERVADO | Notación de dos casos particulares; conservar definiciones y condiciones.
+G091 | L491 | SHA256 943c522e7989917622c17468ac330a1e5f82f80dc54d53560f0b73099843adc7 | CONSERVADO | Enunciado mediana/media y dos pruebas; conservar derivadas laterales y expansión de cuadrados, puntos distinguen regímenes.
+G092 | L518 | SHA256 c3354e3ef397961416b3cabab5466b4723049ef127e2cbbafd762e7c00aabb28 | CONSERVADO | Contraste distribución original y potencia; conservar recordatorio preciso y diferencia de desviaciones.
+G093 | L520 | SHA256 7e2e1ad6f45046e4297a7c03db38b03004da951ca89f9b3eadf2eef18149e031 | CONSERVADO | Ejemplo: dos regímenes y orden inverso; conservar todos los datos y tres oraciones que distinguen cambio observado de regla general.
+G094 | L540 | SHA256 40e9cfcb485f817945a05c5e132a016de28d31c663173690efdef94673422bfd | ESTILO | Puente a identidad geométrica; unir interpretación y papel probatorio en una oración sin redefinir polarización.
+G095 | L542 | SHA256 7b60eb3941e776d60029c9a1c1a3c6c793ba5dcc7c25c8d78168fa4ff989d9e7 | CONSERVADO | Enunciado y prueba por cuantiles; conservar definición, excepciones de medida cero, desigualdades por mitades y cálculo final.
+G096 | L568 | SHA256 292f3f46a936e5f95f75275d23a72f689e16c86e94ab0c19f80831634a6619a8 | CONSERVADO | Ejemplo numérico e implicación; conservar números, rango y transición a maximalidad general.
+G097 | L570 | SHA256 9ba8f60da69d52465eb62e0f8ff49518b4a01214e5fed65850b9eaffeb6c8931 | CONSERVADO | División de simetría y escala; conservar.
+G098 | L572 | SHA256 ff1646b382434ae09e3c07070f46a746d4b811e0e5e9449bd176fd6724302620 | ESTILO | Puente entre mínimo interno y transformaciones; integrar propiedades con su propósito, manteniendo orientación, lugar y población.
+G099 | L574 | SHA256 37452031888f29776766bfa66caf468eb28fe8c67dc46937f245f47714d32969 | CONSERVADO | Definición reflexión y simetría; conservar dominio admisible.
+G100 | L577 | SHA256 640a64d9d839eef78ac152616808fa3424e1d5347e9b36d8462292bf6bd80a80 | CONSERVADO | Definición desplazamiento y masa exterior; conservar ambas condiciones y cierre del entorno.
+G101 | L580 | SHA256 a0a00c4dd1cfc4beb482fc541006edb028016282c1361b8e0cae6739c9f65bd0 | CONSERVADO | Enunciado/prueba de invariancia y alcance; conservar intervalos de soporte y explicación de admisibilidad; punto y coma contrasta orientación y lugar justificadamente.
+G102 | L602 | SHA256 8fe9c1c67debe3abc93bcaa94f868f4c4457d5f65bde8ba2183f27af51819301 | ESTILO | Enunciado por beta y prueba de simetría; unir igualdad lateral y cota de media masa, preservando mediana no única.
+G103 | L614 | SHA256 e580e5e886f95c3b53e20c99f5e9dba398de3c6b93305f5a791d1925ca936f02 | CONSERVADO | Enunciado/prueba de valor extremo y discusión; conservar distinción entre evaluar y probar máximo, condiciones de intervalo mediano.
+G104 | L627 | SHA256 d466be7eed6929f91cd7a25df84e238f75efc8b1f8c8d046815bb2a80cabd5cc | CONSERVADO | Enunciado/prueba de escalamiento; conservar factor positivo independiente de y y conjunto de óptimos.
+G105 | L639 | SHA256 f0c4c668b59bb9dd48702d2bb0be1f4b0122fb6995ce19305ff43b18b24d7336 | CONSERVADO | Dos normalizaciones y Condition H; conservar ecuaciones, interpretación de ranking y diferencia de escala numérica.
+G106 | L659 | SHA256 a76a3c8da1bcb70e45f64849b1485fc76fd1b5bdddf27e4c23447e394fa6d665 | CONSERVADO | Cierre estructural a movimientos y cómputo; conservar resumen con función nueva de enlace.
+G107 | L661 | SHA256 3799e4d44892e3bed043aa4e67c15fedb6448b21307ae5f66d282d5da1bbca44 | CONSERVADO | División teórica; conservar.
+G108 | L663 | SHA256 76eadf74f268ec2227821effce833b42b8422eaae56f1e9c2b31419149753885 | CONSERVADO | Ruta de pruebas; conservar orden y alcance del punto crítico.
+G109 | L665 | SHA256 977fd524db44e04000047a447e1e2f2a5898e283875eed6ed283794e37a93666 | CONSERVADO | Convenciones antes de teoremas; conservar dominio y notación.
+G110 | L667 | SHA256 2df92fc6f57fd38e79c59a0bb7b93aa2140cdbf755fc10b63fd2e9c50d7a5eaf | CONSERVADO | División movimientos; conservar.
+G111 | L669 | SHA256 3642f96b5b6b1e706b4c2258ae33ba2f62b9f67bf27c95426c56eac6c080521f | CONSERVADO | Motiva separación transferencia/grupo entero; conservar contraejemplo y dependencia de masa.
+G112 | L671 | SHA256 9df144565320698857c038f1e0a7ab79db9f79792dc2a1f589005fa5c3803596 | CONSERVADO | Definición movimiento y condición para todos los óptimos; conservar fórmulas y cuantificador.
+G113 | L680 | SHA256 81213a00344d6d7b967835d2b6aff166d4bdbbaa3ab4f28492b20871d7a2a5f6 | CONSERVADO | Definición excepción median-shift; conservar condiciones acumulativas y cierre.
+G114 | L683 | SHA256 a1e45de8aa373b67457a7db45f3db642d1f9e6b691538919295c452ceca03628 | CONSERVADO | Explica cuantificador y mezcla de masas; conservar fórmula porque evita sumar potencias indebidamente.
+G115 | L685 | SHA256 87a6ec2d60b5058f14203016a5fd0cf8da8829c942d3a5b0e3f2dce468ac199f | CONSERVADO | Teorema y arranque de prueba; conservar no consenso, ocupación y excepción, reducción por reflexión.
+G116 | L694 | SHA256 bd8a2058ee2da4ee02c6a919e378c73fdf4f844c8e58ebf2b426caa047393fd7 | CONSERVADO | Prueba beta=1 en dos casos; conservar derivación mediana y valor estricto.
+G117 | L700 | SHA256 62191d3c22f93f9ace57cadb77fa3e495fc2f36a6fd744fcf9a7ac7c291a00ed | CONSERVADO | Prueba beta>1, balance y ubicación del nuevo cero; conservar condición masa externa y cadenas de signos.
+G118 | L706 | SHA256 fc5a4bfab34003a858c96eea5e39daa3b15d518040874b3ea9f1501049134a3e | CONSERVADO | Teorema de envolvente y continuidad; conservar hipótesis y advertencia de no derivar óptimo.
+G119 | L712 | SHA256 166ed9a67da744ca6edbadda406e9443d47ccf563cb7e66987522eb945fd1f04 | CONSERVADO | Paso a alfa general; conservar comparación de potencias y cadena de mínimos.
+G120 | L727 | SHA256 16088c436e511986d64dfe8b21d7c15ea677bebfbe180895fd85fbc650de0a50 | ESTILO | Aclara frontera de consenso; conectar hipótesis con ejemplo que la exige, mantener excepción mediana distinta.
+G121 | L729 | SHA256 70303c520275841e67dcd36ac2b9c714361d29cb888b552c2b6367df2077c15c | ESTILO | Ejemplo median-shift; unir medianas y esfuerzos de cada perfil, preservar números y conclusión sin incremento.
+G122 | L738 | SHA256 df876809da17f5ecad49252d8bf545af761dd0fb2ff3ac0748947d085dd2accc | CONSERVADO | Transición de desplazamiento a equilibrio de masas; conservar.
+G123 | L740 | SHA256 bf3f89930210eb4de5dc6640d0cb1d97a997db6245d3655188f0464b0442a221 | CONSERVADO | Enunciado máximo dos puntos y prueba beta=1; conservar casos cero y desigualdad.
+G124 | L753 | SHA256 363c861ef6385d88dac1edf487bf92fd7a542d290498ad22485cd050c5a494ba | CONSERVADO | Prueba beta>1; conservar balance y producto con cotas simétricas.
+G125 | L770 | SHA256 e3705914d25f032fbfd3f1f966c50a199f9921909f4e12698dfa9f1d9ca2251c | CONSERVADO | Teorema de polarización y arranque de prueba; conservar cuantificación, máximo y separación del caso consenso.
+G126 | L781 | SHA256 9371c06bcec62163ef0cb38edbfd30c7b08de2e1b4e50fda1e2939a3b6993403 | ESTILO | Prueba máxima beta>1; unir disminución de soporte y finitud del proceso, conservar movimiento de grupo en óptimo. Segunda lectura: ajuste contextual de sintaxis, antecedente o enlace; conservado contenido.
+G127 | L783 | SHA256 3d82abf7bf00a40290ae6712931f66e5f1588ca94686c2b7ce47d6d40815375e | CONSERVADO | Prueba máxima beta=1; conservar alternativa de soportes y masa total.
+G128 | L785 | SHA256 4675598efbbb2c537e1e77eb5bb8461f4b005854567fb946e3a1238bc304da60 | CONSERVADO | Prueba frontera mediana única; conservar superaditividad, contradicción y tratamiento de extremos no ocupados.
+G129 | L799 | SHA256 5cfe38a92f52b8c3c21b9d96d23be2dfd3d53c463d29072d3a1e31c43e52fb11 | ESTILO | Puente normalización/axiomas; integrar régimen del resultado con referencia al límite, conservar restricción distinta de axiomas. Segunda lectura: ajuste contextual de sintaxis, antecedente o enlace; conservado contenido.
+G130 | L801 | SHA256 993e7fe714230235f19bb876c803b4376af4db26592b5343ead9e64073bd1a1f | CONSERVADO | División axiomas; conservar.
+G131 | L803 | SHA256 546add0eb224a373acad1d330b1d67293eb27e3c24e2be477c09751ca1a47a33 | CONSERVADO | Contexto, atribución y convenciones; conservar guía de Jesús, revisión de Frank y desarrollo propio sin exclusividad.
+G132 | L805 | SHA256 560697b6192eed1b3fb337288a313ffe6f8c7894cf8b41b95c1b0c01772c3800 | CONSERVADO | Enunciado Axioma 1; conservar íntegro, incluidos todos los cuantificadores.
+G133 | L813 | SHA256 c39306185eaf9dcf582732d22b725da1f4589b638d17b740e2ba8a0919573811 | ESTILO | Figura y leyenda; integrar operación y resultado en relativa, conservar cita y etiquetas.
+G134 | L820 | SHA256 322663cbf2dc2591bfdac0a1fc74abed2fb409b893b96ed7a254a3a77c5babb1 | CONSERVADO | Glosa Axioma 1 y figura; integrar límites existenciales en interpretación, conservar condiciones de tamaño y proximidad. Segunda lectura: Se conserva el original: la figura ilustra el merger, no pertenece gramaticalmente al axioma.
+G135 | L822 | SHA256 aecffca6c69c7476534a3265a8fc06dcd481b580dd91b13a16ff3f50804e3619 | CONSERVADO | Teorema umbral y arranque de prueba; conservar diferencia de esfuerzos, Jensen y condición h positivo.
+G136 | L847 | SHA256 46855086b969909a39b71613aa33beb77c6a7f0f114434ab5d915f8c45bfd8d2 | CONSERVADO | Caso lineal y necesidad; conservar elección mu y contraejemplo a cualesquiera cotas.
+G137 | L855 | SHA256 6f8a34cdebdef98fc0bea8b264bfd9596df3cbfbf45a3924a851f60403544860 | CONSERVADO | Caso beta>1, cotas derivadas; conservar elección de mu y localización interior.
+G138 | L872 | SHA256 db0a651a8858f83511ccf1aef04009a8b5d955a1e9c366df0ef1b0e8fc1f0b6b | CONSERVADO | Suficiencia alfa>1; conservar compactitud uniforme y evaluación en óptimo ajeno.
+G139 | L879 | SHA256 22129952663f97de1deac32b3ee0ac1da3910f09a2c98bf040165a17a6151def | CONSERVADO | Necesidad alfa=1; conservar elección de masas, signos y desigualdad inversa.
+G140 | L887 | SHA256 9ae83e30bf07afd61f731b25d71b1dc3170cc15103fe5f3b241b812228f3569e | CONSERVADO | Lectura del factor de identificación; conservar distinción entre axioma y definición básica.
+G141 | L889 | SHA256 68d16cabbdf09d81fab420e2838807a24d623d5af9d3dc04815f4a1795fa030b | CONSERVADO | Axioma 2 fortalecido; conservar cuantificadores completos.
+G142 | L897 | SHA256 8224abea1d308cfeb41f41f36c5fffb6356bfefb825fd6311f22be4081deb5b0 | CONSERVADO | Distingue condición publicada y original; conservar citas y conclusión de implicación.
+G143 | L899 | SHA256 c4998ac648caba07daa124216cf204ded6f3f4074b19fac774e8e58cd3b239f7 | CONSERVADO | Figura Axioma 2; conservar leyenda, condiciones y referencia.
+G144 | L906 | SHA256 9fb0e6539cd22a225ca02233402923fb420fe198216d7aa7616d80f14a0285e9 | CONSERVADO | Lectura geométrica de movimiento; conservar condiciones e interpretación.
+G145 | L908 | SHA256 31fde776b1bae8181575952dfe5caa46326f7e20ce5153ba0f93dc7402f03a39 | ESTILO | Enunciado y prueba beta>1; unir signo y consecuencia geométrica con since, sin cambiar condición.
+G146 | L918 | SHA256 6b69fb82f0ed7fbc13593a9a112493e099d5e6add80d989d639f0aa041b1ece9 | CONSERVADO | Prueba beta=1: mediana y excepción; conservar ambos casos y cálculo de incremento.
+G147 | L926 | SHA256 d4c90b6d5da394483c535dc9ec421c061a8342dc74456162911e967d1fed4eba | CONSERVADO | Cierre excepción mediana; conservar comparación con caso general.
+G148 | L928 | SHA256 d0c2c99a1a597c854e3d7cd81e36323372102c9c8b3a1b76bdfeef7adddc99a2 | CONSERVADO | Axioma 3; conservar masa central positiva y configuración simétrica.
+G149 | L936 | SHA256 45dd7b70ef129a99d82c806e0462f0c327558d3309c2d46fbcebebe288ff45d2 | CONSERVADO | Figura Axioma 3; conservar punto y coma que separa operación y convención de coordenadas.
+G150 | L943 | SHA256 0cd00895861b2d243a84fc64d3c5478bfd202ce9263aafad6c6adb978a0d11e7 | ESTILO | Glosa de redistribución; unir posiciones fijas y masa central con operación para continuidad, conservar referencia aparte.
+G151 | L945 | SHA256 85fefcb089612f40c96f7e3cf438ccc04e032a27d7fa7378defd9c9dd53b2bdf | ESTILO | Enunciado y prueba Axioma 3; unir simetría y aplicación del lema; conservar valor y estricta positividad.
+G152 | L952 | SHA256 27aa025f4da8afaf694cb7e8712d64526fc165c10ee08259d46878339c81c5bf | CONSERVADO | Síntesis tres axiomas y límites; conservar equivalencia paramétrica, refinamiento de propuesta y no caracterización.
+G153 | L954 | SHA256 6577056d06fc66a5e6174bf8a641554909a644bd0bbdd6da49bbcde5b1a55ce0 | CONSERVADO | División propiedad adicional; conservar.
+G154 | L956 | SHA256 7eb396e844f36ba20f1ed033c7d6383d937e81f8e8759ef86c218767c631fad3 | CONSERVADO | Puente Axioma 3 a posiciones intermedias; conservar diferencia y ausencia de restricción a cinco categorías.
+G155 | L958 | SHA256 d535bedec87dc3f58ed5123a16cb86e2a07d1baa64ff7ecd8654f265ebe54725 | CONSERVADO | Definición Property 1; conservar todas las hipótesis y transferencia doble.
+G156 | L966 | SHA256 004f6a7078ef81b3c1d46cbd4c1963b17998df1a720c713677e71deb7caf6134 | CONSERVADO | Representación y figura central-split; conservar datos y notación y=2x.
+G157 | L978 | SHA256 a0f92f1ff7ed562991befb103df6c971f96ed4e8f53b0a3050c54368bb27ea9f | CONSERVADO | Distingue destino extremo de intermedio; conservar p=0, fusión y masa central positiva.
+G158 | L980 | SHA256 15d6cead6db2061af936722712e20be1eafc9844065ff462d42fd60cd0078396 | CONSERVADO | Enunciado y prueba por dos destinos; conservar dos fórmulas y casos p=0.
+G159 | L997 | SHA256 d8620a888fd9ac3fea006a1585336a0aa20730f5c22c3de1f6cc6d13697ed755 | CONSERVADO | Contraejemplo ER; conservar cifras y cálculo, punto y coma protege alcance de conclusión.
+G160 | L1007 | SHA256 a6f587540a493b111d8153fb7efcd799ba5e6ab588df75e90926e1ed1f4a6755 | CONSERVADO | División interpretación de minoría; conservar.
+G161 | L1009 | SHA256 b78c3f03ad2a9ec40485d55d0efdda87cc8cef606eee4051f3c199e0b7d85505 | ESTILO | Transición transformación a reparto interno; integrar contraste de grupo mayor y menor, conservar dominio de parámetros.
+G162 | L1011 | SHA256 5fda96b78822768168028f8f9da609780e8422907cb5f30db12048c0e8603546 | CONSERVADO | Enunciado y prueba dos grupos; conservar balance, signo y ubicación del óptimo.
+G163 | L1023 | SHA256 724ecb5c303aec0619079177aecea2ebbf824044dc1a13a281d3ba17ad20fd2d | CONSERVADO | Enunciado/prueba Minority Principle; conservar desigualdades y regímenes beta, reflexión final.
+G164 | L1038 | SHA256 719a779e588847cecb4d63c1b172c5369e5c41c9ddb085f4bb34b719cf17b3fe | CONSERVADO | Alcance del resultado; conservar caso igual, contribución agregada y no prescripción social.
+G165 | L1040 | SHA256 1b7ef16e23d80be8ffb0decb0d2a664154c1fc0b45acb851aea00768d693ae76 | CONSERVADO | División transferencias; conservar.
+G166 | L1042 | SHA256 d84aaf43a23008570bb6a1571cee6ba48c8a25821e27cb7d7cc90a033497b828 | ESTILO | Puente reparto a cambios; combinar contraste entero/parte para mostrar mecanismo sin perder superaditividad ni régimen.
+G167 | L1044 | SHA256 56c738845a8ce646b5f47f365ad259e30b2ec05658fd95578b4b2612d7804761 | CONSERVADO | Define transferencia parcial; conservar extremo k=0 y movimiento entero.
+G168 | L1046 | SHA256 e453134dc763c9032f62d8c9ea0f3e2be8c2cb4b5185062a46afd128020e30cc | CONSERVADO | Identidad por pares; conservar expansión y W positivo.
+G169 | L1053 | SHA256 be3e733f5af10d6d570de43a620827f63111f13f621dfb4005e04f21fd3a121b | CONSERVADO | Enunciado/prueba fórmulas de transferencia; conservar todas las expresiones y denominador positivo.
+G170 | L1090 | SHA256 1d0ec568a8edba06135d72928e25d34bfb379a025bbf8e08b7f86a5af10cbd8b | CONSERVADO | Enunciado/prueba unicidad umbral; conservar cruce simple, discriminante y signos.
+G171 | L1110 | SHA256 5cb2d8a1f82d8339ac59c1fdbff45a83f9b4a4c2a5b2f6373cde1ac86818e1d0 | CONSERVADO | Aclara umbral frente a estacionariedad; conservar punto y coma para límite de monotonía y extensión por reflexión.
+G172 | L1112 | SHA256 485f4f1a3706ea8b721e4fec1ce6192878707f639f24427821414aeeb7921bf7 | ESTILO | Ejemplo crítico; conservar cúbica, raíz, enteros y masas reales, unir igualdad en umbral con comparación vecina.
+G173 | L1121 | SHA256 bf485dbf78901660611d80f7187f9b055badf8963155b797463254a3348afa85 | CONSERVADO | Transición a soporte general; conservar advertencia de unicidad no automática.
+G174 | L1123 | SHA256 99db80eff02793c39a70cea5923ff59c05da47d13aabc7170f0491b2f3c08748 | CONSERVADO | Enunciado/prueba cúbica general; conservar coeficiente líder positivo, denominador y rango de soporte.
+G175 | L1149 | SHA256 77f1f142e684b7ad581c57c106133653f2d8aca0ad4b11172fb6d0fc5e8f61a1 | CONSERVADO | Síntesis teórica y transición empírica; conservar punto y coma entre regímenes y limitación por configuración.
+G176 | L1151 | SHA256 fd108862a5ff0f7eebf519e0765b010b9d3cf6c3808f08db640972c54b683230 | CONSERVADO | División computacional; conservar.
+G177 | L1153 | SHA256 b53f07b6db7b6a59bee767365c541ea9987e77ace824aedd6a86e7c82a167dd4 | ESTILO | Puente y ejecución propia guiada; unir diseño empírico con fuente de protocolo; conservar coautoría y nombres de guías.
+G178 | L1155 | SHA256 51415bf2b766df0619102f5c7cc69bb541c50f0290783c907c8b06355ea0a53f | CONSERVADO | Roles de propuesta/artículo/código; integrar su diferencia con fuentes ya identificadas; conservar límites de ejecución y procedencia. Segunda lectura: Se conserva el original: roles de fuentes y ausencia de prueba de ejecución son límites distintos, sin nueva causalidad.
+G179 | L1157 | SHA256 329d6ff182cec7748b88d0d3357b5149fb7683bc67b2876f27de730a54028550 | CONSERVADO | División cálculo numérico; conservar.
+G180 | L1159 | SHA256 ffc3cd0bbd51009b4eca57b7ff1c60a4e6bc843df9e15455adccd74b2dae9da2 | CONSERVADO | Representación fija; conservar ceros y advertencia sobre reescalar soporte.
+G181 | L1165 | SHA256 dc485f940d403bba52995fd1a0fc2659660c373cc4e2d7398557623770c7a697 | ESTILO | Comparación conteos/proporciones; unir factor común y ranking, conservar condición total fijo.
+G182 | L1167 | SHA256 2d55cd649ce7d5f6993d3745c5fd8e209d0fe71678b590bbaab594ddbbb8be44 | CONSERVADO | Implementación SciPy y limitaciones; conservar función, opciones y advertencia de aproximación.
+G183 | L1169 | SHA256 7b2f7e4ebe92daf0b359092b62759733611d77a16d20b3358e7085f6f34c7c76 | CONSERVADO | Bisección operativa; conservar iteraciones, dimensión suministrada y límite de garantía temporal.
+G184 | L1175 | SHA256 8619e5a47dabfba3c181c3915aef0ffffcdd4984a5ee9159b236fe43fadfc649 | CONSERVADO | Tolerancias distintas y versión; conservar todos los valores, no atribuir plan a llamadas históricas.
+G185 | L1177 | SHA256 3b8c5d4d5d787c1b35168c9c0e8523314969f2d976428c4ddedd41ed85c6a308 | ESTILO | Casos mediana/media; conectar referencias con while, conservar rechazo bisección y método real de clase pública.
+G186 | L1179 | SHA256 975e8eeed086fad887d7e880eb35d3eb7fe071423362b060802ef518ff16b74f | ESTILO | Normalización índice y masas; unir potencia positiva y conservación de ranking, conservar denominador y condición unidad.
+G187 | L1186 | SHA256 ccd7650a0c4b28ea523830630981a0eec8d3e11ba4c68292e60308f4f5c43021 | CONSERVADO | División biblioteca; conservar.
+G188 | L1188 | SHA256 db6246baf8bc676b65fabe2a7812eff74c8c75d5b4089261201080a3f947a177 | CONSERVADO | Arquitectura software; conservar rutas y puntos y coma que separan tres ubicaciones paralelas.
+G189 | L1190 | SHA256 becb757ac5739730f870d5af9abece76d41616339af19309f698488b3d3e641c | CONSERVADO | Interfaz y bypass; conservar banderas, requisitos de coordenadas y diferencia compute/call.
+G190 | L1192 | SHA256 1c28e1213ca2f71fa7066fdbb046fe25af76de87da5a286344f505cdaa580c31 | CONSERVADO | Etiquetado fijo; unir lookup y ausencia de ajuste al histograma; conservar referencia A12 y comparación numérica del artículo. Segunda lectura: Se conserva voz activa original para lookup, más directa que la pasiva ensayada.
+G191 | L1194 | SHA256 bc46d3d5ba140d879309759d6084519970923a9ee12a134b1788bd9303eff8f6 | CONSERVADO | Dominio validador frente a teoría; conservar límites sin inferir convexidad de éxito numérico.
+G192 | L1196 | SHA256 8dbcf6c2a904f1ab328fa41e2e3840fd8374580bd81dcbe6cc65a62b046a6891 | CONSERVADO | Pruebas de implementación; conservar semilla, regímenes y límite frente a demostración.
+G193 | L1198 | SHA256 3107c4f386b94fd3d2603db118a14e585031751891ce57df86dc69cd338404cc | CONSERVADO | Entregables y CI; conservar versiones y evidencia limitada de ejecución remota.
+G194 | L1200 | SHA256 9797494a27494d5af4269e43b15d778c5afc264f158bc8e2ed572c46b3ce4060 | ESTILO | CLI y despliegue; unir interfaz de scripts con ausencia de entrypoint para contraste claro, conservar estado de objetivo.
+G195 | L1202 | SHA256 ff363302d86108cff2c5d93822b1b71a3a4d0be58d43c74bbf32f12af170b565 | CONSERVADO | División fuentes; conservar etiquetas dobles existentes.
+G196 | L1204 | SHA256 bc6c5922fcb7f1ce82e6252a8e93acc9bf846f6bbbfcf64976813f7c7c1a2f8d | CONSERVADO | Corpus y generador; conservar cardinal, orden lexicográfico y proporciones.
+G197 | L1211 | SHA256 733389bcfadbdb5aab09192f1f9525a5b22f258a3ef5fe598dc614140518875d | CONSERVADO | Palíndromos y cociente; conservar sumas, conteo y diferencia de total de progreso.
+G198 | L1223 | SHA256 1507ec2592fb25199ba40d679e80c442a9e8ad238cb630cb1e82dccfbaa2f528 | ESTILO | Unidad de análisis y alcance; unir contribución y simetría para evitar reinicio; conservar no equivalencia automática de correlaciones.
+G199 | L1225 | SHA256 11f95950e98ef9608caa22527a4ea9a3f5b6c1b0ea0110a811515b67596b54de | CONSERVADO | Datos expertos; conservar muestreo, campos y totales heterogéneos.
+G200 | L1227 | SHA256 90d1143dd6fb27cd1600fb4fdc71b6ac5e0e410fdef8f856223b6d56e8fecaf2 | CONSERVADO | Juicio agregado frente a KI; conservar tres tipos de dato y límite de reconstrucción individual.
+G201 | L1229 | SHA256 494e423575c2c584ab0abc961aac99b39f63efdcc724f033e3869d2f2704acad | ESTILO | Casos regionales descriptivos; unir función descriptiva con propuesta, conservar fechas y contribución colectiva sin cambio de atribución.
+G202 | L1231 | SHA256 da6d103cb097a0e3ed82d605b4bcaf0cb627fce889bbad4843bab5312a49aa89 | CONSERVADO | División protocolo; conservar.
+G203 | L1233 | SHA256 6712fb99f6044643b4d8224d729e12a0aab8e1e05593c173813c80069d60adb1 | CONSERVADO | Dos comparaciones y candidatos; conservar contraste y alcance del artículo.
+G204 | L1235 | SHA256 b25e2a1e6e97c029e3f4f0d847e0bdaf6415a6675319d9104187d0e3aa510573 | CONSERVADO | Tabla candidatos: revisar cada fila MEC, ER, EMD, VdE, TWD y KI; conservar parámetros, interfaces y notas.
+G205 | L1254 | SHA256 207fd3fa1c1fbe29d4fd272b5467cb928e84e4fdc4f976cb6a3d00c052b0b146 | ESTILO | Nombres de implementación y fórmulas; reunir normalizaciones ER/KI como explicaciones de reescalamiento, conservar epsilon y restricción EMD.
+G206 | L1256 | SHA256 f1a858682bb9d4123369d5c1db8e80e255c5357665a63d0c9aa30a0104f3a9eb | CONSERVADO | Exploraciones frente a artículo; conservar distinción de variantes.
+G207 | L1258 | SHA256 9efc92f0022556021e65697ec77818cf0ecd4466f180ddb67a6df00d4c03ce27 | CONSERVADO | Definición tau y tratamiento de empates; conservar fórmula y condiciones de denominador, invariancia y no Pearson.
+G208 | L1264 | SHA256 7021149e5e8623580333cfe3b0b82339a6690b0c6aa4e8ee5542e934fefa0d55 | ESTILO | Preprocesado numérico; unir regla corpus con contraste de validación y conservar distinción respecto a tolerancias.
+G209 | L1266 | SHA256 93cd34c60a06e6df1191ded93191796c43ff7b2aef932908239ea4ea04699c4f | CONSERVADO | Empates frente a permutación estricta; conservar stable sorting y advertencia metodológica.
+G210 | L1268 | SHA256 71eae23a76175362f61533ee1786f8af2e4e49175153632bed10fe611eac51d4 | ESTILO | Selección de referencia y límite de grids; unir pipeline y tabla de configuración para continuidad.
+G211 | L1270 | SHA256 53bbfe57b9dcbb0f7bce7676f7474a65fd238e8966c05c045a434b91e55b779b | CONSERVADO | Tabla tres fases: revisar grid, refinamiento, estabilidad; conservar todos los valores y semilla.
+G212 | L1286 | SHA256 76c8bb8ec747be8e59d9c4d7895ed037d3b230bffce206805eeacd452adde26d | CONSERVADO | Régimen exploratorio y criterio secundario; conservar parámetros bajo uno y selección de filas.
+G213 | L1288 | SHA256 219e9ac07f817273c0a84274f97176df0cd0f3b5edab1872f5e0a83989c275f4 | CONSERVADO | Unidad de remuestreo; unir conclusión de sensibilidad con descripción del procedimiento, conservar no refit y no expertos individuales. Segunda lectura: Se conservan dos últimas oraciones originales para hacer explícita y visible la ausencia de validación independiente.
+G214 | L1290 | SHA256 e1f5d8ae190c33774ec84002a10a4c59c6b84e4e1cb51dee6ccc3be9002c4c34 | CONSERVADO | Plan y evidencia; conservar distinción shortlist/top-k y preregistro.
+G215 | L1292 | SHA256 9977021441b519c6f360cf1793a5f54a546fbc6bd20bb6007fc93fec92f17df9 | CONSERVADO | División A12; conservar.
+G216 | L1294 | SHA256 d8194a3230b5548cdd4ab75208b20b6897e15bfefead0932c01d6d52f50c7daf | CONSERVADO | Clasificación y fuentes; conservar carácter deseable, contribución y universo sintético.
+G217 | L1296 | SHA256 a0a48b79689bb0c97dc4ede85a79912430dbe41a3b799308bd56d884d8fae8e3 | CONSERVADO | BiPol operativo y atribución README; conservar fórmula, partición por media y no extensión de garantías.
+G218 | L1302 | SHA256 0df38758a10a0651f65818c3f245553fb56875c108c8d1f14afa2c7045c6b205 | CONSERVADO | Percentiles frente a k-means; conservar porcentajes, criterios distintos y número de grupos no óptimo.
+G219 | L1304 | SHA256 c1da848cbcc6c93328981f5848464ec071739256b4c32cf087bf5609dfd02a09 | CONSERVADO | Lloyd: asignación y actualización; conservar ecuaciones, empate exclusivo, grupos no vacíos y ausencia de garantía global.
+G220 | L1317 | SHA256 9293cee94c81cbbec8f218816554d356278bb4ac94d50bc8bb13a690f8ab2188 | CONSERVADO | Procedencia histórica; conservar commit, root normalization, array desconocido y límites de ajuste; puntos protegen evidencias de distinta fuerza.
+G221 | L1319 | SHA256 40d7d6c817160811a535230a5063150386e234edac15acfe7fb927bfd809c6a2 | CONSERVADO | División reproducibilidad; conservar.
+G222 | L1321 | SHA256 fed8fed872d70146f7fe3f349baace6786561b10fb26ef8fe708cf4130f90ed6 | CONSERVADO | Requisitos de reproducción; conservar paralelismo inputs/config/output y distinción figura/protocolo.
+G223 | L1323 | SHA256 b249a8c604e93742de8d74179f656295c825b1bb197c61de9efb42dfa2f5c438 | ESTILO | Rutas y artefactos; conectar salidas con tabla, conservar ausencia de vínculo universal a figuras.
+G224 | L1325 | SHA256 0819eaef360e54795a171cebcda14fe428fb2ba98868faa59dea89cb20cbff5c | CONSERVADO | Recursos y temporalidad; conservar semilla, comparación de costes y workstation solo prevista.
+G225 | L1327 | SHA256 54c9619b9fd2e920be857357ca2226d9073bef49aa92bf84b7463c289654b0d4 | ESTILO | Determinismo y versiones; unir dependencia de versión con motivo concreto, conservar límites del registro histórico.
+G226 | L1331 | SHA256 51695a8cafecfbc22b399c2ffdc5c1617ceec1e612e083feb9f7d3594e84bfc6 | CONSERVADO | División resultados; conservar.
+G227 | L1333 | SHA256 f06eb5a52520c65c7502712ff04e46ed32dcfed811c38c1c9bc8e18835a9a7d4 | ESTILO | Mapa de resultados; integrar protocolos ya establecidos con dos comparaciones y dejar orden de resultados claro.
+G228 | L1335 | SHA256 1b576a73524c84ae820b8e0e5a564638625f30cdf677638f9d3b091c810f1fa7 | CONSERVADO | Distingue preguntas empíricas; conservar contraste y no sustitución de pruebas.
+G229 | L1337 | SHA256 ba894d347af0cae78e58e060add2ffbd11a9f9d6e3a87e0d9245af50a4a2b8c8 | CONSERVADO | División concordancia; conservar.
+G230 | L1339 | SHA256 f6db76d9e3bbb399d6abdefc9a90ee2f195d427f61f0363cf9afada535fc255f | ESTILO | Introduce matriz; integrar definición de entrada en referencia a figura, conservar identidad EMD y cardinal. Segunda lectura: ajuste contextual de sintaxis, antecedente o enlace; conservado contenido.
+G231 | L1341 | SHA256 c4623683bf38c1b8899b10a1cc2aa80b8758764b4a3b8f84e453248d7d2c3b08 | ESTILO | Leyenda matriz; integrar procedencia en oración inicial, conservar identificación del caso EMD.
+G232 | L1348 | SHA256 ddd34dec847382933f0ff86873435a8d08f8294174e5a30a5101cc95a329d10e | CONSERVADO | Concordancias referencia; conservar todos los coeficientes y no equivalencia de rankings.
+G233 | L1350 | SHA256 768652b63980dfde64d3d98cea3f873af28c08c63e1890836f5c9b11558a4d01 | ESTILO | TWD/varianza; conectar interpretación con evidencia de similitud, conservar no identidad.
+G234 | L1352 | SHA256 93e6882488f45ff211c16d4f96d8bd93574434c3298181d9c1c002edfb9c7a52 | CONSERVADO | ER por parámetro; conservar todos los valores y condición de excepción.
+G235 | L1354 | SHA256 8cd1a2e00e447710e9fd3aa2df0b465f4a4b56ea6a40187d8d0c765c8d02ebb4 | ESTILO | KI y contraejemplo; ligar limitación al cero algebraico, conservar perfil y positividad MEC.
+G236 | L1356 | SHA256 4946a707ea057a0876e95b7a9913e9401f0b5681d0aee59bb2d1cb35b2cb8c7b | CONSERVADO | Alcance de cross-check previo; conservar no regeneración y universo finito.
+G237 | L1358 | SHA256 f2e60d13fe4fb0bae78b3b405365c88fb0d60fb639276f58c7be02eb35ebcf02 | CONSERVADO | División experto; conservar.
+G238 | L1360 | SHA256 18b1d3126075b8d1cd9020ef0988ec5d9d0b9a488f2cfd7f5fb69ecfd3aedd3a | ESTILO | Datos frente a humano; unir figura y tabla como dos representaciones complementarias, conservar normalización y agregado.
+G239 | L1362 | SHA256 58baf14d4298446fbabd656580e2c838f76d79605f73da9b8310a50a1a5d4449 | CONSERVADO | Leyenda histogramas expertos; conservar origen e identificadores.
+G240 | L1369 | SHA256 343020911e45158fac4fa5a25d0e79e524bf5898e69d78a0d25b1c1bec054b93 | CONSERVADO | Tabla quince perfiles: revisar cada fila, totales y scores; conservar íntegra.
+G241 | L1397 | SHA256 90cd68af74fa2444a9f354839fbc3bfc31b5a31cacd3af8892e52cf42f0e871f | CONSERVADO | Coeficientes reproducidos y truncamiento; conservar nueve valores, empates y última cifra no redondeada.
+G242 | L1399 | SHA256 6d63ca9f2f9c90fb9a849c5c868fb3425994a1a0f95ba94519b6223df21f764c | ESTILO | Leyenda concordancia experta; conectar fuente con resultado y mantener 60 frente a 58.
+G243 | L1406 | SHA256 55d4cdce696887c272292df36a3b19e114b1c08e3fac75bbba484eaa2ac79a83 | CONSERVADO | Tau igual frente a orden distinto; conservar 105,99,6 y todos los cálculos.
+G244 | L1408 | SHA256 ca2ce02b39570b06ca41ef5ceca241ba17f982a12f7c6a0dd6c4cf643ac12d4c | CONSERVADO | Hipótesis parcial y sensibilidad; conservar alternativas y cambios de parámetros.
+G245 | L1410 | SHA256 1a01217b6a4f4439f40b3feca388158d2ca8e74f356870f24a33d055d0ed370b | CONSERVADO | Identidad vs salida numérica; conservar diferencias 1e-4, perfiles 8/15 y efecto de permutaciones.
+G246 | L1412 | SHA256 bd0c318eca983af10bcd1269edd546cec9a5e1923231d537bb3b9e4ffef4c490 | ESTILO | Lectura de perfiles; conectar uniformidad y comparación respetada por MEC, conservar extremos y seis discordancias. Segunda lectura: ajuste contextual de sintaxis, antecedente o enlace; conservado contenido.
+G247 | L1414 | SHA256 f292244ad06a18d7c2bfc82291d65bd77396f54b790b74b96908de031d68a7fd | CONSERVADO | Límite empírico; conservar selección y conjunto deliberado, no extrapolación.
+G248 | L1416 | SHA256 55903045276a40a0de6e051e5b5418d7cf9cd2dd896f728cd83b1bc2ad2490aa | CONSERVADO | División sensibilidad; conservar.
+G249 | L1418 | SHA256 763c535e25bcd18d7aebeb542f98952bbf99d7b9b6e018751f5c81e6f517277d | CONSERVADO | Grid y máximos; conservar resolución frente a tamaño de región y mapas.
+G250 | L1420 | SHA256 4edebf2d79ddc29bb04f51fcbc43940744eee18d20ae85d3bb720a18d3899c25 | CONSERVADO | Tabla coarse/refined; conservar todos los conteos y máximo.
+G251 | L1435 | SHA256 6ca1ca6b0680b9ced6f8a58a289b7ebf11d5faebadedf0756ddab41e140d0cd7 | CONSERVADO | Figura grids: revisar ambas subleyendas y leyenda principal; conservar escalas propias, recomendación secundaria y límites teóricos.
+G252 | L1452 | SHA256 bd40fdd34fa190d1e296f05c08703897a836fe2768cf98a89c5b4e50a9529f6f | CONSERVADO | Bootstrap/LOO; conservar medias y desviaciones, sin convertirlas en intervalos.
+G253 | L1454 | SHA256 589ce3143d991517c5aea7b810901eb9c68b22f7b8205d1f86dac98e244db67c | CONSERVADO | Win share; unir empate y consecuencia para que la interpretación siga al cálculo; conservar 0.01 y ausencia de probabilidad de victoria única. Segunda lectura: Se conserva advertencia probabilística en oración propia, pues el límite debe ser visible.
+G254 | L1456 | SHA256 291e7d3ec7516016bd305061607b4f1d82a9ba9513ea06ed78a405b5ab6a226b | CONSERVADO | Recomendación por Pearson; conservar tres estadísticas, parámetros y no sustitución de referencia.
+G255 | L1458 | SHA256 35eafd6378ed65745d04276a3ff9babbc4058126d3118fe4aa163fc836a85c0a | ESTILO | Cierre sensibilidad; integrar acuerdo múltiple y alcance local antes de conclusión limitada.
+G256 | L1460 | SHA256 00fd013e30f3e71644e795adbd2c625d69f6223348028b57100b94ceb5863632 | CONSERVADO | División clasificación; conservar.
+G257 | L1462 | SHA256 8605b11fcfa08aba2f6078883e9173f7494cd684f76b68f6bdaf5899e5192a89 | CONSERVADO | Conecta rankings con A12; conservar carácter histórico y precisiones de fuentes.
+G258 | L1464 | SHA256 3ece5cd7cdcbe99a9fd5fa89fe2e895992b1e9c7c7545838971f8fd1469aeb55 | CONSERVADO | Estadísticos y distribución de scores; conservar cifras, histograma y no clases naturales.
+G259 | L1466 | SHA256 8070dcb535f75e81cfa40da42e4595ad8925e5447c2cb08f799687dd27bb5221 | CONSERVADO | Tabla estadísticos: revisar tres filas; conservar medias, medianas y extremos.
+G260 | L1483 | SHA256 a87e9da05c1ba3930ad7208e32cc3a51b9ebd36804704a156b9db504c13097d9 | CONSERVADO | Figura percentiles 3x3: revisar leyenda completa; conservar imagen original y todos los cortes.
+G261 | L1490 | SHA256 3dbd00deae1cc51d1cd6a942921b753ba6a099816093186ce4bbe261711ce204 | ESTILO | Percentiles y conteos; unir referencias a dos tablas en relación paralela, conservar 34 por ciento y no igualdad de perfiles por marginales iguales.
+G262 | L1492 | SHA256 68a4117b796014922950dfb574a790b5abb78e91958ffbea4249be060bc1f317 | CONSERVADO | Tabla 54 cortes: revisar nueve filas; conservar cada cifra y orden.
+G263 | L1515 | SHA256 82bfd36b82e09195bfdcf2dfac69e404942cefce05207e6543eece5e66d8e3cd | CONSERVADO | Tabla conteos percentiles: revisar tres filas y los seis juegos de conteos; conservar cardinal de cada medida.
+G264 | L1532 | SHA256 7534ce33faf8e88ca27a21eec64dc0111e08dffa83d7412ab38ce6db06d183f7 | CONSERVADO | Centroides y grupos; conservar alcance de tres particiones alternativas y no criterio de elección.
+G265 | L1534 | SHA256 66ffa8141dbaa7c30a9d6204ca41a38012f2f3fed4472bc0ea57fc9db36d14ca | CONSERVADO | Figura k-means 3x3: conservar imagen, leyenda de filas/columnas y distinción centroides/cortes.
+G266 | L1541 | SHA256 264e6d25cfb1903181f256885a82fa6311f581d29f82a53ebfaa440c7209e397 | CONSERVADO | Tabla centroides y conteos: revisar nueve filas y todos sus valores; conservar íntegra.
+G267 | L1564 | SHA256 44e8bbc87bf9e09fe73a87c004c37da4c6f296ef3257528483898f77cb7b9272 | ESTILO | Comparación upper groups; conectar efecto con criterios para evitar explicación partida; conservar porcentajes y medidas.
+G268 | L1566 | SHA256 2898879d27679adfda16f74a1a1b179dc28e109451a63229bb06f2256e97b181 | CONSERVADO | Leyendas históricas frente API; conservar etiquetas exactas y distinción empate operativo/histórico.
+G269 | L1568 | SHA256 4765c35d762c547fcb0ea414efc1085eeecbec0180210956be2d25d27e8c1998 | CONSERVADO | Interpretación descriptiva A12; conservar límites sociológicos y extensión aún posible.
+G270 | L1570 | SHA256 63c0c7bfb21fa5bbc979946fa028830fcedee58f44695f21268dc3c806c07f0a | CONSERVADO | División rendimiento; conservar.
+G271 | L1572 | SHA256 0bde6cf83a348dd44dbe9eba6585927fea555e47d8b850352be94566aa1c0756 | CONSERVADO | Transición scores a recursos; conservar separación del artículo.
+G272 | L1574 | SHA256 3e47ce05e170d961fb06455db2a078e2b12ab1baefc3769c3fa8779f7b358897 | ESTILO | Protocolo tiempos corpus; unir configuración numérica con llamadas, conservar máquina y exclusión de generación.
+G273 | L1576 | SHA256 21184935d80002237bdfa5b2f260f001a3243cd8d8e824276263559b421ca0d8 | CONSERVADO | Tabla tiempos dos implementaciones; conservar todos los valores y unidades.
+G274 | L1591 | SHA256 304957ec596fb1e1207ae3f58b7c5758132b24a4943fdb0882d5ef8968689732 | ESTILO | Lectura tiempos; unir alcance de tiempo con trabajo restante para que limitación sea concreta; conservar factor y factibilidad.
+G275 | L1593 | SHA256 5ef69e2e1a235a6378d6fe6553ba747b9df8021e27f9519a0ee5337eebf4ca90 | CONSERVADO | Soporte y muestreo; conservar once tamaños, 1000perfiles, semilla y warmup; punto y coma enlaza tabla y figura.
+G276 | L1595 | SHA256 81c8897660a332530874ae7f6b84e44a350d61402df36619254adf0b9e3799b8 | CONSERVADO | Tabla seis tamaños soporte; revisar cada fila y tres series de tiempo, conservar datos.
+G277 | L1614 | SHA256 28dd21fecf100209fb1fe2747a01ced1abfff01cdfff7f3d82f4afdbd9fa000c | CONSERVADO | Figura runtime dos paneles; conservar ejes y pendiente finita no asintótica.
+G278 | L1631 | SHA256 a670965c66dc7a5e2013255e395b8dbccfe6377d97d16da001517f4fbfce0b63 | CONSERVADO | Cambio de rendimiento por tamaño; conservar todos los umbrales observados y dependencia algorítmica.
+G279 | L1633 | SHA256 f68b167b6d203f5e257a43c631a3a132c08b40fb801bfd8c36cce365c37fa244 | CONSERVADO | Crossover en muestreo adicional; conservar tamaños, tolerancia y no universalidad.
+G280 | L1635 | SHA256 1d48f654a6da13d6631988a0850dc234b99d0e0bff7e8ead2635631e4eca370b | ESTILO | Errores de solvers; unir evidencia numérica con cautela porque son la misma interpretación; conservar máximos, muestras y no error uniforme.
+G281 | L1637 | SHA256 2f51a78c5c019087e5d3f977481b3cfaa814f4319bd716745f09ee6eccbc711a | CONSERVADO | División regional; conservar.
+G282 | L1639 | SHA256 cc87835244bd179223e498830fddeeab91bfcc4b2c39be3d6e6ff1b4b38d03e4 | CONSERVADO | Procedencia y autoría regional; conservar contribución a figuras, análisis colectivo y límites poblacionales; sin cambios de atribución.
+G283 | L1641 | SHA256 691f051d6ef9a6d0e4536135a13ba766cf496740977497ef8af76cc3293e4838 | CONSERVADO | Caso jóvenes; conservar todas las proposiciones, fechas, rangos y comparaciones ordinales.
+G284 | L1643 | SHA256 c05ddab6c70ce750a11a05f4d1c1137b6ffbc304fa4fd237351c292f1942fa2d | CONSERVADO | Caso Concejo; conservar ordenings, scores reproducidos y no inferir revisión histórica; sin cambios de atribución.
+G285 | L1645 | SHA256 1f0d302925a9afbcbd12a56c9d1b690e2175224238a12dcf0577a8f39b72b716 | CONSERVADO | Cierre empírico a evaluación; conservar vínculo a propuesta y jerarquía actividades.
+G286 | L1648 | SHA256 aa9a574951f5646534bd554e670c58d62498ed0cf48129e9ddb7b95c3b93629b | CONSERVADO | División discusión; conservar.
+G287 | L1650 | SHA256 6e6a1a2d15b1ec966f95463b160c9263890ec790ed7b771c4a5c5cd37a25ad10 | CONSERVADO | Dos criterios y tipos de evidencia; conservar dos puntos explicativo y límites de pruebas/experimentos.
+G288 | L1652 | SHA256 9cafb64c7520cdfb8e44fc19231cadbbac30d67855cb7fd8525f7a417b2512db | CONSERVADO | División interpretación; conservar.
+G289 | L1654 | SHA256 26ecc44a75ddfad0f5bb17257630330f2664395baf191767d3c70d16d82fdcde | CONSERVADO | Síntesis significado y resultados; conservar contribución sin exclusividad y cita colectiva.
+G290 | L1656 | SHA256 0f42c3f73ca4f94b093ab5995d3b4874204b459d45a3ce48c713dbac178a6f72 | CONSERVADO | Hipótesis y corrección paramétrica; unir fallo de Axioma 1 con régimen general en misma oración; conservar central-split y KNS separados. Segunda lectura: Se conserva régimen y fallo de frontera en oraciones separadas: el segundo no prueba por sí solo la suficiencia del primero.
+G291 | L1658 | SHA256 6f05b3bcc7ef0c727f481ca9568a2aa7fe538c3b7f30a9077056fdd36c90c69f | CONSERVADO | Comparación conceptual y empírica; conservar punto y coma que limita interpretación de concordancia.
+G292 | L1660 | SHA256 c0c41633aa64e056d8f9fbbc579b2a86ba33dffa0dacfbe618778b25fc59ea04 | CONSERVADO | Extremismo y transferencia; conservar parámetros de tipping y alcance del resultado.
+G293 | L1662 | SHA256 aff1b9cc91319f827e7d5bb7d5a2e7763871c9be631cd0af1ec6c0a9023ee0c4 | ESTILO | Juicios expertos; unir apoyo al benchmark con apoyo parcial a hipótesis; conservar igualdad con ER y no superioridad universal.
+G294 | L1664 | SHA256 d32559569db339e7472e71d1051df25e9b534e5a8cebb4074836a45f4c6e788c | CONSERVADO | Consenso óptimo y significado social; conservar condiciones y no predicción ni aceptación.
+G295 | L1666 | SHA256 351f0c597a94f9ce7beda83f122a50ee1259872a01748889f8f424be49084e8f | CONSERVADO | División cumplimiento; conservar.
+G296 | L1668 | SHA256 364ea0d3334a92cd887b1f03cfaece5a2cbc92756e82f9d89e532fec141f7db1 | CONSERVADO | Objetivos y evidencias; conservar no verificado frente a inexistente, punto y coma aclaratorio.
+G297 | L1670 | SHA256 ea300dd86786ba4233d038315abdcc686c10f5a66ce0e177790c0192eb061218 | CONSERVADO | Tabla objetivos: revisar cinco evaluaciones; conservar software no verificado, top-k no obligatorio y atribución figuras regionales.
+G298 | L1688 | SHA256 3b507b23332ed2bd7950f0b6c91e3c30cd59ad250b961bb73588aacc60a67133 | ESTILO | Actividades formales/corpus; integrar alcance con explicación de condiciones, conservar jerarquía propuesta. Segunda lectura: ajuste contextual de sintaxis, antecedente o enlace; conservado contenido.
+G299 | L1690 | SHA256 0832f025614ff9dc656c5eff83069387133551511ec1dc48514ee470cfb0b6df | CONSERVADO | Software y procedencia; conservar 90 tests como registro previo y límites exactos de evidencias.
+G300 | L1692 | SHA256 bdaf7795e0229301f99b384a7f1afb49c7f9346470b044a8cfc02db82bf4d901 | CONSERVADO | Regional según propuesta; conservar asignación al equipo y separación de benchmarks.
+G301 | L1694 | SHA256 a6c5c6ccaf3aff66871c70abaf4832b2730436df0d2fbd736e19603a37b3d421 | CONSERVADO | Jerarquía de actividades y evidencia A11; conservar limitación sobre tests finitos y existencia de cotas.
+G302 | L1696 | SHA256 aaa06a5b40a79b72d84f0520b474caf9afe7fcabcb5ad08bd6c611d1b978a880 | ESTILO | A12 ejecutada y límite de reproducción; integrar disponibilidad de normalización con vínculo aún no verificado, sin negar ejecución.
+G303 | L1698 | SHA256 b253e2919bb8a0014991b00980f74cb56ddf16ce1e862152d2ca5f3233059d55 | CONSERVADO | A13 y A14; conservar estado de feature requests y desarrollo propio guiado y colectivo.
+G304 | L1700 | SHA256 938c4255175ba9f81f6befb8905d51e5e03fc7c9c318f6fab32cc9d0fcec3d49 | CONSERVADO | División validez; conservar.
+G305 | L1702 | SHA256 01301d0f287d57ca476e50e14b2501fe43ae8f0ae9fca1c6038158b9794e3cce | ESTILO | Dominio y geometría de escala; conservar supuestos y límites de extensión. Segunda lectura: ajuste contextual de sintaxis, antecedente o enlace; conservado contenido.
+G306 | L1704 | SHA256 e816c7a7c72540598d106249a896db51d9c6adf2e777a2c4a09e7ea6bd956389 | ESTILO | Masas y parámetros; unir normalización con lo que no elimina, conservar escala y no medición psicológica directa.
+G307 | L1706 | SHA256 cb78e59c0b903088793b21e53c7ba2cac024e4ef55335c279cceaa2e793eb66d | ESTILO | Benchmark y elección; integrar tamaño con uso compartido para selección/evaluación; conservar máximos múltiples, no independencia y régimen exploratorio.
+G308 | L1708 | SHA256 9161f3bf68282b56d71379681b5820df80a53102b1d71c4ffc7f35e579a4a64d | CONSERVADO | Exhaustividad y multiplicidades; conservar alcance total100 y score simétrico frente a correlación.
+G309 | L1710 | SHA256 3fc1fa85c7f26f66f78109f1dbc59441edd3af0eca9b902fe57b93dadab466a1 | CONSERVADO | Ties y precisión; conservar diferencias pequeñas y garantías complementarias; punto y coma separa salvaguarda y límite.
+G310 | L1712 | SHA256 196996204fe9de894e4f1e537b8d2e7b2dad854d43842a8376a4cd779b3a9e93 | ESTILO | Rendimiento con alcance; unir implementación comprobada y no universalidad; conservar comienzo400 y distinción operaciones/tiempo.
+G311 | L1714 | SHA256 12f98255a6d3e7d6e21ded685d8d9b893cdc401cf53f2d70b3a946f1c9200096 | CONSERVADO | División uso responsable; conservar.
+G312 | L1716 | SHA256 633b4a48e7445b2b1abc19055f843d778334a52a9df1aa89a936f9e94345fd27 | CONSERVADO | Diagnóstico descriptivo; conservar contextos requeridos y no causalidad ni predicción.
+G313 | L1718 | SHA256 f9c3d01d21577b5f7f9e0e655d1ae4c337a04260516202784ef9dbd9aa864655 | ESTILO | Procedencia de datos; unir conjunto evaluado con ausencia de nueva recogida; conservar agregados y restricciones de uso.
+G314 | L1720 | SHA256 b6ed963dfb9aef53b77ea10ac11201b3159435f8c7c9d48f349ef9bb298ac15c | ESTILO | Interpretación social del óptimo; unir dos últimas oraciones redundantes en condición aplicada explícita; conservar pregunta abierta colectiva. Segunda lectura: ajuste contextual de sintaxis, antecedente o enlace; conservado contenido.
+G315 | L1723 | SHA256 67bc59716973e8da081fc74f778e5a25eca8afb6a8b72bbef9555b59edd7d9fc | CONSERVADO | División cierre; conservar.
+G316 | L1725 | SHA256 5d074fe5e9d1a7c10adc4fdafc59defa61213badc0c6806e1fd4788f921d7e38 | CONSERVADO | Subdivisión conclusiones; conservar porque diferencia hallazgos de trabajo futuro.
+G317 | L1727 | SHA256 42b3e9d0d18bcb99cf7327c5e82df676e02e4e652201a055c1a92fdd6fa527d2 | CONSERVADO | Respuesta cualificada; conservar contenido formal y alcance benchmark.
+G318 | L1729 | SHA256 6043e565751b72fe0f85f0a7d63bd41f5d3e915d2ea4b1888602e17e2c477c22 | ESTILO | Síntesis matemática; unir unidad-masa y masa general por contraste while, conservar todas las condiciones y ecuaciones.
+G319 | L1731 | SHA256 eb06b8aeb5b6a542df0b5aa38bd3cf03fdf0587001dd09f3c87b55a346cdb28e | CONSERVADO | Síntesis axiomas; conservar restricciones y no equivalencia ER/KNS.
+G320 | L1733 | SHA256 00c46a785162061479b793874721c2583e6853db74e322e21b10caf649555862 | ESTILO | Interpretación transferencias; conectar tamaño/separación/cantidad con distinción establecida; conservar régimen cuadrático y ausencia de regla universal.
+G321 | L1735 | SHA256 1ff7fa15cd67017a1b55fe9bbd18c894105fdffd7c75e225605b800425d43734 | ESTILO | Síntesis empírica; reunir apoyo parcial y selección/evaluación compartidas con because; conservar tau y varios máximos.
+G322 | L1737 | SHA256 e4d33353225a9496f3d87f9ebe9384fbe0ca1c44e2498c7c2a7a1a86dc87eb32 | CONSERVADO | Implementación y objetivos; conservar entregables no verificados y atribución regional intacta.
+G323 | L1739 | SHA256 f3e2f319ad3ab0e8457d2dcbaa08e7e1d5bb7d6dc5b5863255468fa375892926 | CONSERVADO | Cierre argumental; conservar límites y grado de promesa.
+G324 | L1741 | SHA256 e104bbcab03de310d05e7f8c1993bb42708bfb76a1335c1fdd4308a0c569069b | CONSERVADO | División trabajo futuro; conservar.
+G325 | L1743 | SHA256 d3dc523d9e0851856aaa305f97084210c6f3d2db840af0f224b6973648e4d329 | ESTILO | Extensiones de dominio; conectar distancia general con análisis necesario usando which, sin convertir futuro en compromiso.
+G326 | L1745 | SHA256 b5de2df99cde5371f49d1dd3e873b956da5f72019a486aa36b49fa873af51170 | CONSERVADO | Elección de parámetros y tipping; conservar posibilidades, no obligaciones ni solución afirmada.
+G327 | L1747 | SHA256 8dfe598ab6ace8697a962aa316c3d84efcdbd702f6cf032e93fb0591c4d01465 | CONSERVADO | Nuevos corpus como posibilidad; conservar condicionales y relación con incertidumbre.
+G328 | L1749 | SHA256 8b97e5c7754a17362c2f59269f7180f1eca9f6656c7e8798f048c1d77d8ae617 | CONSERVADO | Dinámica futura; conservar necesidad de modelo explícito.
+G329 | L1751 | SHA256 5b54494a2851570e93246b09bb36d25137e305c7ae1b5df2228581e672402d4a | ESTILO | Interpretación futura del óptimo; integrar tratamiento estructural y evidencia necesaria como contraste de alcance; conservar carácter abierto.
+G330 | L1754 | SHA256 f814de02c6e64e049ad106b2625252a48c8d588d7bca52c753cd19d839c78c8f | CONSERVADO | Inicio apéndices; conservar comentario y división sustantiva.
+G331 | L1759 | SHA256 d26432a279cf52c325f014bed3665c3e081366089e8fd4751eb20601d58159aa | ESTILO | Puente a prueba algebraica; unir procedencia con propósito, conservar no extensión automática a soporte general.
+G332 | L1761 | SHA256 50bf09bfd5139dd9e64a2320e968aa67eeb9ab54a5a7a73e77e8dbd0d78414cb | CONSERVADO | Prueba: cambio de variables, prefactor y signos; conservar todas las fórmulas y equivalencia de intervalos.
+G333 | L1776 | SHA256 054e84bcb2d48c8731f85cf38d60c2285fad5a017c254bd9ab7d7508a75fc051 | CONSERVADO | Prueba: discriminante y positividad; conservar polinomios A-E y condición u,s>0.
+G334 | L1804 | SHA256 7216796f448bac62fcae8e85d180fc67637c3fc967bd000724f4690659c305aa | ESTILO | Cierre de prueba; unir estructura de raíces y simplicidad bajo signo negativo, conservar localización por signos de extremos.
+G335 | L1809 | SHA256 e24e6fb4a7ec1122f65fc99e5dd2c8fe5d89eb5b17633033ebb3fbc6c1139c89 | CONSERVADO | División financiación; conservar.
+G336 | L1811 | SHA256 d3e5a81a1f5715ebf909016e728475d2a476287dc61a4e616396480b88ed18be | CONSERVADO | Naturaleza de estimación; conservar gasto previsto frente a auditado.
+G337 | L1813 | SHA256 a25af6462122ffe2a13af44f97ac77c1a15b666e58a81e8d6da703dc62ae71e4 | ESTILO | Financiación y unidades; usar Weekly commitments en lugar de Dedications y coma de relativo para unidades, conservar BPIN y moneda.
+G338 | L1815 | SHA256 319795c71403b0e761732990e4b00da946d4ac3fcddd283f50d285d542285a35 | ESTILO | Tabla de personal: revisar cinco filas y total; conservar todos los nombres, roles y cifras, corregir etiqueta Cost hour a Cost per hour.
+G339 | L1836 | SHA256 88feb2206c0434e2200b6d356c4693562341b37d9dcd4715d9d6eb54009ef9e1 | CONSERVADO | Bibliografía: manuscrito A12, autores, versión, fecha y páginas; conservar registro de fuente sin actualizar versiones por estilo.
+G340 | L1844 | SHA256 2f7b516b96d36d446ead1fbbef94cd7dc318c0781cc79512ebe801c75eca15bd | CONSERVADO | Bibliografía: reporte propio, título, fecha, sección, archivo y URL; conservar íntegro y sin imitar errores de prosa del reporte.
+G341 | L1851 | SHA256 a369985ea547f43055266214d1dcee339a92be980e7a1482820ddc63e9f0295b | CONSERVADO | Bibliografía: manuscrito complementario, autoría colectiva y recepción19Oct; conservar.
+G342 | L1856 | SHA256 c570ec5eeeb8ec20d3cb400c5fee67caa148c38f8806e27d6262dc92b5cafc5b | CONSERVADO | Clave y etiqueta artículo2026; conservar.
+G343 | L1858 | SHA256 d0fa1ba115847548b38dbc10c6f20986d429e13570bc2454dec288824828fd9b | CONSERVADO | Artículo MEC: autores, título, DOI y arXiv; conservar títulos y datos editoriales.
+G344 | L1871 | SHA256 97869a28818e147aae80b1f4d539376848c5e7a3ada4e4d5e54886c057e6276a | CONSERVADO | Clave fuente cultural; conservar.
+G345 | L1873 | SHA256 da241a5d11f275ac9b1a97f61c76716effd6d9594035a837c6310f2d5f4fec09 | CONSERVADO | Título español y datos de acceso; conservar idioma, cita y URL.
+G346 | L1880 | SHA256 de7bb0553a615b54ab9f3f9c6e2be6d9f420a8a2f35152e426ee395ec3945fbc | CONSERVADO | Clave Van der Eijk; conservar.
+G347 | L1882 | SHA256 8cd7d38354f5709c550d290059d3f9a9996816b08dc6866d2880d04d92a62581 | CONSERVADO | Artículo VdE: título, revista, volumen y páginas; conservar.
+G348 | L1889 | SHA256 71894d69b3543adbfc6f75c74fa4f325b7f2d1919f6383a04bb435f3663fe053 | CONSERVADO | Clave ER; conservar.
+G349 | L1891 | SHA256 85792a0f6fae3c8aa3e7f6825314a265106ff1c99c714f58d39ea62306bd72f5 | CONSERVADO | Artículo ER: autores, título y datos editoriales; conservar.
+G350 | L1898 | SHA256 d5b12c39e2ce57a39843bc1c8d5fcf7c25bfb1fd1ffd529c2859fd5cf5758568 | CONSERVADO | Clave Festinger; conservar.
+G351 | L1900 | SHA256 41fe0ed6604d093bc236805cd8a6dcec4dadf3d82cc258f84f80705a75de5754 | CONSERVADO | Libro Festinger: título y editorial; conservar.
+G352 | L1905 | SHA256 ddfaf14a9b1eea2805a7a575abf97fbb47d14bb9d96d31dca8778c79d0b1e2a5 | CONSERVADO | Clave Said-Hung; conservar.
+G353 | L1907 | SHA256 622d25ff31d01b9bc18c6f5b109c8b2d363f272c8f8bec711aaace8b8a8e065e | CONSERVADO | Artículo contexto colombiano: título español y datos; conservar.
+G354 | L1917 | SHA256 974ce9bafef2721dd79d2d4ce0e80bc3315e345af97f406d3191a29ab0a30966 | CONSERVADO | Clave Geher; conservar.
+G355 | L1919 | SHA256 af8ad0aa9a456e3fa627439b5e6ca9688ef7f66c6b6f23a6a6617a8d9d83338d | CONSERVADO | Artículo Wasserstein: nombres, título y datos; conservar guion propio del título.
+G356 | L1928 | SHA256 e7ef8ccaf6ce491fee1593998680e6d6c29f130b67b50f0f65b2a418e6a28002 | CONSERVADO | Clave KNS; conservar.
+G357 | L1930 | SHA256 1718f4f9af2a391ee072bd461311030afe1a8fcf2d303a98cec38a83aa39f010 | CONSERVADO | Artículo caracterización: autores, título y datos; conservar.
+G358 | L1939 | SHA256 b57fe04b67e977e5a2387369e3d7b2ca09adf7d3ac187e4c8dd4f898778d337f | CONSERVADO | Clave Koudenburg; conservar.
+G359 | L1941 | SHA256 ecec8335d5afb7d61255c2f9161c6ca0b46d30e4b757fb276d03091eaa202821 | CONSERVADO | Artículo experto: título y datos; conservar salto de fuente sin efecto semántico.
+G360 | L1951 | SHA256 63461c0ca2e1fe6ec2d594ac92c9d6573606fcc607d6ca1d1d00f834995b86be | CONSERVADO | Clave Lupu; conservar.
+G361 | L1953 | SHA256 b293cad797238522b6d3d4053c8f7963b4a9c9ab87f6d108ef76cb34a348c212 | CONSERVADO | Artículo congruencia: título con dos puntos y datos; conservar título original y puntuación.
+G362 | L1962 | SHA256 baa0f22779c1ecf0b755485cf64616d1af4a8fbee9ae956f27a2ff820d56ac98 | CONSERVADO | Clave Rockafellar; conservar.
+G363 | L1964 | SHA256 c1ec978437fbfc4fa82380aed4d22cfe9a9a5b2a95521cb2061ad5d5abfecb38 | CONSERVADO | Libro convexidad: título y editorial; conservar.
+G364 | L1969 | SHA256 46bd709d102e5d1eaf8ceabadb3e911d47ffbc53172db3debac93330cc07c197 | CONSERVADO | Clave EFE; conservar.
+G365 | L1971 | SHA256 3375dfb78ff120d3e4e7a55b700b45aa8c845fe346d2195e6ae2f1f361b29d98 | CONSERVADO | Contexto noticioso: título español, fechas y URL; conservar sin introducir cambios fácticos.
+G366 | L1978 | SHA256 4c5c3155686cdd79d2f239512a20db90839a0dc96b2d5bb0e64fe6114ca26e02 | CONSERVADO | Clave TajfelTurner; conservar.
+G367 | L1980 | SHA256 29d505aa495bbe570aefdbafcc0944e32327f3d8ae5836db909b9b8517c482f7 | CONSERVADO | Capítulo identidad social: autores, editores y páginas; conservar.
+G368 | L1989 | SHA256 73b7e804eb455a146c38fd86355b3020b495b92f0c5690aa4908570e78ee4df9 | CONSERVADO | Clave TastleWierman; conservar.
+G369 | L1991 | SHA256 0501fa66ae7191cda02e3805b1cd8679a6d661662c6ed96c98b32c72c3bc72e4 | CONSERVADO | Artículo ordinal: título original con dos puntos y datos; conservar.
+G370 | L1999 | SHA256 12cf8a1837e34d4c1cf54710755f2a60350473c3d53ef4ad69ee5ee997f38e1b | CONSERVADO | Clave Javeriana; conservar.
+G371 | L2001 | SHA256 2803ebb36bee46326c6353eeaf11c25b127ba7acb46c99259a4782d0d8c2dc4f | CONSERVADO | Fuente institucional: título español y acceso; conservar.
+G372 | L2007 | SHA256 544ea66c492f1115eace41ad5d95e1129d8fef88a2e7a540612eccbfcd935643 | CONSERVADO | Clave Vallender; conservar.
+G373 | L2009 | SHA256 00937233fe1e04db9ba69f19295cdf6db51eb9e87d29f5e6fc18b987a1bf5dd8 | CONSERVADO | Artículo transporte: autores, título y datos editoriales; conservar.
+G374 | L2016 | SHA256 954c34b123d74df3ca7f98318cbd9ee5d38e67e67a0a2032e7cdd19fdbf464ec | CONSERVADO | Cierre bibliografía; conservar.
+G375 | L2018 | SHA256 7c0796754f02f5feb9aadd6a37d7145d65bd53ddb0779dba48832b3bbb06fcb2 | CONSERVADO | Cierre documento; conservar.
+FIN DE LA REVISIÓN GLOBAL DEL 20 OCTUBRE 2026
