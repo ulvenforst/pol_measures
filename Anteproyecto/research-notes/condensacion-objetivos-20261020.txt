@@ -1,0 +1,61 @@
+Condensación localizada de Objetivos — 2026-10-20
+
+Autorización: proceder con los hallazgos de redundancia; contrastar el nuevo
+anteproyecto adjunto, aplicar russellian-clear-writing, releer el capítulo y
+hacer una segunda lectura desde portada hasta el final de Objetivos.
+
+Punto de partida: b99b93830f1910cb8d4c1967407130902689802e.
+Rama: snotra/revision-tesis-cap2-20261019. No se crearon ramas ni worktrees.
+El editor anterior no dejó cambios de fuente. Estaban modificados .DS_Store
+y benchmarks/.DS_Store, y sin seguimiento src/.DS_Store y tests/.DS_Store.
+Estos archivos permanecen separados de esta revisión.
+
+Fuentes realmente consultadas antes de editar:
+- Skill completa /Users/ulvenforst/.agents/skills/russellian-clear-writing/SKILL.md
+  y references/editorial-basis.md; guías de párrafo y transiciones de Harvard,
+  y concisión de Purdue.
+- Nuevo adjunto Library libfile_69b6a6cee0148191a898f7e30b7f909f,
+  file_0000000032b08230987ecba0a20a8bd9, Anteproyecto_de_grado-vfinal.pdf.
+  Lectura directa de Library; contraste de pp. 9 y 12–18. Descarga del mismo
+  adjunto para inspección visual de p.16, tabla 3 y colores: azul A1–A6,
+  A8–A10 y A14; gris A7 y A11–A13.
+  SHA256 del adjunto: 7b6191884d410d4d3cc00117e146d5141bf107302b177c862e5ef551f99c1c3b.
+
+Cambios: apertura sin repetir el objetivo general; supresión del anuncio de
+los cinco específicos; catálogo obligatorio abreviado con códigos, CI/CD,
+GPL y aportes de texto/figuras A14; supresión de cierres repetidos; remisión
+precisa a la evaluación en §8.2. La remisión se abrevió tras la inspección del
+primer PDF para evitar una línea suelta con una palabra partida en la página
+siguiente. No se añadieron encabezados ni fragmentación. El texto del capítulo
+pasó de 966 a 833 palabras separadas por espacios (incluye comandos TeX).
+
+Relecturas realizadas:
+1. Capítulo completo, párrafo por párrafo y cinco ítems, frente al nuevo
+   anteproyecto y la skill: procedencia, artículo conjunto, compromisos,
+   requisitos, condiciones y alcance conservados.
+2. Nueva lectura continua del fuente desde portada y resumen, introducción,
+   pregunta/resultados, revisión conceptual completa y final de Objetivos
+   (líneas 1–297 tras la edición). La secuencia conecta criterios de la revisión,
+   procedencia, objetivo general, específicos, límites y evaluación. No se
+   identificó necesidad de editar otros capítulos. El cierre abreviado recibió
+   una comprobación adicional en fuente y PDF tras el ajuste de composición.
+
+Verificación:
+- Comparación con b99b938: fuente anterior y posterior a Objetivos idéntico;
+  objetivo general, cinco ítems, cuatro párrafos de alcance y advertencia sobre
+  plan/ejecución/prerregistro idénticos. A12 sigue deseable y realizada en §8.2.
+- Tectonic --only-cached --keep-logs --keep-intermediates sn-article.tex,
+  en Anteproyecto: compilación final correcta, salida 0; PDF 71 páginas.
+- Inspección visual de páginas PDF 13–16 (impresas 12–15); nueva inspección
+  de páginas 15–16 tras abreviar el cierre. Sin texto cortado ni solapamientos.
+- Auxiliar confirma subsec:discussion-objectives = 8.2; enlace PDF de la
+  página 15 apunta a subsection.8.2 y existe su destino.
+- Sin referencias indefinidas. Avisos de caja fuera del capítulo: línea 84
+  overfull 4.25945pt; líneas 1243,1248,1681,1682 underfull. También aviso
+  inputenc y destino duplicado @page.1; no impiden generar el PDF.
+- git diff --check correcto. No se ejecutaron pruebas experimentales: esta
+  modificación es editorial; compilar no demuestra corrección matemática.
+
+SHA256 fuente final: 347428026844f3dce7c7477275d6e63e4bde809504ec959a442977678c8cf9e5.
+SHA256 PDF final: aae58e3bb227eb0706ef957a40ea13cef0ec7709dbe40345abc6ac25507141d9.
+PDF habitual: Anteproyecto/sn-article.pdf (generado, ignorado por Git).
