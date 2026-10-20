@@ -1,0 +1,361 @@
+{
+  "artifacts": {
+    "csv": "/Users/ulvenforst/Codex/University/pol_measures/benchmarks/support_scaling_mec_vs_er/support_scaling_crossover_eps1e8.csv",
+    "linear_plot": "/Users/ulvenforst/Codex/University/pol_measures/benchmarks/support_scaling_mec_vs_er/support_scaling_crossover_eps1e8_linear.png",
+    "loglog_plot": "/Users/ulvenforst/Codex/University/pol_measures/benchmarks/support_scaling_mec_vs_er/support_scaling_crossover_eps1e8_loglog.png",
+    "validation_csv": "/Users/ulvenforst/Codex/University/pol_measures/benchmarks/support_scaling_mec_vs_er/support_scaling_crossover_eps1e8_validation.csv"
+  },
+  "config": {
+    "alpha_er": 0.8,
+    "alpha_mec": 2.0,
+    "beta_mec": 1.15,
+    "dtype": "float64",
+    "epsilon": 1e-08,
+    "seed": 20260528,
+    "support_sizes": [
+      200,
+      225,
+      250,
+      275,
+      300,
+      325,
+      350,
+      375,
+      400
+    ]
+  },
+  "metadata": {
+    "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+    "processor": "arm",
+    "python": "3.14.3 (v3.14.3:323c59a5e34, Feb  3 2026, 11:41:37) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "repo_root": "/Users/ulvenforst/Codex/University/pol_measures"
+  },
+  "results": [
+    {
+      "checksum": 2.0439647067877775,
+      "distributions_per_second": 10871.10631538539,
+      "loglog_slope": 0.436544505142541,
+      "measure": "mec_bisection",
+      "samples": 1000,
+      "seconds_per_distribution": 9.198695799568668e-05,
+      "support_size": 200,
+      "wall_seconds": 0.09198695799568668
+    },
+    {
+      "checksum": 2.043964709607348,
+      "distributions_per_second": 13061.153350885485,
+      "loglog_slope": 0.1338099229582563,
+      "measure": "mec_scipy",
+      "samples": 1000,
+      "seconds_per_distribution": 7.656291700550354e-05,
+      "support_size": 200,
+      "wall_seconds": 0.07656291700550355
+    },
+    {
+      "checksum": 27.798358991758203,
+      "distributions_per_second": 19241.82402819433,
+      "loglog_slope": 1.778753409810442,
+      "measure": "er",
+      "samples": 1000,
+      "seconds_per_distribution": 5.1970125001389535e-05,
+      "support_size": 200,
+      "wall_seconds": 0.05197012500138953
+    },
+    {
+      "checksum": 1.8160892609374653,
+      "distributions_per_second": 10342.197459883264,
+      "loglog_slope": 0.436544505142541,
+      "measure": "mec_bisection",
+      "samples": 1000,
+      "seconds_per_distribution": 9.669124998617918e-05,
+      "support_size": 225,
+      "wall_seconds": 0.09669124998617917
+    },
+    {
+      "checksum": 1.8160892634062433,
+      "distributions_per_second": 12913.973567014591,
+      "loglog_slope": 0.1338099229582563,
+      "measure": "mec_scipy",
+      "samples": 1000,
+      "seconds_per_distribution": 7.74354999884963e-05,
+      "support_size": 225,
+      "wall_seconds": 0.0774354999884963
+    },
+    {
+      "checksum": 25.309927863154467,
+      "distributions_per_second": 15511.451328785392,
+      "loglog_slope": 1.778753409810442,
+      "measure": "er",
+      "samples": 1000,
+      "seconds_per_distribution": 6.446850000065752e-05,
+      "support_size": 225,
+      "wall_seconds": 0.06446850000065751
+    },
+    {
+      "checksum": 1.6482568376466622,
+      "distributions_per_second": 9541.859540399795,
+      "loglog_slope": 0.436544505142541,
+      "measure": "mec_bisection",
+      "samples": 1000,
+      "seconds_per_distribution": 0.00010480137501144781,
+      "support_size": 250,
+      "wall_seconds": 0.10480137501144782
+    },
+    {
+      "checksum": 1.6482568404040607,
+      "distributions_per_second": 13302.49371928875,
+      "loglog_slope": 0.1338099229582563,
+      "measure": "mec_scipy",
+      "samples": 1000,
+      "seconds_per_distribution": 7.517387499683537e-05,
+      "support_size": 250,
+      "wall_seconds": 0.07517387499683537
+    },
+    {
+      "checksum": 23.34069577126535,
+      "distributions_per_second": 14354.324473138044,
+      "loglog_slope": 1.778753409810442,
+      "measure": "er",
+      "samples": 1000,
+      "seconds_per_distribution": 6.966541698784568e-05,
+      "support_size": 250,
+      "wall_seconds": 0.06966541698784567
+    },
+    {
+      "checksum": 1.5010963985822217,
+      "distributions_per_second": 9202.164684853642,
+      "loglog_slope": 0.436544505142541,
+      "measure": "mec_bisection",
+      "samples": 1000,
+      "seconds_per_distribution": 0.00010867008299101144,
+      "support_size": 275,
+      "wall_seconds": 0.10867008299101144
+    },
+    {
+      "checksum": 1.5010964005482215,
+      "distributions_per_second": 12496.094969863676,
+      "loglog_slope": 0.1338099229582563,
+      "measure": "mec_scipy",
+      "samples": 1000,
+      "seconds_per_distribution": 8.002500000293367e-05,
+      "support_size": 275,
+      "wall_seconds": 0.08002500000293367
+    },
+    {
+      "checksum": 21.652691122495828,
+      "distributions_per_second": 11839.12985696821,
+      "loglog_slope": 1.778753409810442,
+      "measure": "er",
+      "samples": 1000,
+      "seconds_per_distribution": 8.446566699421965e-05,
+      "support_size": 275,
+      "wall_seconds": 0.08446566699421965
+    },
+    {
+      "checksum": 1.3766136969270832,
+      "distributions_per_second": 9282.731075317868,
+      "loglog_slope": 0.436544505142541,
+      "measure": "mec_bisection",
+      "samples": 1000,
+      "seconds_per_distribution": 0.0001077269169909414,
+      "support_size": 300,
+      "wall_seconds": 0.10772691699094139
+    },
+    {
+      "checksum": 1.3766136983588542,
+      "distributions_per_second": 13203.818665046969,
+      "loglog_slope": 0.1338099229582563,
+      "measure": "mec_scipy",
+      "samples": 1000,
+      "seconds_per_distribution": 7.573566597420722e-05,
+      "support_size": 300,
+      "wall_seconds": 0.07573566597420722
+    },
+    {
+      "checksum": 20.207858297352924,
+      "distributions_per_second": 10529.33604668095,
+      "loglog_slope": 1.778753409810442,
+      "measure": "er",
+      "samples": 1000,
+      "seconds_per_distribution": 9.497274999739603e-05,
+      "support_size": 300,
+      "wall_seconds": 0.09497274999739602
+    },
+    {
+      "checksum": 1.2712318893907166,
+      "distributions_per_second": 8930.621406502478,
+      "loglog_slope": 0.436544505142541,
+      "measure": "mec_bisection",
+      "samples": 1000,
+      "seconds_per_distribution": 0.00011197429097956047,
+      "support_size": 325,
+      "wall_seconds": 0.11197429097956046
+    },
+    {
+      "checksum": 1.2712318907694167,
+      "distributions_per_second": 12693.892545555771,
+      "loglog_slope": 0.1338099229582563,
+      "measure": "mec_scipy",
+      "samples": 1000,
+      "seconds_per_distribution": 7.877804199233651e-05,
+      "support_size": 325,
+      "wall_seconds": 0.07877804199233651
+    },
+    {
+      "checksum": 18.964486874059922,
+      "distributions_per_second": 9084.632437203138,
+      "loglog_slope": 1.778753409810442,
+      "measure": "er",
+      "samples": 1000,
+      "seconds_per_distribution": 0.00011007599998265505,
+      "support_size": 325,
+      "wall_seconds": 0.11007599998265505
+    },
+    {
+      "checksum": 1.1845692892001793,
+      "distributions_per_second": 8499.829625728029,
+      "loglog_slope": 0.436544505142541,
+      "measure": "mec_bisection",
+      "samples": 1000,
+      "seconds_per_distribution": 0.00011764941699220799,
+      "support_size": 350,
+      "wall_seconds": 0.11764941699220799
+    },
+    {
+      "checksum": 1.184569290658746,
+      "distributions_per_second": 11627.163379908641,
+      "loglog_slope": 0.1338099229582563,
+      "measure": "mec_scipy",
+      "samples": 1000,
+      "seconds_per_distribution": 8.60054999939166e-05,
+      "support_size": 350,
+      "wall_seconds": 0.0860054999939166
+    },
+    {
+      "checksum": 17.889225981588595,
+      "distributions_per_second": 7555.828105371493,
+      "loglog_slope": 1.778753409810442,
+      "measure": "er",
+      "samples": 1000,
+      "seconds_per_distribution": 0.0001323481670115143,
+      "support_size": 350,
+      "wall_seconds": 0.1323481670115143
+    },
+    {
+      "checksum": 1.1034723644229334,
+      "distributions_per_second": 8236.307908891713,
+      "loglog_slope": 0.436544505142541,
+      "measure": "mec_bisection",
+      "samples": 1000,
+      "seconds_per_distribution": 0.00012141362502006814,
+      "support_size": 375,
+      "wall_seconds": 0.12141362502006814
+    },
+    {
+      "checksum": 1.1034723655205563,
+      "distributions_per_second": 12244.81678972285,
+      "loglog_slope": 0.1338099229582563,
+      "measure": "mec_scipy",
+      "samples": 1000,
+      "seconds_per_distribution": 8.166720802546479e-05,
+      "support_size": 375,
+      "wall_seconds": 0.08166720802546479
+    },
+    {
+      "checksum": 16.903866191392833,
+      "distributions_per_second": 6450.5967878608835,
+      "loglog_slope": 1.778753409810442,
+      "measure": "er",
+      "samples": 1000,
+      "seconds_per_distribution": 0.00015502441601711325,
+      "support_size": 375,
+      "wall_seconds": 0.15502441601711325
+    },
+    {
+      "checksum": 1.0399061050798395,
+      "distributions_per_second": 7841.35373190349,
+      "loglog_slope": 0.436544505142541,
+      "measure": "mec_bisection",
+      "samples": 1000,
+      "seconds_per_distribution": 0.00012752899999031797,
+      "support_size": 400,
+      "wall_seconds": 0.12752899999031797
+    },
+    {
+      "checksum": 1.0399061063164536,
+      "distributions_per_second": 12129.899185631519,
+      "loglog_slope": 0.1338099229582563,
+      "measure": "mec_scipy",
+      "samples": 1000,
+      "seconds_per_distribution": 8.24409160122741e-05,
+      "support_size": 400,
+      "wall_seconds": 0.0824409160122741
+    },
+    {
+      "checksum": 16.092106786449293,
+      "distributions_per_second": 5399.999334298855,
+      "loglog_slope": 1.778753409810442,
+      "measure": "er",
+      "samples": 1000,
+      "seconds_per_distribution": 0.0001851852080144454,
+      "support_size": 400,
+      "wall_seconds": 0.18518520801444538
+    }
+  ],
+  "validation": [
+    {
+      "checked_samples": 1000,
+      "max_abs_diff_scipy_vs_bisection": 1.8802316604712987e-10,
+      "max_rel_diff_scipy_vs_bisection": 8.944720555051356e-08,
+      "support_size": 200
+    },
+    {
+      "checked_samples": 1000,
+      "max_abs_diff_scipy_vs_bisection": 1.6723218534790696e-10,
+      "max_rel_diff_scipy_vs_bisection": 1.0827959371584761e-07,
+      "support_size": 225
+    },
+    {
+      "checked_samples": 1000,
+      "max_abs_diff_scipy_vs_bisection": 1.2449218522378458e-10,
+      "max_rel_diff_scipy_vs_bisection": 8.484856171625138e-08,
+      "support_size": 250
+    },
+    {
+      "checked_samples": 1000,
+      "max_abs_diff_scipy_vs_bisection": 1.6818439956683973e-10,
+      "max_rel_diff_scipy_vs_bisection": 1.2709400804793263e-07,
+      "support_size": 275
+    },
+    {
+      "checked_samples": 1000,
+      "max_abs_diff_scipy_vs_bisection": 9.309225157232148e-11,
+      "max_rel_diff_scipy_vs_bisection": 7.454284747269311e-08,
+      "support_size": 300
+    },
+    {
+      "checked_samples": 1000,
+      "max_abs_diff_scipy_vs_bisection": 1.184458648783443e-10,
+      "max_rel_diff_scipy_vs_bisection": 1.0732874296684672e-07,
+      "support_size": 325
+    },
+    {
+      "checked_samples": 1000,
+      "max_abs_diff_scipy_vs_bisection": 8.538678596646532e-11,
+      "max_rel_diff_scipy_vs_bisection": 7.476765712293627e-08,
+      "support_size": 350
+    },
+    {
+      "checked_samples": 1000,
+      "max_abs_diff_scipy_vs_bisection": 6.259121367903353e-11,
+      "max_rel_diff_scipy_vs_bisection": 5.4943356184981446e-08,
+      "support_size": 375
+    },
+    {
+      "checked_samples": 1000,
+      "max_abs_diff_scipy_vs_bisection": 1.6218304108549242e-10,
+      "max_rel_diff_scipy_vs_bisection": 1.6195717133057725e-07,
+      "support_size": 400
+    }
+  ]
+}
