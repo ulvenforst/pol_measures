@@ -21,6 +21,10 @@
 \usepackage[numbers,square]{natbib}
 \usepackage{xurl}
 \usepackage{hyperref}
+\usepackage{needspace}
+% Keep headings with a substantive start, breaking only when space is short.
+\AddToHook{cmd/section/before}{\Needspace{12\baselineskip}}
+\AddToHook{cmd/subsection/before}{\Needspace{12\baselineskip}}
 
 \theoremstyle{plain}
 \newtheorem{theorem}{Theorem}
@@ -1143,7 +1147,7 @@ D(k)\geq(p_r-k)^2+k^2\geq p_r^2/2>0,
 so $Q_\pi(k)=DD(k)$ is positive.
 \end{proof}
 
-The theoretical analysis now answers the formal part of the research question under explicit conditions. MEC has the balanced extreme maximum for all standing parameters; its joint ER compliance requires $\alpha>1$; and its central-split property also holds at $\alpha=1$. The two applications give further information about the model's effort and its response to partial transfers. Their claims remain restricted to the configurations and parameters proved above. The next stage concerns how these results are implemented and how MEC's rankings compare with alternative measures and published expert judgments.
+The theoretical analysis now answers the formal part of the research question under explicit conditions. MEC has the balanced extreme maximum for all standing parameters; its joint ER compliance requires $\alpha>1$; and its central-split property also holds at $\alpha=1$. The Minority Principle compares the two groups' contributions to the minimum effort, and the Tipping Point analysis describes how partial transfers change MEC. Their claims remain restricted to the configurations and parameters proved above. The next stage concerns how these results are implemented and how MEC's rankings compare with alternative measures and published expert judgments.
 
 \section{Computational Methodology and Implementation}\label{sec:methods}
 
@@ -1730,17 +1734,20 @@ The optimal consensus point gives the measure additional structure and supports 
 
 The empirical contribution locates MEC among competing measures through the exhaustive five-point corpus and the fifteen published expert-rated profiles. On the expert benchmark, $\mathrm{MEC}_{2,1.15}$ attains Kendall's $\tau_B\approx0.886$, matching $\mathrm{ER}_{0.8}$ and exceeding VdE and TWD in the reported comparison. The hypothesis of improved agreement is partly supported, but because parameter selection and evaluation use the same profiles, this result establishes concordance on that benchmark without establishing independent validity on unseen data. The supplementary search supports the finding that several evaluated parameter pairs achieve the same concordance.
 
+\Needspace{4\baselineskip}
 The implementation supplies the computational part of this development. The Python API, tests, comparison scripts, and saved outputs allow the numerical procedures and reported comparisons to be examined. Analytical identities and reference computations provide checks on the optimization. These contributions develop the proposal's three central aims of formal grounding, an empirical comparison, and reproducible infrastructure. Section~\ref{subsec:discussion-objectives} distinguishes this completed core from the software deliverables whose completion remains unverified, the desirable extensions, and the wider methodological plan. The regional figures form part of my contribution to the team's applications, rather than an individual claim to their full analysis.
 
-The resulting contribution is a measure whose value has a stated geometric meaning and whose behavior can be examined through proofs and computations. Its strongest conclusion concerns the finite one-dimensional model and the profiles actually evaluated. The evidence supports MEC as a mathematically grounded and empirically promising approach to measuring opinion polarization, with a clear basis for further investigation.
+The resulting contribution is a measure whose value has a stated geometric meaning and whose behavior can be examined through proofs and computations. Its strongest conclusion concerns the finite one-dimensional model and the profiles actually evaluated. The evidence supports MEC as a mathematically grounded and empirically promising approach to measuring opinion polarization.
 
 
+\Needspace{5\baselineskip}
 Several directions remain open in the paper \citep{aranda2026mec}. The first is to extend the formulation beyond finite distributions on $[0,1]$. Replacing $|x-y|$ with a distance in a general metric space would allow a broader representation of opinions, but would require examining the consensus domain, existence and uniqueness of optima, and which polarization properties survive. The multidimensional and network settings envisaged beyond the proposal's scope belong to this line of inquiry.
 
 A second direction concerns the dependence on $\alpha$ and $\beta$. The benchmark supports $(2,1.15)$ as one successful setting, but does not give a theoretical reason for that choice or identify a unique optimum. Studying parameter sensitivity together with the axiomatic requirements could clarify how to choose exponents for a specified measurement task. Extending the Tipping Point method beyond $\alpha=\beta=2$ would provide a related account of partial mass transfers across the family.
 
 Comparisons on independent collections of profiles and real survey distributions could test whether the expert concordance persists beyond the profiles used for parameter selection. They could also study sensitivity to sampling uncertainty, noise, and the numerical spacing assigned to ordered categories. This develops the proposal's interest in uncertainty while extending the paper's empirical evidence beyond its hypothetical benchmark.
 
+\Needspace{17\baselineskip}
 The paper also identifies opinion-update models as a setting for further study. Applying MEC along a sequence of modeled distributions could clarify how its value changes during opinion evolution. Such a study would need an explicit dynamic model, since the static consensus optimum alone does not determine an eventual agreement or the time needed to reach it.
 
 \enlargethispage{\baselineskip} Finally, the substantive interpretation of $y^\star$ in mediation and policy framing remains open. The present research treats it as a structural object determined by the effort function, while an applied interpretation would require evidence about what the modeled masses, distances, and costs represent in the setting concerned. This is a question about the connection between the mathematical model and collective deliberation, in addition to the computation of the optimum.
