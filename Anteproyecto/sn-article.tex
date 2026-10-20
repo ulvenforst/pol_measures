@@ -182,7 +182,6 @@ The paper also draws on Social Identity Theory, which relates part of an individ
 
 The axiomatic tradition assesses polarization through specified changes in group structure. Agreement measures approach the same distributions by asking how responses concentrate around shared positions. Two relevant approaches are Van der Eijk's agreement measure and Tastle--Wierman Dissention.
 
-\paragraph{Van der Eijk.}
 Van der Eijk \citep{van2001measuring} measures agreement through the patterns of unimodality in an ordered rating scale, and its interpretation assumes equally spaced categories. The construction decomposes a histogram into semiuniform layers. At each step, a layer assigns the smallest positive remaining mass to every category whose remaining mass is positive, so each layer has the same positive mass at its occupied categories and zero mass elsewhere. Subtracting that layer and repeating the procedure exhausts the histogram, with a binary vector $P_\ell$ recording which categories are occupied in layer $\ell$.
 
 For $m\geq3$, consider all triples of category indices $1\leq i<j<k\leq m$. Let $TU_\ell$ count those for which $(P_{\ell,i},P_{\ell,j},P_{\ell,k})$ is $110$ or $011$, and let $TDU_\ell$ count those with pattern $101$. The latter pattern places an empty category between two occupied categories. If $TU_\ell+TDU_\ell>0$, define
@@ -205,7 +204,6 @@ A(\pi)=\sum_\ell w_\ell A_\ell,
 \end{equation}
 The agreement score lies in $[-1,1]$ and the transformed score lies in $[0,1]$, with division by two specifying the scale used in the implementation. Van der Eijk's construction therefore responds to the arrangement of occupied categories and to patterns of separation, rather than simply measuring distance from a mean.
 
-\paragraph{Tastle--Wierman.}
 Tastle and Wierman \citep{tastle2007consensus} use information-theoretic ideas to define consensus and dissention on ordinal scales, and their construction combines category probabilities with distances from the mean. With the probabilities and mean in Eq.~\eqref{eq:lit-probabilities}, let $d=x_m-x_1>0$ be the amplitude of the fixed numerical scale. Their scores are
 \begin{equation}\label{eq:lit-twd}
 \begin{aligned}
@@ -1721,7 +1719,6 @@ The open implementation, license, test workflow, and documented experiments supp
 
 \section{Conclusions and Future Work}\label{sec:conclusion}\label{sec:contrib}
 
-\subsection{Conclusions}\label{subsec:conclusion-findings}
 
 This thesis has presented the mathematical and computational development of MEC reported in the joint paper \citep{aranda2026mec}, in relation to the approved research objectives. The results establish resistance to consensus as a precise interpretation of polarization for finite opinion distributions on $[0,1]$ and also support strong agreement with expert judgments on the evaluated benchmark. The theoretical and empirical parts of the research question thus receive a qualified answer, with the conditions of the proofs and the scope of the comparisons determining what can be concluded.
 
@@ -1737,7 +1734,6 @@ The implementation supplies the computational part of this development. The Pyth
 
 The resulting contribution is a measure whose value has a stated geometric meaning and whose behavior can be examined through proofs and computations. Its strongest conclusion concerns the finite one-dimensional model and the profiles actually evaluated. The evidence supports MEC as a mathematically grounded and empirically promising approach to measuring opinion polarization, with a clear basis for further investigation.
 
-\subsection{Future Work}\label{subsec:conclusion-future}
 
 Several directions remain open in the paper \citep{aranda2026mec}. The first is to extend the formulation beyond finite distributions on $[0,1]$. Replacing $|x-y|$ with a distance in a general metric space would allow a broader representation of opinions, but would require examining the consensus domain, existence and uniqueness of optima, and which polarization properties survive. The multidimensional and network settings envisaged beyond the proposal's scope belong to this line of inquiry.
 
