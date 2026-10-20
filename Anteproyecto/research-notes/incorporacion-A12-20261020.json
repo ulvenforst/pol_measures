@@ -1,9 +1,9 @@
 {
   "date": "2026-10-20",
-  "scope": "SOLO A12, incorporación documental y narrativa. Sin nuevos experimentos ni cambios en código, atribución regional o puntuación ajena a A12. Sin nuevas carpetas/worktrees/chats, push o escrituras a Library.",
+  "scope": "A12 completado documentalmente con tres medidas, dos figuras originales completas, cuatro tablas y explicación metodológica. Sin modificar atribución regional, código de experimentos, main u otras correcciones de puntuación. No se ejecutó un nuevo ajuste.",
   "base_commit": "3b8bc8010fbcae08daa8dc8266d315277ad61edd",
   "branch": "snotra/revision-tesis-cap2-20261019",
-  "initial_state": "Sin cambios de contenido pendientes. Se conservaron los cuatro .DS_Store preexistentes. El commit base fue el checkpoint; no hizo falta otro respaldo de contenido.",
+  "initial_state": "La tesis permanecía en 4e6edb3; dos PNG nuevos del autor fueron preservados en 6283318 antes de editar. Se conservaron los cuatro .DS_Store preexistentes.",
   "writing_skill": "/Users/ulvenforst/.agents/skills/russellian-clear-writing/SKILL.md y references/editorial-basis.md releídos completos. Guías enlazadas consultadas como orientación, sin cuotas de signos ni plantilla de conectores.",
   "sources": [
     {
@@ -26,81 +26,68 @@
   ],
   "paragraph_purpose_and_relation": [
     {
-      "location": "6.2",
-      "anchor": "The interface can also assign",
-      "decision": "Explicar la aplicación de constantes y remitir al estudio histórico; conecta el API con los nuevos métodos sin repetirlos."
-    },
-    {
       "location": "6.5 P1",
-      "anchor": "Ranking profiles does not",
-      "decision": "Distinguir ranking y clasificación, identificar A12, las dos versiones de fuente y el universo al que se refieren los recuentos."
+      "decision": "Vincular ranking con clasificación y fijar procedencia, tres medidas y unidad de análisis."
     },
     {
-      "location": "6.5 P2",
-      "anchor": "The percentile schemes",
-      "decision": "Definir los cortes percentiles y el criterio de Lloyd antes de comparar resultados; distinguir frecuencia acumulada y distancia a centroides, sin óptimo global ni elección de k."
+      "location": "6.5 BiPol",
+      "decision": "Definir el comparador antes de usar su fila; aprovechar media/probabilidades ya definidas y acotar alcance a implementación."
     },
     {
-      "location": "6.5 P3",
-      "anchor": "The historical tables",
-      "decision": "Precisar la escala histórica y la trazabilidad disponible; enlazar la clasificación con la sección de reproducibilidad sin identificarla con la raíz actual."
+      "location": "6.5 percentiles",
+      "decision": "Contraponer tamaños prescritos y proximidad a centroides sin redefinir corpus."
     },
     {
-      "location": "7 apertura",
-      "anchor": "The empirical evaluation",
-      "decision": "Anunciar el lugar de los umbrales entre sensibilidad y rendimiento; conserva el recorrido corpus/experto previo."
+      "location": "6.5 Lloyd",
+      "decision": "Definir notación, asignación exclusiva, actualización y criterio antes de presentar sus salidas; precisar los límites."
+    },
+    {
+      "location": "6.5 procedencia",
+      "decision": "Conectar implementación histórica comprobada y la reproducción del ajuste, sin confundir ausencia del enlace con ausencia de experimentos."
     },
     {
       "location": "7.4 P1",
-      "anchor": "The preceding comparisons",
-      "decision": "Pasar del análisis de parámetros a una clasificación en parámetros fijos y remitir al protocolo y a las fuentes exactas de la tabla."
+      "decision": "Pasar de sensibilidad a resultados históricos con parámetros fijos y fuentes concretas."
     },
     {
-      "location": "7.4 tabla",
-      "anchor": "Historical percentile and",
-      "decision": "Comparar cortes de ambos criterios para k=3,4,5 a cuatro decimales; presenta seis filas, cada una con dos esquemas."
+      "location": "7.4 descriptivos",
+      "decision": "Dar una sola vez extremos, medias y medianas; contextualizar figuras por la forma de scores."
     },
     {
-      "location": "7.4 P2",
-      "anchor": "For the 33rd/66th-percentile",
-      "decision": "Explicar los tamaños impuestos por percentiles y evitar confundir igualdad de marginales con igualdad de perfiles clasificados."
+      "location": "7.4 percentiles",
+      "decision": "Interpretar cortes y recuentos prescritos; igualdad marginal no equivale a mismos perfiles."
     },
     {
-      "location": "7.4 P3",
-      "anchor": "For $k=3$",
-      "decision": "Desarrollar la comparación con centroides, recuentos y proporciones, mostrando la consecuencia concreta de cambiar de criterio."
+      "location": "7.4 k-means",
+      "decision": "Conectar figura, centroides, recuentos y cortes sin repetir intervalos; distintos k no implican refinamientos anidados."
     },
     {
-      "location": "7.4 P4",
-      "anchor": "This difference follows",
-      "decision": "Interpretar la diferencia según los criterios, sin superioridad empírica ni clases sociológicas naturales; acota el aporte a A12."
+      "location": "7.4 comparación",
+      "decision": "Mostrar consecuencia cuantitativa de cambiar criterio en las tres medidas."
     },
     {
-      "location": "8.2 A7/A11",
-      "anchor": "The desirable activities",
-      "decision": "Conservar la evaluación preexistente de A7/A11, separada ahora de la evidencia nueva sobre A12. Sin cambios de contenido."
+      "location": "7.4 etiquetas",
+      "decision": "Separar los nombres de las figuras del API y la regla al corte del desempate histórico."
+    },
+    {
+      "location": "7.4 interpretación",
+      "decision": "Delimitar significado de las particiones y reconocer posible comparación dentro de grupos sin prometerla."
+    },
+    {
+      "location": "7.5 transición",
+      "decision": "Pasar de salidas numéricas al coste de cálculo sin volver a excluir clasificaciones de la lectura."
     },
     {
       "location": "8.2 A12",
-      "anchor": "The threshold analysis",
-      "decision": "Corregir la anterior ausencia documental a partir de los resultados incorporados y distinguir ejecución/documentación de reproducción completa."
-    },
-    {
-      "location": "8.2 A13/A14",
-      "anchor": "The feature-request record",
-      "decision": "Conservar la situación previa de A13 y la contribución colectiva A14; la separación evita extender a esas actividades la evidencia de A12."
-    },
-    {
-      "location": "Bibliografía A12",
-      "anchor": "arandaMECthresholds / narvaez2025thresholds",
-      "decision": "Identificar copia PDF recibida el 20/10 y MDX firmado/fechado, sin alterar las referencias previas a otra copia del manuscrito ni atribuir A12 al arXiv publicado."
+      "decision": "Reconocer la evidencia incorporada y precisar qué falta para reproducción, sin convertirlo en obligación nueva."
     }
   ],
   "reading_coverage": {
-    "before_edit": "Lectura del manuscrito actual completo, incluidos contexto inicial, capítulos, fórmulas, apéndices y bibliografía.",
-    "after_edit": "Pasada distinta de la prosa desde el principio hasta el final para continuidad, definiciones, reiteraciones y límites; contraste separado de los 102 bloques matemáticos con la base. No constituye una nueva demostración de todos los resultados previos.",
-    "unchanged_scope": "Se conservaron íntegros capítulos anteriores a Métodos y toda la sección regional. No se necesitó cambiar Conclusiones ni añadir un anexo duplicado.",
-    "editorial_findings": "El orden comparación/sensibilidad, clasificación, rendimiento sostiene la división sustantiva. La salvedad histórica aparece en Métodos, se remite desde Resultados y se distingue del estado de ejecución en Discusión."
+    "skill": "SKILL.md local y references/editorial-basis.md releídos completos, guías aplicadas sin cuotas ni conectores mecánicos.",
+    "source": "PDF9.4 pp29–32 y sección MDX completos pertinentes releídos en auditoría precedente; nuevos adjuntos comparados con versiones citadas.",
+    "paragraph_review": "Propósito y relación de cada párrafo afectado se revisaron antes y después, con matriz de contenidos y contraste de cifras.",
+    "distinct_integral_pass": "Pasada lineal de la prosa desde el comienzo hasta bibliografía y apéndices, separada de la edición de A12; displays existentes contrastados byte a byte. No es una nueva certificación matemática de los resultados previos.",
+    "decisions": "A12 mantiene dos subsecciones sustantivas ya existentes; tablas en cuerpo sin apéndice fragmentado; remisiones evitan redefinir masa, media, corpus y normalización. Conclusiones y sección regional no precisaron cambios."
   },
   "numeric_crosschecks": [
     {
@@ -117,7 +104,33 @@
         758909,
         781907
       ],
-      "total": 2299726
+      "stats": [
+        0.0,
+        0.2574,
+        0.2408,
+        1.0
+      ]
+    },
+    {
+      "measure": "BiPol",
+      "method": "percentile",
+      "k": 3,
+      "cuts": [
+        0.4726,
+        0.5994
+      ],
+      "centroids": null,
+      "counts": [
+        758979,
+        758859,
+        781888
+      ],
+      "stats": [
+        0.0,
+        0.5379,
+        0.5376,
+        1.0
+      ]
     },
     {
       "measure": "ER",
@@ -133,7 +146,12 @@
         758909,
         781907
       ],
-      "total": 2299726
+      "stats": [
+        0.0,
+        0.4157,
+        0.4031,
+        1.0
+      ]
     },
     {
       "measure": "MEC",
@@ -151,7 +169,35 @@
         574931,
         574932
       ],
-      "total": 2299726
+      "stats": [
+        0.0,
+        0.2574,
+        0.2408,
+        1.0
+      ]
+    },
+    {
+      "measure": "BiPol",
+      "method": "percentile",
+      "k": 4,
+      "cuts": [
+        0.438,
+        0.5376,
+        0.6383
+      ],
+      "centroids": null,
+      "counts": [
+        575029,
+        574883,
+        574967,
+        574847
+      ],
+      "stats": [
+        0.0,
+        0.5379,
+        0.5376,
+        1.0
+      ]
     },
     {
       "measure": "ER",
@@ -169,7 +215,12 @@
         574931,
         574932
       ],
-      "total": 2299726
+      "stats": [
+        0.0,
+        0.4157,
+        0.4031,
+        1.0
+      ]
     },
     {
       "measure": "MEC",
@@ -189,7 +240,37 @@
         459945,
         459945
       ],
-      "total": 2299726
+      "stats": [
+        0.0,
+        0.2574,
+        0.2408,
+        1.0
+      ]
+    },
+    {
+      "measure": "BiPol",
+      "method": "percentile",
+      "k": 5,
+      "cuts": [
+        0.414,
+        0.5,
+        0.5756,
+        0.6627
+      ],
+      "centroids": null,
+      "counts": [
+        460296,
+        459784,
+        460139,
+        459566,
+        459941
+      ],
+      "stats": [
+        0.0,
+        0.5379,
+        0.5376,
+        1.0
+      ]
     },
     {
       "measure": "ER",
@@ -209,7 +290,12 @@
         459945,
         459945
       ],
-      "total": 2299726
+      "stats": [
+        0.0,
+        0.4157,
+        0.4031,
+        1.0
+      ]
     },
     {
       "measure": "MEC",
@@ -229,7 +315,27 @@
         960752,
         336045
       ],
-      "total": 2299726
+      "stats": null
+    },
+    {
+      "measure": "BiPol",
+      "method": "kmeans",
+      "k": 3,
+      "cuts": [
+        0.4525,
+        0.6267
+      ],
+      "centroids": [
+        0.3652,
+        0.5398,
+        0.7137
+      ],
+      "counts": [
+        649188,
+        1016983,
+        633555
+      ],
+      "stats": null
     },
     {
       "measure": "ER",
@@ -249,7 +355,7 @@
         993213,
         377570
       ],
-      "total": 2299726
+      "stats": null
     },
     {
       "measure": "MEC",
@@ -272,7 +378,30 @@
         633659,
         200865
       ],
-      "total": 2299726
+      "stats": null
+    },
+    {
+      "measure": "BiPol",
+      "method": "kmeans",
+      "k": 4,
+      "cuts": [
+        0.394,
+        0.5317,
+        0.6702
+      ],
+      "centroids": [
+        0.3208,
+        0.4672,
+        0.5963,
+        0.7442
+      ],
+      "counts": [
+        376399,
+        736586,
+        760015,
+        426726
+      ],
+      "stats": null
     },
     {
       "measure": "ER",
@@ -295,7 +424,7 @@
         578046,
         203061
       ],
-      "total": 2299726
+      "stats": null
     },
     {
       "measure": "MEC",
@@ -321,7 +450,33 @@
         398368,
         127118
       ],
-      "total": 2299726
+      "stats": null
+    },
+    {
+      "measure": "BiPol",
+      "method": "kmeans",
+      "k": 5,
+      "cuts": [
+        0.3543,
+        0.473,
+        0.5816,
+        0.7024
+      ],
+      "centroids": [
+        0.2895,
+        0.4191,
+        0.5269,
+        0.6364,
+        0.7686
+      ],
+      "counts": [
+        237904,
+        523153,
+        654893,
+        581750,
+        302026
+      ],
+      "stats": null
     },
     {
       "measure": "ER",
@@ -347,44 +502,282 @@
         401449,
         144521
       ],
-      "total": 2299726
+      "stats": null
     }
   ],
   "verification": {
-    "all_table_cuts_equal_MDX_current_and_2970e547": true,
-    "PDF_two_decimal_values_manually_crosschecked_against_MDX": true,
-    "all_MEC_ER_counts_for_all_schemes_sum_to": 2299726,
-    "display_math_blocks_unchanged": 102,
-    "prefix_before_methods_byte_identical": true,
+    "all_54_cutoffs_match_source_and_stored_values": true,
+    "all_36_centroids_match_source": true,
+    "all_18_count_sets_match_source_and_sum_to": 2299726,
+    "means_medians_min_max_for_all_three_measures": true,
+    "unchanged_existing_display_math_blocks": 102,
+    "new_display_math_blocks": 3,
     "regional_section_byte_identical": true,
-    "all_16_preexisting_reference_result_files_preserved": true,
-    "bib_entries": 19,
-    "missing_citations_or_refs": false,
-    "classification_tests": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest tests.test_classification: 7 tests, OK. Verifican aplicación de constantes, no ajuste histórico.",
-    "no_threshold_refit_or_new_experiment": true,
-    "percentages_k3": {
-      "MEC": 14.612392954638945,
-      "ER": 16.418042845104157,
-      "percentiles": 34.00000695735057
-    }
+    "all_16_prior_reference_result_files_preserved": true,
+    "figures": {
+      "percentile_method.png": {
+        "sha256": "2d0212c11ffaa016c31e70fdcd93906f94bc192caeff29e0f9614048e782b8a8",
+        "bytes": 165118,
+        "unaltered": true
+      },
+      "kmeans_method.png": {
+        "sha256": "ccecb81d254ebdce89198bd8af8b117db652398c5fc8b0ed11baa7b23a908f21",
+        "bytes": 260850,
+        "unaltered": true
+      }
+    },
+    "missing_references_or_citations": false,
+    "classification_tests": "7 tests OK; PYTHONDONTWRITEBYTECODE=1 python3 -m unittest tests.test_classification. Verifica aplicación, no calibración.",
+    "new_experiments": false
   },
   "compilation": {
     "command": "tectonic --only-cached --keep-logs --keep-intermediates sn-article.tex",
     "working_directory": "/Users/ulvenforst/Codex/University/pol_measures/Anteproyecto",
     "exit_code": 0,
-    "pages": 67,
-    "bytes": 1894816,
-    "pdf_sha256": "0119ef5db664c55a4344d14605f4f86de24935664cb54775cb2f1f2fc76e0d60",
-    "tex_sha256": "7fb2a5b9d092e873aedf8b24fd236ef17691dbeefc0ff21ecca38d9d32d8769d",
-    "warnings": "Preexistentes: overfull de 4.25945pt en encabezado de capítulo 1 (línea 84), underfull en filas de tablas de candidatos y objetivos (1244,1249,1583,1584), destino @page.1 duplicado. Ninguna advertencia nueva en A12; sin referencias/citas indefinidas.",
-    "visual_review": "67 páginas renderizadas y revisadas en seis hojas de contacto; páginas físicas 43,44,52,53,59 revisadas a tamaño completo para métodos, tabla nueva, resultados y discusión. Sin recortes ni recursos ausentes observados.",
-    "preview_session": "No se inspeccionó ni modificó la sesión de Codex; no se afirma refresco de su vista previa."
+    "pages": 71,
+    "bytes": 2301490,
+    "tex_sha256": "59b4758fc1734d0fc6e0e87617f2289b5dfa16966fbcf2742d89058bcf2b9e8d",
+    "pdf_sha256": "fbc8820d60d67481e9a416da044a8011fce9549e4e6e9116378ac13aa00a8de4",
+    "warnings": "Solo preexistentes: encabezado capítulo1 overfull4.25945pt; underfull en tablas de candidatos/objetivos(1244,1249,1682,1683); destino @page.1 duplicado. Sin avisos nuevos de A12 ni referencias/citas indefinidas.",
+    "resolved_build_issue": "La fuente matemática8pt cmmi8 no estaba en caché. Se compusieron los valores numéricos pequeños como texto, sin perder datos ni instalar recursos; tabla de centroides ajustada con encabezado k.",
+    "visual_review": "71 páginas renderizadas; seis hojas de contacto revisadas. Nuevas fórmulas en p44, estadísticas p53, figura percentiles p54, tablas completas p55, figura k-means p56 y discusión p63 revisadas a tamaño completo. Figuras ampliadas al130% del bloque de texto, centradas dentro de la página, íntegras y sin recortes.",
+    "preview_session": "No se inspeccionó la aplicación ni se afirma refresco de la vista previa."
   },
   "limits": [
-    "La normalización histórica MEC no queda identificada inequívocamente con la raíz actual.",
-    "No se localizaron script/arrays completos/configuración de ajuste, inicialización, reinicios o parada.",
-    "No se afirma óptimo global, k óptimo, estabilidad de grupos o validación externa de etiquetas.",
-    "Se omiten los errores de corpus/parametrización de otros pasajes del MDX y las afirmaciones no justificadas de grupos naturales o mayor precisión.",
-    "El resultado documenta A12 como actividad deseable realizada; no añade compromisos al autor."
+    "Se documentó toda la cobertura sustantiva identificada de PDF9.4 y Threshold Analysis del MDX, según matriz; no se afirma reproducción del ajuste.",
+    "La raíz histórica está comprobada en código; falta el enlace entre array elegido/configuración de ajuste y resultados publicados en el informe.",
+    "No se recuperaron semilla/inicialización/reinicios/parada/desempate del ajuste original; no se inventaron.",
+    "No se copian clases naturales, mayor precisión o robustez sin criterio; no se añade k óptimo ni validación externa.",
+    "No se repiten estadísticas por esquema ni rangos derivables de cortes y extremos; se preservan filas de fuente en este registro.",
+    "No se modificaron código ni imágenes; no se añadieron obligaciones ni se tocó atribución regional."
+  ],
+  "revision_history": [
+    {
+      "commit": "4e6edb3bd200aa2a560c303230fb787522a16edb",
+      "status": "Incorporación inicial parcial, ampliada en esta revisión.",
+      "tex_sha256": "7fb2a5b9d092e873aedf8b24fd236ef17691dbeefc0ff21ecca38d9d32d8769d",
+      "pdf_sha256": "0119ef5db664c55a4344d14605f4f86de24935664cb54775cb2f1f2fc76e0d60",
+      "pages": 67
+    },
+    {
+      "commit": "6283318d8703bc83a18427690cf79fd1d069fda3",
+      "status": "Respaldo de las dos imágenes nuevas originales del autor antes de completar el texto."
+    }
+  ],
+  "completion_base_commit": "6283318d8703bc83a18427690cf79fd1d069fda3",
+  "completion_date": "2026-10-20",
+  "source_aliases_verified": [
+    {
+      "name": "page(1).mdx",
+      "library_file_id": "libfile_ea7265ef2c5481918a5868eedfb9e940",
+      "file_id": "file_000000007c7881f59a5a6697bfcf5896",
+      "comparison": "Texto completo idéntico al page.mdx citado; sección Threshold Analysis releída completa."
+    },
+    {
+      "name": "MEC_Measure__Copy_(3).pdf",
+      "library_file_id": "libfile_8fe86374f9dc819197b148fa1edf1670",
+      "file_id": "file_00000000422081f69afbdc7e55c01d49",
+      "comparison": "Texto de las pp.29–32 idéntico al de la copia (2) citada. No se afirma comprobación binaria en esta revisión."
+    },
+    {
+      "name": "kmeans_method.png",
+      "library_file_id": "libfile_e5ea97c1e9a48191b07667f32a8fbe6f",
+      "comparison": "Se usó el PNG local original completo, preservado sin cambios. El adjunto tiene otras dimensiones/bytes; no se afirma identidad binaria entre ambas representaciones."
+    },
+    {
+      "name": "percentile_method.png",
+      "library_file_id": "libfile_8669d848359c8191a56b2e596df4a704",
+      "comparison": "Se usó el PNG local original completo, preservado sin cambios. El adjunto tiene otras dimensiones/bytes; no se afirma identidad binaria entre ambas representaciones."
+    }
+  ],
+  "coverage_matrix": [
+    {
+      "source": "PDF9.4 p29 / MDX206–208",
+      "content": "Medidas y alcance",
+      "target_label": "subsec:methods-thresholds",
+      "status": "Incluido",
+      "decision": "MEC2,1.15 y ER0.8 del PDF; BiPol del MDX se distingue como comparador exploratorio.",
+      "target_line": 1292
+    },
+    {
+      "source": "MDX27,40–46; recuentos de las tablas",
+      "content": "Corpus y autoría del estudio",
+      "target_label": "subsec:methods-thresholds",
+      "status": "Incluido con corrección",
+      "decision": "Se conserva 2,299,726, respaldado por generador y suma de recuentos, sin copiar 2,299,063 de la introducción del MDX. No se atribuye ejecución exclusiva.",
+      "target_line": 1292
+    },
+    {
+      "source": "PDFp30 / MDX208",
+      "content": "Esquemas percentiles 3/4/5",
+      "target_label": "subsec:methods-thresholds",
+      "status": "Incluido",
+      "decision": "Cortes acumulados y distinción frente a criterio geométrico, definidos antes de resultados.",
+      "target_line": 1292
+    },
+    {
+      "source": "PDF Fig6 / MDX210–214",
+      "content": "Figura percentiles",
+      "target_label": "fig:results-threshold-percentiles",
+      "status": "Incluido",
+      "decision": "PNG local completo sin recorte: MEC/BiPol/ER y tres columnas. Pie indica filas, columnas y líneas de corte; PDF fuente contiene solo MEC/ER.",
+      "target_line": 1487
+    },
+    {
+      "source": "PDFTabla3 p31 / MDX218–226",
+      "content": "54 cortes de ambos métodos para las tres medidas",
+      "target_label": "tab:results-thresholds",
+      "status": "Incluido",
+      "decision": "Todas las filas y los 54 valores a cuatro decimales, cotejados con constantes actuales e históricas.",
+      "target_line": 1495
+    },
+    {
+      "source": "PDFTabla3 / MDX218–226",
+      "content": "Min/media/mediana/max",
+      "target_label": "tab:results-threshold-statistics",
+      "status": "Incluido sin duplicación",
+      "decision": "Medias y medianas de tres medidas; extremos comunes 0 y 1 declarados una vez. No se repiten por esquema.",
+      "target_line": 1469
+    },
+    {
+      "source": "PDFTabla3 / MDX218–226",
+      "content": "Recuentos percentiles 3/4/5",
+      "target_label": "tab:results-threshold-percentile-counts",
+      "status": "Incluido sin duplicación",
+      "decision": "MEC/ER iguales se listan juntos; BiPol con sus valores propios. Nueve conjuntos cubiertos, todos suman 2,299,726.",
+      "target_line": 1518
+    },
+    {
+      "source": "PDFp31 / MDX232–244",
+      "content": "Centroides iniciales y asignación Lloyd",
+      "target_label": "eq:methods-lloyd-assignment",
+      "status": "Incluido",
+      "decision": "Scores z_r e índices de perfiles definidos; argmin permite asignar cada empate exclusivamente a un grupo sin inventar regla histórica.",
+      "target_line": 1305
+    },
+    {
+      "source": "PDFp31 / MDX239–244",
+      "content": "Actualización de centroides",
+      "target_label": "eq:methods-lloyd-update",
+      "status": "Incluido",
+      "decision": "Promedio sobre cada grupo no vacío; evita división por cero sin atribuir tratamiento de grupos vacíos al experimento.",
+      "target_line": 1312
+    },
+    {
+      "source": "PDFp31 / MDX244",
+      "content": "Descenso de WCSS y óptimo global",
+      "target_label": "subsec:methods-thresholds",
+      "status": "Incluido con precisión",
+      "decision": "No aumento de suma de cuadrados; no se afirma óptimo global ni se recupera una configuración de convergencia histórica.",
+      "target_line": 1292
+    },
+    {
+      "source": "PDF Fig7 p32 / MDX247–251",
+      "content": "Figura k-means",
+      "target_label": "fig:results-threshold-kmeans",
+      "status": "Incluido",
+      "decision": "PNG local completo 3x3; colores para grupos y líneas discontinuas para centroides, sin confundirlas con cortes.",
+      "target_line": 1538
+    },
+    {
+      "source": "PDFTabla4 p32 / MDX253–261",
+      "content": "Centroides y recuentos k3/k4/k5",
+      "target_label": "tab:results-threshold-clusters",
+      "status": "Incluido",
+      "decision": "36 centroides y nueve conjuntos completos de recuentos para tres medidas; cotejo fila a fila.",
+      "target_line": 1544
+    },
+    {
+      "source": "PDFTabla4 / MDX253–261",
+      "content": "Rangos de valores",
+      "target_label": "tab:results-thresholds",
+      "status": "Representado sin duplicación",
+      "decision": "Los cortes y extremos0/1 codifican los rangos. Se advierte sobre extremos redondeados y se distingue igualdad al corte en API de desempate histórico. Las filas originales se conservan en este registro.",
+      "target_line": 1495
+    },
+    {
+      "source": "MDX230 / figuras; PDFp30",
+      "content": "Forma de distribución y motivación del criterio",
+      "target_label": "subsec:results-thresholds",
+      "status": "Incluido con alcance",
+      "decision": "Se describe pico/cola de MEC y ER, y ubicación media/mediana de BiPol, sin inferir clases naturales separadas.",
+      "target_line": 1460
+    },
+    {
+      "source": "MDX265 / recuentos k3",
+      "content": "Menores grupos de scores altos",
+      "target_label": "subsec:results-thresholds",
+      "status": "Incluido con cálculo explícito",
+      "decision": "14.61%MEC,16.42%ER,27.55%BiPol frente a aproximadamente34%percentiles. No se equipara la clase más alta con extremismo sociológico.",
+      "target_line": 1460
+    },
+    {
+      "source": "Figuras y thresholds.py CATEGORY_LABELS",
+      "content": "Etiquetas de cuatro grupos",
+      "target_label": "subsec:results-thresholds",
+      "status": "Diferencia documentada",
+      "decision": "Low/Medium Low/Medium High/High en figura; very_low/low/high/very_high en API; valores de corte coincidentes, nombres diferentes.",
+      "target_line": 1460
+    },
+    {
+      "source": "MDX265",
+      "content": "Correlaciones dentro de grupos como trabajo posible",
+      "target_label": "subsec:results-thresholds",
+      "status": "Incluido como posibilidad",
+      "decision": "Se distingue sugerencia del informe de un resultado ya demostrado, sin nuevos compromisos de ejecución.",
+      "target_line": 1460
+    },
+    {
+      "source": "MDX230,244,265",
+      "content": "Clases naturales/mayor precisión/robustez general",
+      "target_label": "subsec:results-thresholds",
+      "status": "Calificado, no copiado como hecho",
+      "decision": "Las particiones no prueban etiquetas sociológicas, estabilidad, k óptimo, superioridad predictiva o validación externa.",
+      "target_line": 1460
+    },
+    {
+      "source": "README y src/measures/metrics/proposed/bipol.py",
+      "content": "Contexto y definición de BiPol",
+      "target_label": "eq:methods-bipol",
+      "status": "Incluido",
+      "decision": "Se describe la implementación de corte en media para pesos unitarios. No se identifica sin prueba con la definición de máximo sobre particiones del README, ni se amplían afirmaciones del artículo.",
+      "target_line": 1297
+    },
+    {
+      "source": "git2970e547: MECNormalized, MeasureCalculator, thresholds.py",
+      "content": "Normalización histórica y vínculo al ajuste",
+      "target_label": "subsec:methods-thresholds",
+      "status": "Evidencia actualizada",
+      "decision": "La raíz ya existe en el código histórico y el generador/calculador sí están disponibles. Falta localizar el paso concreto de selección de scores y ajuste, no los experimentos en general.",
+      "target_line": 1292
+    },
+    {
+      "source": "A12 de propuesta y resultados adjuntos",
+      "content": "Evaluación en Discusión",
+      "target_label": "subsec:discussion-objectives",
+      "status": "Actualizado",
+      "decision": "Actividad deseable realizada/documentada; la limitación concierne reconstrucción del ajuste y no una supuesta ausencia de trabajo.",
+      "target_line": 1666
+    }
+  ],
+  "original_source_table_rows": [
+    "| **MEC, 33rd/66th**                 | 0.1971 / 0.2922                | [0.0000, 0.2574, 0.2408, 1.0000]         | (758910, 758909, 781907)              |",
+    "| **BiPol, 33rd/66th**               | 0.4726 / 0.5994                | [0.0000, 0.5379, 0.5376, 1.0000]         | (758979, 758859, 781888)              |",
+    "| **EstebanRay, 33rd/66th**        | 0.3609 / 0.4466                | [0.0000, 0.4157, 0.4031, 1.0000]         | (758910, 758909, 781907)              |",
+    "| **MEC, 25th/50th/75th**            | 0.1747 / 0.2408 / 0.3274         | [0.0000, 0.2574, 0.2408, 1.0000]         | (574932, 574931, 574931, 574932)       |",
+    "| **BiPol, 25th/50th/75th**          | 0.4380 / 0.5376 / 0.6383         | [0.0000, 0.5379, 0.5376, 1.0000]         | (575029, 574883, 574967, 574847)       |",
+    "| **EstebanRay, 25th/50th/75th**   | 0.3407 / 0.4031 / 0.4761         | [0.0000, 0.4157, 0.4031, 1.0000]         | (574932, 574931, 574931, 574932)       |",
+    "| **MEC, 20th/40th/60th/80th**        | 0.1581 / 0.2141 / 0.2716 / 0.3503 | [0.0000, 0.2574, 0.2408, 1.0000]         | (459946, 459945, 459945, 459945, 459945) |",
+    "| **BiPol, 20th/40th/60th/80th**      | 0.4140 / 0.5000 / 0.5756 / 0.6627 | [0.0000, 0.5379, 0.5376, 1.0000]         | (460296, 459784, 460139, 459566, 459941) |",
+    "| **EstebanRay, 20th/40th/60th/80th** | 0.3275 / 0.3781 / 0.4295 / 0.4965 | [0.0000, 0.4157, 0.4031, 1.0000]         | (459946, 459945, 459945, 459945, 459945) |",
+    "| **MEC (k=3)**                | [0.1546, 0.2919, 0.4683]                | (1002929, 960752, 336045)                 | [0.0000, 0.2233] / [0.2233, 0.3801] / [0.3801, 1.0000]             |",
+    "| **BiPol (k=3)**              | [0.3652, 0.5398, 0.7137]                | (649188, 1016983, 633555)                 | [0.0000, 0.4525] / [0.4526, 0.6267] / [0.6268, 1.0000]             |",
+    "| **Esteban-Ray (k=3)**        | [0.3202, 0.4380, 0.5902]                | (928943, 993213, 377570)                  | [0.0000, 0.3791] / [0.3791, 0.5141] / [0.5141, 1.0000]             |",
+    "| **MEC (k=4)**                | [0.1182, 0.2255, 0.3428, 0.5114]         | (554166, 911036, 633659, 200865)           | [0.0000, 0.1718] / [0.1718, 0.2841] / [0.2841, 0.4271] / [0.4271, 1.0000] |",
+    "| **BiPol (k=4)**              | [0.3208, 0.4672, 0.5963, 0.7442]         | (376399, 736586, 760015, 426726)           | [0.0000, 0.3940] / [0.3941, 0.5317] / [0.5318, 0.6702] / [0.6703, 1.0000] |",
+    "| **Esteban-Ray (k=4)**        | [0.3027, 0.3975, 0.4959, 0.6361]         | (659528, 859091, 578046, 203061)           | [0.0000, 0.3501] / [0.3501, 0.4467] / [0.4467, 0.5660] / [0.5660, 1.0000] |",
+    "| **MEC (k=5)**                | [0.1040, 0.1987, 0.2855, 0.3883, 0.5495]  | (417349, 742128, 614763, 398368, 127118)    | [0.0000, 0.1513] / [0.1513, 0.2421] / [0.2421, 0.3369] / [0.3369, 0.4689] / [0.4689, 1.0000] |",
+    "| **BiPol (k=5)**              | [0.2895, 0.4191, 0.5269, 0.6364, 0.7686]  | (237904, 523153, 654893, 581750, 302026)    | [0.0000, 0.3543] / [0.3544, 0.4730] / [0.4731, 0.5816] / [0.5817, 0.7024] / [0.7025, 1.0000] |",
+    "| **Esteban-Ray (k=5)**        | [0.2803, 0.3588, 0.4358, 0.5259, 0.6582]  | (395345, 701921, 656490, 401449, 144521)    | [0.0000, 0.3196] / [0.3196, 0.3973] / [0.3973, 0.4809] / [0.4809, 0.5921] / [0.5921, 1.0000] |"
   ]
 }

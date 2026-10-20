@@ -1291,11 +1291,30 @@ The additional methods envisaged in the proposal are assessed under the scope cr
 
 \subsection{Threshold Classification}\label{subsec:methods-thresholds}
 
-Ranking profiles does not assign them to levels of polarization. The proposal's desirable activity A12 addressed this further task through percentiles and $k$-means. The companion manuscript reports this analysis for $\mathrm{MEC}_{2,1.15}$ and $\mathrm{ER}_{0.8}$ \citep[Section~9.4, pp.~29--32]{arandaMECthresholds}. My accompanying report supplies the tables to four decimal places \citep[``Threshold Analysis for Polarization Classification'']{narvaez2025thresholds}. The reported category counts sum to the $2{,}299{,}726$ canonical profiles of Eq.~\eqref{eq:methods-canonical-count}. Each profile contributes once, so these frequencies describe that synthetic corpus rather than the prevalence of polarization in a survey population.
+Ranking profiles does not assign them to levels of polarization. The proposal's desirable activity A12 addressed this further task through percentiles and $k$-means. The companion manuscript reports the analysis for $\mathrm{MEC}_{2,1.15}$ and $\mathrm{ER}_{0.8}$ \citep[Section~9.4, pp.~29--32]{arandaMECthresholds}. My accompanying report also includes BiPol and supplies the tables to four decimal places \citep[``Threshold Analysis for Polarization Classification'']{narvaez2025thresholds}. The reported category counts sum to the $2{,}299{,}726$ canonical profiles of Eq.~\eqref{eq:methods-canonical-count}. Each profile contributes once, so these frequencies describe the synthetic corpus rather than the prevalence of polarization in a survey population.
 
-The percentile schemes use the 33rd and 66th percentiles for three categories, the 25th, 50th, and 75th for four, and the 20th, 40th, 60th, and 80th for five. They partition the ordered scores into groups of approximately prescribed sizes. The alternative applies one-dimensional $k$-means to the scores with $k=3,4,5$. Lloyd's algorithm alternates assignment to the nearest centroid and replacement of each centroid by its group's mean to reduce the within-cluster sum of squares. It need not reach a global minimum. Nearest-centroid boundaries lie halfway between adjacent ordered centroids, whereas percentile boundaries depend on cumulative frequencies. These are different criteria for dividing the same score distribution, and neither selects an optimal number of categories.
+BiPol is included here to retain the accompanying report's comparison and the three rows of its figures. For unit-mass inputs, the repository implementation divides occupied opinions at their weighted mean $\mu$ from Eq.~\eqref{eq:lit-probabilities}. Let $p_L$ and $p_R$ be the total probabilities at positions below $\mu$ and at or above $\mu$, respectively, and let $\mu_L$ and $\mu_R$ be their conditional means. For a non-consensus profile, both groups have positive mass, and the implemented score is
+\begin{equation}\label{eq:methods-bipol}
+\mathrm{BiPol}(\overline\pi)=4p_Lp_R(\mu_R-\mu_L).
+\end{equation}
+At consensus, the implementation returns zero. This specifies the comparator used by the code without extending the paper's axiomatic or expert-validation claims to it.\footnote{The implementation is \path{src/measures/metrics/proposed/bipol.py}; the repository's README credits it to Carlos Pinzón.}
 
-The historical tables report scores in $[0,1]$, but the sources do not specify the MEC normalization sufficiently to identify it with Eq.~\eqref{eq:methods-root-normalization}. The results below therefore retain the sources' numerical scale. A nonlinear increasing transformation preserves score order but can change a $k$-means fit. The stored cutoffs agree with the four-decimal report and are already present in repository commit \texttt{2970e547} of 3 March 2025. Their application is implemented and tested, but the fitting script, complete score arrays, initialization, restarts, and stopping settings were not found among the inspected materials. The reported historical fit can thus be documented, while its full numerical reproduction remains unverified.
+The percentile schemes use the 33rd and 66th percentiles for three categories, the 25th, 50th, and 75th for four, and the 20th, 40th, 60th, and 80th for five. They partition the ordered scores into groups of approximately prescribed sizes. The alternative applies one-dimensional $k$-means separately to each measure's scores, with $k=3,4,5$, to reduce the within-cluster sum of squares. Percentile boundaries depend on cumulative frequencies, whereas nearest-centroid boundaries lie halfway between adjacent ordered centroids. These criteria need not produce the same groups, and neither determines an optimal number of categories.
+
+For Lloyd's procedure, let $z_r$ denote the score of canonical profile $r$, and let $c_j^{(t)}$ be centroid $j$ at iteration $t$. Starting from $k$ initial centroids, assign each profile to one nearest centroid,
+\begin{equation}\label{eq:methods-lloyd-assignment}
+j_r^{(t)}\in\operatorname*{arg\,min}_{1\leq j\leq k}
+       (z_r-c_j^{(t)})^2,
+\qquad
+S_j^{(t)}=\{r:j_r^{(t)}=j\}.
+\end{equation}
+An equidistant profile must be assigned exclusively to one group; the report does not identify the historical tie-breaking rule. For each nonempty group, update its centroid to its mean,
+\begin{equation}\label{eq:methods-lloyd-update}
+c_j^{(t+1)}=\frac{1}{|S_j^{(t)}|}\sum_{r\in S_j^{(t)}}z_r.
+\end{equation}
+Alternating these steps cannot increase $\sum_j\sum_{r\in S_j}(z_r-c_j)^2$, but does not guarantee a global minimum. These equations describe the reported procedure, not a recovered record of its initialization or stopping settings.
+
+The historical tables report scores in $[0,1]$. The corpus generator and measure calculator are available, and the \texttt{MECNormalized} class already applied the root normalization of Eq.~\eqref{eq:methods-root-normalization} in repository commit \texttt{2970e547} of 3 March 2025. That calculator retains both raw and normalized MEC scores. The fitting step that selected a score array and produced the reported thresholds and figures has not been located, so its exact normalization and quantization cannot be established from that code alone. A nonlinear increasing transformation preserves order but can change a $k$-means fit. The results below therefore retain the sources' numerical scale. The stored cutoffs agree with the four-decimal report and are present in that historical commit. Their application is implemented and tested, while complete fitting arrays, initialization, restarts, and stopping settings remain unavailable among the inspected materials.
 
 \subsection{Reproducibility and Computational Resources}\label{subsec:methods-reproducibility}
 
@@ -1440,37 +1459,117 @@ The analysis supports the paper's conclusion that several evaluated settings ach
 
 \subsection{Thresholds for Polarization Classification}\label{subsec:results-thresholds}
 
-The preceding comparisons concern numerical rankings and parameter sensitivity. A12 adds a classification of scores at the fixed reference settings $\mathrm{MEC}_{2,1.15}$ and $\mathrm{ER}_{0.8}$. Table~\ref{tab:results-thresholds} records the historical cutoffs on the scale specified in Section~\ref{subsec:methods-thresholds}. The four-decimal values come from the accompanying report \citep{narvaez2025thresholds} and agree, at the displayed two-decimal precision, with Tables~3 and~4 of the companion manuscript \citep[Section~9.4]{arandaMECthresholds}.
+The preceding comparisons concern numerical rankings and parameter sensitivity. A12 adds a classification at the fixed settings $\mathrm{MEC}_{2,1.15}$ and $\mathrm{ER}_{0.8}$, together with the report's BiPol comparator. The results in this section are historical outputs on the scale specified in Section~\ref{subsec:methods-thresholds}. Values are transcribed to four decimal places from \citet{narvaez2025thresholds}; the MEC and ER entries agree at the displayed two-decimal precision with Tables~3 and~4 of the companion manuscript \citep[Section~9.4]{arandaMECthresholds}.
+
+The reported minimum and maximum are $0$ and $1$ for each measure. Table~\ref{tab:results-threshold-statistics} gives the means and medians once, since changing the classification scheme does not change the underlying scores. Figure~\ref{fig:results-threshold-percentiles} displays those score distributions with percentile cutoffs. MEC and ER have a single main peak and a longer upper tail, while BiPol's mean and median are both close to $0.54$. The score histograms provide context for the partitions, without establishing distinct natural classes of polarization.
 
 \begin{table}[htbp]
 \centering
-\caption{Historical percentile and $k$-means cutoffs for MEC at $(2,1.15)$ and ER at $0.8$, transcribed to four decimal places from \citet{narvaez2025thresholds}. The number of categories is fixed at $k$ in each row. These are reported values, not a newly fitted classification.}
-\label{tab:results-thresholds}
+\caption{Reported descriptive statistics on the canonical corpus \citep{narvaez2025thresholds}. All three measures have reported minimum $0$ and maximum $1$.}
+\label{tab:results-threshold-statistics}
 \small
-\setlength{\tabcolsep}{4pt}
-\begin{tabular}{@{}lcll@{}}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lrr@{}}
 \toprule
-Measure & $k$ & Percentile cutoffs & $k$-means cutoffs\\
+Measure & Mean & Median\\
 \midrule
-MEC & 3 & $0.1971,\ 0.2922$ & $0.2233,\ 0.3801$\\
-ER  & 3 & $0.3609,\ 0.4466$ & $0.3791,\ 0.5141$\\[3pt]
-MEC & 4 & $0.1747,\ 0.2408,\ 0.3274$ & $0.1718,\ 0.2841,\ 0.4271$\\
-ER  & 4 & $0.3407,\ 0.4031,\ 0.4761$ & $0.3501,\ 0.4467,\ 0.5660$\\[3pt]
-MEC & 5 & $0.1581,\ 0.2141,\ 0.2716,\ 0.3503$ & $0.1513,\ 0.2421,\ 0.3369,\ 0.4689$\\
-ER  & 5 & $0.3275,\ 0.3781,\ 0.4295,\ 0.4965$ & $0.3196,\ 0.3973,\ 0.4809,\ 0.5921$\\
+MEC & 0.2574 & 0.2408\\
+BiPol & 0.5379 & 0.5376\\
+ER & 0.4157 & 0.4031\\
 \bottomrule
 \end{tabular}
 \end{table}
 
-For the 33rd/66th-percentile scheme, both measures have reported category counts $(758{,}910,758{,}909,781{,}907)$ from low to high. The final group contains approximately $34\%$ of the corpus because the upper cutoff is the 66th percentile. Equal marginal counts do not imply that the measures assign the same profiles to each category. The four- and five-category percentile schemes likewise give nearly equal-sized groups, as prescribed by their cumulative splits.
+\begin{figure}[htbp]
+\centering
+\makebox[\linewidth][c]{\includegraphics[width=1.30\linewidth]{images/percentile_method.png}}
+\caption{Historical percentile classifications reproduced from \citet{narvaez2025thresholds}, preserving the author-supplied image. Rows show MEC at $(2,1.15)$, BiPol, and ER at $0.8$. Columns show the 33rd/66th, 25th/50th/75th, and 20th/40th/60th/80th splits. Dashed lines mark percentile cutoffs.}
+\label{fig:results-threshold-percentiles}
+\end{figure}
 
-For $k=3$, the reported MEC centroids are $(0.1546,0.2919,0.4683)$, with counts $(1{,}002{,}929,960{,}752,336{,}045)$. The corresponding ER centroids are $(0.3202,0.4380,0.5902)$, with counts $(928{,}943,993{,}213,377{,}570)$ \citep{narvaez2025thresholds}. In both cases, $k$-means places the upper cutoff above the percentile cutoff and assigns fewer profiles to the high category. The high groups contain approximately $14.61\%$ of the corpus for MEC and $16.42\%$ for ER, compared with approximately $34\%$ under the percentile scheme.
+Table~\ref{tab:results-thresholds} compares the percentile and $k$-means cutoffs for all three measures. Table~\ref{tab:results-threshold-percentile-counts} gives the percentile category counts in increasing score order. The 33rd/66th scheme leaves approximately $34\%$ of the corpus above its upper cutoff. The four- and five-category schemes give nearly equal-sized groups, as prescribed by their cumulative splits. MEC and ER have equal reported counts under each percentile scheme, but equal marginal counts do not imply that they classify the same profiles together. BiPol's counts differ slightly while retaining the prescribed approximate proportions.
 
-This difference follows from the classification criteria. Percentiles prescribe relative group sizes, whereas $k$-means groups nearby numerical scores without imposing equal counts. The smaller high group does not establish that its labels are more accurate or that the corpus contains distinct natural classes. The analysis documents alternative descriptive partitions, not sociological boundaries validated by expert ratings. Its contribution to A12 is the reported comparison of these schemes and the implementation of their fixed cutoffs, subject to the historical reproduction limit in Section~\ref{subsec:methods-thresholds}.
+\begin{table}[htbp]
+\centering
+\caption{Historical percentile and $k$-means cutoffs \citep{narvaez2025thresholds}. MEC uses $(2,1.15)$ and ER uses $0.8$ throughout. Categories are ordered from low to high, with score range $[0,1]$.}
+\label{tab:results-thresholds}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lcll@{}}
+\toprule
+Measure & k & Percentile cutoffs & k-means cutoffs\\
+\midrule
+MEC & 3 & 0.1971, 0.2922 & 0.2233, 0.3801\\
+BiPol & 3 & 0.4726, 0.5994 & 0.4525, 0.6267\\
+ER & 3 & 0.3609, 0.4466 & 0.3791, 0.5141\\
+MEC & 4 & 0.1747, 0.2408, 0.3274 & 0.1718, 0.2841, 0.4271\\
+BiPol & 4 & 0.4380, 0.5376, 0.6383 & 0.3940, 0.5317, 0.6702\\
+ER & 4 & 0.3407, 0.4031, 0.4761 & 0.3501, 0.4467, 0.5660\\
+MEC & 5 & 0.1581, 0.2141, 0.2716, 0.3503 & 0.1513, 0.2421, 0.3369, 0.4689\\
+BiPol & 5 & 0.4140, 0.5000, 0.5756, 0.6627 & 0.3543, 0.4730, 0.5816, 0.7024\\
+ER & 5 & 0.3275, 0.3781, 0.4295, 0.4965 & 0.3196, 0.3973, 0.4809, 0.5921\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Reported percentile category counts \citep{narvaez2025thresholds}. MEC and ER share the same marginal counts, so they are listed once. Each row totals $2{,}299{,}726$ for each measure.}
+\label{tab:results-threshold-percentile-counts}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}cll@{}}
+\toprule
+k & MEC and ER & BiPol\\
+\midrule
+3 & (758910,758909,781907) & (758979,758859,781888)\\
+4 & (574932,574931,574931,574932) & (575029,574883,574967,574847)\\
+5 & (459946,459945,459945,459945,459945) & (460296,459784,460139,459566,459941)\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The $k$-means classifications in Figure~\ref{fig:results-threshold-kmeans} instead divide scores by proximity to centroids. Table~\ref{tab:results-threshold-clusters} records every reported centroid and group count for $k=3,4,5$. Together with the cutoffs in Table~\ref{tab:results-thresholds} and the common endpoints $0$ and $1$, these values specify the reported groups without repeating the same intervals. The three choices of $k$ give alternative divisions of the score range; the tables alone do not determine which is preferable.
+
+\begin{figure}[htbp]
+\centering
+\makebox[\linewidth][c]{\includegraphics[width=1.30\linewidth]{images/kmeans_method.png}}
+\caption{Historical $k$-means classifications reproduced from \citet{narvaez2025thresholds}, preserving the author-supplied image. Rows show MEC at $(2,1.15)$, BiPol, and ER at $0.8$; columns use $k=3,4,5$. Colours distinguish score groups. Dashed lines mark centroids, not the cutoffs listed in Table~\ref{tab:results-thresholds}.}
+\label{fig:results-threshold-kmeans}
+\end{figure}
+
+\begin{table}[htbp]
+\centering
+\caption{Reported $k$-means centroids and category counts \citep{narvaez2025thresholds}. Both tuples follow increasing centroid order. Counts for each measure and $k$ sum to $2{,}299{,}726$.}
+\label{tab:results-threshold-clusters}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lcll@{}}
+\toprule
+Measure & k & Centroids & Counts\\
+\midrule
+MEC & 3 & (0.1546,0.2919,0.4683) & (1002929,960752,336045)\\
+BiPol & 3 & (0.3652,0.5398,0.7137) & (649188,1016983,633555)\\
+ER & 3 & (0.3202,0.4380,0.5902) & (928943,993213,377570)\\
+MEC & 4 & (0.1182,0.2255,0.3428,0.5114) & (554166,911036,633659,200865)\\
+BiPol & 4 & (0.3208,0.4672,0.5963,0.7442) & (376399,736586,760015,426726)\\
+ER & 4 & (0.3027,0.3975,0.4959,0.6361) & (659528,859091,578046,203061)\\
+MEC & 5 & (0.1040,0.1987,0.2855,0.3883,0.5495) & (417349,742128,614763,398368,127118)\\
+BiPol & 5 & (0.2895,0.4191,0.5269,0.6364,0.7686) & (237904,523153,654893,581750,302026)\\
+ER & 5 & (0.2803,0.3588,0.4358,0.5259,0.6582) & (395345,701921,656490,401449,144521)\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+For $k=3$, $k$-means places the upper cutoff above the corresponding percentile cutoff for all three measures. Its highest group contains approximately $14.61\%$ of the corpus for MEC, $16.42\%$ for ER, and $27.55\%$ for BiPol, compared with approximately $34\%$ under the percentile scheme. Thus the smaller upper groups are especially pronounced for MEC and ER. This difference follows from the criteria being compared. Percentiles prescribe relative group sizes, whereas $k$-means groups nearby numerical scores without imposing equal counts.
+
+The figure's four-group legend uses \emph{Low}, \emph{Medium Low}, \emph{Medium High}, and \emph{High}. The current API instead names its four groups \texttt{very\_low}, \texttt{low}, \texttt{high}, and \texttt{very\_high}. These names refer to the same ordered stored cutoffs, but they are not identical labels. The API assigns a score exactly at a cutoff to the next higher category. That operational convention does not identify the historical fit's tie-breaking rule, and rounded interval endpoints in the report should not be read as evidence for a different implementation.
+
+The analysis documents alternative descriptive partitions rather than sociological boundaries validated by expert ratings. A smaller highest group does not make its labels more accurate, and these results do not establish a globally optimal or stable clustering. Their contribution to A12 is the comparison of the schemes, the reported outputs, and the implementation of fixed cutoffs, subject to the fitting-provenance limit in Section~\ref{subsec:methods-thresholds}. The report's suggested comparison of measures within the resulting groups remains a possible extension, not a result established by these classifications.
 
 \subsection{Computational Performance}\label{subsec:results-performance}
 
-The ranking results establish what the computations reveal. The timing records address whether those computations are practical and how their cost changes with the number of opinion positions. These are supplementary repository results, separate from the paper's published concordance experiments.
+The score comparisons and classifications concern the numerical outputs. The timing records address whether those computations are practical and how their cost changes with the number of opinion positions. These are supplementary repository results, separate from the paper's published concordance experiments.
 
 Two saved runs score the full canonical corpus with a single worker, one evaluation per histogram, and direct calls to \texttt{compute}. They use unit-mass weights, five equally spaced positions, and \texttt{float64} arrays. Table~\ref{tab:results-corpus-timing} reports their wall times and mean time per histogram. The metadata records Python~3.14.3 on an ARM-based macOS~26.5 system. Corpus generation is recorded separately and excluded from the displayed scoring times.
 
@@ -1594,7 +1693,7 @@ The proposal envisaged aggregate regional cases as exercises in interpreting opi
 
 The desirable activities A7 and A11--A13 are assessed separately from the mandatory tasks. Central-split monotonicity is established. The companion manuscript reports empirical transformation checks related to A11 \citep[Section~10]{arandaMECcompanion}. Its finite tests do not establish universal compliance for VdE or TWD, and an isolated merger does not refute the existential bounds in Axiom~1.
 
-The threshold analysis for the desirable activity A12 was carried out and documented in the companion manuscript and accompanying report. Section~\ref{subsec:results-thresholds} presents its percentile and $k$-means results for MEC and ER, and the library implements the stored cutoffs. The missing fitting record and ambiguity about the historical MEC normalization limit reproduction of that analysis, rather than leave the activity itself undocumented.
+The threshold analysis for the desirable activity A12 was carried out and documented in the companion manuscript and accompanying report. Section~\ref{subsec:results-thresholds} presents the percentile and $k$-means results for MEC and ER, together with the report\textquoteright s BiPol comparison, and the library implements the stored cutoffs. The historical normalized MEC implementation is available. What remains unverified is the link from the selected score array and fitting configuration to these reported classifications. The limitation concerns full reproduction of the analysis.
 
 The feature-request record for A13 is not established by the outputs examined here. A14 required contributions of text and figures to the joint MEC manuscript. I carried out experiments and developed proofs and text within that collective work, with the guidance and revisions described above.
 
