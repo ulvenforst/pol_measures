@@ -1,0 +1,1284 @@
+{
+  "original_checkout": "/Users/ulvenforst/Codex/University/pol_measures",
+  "original_head": "49d4e2d36d5fd32c0552a691fdec1b4545d66e11",
+  "backup_commit": "ef4391db3e1d185dc8cc686d4ea9b8a1dfb03fbf",
+  "backup_branch": "snotra/respaldo-proyecto-real-20261020",
+  "thesis_commit": "04b99445a94a97d3ab372f8682c8545169f38c4b",
+  "article_commit": "8d8cba5e70eca3d0b5b54a16e1e5d87e23228eb1",
+  "target_branch": "snotra/revision-tesis-cap2-20261019",
+  "integration_tree": "da0de6828413a788fbf3b4f4392bedee96584051",
+  "conflicts": [],
+  "approved_tree_file_count": 208,
+  "approved_changed_files": [
+    "Anteproyecto/references/arxiv-2606.13997v1/sections/08-experiments.tex",
+    "Anteproyecto/research-notes/dos-precisiones-fuente-20261019.txt",
+    "Anteproyecto/research-notes/propuesta-mad-sin-aplicar-20261019.txt",
+    "Anteproyecto/research-notes/revision-cap2-20261019.txt",
+    "Anteproyecto/research-notes/revision-continuidad-20261019.txt",
+    "Anteproyecto/research-notes/revision-global-parrafos-20261019.txt",
+    "Anteproyecto/research-notes/revision-parrafo-a-parrafo-20261019.txt",
+    "Anteproyecto/sn-article.tex"
+  ],
+  "approved_tree_files": {
+    ".DS_Store": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "282e0c3ffde23441ad07b7aaa1c6098aa27511e5"
+    },
+    ".github/workflows/python-tests.yml": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "a589f313e0b81075b1c9bfbf9ba39e54219d6da9"
+    },
+    ".gitignore": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "82f927558a3dff0ea8c20858856e70779fd02c93"
+    },
+    "Anteproyecto/.gitignore": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "2f1b922a36deceed7d172626b0585653d3f0304d"
+    },
+    "Anteproyecto/images/axiom1.png": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "67502e92f4c34355e5e95d85851fcc552bfc1c34"
+    },
+    "Anteproyecto/images/axiom2.png": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "a87deb36c66e8a7d0132a305abf1bdd77966c463"
+    },
+    "Anteproyecto/images/axiom3.png": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "53ed2d6d659f259b4755c842e1ae5525f94b3bd1"
+    },
+    "Anteproyecto/images/codex-57c5d75df53c7b91bc78fc089f9b79f53768643ca453f524168024eb3e5c0635.png": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "56be4a0bca0997d7367d23a30aba62f5b43655de"
+    },
+    "Anteproyecto/images/codex-62b3456e4154d1d05526ba30086c19ecbfb95a4e2eb604889a7a958e4773a38c.png": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "31ca62a1ce89d535887f06fd1b3ee30b4119f069"
+    },
+    "Anteproyecto/images/codex-9ac3fd35594fc18d906637241095d79a48a21c20d582cfa63a1e72e3ded7a52c.png": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "013c27955de33bef48a29bd6d4650c4fbfef65c9"
+    },
+    "Anteproyecto/images/codex-a708b1db6f8647eed8899da60eab4b4e626dec6cf8591e7c0f214fcc8439b678.png": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "04230cb09f007245dc223cf142d606acd01f2bb0"
+    },
+    "Anteproyecto/images/codex-bfde8a50ff289aa024167f7a8c98644722b058ec999ef3dcefee2d1f0f846dee.png": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "507ecbbd463542a9f2f5ecc400511f79e91cfeea"
+    },
+    "Anteproyecto/images/codex-e901954d6a476edc15e8013546efc5f0b52198cec1835f539a0cd50d798fc991.png": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "d2606a11ea24f42cb3f86be7ac143bfe034686db"
+    },
+    "Anteproyecto/images/experts_histograms.jpg": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "73d5cca21d000b5baa72e0a7f8503de1ec40f82e"
+    },
+    "Anteproyecto/images/property1.png": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "6af6e86d3fdae150a2f27b46216bb0caed74884d"
+    },
+    "Anteproyecto/references/2606.13997v1.pdf": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "c557f6930d1f72e0c609e8a5c490e36259616b0e"
+    },
+    "Anteproyecto/references/Anteproyecto_de_grado-vfinal.pdf": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "f0f84f86c7467afd5ac1f7e4f066919ec4d23111"
+    },
+    "Anteproyecto/references/INDEX.txt": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "60f736514f67a4aa38c9a96e7235460393de29b9"
+    },
+    "Anteproyecto/references/arxiv-2606.13997v1/00README.json": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "4b733249f1c36ef7d7504b4cf43ae97e06177f8b"
+    },
+    "Anteproyecto/references/arxiv-2606.13997v1/Images/er_axioms/axiom1.png": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "67502e92f4c34355e5e95d85851fcc552bfc1c34"
+    },
+    "Anteproyecto/references/arxiv-2606.13997v1/Images/er_axioms/axiom2.png": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "a87deb36c66e8a7d0132a305abf1bdd77966c463"
+    },
+    "Anteproyecto/references/arxiv-2606.13997v1/Images/er_axioms/axiom3.png": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "53ed2d6d659f259b4755c842e1ae5525f94b3bd1"
+    },
+    "Anteproyecto/references/arxiv-2606.13997v1/Images/er_axioms/property1.png": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "6af6e86d3fdae150a2f27b46216bb0caed74884d"
+    },
+    "Anteproyecto/references/arxiv-2606.13997v1/Images/experimental_comparisons/correlation_experts_opinion.png": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "d2606a11ea24f42cb3f86be7ac143bfe034686db"
+    },
+    "Anteproyecto/references/arxiv-2606.13997v1/Images/experimental_comparisons/experts_histograms.jpg": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "73d5cca21d000b5baa72e0a7f8503de1ec40f82e"
+    },
+    "Anteproyecto/references/arxiv-2606.13997v1/Images/experimental_comparisons/kendalltau_correlation_matrix.png": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "31ca62a1ce89d535887f06fd1b3ee30b4119f069"
+    },
+    "Anteproyecto/references/arxiv-2606.13997v1/appendix/A-mec-measure-proofs.tex": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "8966bf30a036bcba06725786f73941bf7ab82912"
+    },
+    "Anteproyecto/references/arxiv-2606.13997v1/appendix/B-structural-properties-proofs.tex": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "cc34b64add587c14cc58f390d8c3f4e706d50f4c"
+    },
+    "Anteproyecto/references/arxiv-2606.13997v1/appendix/C-theoretical-applications-proofs.tex": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "780ac4a0f98d225badc7358fc684235d34eb8498"
+    },
+    "Anteproyecto/references/arxiv-2606.13997v1/appendix/D-polarization-measure-proof.tex": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "ee58cf927d04e53a66ec9b9d84b26af0ebfa65be"
+    },
+    "Anteproyecto/references/arxiv-2606.13997v1/appendix/E-er-axioms-proofs.tex": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "547cd4361cba60004c5d935eea59d0bdcf2017c6"
+    },
+    "Anteproyecto/references/arxiv-2606.13997v1/appendix/F-auxiliary-theorems.tex": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "de16f62a6eeadafa2707d86f77ea1a71ce9b2bc1"
+    },
+    "Anteproyecto/references/arxiv-2606.13997v1/macros.tex": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "2fa952fb950aeb46bba2b4a68251702e8e83d499"
+    },
+    "Anteproyecto/references/arxiv-2606.13997v1/main.bib": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "8f80a1e29abaabd92c6cac7f929857ee8853fcbc"
+    },
+    "Anteproyecto/references/arxiv-2606.13997v1/main.tex": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "6faeee3f480c0e251de165b3b80a1bbf40190a41"
+    },
+    "Anteproyecto/references/arxiv-2606.13997v1/sections/01-introduction.tex": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "74a22b599a488feb2f2dd0e625a469b2db96827d"
+    },
+    "Anteproyecto/references/arxiv-2606.13997v1/sections/02-preliminaries.tex": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "c89f2a5613b67ed44afa37d00c0821bbf10b66a0"
+    },
+    "Anteproyecto/references/arxiv-2606.13997v1/sections/03-mec-measure.tex": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "ce3d927e957a5a47768d081f3c5bdee4ab350d97"
+    },
+    "Anteproyecto/references/arxiv-2606.13997v1/sections/04-structural-properties.tex": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "fad385a96f9f19d717c2d05d8860ad7173b3f168"
+    },
+    "Anteproyecto/references/arxiv-2606.13997v1/sections/05-theoretical-applications.tex": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "6e63542d2ff995336fc6eac02a519a20048b58c1"
+    },
+    "Anteproyecto/references/arxiv-2606.13997v1/sections/06-shifting-away.tex": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "26d81c5868956a733594e5797c867cf0a96c76d2"
+    },
+    "Anteproyecto/references/arxiv-2606.13997v1/sections/07-er-comparison.tex": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "1cb7e53985a1d9f9be7555b849cc97441f7007f8"
+    },
+    "Anteproyecto/references/arxiv-2606.13997v1/sections/08-experiments.tex": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "d3ab3360b35b374f1f95b187e585e9b3a7caf761"
+    },
+    "Anteproyecto/references/arxiv-2606.13997v1/sections/09-conclusion.tex": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "e7c260423af6d2c3a81da9698a997dd90e221f42"
+    },
+    "Anteproyecto/research-notes/README.md": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "ee5030976f9f4228939a6aeadd9b70c9965ef75f"
+    },
+    "Anteproyecto/research-notes/arxiv-v1-manifest.json": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "1ed698bb0e7d18bb5f747ae67fb8e5a05ad9be8c"
+    },
+    "Anteproyecto/research-notes/arxiv-v1-thesis-reference.md": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "0b4c5928a9790d4cd1f0ff26b432d5d8fef98bc8"
+    },
+    "Anteproyecto/research-notes/audit-verification-20261011.json": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "443f26695e372c54da4d945d6b0bbd9aa63126cb"
+    },
+    "Anteproyecto/research-notes/auditoria-anteproyecto-articulo-20261011.txt": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "4bdca009da7164c71a896464ba187a3a9eb0d679"
+    },
+    "Anteproyecto/research-notes/auditoria-global-tesis-20261011.txt": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "d75da54e07584e0c9ad461b530848a60a0ffc4a2"
+    },
+    "Anteproyecto/research-notes/contexto-del-anteproyecto-pendiente-de-integracion-20261011.txt": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "71bcfc849bb453fdd79bc4db3e04ba5e3ec0a63c"
+    },
+    "Anteproyecto/research-notes/contribuciones-del-anteproyecto-preservadas-20261011.txt": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "b8abd6a71a108cd5aac412f264f54753887debe2"
+    },
+    "Anteproyecto/research-notes/dos-precisiones-fuente-20261019.txt": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "14c7b0471ec55ad97e86854894035b0f80410feb"
+    },
+    "Anteproyecto/research-notes/estructura-tesis-fuentes-oficiales-20261011.txt": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "de3aed38756679247709811d1008e00caab2cb7a"
+    },
+    "Anteproyecto/research-notes/etica-del-anteproyecto-preservada-20261011.txt": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "bff6126be30eca043ccd153caf04197d9c2092e0"
+    },
+    "Anteproyecto/research-notes/graphics-manifest.json": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "c7adf93ae62d1993757f79fe1e22d303686f6a89"
+    },
+    "Anteproyecto/research-notes/metodologia-del-anteproyecto-preservada-20261011.txt": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "3fc93ced636e5c80dfc9058f5273aaa3c69e76c1"
+    },
+    "Anteproyecto/research-notes/plan-de-trabajo-del-anteproyecto-preservado-20261011.txt": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "718cc2a0d6f51e47032fbde3c827a4348b4a8b5f"
+    },
+    "Anteproyecto/research-notes/propuesta-mad-sin-aplicar-20261019.txt": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "413fa72d70099752326067517763e4417528bb57"
+    },
+    "Anteproyecto/research-notes/research-context.md": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "211f26231af0a749d92f5ca22dffa2cb0129fb51"
+    },
+    "Anteproyecto/research-notes/revision-cap2-20261019.txt": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "bbbb306e16ba5fa40a1adfbb5963107dc93667ee"
+    },
+    "Anteproyecto/research-notes/revision-conclusiones-trabajo-futuro-20261011.txt": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "d37ab9456ff2a9fc43bf82eac83cd87ad1af659d"
+    },
+    "Anteproyecto/research-notes/revision-continuidad-20261019.txt": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "7b167e4062ba7e143a1f217d9472cc509cbe1f52"
+    },
+    "Anteproyecto/research-notes/revision-discusion-limitaciones-20261011.txt": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "a0c1b0cf2148479b1086ea1613b77c8aeb5ac4f8"
+    },
+    "Anteproyecto/research-notes/revision-global-parrafos-20261019.txt": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "49680ec264ce55b276d79c88b3c4a8c2b3302bc2"
+    },
+    "Anteproyecto/research-notes/revision-graficos-20261011.txt": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "00b8a10ae8b5ceeaeb6988f2ade7d35386b6249f"
+    },
+    "Anteproyecto/research-notes/revision-introduccion-20261011.txt": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "bcfb4f3bb8bf1c4aa42c87de2474a5e2745379a0"
+    },
+    "Anteproyecto/research-notes/revision-marco-conceptual-20261011.txt": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "5c8535734e79bc9a630cd8d0eed071f31addbc87"
+    },
+    "Anteproyecto/research-notes/revision-mec-fundamentos-20261011.txt": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "865404f9727207bffcccadc9bbfadb69608b9b6d"
+    },
+    "Anteproyecto/research-notes/revision-mec-teoria-axiomas-20261011.txt": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "baa4258fd602a67e89a0a3ab01d98a3d3fa13f71"
+    },
+    "Anteproyecto/research-notes/revision-metodologia-implementacion-20261011.txt": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "eb1d1fcf951383f0cf7c0323829fe73775e62294"
+    },
+    "Anteproyecto/research-notes/revision-objetivos-alcance-20261011.txt": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "7809cbd47006418ab4ef71ccb92f174688ac20f9"
+    },
+    "Anteproyecto/research-notes/revision-parrafo-a-parrafo-20261019.txt": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "773fa2a184f28ad890c58ba60854557559b65fd5"
+    },
+    "Anteproyecto/research-notes/revision-resultados-experimentales-20261011.txt": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "158ac45a880819ab47f4b037a673fc3af3c4a26a"
+    },
+    "Anteproyecto/research-notes/source-manifest.json": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "138cdd6d79c0700a8cfda8b509a304c17fa56549"
+    },
+    "Anteproyecto/research-notes/tablas-resultados-sustituidas-por-figuras-20261011.txt": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "b40cfa05e9d93b6daa89253d01f86e5c9e70be84"
+    },
+    "Anteproyecto/research-notes/verificacion-global-tesis-20261011.json": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "ed12b4301d817738df396a3c4ed6f28dedcb7f04"
+    },
+    "Anteproyecto/research-notes/verificacion-resultados-seccion7-20261011.json": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "1910d9a9b22ae8f16d8d6bf6750401b53d9db280"
+    },
+    "Anteproyecto/research-notes/verification-and-open-questions.md": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "9269657672df5e18615cb23598c054ac5b1c8d11"
+    },
+    "Anteproyecto/research-notes/verification-results.json": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "fda89bd8eefc8bff03b6783f42e7acb31c46942f"
+    },
+    "Anteproyecto/sn-article.tex": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "d225e9a563c76d96c0bd8ae9499815b42f161ac8"
+    },
+    "LICENSE": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7"
+    },
+    "MEC-beta-exactly-vs-almost-1.md": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "416ed5cd81690c3e3ef3b03ea7f0df3c2c535383"
+    },
+    "README.md": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "284938073965b820cff2a209f79f2ece64ae42c4"
+    },
+    "__init__.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    "benchmarks/.DS_Store": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "7e353ebd888066cd98cdd5205309f4d74d73518d"
+    },
+    "benchmarks/__init__.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "147500d02ca62ad2d2fcc1346a6d25f22b36dee8"
+    },
+    "benchmarks/comparison_matrix/Figure_1.png": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "c0473ba7708e8a7adeca4691212f5f0853dba471"
+    },
+    "benchmarks/comparison_matrix/SN100.png": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "62058066084d1cd256363eb7d1bf547fa15a6a36"
+    },
+    "benchmarks/comparison_matrix/__init__.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "e7b57970ba048dd56b7144c56c104d058d0dd4ad"
+    },
+    "benchmarks/comparison_matrix/distribution_generator.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "45656be9888d54b4cff055cdf781c3ce8f5e070c"
+    },
+    "benchmarks/comparison_matrix/kendall_matrix.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "2e7f05e89641fdc098071bcfc8d122ab50792c01"
+    },
+    "benchmarks/comparison_matrix/measure_calculator.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "1905365d55afc5a84613caa44e3e5c9c58303c85"
+    },
+    "benchmarks/comparison_matrix/n50.png": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "62058066084d1cd256363eb7d1bf547fa15a6a36"
+    },
+    "benchmarks/comparison_matrix/n50vAlpha.png": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "89e4f9bbac212048d057890d50cc0e522cd78ed1"
+    },
+    "benchmarks/comparison_matrix/run_comparison.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "2efadb3a34806aa5900ce2f430b32a23efbe75d4"
+    },
+    "benchmarks/comparison_matrix/visualizer.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "9019658b5135b44b846ed27f40fd2f81905ce8d8"
+    },
+    "benchmarks/corpus_timing_mec_vs_er.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "2d8beef5bf77955334ba8e892a0de2b6b8348925"
+    },
+    "benchmarks/corpus_timing_mec_vs_er/full_auto_m4max.csv": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "43c37a45f832d2cd3c9ad28aa348da5422b2fcf9"
+    },
+    "benchmarks/corpus_timing_mec_vs_er/full_auto_m4max.json": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "d602663a3b251221e10d1f989095232f3312f566"
+    },
+    "benchmarks/corpus_timing_mec_vs_er/full_auto_m4max_tuned.csv": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "742841108d6f3fa6ed548472be3544153b7dba35"
+    },
+    "benchmarks/corpus_timing_mec_vs_er/full_auto_m4max_tuned.json": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "f884f76d708b7443a36dc9a9d5499cd27e8c5da7"
+    },
+    "benchmarks/corpus_timing_mec_vs_er/full_er_w1.csv": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "30903b07ff246ea5b70a0d9606838b82541929c5"
+    },
+    "benchmarks/corpus_timing_mec_vs_er/full_er_w1.json": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "cb949df2dcc8a5d5c70d377f2ce9ef2dd364faa7"
+    },
+    "benchmarks/corpus_timing_mec_vs_er/full_er_w8.csv": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "5b47250cc32d86b9b068f65b702d2f7e6c5c5cf0"
+    },
+    "benchmarks/corpus_timing_mec_vs_er/full_er_w8.json": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "e8fdd5aba30fda94a44eae157f8ee3a61b43628c"
+    },
+    "benchmarks/corpus_timing_mec_vs_er/full_mec_w1.csv": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "3986d3c926727655b15b3786a27a3a91d6df0916"
+    },
+    "benchmarks/corpus_timing_mec_vs_er/full_mec_w1.json": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "94238f5973e16bc3464b476c58deb3178668bb7b"
+    },
+    "benchmarks/corpus_timing_mec_vs_er/full_mec_w14.csv": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "94e719aa5832fcfab01608f0ac4a328be17578b2"
+    },
+    "benchmarks/corpus_timing_mec_vs_er/full_mec_w14.json": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "f2ea3557f945fbb8f3de79cf85d0b3b124ed471f"
+    },
+    "benchmarks/corpus_timing_mec_vs_er/full_mec_w16.csv": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "24c362f36fb6237fb54b1f0220b6942443ea5e00"
+    },
+    "benchmarks/corpus_timing_mec_vs_er/full_mec_w16.json": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "673830cc87be28de9e033c86c9f60d6c18daeaf8"
+    },
+    "benchmarks/corpus_timing_mec_vs_er/full_mec_w8.csv": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "980e7f95b7ac967f57526e54e1613b0a13670f2a"
+    },
+    "benchmarks/corpus_timing_mec_vs_er/full_mec_w8.json": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "7c79853b76366d93ad4cd544ce0a39a83021a973"
+    },
+    "benchmarks/corpus_timing_mec_vs_er/tune300k_mec_validation.csv": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "1bbc7e70cd21e6d1a0f090095d6dac847ce5c525"
+    },
+    "benchmarks/corpus_timing_mec_vs_er/tune300k_mec_validation.json": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "bbb554f908633a2b6f06271096bc391672bef819"
+    },
+    "benchmarks/emd_benchmark_results.png": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "7d7d2f4e1db66765093a453c56ba54c1350a58a4"
+    },
+    "benchmarks/expert_validation/Figure_1.png": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "69095f8d448d8a9daaad168bdd6d4c05a91f10c1"
+    },
+    "benchmarks/expert_validation/__init__.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    "benchmarks/expert_validation/data.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "836dc4991c724f6611f4a46e80e7293f69bfd324"
+    },
+    "benchmarks/expert_validation/mec_parameter_optimization.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "c92a5a0ff99ca35bc476f6447adc21a9f9ac8068"
+    },
+    "benchmarks/expert_validation/mec_parameter_optimization/coarse/kendall_heatmap.png": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "56be4a0bca0997d7367d23a30aba62f5b43655de"
+    },
+    "benchmarks/expert_validation/mec_parameter_optimization/coarse_grid_results.csv": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "22da32ce87e81beff172de16ba33e8d657cacc73"
+    },
+    "benchmarks/expert_validation/mec_parameter_optimization/refined/kendall_heatmap.png": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "013c27955de33bef48a29bd6d4650c4fbfef65c9"
+    },
+    "benchmarks/expert_validation/mec_parameter_optimization/refined_grid_results.csv": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "a7b45258789a1361d2b9e4ddb245e65c3f1d8f47"
+    },
+    "benchmarks/expert_validation/mec_parameter_optimization/refined_maxima.csv": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "069892514e1b99f003e969e9d02065ac0ccc73b6"
+    },
+    "benchmarks/expert_validation/mec_parameter_optimization/stability_candidates.csv": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "ab32c44ccbb0bf4c89da16935da57cf01f256289"
+    },
+    "benchmarks/expert_validation/mec_parameter_optimization/stability_results.csv": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "200ca1e60f4b5b7544d973d5adf22e5a64cf29bc"
+    },
+    "benchmarks/expert_validation/mec_parameter_optimization/summary.md": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "044c20fde3d5f4d8a515e70cdbd78d0986190cb6"
+    },
+    "benchmarks/expert_validation/mec_parameter_search.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "f27bc566b6d501295b59575db8ba89302a08fe57"
+    },
+    "benchmarks/expert_validation/optimized_validation_against_experts/optimized_validation_correlations.csv": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "d847da0b387c560dd68ac6245a3a7d198b386f0b"
+    },
+    "benchmarks/expert_validation/optimized_validation_against_experts/optimized_validation_correlations.png": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "13b6584c654cbbf4671c6f6a6d8190b3c3c571b9"
+    },
+    "benchmarks/expert_validation/optimized_validation_against_experts/optimized_validation_details.txt": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "1e4e67c6c6a490eaee7d42c962985878c9a4c81e"
+    },
+    "benchmarks/expert_validation/run_validation.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "120d163f49351b54cef70db9092a1cf74a44563e"
+    },
+    "benchmarks/expert_validation/run_validation_with_optimized_mec.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "851390d864c3b03c9b5c0d2edfe6f27576efc5eb"
+    },
+    "benchmarks/expert_validation/visualizer.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    "benchmarks/generalized_er_validation/Figure_1.png": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "836a4ad782bbdb1c41e335d619cc45d313cee4d0"
+    },
+    "benchmarks/generalized_er_validation/__init__.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    "benchmarks/generalized_er_validation/distributions_grid.png": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "1ee884e3e59edc6d5436f8e3c623eda824b803f5"
+    },
+    "benchmarks/generalized_er_validation/distributions_table.png": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "e42429dc9859914c3307593fe83460b28bc86c80"
+    },
+    "benchmarks/generalized_er_validation/generalized_er_valores.txt": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "f97afc47a9350c59df9e3a2b759f8e9e7bd11208"
+    },
+    "benchmarks/generalized_er_validation/optimized_mec_vs_generalized_leaderboard.csv": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "4a5040709579f0fa6f20884c956936c084195694"
+    },
+    "benchmarks/generalized_er_validation/optimized_mec_vs_generalized_leaderboard.png": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "fdb31be854e0df060034133fc8b4aaa567d2b410"
+    },
+    "benchmarks/generalized_er_validation/optimized_mec_vs_generalized_leaderboard.txt": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "cc05a0377987f7cf6e8c9800dddcb5c7a2c94d6a"
+    },
+    "benchmarks/generalized_er_validation/plot_distributions.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "10cf3465c370a564b068cb8e785db2c374cca5f0"
+    },
+    "benchmarks/generalized_er_validation/run_validation.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "6b46362f8508e933fdbc858129cfebfb715c5fed"
+    },
+    "benchmarks/generalized_er_validation/run_validation_with_optimized_mec.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "33e5db7f9bedba8901f250690e072b00116d2227"
+    },
+    "benchmarks/generalized_er_validation/values_table.png": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "03d694c5ae5f3b079a82c0a8ef5493a33b8a67d3"
+    },
+    "benchmarks/mec_normalization/report_data.json": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "6b7f15ff8f79f4e4e60de73569309893a6f523d5"
+    },
+    "benchmarks/mec_normalization/scaling_relative_error.png": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "ca8bcf10f64f74dfeda95bca3199badacf9eb401"
+    },
+    "benchmarks/mec_normalization_report.md": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "2c1fe4d68173bca92a458b4d64ffb44332e05f5c"
+    },
+    "benchmarks/proposition.md": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "ead1214bddde732203df016f2ad5f8b185ea7ff7"
+    },
+    "benchmarks/support_scaling_mec_vs_er.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "5152193210615d42f181c96bff61f55e0ecaa64d"
+    },
+    "benchmarks/support_scaling_mec_vs_er/support_scaling.csv": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "a3ab63e34ee43db2c44af96e9ef3376f34986fa8"
+    },
+    "benchmarks/support_scaling_mec_vs_er/support_scaling.json": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "e6bbb2d99a5c3596358378ece96dbb195a678f3e"
+    },
+    "benchmarks/support_scaling_mec_vs_er/support_scaling_fixed1000.csv": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "3391eccb706a3d61a4bc0c6c1ea039a6d7d96189"
+    },
+    "benchmarks/support_scaling_mec_vs_er/support_scaling_fixed1000.json": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "c4bfbb69299c71c2ba58a2cf926ef839de73e258"
+    },
+    "benchmarks/support_scaling_mec_vs_er/support_scaling_fixed1000_linear.png": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "04230cb09f007245dc223cf142d606acd01f2bb0"
+    },
+    "benchmarks/support_scaling_mec_vs_er/support_scaling_fixed1000_loglog.png": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "507ecbbd463542a9f2f5ecc400511f79e91cfeea"
+    },
+    "benchmarks/support_scaling_mec_vs_er/support_scaling_fixed1000_validation.csv": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "607798ac3f22b83359c4542731ac7b225abef91f"
+    },
+    "benchmarks/support_scaling_mec_vs_er/support_scaling_linear.png": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "a9d3d80309a51ffed6e2e781e43e946b71ef7837"
+    },
+    "benchmarks/support_scaling_mec_vs_er/support_scaling_loglog.png": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "7d3d2b1646ca19069e0eba45ecb4042d26621383"
+    },
+    "benchmarks/support_scaling_mec_vs_er/support_scaling_validation.csv": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "cc772ae90330f9e6656e939a4a1dc92c80861987"
+    },
+    "benchmarks/test_comete_correctness.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "646062e38b2470c6f35864f7e1e1a3c1d0bcbce9"
+    },
+    "benchmarks/test_comete_performance.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "d1570090fcefe719fa923e19dd5ad8ac1584d4f1"
+    },
+    "benchmarks/test_emd_correctness.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "ba87460edf85d7355c883459a105199418ca6371"
+    },
+    "benchmarks/test_emd_performance.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "b834451389349a79550d5c78b411914143bd7c9e"
+    },
+    "comete_benchmark_results.png": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "9977eb055ad8b402d404d7e646612a456f435e87"
+    },
+    "rankings_y_valores.txt": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "52cf976304ffabb94bba4d64e154bf124b9c8207"
+    },
+    "requirements.txt": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "85f5a76bffe6eeb4b5385a9c0d8afce666e9c8f6"
+    },
+    "setup.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "ef38138ee0ded52396e8cb25a238cc8a5da3aaaf"
+    },
+    "src/measures/__init__.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "9651cfbdb38dc9e9a18ca8f5f8d71e57fb3c54ba"
+    },
+    "src/measures/base.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "f61ed7c73bf8067aad9af7640420c8667e34a797"
+    },
+    "src/measures/metrics/__init__.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "80484d3f460270728a7257588aa9d8ddf0e5506b"
+    },
+    "src/measures/metrics/literature/__init__.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "5f083153a536c1c0dde63974f19411eb12dc1cc7"
+    },
+    "src/measures/metrics/literature/emd.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "c0b7630dc8b4b415c43d895357fa5e20bf3ddb57"
+    },
+    "src/measures/metrics/literature/esteban_ray.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "e35ad3a2fe32694c03856d6f6611004588ee5cfd"
+    },
+    "src/measures/metrics/literature/experts.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "5e104fdb65c4586c3ad9939e18b79f408c63d104"
+    },
+    "src/measures/metrics/literature/generalized_er.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "e843bde0d2c3b6212cf08531403e20b5a020a4f6"
+    },
+    "src/measures/metrics/literature/shannon.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "7aa5157e4c67bf71e1794448df611419ceaf2c8e"
+    },
+    "src/measures/metrics/literature/van_der_eijk.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "191ca1d3e3a630f0ffbfa7b89ead4c7782e98876"
+    },
+    "src/measures/metrics/proposed/__init__.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "ecadf78ab3a802e27a544114ec99f4bc3bf51509"
+    },
+    "src/measures/metrics/proposed/bipol.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "244e83e8c5089962988f7df255d9d0ce303b7d60"
+    },
+    "src/measures/metrics/proposed/generalized_mec.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "17893f6e3bd6d0fb7d54171695ed23f848d8428f"
+    },
+    "src/measures/metrics/proposed/mec.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "a552329f31eaf2ffa7de66d70458a76a028776da"
+    },
+    "src/measures/thresholds.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "6db798e5a6cee5b89df655ab509cb03814d62ba8"
+    },
+    "src/measures/utils/__init__.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "d638234dc573bb6731449e6782a008ae9f718816"
+    },
+    "src/measures/utils/optimization.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "2c22ea54ca6af5e5594abbf965ad9d0e55a1352c"
+    },
+    "src/measures/utils/visualization.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    "src/measures/validation.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "67f4e627d9604f0a58be213ebedf476f8e083460"
+    },
+    "tests/__init__.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    "tests/metrics/__init__.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    "tests/metrics/literature/__init__.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "1561f829fd0d9ff32ab908f8740d3653116ee4a4"
+    },
+    "tests/metrics/literature/test_emd.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "25be2e5af28dad82bbb37af02798d34001942969"
+    },
+    "tests/metrics/literature/test_esteban_ray.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "cff44584324313124a240cf8a6a94236fa9c5b1c"
+    },
+    "tests/metrics/literature/test_experts.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "74ae3494c0c57ca8292e01c761ba18adb4068d7e"
+    },
+    "tests/metrics/literature/test_shannon.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "79dd15efefad826982e48bccd7c2543bb976c09e"
+    },
+    "tests/metrics/literature/test_van_der_eijk.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "324a84c10a6bec4ebfe2a63e2a3d63153da5fe30"
+    },
+    "tests/metrics/proposed/__init__.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "b545049b75411d2318823af707e3ed5c743dd78f"
+    },
+    "tests/metrics/proposed/test_bipol.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "743ab7d1517c099ef89a1521180483c24fc8f352"
+    },
+    "tests/metrics/proposed/test_generalized_mec.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "117bde835db496a1f6d450f8f264ba738514be23"
+    },
+    "tests/metrics/proposed/test_mec.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "87a9bd65338d7660acfb403d4ae9f574d58b10e9"
+    },
+    "tests/metrics/proposed/test_mec_bisection.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "4861fa22872a24676c32d9ae7d25599ba3d30fc5"
+    },
+    "tests/run_tests.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "137f1d532b1f21896edbee87dbce904ca072563e"
+    },
+    "tests/test_base.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "f311247f4ccd0731d94c75b271d920146cb73eab"
+    },
+    "tests/test_classification.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "c1b8c32120bdb1c6e27e422ead9e893985d5de14"
+    },
+    "tests/test_validation.py": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "e78302f34cd29b2dd7da2a93a1b095c922306edf"
+    },
+    "valores_polarizacion.txt": {
+      "mode": "100644",
+      "type": "blob",
+      "oid": "377780cf63fbfccfd1f8818c82b09c2fdd619724"
+    }
+  },
+  "backup_files": [
+    {
+      "path": "Anteproyecto/references/Articles/Eijk.pdf",
+      "bytes": 106023,
+      "sha256": "1ab180f01b5d47e6832011fb12baab03d48c5e357680d7c5655019eadaee1424",
+      "type": "research_reference_pdf",
+      "pages": 18
+    },
+    {
+      "path": "Anteproyecto/references/Articles/Esteban Ray94.pdf",
+      "bytes": 633957,
+      "sha256": "8cd812b6595f638c85c7f52c7aca9fbbf38035ea94a2025b87a7e1d963817ba7",
+      "type": "research_reference_pdf",
+      "pages": 34
+    },
+    {
+      "path": "Anteproyecto/references/Articles/The_principle_of_symmetric_criticality.pdf",
+      "bytes": 681112,
+      "sha256": "a91fe934f286eb33cc1faac999c1d7375072dc06719a69c8a767f539087059ad",
+      "type": "research_reference_pdf",
+      "pages": 13
+    },
+    {
+      "path": "Anteproyecto/references/Articles/bipolarization.pdf",
+      "bytes": 840884,
+      "sha256": "1f3460b06e03a594e79e90c6eac0cd9df5ca18e3eeb4d8e1573499a9739e25c1",
+      "type": "research_reference_pdf",
+      "pages": 33
+    },
+    {
+      "path": "Anteproyecto/references/Articles/comparisions.pdf",
+      "bytes": 1202445,
+      "sha256": "0473d03d9b7a5f96dd0024780682ff39c48480c4e5529a45a18277dc38bf3be8",
+      "type": "research_reference_pdf",
+      "pages": 34
+    },
+    {
+      "path": "Anteproyecto/references/Articles/experts.pdf",
+      "bytes": 1214975,
+      "sha256": "d4bf9cdc332995b2ffac42b32259abe44ef670db3bfebe83ca2e0cfd416d8a37",
+      "type": "research_reference_pdf",
+      "pages": 14
+    },
+    {
+      "path": "Anteproyecto/references/Articles/kawada2018.pdf",
+      "bytes": 285981,
+      "sha256": "ccda2c37ef00c62fbcab7bc796647582f3e50382998847f7a5295b72376ad2dd",
+      "type": "research_reference_pdf",
+      "pages": 3
+    },
+    {
+      "path": "Anteproyecto/references/Articles/lupu2017.pdf",
+      "bytes": 1538741,
+      "sha256": "0c8f0de4897de6febb4d2babc066cba3194552f46eba9522611b044c57e7297a",
+      "type": "research_reference_pdf",
+      "pages": 19
+    },
+    {
+      "path": "Anteproyecto/references/Articles/others/Measuring polarization in preferences.pdf",
+      "bytes": 404148,
+      "sha256": "9208d592c6637a262e748384e4ed0795c39a14faeeb8858b2857d0ef246be99b",
+      "type": "research_reference_pdf",
+      "pages": 4
+    },
+    {
+      "path": "Anteproyecto/references/Articles/several-polarization-measures.pdf",
+      "bytes": 2171952,
+      "sha256": "73c4adcc17e997e53be7bd8ef08d49b2dfc9ecdd21331106e51a368e27440682",
+      "type": "research_reference_pdf",
+      "pages": 45
+    },
+    {
+      "path": "Anteproyecto/references/Articles/shannon.pdf",
+      "bytes": 188321,
+      "sha256": "e8a9604a3472f3407a0f07ffc7785c55abc4f9ad5a8c3230c35bc2b55d958204",
+      "type": "research_reference_pdf",
+      "pages": 15
+    },
+    {
+      "path": "benchmarks/support_scaling_mec_vs_er/support_scaling_crossover_eps1e8.csv",
+      "bytes": 3265,
+      "sha256": "23ab1a522caa35c25bb6508ff21c24f53d5b409a4830c9e64bf887b405e170d7",
+      "type": "benchmark_result_csv",
+      "rows": 27,
+      "header": [
+        "measure",
+        "support_size",
+        "samples",
+        "wall_seconds",
+        "seconds_per_distribution",
+        "distributions_per_second",
+        "checksum",
+        "loglog_slope"
+      ]
+    },
+    {
+      "path": "benchmarks/support_scaling_mec_vs_er/support_scaling_crossover_eps1e8.json",
+      "bytes": 11739,
+      "sha256": "ea43e85e5937ee96d7cfba036c774657df2c59ede795d6d741046320859ea372",
+      "type": "benchmark_result_json",
+      "top_keys": [
+        "artifacts",
+        "config",
+        "metadata",
+        "results",
+        "validation"
+      ]
+    },
+    {
+      "path": "benchmarks/support_scaling_mec_vs_er/support_scaling_crossover_eps1e8_linear.png",
+      "bytes": 94431,
+      "sha256": "92911b9c9e85693bdbc7c8d86063c6d74f20e304a0b50c2779aa8024f0253ee4",
+      "type": "benchmark_plot",
+      "dimensions": [
+        1620,
+        990
+      ]
+    },
+    {
+      "path": "benchmarks/support_scaling_mec_vs_er/support_scaling_crossover_eps1e8_loglog.png",
+      "bytes": 93319,
+      "sha256": "3ca5e68f77a96f5c3b57b95801b22e7adb97e82530f75d3513e970bf4da1d676",
+      "type": "benchmark_plot",
+      "dimensions": [
+        1620,
+        990
+      ]
+    },
+    {
+      "path": "benchmarks/support_scaling_mec_vs_er/support_scaling_crossover_eps1e8_validation.csv",
+      "bytes": 590,
+      "sha256": "6ce61442243062d33a437840043785b25f01fb6dd43184710370b49d11d0fb32",
+      "type": "benchmark_result_csv",
+      "rows": 9,
+      "header": [
+        "support_size",
+        "checked_samples",
+        "max_abs_diff_scipy_vs_bisection",
+        "max_rel_diff_scipy_vs_bisection"
+      ]
+    }
+  ],
+  "all_approved_files_identical_in_prepared_tree": true,
+  "all_user_backup_files_identical_in_prepared_tree": true,
+  "excluded_files_left_in_place": [
+    ".DS_Store files",
+    "ignored caches and bytecode",
+    ".claude/settings.local.json"
+  ],
+  "integration_commit": "418c0c73bc00da699be823fa0f850f66729d736e",
+  "old_review_worktree_detached_without_content_change": true,
+  "real_checkout_now_on_target_branch": true,
+  "real_file_comparison": {
+    "approved_nonmetadata_files_equal": 206,
+    "preexisting_metadata_differences_left_intact": [
+      ".DS_Store",
+      "benchmarks/.DS_Store"
+    ],
+    "content_conflicts": [],
+    "user16files_equal_to_backup": true,
+    "thesis_sha256": "b4347d4474fb06568ae4c7cb57ade9aa3b7e90dae2401745d1442de1fb84be8d",
+    "article_section_sha256": "6ab367dcb7ee7c12c5ca887f7c10543ecd18457e9be6f558726ef6696989f2b1",
+    "reference_pdf_sha256": "112d5432ae6bf49bf852815e22628b945a1e09abf9fde01cb634003357278951"
+  },
+  "real_compilation": {
+    "source": "/Users/ulvenforst/Codex/University/pol_measures/Anteproyecto/sn-article.tex",
+    "pdf": "/Users/ulvenforst/Codex/University/pol_measures/Anteproyecto/sn-article.pdf",
+    "exit_code": 0,
+    "pages": 64,
+    "bytes": 1886101,
+    "pdf_sha256": "62161c7abdedd59baaa52d3364347009f848a163c0f3a570618b62bf25f0c848",
+    "approved_pdf_binary_comparison": "Prior external build file is no longer available; no binary-equivalence claim. Source is byte-identical to approved commit.",
+    "target_passages": {
+      "Van_der_Eijk": {
+        "physical_page": 10,
+        "phrase": "so each layer has",
+        "excerpt": "er assigns the smallest positive remaining mass to every category whose remaining mass is positive, so each layer has the same positive mass at its occupied categories and zero mass elsewhere. Subtracting that layer and repeating the procedure exhausts the histogram. A binary vector Pℓ records which categories are occupied in layer ℓ. For m \u0015 3, consider all triples of category indices 1 \u0014 i < j < k \u0014 m. Let 9"
+      },
+      "expert_tie": {
+        "physical_page": 48,
+        "phrase": "The reference MEC ties",
+        "excerpt": "al concordance does not imply identical rankings, as the discordant pairs diﬀer between MEC and ER. The reference MEC ties with ER0.8 and exceeds the other settings and alternatives shown in Figure 7. The proposal’s expectation of improved agreement is consequently supported against some comparators, rather than against every alternative. The change from MEC2,1.15 to MEC2,2 reduces concordance, just as the change from ER0.8 to ER1.6 does. Functional form and parameter choice both matter. The tra"
+      },
+      "optimal_set": {
+        "physical_page": 56,
+        "phrase": "An optimal point need",
+        "excerpt": "analysis of group movements in the paper. Its substantive meaning remains conditional on the model. An optimal point need not coincide with an available survey category, and at β = 1 there may be an interval of optimal positions. Neither existence nor uniqueness predicts agreement among respondents or establishes that the calculated position is socially acceptable. 8.2 Assessment of the Approved Objectives These ﬁndings answer the research question within the conditions examined. Assessing the t"
+      }
+    },
+    "warnings_match_preexisting_locations_in_versioned_review_record": true,
+    "warnings": [
+      "warning: Object @page.1 already defined.",
+      "warning: sn-article.tex:1244: Underfull \\hbox (badness 1845) in paragraph at lines 1244--1244",
+      "warning: sn-article.tex:1249: Underfull \\hbox (badness 10000) in paragraph at lines 1249--1249",
+      "warning: sn-article.tex:1545: Underfull \\hbox (badness 10000) in paragraph at lines 1545--1545",
+      "warning: sn-article.tex:1546: Underfull \\hbox (badness 1077) in paragraph at lines 1546--1546",
+      "warning: sn-article.tex:84: Overfull \\hbox (4.25945pt too wide) in paragraph at lines 84--84",
+      "warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details."
+    ],
+    "generated_pdf_ignored_under_existing_project_rule": true,
+    "visual_check": {
+      "all_64_pages_rendered": true,
+      "all_64_pages_inspected_in_contact_sheets": true,
+      "full_size_pages_inspected": [
+        10,
+        48,
+        56
+      ],
+      "result": "No blank or clipped content, missing figures, or new layout break observed in the rendered pages; known source warnings remain as recorded. Contact sheets are a layout check, not a new conceptual audit."
+    }
+  },
+  "open_document_session_check": {
+    "action": "read accessibility state of existing Codex app",
+    "target": "com.openai.codex",
+    "status": "denied",
+    "reason": "Computer Use is not allowed to use this app for safety reasons",
+    "preview_refresh_observed": false,
+    "no_retry_or_UI_change_performed": true
+  },
+  "integration_scope": "Literal integration of approved thesis and article source plus preserved user reference/result files; no new editorial changes, experiments, push, or change to main."
+}
