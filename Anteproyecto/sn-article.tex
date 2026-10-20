@@ -1189,7 +1189,7 @@ To apply these numerical conventions through a common interface, the repository 
 
 The callable interface validates the supplied arrays and, by default, normalizes positions but preserves masses. Weight normalization requires \texttt{normalize\_\allowbreak weights=True}. Direct calls to \texttt{compute} bypass that histogram-processing step. The experiments must therefore either use the callable interface with the intended options or prepare the coordinates and weights explicitly before calling \texttt{compute}. A one-position mathematical consensus is represented in the five-category experiments by one positive weight and four zeros; the public histogram interface requires at least two supplied coordinates.
 
-The interface can also assign categorical labels using the fixed cutoffs in \path{thresholds.py}, stored under percentile and $k$-means schemes for specified measures and parameter sets. It looks up these cutoffs rather than fitting them to the input histogram. This facility relates to the proposal's desirable threshold-analysis activity, but the stored values alone do not document their calibration corpus or establish universal boundaries between levels of polarization. The paper's ranking comparisons use numerical scores without these labels.
+The interface can also assign categorical labels using the fixed cutoffs in \path{thresholds.py}, stored under percentile and $k$-means schemes for specified measures and parameter sets. It looks up these cutoffs rather than fitting them to the input histogram. Section~\ref{subsec:methods-thresholds} describes the historical threshold analysis associated with A12 and distinguishes its documented results from the current lookup procedure. The paper's ranking comparisons use numerical scores without these labels.
 
 The package's parameter validator accepts positive exponents, including values below one. This software domain is broader than the theoretical domain established in the thesis. The computational searches described below may explore it, but the axiomatic results are invoked only under their stated conditions. In particular, a successful numerical evaluation does not imply convexity or compliance with the polarization axioms outside those conditions.
 
@@ -1289,6 +1289,14 @@ Stability is assessed on profile--score pairs. Bootstrap resampling draws fiftee
 
 The additional methods envisaged in the proposal are assessed under the scope criteria of Section~\ref{sec:objectives}. A shortlist of parameter candidates is distinct from top-$k$ overlap between profile rankings, and the saved grid does not establish preregistration.
 
+\subsection{Threshold Classification}\label{subsec:methods-thresholds}
+
+Ranking profiles does not assign them to levels of polarization. The proposal's desirable activity A12 addressed this further task through percentiles and $k$-means. The companion manuscript reports this analysis for $\mathrm{MEC}_{2,1.15}$ and $\mathrm{ER}_{0.8}$ \citep[Section~9.4, pp.~29--32]{arandaMECthresholds}. My accompanying report supplies the tables to four decimal places \citep[``Threshold Analysis for Polarization Classification'']{narvaez2025thresholds}. The reported category counts sum to the $2{,}299{,}726$ canonical profiles of Eq.~\eqref{eq:methods-canonical-count}. Each profile contributes once, so these frequencies describe that synthetic corpus rather than the prevalence of polarization in a survey population.
+
+The percentile schemes use the 33rd and 66th percentiles for three categories, the 25th, 50th, and 75th for four, and the 20th, 40th, 60th, and 80th for five. They partition the ordered scores into groups of approximately prescribed sizes. The alternative applies one-dimensional $k$-means to the scores with $k=3,4,5$. Lloyd's algorithm alternates assignment to the nearest centroid and replacement of each centroid by its group's mean to reduce the within-cluster sum of squares. It need not reach a global minimum. Nearest-centroid boundaries lie halfway between adjacent ordered centroids, whereas percentile boundaries depend on cumulative frequencies. These are different criteria for dividing the same score distribution, and neither selects an optimal number of categories.
+
+The historical tables report scores in $[0,1]$, but the sources do not specify the MEC normalization sufficiently to identify it with Eq.~\eqref{eq:methods-root-normalization}. The results below therefore retain the sources' numerical scale. A nonlinear increasing transformation preserves score order but can change a $k$-means fit. The stored cutoffs agree with the four-decimal report and are already present in repository commit \texttt{2970e547} of 3 March 2025. Their application is implemented and tested, but the fitting script, complete score arrays, initialization, restarts, and stopping settings were not found among the inspected materials. The reported historical fit can thus be documented, while its full numerical reproduction remains unverified.
+
 \subsection{Reproducibility and Computational Resources}\label{subsec:methods-reproducibility}
 
 These distinctions determine what is needed to reproduce a comparison. The inputs must specify the fixed coordinates, count or proportion convention, and profile identifiers. The configuration must identify candidate implementations, parameters, normalization, solver route, and any rounding or truncation. The resulting score arrays, correlation matrices, and parameter tables must retain that configuration. Reproducing a rendered figure alone cannot resolve a difference between two numerical protocols.
@@ -1303,7 +1311,7 @@ Enumeration and fixed-profile scoring are deterministic given the implementation
 
 \section{Experimental Results}\label{sec:results}
 
-The empirical evaluation asks how MEC ranks opinion distributions and how those rankings compare with the candidate measures and published expert judgments. The two main comparisons follow the completed paper \citep{aranda2026mec}. Their inputs and numerical conventions were specified in Section~\ref{sec:methods}. We first report the exhaustive comparison on five-point histograms, then the expert benchmark. Saved parameter-search and timing outputs from \texttt{pol\_measures} provide supplementary evidence about sensitivity and computational performance.
+The empirical evaluation asks how MEC ranks opinion distributions and how those rankings compare with the candidate measures and published expert judgments. The two main comparisons follow the completed paper \citep{aranda2026mec}. Their inputs and numerical conventions were specified in Section~\ref{sec:methods}. We first report the exhaustive comparison on five-point histograms, then the expert benchmark. Saved parameter-search outputs from \texttt{pol\_measures} provide supplementary evidence about sensitivity. Historical threshold results then examine how numerical scores were divided into categories, before the timing records address computational performance.
 
 These comparisons serve different purposes. Agreement between indices describes how similarly they order distributions, while agreement with the published human scores assesses correspondence with expert judgments on the evaluated profiles. Neither replaces the axiomatic results established in Section~\ref{sec:mec-theory}.
 
@@ -1430,6 +1438,36 @@ The pipeline recommends $(\alpha,\beta)=(2.024,1.178)$ after comparing full-samp
 
 The analysis supports the paper's conclusion that several evaluated settings achieve the same best expert concordance. It also gives a limited sensitivity check around that result. The searches therefore remain supplementary evidence about the benchmark, rather than a general calibration of the MEC family.
 
+\subsection{Thresholds for Polarization Classification}\label{subsec:results-thresholds}
+
+The preceding comparisons concern numerical rankings and parameter sensitivity. A12 adds a classification of scores at the fixed reference settings $\mathrm{MEC}_{2,1.15}$ and $\mathrm{ER}_{0.8}$. Table~\ref{tab:results-thresholds} records the historical cutoffs on the scale specified in Section~\ref{subsec:methods-thresholds}. The four-decimal values come from the accompanying report \citep{narvaez2025thresholds} and agree, at the displayed two-decimal precision, with Tables~3 and~4 of the companion manuscript \citep[Section~9.4]{arandaMECthresholds}.
+
+\begin{table}[htbp]
+\centering
+\caption{Historical percentile and $k$-means cutoffs for MEC at $(2,1.15)$ and ER at $0.8$, transcribed to four decimal places from \citet{narvaez2025thresholds}. The number of categories is fixed at $k$ in each row. These are reported values, not a newly fitted classification.}
+\label{tab:results-thresholds}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lcll@{}}
+\toprule
+Measure & $k$ & Percentile cutoffs & $k$-means cutoffs\\
+\midrule
+MEC & 3 & $0.1971,\ 0.2922$ & $0.2233,\ 0.3801$\\
+ER  & 3 & $0.3609,\ 0.4466$ & $0.3791,\ 0.5141$\\[3pt]
+MEC & 4 & $0.1747,\ 0.2408,\ 0.3274$ & $0.1718,\ 0.2841,\ 0.4271$\\
+ER  & 4 & $0.3407,\ 0.4031,\ 0.4761$ & $0.3501,\ 0.4467,\ 0.5660$\\[3pt]
+MEC & 5 & $0.1581,\ 0.2141,\ 0.2716,\ 0.3503$ & $0.1513,\ 0.2421,\ 0.3369,\ 0.4689$\\
+ER  & 5 & $0.3275,\ 0.3781,\ 0.4295,\ 0.4965$ & $0.3196,\ 0.3973,\ 0.4809,\ 0.5921$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+For the 33rd/66th-percentile scheme, both measures have reported category counts $(758{,}910,758{,}909,781{,}907)$ from low to high. The final group contains approximately $34\%$ of the corpus because the upper cutoff is the 66th percentile. Equal marginal counts do not imply that the measures assign the same profiles to each category. The four- and five-category percentile schemes likewise give nearly equal-sized groups, as prescribed by their cumulative splits.
+
+For $k=3$, the reported MEC centroids are $(0.1546,0.2919,0.4683)$, with counts $(1{,}002{,}929,960{,}752,336{,}045)$. The corresponding ER centroids are $(0.3202,0.4380,0.5902)$, with counts $(928{,}943,993{,}213,377{,}570)$ \citep{narvaez2025thresholds}. In both cases, $k$-means places the upper cutoff above the percentile cutoff and assigns fewer profiles to the high category. The high groups contain approximately $14.61\%$ of the corpus for MEC and $16.42\%$ for ER, compared with approximately $34\%$ under the percentile scheme.
+
+This difference follows from the classification criteria. Percentiles prescribe relative group sizes, whereas $k$-means groups nearby numerical scores without imposing equal counts. The smaller high group does not establish that its labels are more accurate or that the corpus contains distinct natural classes. The analysis documents alternative descriptive partitions, not sociological boundaries validated by expert ratings. Its contribution to A12 is the reported comparison of these schemes and the implementation of their fixed cutoffs, subject to the historical reproduction limit in Section~\ref{subsec:methods-thresholds}.
+
 \subsection{Computational Performance}\label{subsec:results-performance}
 
 The ranking results establish what the computations reveal. The timing records address whether those computations are practical and how their cost changes with the number of opinion positions. These are supplementary repository results, separate from the paper's published concordance experiments.
@@ -1554,7 +1592,11 @@ The software evidence supports substantial progress on A8. The existing suite pa
 
 The proposal envisaged aggregate regional cases as exercises in interpreting opinion distributions and assigned domain-specific applications to the PROMUEVA data team. The figures discussed in Section~\ref{subsec:results-regional} form part of that collective work. These observations remain separate from the synthetic and expert benchmarks.
 
-The desirable activities A7 and A11--A13 are assessed separately from the mandatory tasks. Central-split monotonicity is established. The companion manuscript reports empirical transformation checks related to A11 \citep[Section~10]{arandaMECcompanion}. Its finite tests do not establish universal compliance for VdE or TWD, and an isolated merger does not refute the existential bounds in Axiom~1. The software's stored classification cutoffs relate to A12, while their calibration and the feature-request record for A13 are not established by the outputs examined here. A14 required contributions of text and figures to the joint MEC manuscript. I carried out experiments and developed proofs and text within that collective work, with the guidance and revisions described above.
+The desirable activities A7 and A11--A13 are assessed separately from the mandatory tasks. Central-split monotonicity is established. The companion manuscript reports empirical transformation checks related to A11 \citep[Section~10]{arandaMECcompanion}. Its finite tests do not establish universal compliance for VdE or TWD, and an isolated merger does not refute the existential bounds in Axiom~1.
+
+The threshold analysis for the desirable activity A12 was carried out and documented in the companion manuscript and accompanying report. Section~\ref{subsec:results-thresholds} presents its percentile and $k$-means results for MEC and ER, and the library implements the stored cutoffs. The missing fitting record and ambiguity about the historical MEC normalization limit reproduction of that analysis, rather than leave the activity itself undocumented.
+
+The feature-request record for A13 is not established by the outputs examined here. A14 required contributions of text and figures to the joint MEC manuscript. I carried out experiments and developed proofs and text within that collective work, with the guidance and revisions described above.
 
 \subsection{Scope and Validity of the Findings}\label{subsec:discussion-validity}
 
@@ -1692,7 +1734,21 @@ Carlos Pinzón & Advisor & 2 & \$120.000 & \$8.640.000\\
 \end{tabular}
 \end{table}
 
-\begin{thebibliography}{17}
+\begin{thebibliography}{19}
+\bibitem[Aranda et~al.(2025)]{arandaMECthresholds}
+Aranda, J., Díaz, J.F., Narváez, J.C., Pinzón, C., Valencia, F., Vargas, O.
+Minimal Effort to Consensus (MEC) polarization measure.
+Unpublished working manuscript, dated October 2025; author-supplied copy
+\nolinkurl{MEC_Measure__Copy_(2).pdf}, received 20 October 2026.
+Section~9.4, pp.~29--32.
+
+\bibitem[Narváez Tascón(2025)]{narvaez2025thresholds}
+Narváez Tascón, J.C.
+Bridging Theory and Expert Judgment: Advances in Polarization Metrics and Their Empirical Correlations.
+6 February 2025. Section ``Threshold Analysis for Polarization Classification.''
+Author-supplied \nolinkurl{page.mdx}, received 20 October 2026.
+\url{https://ulvenforst.vercel.app/articles/bridging-theory-and-expert-judgment-advances-in-polarization-metrics-and-their-empirical-correlations}
+
 \bibitem[Aranda et~al.(2025)]{arandaMECcompanion}
 Aranda, J., Díaz, J.F., Narváez, J.C., Pinzón, C., Valencia, F., Vargas, O.
 Minimal Effort to Consensus (MEC) polarization measure.
